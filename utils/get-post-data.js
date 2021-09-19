@@ -9,7 +9,7 @@ export default async function(router) {
         splitRoute.length > 0 ? splitRoute[splitRoute.length - 1] : null;
 
     // for the root path, we want index.js file
-    compName = router.pathname == "/" ? "index" : compName;
+    compName = router.pathname === "/" ? "index" : compName;
 
     // get page data based on file name
     let allPageData;
@@ -20,7 +20,7 @@ export default async function(router) {
     }
 
     const postData = allPageData.filter(
-        component => component.name == compName
+        component => component.name === compName
     );
 
     return Promise.resolve(postData[0]);
