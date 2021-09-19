@@ -50,11 +50,6 @@ export default class MyApp extends App {
         }
     }
 
-    handleToggleNavigation = () => {
-        this.setState({
-            navOpen: !this.state.navOpen
-        });
-    };
 
     render() {
         const { postData } = this.state;
@@ -72,17 +67,7 @@ export default class MyApp extends App {
 
                     {/* (2) navigation */}
                     <Navigation
-                        open={this.state.navOpen}
-                        toggleNavigation={this.handleToggleNavigation}
                     />
-                    <button
-                        type="button"
-                        role="button"
-                        aria-label="open navigation"
-                        className="icon-button hamburger"
-                        onClick={this.handleToggleNavigation}>
-                        <FaBars size={20} />
-                    </button>
 
                     {/* (3) page body */}
                     <React.Fragment>
