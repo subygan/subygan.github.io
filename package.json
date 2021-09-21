@@ -43,6 +43,7 @@
         "remark-emoji": "^2.0.2",
         "remark-images": "^1.0.0",
         "scrollprogress": "^3.0.2",
+        "styled-components": "^5.3.1",
         "yargs": "^15.0.2"
     },
     "devDependencies": {
