@@ -9,7 +9,8 @@ import { renderLayout } from "../utils/render-app-layout";
 import Footer from "../components/Footer";
 import { checkForSW } from "../utils/check-for-sw";
 import { FaBars } from "react-icons/fa";
-import { globalStyles } from "../styles";
+import GlobalStyle from "../styles/index.js";
+
 
 export default class MyApp extends App {
     constructor(props) {
@@ -68,21 +69,12 @@ export default class MyApp extends App {
                     <Head>
                         <meta name="keywords" content={tagsString} />
                     </Head>
+                    <GlobalStyle/>
                     <NextSeo config={seoData} />
 
                     {/* (2) navigation */}
                     <Navigation
-                        open={this.state.navOpen}
-                        toggleNavigation={this.handleToggleNavigation}
                     />
-                    <button
-                        type="button"
-                        role="button"
-                        aria-label="open navigation"
-                        className="icon-button hamburger"
-                        onClick={this.handleToggleNavigation}>
-                        <FaBars size={20} />
-                    </button>
 
                     {/* (3) page body */}
                     <React.Fragment>
@@ -92,10 +84,7 @@ export default class MyApp extends App {
                     {/* (4) footer */}
                     <Footer />
 
-                    {/* (5) global and local styles */}
-                    <style global jsx>
-                        {globalStyles}
-                    </style>
+
                     <style jsx>{`
                         .icon-button {
                             margin: 15px;
