@@ -15,8 +15,9 @@ import GlobalStyle from "../styles/index.js";
 export default class MyApp extends App {
     constructor(props) {
         super(props);
-        this.state = { navOpen: false, postData: props.postData };
+        this.state = { navOpen: false, postData: props.postData,ready: false };
     }
+
 
     static async getInitialProps({ Component, router, ctx }) {
         let pageProps = {};
@@ -42,6 +43,7 @@ export default class MyApp extends App {
 
     async componentDidMount() {
         await checkForSW();
+        this.setState({ ready: true });
     }
 
     async componentDidUpdate(prevProps, prevState) {
@@ -68,11 +70,13 @@ export default class MyApp extends App {
                     {/* (1) SEO  */}
                     <Head>
                         <meta name="keywords" content={tagsString} />
+                        <script src="https://kit.fontawesome.com/097e856c0f.js" crossOrigin="anonymous" />
                     </Head>
                     <GlobalStyle/>
                     <NextSeo config={seoData} />
 
                     {/* (2) navigation */}
+
                     <Navigation
                     />
 

@@ -7,9 +7,11 @@ export default class MyDocument extends Document {
         return { ...initialProps };
     }
 
+
+
     render() {
         return (
-            <html lang="en">
+            <html lang="en"  >
                 <Head>
                     <meta
                         name="viewport"
@@ -72,10 +74,14 @@ export default class MyDocument extends Document {
                     </script>
                     */}
                 </Head>
-                <body>
+                <body style= {{visibility: 'hidden'}}>
                     <Main />
                     <NextScript />
                 </body>
+                <script>
+                    document.body.style.visibility = 'visible';
+                    console.log('!!!!!!!!!');
+                </script>
             </html>
         );
     }
