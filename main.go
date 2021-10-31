@@ -21,8 +21,9 @@ func headers(w http.ResponseWriter, req *http.Request) {
 
 func main() {
 
-    http.HandleFunc("/hello", hello)
-    http.HandleFunc("/headers", headers)
     http.Handle("/", http.FileServer(http.Dir("./blog")))
-    http.ListenAndServe(":8090", nil)
+    http.ListenAndServe(":80", nil)
+
+
+
 }
