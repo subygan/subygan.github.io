@@ -769,3 +769,20 @@ html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color:
          color: white;
          }
          @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+.page-cover-image {
+         display: block;
+         object-fit: cover;
+         width: 100%;
+         height: 30vh;
+         }
+         .page-header-icon {
+         font-size: 3rem;
+         margin-bottom: 1rem;
+         }
+         .page-header-icon-with-cover {
+         margin-top: -0.72em;
+         margin-left: 0.07em;
+         }
+         .page-header-icon img {
+         border-radius: 3px;
+         }
