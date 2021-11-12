@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Suriya 🧚🏻‍♂️</title>
+    <meta name="description" content="🧚🏻‍♂️">
+    <meta name="author" content="Suriya Ganesh">
+
+    <meta property="og:title" content="Suriya Ganesh">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.suriyaganesh.com">
+    <meta property="og:description" content="Suriya ganesh">
+    <meta property="og:image" content="image.png">
+    <link rel="stylesheet" href="../../styles/main.css">
+
+</head>
+<body class='typora-export'>
+<div class='typora-export-content'>
+    <div id='write' class=''>
+
+        <header>
+            <div class="page-header-icon undefined"><span class="icon">🚅</span></div>
+            <h1 class="page-title">Learning Golang</h1>
+        </header>
+        <h1 id='benchmarking-golang'><span>Benchmarking Golang</span></h1>
+            <p><span>Golang has Benchmarking tools built-in with the &quot;testing&quot; package</span></p>
+            <p><span>These can be done by writing test files of the format  &quot;</span>
+                <x><span>_test.go&quot;</span>
+            </p>
+            <p><span>Then creating functions with the prefix Benchmark, like so. </span><code>func Benchmark&lt;name&gt;(b *testing.B)</code></p>
+            <p><span>a simple function that tests a simple multiplication function would be</span></p>
+            <pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="go"
+                 style="break-inside: unset;"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap"
+                                                   lang="go"><div
+                    style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10px; left: 4px;"><textarea
+                    autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0"
+                    style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div
+                    class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div
+                    class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll"
+                                                                                      tabindex="-1"><div
+                    class="CodeMirror-sizer"
+                    style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div
+                    style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div
+                    role="presentation" style="position: relative; outline: none;"><div
+                    class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div
+                    style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"
+                                                                       style=""><div class="CodeMirror-activeline"
+                                                                                     style="position: relative;"><div
+                    class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div
+                    class="CodeMirror-gutter-background CodeMirror-activeline-gutter"
+                    style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span
+                    role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">package</span> <span
+                    class="cm-variable">go_test</span></span></pre></div><pre class=" CodeMirror-line "
+                                                                              role="presentation"><span
+                    role="presentation" style="padding-right: 0.1px;"><span
+                    class="cm-keyword">import</span> (</span></pre><pre class=" CodeMirror-line "
+                                                                        role="presentation"><span role="presentation"
+                                                                                                  style="padding-right: 0.1px;"><span
+                    class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-string">"testing"</span></span></pre><pre
+                    class=" CodeMirror-line " role="presentation"><span role="presentation"
+                                                                        style="padding-right: 0.1px;"><span
+                    class="cm-tab" role="presentation" cm-text="	">  </span><span
+                    class="cm-string">"math/rand"</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span
+                    role="presentation" style="padding-right: 0.1px;">)</span></pre><pre class=" CodeMirror-line "
+                                                                                         role="presentation"><span
+                    role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"
+                                                                             style="padding-right: 0.1px;"><span
+                    class="cm-keyword">func</span> <span class="cm-variable">BenchmarkMultiplication</span>(<span
+                    class="cm-variable">b</span> <span class="cm-operator">*</span><span
+                    class="cm-variable">testing</span><span class="cm-number">.</span><span class="cm-variable">B</span>){</span></pre><pre
+                    class=" CodeMirror-line " role="presentation"><span role="presentation" class="cm-tab-wrap-hack"
+                                                                        style="padding-right: 0.1px;"><span
+                    class="cm-tab" role="presentation" cm-text="	">  </span></span></pre><pre
+                    class=" CodeMirror-line " role="presentation"><span role="presentation"
+                                                                        style="padding-right: 0.1px;"><span
+                    class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-variable">b</span><span
+                    class="cm-number">.</span><span class="cm-variable">ResetTimer</span>() <span class="cm-comment">// Resets timer so that the values are accurate</span></span></pre><pre
+                    class=" CodeMirror-line " role="presentation"><span role="presentation"
+                                                                        style="padding-right: 0.1px;"><span cm-text=""
+                                                                                                            cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"
+                                                                             style="padding-right: 0.1px;"><span
+                    class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-keyword">for</span> <span
+                    class="cm-variable">i</span> :<span class="cm-operator">=</span> <span
+                    class="cm-number">0</span>; <span class="cm-variable">i</span><span
+                    class="cm-operator">&lt;</span><span class="cm-variable">b</span><span
+                    class="cm-number">.</span><span class="cm-variable">N</span>; <span
+                    class="cm-variable">i</span><span class="cm-operator">++</span> {</span></pre><pre
+                    class=" CodeMirror-line " role="presentation"><span role="presentation"
+                                                                        style="padding-right: 0.1px;"><span
+                    class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation"
+                                                                                     cm-text="	">  </span><span
+                    class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation"
+                                                                                     cm-text="	">  </span><span
+                    class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation"
+                                                                                     cm-text="	">  </span><span
+                    class="cm-comment">//  ^^^ Allocated dynamically by thetesting package</span></span></pre><pre
+                    class=" CodeMirror-line " role="presentation"><span role="presentation" class="cm-tab-wrap-hack"
+                                                                        style="padding-right: 0.1px;"><span
+                    class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation"
+                                                                                     cm-text="	">  </span><span
+                    class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation"
+                                                                                     cm-text="	">  </span></span></pre><pre
+                    class=" CodeMirror-line " role="presentation"><span role="presentation"
+                                                                        style="padding-right: 0.1px;"><span
+                    class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation"
+                                                                                     cm-text="	">  </span><span
+                    class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-variable">_</span> :<span
+                    class="cm-operator">=</span> <span class="cm-variable">rand</span><span
+                    class="cm-number">.</span><span class="cm-variable">Int</span>() <span class="cm-operator">*</span> <span
+                    class="cm-variable">rand</span><span class="cm-number">.</span><span class="cm-variable">Int</span>()</span></pre><pre
+                    class=" CodeMirror-line " role="presentation"><span role="presentation" class="cm-tab-wrap-hack"
+                                                                        style="padding-right: 0.1px;"><span
+                    class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation"
+                                                                                     cm-text="	">  </span><span
+                    class="cm-tab" role="presentation" cm-text="	">  </span></span></pre><pre
+                    class=" CodeMirror-line " role="presentation"><span role="presentation"
+                                                                        style="padding-right: 0.1px;"><span
+                    class="cm-tab" role="presentation" cm-text="	">  </span>}</span></pre><pre
+                    class=" CodeMirror-line " role="presentation"><span role="presentation"
+                                                                        style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div
+                    style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 456px;"></div><div
+                    class="CodeMirror-gutters" style="display: none; height: 456px;"></div></div></div></pre>
+            <p><span>The </span><code>b.N</code><span> Value is allotted by the testing framework based on the projection of how long the function would run.</span>
+            </p>
+            <p><span>Typically it allocates b.N in increasing order. 1, 10, 100, 1000, .....</span></p>
+            <p><span>And then averages out the total time taken. every time figuring out the optimal value.</span></p>
+            <p><span>This test can be run using </span></p>
+            <pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="go"><div
+                    class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="go"><div
+                    style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10px; left: 4px;"><textarea
+                    autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0"
+                    style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div
+                    class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div
+                    class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll"
+                                                                                      tabindex="-1"><div
+                    class="CodeMirror-sizer"
+                    style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div
+                    style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div
+                    role="presentation" style="position: relative; outline: none;"><div
+                    class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div
+                    style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div
+                    class="CodeMirror-activeline" style="position: relative;"><div
+                    class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div
+                    class="CodeMirror-gutter-background CodeMirror-activeline-gutter"
+                    style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span
+                    role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">go</span> <span
+                    class="cm-variable">test</span> <span class="cm-operator">-</span><span
+                    class="cm-variable">bench</span><span class="cm-operator">=</span><span
+                    class="cm-number">.</span> <span class="cm-operator">-</span><span
+                    class="cm-variable">benchmem</span> <span class="cm-operator">-</span><span
+                    class="cm-variable">cpu</span> <span class="cm-number">1</span>,<span
+                    class="cm-number">2</span>,<span class="cm-number">4</span>,<span class="cm-number">8</span></span></pre></div></div></div></div></div></div><div
+                    style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 24px;"></div><div
+                    class="CodeMirror-gutters" style="display: none; height: 24px;"></div></div></div></pre>
+            <p><span>Flags :</span></p>
+            <p><span> -bench=&quot;&quot;            Takes in a regex string to check for functions</span></p>
+            <p><span> -benchmem          Benchmark memory usage as well</span></p>
+            <p><span> -cpu                       Number of threads to be allocated</span></p>
+            <p><span>The number of threads used is shown as &lt;test_name&gt;-&lt;thread_count&gt; in the result</span></p>
+            <p>
+                <img src="../../static/benchmark.png"
+                     referrerpolicy="no-referrer" alt="Screenshot 2021-11-11 at 7.46.34 PM.png"></p>
+            <p><span>There are 5 columns in the result. For some reason it&#39;s not annotated the arrangement is like,</span>
+            </p>
+            <p><span>Test_name_core_count, Number_of_iterations_run, Avg_time_per_iteration, Memory_allocation_per_iteration, number_of_allocs_per_iteration</span>
+            </p></div>
+    </div>
+
+</body>
+</html>
+
+
+
