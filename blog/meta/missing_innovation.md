@@ -4,7 +4,6 @@ emoji: 🕵🏻‍♂️
 layout: base
 ---
 
-## The missing innovation
 
 Historically, Most innovation has originated from developed nations and trickled down to developing ones, very much following the [Trickle down efffect](https://en.wikipedia.org/wiki/Trickle-down_effect)
 
