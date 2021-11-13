@@ -934,3 +934,35 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .highlight .vi { color: #008080; }
 
 .highlight .il { color: #099; }
+
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  positon: fixed;
+  height: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+		a {
+              text-decoration: none;
+              font-family: "Verdana", sans-serif;
+              font-weight: bold;
+              margin: 1rem;
+              color: black;
+              text-align: center;
+              &:after{
+                  content: "";
+                  display: inline-block;
+                  background-color: black;
+                  width: 0%;
+                  margin: 0;
+                  height: 5px;
+                  border-radius: 2.5px;
+                  transition: width 0.5s;
+                }
+              &:hover::after {
+                  width: 105%;
+                }
+            }
+	}
