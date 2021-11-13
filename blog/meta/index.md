@@ -4,4 +4,4 @@ emoji: 🦋
 layout: base
 ---
 
-I try to write to about meta stuff here
+🕵🏻‍♂️[The missing Innovation](missing_innovation/)
