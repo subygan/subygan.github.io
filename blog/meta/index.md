@@ -4,4 +4,4 @@ emoji: 🦋
 layout: base
 ---
 
-🕵🏻‍♂️[The missing Innovation](missing_innovation/)
+🕵🏻‍♂️[The missing Innovation](missing_innovation)
