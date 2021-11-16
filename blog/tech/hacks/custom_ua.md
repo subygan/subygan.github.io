@@ -6,23 +6,17 @@ title: Custom user Agent for testing
 description: Sending requests with custom user agent in chrome for debugging
 ---
 
-a [user-agent](https://en.wikipedia.org/wiki/User_agent) is used to recognize the browser and the device the project, [whatismybrowser.com](https://developers.whatismybrowser.com/useragents/explore/) have a database of user agents
-it's just a string that says about your browser and device type that is sent as a cookie in every request.
-You can find your current user agent by googling "[what is my user agent](https://www.google.com/search?q=what+is+my+user+agent)"
+A [user-agent](https://en.wikipedia.org/wiki/User_agent) is used to recognize the browser and the device the project, [whatismybrowser.com](https://developers.whatismybrowser.com/useragents/explore/) have a database of user agents it's just a string that says about your browser and device type that is sent as a cookie in every request. You can find your current user agent by googling "[what is my user agent](https://www.google.com/search?q=what+is+my+user+agent)"
 
 These are incredible in their own interesting way.
 
-But, I was stuck with a problem of trying to simulate a device with user agent and inspect it.
-The quick solution I did was go to [browserstack](https://www.browserstack.com/) and work on an actual device and get to inspect element for the free tier 1 minute.
-Which is incredible.
+But, I was stuck with a problem of trying to simulate a device with user agent and inspect it. The quick solution I did was go to [browserstack](https://www.browserstack.com/) and work on an actual device and get to inspect element for the free tier 1 minute. Which is incredible that you can work with a live device.
 
-The most popular option if you google custom user agent, (unfortunately) is to use a python script.
-It makes sense, because usually people who want to spoof their user agent are data scrapers and bots
+The most popular option if you google custom user agent, (unfortunately) is to use a python script. It makes sense, because usually people who want to spoof their user agent are data scrapers and bots
 
 This whole thing left me wondering. why was there no simple solution to this problem?? why should I write a python script just to change a line in the request header.
 
-It took me a while to realize that chrome might have a way to do that. and I started digging.
-And, here's my solution
+It took me a while to realize that chrome might have a way to do that. and I started digging. And, here's my solution
 
 ### steps
 
