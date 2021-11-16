@@ -5,7 +5,9 @@ emoji: 🚅
 title: Benchmarking
 description: Benchmarking go programs with the testing package
 
---- Benchmarking tools built-in with the "testing" package
+--- 
+
+Benchmarking tools are built-in with the "testing" package
 
 These can be done by writing test files of the format  "<x>_test.go"
 
