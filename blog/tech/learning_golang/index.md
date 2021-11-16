@@ -2,6 +2,7 @@
 emoji: 👨🏻‍🔬
 title: Learning golang
 layout: base
+type: page
 ---
 
 I've been trying to learn Golang. Golang is such a charm to work with. The tooling feels like, it's been developed with 
