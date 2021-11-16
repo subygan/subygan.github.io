@@ -2,6 +2,7 @@
 title: The Missing innovation
 emoji: 🕵🏻‍♂️
 layout: base
+type: page
 ---
 
 

@@ -1,9 +1,11 @@
 ---
+layout: base
+type: page
 emoji: 🚅
 title: Benchmarking
-layout: base
----
-Golang has Benchmarking tools built-in with the "testing" package
+description: Benchmarking go programs with the testing package
+
+--- Benchmarking tools built-in with the "testing" package
 
 These can be done by writing test files of the format  "<x>_test.go"
 
