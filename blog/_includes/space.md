@@ -1,0 +1,1 @@
+{{ site.pages | asset_url:page.url }}
