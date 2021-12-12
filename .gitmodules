@@ -1,0 +1,3 @@
+[submodule "blog/tech/learning_golang/golang_learn"]
+	path = blog/tech/learning_golang/golang_learn
+	url = git@github.com:suriya-ganesh/golang_learn.git
