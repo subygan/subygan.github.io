@@ -4,6 +4,11 @@ we're using notion for writing and typora for its design.
 So everything that we write on notion, has to be transferred to typora, compiled to html and then
 committed to the directory
 
+### TODO
+
+- Simple sub indexing system in ruby.
+
+
 ## Workflow
 The workflow is simple, 
 - create a new notebook in notion. keep taking notes there. Notion is especially
@@ -15,6 +20,7 @@ and fill content from typora
 - else, use /blog/example/example.html
 
 - the difference between the two is actually just a css tag.
+
 
 
 
