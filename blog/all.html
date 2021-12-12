@@ -3,7 +3,6 @@ layout: base
 title: All
 emoji: 🦾
 description: All my writings
-
 ---
 
  {{ site.documents }}
@@ -11,6 +10,6 @@ description: All my writings
  {% for page in site.pages %}
 
 {% if page.type == "page" %}
-<p><a href={{ page.url }}>{{ page.title }}</a></p>
+<p>{{ page.emoji}}<a href={{ page.url }}>{{ page.title }}</a></p>
 {% endif %}
 {% endfor %}

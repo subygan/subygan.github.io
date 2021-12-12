@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: base_front
 title: Suriya
 emoji: 🧑🏻‍💻
 description: Suriya
@@ -15,5 +15,7 @@ I try to write stuff I'm interested about, here.
 🧙🏻[about](/about)
 
 🐵[now](/now)
+
+🧑🏻‍🏫[Readlog](/readlog)
 
 
