@@ -14,11 +14,14 @@ module Jekyll
             if url.index(cur)==0
                 if url.length != cur.length
                     stripped = url[cur.length-1..-1]
-                    s = stripped.split('/',-1)[1]
+                    s = stripped.split('/',-1)
 #                     l+="#{page["emoji"]}[#{page["title"]}](#{url})\n"
-                    l+="<p>#{page["emoji"]}<a href=\"#{page["url"]}\">#{page["title"]}</a></p>\n"
-                    result << s
-
+                    p "^^^"
+                    p s
+                    if s.length() < 4
+                        l+="<p>#{page["emoji"]}<a href=\"#{page["url"]}\">#{page["title"]}</a></p>\n"
+                        result << s
+                    end
                 end
             end
            # code to be executed
