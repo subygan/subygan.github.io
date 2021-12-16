@@ -4,7 +4,6 @@ type: page
 emoji: 🚅
 title: Benchmarking
 description: Benchmarking go programs with the testing package
-
 --- 
 
 Benchmarking tools are built-in with the "testing" package
