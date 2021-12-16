@@ -1,3 +1,6 @@
 [submodule "blog/tech/learning_golang/golang_learn"]
 	path = blog/tech/learning_golang/golang_learn
 	url = https://github.com/suriya-ganesh/golang_learn.git
+[submodule "blog/tech/docker_learn"]
+	path = blog/tech/docker_learn
+	url = https://github.com/suriya-ganesh/docker_learn.git
