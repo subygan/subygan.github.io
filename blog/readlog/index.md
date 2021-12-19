@@ -4,6 +4,23 @@ emoji: 🧑🏻‍🏫
 layout: base
 ---
 
+##211219
+- https://www.hackerfactor.com/blog/index.php?/archives/895-Connecting-the-iDOTs.html
+  - TIL that companies can have custom headers and use it track stuff.
+- [https://training.kalzumeus.com/newsletters/archive/do-not-end-the-week-with-nothing](https://training.kalzumeus.com/newsletters/archive/do-not-end-the-week-with-nothing)
+  - Rered this, Incredible stuff about why I am doing this stuff
+
+##211218
+
+- [Mounting and Unmounting file system](https://docs.oracle.com/cd/E19455-01/805-7228/6j6q7ueup/index.html) 
+  - Basically new files can be mounted and unmounted based on the reuqirements.
+  - There is a `/etc/mnttab` file that keeps track fo the file system
+- [How signal does end-to-end encrypted group video calls ](https://signal.org/blog/how-to-build-encrypted-group-calls/)
+  - Signal engineering is pretty good. 
+  - the article goes into detail on how they handle key rotations on the fly and how signal makes sure that even the media forwarding servers that optimise content delivery are not able to view the data in calls.
+  - It's pretty good.
+  
+
 ## 211216
 - glupteba botnetwork litigation by google
   - Here's the technical write up [https://blog.google/threat-analysis-group/disrupting-glupteba-operation/](https://blog.google/threat-analysis-group/disrupting-glupteba-operation/)
