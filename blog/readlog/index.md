@@ -4,13 +4,37 @@ emoji: 🧑🏻‍🏫
 layout: base
 ---
 
-##211219
+
+## 211220
+
+- [https://medium.com/airbnb-engineering/designing-for-productivity-in-a-large-scale-ios-application-9376a430a0bf](https://medium.com/airbnb-engineering/designing-for-productivity-in-a-large-scale-ios-application-9376a430a0bf)
+  - AirBnb's journey into smoothening out ios build process.
+  - I didn't exactly understand half of what was said. I'll have relook later when I have a better understanding of stuff
+  
+- [Avoiding internet centralisation](https://mnot.github.io/avoiding-internet-centralization/draft-nottingham-avoiding-internet-centralization.html)
+  - Types of cenralization
+    - __Direct centralisation__ - eg. chat, messaging and videoconferencing protocol use this method
+    - __Neessary centralisation__ - eg. DNS, Certificate Authority (CA) due to technical limitations. 
+    - __Indirect Centralization__ - In theory all nodes in the Internet are equivalent. But realistically some nodes drive much of the traffic of the internet
+    - __Inherited Centralization__ - The network between two endpoints is a few stack below the OSI model. But whoever controls the network basically has control over the internet as well
+    - __Platform Centralisation__ - While the protocol itself doesn't maintain centralization. It enables centralised service providers to have more control Over others. eg HTTP
+  - __Limits of Decentralisation__ - there is no completely decentralised system. Although there has been some attempt at it. Centralisation starts evolving
+    - __Federation is not enough__ - SMTP was evolved as a method to have a decentralised way to receive message even when the underlying Network, IP or the server changes. One way it is done is, The DNS handles the finding the user part and the Mail Transfer Agent (MTA) can be used to route message to anyone. But this has created a situation where there are Indirectly centralised systems like Gmail. Who have much better network effects and are able to elbow other small players away.
+    - __Multi-Stakeholder Administration is hard__ - This is a model of centralisation where Multiple representatives from various stakeholders come together to decide on something. For example ICANN, CA, Browser Forum. These are a type of centralization but in some ways they are less centralised, as well
+    - __Blockchains are not magical__ - Blockchains try to reduce centralization risk by distributing intermediary or otherwise potentially centralized functions to members of a large pool of protocol participants. The assignment of a task usually cannot be controlled (to avoid sybill attacks). These prevent _direct centralization, inherited centralisation_. There are a few issues with this though
+      - __Distributed consensus protocols can have significant implications for privacy.__ Because all activities are shared with many unknown parties. Private Information Retrieval is incredibly (PIR) is incredibly easy
+      - A lot communication back and forth + proof-of-work makes the whole network inefficient,
+      - Distributed consensus protocol are still __not proven to scale__.
+      - Responsibilities are diffused to certain unknown parties in the network. Making, control and management very difficult.
+    - It is also possible that centralisation risk can happen elsewhere, eg, bitcoin trading places
+  
+## 211219
 - https://www.hackerfactor.com/blog/index.php?/archives/895-Connecting-the-iDOTs.html
   - TIL that companies can have custom headers and use it track stuff.
 - [https://training.kalzumeus.com/newsletters/archive/do-not-end-the-week-with-nothing](https://training.kalzumeus.com/newsletters/archive/do-not-end-the-week-with-nothing)
   - Rered this, Incredible stuff about why I am doing this stuff
 
-##211218
+## 211218
 
 - [Mounting and Unmounting file system](https://docs.oracle.com/cd/E19455-01/805-7228/6j6q7ueup/index.html) 
   - Basically new files can be mounted and unmounted based on the reuqirements.

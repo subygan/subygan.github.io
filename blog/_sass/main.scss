@@ -815,7 +815,13 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
 
-.highlighter-rouge .highlight { background: #fff; }
+.highlighter-rouge .highlight {
+  background: #fff;
+  min-width: 300px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
 
 .highlight .c { color: #998; font-style: italic; }
 
@@ -966,3 +972,4 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
                 }
             }
 	}
+
