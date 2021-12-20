@@ -6,7 +6,6 @@ module Jekyll
         everythin = []
         result = Set.new
         everythin
-        p "$$4"
         l = ""
 
         for page in pages
@@ -15,9 +14,6 @@ module Jekyll
                 if url.length != cur.length
                     stripped = url[cur.length-1..-1]
                     s = stripped.split('/',-1)
-#                     l+="#{page["emoji"]}[#{page["title"]}](#{url})\n"
-                    p "^^^"
-                    p s
                     if s.length() < 4
                         l+="<p>#{page["emoji"]}<a href=\"#{page["url"]}\">#{page["title"]}</a></p>\n"
                         result << s
@@ -26,8 +22,6 @@ module Jekyll
             end
            # code to be executed
         end
-        p result
-        p result.to_a
         pages[2]
         l
     end
