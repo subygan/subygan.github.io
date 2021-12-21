@@ -4,11 +4,17 @@ emoji: 🧑🏻‍🏫
 layout: base
 ---
 
+## 211221
+
+- [There's no such thing as a tree](https://eukaryotewritesblog.com/2021/05/02/)
+  - A pretty good primer on convergent evolution and such.
+  - The axolotl metamorphosis on exposure to hormones is... pretty disturbing.
+  
+- 
 
 ## 211220
 
-- [https://medium.com/airbnb-engineering/designing-for-productivity-in-a-large-scale-ios-application-9376a430a0bf](https://medium.com/airbnb-engineering/designing-for-productivity-in-a-large-scale-ios-application-9376a430a0bf)
-  - AirBnb's journey into smoothening out ios build process.
+- [AirBnb's journey into smoothening out ios build process.](https://medium.com/airbnb-engineering/designing-for-productivity-in-a-large-scale-ios-application-9376a430a0bf)
   - I didn't exactly understand half of what was said. I'll have relook later when I have a better understanding of stuff
   
 - [Avoiding internet centralisation](https://mnot.github.io/avoiding-internet-centralization/draft-nottingham-avoiding-internet-centralization.html)

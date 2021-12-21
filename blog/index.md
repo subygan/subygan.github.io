@@ -18,4 +18,8 @@ I try to write stuff I'm interested about, here.
 
 🧑🏻‍🏫[Readlog](/readlog)
 
+🦾[all](/all)
+
+🦏 [Feed](/feed.xml)
+
 
