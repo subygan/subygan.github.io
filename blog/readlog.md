@@ -2,6 +2,9 @@
 title: Readlog
 emoji: 🧑🏻‍🏫
 layout: base
+type: page
+description: I try to write about stuff I find around the internet here
+date: "now"
 ---
 
 ## 211221
@@ -9,8 +12,26 @@ layout: base
 - [There's no such thing as a tree](https://eukaryotewritesblog.com/2021/05/02/)
   - A pretty good primer on convergent evolution and such.
   - The axolotl metamorphosis on exposure to hormones is... pretty disturbing.
+  - The axolotl metamorphosis on exposure to hormones is... pretty disturbing.
   
-- 
+- for no Absolute reason Got curious of the growth of AdGrok Because, usually success stories are written with hindsight bias. [Here's the whole list](https://hn.algolia.com/?dateRange=all&page=0&prefix=true&query=adgrok&sort=byDate&type=story)
+  - So they basically built a type of alternative, simpler frontend for google ads and sold it
+  - Used the link bait from Antonio's blogs to drive traffic (he says so in a blog).
+  - Sold to twitter.
+  - But they seem to have had a pretty good product as well. a lot of good comments
+
+- [Symlink \[wiki\]](https://en.wikipedia.org/wiki/Symbolic_link)
+  - Symlink can map one folder with another. thereby linking them
+  - Most linux operations can be made on both folders but. deleting the symlink does not delete the target. `mv` and `cp` works the same way
+  - _Question: can symlink type thing be done between two files over an NFS?_
+- [How Big is 2<sup>256</sup> 3B1B \[Video\]](https://www.youtube.com/watch?v=S9JGmA5_unY)
+  - Its incredible how easy it is to forget, just how big some numbers are.
+  - I guess the law of large numbers still applies.
+- [RSS vs Atom](http://www.intertwingly.net/wiki/pie/Rss20AndAtom10Compared)
+  - Pretty good points. 
+  - It's interesting how protocols need to be non-private or copyrighted to usually work.
+  - I think, Privatizing a protocol is very analogous to privatizing english or spanish. It just won't work. Languages and protocols need to be free and open for mass adoption. and without that the protocols.
+  - Analogous thread in jekyll [https://github.com/jekyll/jekyll-feed/issues/2](https://github.com/jekyll/jekyll-feed/issues/2)
 
 ## 211220
 
