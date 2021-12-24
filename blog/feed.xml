@@ -18,7 +18,7 @@
 		{% for page in site.pages %}
 		{% if page.type == "page" %}
 			<item>
-				<title>{{ post.title | xml_escape }}</title>
+				<title>{{ page.title }}</title>
 				{% if page.author.name %}
 					<dc:creator>{{ page.author.name | xml_escape }}</dc:creator>
 				{% endif %}
