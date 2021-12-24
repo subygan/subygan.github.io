@@ -7,6 +7,18 @@ description: I try to write about stuff I find around the internet here
 date: "now"
 ---
 
+## 211224
+
+- [The Sucker Complex](https://itsjoeco.substack.com/p/the-sucker-complex)
+  - Interesting idea about how normalizing immorality makes it acceptable. And, I agree mostly with it.
+- [HN discussion on >$500/month side projects](https://news.ycombinator.com/item?id=29667095)
+  - Very interesting. I've only been exposed to the "giant" businesses. purely because they make so much noise. But Internet has so much untapped niches that can be useful in a lot of ways.
+
+## 211223
+
+- [My productivity tool for 13 years is a single txt file](https://jeffhuang.com/productivity_text_file/)
+  - Interesting observation is that the bottleneck for productivity is the muscle memory to reach out for a well known optima for productivity and the tools themselves matter very little.
+  
 ## 211221
 
 - [There's no such thing as a tree](https://eukaryotewritesblog.com/2021/05/02/)
