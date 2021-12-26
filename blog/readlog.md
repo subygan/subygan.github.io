@@ -7,6 +7,10 @@ description: I try to write about stuff I find around the internet here
 date: "now"
 ---
 
+## 211226
+- [HN thread on failed projects and lessons learned](https://news.ycombinator.com/item?id=29673707)
+- [HN thread how to validate demand for side-projects](https://news.ycombinator.com/item?id=29691811)
+
 ## 211224
 
 - [The Sucker Complex](https://itsjoeco.substack.com/p/the-sucker-complex)
