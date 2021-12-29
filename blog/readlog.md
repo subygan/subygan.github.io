@@ -6,10 +6,32 @@ type: page
 description: I try to write about stuff I find around the internet here
 date: "now"
 ---
+## 211229
+
+- [Kellblog Predictions for 2022 Kellblog](https://kellblog.com/2021/12/27/kellblog-predictions-for-2022/)
+- [“Play-to-earn” and Bullshit Jobs](https://paulbutler.org/2021/play-to-earn-and-bullshit-jobs/)
+  - Corollary to that, [Bullshit Jobs](https://www.strike.coop/bullshit-jobs/). David Graeber's bullshit jobs theory.
+
+
+## 211228
+
+- [FBI document on what data can be retrieved from messaging apps](https://therecord.media/fbi-document-shows-what-data-can-be-obtained-from-encrypted-messaging-apps/)
+  - Nobody is truly ever free...
+- [what is apt-get](https://www.cyberciti.biz/faq/what-does-sudo-apt-get-update-command-do-on-ubuntu-debian/)
+  - Downloads package information from the sources defined in `/etc/apt/sources.list`
+
+## 211227
+- [how to generate startup ideas \[video\]](https://youtu.be/uvw-u99yj8w)
 
 ## 211226
 - [HN thread on failed projects and lessons learned](https://news.ycombinator.com/item?id=29673707)
 - [HN thread how to validate demand for side-projects](https://news.ycombinator.com/item?id=29691811)
+- [Flight seat auction](https://edition.cnn.com/travel/article/airline-seat-auctions/index.html)
+  - Had a question whether flight seats can be sold in an auction based model. Seems, like it is already a thing 😅.
+- [Using DBs with serverless](https://www.serverless.com/blog/choosing-a-database-with-serverless)
+  - Traditional persistent DB connection with DB for serverless, adds a lot of cost to it.
+- [Hot reloading for django apps with docker](https://docs.docker.com/samples/django/)
+  - Basically we just mount the current directory to the app directory
 
 ## 211224
 
