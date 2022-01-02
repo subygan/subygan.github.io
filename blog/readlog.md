@@ -6,6 +6,17 @@ type: page
 description: I try to write about stuff I find around the internet here
 date: "now"
 ---
+
+## 220102
+- 
+
+## 211231
+- Was reading about Fabrice Bellard
+  - https://en.wikipedia.org/wiki/Fabrice_Bellard
+  - It's pretty crazy how much people are able to build.
+- [Adversarial Interoperability](https://www.eff.org/deeplinks/2019/10/adversarial-interoperability)
+-  [Companies with successful pivots](https://github.com/fikrikarim/companies-with-successful-pivot)
+
 ## 211229
 
 - [Kellblog Predictions for 2022 Kellblog](https://kellblog.com/2021/12/27/kellblog-predictions-for-2022/)
