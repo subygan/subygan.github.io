@@ -6,7 +6,10 @@ committed to the directory
 
 ### TODO
 
-- Simple sub indexing system in ruby.
+-[ ] 
+-[ ] Recent articles at the bottom/sides?
+-[ ] Make a simple navigation bar
+-[x] Simple sub indexing system in ruby.
 
 
 ## Workflow
