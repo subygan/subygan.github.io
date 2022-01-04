@@ -7,8 +7,20 @@ description: I try to write about stuff I find around the internet here
 date: "now"
 ---
 
+## 220103
+- [Ingo MOlnar's 2.3K commit patch](https://www.phoronix.com/scan.php?page=news_item&px=Linux-Fast-Kernel-Headers)
+  - [Associated email by ingo to linus, in the mailing list, interesting read](https://lore.kernel.org/lkml/YdIfz+LMewetSaEB@gmail.com/T/#u)
+- [Google library for fast serialisation - flatbuffers](https://google.github.io/flatbuffers/)
+- [You don't need cors](https://nickolinger.com/blog/2021-08-04-you-dont-need-that-cors-request/)
+- [An algorithm for passing programming interviews](https://malisper.me/an-algorithm-for-passing-programming-interviews/)
+
+- [70 first cofounder dates](https://abeclark.substack.com/p/70-first-co-founder-dates)
+- [The demise of Scientific American: Guest post by Ashutosh Jogalekar](https://scottaaronson.blog/?p=6202)
+  - It has been obvious for a long while that the study of science is deeply ingrained with the political and cultural norms. But what are we losing at the cost of politicising a supposedly pure field
+- [Engineering milestone to look out for, in 2022](https://spectrum.ieee.org/12-milestones-2022#toggle-gdpr)
+
 ## 220102
-- 
+- [Deserialising really fast](https://blog.datalust.co/deserializing-json-really-fast/)
 
 ## 211231
 - Was reading about Fabrice Bellard
