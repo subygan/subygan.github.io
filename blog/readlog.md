@@ -6,6 +6,16 @@ type: page
 description: I try to write about stuff I find around the internet here
 date: "now"
 ---
+## 
+## 220104
+- [What is the small web](https://ar.al/2020/08/07/what-is-the-small-web/)
+  - the logic is that, right now, all our computation are offloaded to the Big Techs. but in the future people will start owning their computation instead of companies and that is inevitable
+  - One problem I have is that, as long this small tech is not as easy to use as using google. Nobody is going to buy it. Especially the end users
+- [improve page loading incredibly](https://instant.page/)
+  - A smart way of increasing page load times. basically what this does is, prefetch pages if the hover is more than a certain time
+- [AskHN Successful small online businesses](https://news.ycombinator.com/item?id=21332072)
+  - Incredibly good thread on businesses. Very insightful. We really don't need crazy level ideas to make money. Even a simple problem with a small niche is enough.
+- [A tutorial on how video works](https://howvideo.works/#playback)
 
 ## 220103
 - [Ingo MOlnar's 2.3K commit patch](https://www.phoronix.com/scan.php?page=news_item&px=Linux-Fast-Kernel-Headers)
