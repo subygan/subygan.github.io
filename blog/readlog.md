@@ -6,7 +6,29 @@ type: page
 description: I try to write about stuff I find around the internet here
 date: "now"
 ---
-## 
+
+## 220106
+
+- [How polyhaven handles 80tb data transfer + 5m page views /month for < $400](https://blog.polyhaven.com/how-we-handle-80tb-and-5m-page-views-a-month-for-under-400/)
+- Weird programming stories 
+  - [My many Girlfriends](https://thedailywtf.com/articles/my-many-girlfriends)
+  - [The brilliant Paula Bean](https://thedailywtf.com/articles/The_Brillant_Paula_Bean)
+- [how 2022 will be like (1922)](https://www.loc.gov/resource/sn83045774/1922-05-07/ed-1?sp=87)
+  - It's interesting that computer or nuclear was not even in the scene of future.
+  - Just 100 years after, everybody has a (close to) supercomputer in their products.
+
+## 220105
+
+- [Solarwinds complaint summary](https://github.com/jaybobo/jaybobo/blob/main/docs/solarwinds-complaint/summary-solarwinds.md)
+  - I used to think, being a board of director is a zero risk simple Bourgeouis type of job. Turns out it is not.
+  - In this case, the shareholders of solarwinds are suing the present and past board of directors for the lack of security staffing and department which is required by the SEC. 
+- [Go gob](https://go.dev/blog/gob)
+  - gob is an additional binary serializer for golang.
+  - It helps to serialize and deserialize structs into binary.
+- [TC39 meeting notes 2021-12-14](https://github.com/tc39/notes/blob/master/meetings/2021-12/dec-14.md)
+  - I knew there was a team for deciding what features JS should have, But never thought it would be like a tight group of passionate people who were discusssing and making polls about what the name of a method should be in
+
+
 ## 220104
 - [What is the small web](https://ar.al/2020/08/07/what-is-the-small-web/)
   - the logic is that, right now, all our computation are offloaded to the Big Techs. but in the future people will start owning their computation instead of companies and that is inevitable

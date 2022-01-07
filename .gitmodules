@@ -4,3 +4,6 @@
 [submodule "blog/tech/docker_learn"]
 	path = blog/tech/docker_learn
 	url = https://github.com/suriya-ganesh/docker_learn.git
+[submodule "blog/tech/js_learn"]
+	path = blog/tech/js_learn
+	url = https://github.com/suriya-ganesh/js_learn.git
