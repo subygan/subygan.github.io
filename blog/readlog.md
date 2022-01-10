@@ -7,6 +7,28 @@ description: I try to write about stuff I find around the internet here
 date: "now"
 ---
 
+
+## 2022-01-09
+
+- [Moxie’s analysis on web3](https://moxie.org/2022/01/07/web3-first-impressions.html)
+  - [Counter argument to moxie’s comment](https://staltz.com/some-people-want-to-run-their-own-servers.html)
+  - [Replying to moxie](https://blog.plan99.net/re-moxie-on-web3-b0cfccd68067)
+- [Hyrum's law](https://www.hyrumslaw.com/#)
+  - Every Observable behaviour of an API becomes a feature
+- [The resolution of the Bitcoin experiment | by Mike Hearn | Mike’s blog ](https://blog.plan99.net/the-resolution-of-the-bitcoin-experiment-dabb30201f7)
+
+## 2022-01-07
+
+- [](https://news.ycombinator.com/item?id=29834753)
+- [](https://www.patjfin.com/blog/leaving-monaru)
+- [](https://www.patjfin.com/blog/leaving-monaru)
+- [](https://mindmatters.ai/2022/01/will-chatbots-replace-the-art-of-human-conversation/)
+- [](https://youtu.be/0LNQxT9LvM0)
+- [](https://youtu.be/C27RVio2rOs)
+- [](https://brennancolberg.com/blog/procrastinatory-doom-loops)
+- [](https://www.theatlantic.com/ideas/archive/2021/12/terminal-cancer-neuroscientist-prepares-death/621114/)
+Its crazy how fragile everything around us, is and yet we manage to navigate the world.
+
 ## 220106
 
 - [How polyhaven handles 80tb data transfer + 5m page views /month for < $400](https://blog.polyhaven.com/how-we-handle-80tb-and-5m-page-views-a-month-for-under-400/)
