@@ -19,15 +19,14 @@ date: "now"
 
 ## 2022-01-07
 
-- [](https://news.ycombinator.com/item?id=29834753)
-- [](https://www.patjfin.com/blog/leaving-monaru)
-- [](https://www.patjfin.com/blog/leaving-monaru)
-- [](https://mindmatters.ai/2022/01/will-chatbots-replace-the-art-of-human-conversation/)
-- [](https://youtu.be/0LNQxT9LvM0)
-- [](https://youtu.be/C27RVio2rOs)
-- [](https://brennancolberg.com/blog/procrastinatory-doom-loops)
-- [](https://www.theatlantic.com/ideas/archive/2021/12/terminal-cancer-neuroscientist-prepares-death/621114/)
-Its crazy how fragile everything around us, is and yet we manage to navigate the world.
+- [Salary Data is for sale \[HN\]]](https://news.ycombinator.com/item?id=29834753)
+- [Founder Burnout](https://www.patjfin.com/blog/leaving-monaru)
+- [The advent of dumb chatbots](https://mindmatters.ai/2022/01/will-chatbots-replace-the-art-of-human-conversation/)
+- [Finding Pruduct market fit \[video\]](https://youtu.be/0LNQxT9LvM0)
+- [Building products](https://youtu.be/C27RVio2rOs)
+- [Procrastinatory doomloops](https://brennancolberg.com/blog/procrastinatory-doom-loops)
+- [neuroscientist with terminal cancer prepares for death](https://www.theatlantic.com/ideas/archive/2021/12/terminal-cancer-neuroscientist-prepares-death/621114/)
+  - Its crazy how fragile everything around us, is and yet we manage to navigate the world.
 
 ## 220106
 
