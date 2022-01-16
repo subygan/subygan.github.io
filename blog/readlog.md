@@ -8,6 +8,55 @@ date: "now"
 ---
 
 
+## 2022-01-16
+
+- [mental pivot-60 mind the fundamentals.](https://mentalpivot.substack.com/p/mental-pivot-60-mind-the-fundamentals)
+- [doing the work](https://meowni.ca/posts/doing-the-work/)
+- [The Swimmer’s Body Illusion | Jesús Gil Hernández ](https://jesusgilhernandez.com/2013/12/05/the-swimmers-body-illusion/)
+
+## 2022-01-14
+
+- [Michael Tsai - Blog - Catching Native Apps ](https://mjtsai.com/blog/2022/01/12/catching-native-apps/)
+- [Layout thrashing avoidance google blog](https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing)
+- [how does a debugger work](https://stackoverflow.com/questions/216819/how-does-a-debugger-work)
+- [cost of attrition](https://benjiweber.co.uk/blog/2022/01/12/cost-of-attrition/)
+- [anonymous structs in golang](https://qvault.io/golang/anonymous-structs-golang/)
+
+## 2022-01-13
+
+- [GitHub Copilot Can Do More Than Just Code](https://dagshub.com/blog/github-copilot-not-code/)
+- [5.5 mm in 1.25 nanoseconds | Random ASCII - tech blog of Bruce Dawson](https://randomascii.wordpress.com/2022/01/12/5-5-mm-in-1-25-nanoseconds/)
+
+
+## 2022-01-12
+
+- [Is the madness ever going to end](https://unixsheikh.com/articles/is-the-madness-ever-going-to-end.html)
+- [China's top education firm's cut 60,000 jobs](https://www.bloomberg.com/news/articles/2022-01-10/china-s-top-education-firm-cut-60-000-jobs-after-tutoring-curbs)
+  - A pretty good reminder that, most "tech" companies seem to be working (?) under only the premise that there will be little to no regulation from the government. This makes sense...
+- [Plc4x Open source project shutting down it's free support.](https://github.com/chrisdutz/blog/blob/main/plc4x/free-trial-expired.adoc)
+
+
+## 2022-01-11
+
+- [Is Google Search Deteriorating? Measuring Google's Search Quality in 2022](https://www.surgehq.ai/blog/is-google-search-deteriorating-measuring-search-quality-in-2022)
+- [The Ones Who Walk Away from Omelas](https://en.wikipedia.org/wiki/-The_Ones_Who_Walk_Away_from_Omelas#%3A%7E%3Atext%3D%22The_Ones_Who_Walk_Away_from_Omelas%22_is_a_1973%2Cmisery_of_a_single_child.?wprov=sfla1)
+  - Am i walking away from mine?
+- [The Optional Chaining Operator, “Modern” Browsers, and My Mom - Jim Nielsen’s Blog](https://blog.jim-nielsen.com/2022/a-web-for-all/)
+
+
+
+## 2022-01-10
+
+- [](https://betterprogramming.pub/flutter-failed-to-solve-the-biggest-challenge-for-our-cross-platform-app-c551afa0ef18)
+- [Go struct ordering](https://wagslane.dev/posts/go-struct-ordering/)
+  - [Related, ](https://en.wikipedia.org/wiki/Data_structure_alignment)
+- [Poe's law](https://en.wikipedia.org/wiki/Poe%27s_law)
+- [Cryptoland discussion HN](https://news.ycombinator.com/item?id=29867057)
+- [Swapnil's computer systems readup](https://one.nilinswap.com/blog/readlog/books/computer_systems) Even though a summary, learnt some insightful stuff.
+- [Banks are making it easier to get credit cards](https://www.wsj.com/articles/banks-are-making-it-easier-to-get-credit-cards-11641736806)
+- [Why can't programmers program](https://blog.codinghorror.com/why-cant-programmers-program/)
+
+
 ## 2022-01-09
 
 - [Moxie’s analysis on web3](https://moxie.org/2022/01/07/web3-first-impressions.html)
@@ -15,7 +64,7 @@ date: "now"
   - [Replying to moxie](https://blog.plan99.net/re-moxie-on-web3-b0cfccd68067)
 - [Hyrum's law](https://www.hyrumslaw.com/#)
   - Every Observable behaviour of an API becomes a feature
-- [The resolution of the Bitcoin experiment | by Mike Hearn | Mike’s blog ](https://blog.plan99.net/the-resolution-of-the-bitcoin-experiment-dabb30201f7)
+- [The resolution of the Bitcoin experiment \| by Mike Hearn \| Mike’s blog ](https://blog.plan99.net/the-resolution-of-the-bitcoin-experiment-dabb30201f7)
 
 ## 2022-01-07
 
