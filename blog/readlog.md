@@ -12,7 +12,7 @@ date: "now"
 
 - [mental pivot-60 mind the fundamentals.](https://mentalpivot.substack.com/p/mental-pivot-60-mind-the-fundamentals)
 - [doing the work](https://meowni.ca/posts/doing-the-work/)
-- [The Swimmer’s Body Illusion | Jesús Gil Hernández ](https://jesusgilhernandez.com/2013/12/05/the-swimmers-body-illusion/)
+- [The Swimmer’s Body Illusion \| Jesús Gil Hernández ](https://jesusgilhernandez.com/2013/12/05/the-swimmers-body-illusion/)
 
 ## 2022-01-14
 
@@ -25,7 +25,7 @@ date: "now"
 ## 2022-01-13
 
 - [GitHub Copilot Can Do More Than Just Code](https://dagshub.com/blog/github-copilot-not-code/)
-- [5.5 mm in 1.25 nanoseconds | Random ASCII - tech blog of Bruce Dawson](https://randomascii.wordpress.com/2022/01/12/5-5-mm-in-1-25-nanoseconds/)
+- [5.5 mm in 1.25 nanoseconds \| Random ASCII - tech blog of Bruce Dawson](https://randomascii.wordpress.com/2022/01/12/5-5-mm-in-1-25-nanoseconds/)
 
 
 ## 2022-01-12
