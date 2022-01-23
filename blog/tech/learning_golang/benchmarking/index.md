@@ -58,7 +58,7 @@ Flags :
 
 The number of threads used is shown as <test_name>-<thread_count> in the result
 
-![alt text](/assets/images/benchmark.png)
+![benchmarking](/assets/images/benchmark.png)
 
 There are 5 columns in the result. For some reason it's not annotated the arrangement is like,
 
