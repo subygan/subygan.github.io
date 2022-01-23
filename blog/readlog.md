@@ -13,6 +13,8 @@ date: "now"
 - [mental pivot-60 mind the fundamentals.](https://mentalpivot.substack.com/p/mental-pivot-60-mind-the-fundamentals)
 - [doing the work](https://meowni.ca/posts/doing-the-work/)
 - [The Swimmer’s Body Illusion \| Jesús Gil Hernández ](https://jesusgilhernandez.com/2013/12/05/the-swimmers-body-illusion/)
+- [](https://martinfowler.com/articles/cant-buy-integration.html#TreatIntegrationAsStrategicToYourBusiness)
+- [Don’t be ideological - by Thomas Prosser](https://thomasprosser.substack.com/p/dont-be-ideological)
 
 ## 2022-01-14
 
