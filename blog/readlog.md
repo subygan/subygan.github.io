@@ -8,6 +8,45 @@ date: "now"
 ---
 
 
+## 2022-01-22
+
+- [AWS is not a dumb pipe](https://matt-rickard.com/aws-is-not-a-dumb-pipe/)
+
+## 2022-01-20
+
+- [When Cigarette Companies Used Doctors to Push Smoking - HISTORY](https://archive.is/2019.06.30-151731/https://www.history.com/news/cigarette-ads-doctors-smoking-endorsement)
+  - A cautionary tale on why believing in science is not necessarily optimal. Science is as much a budding field as any. and mistakes have been made and will be made.
+- [Tech questions for 2022](https://www.ben-evans.com/benedictevans/2022/1/2/2022-questions)
+- [Are we really engineers](https://www.hillelwayne.com/post/are-we-really-engineers/)
+
+
+## 2022-01-19
+
+- [the global creators who broke through in 2021](https://restofworld.org/2021/global-creators-who-broke-through-in-2021/?ref=refind#/gil-croes-a-caribbean)
+- [What goes into making an OS Unix compliant](https://www.quora.com/What-goes-into-making-an-OS-to-be-Unix-compliant-certified)
+  - Not all things are done by the people in the forefront.
+- [Myths about the golden ratio](https://plus.maths.org/content/myths-maths-golden-ratio)
+
+
+## 2022-01-18
+
+- [Dependency Risk and Funding](http://lucumr.pocoo.org/2022/1/10/dependency-risk-and-funding)
+- [The Philosophy of work HN](https://news.ycombinator.com/item?id=29926085)
+  - [the Philosophy of work PDF](https://www.ucl.ac.uk/laws/sites/laws/files/philosophy_of_work.pdf)
+- [ArXIV reaches a milestone and a reckoning](https://www.scientificamerican.com/article/arxiv-org-reaches-a-milestone-and-a-reckoning/)
+  - Its sad that the top requirements of society are having to trudge along with minimal to no funding while, ad spewing growth machines are billion dollar companies
+- [Software Bill of Materials](https://blog.chainguard.dev/what-an-sbom-can-do-for-you/)
+- [The computers in your head](https://jacobbrazeal.wordpress.com/2022/01/17/those-computers-in-your-head/)
+- [Why its great to be a consultant](https://zwischenzugs.com/2022/01/17/why-its-great-to-be-a-consultant/)
+
+## 2022-01-17
+
+- [The minimal viable program](https://joearms.github.io/published/2014-06-25-minimal-viable-program.html)
+- [The curious case of raspi in our network](https://blog.haschek.at/2019/the-curious-case-of-the-RasPi-in-our-network.html)
+- [Anatomy of bitcoin price manipulation](https://www.singlelunch.com/2022/01/09/an-anatomy-of-bitcoin-price-manipulation/)
+- [Netflix and cable prices](https://www.interneteconomist.com/netflix-and-cable-prices/)
+  - It's interesting that "economies of scale" that worked for Amazon, doesn't seem to be working for Netflix. How the hell are they spending $72 per customer for content while getting $12 dollars?? It's insane....
+
 ## 2022-01-16
 
 - [mental pivot-60 mind the fundamentals.](https://mentalpivot.substack.com/p/mental-pivot-60-mind-the-fundamentals)
