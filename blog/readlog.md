@@ -7,6 +7,36 @@ description: I try to write about stuff I find around the internet here
 date: "now"
 ---
 
+## 2022-01-25
+
+- [Motherfuckingwebsite](http://motherfuckingwebsite.com/), Build a simple website. not complex one
+- [Gemini protocol is solutionism at its worst](https://xn--gckvb8fzb.com/gemini-is-solutionism-at-its-worst/)
+  - The argument makes sense. But the point that the author misses is that, The whole point of the protocol is a sort of tech elitism. Sort of like the Nobel winners club or even the Royal institute of science.
+- [simian quant](https://simianquant.com/technology/context/)
+- [](https://simianquant.com/blog/systembiologysqopensource/)
+- [](https://en.wikipedia.org/wiki/RFB_protocol)
+  - Seems like a lot of companies are spawning around this idea.. Is it a bigger scheme, where everything is moving to the cloud?
+  - [neverinstall website](https://neverinstall.com/en-IN)
+
+## 2022-01-24
+
+- [](https://www.stephendiehl.com/blog/against-crypto.html?ref=refind)
+- [](https://www.kooslooijesteijn.net/blog/web3?ref=refind)
+- [](https://docs.google.com/document/d/1_jsXVrm5VtPr7VPkhTmiTWa2Ve4zBKyPAH8Yi6fDzv0/edit)
+- [](https://www.poynter.org/fact-checking/2022/an-open-letter-to-youtubes-ceo-from-the-worlds-fact-checkers/?ref=refind)
+- [](https://it-notes.dragas.net/2022/01/24/why-were-migrating-many-of-our-servers-from-linux-to-freebsd/)
+
+## 2022-01-23
+
+- [](https://mentalpivot.substack.com/p/mental-pivot-61-the-innovative-question?)
+- [](https://www.raptitude.com/2022/01/everything-must-be-paid-for-twice/)
+- [](https://newsletter.bringthedonuts.com/p/reflecting-on-a-career-in-product)
+- [](https://fakenous.net/?p=2757)
+- [](https://www.unixsheikh.com/articles/choose-your-browser-carefully.html)
+- [](https://fs.blog/spacing-effect/)
+
+
+
 
 ## 2022-01-22
 
@@ -88,7 +118,7 @@ date: "now"
 
 ## 2022-01-10
 
-- [](https://betterprogramming.pub/flutter-failed-to-solve-the-biggest-challenge-for-our-cross-platform-app-c551afa0ef18)
+- [Flutter failed to solve the cross platform app challenge.](https://betterprogramming.pub/flutter-failed-to-solve-the-biggest-challenge-for-our-cross-platform-app-c551afa0ef18)
 - [Go struct ordering](https://wagslane.dev/posts/go-struct-ordering/)
   - [Related, ](https://en.wikipedia.org/wiki/Data_structure_alignment)
 - [Poe's law](https://en.wikipedia.org/wiki/Poe%27s_law)

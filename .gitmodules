@@ -7,3 +7,6 @@
 [submodule "blog/tech/js_learn"]
 	path = blog/tech/js_learn
 	url = https://github.com/suriya-ganesh/js_learn.git
+[submodule "blog/tech/github_action_learn"]
+	path = blog/tech/github_action_learn
+	url = https://github.com/suriya-ganesh/github_action_learn.git
