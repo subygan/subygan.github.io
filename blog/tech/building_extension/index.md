@@ -36,6 +36,10 @@ This is the thing that gets displayed when the icon is clicked from the window.
 
 Popup js is should be sent with the app bundle and loaded from `popup.html` and it can't be loaded from third party site as the Content Security policy prevents it.
 
+### Messaging passing
+
+`popup.js`, `content-script` and `background script` all talk with each other by passing messages with each other by using the 
+
 ### stuff I found useful
 
 - [Chrome extension V3](https://github.com/SimGus/chrome-extension-v3-starter)

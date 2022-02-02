@@ -15,7 +15,7 @@ module Jekyll
                     stripped = url[cur.length-1..-1]
                     s = stripped.split('/',-1)
                     if s.length() < 4
-                        l+="<p>#{page["emoji"]}<a href=\"#{page["url"]}\">#{page["title"]}</a></p>\n"
+                        l+="<p>#{page["emoji"]}  <a href=\"#{page["url"]}\">#{page["title"]}</a></p>\n"
                         result << s
                     end
                 end

@@ -8,18 +8,18 @@ description: Suriya
 I try to write stuff I'm interested about, here.
 
 
-💻[tech](tech)
+💻  [tech](tech)
 
-🦋[meta](/meta)
+🦋  [meta](/meta)
 
-🧙🏻[about](/about)
+🧙🏻  [about](/about)
 
-🐵[now](/now)
+🐵  [now](/now)
 
-🧑🏻‍🏫[Readlog](/readlog)
+🧑🏻‍🏫  [Readlog](/readlog)
 
-🦾[all](/all)
+🦾  [all](/all)
 
-🦏 [Feed](/feed.xml)
+🦏   [Feed](/feed.xml)
 
 
