@@ -9,18 +9,18 @@ date: "now"
 
 ## 2022-02-02
 
-- [Never ignore a recruiter](https://alexchesser.medium.com/career-advice-nobody-gave-me-never-ignore-a-recruiter-4474eac9556)
-- [Nodejs diverges from spec to integrate the fetch API for the server](https://github.com/nodejs/node/pull/41749#issuecomment-1025473227)
-- [Year 2038 problem](https://en.m.wikipedia.org/wiki/Year_2038_problem)
+- [Never ignore a recruiter](https://alexchesser.medium.com/career-advice-nobody-gave-me-never-ignore-a-recruiter-4474eac9556){:target="_blank"}
+- [Nodejs diverges from spec to integrate the fetch API for the server](https://github.com/nodejs/node/pull/41749#issuecomment-1025473227){:target="_blank"}
+- [Year 2038 problem](https://en.m.wikipedia.org/wiki/Year_2038_problem){:target="_blank"}
 
 ## 2022-02-01
 
-- [note web assembly closely](https://harshal.sheth.io/2022/01/31/webassembly.html)
+- [note web assembly closely](https://harshal.sheth.io/2022/01/31/webassembly.html){:target="_blank"}
   - Web assembly outside the browser seems like an interesting use case. 
-  - Service workers are how [fly.io](https://fly.io) and  [cloudflare workers](https://workers.cloudflare.com/) seem to have achieved "zero cold starts" while AWS lambda have few second cold starts
+  - Service workers are how [fly.io](https://fly.io){:target="_blank"} and  [cloudflare workers](https://workers.cloudflare.com/){:target="_blank"} seem to have achieved "zero cold starts" while AWS lambda have few second cold starts
   - Web assembly in the server would usher in new abstraction layer for serverless which is far more interesting.
-- [Abstract Syntax trees](https://jotadeveloper.medium.com/abstract-syntax-trees-on-javascript-534e33361fc7)
-- [Replacing react native library as an attack](https://github.com/facebook/react-native/issues/13094)
+- [Abstract Syntax trees](https://jotadeveloper.medium.com/abstract-syntax-trees-on-javascript-534e33361fc7){:target="_blank"}
+- [Replacing react native library as an attack](https://github.com/facebook/react-native/issues/13094){:target="_blank"}
 - [Flutter vs react Native](https://www.thedroidsonroids.com/blog/flutter-vs-react-native-what-to-choose-in-2021){:target="_blank"}
 - [kotlin vs xamarin vs flutter vs react native ](https://doit.software/blog/flutter-vs-kotlin-which-is-best-for-cross-platform-app-development#screen26){:target="_blank"}
     - A pretty comprehensive explanation of everything involved
@@ -44,49 +44,49 @@ date: "now"
 
 ## 2022-01-31
 
-- [Manna short story](https://marshallbrain.com/manna)
-- [Microsoft document on OSS \(1995\)](http://iowa.gotthefacts.org/011607/6000/PX06501.pdf)
-- [ptbarnum - humbug](http://www.ptbarnum.org/humbugs.html)
+- [Manna short story](https://marshallbrain.com/manna){:target="_blank"}
+- [Microsoft document on OSS \(1995\){:target="_blank"}](http://iowa.gotthefacts.org/011607/6000/PX06501.pdf){:target="_blank"}
+- [ptbarnum - humbug](http://www.ptbarnum.org/humbugs.html){:target="_blank"}
   - PT Barnum seems like a pretty interesting guy.
-  - [This way to egress](http://www.ptbarnum.org/egress.html)
-- [How Bacteriophage, a virus helped a woman survive](https://english.elpais.com/usa/2022-01-27/how-a-virus-helped-a-woman-survive-a-dangerous-antibiotic-resistant-infection.html)
-  - Western medicine gets a lot of clout for "pushing the boundaries", like in the article. But there is far more better research going on around the world with far little resources like int [this video](https://www.youtube.com/watch?v=Ee4EvVFTxIM)
-- [Midori, the language that could have been](https://joeduffyblog.com/2015/11/03/blogging-about-midori/)
+  - [This way to egress](http://www.ptbarnum.org/egress.html){:target="_blank"}
+- [How Bacteriophage, a virus helped a woman survive](https://english.elpais.com/usa/2022-01-27/how-a-virus-helped-a-woman-survive-a-dangerous-antibiotic-resistant-infection.html){:target="_blank"}
+  - Western medicine gets a lot of clout for "pushing the boundaries", like in the article. But there is far more better research going on around the world with far little resources like int [this video](https://www.youtube.com/watch?v=Ee4EvVFTxIM){:target="_blank"}
+- [Midori, the language that could have been](https://joeduffyblog.com/2015/11/03/blogging-about-midori/){:target="_blank"}
   - Midori is a killed project from microsoft for cross platform application
-- [How does the server use session key after the TLS handshake?](https://security.stackexchange.com/questions/194723/how-does-server-use-session-key-after-tls-handshake)
+- [How does the server use session key after the TLS handshake?](https://security.stackexchange.com/questions/194723/how-does-server-use-session-key-after-tls-handshake){:target="_blank"}
   - Basically the key is associated with that TLS session and it changes in two scenarios, changing tls key and session resumption.
 
 ## 2022-01-30
 
-- [What is the difference between statically linked and dynamically linked](https://stackoverflow.com/questions/311882/what-do-statically-linked-and-dynamically-linked-mean#:~:text=Statically%2Dlinked%20files%20are%20'locked,every%20time%20you%20run%20it.)
-- [Smedley Butler on Interventionism](https://man.fas.org/smedley.htm)
+- [What is the difference between statically linked and dynamically linked](https://stackoverflow.com/questions/311882/what-do-statically-linked-and-dynamically-linked-mean#:~:text=Statically%2Dlinked%20files%20are%20'locked,every%20time%20you%20run%20it.){:target="_blank"}
+- [Smedley Butler on Interventionism](https://man.fas.org/smedley.htm){:target="_blank"}
   - One thing that really vibed with me in this article is that "War is just a racket"
   - And that is true for all nations sinking trillions upon trillions in Armed forces maintanence
-- [Defi crash course for crypto](https://noahpinion.substack.com/p/a-defi-crash-course-for-normies-crypto?ref=refind)
-- [Innovations that make Solana the first web scale blockchain](https://medium.com/solana-labs/7-innovations-that-make-solana-the-first-web-scale-blockchain-ddc50b1defda)
-- [What is anchorNode , baseNode , extentNode and focusNode in the object returned by document.getSelection?](https://stackoverflow.com/questions/27241281/what-is-anchornode-basenode-extentnode-and-focusnode-in-the-object-returned)
-- [Watching bad financial advice on social media](https://www.vice.com/en/article/5dg5qz/what-you-learn-from-a-year-of-watching-bad-financial-advice-on-tiktok)
+- [Defi crash course for crypto](https://noahpinion.substack.com/p/a-defi-crash-course-for-normies-crypto?ref=refind){:target="_blank"}
+- [Innovations that make Solana the first web scale blockchain](https://medium.com/solana-labs/7-innovations-that-make-solana-the-first-web-scale-blockchain-ddc50b1defda){:target="_blank"}
+- [What is anchorNode , baseNode , extentNode and focusNode in the object returned by document.getSelection?](https://stackoverflow.com/questions/27241281/what-is-anchornode-basenode-extentnode-and-focusnode-in-the-object-returned){:target="_blank"}
+- [Watching bad financial advice on social media](https://www.vice.com/en/article/5dg5qz/what-you-learn-from-a-year-of-watching-bad-financial-advice-on-tiktok){:target="_blank"}
   - There will always be people selling to snake oil to "suckers".
   - Being skeptical about free advice seems to be a good rule of thumb
-- [Brandolini's law of Bullshit asymmetry](https://artsandculture.google.com/entity/brandolini-s-law/g11ddz0b12h?hl=en)
+- [Brandolini's law of Bullshit asymmetry](https://artsandculture.google.com/entity/brandolini-s-law/g11ddz0b12h?hl=en){:target="_blank"}
   - A bullshitter can bullshit in five minutes, what a scientist would take a life time to prove.
   - Generating bullshit content is infinitely more easier than fighting to disprove them
 
 ## 2022-01-29
-- [The business of pivoting](https://mentalpivot.substack.com/p/mental-pivot-62-the-business-of-pivoting)
+- [The business of pivoting](https://mentalpivot.substack.com/p/mental-pivot-62-the-business-of-pivoting){:target="_blank"}
 
 ## 2022-01-28
 
-- [University of waterloo Open educational links](http://wsic.uwaterloo.ca/wiki/Open_Educational_links/)
+- [University of waterloo Open educational links](http://wsic.uwaterloo.ca/wiki/Open_Educational_links/){:target="_blank"}
   - Nice collection of interesting stuff, even if most of the stuff is outdated.
 
 ## 2022-01-26
 
-- [Nature making articles open access](https://www.nature.com/articles/s41593-021-00995-2)
+- [Nature making articles open access](https://www.nature.com/articles/s41593-021-00995-2){:target="_blank"}
   - It's nice that articles are opening up. is Elbakyan to be thanked for?
-- [Facebook libra is DOA](https://davidgerard.co.uk/blockchain/2022/01/26/facebooks-libra-is-still-dead-diem-to-be-sold-off-for-spare-parts/)
+- [Facebook libra is DOA](https://davidgerard.co.uk/blockchain/2022/01/26/facebooks-libra-is-still-dead-diem-to-be-sold-off-for-spare-parts/){:target="_blank"}
   - IMO I don't find facebook's blockchain move any stupider than the whole blockchain movement itself.
-- [Ads plugin steals 30% of the user's money](https://kvirkvelia.com/ads-plugin-steals-30-of-your-money/)
+- [Ads plugin steals 30% of the user's money](https://kvirkvelia.com/ads-plugin-steals-30-of-your-money/){:target="_blank"}
   - Its pretty smart to inject admob onto the site that uses the plugin. while I'm confused about the ethicality of the library author. It's an interesting business model as well.
 
 ## 2022-01-25
@@ -114,10 +114,13 @@ date: "now"
 ## 2022-01-23
 
 - [](https://mentalpivot.substack.com/p/mental-pivot-61-the-innovative-question?){:target="_blank"}
-- [](https://www.raptitude.com/2022/01/everything-must-be-paid-for-twice/){:target="_blank"}
-- [](https://newsletter.bringthedonuts.com/p/reflecting-on-a-career-in-product){:target="_blank"}
-- [](https://fakenous.net/?p=2757){:target="_blank"}
-- [](https://www.unixsheikh.com/articles/choose-your-browser-carefully.html){:target="_blank"}
+- [Everything must be paid for twice](https://www.raptitude.com/2022/01/everything-must-be-paid-for-twice/){:target="_blank"}
+  - I used to have that you would have to pay 40% of the total price
+- [Reflecting on a career in product](https://newsletter.bringthedonuts.com/p/reflecting-on-a-career-in-product){:target="_blank"}
+- [Why I am not a utilitarian](https://fakenous.net/?p=2757){:target="_blank"}
+  - While the argument seems logical. The presupposing notion seems to be that utilitarianism vs hedonism is a discrete thing. But, that is not necessarily true.
+  - The path between utilitarian and hedonism is discrete and finding the right balance is important rather than the truly edge cases which is being 
+- [Choose your browser carefully](https://www.unixsheikh.com/articles/choose-your-browser-carefully.html){:target="_blank"}
 - [](https://fs.blog/spacing-effect/){:target="_blank"}
 
 ## 2022-01-22
