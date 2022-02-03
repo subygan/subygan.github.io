@@ -45,7 +45,7 @@ date: "now"
 ## 2022-01-31
 
 - [Manna short story](https://marshallbrain.com/manna){:target="_blank"}
-- [Microsoft document on OSS \(1995\){:target="_blank"}](http://iowa.gotthefacts.org/011607/6000/PX06501.pdf){:target="_blank"}
+- [Microsoft document on OSS \(1995\)](http://iowa.gotthefacts.org/011607/6000/PX06501.pdf){:target="_blank"}
 - [ptbarnum - humbug](http://www.ptbarnum.org/humbugs.html){:target="_blank"}
   - PT Barnum seems like a pretty interesting guy.
   - [This way to egress](http://www.ptbarnum.org/egress.html){:target="_blank"}
