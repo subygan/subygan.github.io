@@ -64,10 +64,15 @@ As far as I've seen React Native feels like a mix of so many things. its a suble
 
 examples: Coinbase, shopify, flipkart and [others](https://github.com/ReactNativeNews/React-Native-Apps){:target="_blank"}
 
+Personal notes:
+- the hot reload is nice
 
 ### [Qt](https://www.qt.io/){:target="_blank"}
 
 Qt is a cross platform proprietory framework that is being used by a lot of applications. they provide a free version with an [LGpl](https://www.gnu.org/licenses/lgpl-3.0.en.html) license and link the app dynamically instead of statically. Which, might satisfying for most application. Also, it requires you to write in  `c++` and does not exactly support android. The widgets can get old. and new native features might be a bit late to come by.
+
+Personal notes:
+- Having to use a proprietary IDE for development is annoying
 
 example apps: telegram, skype
 
@@ -76,6 +81,17 @@ example apps: telegram, skype
 Flutter is a multiplatform application development framework which uses dart as a main language. It's relatively new, being published in 2019. It supports android, ios, macOS, linux, windows and web. And runs in [near native performance](https://medium.com/swlh/flutter-vs-native-vs-react-native-examining-performance-31338f081980). It does not use native components directly, like React native instead choosing to paint all the widgets using the [Skia](https://skia.org/) 2d rendering engine, which means the widgets aren't exactly native but native-like. 
 
 examples: Zomato, Zerodha and [others](https://flutter.dev/showcase)
+
+### [Kotlin](https://kotlinlang.org/docs/multiplatform.html)
+
+Kotlin Multiplatform is a framework build on top of kotlin to build apps for multiple platforms including, web, tvOS, macOS, android, ios. Kotlin skews more towards business logic and is heavy in that angle. It works by having custom modules for seperate platforms and one unifying part. Since Kotlin, has complete backward compatibility with Java and runs in the JVM, it is able to support multiple platforms.
+
+personal notes:
+
+- having tried to develop android apps, the whole setup is huge and heavy. Android studio + adb just sucks up a lot of memory.
+- There is no hot reload. Meaning the feedback loop is incredibly slow.
+- Kotlin is pretty easy to pick up.
+
 
 ## Resources I found useful
 
@@ -99,3 +115,4 @@ examples: Zomato, Zerodha and [others](https://flutter.dev/showcase)
     - They seem to love it.
 - [Flutter vs React Native](https://www.youtube.com/watch?v=X8ipUgXH6jw){:target="_blank"}
 - [flutter, RN, swift objective C performance benchmark ](https://medium.com/swlh/flutter-vs-native-vs-react-native-examining-performance-31338f081980){:target="_blank"}
+- [React native issues and positives at shopify](https://shopify.engineering/managing-native-code-react-native){:target="_blank"}
