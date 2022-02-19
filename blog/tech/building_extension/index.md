@@ -38,7 +38,11 @@ Popup js is should be sent with the app bundle and loaded from `popup.html` and 
 
 ### Messaging passing
 
-`popup.js`, `content-script` and `background script` all talk with each other by passing messages with each other by using the 
+`popup.js`, `content-script` and `background script` all talk with each other by passing messages with each other by using the [chrome messages api](https://developer.chrome.com/docs/extensions/mv3/messaging/).
+
+### [Chrome.scripting](https://developer.chrome.com/docs/extensions/reference/scripting/) API
+
+this api can be used to execute arbitrary script in a tab.
 
 ### stuff I found useful
 
