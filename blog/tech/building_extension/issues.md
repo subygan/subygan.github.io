@@ -13,4 +13,4 @@ This happens when trying to load the extension. the manifest.json was pointing t
 
 ### Changes failing to load in the page we are testing or no changes
 
-Reload the page. The content script that is applied to a page does not change after we reload the extension. It has to 
+Reload the page. The content script that is applied to a page does not change after we reload the extension. It has to be reloaded to apply the newly spawned content scripts.

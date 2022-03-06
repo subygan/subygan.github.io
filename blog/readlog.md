@@ -8,120 +8,121 @@ date: "now"
 ---
 ## 2022-02-18
 
-- [Don't point out something wrong immediately](https://blog.the-pans.com/wrong/)
+- [Don't point out something wrong immediately](https://blog.the-pans.com/wrong/){:target="_blank"}
   - you probably don't have the full context
   - __listen and wait__
-- [No one cares about your redesign](https://www.garbageday.email/p/no-one-cares-about-your-redesign?utm_source=url)
-- [don't fly during ramadan](https://varnull.adityamukerjee.net/2013/08/22/dont-fly-during-ramadan/)
-- [The day appget died](https://keivan.io/the-day-appget-died/)
+- [No one cares about your redesign](https://www.garbageday.email/p/no-one-cares-about-your-redesign?utm_source=url){:target="_blank"}
+- [don't fly during ramadan](https://varnull.adityamukerjee.net/2013/08/22/dont-fly-during-ramadan/){:target="_blank"}
+- [The day appget died](https://keivan.io/the-day-appget-died/){:target="_blank"}
   - At the end of the day corporations are just corporations, and they will always corporate. irrespective of the PR BS
-- [Rust's purpose](http://blog.pnkfx.org/blog/2022/02/09/what-is-rusts-hole-purpose/)
+- [Rust's purpose](http://blog.pnkfx.org/blog/2022/02/09/what-is-rusts-hole-purpose/){:target="_blank"}
   - Is memory safety such a big concern that it vouches a new language
-- [People don't want a drill they want a hole, but it doesn't go far enough](https://web.archive.org/web/20210121105408/https://www.websearchsocial.com/why-that-whole-people-dont-want-a-drill-they-want-a-hole-thing-doesnt-go-far-enough/)
+- [People don't want a drill they want a hole, but it doesn't go far enough](https://web.archive.org/web/20210121105408/https://www.websearchsocial.com/why-that-whole-people-dont-want-a-drill-they-want-a-hole-thing-doesnt-go-far-enough/){:target="_blank"}
   - it should be easy to take the narrative a little longer. And interestingly this is what modern day startups seem to be going for.
-- [Unix - the hole Hawg](http://www.team.net/mjb/hawg.html)
+- [Unix - the hole Hawg](http://www.team.net/mjb/hawg.html){:target="_blank"}
 
 ## 2022-02-17
 
-- [What are your companies anti-values](https://willsewell.com/posts/2022-02-15-what-are-your-companys-anti-values.html)
+- [What are your companies anti-values](https://willsewell.com/posts/2022-02-15-what-are-your-companys-anti-values.html){:target="_blank"}
   - when a company has values, this means there are antivalues as well. Because everything is a trade off
-- [is web 2.0 another bubble? (2006)](http://web.archive.org/web/20070222123905/http://online.wsj.com/public/article/SB116679843912957776-fF7CtrdMDTE4n1h5Ju5pv0HKhgM_20071227.html)
+- [is web 2.0 another bubble? (2006)](http://web.archive.org/web/20070222123905/http://online.wsj.com/public/article/SB116679843912957776-fF7CtrdMDTE4n1h5Ju5pv0HKhgM_20071227.html){:target="_blank"}
 
 ## 2022-02-16
 
-- [debugging memory corruption in production rails application](https://www.freshworks.com/saas/debugging-memory-corruption-in-production-rails-app-using-mozilla-rr-blog/)
+- [debugging memory corruption in production rails application](https://www.freshworks.com/saas/debugging-memory-corruption-in-production-rails-app-using-mozilla-rr-blog/){:target="_blank"}
 
 ## 2022-02-15
 
 - https://testing.googleblog.com/2008/07/how-to-write-3v1l-untestable-code.html
-- [Kubernetes documentary](https://youtu.be/BE77h7dmoQU)
+- [Kubernetes documentary](https://youtu.be/BE77h7dmoQU){:target="_blank"}
   - Insanely nice (but biased) view into the world of software innovation, and how it happens. Apart from the technical expertise you need the political expertise as well, it seems...
   - Also, it is the people at the center of the whole "tech" culture who are driving the innovation. Being away doesn't help at all
 
 
 ## 2022-02-14
 
-- [Storks deliver babies (p = 0.008)](https://web.archive.org/web/20210413060837/http://robertmatthews.org/wp-content/uploads/2016/03/RM-storks-paper.pdf)
+- [Storks deliver babies (p = 0.008)](https://web.archive.org/web/20210413060837/http://robertmatthews.org/wp-content/uploads/2016/03/RM-storks-paper.pdf){:target="_blank"}
   - Correlation DOES NOT mean causation
-  - [site of spurious correlations](https://www.tylervigen.com/spurious-correlations)
-  - [lack of pirates is causing global warming](https://www.forbes.com/sites/erikaandersen/2012/03/23/true-fact-the-lack-of-pirates-is-causing-global-warming/?sh=2913d33d3a67)
-- [Don't Contribute Anything Relevant in Web Forums Like Reddit](https://karl-voit.at/2020/10/23/avoid-web-forums/)
+  - [site of spurious correlations](https://www.tylervigen.com/spurious-correlations){:target="_blank"}
+  - [lack of pirates is causing global warming](https://www.forbes.com/sites/erikaandersen/2012/03/23/true-fact-the-lack-of-pirates-is-causing-global-warming/?sh=2913d33d3a67){:target="_blank"}
+- [Don't Contribute Anything Relevant in Web Forums Like Reddit](https://karl-voit.at/2020/10/23/avoid-web-forums/){:target="_blank"}
   - Fair point, actually but then if not reddit, google and whatnot then where??
-- [What happens if the crawler doesn't follow robots.txt](https://softwareengineering.stackexchange.com/questions/180108/what-will-happen-if-i-dont-follow-robots-txt-while-crawling)
-- [Surveilance too cheap to meter](https://queue.acm.org/detail.cfm?id=3511661)
+- [What happens if the crawler doesn't follow robots.txt](https://softwareengineering.stackexchange.com/questions/180108/what-will-happen-if-i-dont-follow-robots-txt-while-crawling){:target="_blank"}
+- [Surveilance too cheap to meter](https://queue.acm.org/detail.cfm?id=3511661){:target="_blank"}
   - Surveilance is becoming an annoying headache for people. And governments + corporations are increasingly intervening with the lives of people through tech. If we consume __anything__ from a big tech, then it should be safe to assume that the government knows back to front what we're doing. It's just that, for now we aren't that specific of a target.
 
 ## 2022-02-13
 
-- [How to dropout](https://ranprieur.com/essays/dropout.html#HTDO)
+- [How to dropout](https://ranprieur.com/essays/dropout.html#HTDO){:target="_blank"}
   - I liked the whole idea behind “manufactured necessity”. which is kinda true for most things. What ma
-  - [this quote from the article](https://ranprieur.com/essays/dropout.html#:~:text=So%20even%20play,almost%20to%20death) sadly rings too true in my life. But, is that such a bad thing though?? 
+  - [this quote from the article](https://ranprieur.com/essays/dropout.html#:~:text=So%20even%20play,almost%20to%20death){:target="_blank"} sadly rings too true in my life. But, is that such a bad thing though?? 
 
 ## 2022-02-11
 
-- [object oriented programming the trillion dollar disaster](https://betterprogramming.pub/object-oriented-programming-the-trillion-dollar-disaster-92a4b666c7c7)
+- [object oriented programming the trillion dollar disaster](https://betterprogramming.pub/object-oriented-programming-the-trillion-dollar-disaster-92a4b666c7c7){:target="_blank"}
   - OOP has it's place, but trying ot fix all problems with OOP is just insane.
-  - [Alan Kay's (inventor of oops) keynote talk on oops](https://www.cc.gatech.edu/fac/mark.guzdial/squeak/oopsla.html)
+  - [Alan Kay's (inventor of oops) keynote talk on oops](https://www.cc.gatech.edu/fac/mark.guzdial/squeak/oopsla.html){:target="_blank"}
     - "Java and C++ make you think that the new ideas are like the old ones. Java is the most distressing thing to hit computing since MS-DOS"
 
-- [Meeting interesting people, Feynman](https://cs.au.dk/~danvy/lafb.html)
+- [Meeting interesting people, Feynman](https://cs.au.dk/~danvy/lafb.html){:target="_blank"}
 
 ## 2022-02-10
 
-- [walter pitts, the man who tried to redeem the world with logic](https://nautil.us/the-man-who-tried-to-redeem-the-world-with-logic-2885/)
+- [walter pitts, the man who tried to redeem the world with logic](https://nautil.us/the-man-who-tried-to-redeem-the-world-with-logic-2885/){:target="_blank"}
   - It's the fate of the world that, smart people have always been exposed to the wrong side of humanity.
 
 ## 2022-02-09
 
-- [Heuristics That Almost Always Work - by Scott Alexander](https://astralcodexten.substack.com/p/heuristics-that-almost-always-work)
+- [Heuristics That Almost Always Work - by Scott Alexander](https://astralcodexten.substack.com/p/heuristics-that-almost-always-work){:target="_blank"}
   - Some stuff work flawlessly 99.9% of the time, but the 0.1% risk is high enough that it vouches paranoid levels of caretaking
   - eg. watchmen taking care of a building, driving safe...
-- [couple arrested for billions in crypto theft](https://www.justice.gov/opa/press-release/file/1470186/download)
+- [couple arrested for billions in crypto theft](https://www.justice.gov/opa/press-release/file/1470186/download){:target="_blank"}
   - It's insane that, blockchain supposedly secure, has 0 privacy considerations. It's insane that every single transaction made from the wallet can be traced back to the origin. How is  this, supposed to "restore power back to the people??"
 - https://stackoverflow.com/questions/68236007/i-am-getting-error-cmdline-tools-component-is-missing-after-installing-flutter
 
 ## 2022-02-08
 
-- [India1, Avocado Startups and Product-Market Fit | by Sajith Pai | HackerNoon.com | Medium](https://medium.com/hackernoon/india1-avocado-startups-product-market-fit-dbfb7a8b2ef6)
+- [India1, Avocado Startups and Product-Market Fit | by Sajith Pai | HackerNoon.com | Medium](https://medium.com/hackernoon/india1-avocado-startups-product-market-fit-dbfb7a8b2ef6){:target="_blank"}
   - never thought of market segments this way. It's nice. a good mental model to have
 - https://www.svgossip.com/p/can-a-310m-startup-avoid-due-diligence
   
-- [Nick smelled bull](https://narratively.com/nick-brown-smelled-bull/)
+- [Nick smelled bull](https://narratively.com/nick-brown-smelled-bull/){:target="_blank"}
   - How an engineer figured out and blew the whistle on a shitty psychology paper
   - The core problem with soft sciences, such as psychology is that. It leans more towards soft hypothesis than hard facts and repeatable/observable measurements. Hence the replication crisis.
-- [Blackwells sends investor report to remove poloton CEO](https://www.businesswire.com/news/home/20220124005269/en/Blackwells-Sends-Letter-to-Peloton-Board-of-Directors-Calling-for-New-Leadership-and-Initiation-of-Strategic-Alternatives)
+- [Blackwells sends investor report to remove poloton CEO](https://www.businesswire.com/news/home/20220124005269/en/Blackwells-Sends-Letter-to-Peloton-Board-of-Directors-Calling-for-New-Leadership-and-Initiation-of-Strategic-Alternatives){:target="_blank"}
   - My first keyhole look at how a board of directors can be brutally honest about a company.
   - More interesting stuff https://www.blackwellscap.com/wp-content/uploads/2022/02/BW_Peloton_Presentation_Feb072022.pdf
 
 ## 2022-02-06
 
-- [Programming the Linux Framebuffer · C. McEnroe](https://cmcenroe.me/2018/01/30/fbclock.html)
-- [line goes up video](https://www.youtube.com/watch?v=YQ_xWvX1n9g)
+- [Programming the Linux Framebuffer · C. McEnroe](https://cmcenroe.me/2018/01/30/fbclock.html){:target="_blank"}
+- [line goes up video](https://www.youtube.com/watch?v=YQ_xWvX1n9g){:target="_blank"}
   - Very interesting, if not descriptive video.
-- [axie infinity or inifinite risk](https://naavik.co/business-breakdowns/axie-infinity/#axie-decon=)
-- [fintech is a scam](https://marker.medium.com/fintech-is-a-scam-a-listicle-in-eight-parts-7b6161f3a35a)
+- [axie infinity or inifinite risk](https://naavik.co/business-breakdowns/axie-infinity/#axie-decon=){:target="_blank"}
+- [fintech is a scam](https://marker.medium.com/fintech-is-a-scam-a-listicle-in-eight-parts-7b6161f3a35a){:target="_blank"}
 
 ## 2022-02-05
 
-- [Multitasking is not progress](https://tedgioia.substack.com/p/multitasking-isnt-progressits-what?ref=refind)
+- [Multitasking is not progress](https://tedgioia.substack.com/p/multitasking-isnt-progressits-what?ref=refind){:target="_blank"}
   - "multi tasking is what animals would do."
 
 ## 2022-02-04
 
-- [https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html)
+- [https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html){:target="_blank"}
 
-- [kariko problem](https://www.statnews.com/2022/02/01/kariko-problem-lessons-funding-basic-research/)
+- [kariko problem](https://www.statnews.com/2022/02/01/kariko-problem-lessons-funding-basic-research/){:target="_blank"}
 
 ## 2022-02-03
 
-- [Jay's Blog](https://jaydaigle.net/blog/replication-crisis-math/)
+- [Jay's Blog](https://jaydaigle.net/blog/replication-crisis-math/){:target="_blank"}
   - There is no proper science. I used to think that we had incredibly cognitive scientists who are on the races to produce incredible results. But turns out, replication crisis is everywhere, and most papers were corrupted or faulty. Math, feels like the last frontier where these things could hold for a while.
-- [Andy warhol, Clay Christensen and Vitalik Buterin walk into a bar](https://www.oreilly.com/radar/andy-warhol-clay-christensen-and-vitalik-buterin-walk-into-a-bar/?ref=refind)
+- [Andy warhol, Clay Christensen and Vitalik Buterin walk into a bar](https://www.oreilly.com/radar/andy-warhol-clay-christensen-and-vitalik-buterin-walk-into-a-bar/?ref=refind){:target="_blank"}
   - “After world war II companies stopped advertising products for what they were to what they represent.” is an interesting thought. what else are the things that are like this??
   - Also, it is interesting that, Adam Smith would think that, arts such as music, drama, opera singers and actors didn’t create any value. While, in 21st century “attention economy” is a big part of the process. So, basically the argument goes that, Something that might not be valuable right now, might turn out to be something of pretty intense value in hindsight. For example, rearing children, taking care of older parents, cleaning ones house all of these have clear economic value, But not counted as value in most places. Similarly, what other things aren’t we counting towards economic value right now, but over time might turn out to be valuable, are NFTs something like that??
-  - [labor econ vs the world](https://marginalrevolution.com/marginalrevolution/2022/01/labor-econ-versus-the-world.html?ref=refind)
-  - [https://thedecisionlab.com/reference-guide/psychology/the-keynesian-beauty-contest/]()
-- [Ideas that have been beaten to death (spoiler, note taking)](https://ruky.me/2022/02/01/ideas-that-have-been-beaten-to-death/)
+  - [labor econ vs the world](https://marginalrevolution.com/marginalrevolution/2022/01/labor-econ-versus-the-world.html?ref=refind){:target="_blank"}
+  - [Keynesian beauty contest](https://thedecisionlab.com/reference-guide/psychology/the-keynesian-beauty-contest/){:target="_blank"}
+    - Economy seems to be hanging in the thread of a perpetual beauty contest with nobody specific on top.
+- [Ideas that have been beaten to death (spoiler, note taking)](https://ruky.me/2022/02/01/ideas-that-have-been-beaten-to-death/){:target="_blank"}
   - 😂😂😂 It's ironic that, I would build my own bookmarker application.
 
 ## 2022-02-02
