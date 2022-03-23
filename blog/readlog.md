@@ -6,6 +6,192 @@ type: page
 description: I try to write about stuff I find around the internet here
 date: "now"
 ---
+## 2022-03-23
+
+- [There's something off about apecoin](https://www.platformer.news/p/theres-something-off-about-apecoin?)
+  - Very interesting idea of thinking tokens like a easily cashable equity. I'm guessing this is one of the ways to side step the regulatory authority prohibiting early stage companies from doing IPOs willy nilly. Which also makes sense that so many VCs want companies to be web3 ones. they're just easily cashable, not because the underlying tech is awesome, but the law has no idea about this, yet.
+
+## 2022-03-22
+
+- [Physics in a diverse world](https://arxiv.org/pdf/2203.09485.pdf)
+  - A very deep argument on why diversity matters
+- [in praise of memorization](http://www.pearlleff.com/in-praise-of-memorization)
+  - Past data is how we develop insights and inspirations.
+  - memorization is how we crystallize past data
+- [microsoft's largest git repo on the planet](https://devblogs.microsoft.com/bharry/the-largest-git-repo-on-the-planet/)
+  - Scale actually has a meaning here.
+  - millions of file with 150 GB monorepo!!
+- [Twilio margins and markets](https://www.joincolossus.com/episodes/50437644/nagpal-twilio-messaging-margins-and-markets?tab=transcript)
+  - margins of 50% on a message? 🤯
+- [Predicting the best picture based on the number of coughs and sneezes](https://journal-doi.org/10.731/pcbi.1007742/)
+  - Very interesting, and incredible that their accuracy is at 91%.
+  - How many of these thin strings is humanity wound up in?
+- [first 1000 lyft](https://read.first1000.co/p/lyft?s=r)
+  - First 1000 customers of lyft.
+
+## 2022-03-21
+
+- [secrets of great families](https://astralcodexten.substack.com/p/secrets-of-the-great-families?s=r)
+  - Genius requires great mentorship.
+- [Why we stopped making Einsteins](https://erikhoel.substack.com/p/why-we-stopped-making-einsteins?s=r)
+  - A pretty incredible read on genius
+- [forbes 30 under 30 is an awkward, narcissm fest](https://erikhoel.substack.com/p/forbes-30-under-30-is-an-awkward?s=r)
+
+
+## 2022-03-20
+
+- [How Tailscale works](https://tailscale.com/blog/how-tailscale-works/)
+  - Tailscale is a VPN service with a different engineering model to make everything accessible.
+- [Exponential vs quadratic growth](https://longform.asmartbear.com/docs/exponential-growth?)
+  - Exponential growth is unsustainable and eventually decays down to quadratic and that is good because quadratic growth tends to be natural
+
+  
+## 2022-03-15
+
+- [cocktail ideas - danluu](https://danluu.com/cocktail-ideas/)
+- [Sounds easy - danluu](https://danluu.com/sounds-easy/)
+  - Something that sounds easy is not necessarily easy to implement.
+  - Either we're missing a huge amount of context.
+- [Solutions that create web3](https://ez.substack.com/p/solutions-that-create-problems?)
+  - web3 is a solution that is searching for a problem
+- [cockroachDB architecture](https://www.cockroachlabs.com/docs/stable/architecture/overview.html)
+
+## 2022-03-13
+
+- [short conversation with a bank](https://newsletter.danhon.com/archive/s11e09-a-short-conversation-with-a-bank/)
+  - A dystopian satire, but interesting read
+
+## 2022-03-12
+
+- [illlustrated proof of CAP theorem](https://mwhittaker.github.io/blog/an_illustrated_proof_of_the_cap_theorem/)
+  - in a distributed system only two of the three are possible
+- [Youtube Architecture](http://highscalability.com/youtube-architecture)
+- [The art of plain text](https://www.netmeister.org/blog/the-art-of-plain-text.html)
+- [Calling bullshit in the age of information](https://youtube.com/playlist?list=PLPnZfvKID1Sje5jWxt-4CSZD7bUI4gSPS)
+- [Carl Sagan - Baloney detection](http://www.inf.fu-berlin.de/lehre/pmo/eng/Sagan-Baloney.pdf)
+
+## 2022-03-11
+
+- [Docker can run within docker](https://www.docker.com/blog/docker-can-now-run-within-docker/)
+- [Deep guide to mobile dev architecture](https://www.freecodecamp.org/news/a-deeply-detailed-but-never-definitive-guide-to-mobile-development-architecture-6b01ce3b1528/)
+  - My take away was that, flutter is sidestepping a lot of riff-raff by using it's own rendering engine.
+
+## 2022-03-10
+
+- [Squirrel burgers](https://ghuntley.com/squirrel-burgers/)
+  - Software engineering is very flimsy about __who__ is able to write code. Most other profession has standards and licensing for who can work on what.
+  - The flip side of this argument is that, this would allow a huge gatekeeping bias. So, people on the other side of the fence would be safe, while this side would still be struggling.
+- [Immaturity of software engineers](https://medium.com/@Empanado/on-the-immaturity-of-software-engineering-1f9db120c884)
+- [You don't know gif](https://blog.darrien.dev/posts/you-dont-know-gif/)
+  - A dive into the gif format. Very interesting
+- [Why we use hexadecimal for computer addressing](https://www.researchgate.net/post/Why_we_are_using_HEXADECIMAL_values_for_computer_addressing#:~:text=The%20main%20reason%20why%20we,any%20other%20base%20number%20system.)
+
+
+## 2022-03-07
+
+- [Lizard brain is no match for endless feed](https://alexanderell.is/posts/infinite-scroll/)
+  - There are some interesting ways people are tackling this problem,
+    - A button near the desk, which when pressed removes all distraction-sites from the custom DNS config for the next 45 or so minutes.
+    - A geo-fenced smart phone app button which would only enable distraction-sites for the next 15 or so minutes.
+  
+- [traditional b2b sales is dead, long live the uce](https://kellblog.com/2022/03/06/traditional-b2b-sales-is-dead-long-live-the-uce/)
+  - b2b sales has been recently evolved into Product Led Growth (PLG). Which means the product speaks for itself, the author is right now wondering if it is moving to a model called Unified commercial engine
+  - Irrespective of the specific details of UCE, the theory in the preface about how information has changed marketing and sales is very interesting
+
+## 2022-03-06
+
+- [actor turned crypto naysayer](https://www.thecut.com/article/benjamin-mckenzie-crypto-profile.html?ref=refind)
+  - feels like a fluff piece, but mildly interesting
+
+## 2022-03-04
+
+- [memory caches and shared memory](https://www.eidos.ic.i.u-tokyo.ac.jp/~tau/lecture/parallel_distributed/2018/slides/pdf/memory2.pdf)
+
+## 2022-03-03
+
+- [A world without blockchain \[video\]](https://media.ccc.de/v/33c3-8315-a_world_without_blockchain#t=654)
+  - An interesting keyhole view into how the international monetary transactions works. I'm pretty much convinced that blockchain could solve this problem. The way right now is that there are a lot of hops between exchanges at the national level and international level with a lot of implicit trust, to move money around. I think blockchain could replace the chain of trust with a simple API. 
+  - But then, the fluctuating/increasing transaction fee + reducing mined amount is pretty worrysome. If not BTC I think something from the blockchain playbook has the potential to change it.
+
+## 2022-03-01
+
+- [Crypto investors would welcome a bear market](https://markets.businessinsider.com/news/currencies/crypto-winter-ethereum-bitcoin-blockchain-technology-markets-investors-price-developers-2022-2?ref=refind)
+  - Would they though?? I'm sure, vitalik would he's got so much that he just can't lose enough to become broke. But everyone else, I think is fingers crossed hoping that there's no bear market
+- [how incumbents survive and thrive](https://hbr.org/2022/01/how-incumbents-survive-and-thrive)
+  - there are not a lot of technology companies in the fortune 500 in the last 25 years. Despite all the noise that these companies are making.
+
+## 2022-02-28
+
+- [Tim O' reilly on web3](https://www.fastcompany.com/90716841/tim-oreilly-on-web3?ref=refind)
+  - "in 1995 you couldn't tell pets.com was worth the huge market capital and that's how I feel right now"
+- [Crypto and web3 global unleashing](https://christophermschroeder.substack.com/p/crypto-web3-and-the-global-unleashing-8dc?utm_source=url)
+- [Keynesian beauty contest](https://en.wikipedia.org/wiki/Keynesian_beauty_contest)
+  - Very very interesting idea on the "public markets" that are supposed to be efficient.
+
+## 2022-02-27
+
+- [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
+  - just started reading this...
+  - has been going good so far
+
+## 2022-02-25
+
+- [Just say yes \[Video\] Eric Schmidt](https://youtu.be/Bh804pcy5sc)
+
+## 2022-02-24
+
+- [Atomic habits of desire](https://read.lukeburgis.com/p/atomic-habits-of-desire?utm_source=url)
+  - I love the flywheel mental model.
+
+## 2022-02-22
+
+- [Real me vs Fake me](https://www.lrb.co.uk/the-paper/v44/n03/joe-dunthorne/diary)
+  - Joe Dunthorne's fight with his online impostor and trying to get himself back. Dystopian for sure.
+- [gitops](https://www.weave.works/technologies/gitops/)
+  - Gitops feels very optimal. Having seen it in my workplace. It increases efficiency manyfold
+- [Misidentifying talent](https://danluu.com/talent/)
+  - Dan luu brings in some interesting point. Correlating hiring talent with signing sportsmen and how the two are seemingly very difficult
+- [What I learnt running saas for a year](https://onlineornot.com/what-learned-running-saas-for-year)
+  - you're solving a problem not selling a Saas subscription
+  - Docs are part of your user experience
+  - build for mobile
+  - Ask people how they found you
+  - Use analytics, set-up funnel tracking
+  - Sometimes you need to make your own mistakes
+  - Pricing is bloody hard to get right
+  - You probably focus too much on MRR
+  - You still need a free trial for paid tiers
+  - It's hard to bring in more traffic, easy to change what your current traffic does
+  - Content marketing buys you time
+  - Ship small, ship often
+  - Ship first, worry about scale later
+  - You don't get to spend as much time working on the problem as you'd think
+
+## 2022-02-21
+
+- [Google tag manager the new adblock weapon](https://chromium.woolyss.com/f/HTML-Google-Tag-Manager-the-new-anti-adblock-weapon.html)
+  - Basically the ads are loaded from the site's native url. Making it harder to detect ad scripts
+- [The mom test](https://manuelohan.com/wp-content/uploads/2017/05/The-Mom-Test-en.pdf)
+  - Do not lead users to the answers you want to hear
+  - Keep the questions wide enough for the answer from the user to move around
+  - Do not have a hypothesis and go do user testing because you would lead user to the answer
+
+## 2022-02-20
+
+- [Crypto sports betting hobby](https://www.vox.com/the-goods/22922511/crypto-nfts-sports-betting-money-hobby?utm_source=MentalPivotNewsletter)
+- [we put more effor into avoiding losses than making gains](https://digest.bps.org.uk/2022/02/02/we-put-more-effort-into-avoiding-losses-than-making-gains/)
+
+## 2022-02-19
+
+- [The token disconnect](https://www.stephendiehl.com/blog/disconnect.html)
+- [Thoughts on software-defined silicon](https://lwn.net/SubscriberLink/884876/ba79f0b75e086321/)
+A pretty slippery slope that inel’s got here...
+- [linus torvald on communit, Rust and linux's longevity](https://thenewstack.io/linus-torvalds-on-community-rust-and-linuxs-longevity/)
+- [LinuxCon North America](https://aws.amazon.com/blogs/opensource/sustainability-with-rust/)
+  - [Linuxcon North America \[Video\]](https://youtu.be/RYozZf0Hw0k)
+  - “Source code, should be reread again for understanding” makes sense
+
+
 ## 2022-02-18
 
 - [Don't point out something wrong immediately](https://blog.the-pans.com/wrong/){:target="_blank"}
