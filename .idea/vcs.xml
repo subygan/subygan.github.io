@@ -3,6 +3,8 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/blog/tech/docker_learn" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/blog/tech/github_action_learn" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/blog/tech/js_learn" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/blog/tech/learning_golang/golang_learn" vcs="Git" />
   </component>
 </project>
