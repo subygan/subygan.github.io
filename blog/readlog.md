@@ -6,9 +6,149 @@ type: page
 description: I try to write about stuff I find around the internet here
 date: "now"
 ---
+
+
+## 2022-04-10
+
+- https://jcnews.substack.com/p/whoop-crunching-numbers-as-a-niche
+  - Whoop: crunching numbers as a niche wearable brand and the emergence of Notion's ambassador program
+
+## 2022-04-09
+
+- [How JavaScript Timers Work](https://johnresig.com/blog/how-javascript-timers-work/)
+
+- [Publishing Go Modules](https://go.dev/blog/publishing-go-modules)
+- [Back to India]https://yugal.me/back-to-india/
+- [Is virtue signalling a vice?](https://aeon.co/essays/why-virtue-signalling-is-not-just-a-vice-but-an-evolved-tool)
+
+
+## 2022-04-08
+
+- [Scaling lessons learned at Dropbox, part 1](https://eranki.tumblr.com/post/27076431887/scaling-lessons-learned-at-dropbox-part-1)
+- [How Postgres Makes Transactions Atomic](https://brandur.org/postgres-atomicity)
+
+- [From context collapse to content collapse](https://www.roughtype.com/?p=8724)
+- [How is PyPy Tested?](https://www.pypy.org/posts/2022/04/how-is-pypy-tested.html)
+
+
+## 2022-04-07
+
+- [Use Git tactically](https://stackoverflow.blog/2022/04/06/use-git-tactically/)
+- [Improving software supply chain security with tamper-proof builds](https://security.googleblog.com/2022/04/improving-software-supply-chain.html)
+- [The Scoop: Inside Fast’s Rapid Collapse](https://newsletter.pragmaticengineer.com/p/the-scoop-fast?s=r)
+- [Evolutionary psychology in economics: Mo papers, mo problems](https://statmodeling.stat.columbia.edu/2022/03/26/45380/)
+- [The examples you see in the textbooks are not representative of the sorts of problems you see in the real world](https://statmodeling.stat.columbia.edu/2022/03/27/the-examples-you-see-in-the-textbooks-are-not-representative-of-the-sorts-of-problems-you-see-in-the-real-world/)
+
+- [Ability to See Expertise is a Milestone Worth Aiming For](https://commoncog.com/blog/seeing-expertise-milestone-worth-aiming-for/)
+
+- [pprof interpreting the call graph](https://github.com/google/pprof/blob/master/doc/README.md#interpreting-the-callgraph)
+
+- [That simple script is still someone's bad day](https://rachelbythebay.com/w/2022/04/05/pipe/)
+
+- [You can do a lot with an empty file](https://rachelbythebay.com/w/2022/04/06/text/)
+
+- [ANDREW NG: UNBIGGEN AI](https://spectrum.ieee.org/andrew-ng-data-centric-ai)
+
+
+## 2022-04-06
+
+- [You Are Not Google](https://blog.bradfieldcs.com/you-are-not-google-84912cf44afb)
+- [Computer Science 186 - 2015-03-12](https://archive.org/details/ucberkeley_webcast_NSKvCVFmk2E)
+- [Debian still having trouble with merged /usr](https://lwn.net/SubscriberLink/890219/79e54e3aab20bd87/)
+- [From Belonging to Burnout, Five Years at Airbnb](https://news.techworkerscoalition.org/2022/04/05/issue-5/)
+- [Design Of This Website, gwern.net](https://www.gwern.net/Design)
+- [All you need is links](https://subconscious.substack.com/p/all-you-need-is-links?s=r)
+
+## 2022-04-05
+
+- [Interoperability without sacrificing privacy: Matrix and the DMA](https://matrix.org/blog/2022/03/25/interoperability-without-sacrificing-privacy-matrix-and-the-dma)
+- [Akin's Laws of Spacecraft Design*](https://spacecraft.ssl.umd.edu/akins_laws.html)
+
+- [Olaf's new menu item](https://blog.plover.com/tech/olafs-report.html)
+
+- [USB-C hubs and my slow descent into madness](https://overengineer.dev/blog/2021/04/25/usb-c-hub-madness.html)
+
+- [25+ Years of Personal Knowledge Management. From scattered ideas to networked thoughts](https://dsebastien.net/blog/2022-04-03-25-years-of-personal-knowledge-management)
+- [What I learned as a hired consultant to autodidact physicists](https://aeon.co/ideas/what-i-learned-as-a-hired-consultant-for-autodidact-physicists)
+- [A profitable, growing, useful, legal, well-loved... failure](https://apenwarr.ca/log/20120326)
+- [What is Elon Musk Hiding?](https://www.theinformation.com/articles/what-is-elon-musk-hiding)
+
+
+## 2022-04-04
+
+- [HTTP Feeds](https://www.http-feeds.org/#example)
+
+- [The project with a single 11,000-line code file](https://austinhenley.com/blog/11000lines.html)
+- [Improving NGINX Performance with Kernel TLS and SSL_sendfile](https://www.nginx.com/blog/improving-nginx-performance-with-kernel-tls/)
+  - Kernel TLS improves SSL site performance and at scale this could have big impact
+- [How io_uring and eBPF Will Revolutionize Programming in Linux](https://thenewstack.io/how-io_uring-and-ebpf-will-revolutionize-programming-in-linux/)
+  - io_uring is an async way to handle I/O making it easier to handle input output. 
+  - [Re: [PATCH 09/13] aio: add support for async openat()](https://lwn.net/Articles/671657/)
+  
+- [Some interesting malware I found](https://bobbiechen.com/blog/2022/4/3/some-interesting-malware)
+  - A simple chrome extension hijacking everything and making it difficult
+
+## 2022-04-01
+
+- [Could Hubris and WebAssembly Allow High-Level Hardware Emulation?](https://artemis.sh/2022/03/30/hubris-and-webassembly-high-level-emulation.html)
+  - [On hubris and humiility](http://cliffle.com/blog/on-hubris-and-humility/)
+  - Hubris is an embedded kernel of Oxide PCs
+
+
+## 2022-03-31
+
+- [How Go Mitigates Supply Chain Attacks](https://go.dev/blog/supply-chain)
+  - Mitigating supply chain attacks in go.
+  - Package versions are basically immutable and new stuff can only be added on top of these. This is made sure by maintaining the hash of the current code state. Pretty much guaranteeing that. 
+  - the VCS acts as a source of truth for the whole system.
+
+- [How does Firefox's Reader View work?](https://videoinu.com/blog/firefox-reader-view-heuristics/)
+  - Simplifying web pages for simplicity is a hard problem especially to deliver it reliably
+  - Firfox uses it's home grown library [readability](https://github.com/mozilla/readability)
+  - It uses a bunch of heuristics to maintain a readability score for a page and decides whether a page is readable
+
+## 2022-03-30
+
+- [Your computer is a distributed system](http://catern.com/compdist.html)
+  - Computers, on the race to pack as much transistors as possible have evolved into a completely distributed system, with multiple modules talking to each other, with everything having different layers of abstraction, caching and implementation in between where each jump has it's cost. So everything has to be designed with that it minds.
+
+## 2022-03-29
+
+- [Intel Virtualization and Apple Silicon](https://www.highcaffeinecontent.com/blog/20220325-Intel-Virtualization-and-Apple-Silicon)
+  - Virtualising macOS using vmware ESXI in an intel chip
+
+## 2022-03-28
+
+- [Maybe you should do less 'work'](https://www.johnwhiles.com/posts/work.html)
+- [I wasted $40k on a fantastic startup idea](https://blog.tjcx.me/p/40k-fantastic-startup-idea?)
+  - Unlike what pg and others say. Having a product that people want doesn't always translate to revenue.
+  - Which is where the axiom of ask payment from users comes from
+
+## 2022-03-27
+
+- [Okta: "We made a mistake" delaying the Lapsus$ hack disclosure](https://www.bleepingcomputer.com/news/security/okta-we-made-a-mistake-delaying-the-lapsus-hack-disclosure/)
+  - Okta, the biggest security company's handling of their hack was pretty bad to say the least.
+
+- [Superstimuli and the Collapse of Western Civilization](https://www.lesswrong.com/s/MH2b8NfWv22dBtrs8/p/Jq73GozjsuhdwMLEG)
+  - "If people have the right to be tempted - and that's what free will is all about - the market is going to respond by supplying as much temptation as can be sold"
+  - TLDR; we aren't evolved to resist so much abundance around us, digital goods with 0 cost replication is making it worse.
+
+## 2022-03-24
+
+- [So, you want to be a darknet drug lord...](https://pastebin.com/raw/GrV3uYh5)
+  - Interesting ways on which a person can be triangulated. Even while using multiple security procedures
+- [The entirely predictable impact of salary transparency](https://www.wired.com/story/salary-transparency-gender-pay-gap)
+  - Transparent salary empowers employers to negotiate better, the stigma around sharing salary is only hurting the workign class. Europe making this decision would only be useful in the long run
+  
+
 ## 2022-03-23
 
 - [There's something off about apecoin](https://www.platformer.news/p/theres-something-off-about-apecoin?)
+  - Very interesting idea of thinking tokens like a easily cashable equity. I'm guessing this is one of the ways to side step the regulatory authority prohibiting early stage companies from doing IPOs willy nilly. Which also makes sense that so many VCs want companies to be web3 ones. they're just easily cashable, not because the underlying tech is awesome, but the law has no idea about this, yet. 
+- [https://erikhoel.substack.com/p/follow-up-why-we-stopped-making-einsteins?s=r](reply to hoel's writeup)
+- [https://www.econlib.org/archives/2015/09/why_im_homescho.html](Why I'm homeschooling - Brian caplan)
+  - Brian Caplan, the economist is homeschooling his kids and he lays out the logic behind this decision
+- [There is something off about ape coin](https://www.platformer.news/p/theres-something-off-about-apecoin?)
   - Very interesting idea of thinking tokens like a easily cashable equity. I'm guessing this is one of the ways to side step the regulatory authority prohibiting early stage companies from doing IPOs willy nilly. Which also makes sense that so many VCs want companies to be web3 ones. they're just easily cashable, not because the underlying tech is awesome, but the law has no idea about this, yet.
 
 ## 2022-03-22
