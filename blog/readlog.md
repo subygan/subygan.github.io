@@ -7,6 +7,140 @@ description: I try to write about stuff I find around the internet here
 date: "now"
 ---
 
+##2022-05-07
+
+- [ Efficiency is the Enemy ](https://fs.blog/slack/)
+- [ Half baked ](https://seths.blog/2022/05/half-baked/?via=thomas.me)
+##2022-05-06
+
+- [ A principled way to solve problems ](https://emasquil.github.io/posts/solving-problems/)
+- [ Knowledge is like a house of cards ](https://fhur.me/posts/collapsing-knowledge)
+##2022-05-05
+
+- [ The Future Will Have to Wait ](https://longnow.org/essays/omega-glory/)
+- [ WHAT WE CAN DEDUCE FROM A LEAKED PDF ](https://matthewbutterick.com/chron/what-we-can-deduce-from-a-leaked-pdf.html)
+- [ UA gotta be kidding](https://bkardell.com/blog/UAGottaBeKidding.html)
+- [ How C++ Works: Understanding Compilation | Toptal](https://www.toptal.com/c-plus-plus/c-plus-plus-understanding-compilation)
+
+
+##2022-05-03
+
+- [ Roadmap (Table of Contents) ](https://hardcoresoftware.learningbyshipping.com/p/roadmap-table-of-contents?s=r)
+##2022-05-02
+
+- [ Distributed Systems Shibboleths ](https://jolynch.github.io/posts/distsys_shibboleths/)
+- [ Mental illness doesn’t make you special ](https://unherd.com/2022/04/mental-illness-doesnt-make-you-special/)
+- [ Mental illness, attention deficit disorder, and suffering ](https://blog.plover.com/brain/add.html)
+##2022-05-01
+
+- [ Things I don’t want to do to grow my side project ](https://wagslane.dev/posts/things-i-dont-want-to-do-to-grow-business/)
+- [ Adopting Matrix at the GNOME Foundation ](https://blog.ergaster.org/post/20220425-adopting-matrix/)
+- [ The Mindset Gap ](https://fs.blog/brain-food/may-1-2022/)
+- [ Writing for Engineers ](https://www.heinrichhartmann.com/posts/writing/)
+- [ Experience Report: 6 months of Go ](https://typesanitizer.com/blog/go-experience-report.html)
+##2022-04-30
+
+- [ Prioritization as a Superpower ](https://nbt.substack.com/p/prioritization-as-a-superpower?s=r)
+##2022-04-28
+
+- [ Entropy Explained, With Sheep ](https://aatishb.com/entropy/)
+- [ Netflix’s Big Wake-Up Call: The Power Clash Behind the Crash ](https://www.hollywoodreporter.com/business/digital/netflixs-big-wake-up-call-the-power-clash-behind-the-crash-1235136004/)
+- [ Be careful with that thing, it’s a confidential coffee maker ](https://devblogs.microsoft.com/oldnewthing/20220426-00/?p=106528)
+##2022-04-27
+
+- [ Accel Leads $50 Million Funding of Cybersecurity Startup Veza at $500 Million Valuation ](https://www.theinformation.com/articles/accel-leads-50-million-funding-of-cybersecurity-startup-veza-at-500-million-valuation)
+- [ Matthew Walker's "Why We Sleep" Is Riddled with Scientific and Factual Errors ](https://guzey.com/books/why-we-sleep/)
+- [ Elon Musk's Twitter and the "crisis" of scientific misinformation ](https://erikhoel.substack.com/p/elon-musks-twitter-and-the-crisis?token=eyJ1c2VyX2lkIjoxMTY5ODQ0MSwicG9zdF9pZCI6NDg0Mzc2ODgsIl8iOiJnQ2YrTSIsImlhdCI6MTY1MTA2NzcxOSwiZXhwIjoxNjUxMDcxMzE5LCJpc3MiOiJwdWItMzMyOTk2Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.MfdNuoj5kCRgitHXN4VlHmyH8dJSpuxnu3qh_olI6Hs&s=r)
+- [ SELinux is unmanageable; just turn it off if it gets in your way ](https://www.ctrl.blog/entry/selinux-unmanageable.html)
+
+##2022-04-25
+
+- [ Many Small Queries Are Efficient In SQLite ](https://sqlite.org/np1queryprob.html)
+- [ Resumes are dangerous ](https://blog.alexmaccaw.com/resumes-are-dangerous/)
+- [ Anonymity ](https://www.eff.org/de/issues/anonymity)
+- [ Live migration ](https://en.wikipedia.org/wiki/Live_migration)
+- [ Consider SQLite ](https://blog.wesleyac.com/posts/consider-sqlite)
+- [ Why LSP? ](https://matklad.github.io//2022/04/25/why-lsp.html)
+- [ How The Desperate Norwegian Salmon Industry Created A Sushi Staple ](https://www.npr.org/2015/09/18/441530790/how-the-desperate-norwegian-salmon-industry-created-a-sushi-staple)
+- [ Crimes with Go Generics ](https://christine.website/blog/gonads-2022-04-24)
+
+##2022-04-24
+
+- [ The Iceberg Secret, Revealed ](https://www.joelonsoftware.com/2002/02/13/the-iceberg-secret-revealed/)
+- [ Fire And Motion ](https://www.joelonsoftware.com/2002/01/06/fire-and-motion/)
+- [ FOOL ON THE HILL: An Investment Opinion Rule Breakers vs. Rule Makers ](https://web.archive.org/web/20000817235257/http://www.fool.com/news/foth/2000/foth000804.htm)
+- [ Strategy Letter I: Ben and Jerry’s vs. Amazon ](https://www.joelonsoftware.com/2000/05/12/strategy-letter-i-ben-and-jerrys-vs-amazon/)
+- [ Things You Should Never Do, Part I ](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
+- [ Fast thinking on lichess.org ](https://emiruz.com/post/2022-04-15-lichess1/)
+- [ Episode 205: Chris Lattner Interview Transcript ](https://atp.fm/205-chris-lattner-interview-transcript#gc)
+
+##2022-04-23
+
+- [ What's new in CPUs since the 80s? ](https://danluu.com/new-cpu-features/)
+- [ DALL·E 2 and The Origin of Vibe Shifts ](https://every.to/divinations/dall-e-2-and-the-origin-of-vibe-shifts)
+- [Algorithms for life](https://algorithmsbook.com/files/dm.pdf)
+  - should read 📄
+
+##2022-04-22
+
+- [ I can't let go of "The Dunning-Kruger Effect is Autocorrelation" ](https://andersource.dev/2022/04/19/dk-autocorrelation.html)
+##2022-04-21
+
+- [ Changing std::sort at Google’s Scale and Beyond ](https://danlark.org/2022/04/20/changing-stdsort-at-googles-scale-and-beyond/)
+- [ In defence of swap: common misconceptions ](https://chrisdown.name/2018/01/02/in-defence-of-swap.html)
+
+##2022-04-19
+
+- [ WAITING FOR THE LAST DANCE ](https://www.gmo.com/asia/research-library/waiting-for-the-last-dance/)
+- [ ANOTHER TOP INVESTOR SOUNDS THE ALARM: When The Market Turns, A Bunch Of Startups Are Going To 'Vaporize' ](https://www.businessinsider.in/tech/another-top-investor-sounds-the-alarm-when-the-market-turns-a-bunch-of-startups-are-going-to-vaporize/articleshow/43505666.cms)
+- [ A blog that is a single executable binary ](https://www.andreinc.net/2022/04/10/a-blog-that-is-a-single-executable-binary)
+- [ Tech IPOs have been a bad bet in 2021 — all but one are in bear market territory ](https://www.cnbc.com/2021/12/07/tech-ipos-a-bad-bet-in-2021-all-but-one-in-bear-market-territory.html?utm_source=sg&utm_medium=email&utm_campaign=article_email&utm_content=article-7691)
+- [ Don’t Submit. Pitch. ](https://catapult.co/stories/how-to-pitch-your-writing-laura-goode)
+
+##2022-04-18
+
+- [ The Origin of the word Daemon ](https://ei.cs.vt.edu/~history/Daemon.html)
+- [ Hubert Horan – The Uber Bubble: Why Is a Company That Lost $20 Billion Claimed to Be Successful? ](https://braveneweurope.com/hubert-horan-the-uber-bubble-why-is-a-company-that-lost-20-billion-claimed-to-be-successful)
+
+##2022-04-17
+
+- [ The Freedom Phone is not great at privacy ](https://mjg59.dreamwidth.org/59479.html)
+- [ Fuck your Miracle Year - by Roger's Bacon](https://rogersbacon.substack.com/p/fuck-your-miracle-year)
+- [ The mystery of the miracle year - by Dwarkesh Patel](https://www.dwarkeshpatel.com/p/annus-mirabilis)
+- [ I was wrong. CRDTs are the future](https://josephg.com/blog/crdts-are-the-future/)
+
+##2022-04-16
+
+- [ Summoning Cthulhu by Parsing HTML with Regular Expressions ](https://talbrenev.com/2021/05/26/html-regex.html)
+
+##2022-04-15
+
+- [ CPU Flame Graphs ](https://brendangregg.com/FlameGraphs/cpuflamegraphs.html)
+- [ Rustaceans at the border ](https://lwn.net/SubscriberLink/889924/2b330ed9ea4a9e23/)
+
+## 2022-04-14
+
+- [httparchive Reports](https://httparchive.org/reports)
+
+##2022-04-13
+
+- [ The complete guide to protecting your APIs with OAuth2 ](https://stackoverflow.blog/2022/04/11/the-complete-guide-to-protecting-your-apis-with-oauth2/)
+
+##2022-04-12
+
+- [ Zapier: The $5B unbundling opportunity ](https://www.georgesequeira.com/writing/zapier-the-5b-unbundling-opportunity/)
+- [ How Anitta megafans gamed Spotify to help create Brazil’s first global chart-topper ](https://restofworld.org/2022/anitta-fans-spotify-brazil-global-chart/?utm_source=Rest+of+World+Newsletter&utm_campaign=73490ff3af-EMAIL_CAMPAIGN_2022_04_11_06_35&utm_medium=email&utm_term=0_b91e039431-73490ff3af-446196006)
+- [ Success and Failure at Pebble ](https://medium.com/@ericmigi/why-pebble-failed-d7be937c6232)
+
+##2022-04-11
+
+- [ Revealed: The inner workings of a paper mill ](https://retractionwatch.com/2021/12/20/revealed-the-inner-workings-of-a-paper-mill/)
+- [ What's a service mesh? ](https://www.redhat.com/en/topics/microservices/what-is-a-service-mesh)
+- [ Sign in and start building 'This is My Architecture' is a video series that showcases innovative architectural solutions on the AWS Cloud by customers and partners. Each episode examines the most interesting and technically creative elements of each cloud architecture. ](https://aws.amazon.com/architecture/this-is-my-architecture/?tma.sort-by=item.additionalFields.airDate&tma.sort-order=desc&awsf.category=*all&awsf.industry=*all&awsf.language=*all&awsf.show=*all&awsf.format=*all)
+- [ Exploring Micro-Frameworks: Spring Boot ](https://www.infoq.com/articles/microframeworks1-spring-boot/)
+- [ What Is Rust's unsafe? ](https://nora.codes/post/what-is-rusts-unsafe/)
+- [ Taking Flight Without a Smart Phone ](https://devtails.xyz/taking-flight-without-a-smart-phone)
+- [AOSA git ](http://aosabook.org/en/git.html)
 
 ## 2022-04-10
 
@@ -20,7 +154,6 @@ date: "now"
 - [Publishing Go Modules](https://go.dev/blog/publishing-go-modules)
 - [Back to India]https://yugal.me/back-to-india/
 - [Is virtue signalling a vice?](https://aeon.co/essays/why-virtue-signalling-is-not-just-a-vice-but-an-evolved-tool)
-
 
 ## 2022-04-08
 

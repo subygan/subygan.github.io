@@ -312,5 +312,41 @@ MLFQ has a number of distinct queues, each assigned a different priority level. 
 
 The important part of a MLFQ is the way the feedback is set.
 
+For example in cases where there are a lot of IO calls. The feedback for the user is high and it needs to be done immediately so the priority is very high for them.
+
+But then, If a task is doing a lot on the background and it is not immediately issuing IO then it's priority can be low.
 
 
+### Attempt 1: how to change priority?
+
+- __Rule 3__ : When a job enters the system, it is placed at the highest
+priority (the topmost queue).
+- __Rule 4a__ : If a job uses up an entire time slice while running, its priority is reduced (i.e., it moves down one queue).
+- __Rule 4b__ : If a job gives up the CPU before the time slice is up, it stays
+at the same priority level.
+
+### Example 1: __Single long running job__
+
+
+In the below example it is obvious that as a long running job runs, it's priority gets lowered slowly.
+
+Every time it occupies resources, we slowly reduce its priority.
+
+![long running job](./assets/ex1-long_running.png)
+
+### Example 2: __A short job in between__
+
+When a short jobs comes in between this task, then it's priority in the beginning is high, so it is given preference to run.
+
+![along came a short job](./assets/ex2-shor_job.png)
+
+
+Also, when a process has a lot of IOs then its priority is kept high
+
+![lots of ios](./assets/ex3-ios.png)
+
+## Problems with this MLFQ implementation
+
+If there are too many interactive processes happens then __starvation__ of CPU happens resulting in reduced resources.
+
+A smart user could game the CPU to keep the process priority high by making a IOs at the very end of a process thereby keeping their priority high.
