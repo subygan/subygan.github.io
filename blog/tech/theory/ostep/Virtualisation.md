@@ -198,7 +198,7 @@ This is a typical direct execution done for systems.
 
 # ch7: CPU Scheduling
 
-<ins>The problem:</ins> Develop scheduling policies
+<ins>The problem:</ins> Develop scheduling polizies
 
 <ins>Assumptions</ins> some assumptions going in:
 
