@@ -18,8 +18,9 @@ I try to write stuff I'm interested about, here.
 
 🧑🏻‍🏫  [Readlog](/readlog)
 
+🛍 [To Consume](/to_consume)
+
 🦾  [all](/all)
 
 🦏   [Feed](/feed.xml)
-
 
