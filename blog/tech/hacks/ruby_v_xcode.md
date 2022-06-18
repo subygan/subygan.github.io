@@ -20,4 +20,4 @@ this was fixed by running
 sudo xcode-select -switch /
 ```
 
-I checked the manpages ( A habit I'm trying to form) It seems like this changes the xcode scope to global. and makes available all the tools and env variables.
+I checked the manpages It seems like this changes the xcode scope to global. and makes available all the tools and env variables.
