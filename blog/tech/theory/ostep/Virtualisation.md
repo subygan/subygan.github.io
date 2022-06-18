@@ -350,3 +350,7 @@ Also, when a process has a lot of IOs then its priority is kept high
 If there are too many interactive processes happens then __starvation__ of CPU happens resulting in reduced resources.
 
 A smart user could game the CPU to keep the process priority high by making a IOs at the very end of a process thereby keeping their priority high.
+
+## Alternate solution, Priority boost based MLFQ
+
+The idea here is that, in frequent intervals, we boost the priority of all the jobs in the system. This ensures that the Priorities are boosted for those systems and are able to 
