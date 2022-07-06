@@ -1,12 +1,209 @@
 ---
-title: Readlog 
-emoji: 🧑🏻‍🏫 
-layout: base 
-type: page 
-description: I try to write collate all the stuff I find around the internet here 
-date: "now"
+title: Readlog emoji: 🧑🏻‍🏫 layout: base type: page description: I try to write collate all the stuff I find around
+the internet here date: "now"
 toc: true
 ---
+
+## 2022-07-07
+
+- [ Sequoia and Tiger Global Take SoftBank to the Cleaners ](https://www.bloomberg.com/opinion/articles/2022-07-06/sequoia-and-tiger-global-take-softbank-to-the-cleaners?sref=DtF0tJD5)
+- [ Hello World - unexpected NUL in input ](https://groups.google.com/g/golang-nuts/c/FtXGD_ATW38)
+
+## 2022-07-06
+
+- [ How I arrived at my perfect business idea ](https://www.svgbackgrounds.com/i-founded-svg-backgrounds-how-i-arrived-at-my-perfect-business-idea/)
+- [ Don’t Kill Time ](https://perell.com/essay/dont-kill-time/)
+
+## 2022-07-05
+
+- [ How An OG YouTube Creator Thinks About the Rise of TikTok ](https://www.hollywoodreporter.com/business/digital/marques-brownlee-mkbhd-1235173241/)
+- [ THE FIRST MILLION-TRANSISTOR CHIP: THE ENGINEERS’ STORY ](https://spectrum.ieee.org/intel-i860)
+- [ Pijul ](https://pijul.org/)
+- [ Never set a goal that a dead person can do better than you ](https://critter.blog/2022/01/28/never-set-a-goal-that-a-dead-person-can-do-better-than-you/?utm_source=Tech+Productivity&utm_campaign=e6a84a39d3-EMAIL_CAMPAIGN_2022_03_14_10_52_COPY_01&utm_medium=email&utm_term=0_362b1686a3-e6a84a39d3-594878555)
+
+## 2022-07-04
+
+- [ Golang autoreload on Goland (Jetbrains IDE)? ](https://stackoverflow.com/questions/50686863/golang-autoreload-on-goland-jetbrains-ide)
+- [ Carnivorous plant that traps prey underground is the 1st of its kind to be discovered ](https://edition.cnn.com/2022/07/01/world/carnivorous-plant-lives-underground-discovered-scn/index.html)
+- [ Mr. Feynman goes to washington ](https://calteches.library.caltech.edu/3570/1/Feynman.pdf)
+
+## 2022-07-03
+
+- [ Planning Fallacy ](https://www.lesswrong.com/posts/CPm5LTwHrvBJCa9h5/planning-fallacy)
+- [ SaaS Control Plane? I can write one in a weekend ](https://docs.thenile.dev/blog/saas-is-hard)
+- [ The Bullshit Web ](https://pxlnv.com/blog/bullshit-web/)
+
+## 2022-07-02
+
+- [ Postgres JSONB Usage and performance analysis ](https://medium.com/geekculture/postgres-jsonb-usage-and-performance-analysis-cdbd1242a018)
+
+## 2022-07-01
+
+- [ Give Up GitHub: The Time Has Come! ](https://sfconservancy.org/blog/2022/jun/30/give-up-github-launch/)
+
+## 2022-06-30
+
+- [ Atlassian is 20 years old and unprofitable — the market has its valuation all wrong, says Adam Schwab ](https://www.smartcompany.com.au/startupsmart/analysis/atlassian-unprofitable-valuation-adam-schwab/)
+- [ When Network is Faster than Cache ](https://simonhearne.com/2020/network-faster-than-cache/)
+- [ Git from the Bottom Up ](https://jwiegley.github.io/git-from-the-bottom-up/)
+
+## 2022-06-29
+
+- [ Mouse Heaven or Mouse Hell? ](https://www.sciencehistory.org/distillations/mouse-heaven-or-mouse-hell)
+- [ Deal of the century? How Microsoft beat Apple to buy PowerPoint for $14 million ](https://blog.zamzar.com/2016/06/10/deal-of-the-century-how-microsoft-beat-apple-to-buy-powerpoint-for-14-million/)
+
+## 2022-06-28
+
+- [ The really important job interview questions engineers should ask (but don't) ](https://posthog.com/blog/what-to-ask-in-interviews)
+- [ Content vs Carriage – Who Pays?](https://labs.apnic.net/?p=1619)
+
+## 2022-06-27
+
+- [ Things You Should Know About Databases ](https://architecturenotes.co/things-you-should-know-about-databases/)
+- [ Data Sanitization with Vitess ](https://engineeringblog.yelp.com/2022/06/data-sanitization-with-vitess.html)
+
+## 2022-06-26
+
+- [ Here is how to send a distress signal to space from anywhere on Earth  ](https://www.freethink.com/space/emergency-beacon)
+- [ Data Race Patterns in Go ](https://eng.uber.com/data-race-patterns-in-go/)
+
+## 2022-06-25
+
+- [ Copilot, Copying, Commons, Community, Culture ](https://www.fsf.org/licensing/copilot/copilot-copying-commons-community-culture)
+- [ Panchan’s Mining Rig: New Golang Peer-to-Peer Botnet Says “Hi!” ](https://www.akamai.com/blog/security/new-p2p-botnet-panchan)
+- [ Endgame - Vitalik Buterin](https://vitalik.ca/general/2021/12/06/endgame.html)
+
+## 2022-06-24
+
+- [ Yes, watching paint dry can fetch plenty of Web views ](https://archive.is/DvBGV#selection-1711.1-1711.54)
+- [ Skeptics aren’t welcome in the Land of Big Numbers™️ 🤔 ](https://mattruby.substack.com/p/skeptics-arent-welcome-in-the-land)
+- [ Best Quotes from the Becoming Warren Buffett Documentary ](https://neilthanedar.com/best-quotes-becoming-warren-buffett-documentary/)
+- [ We Need A Middle Class For Startups ](https://neilthanedar.com/we-need-a-middle-class-for-startups/)
+- [ Apple Is Not Defending Browser Engine Choice - Infrequently Noted](https://infrequently.org/2022/06/apple-is-not-defending-browser-engine-choice/)
+- [ We need a middle class for startups ](https://neilthanedar.com/we-need-a-middle-class-for-startups/)
+
+## 2022-06-23
+
+- [ How safe is zig? ](https://www.scattered-thoughts.net/writing/how-safe-is-zig/)
+- [ Should GitHub Be Sued For Training Copilot on GPL Code? ](https://fosspost.org/github-copilot/)
+- [ Linus Torvalds: Rust For The Kernel Could Possibly Be Merged For Linux 5.20 - Phoronix](https://www.phoronix.com/scan.php?page=news_item&px=Rust-For-Linux-5.20-Possible)
+
+## 2022-06-22
+
+- [ Even your boss wants to quit ](https://www.axios.com/2022/06/22/ceo-csuite-burnout-pandemic-great-resignation)
+- [ What willwould a Chromium-only Web look like? ](https://www.mnot.net/blog/2022/06/22/chromium-only)
+- [ Africa Eye: Racism for sale ](https://www.bbc.com/news/av/world-africa-61764466?utm_source=Rest+of+World+Newsletter&utm_campaign=d5679e3112-EMAIL_CAMPAIGN_2022_06_20_02_23&utm_medium=email&utm_term=0_b91e039431-d5679e3112-446196006)
+- [ Does Bionic Reading actually work? Test for yourself! ](https://blog.readwise.io/does-bionic-reading-actually-work/)
+
+## 2022-06-21
+
+- [ Pipes, plug-ins, plumbing: VCs gung-ho about embedded finance startups, but a word of caution ](https://yourstory.com/2022/05/pipes-plumbing-venture-capital-funding-embedded-finance-startups-fintech/amp)
+- [ Startup ideation reflections (1/3) ](https://medium.com/@akshat.ag77/startup-ideation-reflections-1-3-fa97b185c939)
+- [ The Pursuit of Beauty ](https://www.newyorker.com/magazine/2015/02/02/pursuit-beauty)
+
+## 2022-06-19
+
+- [ Optimizing Images for Web Performance with NGINX ](https://www.codementor.io/@todd659/optimizing-images-for-web-performance-with-nginx-1ub7dhxxaz)
+- [ Don't be that open-source user, don't be me ](https://jacobtomlinson.dev/posts/2022/dont-be-that-open-source-user-dont-be-me/)
+
+## 2022-06-17
+
+- [ To Master the Day, Wash your Bowl ](https://findingzen.net/blog/to-master-your-day-wash-the-bowl)
+- [ GNOME has no thumbnails in the file picker (and my toilets are blocked) ](https://jayfax.neocities.org/mediocrity/gnome-has-no-thumbnails-in-the-file-picker.html)
+- [ Spotify Founder and CEO Daniel Ek’s Investor Day 2022 Remarks ](https://newsroom.spotify.com/2022-06-08/spotify-founder-and-ceo-daniel-eks-investor-day-2022-remarks/)
+- [ Computers are fast but you don't know it](https://shvbsle.in/computers-are-fast-but-you-dont-know-it-p1/)
+
+## 2022-06-16
+
+- [ hy I'm now making drugs for cats (and you should, too) ](https://trevorklee.substack.com/p/why-im-now-making-drugs-for-cats?s=r)
+- [ We Put Half a Million files in One git Repository, Here’s What We Learned ](https://canvatechblog.com/we-put-half-a-million-files-in-one-git-repository-heres-what-we-learned-ec734a764181)
+
+## 2022-06-15
+
+- [ A Git Origin Story ](https://www.linuxjournal.com/content/git-origin-story)
+- [ Peer connection with 2 video sources ](https://webrtccourse.com/course/webrtc-codelab/module/fiddle-of-the-month/lesson/peer-connection-with-2-video-sources/)
+- [ Meet vs. Duo – 2 faces of Google’s WebRTC ](https://webrtchacks.com/meet-vs-duo-2-faces-of-googles-webrtc/)
+- [ A Billion-Dollar Crypto Gaming Startup Promised Riches and Delivered Disaster ](https://www.bloomberg.com/news/features/2022-06-10/axie-infinity-axs-crypto-game-promised-nft-riches-gave-ruin?sref=RIibYQt4)
+
+## 2022-06-14
+
+- [ The Story of Sun Microsystems PizzaTool ](https://donhopkins.medium.com/the-story-of-sun-microsystems-pizzatool-2a7992b4c797)
+- [ “Not worth it”: why Grab is shedding drivers and frustrating customers in Vietnam ](https://restofworld.org/2022/grab-vietnam-troubles-inflation/?utm_source=Rest+of+World+Newsletter&utm_campaign=549a5070c7-EMAIL_CAMPAIGN_2022_06_13_06_36&utm_medium=email&utm_term=0_b91e039431-549a5070c7-446196006)
+- [ How Facebook became Pakistan’s hottest matchmaking site ](https://restofworld.org/2022/facebook-pakistans-matchmaking/?utm_source=Rest+of+World+Newsletter&utm_campaign=549a5070c7-EMAIL_CAMPAIGN_2022_06_13_06_36&utm_medium=email&utm_term=0_b91e039431-549a5070c7-446196006)
+- [ Meet the fact-checkers decoding Sri Lanka’s meltdown ](https://restofworld.org/2022/meet-the-fact-checkers-decoding-sri-lankas-meltdown/?utm_source=Rest+of+World+Newsletter&utm_campaign=549a5070c7-EMAIL_CAMPAIGN_2022_06_13_06_36&utm_medium=email&utm_term=0_b91e039431-549a5070c7-446196006)
+- [ Building Self-driving Kafka clusters using open source components ](https://slack.engineering/building-self-driving-kafka-clusters-using-open-source-components/)
+- [ Turning $1,000 to $10,000 on Insight Prediction ](https://karlstack.substack.com/p/turning-1000-to-10000-on-insight?s=w)
+- [](http://www.art.net/~hopkins/Don/unix-haters/x-windows/xbugtool.html)
+
+## 2022-06-13
+
+- [ When GoDaddy fell to Social Engineering ](https://g.livejournal.com/8578.html)
+- [ How Trustpilot Extorts Businesses ](https://medium.com/@ryanbadger/how-trustpilot-extorts-businesses-91ca4b6a6f62)
+- [ Nonsense on Stilts ](https://garymarcus.substack.com/p/nonsense-on-stilts?s=r)
+- [ Secrets of the publishing industry ](https://erikhoel.substack.com/p/secrets-of-the-publishing-industry?s=r)
+- [ Budget Culture and the Dave Ramseyfication of Money ](https://annehelen.substack.com/p/budget-culture-and-the-dave-ramseyfication?s=r)
+- [ How I build a feature ](https://simonwillison.net/2022/Jan/12/how-i-build-a-feature/)
+
+## 2022-06-11
+
+- [ Why I turned down $500K, Pissed off my investors, and Shut down my startup](https://www.disruptingjapan.com/turned-500k-pissed-off-investors-shut-startup/)
+
+## 2022-06-10
+
+- [ Why I Killed My Startup ](https://k1nz.substack.com/p/why-i-killed-my-startup?s=r)
+- [ So you want to use GoGo Protobuf ](https://jbrandhorst.com/post/gogoproto/)
+- [ Are You Suffering from Toxic Productivity?](https://paperform.co/blog/toxic-productivity/)
+
+## 2022-06-09
+
+- [ Alignment: What Buddhism can teach us about success ](https://kerkour.com/alignment)
+
+## 2022-06-08
+
+- [ Ads Don't Work That Way ](https://meltingasphalt.com/ads-dont-work-that-way/)
+- [ I quit the tech industry ](https://eev.ee/blog/2015/06/09/i-quit-the-tech-industry/)
+- [ Issue #136 of the newsletter ](https://mailchi.mp/8e866346bd79/issue-55-dev-weekly-vaibhav-khulbe-5234352?e=7c811d74d6)
+- [ My Billion Dollar Mistake ](https://producthabits.com/my-billion-dollar-mistake/)
+
+## 2022-06-07
+
+- [ ISSUE 561  June 3rd 2022 ](https://iosdevweekly.com/issues/561)
+
+## 2022-06-06
+
+- [ 8 Lessons on Product Market Fit ](https://threadreaderapp.com/thread/1533128684445392897.html)
+- [ Innovation Leadership Lessons from the Marshmallow Challenge ](https://hbr.org/2014/12/innovation-leadership-lessons-from-the-marshmallow-challenge)
+- [ Deprecation Lifetime in Flutter ](https://medium.com/flutter/deprecation-lifetime-in-flutter-e4d76ee738ad)
+- [ In Praise of Ponzis ](https://www.drorpoleg.com/in-praise-of-ponzis/)
+- [ So, I went deep on Adam Neumann's new venture, Web3, the "Goddess Nature Token" ](https://threadreaderapp.com/thread/1533061507876986882.html)
+- [ It’s still 2014 in crypto payments, and buying a burrito is now a taxable event – Attack of the 50 Foot Blockchain](https://davidgerard.co.uk/blockchain/2022/06/05/its-still-2014-in-crypto-payments-and-buying-a-burrito-is-now-a-taxable-event/)
+
+## 2022-06-01
+
+- [ How to Make the Universe Think for Us ](https://www.quantamagazine.org/how-to-make-the-universe-think-for-us-20220531/)
+- [ 10 really bad business / tech predictions ](https://trungphan.substack.com/p/10-really-bad-business-tech-predictions?s=r)
+- [ When Serverless really shines \(and when to avoid it\)](https://kerkour.com/when-to-use-serverless)
+- Burning 70K on firebase
+    - [part - 1](https://blog.tomilkieway.com/72k-1/)
+    - [part - 2 ](https://blog.tomilkieway.com/72k-2/)
+- [How we spent 30K in less than 72 hours](https://hackernoon.com/how-we-spent-30k-usd-in-firebase-in-less-than-72-hours-307490bd24d)
+- [serverless, a lesson learned the hard way](https://sourcebox.be/serverless-a-lesson-learned-the-hard-way/) Good notes
+  on things to take care of before deploying a server less service
+  - [Serv](https://sourcebox.be/serverless-follow-up-on-my-last-post/)
+
+## 2022-05-31
+
+- [ The clusterfuck hidden in the Kubernetes code base and the brilliant refactoring techniques developed to fix it ](https://archive.fosdem.org/2019/schedule/event/kubernetesclusterfuck/)
+- [ What Made GoLang So Popular? The Language’s Creators Look Back ](https://thenewstack.io/what-made-golang-so-popular-the-languages-creators-look-back/)
+- [ So I Took a Huge Corporation to Arbitration. This is How it Went. ](https://www.shuchow.com/so-i-took-a-huge-corporation-to-arbitration/)
+- [ Friendships form via shared context, not shared activities ](https://billmei.net/blog/friendship)
+- [ 🧑🏻‍🚀 Fast - by Ali Abouelatta - First 1000 ](https://read.first1000.co/p/-fast-6bc)
+
+## 2022-05-30
+
+- [ The Rise and Fall of Wall Street’s Most Controversial Investor ](https://nymag.com/intelligencer/2022/05/the-rise-and-fall-of-cathie-wood.html)
+- [ Cloud SQLite ](https://brandur.org/nanoglyphs/034-cloud-sqlite)
+- [ Announcing D1: our first SQL database ](https://blog.cloudflare.com/introducing-d1/)
 
 ## 2022-05-29
 
@@ -80,7 +277,7 @@ toc: true
 - [ What is the point of crypto? ](https://www.vox.com/the-goods/23071245/bitcoin-price-crypto-ethereum-nfts-defi-stablecoin)
 - [ The Great Crypto Grift May Be Unwinding ](https://www.newyorker.com/news/our-columnists/the-great-crypto-grift-may-be-unwinding)
 - [ ABOUT HANDSHAKE ](https://handshake.org/)
-  - A lot of reinventions going on in the ethereum space
+    - A lot of reinventions going on in the ethereum space
 - [ .JS and .TXT are now live ](https://www.namebase.io/blog/js-and-txt-are-now-live/)
 - [ I spent 2 years launching tiny projects ](https://tinyprojects.dev/posts/i_spent_two_years_launching_tiny_projects)
 - [ Biller migration: how we changed our billing cycle ](https://medium.com/qonto-way/biller-migration-how-we-changed-our-billing-cycle-cf3c4cdd7cf4)
@@ -102,7 +299,6 @@ toc: true
 - [ Introducing Husky, Datadog's Third-Generation Event Store ](https://www.datadoghq.com/blog/engineering/introducing-husky/)
 - [ KINDLE, EPUB, AND AMAZON’S LOVE OF REINVENTING WHEELS ](https://hackaday.com/2022/05/17/kindle-epub-and-amazons-love-of-reinventing-wheels/)
 - [I Spent 2 years Launching Tiny Projects | Tiny Projects](https://tinyprojects.dev/posts/i_spent_two_years_launching_tiny_projects)
-
 
 ## 2022-05-17
 
@@ -252,8 +448,7 @@ toc: true
 - [ What's new in CPUs since the 80s? ](https://danluu.com/new-cpu-features/)
 - [ DALL·E 2 and The Origin of Vibe Shifts ](https://every.to/divinations/dall-e-2-and-the-origin-of-vibe-shifts)
 - [Algorithms for life](https://algorithmsbook.com/files/dm.pdf)
-    - should read 📄
-- [ ](https://algorithmsbook.com/files/dm.pdf)
+    - should read 📄 - [ ](https://algorithmsbook.com/files/dm.pdf)
 
 ## 2022-04-22
 
