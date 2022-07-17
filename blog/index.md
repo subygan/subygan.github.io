@@ -14,11 +14,11 @@ I try to write stuff I'm interested about, here.
 
 🧙🏻  [about](/about)
 
-🐵  [now](/now)
+🐵   [now](/now)
 
-🧑🏻‍🏫  [Readlog](/readlog)
+🧑🏻‍🏫    [Readlog](/readlog)
 
-🛍 [To Consume](/to_consume)
+🛍      [To Consume](/to_consume)
 
 🦾  [all](/all)
 
