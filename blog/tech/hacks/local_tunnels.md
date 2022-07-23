@@ -16,3 +16,7 @@ instantly being able to spin up a tunnel with https in my local machine is usefu
 There is a `key.json` file + config.yaml file. where all the routing details are stored.
 
 these are located under `~/.cloudflare/`
+
+### Downsides
+
+- js is cached making it harder to do js development.

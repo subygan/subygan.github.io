@@ -13,7 +13,7 @@ date: 2021-07-06 22:15:00
 - No licensing solutions
 
 
-OpenVPN - Not Truly self-hosted, in the sense that you will have to pay for the software in the range of $7 per user
+OpenVPN - Not Truly self-hosted, in the sense that you will have to pay for the software in the range of $7 per user. Even if you self host it
 
 Wireguard - only transmission security, no endpoint security.
 
