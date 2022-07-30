@@ -17,6 +17,12 @@ There is a `key.json` file + config.yaml file. where all the routing details are
 
 these are located under `~/.cloudflare/`
 
+_skip caching_
+
+go to page rules
+and add a page rule to `cache level: Bypass`
+https://community.cloudflare.com/t/unsolicited-utomatic-caching-via-argo-tunnels-at-cf-edge/308615
+
 ### Downsides
 
-- js is cached making it harder to do js development.
+- js is cached making it harder to do js development. (stale: 25Jul2022, use page rules)
