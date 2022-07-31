@@ -7,6 +7,7 @@ emoji: ✅
 ---
 
 
-## 30 Jul 2022
+## 31 Jul 2022
 
 - [ ] Setup collapsible bar for seeing blog posts
+- [ ] Finish dissertation submission
