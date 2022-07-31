@@ -35,7 +35,16 @@ module Jekyll
         for page in pages
             d[page["url"]] = page["title"]
         end
-        puts d
+
+
+        d.each_with_index do |(key, value), index|
+
+            removed = key[1..key.length] # removing the first '/'
+            v = removed.split('/',-1) # splitting the string
+
+
+            puts "index: #{index} | key: #{v} | value: #{value}"
+        end
         l
 
 
