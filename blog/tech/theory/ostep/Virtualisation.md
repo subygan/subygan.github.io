@@ -1,5 +1,5 @@
 ---
-title: OSTEP-1: Virtualisation
+title: OSTEP-1 Virtualisation
 emoji: 🧑🏻‍🏫
 layout: base
 type: page

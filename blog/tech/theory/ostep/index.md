@@ -1,5 +1,5 @@
 ---
-title: OSTEP: notes
+title: OSTEP-notes
 emoji: 🧑🏻‍🏫
 layout: base
 type: page
