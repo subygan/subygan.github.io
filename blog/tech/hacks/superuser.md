@@ -2,9 +2,9 @@
 layout: base
 type: page
 emoji: 
-title: 
+title: superuser changes
 description: 
-date: yyyy-mm-dd 22:15:00
+date: 2022-07-06 22:15:00
 ---
 
 When using aws a lot of times its annoying to type `sudo` for all commands. instead it is much simpler to just grant super user privileges to the ubuntu user only.
