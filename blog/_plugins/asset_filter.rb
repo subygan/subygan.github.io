@@ -26,7 +26,7 @@ module Jekyll
     end
 
     def directory_get(pages, cur)
-    puts "\n\n\n\n\n^^^^^^^^^^^^^^^^^^^^^^^"
+#     puts "\n\n\n\n\n^^^^^^^^^^^^^^^^^^^^^^^"
     #     Getting all possible urls
         d = Hash.new
         result = Set.new
@@ -54,32 +54,64 @@ module Jekyll
 #           l += gen_html(value,key, "", "/#{key}")
 #           puts "l^^ #{l}"
 #         end
+#         puts nested
         l = gen_html(nested, "", "", "")
 
         l
     end
 
     def gen_html(d, v, s, pref)
-        puts "^^^^^^^^^^#{d}^^^^^^^^^^#{v}^^^^^^^^^^#{s}^^^^^^^^^^#{pref}"
+#         puts "^^^^^^^^^^#{d}^^^^^^^^^^#{v}^^^^^^^^^^#{s}^^^^^^^^^^#{pref}"
         s = s.to_s
+
         if d.is_a?(Hash)
             s+="<ul>"
             d.each_with_index do |(key, value), index|
-                puts "key: #{key} | value: #{value}"
-                if value.is_a?(Hash)
-                    s += "<li><a href=\"#{pref}/#{key}\">#{key}</a></li>"
-                    s += gen_html(value, key, "", "#{pref}/#{key}")
-                else value.is_a?(String)
-                    s += "<li><a href=\"#{pref}/#{key}\">#{value}</a></li>"
+#                     puts  "#{isValidValue(value)} #{isValidKey(key)}"
+                if !isValidValue(value) || !isValidKey(key)
+#                     puts "skipping #{key} #{value}"
+                else
+#                     puts "key: #{key} | value: #{value}"
+                    if value.is_a?(Hash)
+                        if value.key?("")
+                            title = value[""]
+                            s+="<li><a href=\"#{pref}/#{key}\">#{title}</a></li>"
+                            s += gen_html(value, key, "", "#{pref}/#{key}")
+                        else
+                            s += "<li><a href=\"#{pref}/#{key}\">#{key}</a></li>"
+                            s += gen_html(value, key, "", "#{pref}/#{key}")
+                        end
+                    else value.is_a?(String)
+                        s += "<li><a href=\"#{pref}/#{key}\">#{value}</a></li>"
+                    end
                 end
             end
             s+="</ul>"
         else d.is_a?(String)
-            puts "is string"
+#             puts "is string"
             s += "<ul><li><a>#{d}</a></li></ul>"
         end
-        puts "s: #{s}"
+#         puts "s: #{s}"
         return s
+    end
+
+    def isValidValue(value)
+
+        if value.nil?
+            false
+        end
+    true
+    end
+
+    def isValidKey(key)
+        black_list = ["sitemap.xml","toc","about", "assets","main.css", "style.css", "404.html", "all.html", "feed","feed.xml", "robots.txt", ""]
+        if key.nil?
+            return false
+        end
+        if black_list.include? key
+            return false
+        end
+    true
     end
 
     def Add_nest_dict(d, key, value)
@@ -123,14 +155,7 @@ module Jekyll
        d
     end
 
-    def check_whitelist(val)
-        white_list = ["robots.txt","sitemap.xml","sitemap.xml", "assets","main.css", "style.css" ]
-        if white_list.include? val
-            return true
-        else
-            return false
-        end
-    end
+
   end
 end
 
