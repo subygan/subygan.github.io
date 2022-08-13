@@ -24,4 +24,6 @@ I try to write stuff I'm interested about, here.
 
 🦏   [Feed](/feed.xml)
 
+You can find the [table of contents here](/toc)
+
 
