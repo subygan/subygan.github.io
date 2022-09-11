@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Suriya 🧚🏻‍♂️</title>
+  <meta name="description" content="🧚🏻‍♂️">
+  <meta name="author" content="Suriya Ganesh">
+
+  <meta property="og:title" content="Suriya Ganesh">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.suriyaganesh.com">
+  <meta property="og:description" content="Arrays The type [n]T creates an array of n values of type T.
+var a [10]int //Creates an array &#39;a&#39; of int type with size 10 Slices An array has a fixed size. A slice is dynamically-sized The type []T is a slice of elements with type T Slices require high and low point in the array [low:high]
+package main import &#34;fmt&#34; func main(){ v := [6]int{1,2,3,4,5,6} var s []int = v[2:5] fmt.">
+  <meta property="og:image" content="image.png">
+  
+  
+  <link rel="stylesheet" href="https://suriya.cc/style.c0567bab15ad3417bd4691eec0b7a6b29d866c255ddd2c667e96703d35f764bb.css" integrity="sha256-wFZ7qxWtNBe9RpHuwLemsp2GbCVd3SxmfpZwPTX3ZLs=">
+    <link rel="icon" type="image/x-icon" href="/assets/images/head.svg">
+
+</head>
+  <nav class="navbar">
+  <a href="/">Home</a>
+  <a href="/tech">Tech</a>
+  <a href="/meta">Meta</a>
+  <a href="/now">Now</a>
+  <a href="/about">About</a>
+</nav>
+
+
+  <body class='typora-export'>
+
+      
+
+<div class='typora-export-content'>
+
+  <div id='write'  class=''>
+    <header>
+
+      <div class="page-header-icon undefined"><span class="icon">🐭</span></div>
+      <h1 class="page-title">Learning golang 02 - DS and algo</h1>
+    </header>
+    <div class="blender" id="blender"></div>
+    <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Suriya 🧚🏻‍♂️</title>
+  <meta name="description" content="🧚🏻‍♂️">
+  <meta name="author" content="Suriya Ganesh">
+
+  <meta property="og:title" content="Suriya Ganesh">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.suriyaganesh.com">
+  <meta property="og:description" content="Arrays The type [n]T creates an array of n values of type T.
+var a [10]int //Creates an array &#39;a&#39; of int type with size 10 Slices An array has a fixed size. A slice is dynamically-sized The type []T is a slice of elements with type T Slices require high and low point in the array [low:high]
+package main import &#34;fmt&#34; func main(){ v := [6]int{1,2,3,4,5,6} var s []int = v[2:5] fmt.">
+  <meta property="og:image" content="image.png">
+  
+  
+  <link rel="stylesheet" href="https://suriya.cc/style.c0567bab15ad3417bd4691eec0b7a6b29d866c255ddd2c667e96703d35f764bb.css" integrity="sha256-wFZ7qxWtNBe9RpHuwLemsp2GbCVd3SxmfpZwPTX3ZLs=">
+    <link rel="icon" type="image/x-icon" href="/assets/images/head.svg">
+
+</head>
+    <h1 id="arrays">Arrays</h1>
+<p>The type <code>[n]T</code> creates an array of n values of type T.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> [<span style="color:#ae81ff">10</span>]<span style="color:#66d9ef">int</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//Creates an array &#39;a&#39; of int type with size 10
+</span></span></span></code></pre></div><h3 id="slices">Slices</h3>
+<p>An array has a fixed size. A slice is dynamically-sized
+The type <code>[]T</code> is a slice of elements with type T
+Slices require high and low point in the array <code>[low:high]</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">v</span> <span style="color:#f92672">:=</span> [<span style="color:#ae81ff">6</span>]<span style="color:#66d9ef">int</span>{<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>}
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">s</span> []<span style="color:#66d9ef">int</span> = <span style="color:#a6e22e">v</span>[<span style="color:#ae81ff">2</span>:<span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">s</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//prints [3,4,5,6]
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><h3 id="slices-are-reference-to-arrays">Slices are reference to arrays</h3>
+<p>If a value in a slice is changed, the underlying array changes as well
+Other slices that shares those slices will see the changes too</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">names</span> <span style="color:#f92672">:=</span> [<span style="color:#ae81ff">4</span>]{
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;Alice&#34;</span>, <span style="color:#e6db74">&#34;bob&#34;</span>, <span style="color:#e6db74">&#34;Cathie&#34;</span>, <span style="color:#e6db74">&#34;David&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">names</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">a</span><span style="color:#f92672">:=</span><span style="color:#a6e22e">names</span>[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">2</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">b</span><span style="color:#f92672">:=</span><span style="color:#a6e22e">names</span>[<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">3</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">a</span>,<span style="color:#a6e22e">b</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//prints [&#34;Alice&#34;,&#34;bob&#34;] [&#34;Cathie&#34;, &#34;David&#34;]
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">b</span>[<span style="color:#ae81ff">0</span>] = <span style="color:#e6db74">&#34;XXX&#34;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">names</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="slice-defaults">Slice defaults</h3>
+<p>When slicing, the higher or lower bounds can be ignored. Similar to python</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">s</span> <span style="color:#f92672">:=</span> [<span style="color:#ae81ff">10</span>]<span style="color:#66d9ef">int</span>{<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">9</span>,<span style="color:#ae81ff">0</span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// s[0:10] = s[:] = s[0:] = s[:10]
+</span></span></span></code></pre></div><h3 id="slice-length-and-capacity">Slice length and capacity</h3>
+<p>length is the length of the slice, it can be got using <code>len(s)</code>
+capacity is the length of the underlying array, it can be got using. <code>cap(s)</code></p>
+<h3 id="null-slices">Null Slices</h3>
+<p>The zero value of a slice is nil.
+A nil slice has a length and capacity of zero and has no underlying array.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">s</span>[]<span style="color:#66d9ef">int</span> <span style="color:#75715e">//creating a slice
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">s</span>, len(<span style="color:#a6e22e">s</span>), cap(<span style="color:#a6e22e">s</span>))
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">s</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">Nil</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;nil&#34;</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="creating-a-slice-with-make-dynamic-array">Creating a slice with make (Dynamic array)</h3>
+<p>This is how you create a dynamic array</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span><span style="color:#f92672">:=</span> make([]<span style="color:#66d9ef">int</span>, <span style="color:#ae81ff">5</span>)
+</span></span></code></pre></div><p>To specify capacity a third argument can be passed</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">b</span><span style="color:#f92672">:=</span>make([<span style="color:#66d9ef">int</span>])
+</span></span></code></pre></div><h3 id="slices-of-slices">Slices of slices</h3>
+<p>Slices can contain any type, including other slices</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">board</span> <span style="color:#f92672">:=</span> [][]<span style="color:#66d9ef">string</span> {
+</span></span><span style="display:flex;"><span>        []<span style="color:#66d9ef">string</span>{<span style="color:#e6db74">&#39;_&#39;</span>,<span style="color:#e6db74">&#39;_&#39;</span>,<span style="color:#e6db74">&#39;_&#39;</span>}
+</span></span><span style="display:flex;"><span>        []<span style="color:#66d9ef">string</span>{<span style="color:#e6db74">&#39;_&#39;</span>,<span style="color:#e6db74">&#39;_&#39;</span>,<span style="color:#e6db74">&#39;_&#39;</span>}
+</span></span><span style="display:flex;"><span>        []<span style="color:#66d9ef">string</span>{<span style="color:#e6db74">&#39;_&#39;</span>,<span style="color:#e6db74">&#39;_&#39;</span>,<span style="color:#e6db74">&#39;_&#39;</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">board</span>[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">0</span>] = <span style="color:#e6db74">&#34;X&#34;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">board</span>[<span style="color:#ae81ff">2</span>][<span style="color:#ae81ff">2</span>] = <span style="color:#e6db74">&#34;O&#34;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">board</span>[<span style="color:#ae81ff">1</span>][<span style="color:#ae81ff">2</span>] = <span style="color:#e6db74">&#34;X&#34;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">board</span>[<span style="color:#ae81ff">1</span>][<span style="color:#ae81ff">0</span>] = <span style="color:#e6db74">&#34;O&#34;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">board</span>[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">2</span>] = <span style="color:#e6db74">&#34;X&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="appending-a-slice">Appending a Slice</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">s</span>[]<span style="color:#66d9ef">int</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">s</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//append works on nil slices, slice grows as needed
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    append(<span style="color:#a6e22e">s</span>,<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">s</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//more than one element can be added
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    append(<span style="color:#a6e22e">s</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">s</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="iterating-through-a-slice-range">Iterating through a slice (Range)</h3>
+<p>Iterating through a slice with the <code>range</code> key word is possible. each range would return two elements. a key and a value so both of those should be captured.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;main&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">s</span>[]<span style="color:#66d9ef">int</span>{<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">8</span>}
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span>,<span style="color:#a6e22e">v</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">s</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">i</span>,<span style="color:#a6e22e">v</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="skipping-ranges">Skipping Ranges</h3>
+<p>index of value in ranges can be skipped by using _ as a placeholder.</p>
+<p>note: This is not possible for random variables like rust</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">s</span>[]{<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>,<span style="color:#ae81ff">7</span>}
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">_</span>,<span style="color:#a6e22e">v</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">s</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">v</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="maps">Maps</h3>
+<p>A map maps keys to values.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Vertex</span> <span style="color:#66d9ef">struct</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Lat</span>, <span style="color:#a6e22e">Long</span> <span style="color:#66d9ef">float64</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">m</span> <span style="color:#66d9ef">map</span>[<span style="color:#66d9ef">string</span>]<span style="color:#a6e22e">Vertex</span> <span style="color:#75715e">//type declaration for map
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">m</span> = make(<span style="color:#66d9ef">map</span>[<span style="color:#66d9ef">string</span>]<span style="color:#a6e22e">Vertex</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">m</span>[<span style="color:#e6db74">&#34;A&#34;</span>] = <span style="color:#a6e22e">Vertex</span>{<span style="color:#ae81ff">1.23412</span>, <span style="color:#ae81ff">1.23456</span>}
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">m</span>[<span style="color:#e6db74">&#34;A&#34;</span>])
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="map-literals">Map Literals</h3>
+<p>Map literals are like struct literals but the keys are required</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Vertex</span> <span style="color:#66d9ef">struct</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">lat</span>, <span style="color:#a6e22e">lang</span> <span style="color:#66d9ef">float64</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">m</span> <span style="color:#66d9ef">map</span>[<span style="color:#66d9ef">string</span>]<span style="color:#a6e22e">Vertex</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;A&#34;</span>: <span style="color:#a6e22e">Vertex</span>{<span style="color:#ae81ff">1.234</span>, <span style="color:#ae81ff">1.0987</span>},
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;B&#34;</span>: <span style="color:#a6e22e">Vertex</span>{<span style="color:#ae81ff">22.2342</span>, <span style="color:#ae81ff">5.12321</span>}
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">m</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The type inside the map can be ignored if it is a top-level type</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Vertex</span> <span style="color:#a6e22e">struc</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">lat</span>, <span style="color:#a6e22e">long</span> <span style="color:#66d9ef">float64</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">m</span> <span style="color:#66d9ef">map</span>[<span style="color:#66d9ef">string</span>]<span style="color:#a6e22e">Vertex</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;A&#34;</span>: {<span style="color:#ae81ff">1.22354</span>, <span style="color:#ae81ff">5.623434</span> } <span style="color:#75715e">//note the the &#39;vertex&#39; Key word is not there
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#34;B&#34;</span>: {<span style="color:#ae81ff">6.123412</span>, <span style="color:#ae81ff">9.1232</span>}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="changing-values-in-maps-mutating-maps">changing values in maps Mutating Maps</h3>
+<p>updating value in a map</p>
+<pre tabindex="0"><code>m[key] = elem
+</code></pre><p>retrieve a key</p>
+<pre tabindex="0"><code>elem = m[key]
+</code></pre><p>delete an element</p>
+<pre tabindex="0"><code>delete(m,key)
+</code></pre><p>Test that a key is present</p>
+<pre tabindex="0"><code>elem, ok := m[key]
+</code></pre><p>if ok is false i.e key not present then the elem is the zero value of the struct</p>
+<h3 id="function-values">Function Values</h3>
+<p>Functions are values too, they can be passed around just like other values.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">compute</span>( <span style="color:#a6e22e">fn</span> <span style="color:#66d9ef">func</span>(<span style="color:#66d9ef">float64</span> <span style="color:#66d9ef">float64</span>) <span style="color:#66d9ef">float64</span> ) <span style="color:#66d9ef">float64</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">fn</span>(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">hypot</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">x</span>,<span style="color:#a6e22e">y</span> <span style="color:#66d9ef">float64</span>) <span style="color:#66d9ef">float64</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">math</span>.<span style="color:#a6e22e">Sqrt</span>(<span style="color:#a6e22e">x</span><span style="color:#f92672">*</span><span style="color:#a6e22e">x</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">*</span><span style="color:#a6e22e">y</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">hypot</span>(<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>)) <span style="color:#75715e">//This is a function call using the variable that was assigned the function
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">compute</span>(<span style="color:#a6e22e">hypot</span>)) <span style="color:#75715e">//sending the hypot function variable to compute, which is another function
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div>
+    
+    
+    
+
+  </body>
+</html>

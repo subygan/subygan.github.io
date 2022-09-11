@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learning Docker on Suriya&#39;s site</title>
+    <link>https://suriya.cc/tech/docker_learn/</link>
+    <description>Recent content in Learning Docker on Suriya&#39;s site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://suriya.cc/tech/docker_learn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://suriya.cc/tech/docker_learn/README/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://suriya.cc/tech/docker_learn/README/</guid>
+      <description>docker_learn Learning docker, a little deeper this time.
+Docker Daemon docker daemon is at the center of everything and it exposes REST apis. this is what is used by docker clients ot pull images and stuff. The dockerd demon listens for docker api requests and manages
+Docker client The docker client (docker) is the primary way that many Docker users interact with docker. When a command such as docker run is run.</description>
+    </item>
+    
+    <item>
+      <title>Docker in Action</title>
+      <link>https://suriya.cc/tech/docker_learn/docker-in-action/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://suriya.cc/tech/docker_learn/docker-in-action/</guid>
+      <description>Personal notes from Docker in action book
+Dockers use Linux namespaces and cgroups, which have been part of Linux since 2007. Docker does not provide the container technology but it makes it simpler to use. The docker containers are isolated with respect to eight aspects.
+PID namespace - process identifiers and capabilities UTS namespace - Host and domain name MNT namespace - File system access and structure IPC namespace - process communication over shared memory NET namespace 0 Network access and structure USR namespace - User names and identifiers chroot() - controls the location of the file system root cgroups - Resource protection Linux namespaces and cgroups take care of containers at runtime.</description>
+    </item>
+    
+  </channel>
+</rss>

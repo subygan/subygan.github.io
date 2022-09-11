@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Suriya 🧚🏻‍♂️</title>
+  <meta name="description" content="🧚🏻‍♂️">
+  <meta name="author" content="Suriya Ganesh">
+
+  <meta property="og:title" content="Suriya Ganesh">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.suriyaganesh.com">
+  <meta property="og:description" content="This is still a WIP and I&rsquo;ll be updating each one as I discover and play with new stuff.
+Why Cross platform? There are majorly 2 mobile platforms and 3 desktop platforms. Browsers are acting as a cool layer between this, within the realms of which applications are consistently rendered and usability is not spoilt. This is awesome, because now you don&rsquo;t need 5X the development effort to deliver a software experience But only one.">
+  <meta property="og:image" content="image.png">
+  
+  
+  <link rel="stylesheet" href="https://suriya.cc/style.c0567bab15ad3417bd4691eec0b7a6b29d866c255ddd2c667e96703d35f764bb.css" integrity="sha256-wFZ7qxWtNBe9RpHuwLemsp2GbCVd3SxmfpZwPTX3ZLs=">
+    <link rel="icon" type="image/x-icon" href="/assets/images/head.svg">
+
+</head>
+  <nav class="navbar">
+  <a href="/">Home</a>
+  <a href="/tech">Tech</a>
+  <a href="/meta">Meta</a>
+  <a href="/now">Now</a>
+  <a href="/about">About</a>
+</nav>
+
+
+  <body class='typora-export'>
+
+      
+
+<div class='typora-export-content'>
+
+  <div id='write'  class=''>
+    <header>
+
+      <div class="page-header-icon undefined"><span class="icon"></span></div>
+      <h1 class="page-title">Searching for a cross platform framework</h1>
+    </header>
+    <div class="blender" id="blender"></div>
+    <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Suriya 🧚🏻‍♂️</title>
+  <meta name="description" content="🧚🏻‍♂️">
+  <meta name="author" content="Suriya Ganesh">
+
+  <meta property="og:title" content="Suriya Ganesh">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.suriyaganesh.com">
+  <meta property="og:description" content="This is still a WIP and I&rsquo;ll be updating each one as I discover and play with new stuff.
+Why Cross platform? There are majorly 2 mobile platforms and 3 desktop platforms. Browsers are acting as a cool layer between this, within the realms of which applications are consistently rendered and usability is not spoilt. This is awesome, because now you don&rsquo;t need 5X the development effort to deliver a software experience But only one.">
+  <meta property="og:image" content="image.png">
+  
+  
+  <link rel="stylesheet" href="https://suriya.cc/style.c0567bab15ad3417bd4691eec0b7a6b29d866c255ddd2c667e96703d35f764bb.css" integrity="sha256-wFZ7qxWtNBe9RpHuwLemsp2GbCVd3SxmfpZwPTX3ZLs=">
+    <link rel="icon" type="image/x-icon" href="/assets/images/head.svg">
+
+</head>
+    <p>This is still a WIP and I&rsquo;ll be updating each one as I discover and play with new stuff.</p>
+<h2 id="why-cross-platform">Why Cross platform?</h2>
+<p>There are majorly 2 mobile platforms and 3 desktop platforms. Browsers are acting as a cool layer between this, within the realms of which applications are consistently rendered and usability is not spoilt. This is awesome, because now you don&rsquo;t need 5X the development effort to deliver a software experience But only one. Which means velocity can be much faster. But the problem with this, is that &ldquo;websites&rdquo; are not really perceived as serious applicaitons. And there is very little control over the user experience. Native apps are a better way to deliver applications.</p>
+<h2 id="requirement">Requirement</h2>
+<ul>
+<li>build apps across all 5 platforms with max code overlap across. (ideally)</li>
+<li>Small build size</li>
+<li>Snappy performance</li>
+<li>If only desktop apps only
+<ul>
+<li>
+<blockquote>
+<p>95% code overlap</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>If only mobile apps
+<ul>
+<li>
+<blockquote>
+<p>95% code overlap.</p>
+</blockquote>
+</li>
+<li>uptodate API support</li>
+</ul>
+</li>
+</ul>
+<h2 id="options">Options.</h2>
+<p>There are broadly a few ways this is being done.</p>
+<ul>
+<li>Use a browser to render the application (electron, Deskgap, nwjs, et al.)</li>
+<li>Provide SDKs that compile to native code (Qt, flutter, et al)</li>
+</ul>
+<h2 id="browser-based-solutions">Browser based solutions</h2>
+<h3 :target="_blank" id="electronhttpswwwelectronjsorg"><a href="https://www.electronjs.org/">Electron</a></h3>
+<p>Electron supports all major desktop platforms. And simple HTML, CSS and JS stack works perfectly fine without any issue.</p>
+<p>Electron is unanimously disliked by everyone for being such a memory hog, which seems unescapable when you&rsquo;re shipping an entire browser with the application. Also, this kinda bloats up the app bundle as well. A hello world production app takes up about 50 MB which is insane. <a href="https://web.archive.org/web/20200926071714/https://stationhq.com/blog/station-1-the-technical-back-story">station&rsquo;s story</a> is a cautionary tale to anyone who tries to go down this path.</p>
+<p>examples: slack, discord, VS code, <a href="https://www.electronjs.org/apps">more stuff here</a></p>
+<h3 :target="_blank" id="nwjshttpsnwjsio"><a href="https://nwjs.io/">NWjs</a></h3>
+<p>creates a node runtime in the browser to render the website. which means, on first install it has to be bundled with everything that comes with it as well. This could get pretty heavy overtime.</p>
+<p><img src="/assets/images/nodem.png" alt="node_modules image"></p>
+<p>One nice(?) thing about NWjs is that it still supports windows xp.</p>
+<h3 :target="_blank" id="neutralinojshttpsneutralinojsorg"><a href="https://neutralino.js.org/">NeutralinoJS</a></h3>
+<p>Neutralinojs takes slightly a different(smarter?) approach by using the system&rsquo;s default browser instead of bundling a whole chromium browser with it.
+Neutralino clearly has its benefits over the other two in both build size and memory footprint. It still supports only desktop applications</p>
+<p>similar</p>
+<ul>
+<li><a href="https://github.com/neutralinojs/evaluation">Neutralinojs vs NWjs vs node evaluation</a></li>
+</ul>
+<p>examples: <a href="https://neutralino.js.org/apps/">here</a></p>
+<h3 :target="_blank" id="react-nativehttpsreactnativedev"><a href="https://reactnative.dev/">React Native</a></h3>
+<p>As far as I&rsquo;ve seen React Native feels like a mix of so many things. its a sublet from a &ldquo;web&rdquo;-framework that has been changed fairly to interact with native components written in <code>JAVA</code>, <code>objective C</code> and <code>C#</code> using so called bridges. This mildly reminds me of the <a href="https://en.wikipedia.org/wiki/Chimera">chimera</a>, a freak of nature not really sure why.</p>
+<p>examples: Coinbase, shopify, flipkart and <a href="https://github.com/ReactNativeNews/React-Native-Apps">others</a>{:target=&quot;_blank&quot;}</p>
+<p>Personal notes:</p>
+<ul>
+<li>the hot reload is nice</li>
+</ul>
+<h3 :target="_blank" id="qthttpswwwqtio"><a href="https://www.qt.io/">Qt</a></h3>
+<p>Qt is a cross platform proprietory framework that is being used by a lot of applications. they provide a free version with an <a href="https://www.gnu.org/licenses/lgpl-3.0.en.html">LGpl</a> license and link the app dynamically instead of statically. Which, might satisfying for most application. Also, it requires you to write in  <code>c++</code> and does not exactly support android. The widgets can get old. and new native features might be a bit late to come by.</p>
+<p>Personal notes:</p>
+<ul>
+<li>Having to use a proprietary IDE for development is annoying</li>
+</ul>
+<p>example apps: telegram, skype</p>
+<h3 :target="_blank" id="flutterhttpsflutterdev"><a href="https://flutter.dev/">Flutter</a></h3>
+<p>Flutter is a multiplatform application development framework which uses dart as a main language. It&rsquo;s relatively new, being published in 2019. It supports android, ios, macOS, linux, windows and web. And runs in <a href="https://medium.com/swlh/flutter-vs-native-vs-react-native-examining-performance-31338f081980">near native performance</a>. It does not use native components directly, like React native instead choosing to paint all the widgets using the <a href="https://skia.org/">Skia</a> 2d rendering engine, which means the widgets aren&rsquo;t exactly native but native-like.</p>
+<p>examples: Zomato, Zerodha and <a href="https://flutter.dev/showcase">others</a></p>
+<h3 id="kotlinhttpskotlinlangorgdocsmultiplatformhtml"><a href="https://kotlinlang.org/docs/multiplatform.html">Kotlin</a></h3>
+<p>Kotlin Multiplatform is a framework build on top of kotlin to build apps for multiple platforms including, web, tvOS, macOS, android, ios. Kotlin skews more towards business logic and is heavy in that angle. It works by having custom modules for seperate platforms and one unifying part. Since Kotlin, has complete backward compatibility with Java and runs in the JVM, it is able to support multiple platforms.</p>
+<p>personal notes:</p>
+<ul>
+<li>having tried to develop android apps, the whole setup is huge and heavy. Android studio + adb just sucks up a lot of memory.</li>
+<li>There is no hot reload. Meaning the feedback loop is incredibly slow.</li>
+<li>Kotlin is pretty easy to pick up.</li>
+</ul>
+<h2 id="resources-i-found-useful">Resources I found useful</h2>
+<ul>
+<li><a href="https://www.thedroidsonroids.com/blog/flutter-vs-react-native-what-to-choose-in-2021">Flutter vs react Native</a>{:target=&quot;_blank&quot;}</li>
+<li><a href="https://doit.software/blog/flutter-vs-kotlin-which-is-best-for-cross-platform-app-development#screen26">kotlin vs xamarin vs flutter vs react native </a>{:target=&quot;_blank&quot;}
+<ul>
+<li>A pretty comprehensive explanation of everything involved</li>
+</ul>
+</li>
+<li><a href="https://allenpike.com/2021/gravity-of-cross-platform-apps">Gravity of cross platform apps</a>{:target=&quot;_blank&quot;}
+<ul>
+<li>A pretty good reason for why big companies have the need to switch to electron&amp;co</li>
+<li><a href="https://blog.1password.com/1password-8-the-story-so-far/">one password migration to electron</a>{:target=&quot;_blank&quot;}</li>
+</ul>
+</li>
+<li><a href="https://stackoverflow.com/questions/41124338/does-react-native-compile-javascript-into-java-for-android">What happens to react Native app during compiling</a>{:target=&quot;_blank&quot;}
+<ul>
+<li>Basically a JS process is running in the background and send commands via bridges.</li>
+</ul>
+</li>
+<li><a href="https://hackernoon.com/understanding-react-native-bridge-concept-e9526066ddb8">understanding react native bridge concept</a>{:target=&quot;_blank&quot;}</li>
+<li><a href="https://discuss.kotlinlang.org/t/should-i-start-learning-kotlin-or-go-with-flutter/14567/2">Kotlin vs Flutter</a>{:target=&quot;_blank&quot;}</li>
+<li><a href="https://discuss.kotlinlang.org/t/google-flutter-what-could-be-their-reason-for-choosing-dart-over-kotlin/21179/2">Why Dart instead of kotlin</a>{:target=&quot;_blank&quot;}</li>
+<li><a href="https://news.ycombinator.com/item?id=30145434">People who went full on in flutter</a>{:target=&quot;_blank&quot;}
+<ul>
+<li>This guy raises some valid problems with flutter.</li>
+</ul>
+</li>
+<li><a href="https://zerodha.tech/blog/from-native-to-react-native-to-flutter/">Migrating from react native to Android in zerodha</a>{:target=&quot;_blank&quot;}
+<ul>
+<li>Then these guys say, flutter was awesome.</li>
+</ul>
+</li>
+<li><a href="https://docs.flutter.dev/testing">flutter testing framework</a>{:target=&quot;_blank&quot;}</li>
+<li><a href="https://alibabatech.medium.com/utilizing-flutter-best-practice-from-alibaba-236a53aa32c8">Alibaba&rsquo;s flutter story</a>{:target=&quot;_blank&quot;}
+<ul>
+<li>They seem to love it.</li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=X8ipUgXH6jw">Flutter vs React Native</a>{:target=&quot;_blank&quot;}</li>
+<li><a href="https://medium.com/swlh/flutter-vs-native-vs-react-native-examining-performance-31338f081980">flutter, RN, swift objective C performance benchmark </a>{:target=&quot;_blank&quot;}</li>
+<li><a href="https://shopify.engineering/managing-native-code-react-native">React native issues and positives at shopify</a>{:target=&quot;_blank&quot;}</li>
+</ul>
+
+    
+    
+    
+
+  </body>
+</html>

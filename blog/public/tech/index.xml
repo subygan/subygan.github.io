@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech Stuff on Suriya&#39;s site</title>
+    <link>https://suriya.cc/tech/</link>
+    <description>Recent content in Tech Stuff on Suriya&#39;s site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Jul 2022 22:15:00 +0000</lastBuildDate><atom:link href="https://suriya.cc/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Theory Stuff</title>
+      <link>https://suriya.cc/tech/theory/</link>
+      <pubDate>Tue, 15 Mar 2022 22:15:00 +0000</pubDate>
+      
+      <guid>https://suriya.cc/tech/theory/</guid>
+      <description>Theory seems more and more important, as I try to understand the underlying blocks. It&amp;rsquo;s not enough to just know frameworks, I need to know the underlying assumptions and working of hte building blocks. These are all my experiments.
+What constitutes theory? Anything that helps me understand a system. Not necessarily just to operate on. This can range from compilers to database to pretty much anything theoretical.</description>
+    </item>
+    
+    <item>
+      <title>Searching for a cross platform framework</title>
+      <link>https://suriya.cc/tech/musings/search_cross_platform/</link>
+      <pubDate>Sat, 29 Jan 2022 22:15:00 +0000</pubDate>
+      
+      <guid>https://suriya.cc/tech/musings/search_cross_platform/</guid>
+      <description>This is still a WIP and I&amp;rsquo;ll be updating each one as I discover and play with new stuff.
+Why Cross platform? There are majorly 2 mobile platforms and 3 desktop platforms. Browsers are acting as a cool layer between this, within the realms of which applications are consistently rendered and usability is not spoilt. This is awesome, because now you don&amp;rsquo;t need 5X the development effort to deliver a software experience But only one.</description>
+    </item>
+    
+    <item>
+      <title>SEO thingies</title>
+      <link>https://suriya.cc/tech/SEO/</link>
+      <pubDate>Thu, 23 Dec 2021 22:15:00 +0000</pubDate>
+      
+      <guid>https://suriya.cc/tech/SEO/</guid>
+      <description>I try to record my experiments with SEO here</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://suriya.cc/tech/UI/flexbox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://suriya.cc/tech/UI/flexbox/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

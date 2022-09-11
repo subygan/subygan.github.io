@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Suriya 🧚🏻‍♂️</title>
+  <meta name="description" content="🧚🏻‍♂️">
+  <meta name="author" content="Suriya Ganesh">
+
+  <meta property="og:title" content="Suriya Ganesh">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.suriyaganesh.com">
+  <meta property="og:description" content="When using aws a lot of times its annoying to type sudo for all commands. instead it is much simpler to just grant super user privileges to the ubuntu user only.
+in the ubuntu shell do the following
+sudo su - this should switch to a different type of shell. Now, you are in the root user shell.
+from there, run
+passwd ubuntu This should prompt you to set a new username password This is just icing on the cake for future use.">
+  <meta property="og:image" content="image.png">
+  
+  
+  <link rel="stylesheet" href="https://suriya.cc/style.c0567bab15ad3417bd4691eec0b7a6b29d866c255ddd2c667e96703d35f764bb.css" integrity="sha256-wFZ7qxWtNBe9RpHuwLemsp2GbCVd3SxmfpZwPTX3ZLs=">
+    <link rel="icon" type="image/x-icon" href="/assets/images/head.svg">
+
+</head>
+  <nav class="navbar">
+  <a href="/">Home</a>
+  <a href="/tech">Tech</a>
+  <a href="/meta">Meta</a>
+  <a href="/now">Now</a>
+  <a href="/about">About</a>
+</nav>
+
+
+  <body class='typora-export'>
+
+      
+
+<div class='typora-export-content'>
+
+  <div id='write'  class=''>
+    <header>
+
+      <div class="page-header-icon undefined"><span class="icon"></span></div>
+      <h1 class="page-title">superuser changes</h1>
+    </header>
+    <div class="blender" id="blender"></div>
+    <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Suriya 🧚🏻‍♂️</title>
+  <meta name="description" content="🧚🏻‍♂️">
+  <meta name="author" content="Suriya Ganesh">
+
+  <meta property="og:title" content="Suriya Ganesh">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.suriyaganesh.com">
+  <meta property="og:description" content="When using aws a lot of times its annoying to type sudo for all commands. instead it is much simpler to just grant super user privileges to the ubuntu user only.
+in the ubuntu shell do the following
+sudo su - this should switch to a different type of shell. Now, you are in the root user shell.
+from there, run
+passwd ubuntu This should prompt you to set a new username password This is just icing on the cake for future use.">
+  <meta property="og:image" content="image.png">
+  
+  
+  <link rel="stylesheet" href="https://suriya.cc/style.c0567bab15ad3417bd4691eec0b7a6b29d866c255ddd2c667e96703d35f764bb.css" integrity="sha256-wFZ7qxWtNBe9RpHuwLemsp2GbCVd3SxmfpZwPTX3ZLs=">
+    <link rel="icon" type="image/x-icon" href="/assets/images/head.svg">
+
+</head>
+    <p>When using aws a lot of times its annoying to type <code>sudo</code> for all commands. instead it is much simpler to just grant super user privileges to the ubuntu user only.</p>
+<p>in the ubuntu shell do the following</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo su -
+</span></span></code></pre></div><p>this should switch to a different type of shell. Now, you are in the root user shell.</p>
+<p>from there, run</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>passwd ubuntu
+</span></span></code></pre></div><p>This should prompt you to set a new username password
+This is just icing on the cake for future use. As, I still am unable to find the default password anywhere.</p>
+<p>Then, run</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>usermod -aG sudo ubuntu
+</span></span></code></pre></div><p>This provides super user privileges to ubuntu.</p>
+
+    
+    
+    
+
+  </body>
+</html>
