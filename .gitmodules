@@ -1,12 +1,12 @@
-[submodule "blog/tech/learning_golang/golang_learn"]
-	path = blog/tech/learning_golang/golang_learn
-	url = https://github.com/suriya-ganesh/golang_learn.git
-[submodule "blog/tech/docker_learn"]
-	path = blog/tech/docker_learn
+[submodule "blog/content/tech/docker_learn"]
+	path = blog/content/tech/docker_learn
 	url = https://github.com/suriya-ganesh/docker_learn.git
-[submodule "blog/tech/js_learn"]
-	path = blog/tech/js_learn
+[submodule "blog/content/tech/js_learn"]
+	path = blog/content/tech/js_learn
 	url = https://github.com/suriya-ganesh/js_learn.git
-[submodule "blog/tech/github_action_learn"]
-	path = blog/tech/github_action_learn
+[submodule "blog/content/tech/github_action_learn"]
+	path = blog/content/tech/github_action_learn
 	url = https://github.com/suriya-ganesh/github_action_learn.git
+[submodule "blog/content/tech/golang_learn"]
+	path = blog/content/tech/golang_learn
+	url = https://github.com/suriya-ganesh/golang_learn.git
