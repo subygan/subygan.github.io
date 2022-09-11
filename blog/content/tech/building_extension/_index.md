@@ -1,6 +1,4 @@
 ---
-layout: base
-type: page
 emoji: 🦤
 title: Building an extension
 description: My notes on building an extension for chrome

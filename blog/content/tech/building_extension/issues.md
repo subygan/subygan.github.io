@@ -2,7 +2,6 @@
 title: Fixing chrome extension issues
 description: logging all the issues I've faced..
 layout: base
-type: page
 emoji: 
 date: 2022-02-12 22:15:00
 ---
