@@ -1,9 +1,6 @@
 [submodule "blog/content/tech/docker_learn"]
 	path = blog/content/tech/docker_learn
 	url = https://github.com/suriya-ganesh/docker_learn.git
-[submodule "blog/content/tech/learning_golang/golang_learn"]
-	path = blog/content/tech/learning_golang/golang_learn
-	url = https://github.com/suriya-ganesh/golang_learn.git
 [submodule "blog/content/tech/js_learn"]
 	path = blog/content/tech/js_learn
 	url = https://github.com/suriya-ganesh/js_learn.git
