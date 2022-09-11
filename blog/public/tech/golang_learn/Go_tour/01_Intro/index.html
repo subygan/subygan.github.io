@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Suriya 🧚🏻‍♂️</title>
+  <meta name="description" content="🧚🏻‍♂️">
+  <meta name="author" content="Suriya Ganesh">
+
+  <meta property="og:title" content="Suriya Ganesh">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.suriyaganesh.com">
+  <meta property="og:description" content="Intro Every go program is made of packages and &ldquo;main&rdquo; package is run first. package main import ( &#34;fmt&#34; &#34;math/rand&#34; ) func main() { fmt.Println(&#34;My favorite number is&#34;, rand.Intn(10)) } In the above program math/rand has a file with the first statement package rand
+Import statements these are called factored imports
+import ( &#34;fmt&#34; &#34;math/rand&#34; ) imports can be done this way as well
+import &#34;fmt&#34; import &#34;math/rand&#34; Functions functions can take zero or more variables.">
+  <meta property="og:image" content="image.png">
+  
+  
+  <link rel="stylesheet" href="https://suriya.cc/style.c0567bab15ad3417bd4691eec0b7a6b29d866c255ddd2c667e96703d35f764bb.css" integrity="sha256-wFZ7qxWtNBe9RpHuwLemsp2GbCVd3SxmfpZwPTX3ZLs=">
+    <link rel="icon" type="image/x-icon" href="/assets/images/head.svg">
+
+</head>
+  <nav class="navbar">
+  <a href="/">Home</a>
+  <a href="/tech">Tech</a>
+  <a href="/meta">Meta</a>
+  <a href="/now">Now</a>
+  <a href="/about">About</a>
+</nav>
+
+
+  <body class='typora-export'>
+
+      
+
+<div class='typora-export-content'>
+
+  <div id='write'  class=''>
+    <header>
+
+      <div class="page-header-icon undefined"><span class="icon">🐭</span></div>
+      <h1 class="page-title">Learning golang 01 - Basics</h1>
+    </header>
+    <div class="blender" id="blender"></div>
+    <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Suriya 🧚🏻‍♂️</title>
+  <meta name="description" content="🧚🏻‍♂️">
+  <meta name="author" content="Suriya Ganesh">
+
+  <meta property="og:title" content="Suriya Ganesh">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.suriyaganesh.com">
+  <meta property="og:description" content="Intro Every go program is made of packages and &ldquo;main&rdquo; package is run first. package main import ( &#34;fmt&#34; &#34;math/rand&#34; ) func main() { fmt.Println(&#34;My favorite number is&#34;, rand.Intn(10)) } In the above program math/rand has a file with the first statement package rand
+Import statements these are called factored imports
+import ( &#34;fmt&#34; &#34;math/rand&#34; ) imports can be done this way as well
+import &#34;fmt&#34; import &#34;math/rand&#34; Functions functions can take zero or more variables.">
+  <meta property="og:image" content="image.png">
+  
+  
+  <link rel="stylesheet" href="https://suriya.cc/style.c0567bab15ad3417bd4691eec0b7a6b29d866c255ddd2c667e96703d35f764bb.css" integrity="sha256-wFZ7qxWtNBe9RpHuwLemsp2GbCVd3SxmfpZwPTX3ZLs=">
+    <link rel="icon" type="image/x-icon" href="/assets/images/head.svg">
+
+</head>
+    <h2 id="intro">Intro</h2>
+<ul>
+<li>Every go program is made of packages and &ldquo;main&rdquo; package is run first.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> (
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;math/rand&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;My favorite number is&#34;</span>, <span style="color:#a6e22e">rand</span>.<span style="color:#a6e22e">Intn</span>(<span style="color:#ae81ff">10</span>))
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In the above program math/rand has a file with the first statement <em>package rand</em></p>
+<h3 id="import-statements">Import statements</h3>
+<p>these are called factored imports</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">import</span> (
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;math/rand&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><p>imports can be done this way as well</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;math/rand&#34;</span>
+</span></span></code></pre></div><h3 id="functions">Functions</h3>
+<p>functions can take zero or more variables. The type comes after the variable names</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">add</span>(<span style="color:#a6e22e">x</span> <span style="color:#66d9ef">int</span>, <span style="color:#a6e22e">y</span> <span style="color:#66d9ef">int</span>) <span style="color:#66d9ef">int</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">y</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">add</span>(<span style="color:#ae81ff">42</span>, <span style="color:#ae81ff">13</span>))
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>If similar stuff are together they can be clubbed together like so,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span> <span style="color:#66d9ef">int</span>
+</span></span></code></pre></div><p><strong>functions can return any number of results</strong></p>
+<h4 id="named-return-value">Named return value:</h4>
+<p>Function values can be named for example</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">split</span>(<span style="color:#a6e22e">sum</span> <span style="color:#66d9ef">int</span>) (<span style="color:#a6e22e">x</span>,<span style="color:#a6e22e">y</span> <span style="color:#66d9ef">int</span>) { <span style="color:#75715e">// note the return declaration
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">x</span> = <span style="color:#a6e22e">sum</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">9</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">y</span> = <span style="color:#a6e22e">sum</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">x</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//only an empty return statement is enough
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><h3 id="variables-with-initializers">Variables with initializers</h3>
+<p>A <em>var</em> declaration can derive type from the initializer value</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> = <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>   <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;%T:  %v \n&#34;</span>,<span style="color:#a6e22e">x</span>,<span style="color:#a6e22e">x</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h4 id="short-variable-declaration-using-">Short variable declaration using :=</h4>
+<p>Inside a function := is available to implicitly type derive from initialisor. <br>
+Outside a function all declaration has to use the suffix (var, func and so on) so the short variable declarator is not available.</p>
+<h3 id="basic-types">Basic types</h3>
+<pre tabindex="0"><code>bool
+
+string
+
+int  int8  int16  int32  int64
+uint uint8 uint16 uint32 uint64 uintptr
+
+byte // alias for uint8
+
+rune // alias for int32
+     // represents a Unicode code point
+
+float32 float64
+
+complex64 complex128
+</code></pre><h3 id="zero-values">Zero values:</h3>
+<p>Variables declared without an explicit initial value are given their zero value</p>
+<pre tabindex="0"><code>0 for numeric types,
+false for the boolean type, and
+&#34;&#34; (the empty string) for strings.
+</code></pre><h3 id="type-conversion">type conversion</h3>
+<p>The expression <em>T(v)</em> is used to type cast between compatible types.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#66d9ef">int</span> = <span style="color:#ae81ff">42</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">f</span> <span style="color:#66d9ef">float64</span> = float64(<span style="color:#a6e22e">i</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">u</span> <span style="color:#66d9ef">uint</span> = uint(<span style="color:#a6e22e">f</span>)
+</span></span></code></pre></div><p>or</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">42</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">f</span> <span style="color:#f92672">:=</span> float64(<span style="color:#a6e22e">i</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">u</span> <span style="color:#f92672">:=</span> uint(<span style="color:#a6e22e">f</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//Note that these are only possible inside functions and not outside
+</span></span></span></code></pre></div><h4 id="type-inference">Type inference</h4>
+<p>When the right element was type unspecified and the left element is type specified, then it is easily derived</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#66d9ef">int</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">j</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">i</span>
+</span></span></code></pre></div><p>But in case of values it depends on the type of value</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">42</span> <span style="color:#75715e">//int
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">j</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">3.142</span> <span style="color:#75715e">//float
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">k</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">0.867</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">0.5i</span> <span style="color:#75715e">//complex
+</span></span></span></code></pre></div><h3 id="constants">Constants</h3>
+<p>Constants are similar to var, but cannot be changed later on
+constants cannot be declared using := assignment</p>
+<h1 id="flow-control-statements">Flow control statements</h1>
+<h2 id="for-loop">For loop</h2>
+<p>There is only <em>for</em> loop in golang.
+It has 3 components seperated by semicolons</p>
+<ul>
+<li>The init statement executed in the first iteration</li>
+<li>The condition expression that gets evaluated before every iteration</li>
+<li>The post statement: executed at the end of the statement</li>
+</ul>
+<p>Unlike C and C++ it doesn&rsquo;t require parenthesis. but the curly braces is necessary.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">sum</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">:=</span><span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span>&lt;<span style="color:#ae81ff">100</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">sum</span><span style="color:#f92672">+=</span><span style="color:#a6e22e">i</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">sum</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The init and post statements are optional</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">sum</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">i</span><span style="color:#f92672">:=</span><span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> ; <span style="color:#a6e22e">i</span>&lt;<span style="color:#ae81ff">100</span> ; { <span style="color:#75715e">//Notice that there are no init or post statements
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">sum</span><span style="color:#f92672">+=</span><span style="color:#a6e22e">i</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>You can drop the semicolons as well</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">sum</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span>&lt;<span style="color:#ae81ff">100</span> { <span style="color:#75715e">//note no semicolon unlike previous
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">sum</span><span style="color:#f92672">+=</span><span style="color:#a6e22e">i</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>if the init condition is omitted, then it loops forever. There is no while in golang</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//this repeates forever
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="if-statement">if statement</h2>
+<p>similar to for, if statements don&rsquo;t require parentheses () but they need braces {}</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span>(
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;math&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">sqrt</span>(<span style="color:#a6e22e">x</span> <span style="color:#66d9ef">float64</span>) <span style="color:#66d9ef">string</span>{
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">x</span>&lt;<span style="color:#ae81ff">0</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">sqrt</span>(<span style="color:#f92672">-</span><span style="color:#a6e22e">x</span>)<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;i&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Sprint</span>(<span style="color:#a6e22e">math</span>.<span style="color:#a6e22e">sqrt</span>(<span style="color:#a6e22e">x</span>))
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">sqrt</span>(<span style="color:#ae81ff">2</span>), <span style="color:#a6e22e">sqrt</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">4</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// prints: 1.4142135623730951 2i
+</span></span></span></code></pre></div><h3 id="if-with-a-short-statement">If with a short statement</h3>
+<p>If can have initialising statement. the variable is only available within the scope of the if.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> ( 
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;math&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">v</span><span style="color:#f92672">:=</span><span style="color:#ae81ff">1</span>;<span style="color:#a6e22e">v</span>&lt;<span style="color:#ae81ff">10</span> { <span style="color:#75715e">//note the initialising statement
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">v</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="if-and-else-blocks">if and else blocks</h3>
+<p>Any variable initialised at the if block is also available at the else block</p>
+<h2 id="switch-statements">Switch statements</h2>
+<p>Switch statement is a simpler way of writing if else functions.
+Go&rsquo;s switch statements have the same syntax as if, they can have an initialising statement which makes them available everywhere.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> (
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;runtime&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Print</span>(<span style="color:#e6db74">&#34;Go runs on &#34;</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">switch</span> <span style="color:#a6e22e">os</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">runtime</span>.<span style="color:#a6e22e">GOOS</span>; <span style="color:#a6e22e">os</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;darwin&#34;</span>:
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;OS X.&#34;</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;linux&#34;</span>:
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Linux.&#34;</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">default</span>:
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">// freebsd, openbsd,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>		<span style="color:#75715e">// plan9, windows...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>		<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%s.\n&#34;</span>, <span style="color:#a6e22e">os</span>)
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Switch evaluation order</p>
+<ul>
+<li>top to bottom,</li>
+<li>stops executing whenever the right sequence is seen</li>
+</ul>
+<h4 id="switch-with-no-condition">Switch with no condition.</h4>
+<ul>
+<li>Switch without any condition, makes the case as true by default. This makes it an easier way to write if conditions</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> ( 
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;time&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">t</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Now</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">switch</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">case</span> <span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">Hour</span>() &lt; <span style="color:#ae81ff">12</span> :
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Good Morning!&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">case</span> <span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">Hour</span>() &lt; <span style="color:#ae81ff">17</span> :
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Good Afternoon&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">default</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Good evening&#34;</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="defer-statements">Defer statements</h2>
+<p>Defer statements execute after everything around it has been executed and returned</p>
+<p>Defer functions are pushed into a call stack and executed in last-in-first-out order</p>
+<p>Defer statement&rsquo;s <strong><strong>arguments</strong></strong> are evaluated immediately. But are executed at the end</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">defer</span> <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;World&#34;</span>) <span style="color:#75715e">// This will be printed in the end
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Hello&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//This would print: Hello World
+</span></span></span></code></pre></div><h2 id="pointer">Pointer</h2>
+<p>Pointers are references to the memory ho</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">p</span> <span style="color:#f92672">*</span><span style="color:#66d9ef">int</span>
+</span></span></code></pre></div><p>The &amp; operator generates a pointer to its operand</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">42</span> <span style="color:#75715e">//implicit type int
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">k</span> <span style="color:#f92672">*</span><span style="color:#66d9ef">int</span> = <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">i</span>
+</span></span></code></pre></div><p>The * operator denotes the value behind the pointer</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#f92672">*</span><span style="color:#a6e22e">p</span>) <span style="color:#75715e">// read i through the pointer p
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">*</span><span style="color:#a6e22e">p</span> = <span style="color:#ae81ff">21</span>         <span style="color:#75715e">// set i through the pointer p
+</span></span></span></code></pre></div><h1 id="struct">Struct</h1>
+<p>A struct is a collection of fields.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Vertex</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">X</span> <span style="color:#66d9ef">int</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Y</span> <span style="color:#66d9ef">int</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">Vertex</span>{<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>})
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="struct-literals">Struct Literals</h2>
+<p>Structs can be defined by <code>{Name: value}</code> syntax.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Vertex</span> <span style="color:#66d9ef">struct</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">X</span>,<span style="color:#a6e22e">Y</span> <span style="color:#66d9ef">int</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">v</span> = <span style="color:#a6e22e">Vertex</span>{<span style="color:#a6e22e">X</span>:<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">Y</span>:<span style="color:#ae81ff">2</span>} <span style="color:#75715e">//The order doesn&#39;t matter
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Struct fields are accessed using a dot</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Vertex</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">X</span> <span style="color:#66d9ef">int</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Y</span> <span style="color:#66d9ef">int</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">k</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">Vertex</span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">k</span>.<span style="color:#a6e22e">X</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">k</span>.<span style="color:#a6e22e">Y</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="pointers-to-struct">Pointers to Struct</h3>
+<p>Struct fields can be accessed through pointers.
+But it is cumbersome to write *&lt;pointer_name&gt; every time. So the * can be ignored without explicit dereference.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Vertex</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">X</span>, <span style="color:#a6e22e">Y</span> <span style="color:#66d9ef">int</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">v</span><span style="color:#f92672">:=</span><span style="color:#a6e22e">Vertex</span>{<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>}
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">v</span>.<span style="color:#a6e22e">X</span> = <span style="color:#ae81ff">23</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">v</span>) <span style="color:#75715e">//prints { 23 2 }
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+    
+    
+    
+
+  </body>
+</html>

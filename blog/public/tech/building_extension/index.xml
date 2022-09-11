@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Building an extension on Suriya&#39;s site</title>
+    <link>https://suriya.cc/tech/building_extension/</link>
+    <description>Recent content in Building an extension on Suriya&#39;s site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Feb 2022 22:15:00 +0000</lastBuildDate><atom:link href="https://suriya.cc/tech/building_extension/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fixing chrome extension issues</title>
+      <link>https://suriya.cc/tech/building_extension/issues/</link>
+      <pubDate>Sat, 12 Feb 2022 22:15:00 +0000</pubDate>
+      
+      <guid>https://suriya.cc/tech/building_extension/issues/</guid>
+      <description>an Unknown error occured while fetching the script. This happens when trying to load the extension. the manifest.json was pointing to the right service worker but still couldn&amp;rsquo;t fetch it. The problem was that there was some import error or other issue in the service-worker script. I fixed it and the whole thing loaded like a breeze.
+Changes failing to load in the page we are testing or no changes Reload the page.</description>
+    </item>
+    
+  </channel>
+</rss>

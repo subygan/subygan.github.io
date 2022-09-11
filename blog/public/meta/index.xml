@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Meta on Suriya&#39;s site</title>
+    <link>https://suriya.cc/meta/</link>
+    <description>Recent content in Meta on Suriya&#39;s site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Apr 2022 22:15:00 +0000</lastBuildDate><atom:link href="https://suriya.cc/meta/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The future and The story</title>
+      <link>https://suriya.cc/meta/the_future_and_the_story/</link>
+      <pubDate>Mon, 11 Apr 2022 22:15:00 +0000</pubDate>
+      
+      <guid>https://suriya.cc/meta/the_future_and_the_story/</guid>
+      <description>Companies are valued much higher when they are pursuing something super big, super into the future. eg, facebook =&amp;gt; meta, amazon =&amp;gt; cloud, etc
+This is useful for companies to pump their valuation. see https://news.ycombinator.com/item?id=30916357
+this works because the future is unpredictable and un plannable. Which means that the only way we make sense of the future is through stories.</description>
+    </item>
+    
+    <item>
+      <title>On Morality</title>
+      <link>https://suriya.cc/meta/on_morality/</link>
+      <pubDate>Mon, 07 Feb 2022 22:15:00 +0000</pubDate>
+      
+      <guid>https://suriya.cc/meta/on_morality/</guid>
+      <description>The whole world seems to be running on this flywheel of pump and dump schemes and it doesn&amp;rsquo;t seem to matter as long the future is far enough.
+Elon Musk The guy behind tesla, spaceX and other moonshot companies is an interesting study. For a sect of faithful followers he&amp;rsquo;s an engineer of unmatchable intelligence and insight into everything ranging from mars exploration to synthetic brain chips. Which&amp;hellip; To be honest, sounds a lot like a PT Barnum humbug, to say the least.</description>
+    </item>
+    
+    <item>
+      <title>Surplus intellectual capacity</title>
+      <link>https://suriya.cc/meta/surplus_capacity/</link>
+      <pubDate>Sat, 22 Jan 2022 22:15:00 +0000</pubDate>
+      
+      <guid>https://suriya.cc/meta/surplus_capacity/</guid>
+      <description>When I was around 13 or 14 I used to have this wild vision of the world, where everybody was optimising for the betterment of humanity and not &amp;ldquo;wasting&amp;rdquo; their brains on useless stuff like movie gossips and whatnots. My reasoning at the time was that, if only people around me wouldn&amp;rsquo;t bring in non-utilitarian information to me, I would be able to do &amp;ldquo;much&amp;rdquo; more. But in reality it was only my younger self, justifying being lazy and not actively doing stuff and just simply complaining everything around.</description>
+    </item>
+    
+    <item>
+      <title>On Focus</title>
+      <link>https://suriya.cc/meta/on_focus/</link>
+      <pubDate>Fri, 16 Apr 2021 22:15:00 +0000</pubDate>
+      
+      <guid>https://suriya.cc/meta/on_focus/</guid>
+      <description>Experiment1 - Time based &amp;ldquo;focus&amp;rdquo; segments I generally don&amp;rsquo;t believe timing, focus is a bad way of doing it because. The belief is that, when you are in &amp;ldquo;focus&amp;rdquo;, you forget time and get all into it. But, this happens very rarely and hard to replicate.
+At least in the short term, I strongly believe that I can gain a lot by segmenting my time.
+Method Setup counter for a maximum of 2 hrs.</description>
+    </item>
+    
+    <item>
+      <title>The Missing innovation</title>
+      <link>https://suriya.cc/meta/missing_innovation/</link>
+      <pubDate>Fri, 24 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://suriya.cc/meta/missing_innovation/</guid>
+      <description>Historically, Most innovation has originated from developed nations and trickled down to developing ones, very much following the Trickle down efffect
+And it makes sense. Creating new tech is costly and developing nations cannot afford such R&amp;amp;D costs. As the economy is cash strapped and there are many more mouths to feed. This asymmetry is why &amp;ldquo;developed nations&amp;rdquo; stay ahead of the curve while &amp;ldquo;developing ones&amp;rdquo; trod along. For example India created it&amp;rsquo;s first indigenous microprocessor as late as 2018 and India lags in tech among it&amp;rsquo;s asian counterparts.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://suriya.cc/meta/dead_projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://suriya.cc/meta/dead_projects/</guid>
+      <description>layout: base type: page emoji: 🪦 title: Dead Projects description: Contemplating about the number of dead or half built projects. date: 2021-12-21 22:15:00
+I have a lot of unfinished and dead projects. Sometimes, when I feel a little too good about myself. I like to scroll my github projects lists, just to get my eyes off the clouds and face reality :).
+What is the point of all those repo&amp;rsquo;s if not as a reminder of bad coding and</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://suriya.cc/meta/scripty_apps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://suriya.cc/meta/scripty_apps/</guid>
+      <description>Some apps can be simple scripts accessible over the web running in a tiny tiny server. </description>
+    </item>
+    
+  </channel>
+</rss>

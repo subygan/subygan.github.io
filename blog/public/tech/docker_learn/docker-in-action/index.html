@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Suriya 🧚🏻‍♂️</title>
+  <meta name="description" content="🧚🏻‍♂️">
+  <meta name="author" content="Suriya Ganesh">
+
+  <meta property="og:title" content="Suriya Ganesh">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.suriyaganesh.com">
+  <meta property="og:description" content="Personal notes from Docker in action book
+Dockers use Linux namespaces and cgroups, which have been part of Linux since 2007. Docker does not provide the container technology but it makes it simpler to use. The docker containers are isolated with respect to eight aspects.
+PID namespace - process identifiers and capabilities UTS namespace - Host and domain name MNT namespace - File system access and structure IPC namespace - process communication over shared memory NET namespace 0 Network access and structure USR namespace - User names and identifiers chroot() - controls the location of the file system root cgroups - Resource protection Linux namespaces and cgroups take care of containers at runtime.">
+  <meta property="og:image" content="image.png">
+  
+  
+  <link rel="stylesheet" href="https://suriya.cc/style.c0567bab15ad3417bd4691eec0b7a6b29d866c255ddd2c667e96703d35f764bb.css" integrity="sha256-wFZ7qxWtNBe9RpHuwLemsp2GbCVd3SxmfpZwPTX3ZLs=">
+    <link rel="icon" type="image/x-icon" href="/assets/images/head.svg">
+
+</head>
+  <nav class="navbar">
+  <a href="/">Home</a>
+  <a href="/tech">Tech</a>
+  <a href="/meta">Meta</a>
+  <a href="/now">Now</a>
+  <a href="/about">About</a>
+</nav>
+
+
+  <body class='typora-export'>
+
+      
+
+<div class='typora-export-content'>
+
+  <div id='write'  class=''>
+    <header>
+
+      <div class="page-header-icon undefined"><span class="icon">🐋</span></div>
+      <h1 class="page-title">Docker in Action</h1>
+    </header>
+    <div class="blender" id="blender"></div>
+    <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Suriya 🧚🏻‍♂️</title>
+  <meta name="description" content="🧚🏻‍♂️">
+  <meta name="author" content="Suriya Ganesh">
+
+  <meta property="og:title" content="Suriya Ganesh">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.suriyaganesh.com">
+  <meta property="og:description" content="Personal notes from Docker in action book
+Dockers use Linux namespaces and cgroups, which have been part of Linux since 2007. Docker does not provide the container technology but it makes it simpler to use. The docker containers are isolated with respect to eight aspects.
+PID namespace - process identifiers and capabilities UTS namespace - Host and domain name MNT namespace - File system access and structure IPC namespace - process communication over shared memory NET namespace 0 Network access and structure USR namespace - User names and identifiers chroot() - controls the location of the file system root cgroups - Resource protection Linux namespaces and cgroups take care of containers at runtime.">
+  <meta property="og:image" content="image.png">
+  
+  
+  <link rel="stylesheet" href="https://suriya.cc/style.c0567bab15ad3417bd4691eec0b7a6b29d866c255ddd2c667e96703d35f764bb.css" integrity="sha256-wFZ7qxWtNBe9RpHuwLemsp2GbCVd3SxmfpZwPTX3ZLs=">
+    <link rel="icon" type="image/x-icon" href="/assets/images/head.svg">
+
+</head>
+    <p>Personal notes from <code>Docker in action</code> book</p>
+<p>Dockers use Linux namespaces and cgroups, which have been part of Linux since 2007. Docker does not provide the container technology but it makes it simpler to use.
+The docker containers are isolated with respect to eight aspects.</p>
+<ul>
+<li>PID namespace - process identifiers and capabilities</li>
+<li>UTS namespace - Host and domain name</li>
+<li>MNT namespace - File system access and structure</li>
+<li>IPC namespace - process communication over shared memory</li>
+<li>NET namespace 0 Network access and structure</li>
+<li>USR namespace - User names and identifiers</li>
+<li>chroot() - controls the location of the file system root</li>
+<li>cgroups - Resource protection</li>
+</ul>
+<p>Linux namespaces and cgroups take care of containers at runtime. docker uses another set of technologies to provide containers for files that act like shipping containers</p>
+<h3 id="creating-and-starting-a-new-container">Creating and starting a new container:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker run --detach --name web nginx:latest 
+</span></span></code></pre></div><p>When this command is run, Docker will install <code>nginx:latest</code> deom the Nginx erpositroy hosted on Docker Hub. This outputs a blob of characters in the terminal. This looks something like this: <code>ghnjfcghjnfchgjfaghjdf9823972hgabjabagjs</code></p>
+<p>This is the unique identifier of the container that was just created to run nginx. Everytime <code>docker run</code> is used, the created container will have a similar unique identifier.</p>
+<p>The <code>--detach</code> flag makes docker run in the background, it can also be given as <code>-d</code></p>
+<h4 id="running-interactive-containers">Running interactive containers:</h4>
+<p>Programs that interact with users tend to feel more interactive.</p>
+<pre tabindex="0"><code>docker run --interactive -t \ 
+--link web:web \
+--name web_test \
+busybox:latest /bin/sh
+</code></pre><p>this uses two flags, <code>--interactive</code> (or <code>-i</code>) and <code>--tty</code> (or <code>-t</code>).</p>
+<p>The <code>--interactive</code> flag tells Docker to keep the the <em>standard Input stream</em> open.</p>
+<p>The <code>-t</code> flag tells docker to <em>allocate a virtual terminal for the container</em>, Which will  allow you ot pass the signals to the container.</p>
+<p>The command in teh interactive container exampel creates a container, starts a UNIX shell, and is linked to the container that&rsquo;s running NGINX. From this shell we can verify that the web server is running correctly by</p>
+<p><code>wget -O - http://web:80/</code></p>
+<p>This terminal can be shut down by typing  <code>exit</code>. <strong>This will terminate the shell program and stop the container.</strong></p>
+<p>It&rsquo;s possible to create an interactive container, manyally start a process insisde that container and then detach you terminal. You can do so by holding Ctrl (or Control) key and pressing P and then Q. This will work only when you&rsquo;ve used the &ndash;tty option.</p>
+<p>This is a monitoring agent that will test the web server as we did previously and send a message with the mailer if the web server stops. this command will start the agent in a interactive container using the short-form flags:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker run -it <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>--name agent <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>--link web:insideweb <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>--link mailer:insidemailer <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>dockerinaction/ch2_agent
+</span></span></code></pre></div><p>The <code>-it</code> is because single character flags can be combined <a href="https://docs.docker.com/engine/reference/commandline/cli/#:~:text=Single%20character%20command%20line%20options%20can%20be%20combined%2C%20so%20rather%20than%20typing%20docker%20run%20%2Di%20%2Dt%20%2D%2Dname%20test%20busybox%20sh">check here</a></p>
+<h3 id="listing-stopping-restarting-and-viewing-output-of-containers">Listing, stopping, restarting, and viewing output of containers</h3>
+<pre tabindex="0"><code>docker ps
+</code></pre><p>This will list the detailes about the running containers</p>
+<h2 id="pid-namespces-and-conflict-resolution">PID namespces and conflict resolution</h2>
+<p>The below command can be used to rename old containers. This helps in resolving name conflicts between containers</p>
+<pre tabindex="0"><code>docker rename &lt;oldname&gt; &lt;newname&gt;
+
+docker run -d --name webid nginx
+</code></pre><p>When a container is run in detached mode, A random hash is printed on the terminal as an identifier. This identifier can be used to identify specific container</p>
+<pre tabindex="0"><code>docker exec kjsddi234jkjh3h42b3423h4b23n4k234j23k4k234 ps
+
+docker stop uakjsdnfjadskj1jk23jbb31b2j2b3hj1bj23bbj2b 
+</code></pre><p><img src="state_transition.png" alt="state trasition diagram for docker from docker in action book"></p>
+<pre tabindex="0"><code>MAILER_CID=$(docker run -d dockerinaction/ch2_mailer)
+WEB_CID=$(docker create nginx)
+
+AGENT_CID=$(docker create --link $WEB_CID:insideweb \
+--link $MAILER_CID:insidemailer \
+dockerinaction/ch2_agent)
+</code></pre><p>This can be used as a script to create the mailing program.</p>
+<p><strong>Containers should be started in reverse order of their dependency.</strong> Like a DAG.</p>
+<h2 id="building-environment-agnostic-systems">Building environment-agnostic systems</h2>
+<p>Software needs to be system agnostic to be runnable anywhere.</p>
+<p>There are three specific features to help build environemnt-agnostic systems:</p>
+<ul>
+<li>Read-only file system</li>
+<li>Environment variable injection</li>
+<li>volumes</li>
+</ul>
+<p>For example if we are running a wordpress container. Wordpress requires a mysql db. So a wordpress has a read-only file system</p>
+<h3 id="read-only-file-systems">Read-only file systems.</h3>
+<p>Read-only file systems ar ebeneficial in two ways.</p>
+<ul>
+<li>Tere is confidence that the container won&rsquo;t be specialized from changes to the files it contains.</li>
+<li>An attacker can&rsquo;t compromise files in the container.</li>
+</ul>
+<h4 id="example-wordpress-containers"><em>Example: Wordpress containers</em></h4>
+<pre tabindex="0"><code>docker run -d --name wp --read-only wordpress:4
+</code></pre><p>the status of a running container can be found like so,</p>
+<pre tabindex="0"><code>docker inspect --format &#34;{ {.State.Running} }&#34; wp
+</code></pre><p><code>docker inspect</code> prints the json document that docker maintains for that container <code>--format</code> flag can be used to fetch a specific key. We are trying to get the value of Running from the state object.</p>
+<p>The above command should output an error saying WORDPRESS_DB_HOST is not present</p>
+<p>This happens because WordPress has a dependency on a mySQL db.
+This can be installed with the following command</p>
+<pre tabindex="0"><code>docker run -d --name wpdb \
+-e MYSQL_ROOT_PASSWORD=ch2demo \
+mysql:5
+</code></pre><p>Once this is started, we can create a new wordpress container that is linked to this new DB container</p>
+<pre tabindex="0"><code>docker run -d --name wp2 \
+--link wpdb:mysql \
+-p 80 --read-only \
+wordpress:4
+</code></pre><p>the <code>--link</code> flag is used to link one container with another</p>
+<p>When inspected, this throws another error saying unable to write lockfile. This happens because the wordpress appllication tries to write a file at a specific location and this is not possible right now.</p>
+<p>An exception to the read-only file system in this case. Using a <strong>Docker volume</strong></p>
+<p>Starting container with specific volumes for read only exceptions</p>
+<pre tabindex="0"><code>docker run -d --name wp3 --link wpdb:mysql -p 80 \
+-v /run/lock/apache2/ \
+-v /run/apache2/ \
+--read-only wordpress:4
+</code></pre><p>This creates specific voluems for writeable space</p>
+<h3 id="environment-variable-injectiopin">Environment Variable injectiopin</h3>
+<pre tabindex="0"><code>docker run \
+--env MY_ENVIRONMENT_VAR=&#34;this is a test&#34; \
+busybox:latest \
+env
+</code></pre><p>The <code>--env</code> flag-or <code>-e</code> for short&ndash;can be used to inject any environment variable. If the variable is already set by the image or Docker, then the value will be overridden.</p>
+<h3 id="automatically-restarting-containers">Automatically restarting containers</h3>
+<p>Docker provides this functionality with a restart policy. This can b edone using the <code>--restart</code> flag at container-creatioin time, you can tell Docker to do any of the following:</p>
+<ul>
+<li>Never restart (default)</li>
+<li>Attempt to restart when a failure is detected</li>
+<li>Attempt for some predetermined time to restart when a failure is detected</li>
+<li>Akways restart the container regardless of the condition</li>
+</ul>
+<p>Docker uses <strong>Exponential Backoff</strong> strategy for timing restart attempts.</p>
+<pre tabindex="0"><code>docker run -d --name backoff-detector --restart always busybox date
+</code></pre><h2 id="keeping-containers-running-with-supervisor-and-startup-processes">Keeping containers running with supervisor and startup processes</h2>
+<p>A supervisor process, or init process, is a program that&rsquo;s used to launch and maintain the state of other programs. On a Linux system, PID#1 is an init process. It starts all the other system processes and restarts them in the event that they fail unexpectedly. It&rsquo;s common practice to use a similar pattern inside contaiiners to start and manage proesses.</p>
+<p>Using a supervisor process insisd eyour container will __keep the container running in the event that the target process, a web server, for exampel, fails and is restarted. There are several programs that might be used insisde a container. The most popular include <code>init, systemd, runit, upstart,</code> and <code>supervisord</code>.</p>
+<p>Running the below command starts an example container with <code>supervisord</code></p>
+<pre tabindex="0"><code>docker run -d -p 80:80 --name lamp-test tutum/lamp
+</code></pre><p><strong>The processes running in a container can be inspected using <code>docker top</code> command.</strong></p>
+<pre tabindex="0"><code>docker top lamp-test
+</code></pre><p>The supervisord restart functionality can be tested by stopping one of the process manually. To properly stop a process we need to know the PID in the container&rsquo;s PID namespace. to get that list, run the following exec subcommand:</p>
+<pre tabindex="0"><code>docker exec lamp-test ps
+</code></pre><p>This outputs the PID for that specific container.
+The Apache service can be canceled by running,</p>
+<pre tabindex="0"><code>docker exec lamp-test kill &lt;PID&gt;
+</code></pre><p>This will kill the <code>apache</code> process and make it shut down. Then, supervisord promptly restarts the processes. This can be clearly seen in the logs of the container.</p>
+<pre tabindex="0"><code>docker logs lamp-test
+</code></pre><p>A common alternative to the use of init or supervisor programs is using a startup script that at least checks the preconditions for successfully starting the contained software. these are sometimes used as the default command for the container. For example the WordPress containers that was previously created, use
+and <code>entrypoint.sh</code></p>
+<h3 id="cleaning-up">Cleaning up</h3>
+<p>The <code>docker ps -a</code> command outputs all containers that are dead or alive.</p>
+<p>As you can see it can get pretty messy quick. To remove a specific container <code>docker rm</code> can be used.</p>
+<p>If we try to remove a container that is running, restarting or paused. Then we get an error message.</p>
+<p>All containers use hard drive space to store <strong><em>logs, container metadata, and files that have beenn written to the container file system</em></strong> All containers also consume resources in the global namespace like container names and host port mappings.</p>
+<p>The processes running in a container should be stopped before te files in the container are removed. You can do this with the <code>docker stop</code> command or by  using the <code>-f</code> flag on docker rm. Thekey difference is that when you stop a process using the <code>-f</code> flag. Docker sends a <code>SIG_KILL</code> signal, whcih immediately terminates the receiving process. In contrast, using <code>docker stop</code> will send a SIG_HUP signal. Recepients of <code>SIG_HUP</code> have time to perform finalization and cleanup tasks. the <code>SIG_KILL</code> signal makes for no such allowances and can result in file corruption or poor network experiences. You can issue a <code>SIG_KILL</code> directly to a container using the <code>docker kill</code> command as well.</p>
+<p>When experimenting with short-lived containers, This can be avoided by using the <code>--rm</code> on the command. Doing so will automatically removes the container as soon as it enters the exited state, For example, the following command will write a message to the screen in a new BusyBox container, and the container will be removed as soon as it exits.</p>
+<h1 id="software-installation-simplified">Software Installation simplified</h1>
+<p>There are three main ways to install docker images:</p>
+<ul>
+<li>Docker Hub and other registries</li>
+<li>Using image files with <code>docker save</code> and <code>docker load</code></li>
+<li>Building images with Dockerfiles</li>
+</ul>
+<h2 id="steps-to-install-software">Steps to install software</h2>
+<ul>
+<li>How to identify software to install ?</li>
+<li>Where to find software to install ?</li>
+<li>What files are installed and how are they isolated?</li>
+</ul>
+<p><strong>An image is a file</strong>. It holds files that will be available to containers created from it and metadata about the image. This metadata contains <strong><em>relationship between images, the command history for an image, exposed ports, volume definitions and other stuff</em></strong></p>
+<h4 id="image-identifiers-">Image Identifiers :</h4>
+<p>Images have identifiers, so they could be used as a name and version. But these are just string of alphanumeric. This makes it hard to work with. Each time a change is made to an image, the identifier changes.
+This is where repository comes in, making it easier to work with repositories.</p>
+<h3 id="what-is-a-repository">What is a repository?</h3>
+<p><strong>A <em>repository</em> is a named bucket of images</strong>. The name is <em>similar to a URL</em>. A repository&rsquo;s name is made up of the name of the host where the image is located, the user account that owns the image, and a short name.</p>
+<pre tabindex="0"><code>                          ˇˇˇˇˇˇˇˇˇˇˇˇˇ User name
+exmple docker -&gt; quay.io/dockerinaction/ch3_helloregistry
+                 ^^^^^^^ Registry       ^^^^^^^^^^^^^^^^^ Short name
+</code></pre><p>A repo can hold several images. Each of the images in a repo is <strong>uniquely identified withh tags</strong></p>
+<h3 id="using-tags">Using tags</h3>
+<p>Tags are important to uniquely identify an image and a convenient way to create a useful aliases.</p>
+<h2 id="finding-and-installing-software">Finding and installing software</h2>
+<p>Software can be identified by a repo name. But how to find the repo that we want to install?</p>
+<h3 id="docker-hub-from-the-command-line">Docker Hub from the command line</h3>
+<p>the docker command line can be used to search the Docker Hub index for you and display the results, including the details like <em>the number of times each repository has been starred, The number of times, etc</em>
+Docker Hub also provides a set of official repos that are maintained by Docker Inc. These are often called <em>libraries</em></p>
+<p>There are two ways that an image author can publish their images on Docker HUB:</p>
+<ul>
+<li>
+<p><em>Use the command line to push images that they built independently on their own system.</em> These are sometimes considered less trustworthy.</p>
+</li>
+<li>
+<p>Make a Dockerfile publicly available and use Docker Hub&rsquo;s continuous build syste. Dockerfiles are scripts for building images. Images created from these automated builds are preferred because the Dockerfile is available for examination priot to installation.</p>
+</li>
+</ul>
+<p>To login to Dockerhub from the terminal <code>Docker login</code> command to log in to Dockerhub.</p>
+<p><code>docker logout</code> - logout from dockerhub
+<code>docker search &lt;keyword&gt;</code> - Search through the docker hub for the keyword</p>
+<h1 id="images-as-files">Images as files</h1>
+<p>eg:</p>
+<p>Use the following command to save a docker image as a file</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker pull busybox:latest
+</span></span><span style="display:flex;"><span>docker save -o myfile.tar busybox:latest 
+</span></span></code></pre></div><p>The first line pulls the busybox image and the second line saves it to myfile.tar</p>
+<p>remove the image from your system using,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker load -i myfile.tar
+</span></span></code></pre></div><p>Now we can load the image into memory from the tar file that we generated two steps above.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker load -i myfile.tar
+</span></span></code></pre></div><h2 id="installation-files-and-isolation">Installation files and isolation</h2>
+<h3 id="layer-relationships">Layer relationships</h3>
+<p>Images maintain parent/child relationships.</p>
+<p>Images build from their parents. They use something called as <strong><em>Union file system</em></strong>(NTS: Look this up). what I think this means it that each layers have their own requirement of files to be downloaded and, the Union of two layers is what is required. Programs running inside containers have no idea that such a thing is happening they run as if the image is a completely enclosed thing.
+The file system is used to create mount points on the host&rsquo;s file system that abstracts the use of layers. Similarly, when a Docker image is installed, its layers are unpacked and appropriately configured for use by the specific file system provider chosen for your system.
+The linux kernel provides a namespace for the (Mounting and unmounting) MNT file system</p>
+<h3 id="benefits-of-this-filesystem-and-abstraction">Benefits of this filesystem and abstraction</h3>
+<ul>
+<li>Common layers need to be installed only once. Unlike other virtualisation tech which would require re-downloading and re-installing everything.</li>
+<li>Layers provide rough tool for managing dependencies.</li>
+<li>It&rsquo;s easy tocreate software specialization when we can layer minor changes</li>
+</ul>
+<h3 id="weakness-of-the-union-file-systems">Weakness of the union file systems</h3>
+<ul>
+<li>Different fiel systems have different rules about file attributes, sizes, names and characters. Union file systems often need to translate between different file system rules. Best case the translations are acceptable. Else features are omitted. eg. <code>btrfs</code> not <code>overlayFS</code> provide support for the extended attributes that make SELinux work. Union Fiel systems use patter called copy-on-write, and that makes implementing memory-mapped files (the <code>mmap()</code> sys call) difficult. Some Union file systems provide implementations that work under the right condition, but it may be better idea to avoid memory-mapping files from an image.</li>
+</ul>
+<h1 id="chapter-4">Chapter 4</h1>
+<h3 id="persitent-storage-and-share-state-with-volumes">Persitent storage and share state with volumes</h3>
+<p>There are requirements in certain cases where we would have to persist data from a container eg. DB</p>
+<h4 id="introducing-volumes">Introducing volumes</h4>
+<p>When data has to be written the union file system is good enough. But to persist anything beyond the container, we would have to write to the file system directly. This is done by Mounting a location of the host with the docker container and using MNT filesytem to write to and read from. this image from the book puts it clearly</p>
+<p><img src="docker-FS.png" alt="Mounted volume"></p>
+<h3 id="volumes-provide-container-independent-data-management">Volumes provide container independent data management</h3>
+<p>This helps for multiple containers to share a common file system. so that, even in the failure of one container nothing is lost.</p>
+<h3 id="using-volumes-with-a-nosql-dataase">Using volumes with a NoSQL dataase</h3>
+<p>Eg. Cassandra DB</p>
+<p>Create a single container that defines a volume. This is called a <strong><em>volume container</em></strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker run -d <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>--volume /var/lib/cassandra/data <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>--name cass-shared <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>alpine echo Data Container
+</span></span></code></pre></div><p>The volume container will immediately stop.</p>
+<p>This is fine and is expected. This image has created a new volume and exited</p>
+<p>Now, we&rsquo;re going to use the volume it created when we create a new container running Cassandra</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker run -d <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>--volumes-from cass-shared <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>--name cass1 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>cassandra:2.2
+</span></span></code></pre></div><p>In the above command <code>--volume-from cass-shared</code> tells the current container that it can take the volume from that other container. Now, both the containers have volume `/var/lib/cassandra/data that points to the same location on the host&rsquo;s directory tree.</p>
+<p>next, starting  container from teh cassandra:2.2 image, but run a Cassandra client tool and connect to your running servier</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker run -it --rm <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>--link cass1:cass <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>cassandra:2.2 cqlsh cass
+</span></span></code></pre></div><p>Now we can inspect or modify the cassandra dtabase from the CQLSH commandline</p>
+<p>Try runnning the below command in cqlsh</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#66d9ef">select</span> * 
+</span></span><span style="display:flex;"><span>from system.schema_keyspaces 
+</span></span><span style="display:flex;"><span>where keyspace_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;docker_hello_world&#39;</span>;
+</span></span></code></pre></div><p>Cassandra should return an empty list. This means the database hasn&rsquo;t been modified.</p>
+<p>Try creating a new keyspace</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>create keyspace docker_hello_world
+</span></span><span style="display:flex;"><span>with replication <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#39;class&#39;</span> : <span style="color:#e6db74">&#39;SimpleStrategy&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#39;replication_factor&#39;</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>;
+</span></span></code></pre></div><p>Then try the command above then Cassandra should return a row of data. This means Cassandra has modified the data</p>
+<p>The cass container was created with the <code>--rm</code> flag this removes the container as soons as it is stopped.</p>
+<p>now we can remove other cassandra containers with</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker stop cass1
+</span></span><span style="display:flex;"><span>docker rm -vf cass1
+</span></span></code></pre></div><p>Both Cassandra client and server are deleted now. But the data would persists</p>
+<p>This can be proven by running a new cassandra container, mounting the volume and searching for the keyspace</p>
+<h2 id="volume-types">Volume types</h2>
+<p>There are two types of volume.</p>
+<ul>
+<li><code>Bind mount volume</code> - this is the one which has a mapping against the container and the host system file and it gets mounted on to the container</li>
+<li><code>Managed volume</code> - This is the volume created by Docker daemon in the space controlled by the daemon, called Docker managed space.</li>
+</ul>
+<p><img src="bind_and_managed.png" alt="Bind and managed"></p>
+<h3 id="bind-mount-volume">Bind mount volume</h3>
+<p>bind mount volumes are a map against the container to the host.
+This helps in hot-reloading, also there is no need to copy files onto the managed volume of a docker container.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker run --name bmweb_ro <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>-v ~/example-docs:/usr/local/apache2/htdocs/:ro <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>-p 80:80 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>httpd:latest
+</span></span></code></pre></div><p>In the above example we are creating a docker container from httpd and mounting the volume <code>~/example-docs</code> to <code>/usr/local/apache2/htdocs/</code> directory in the container. The <code>:ro</code> is to specify that the mount volume is read only. This prevents any other process modifying the files.</p>
+<p>When a directory not available on the host is used as volume _Docker will create the directory`</p>
+<h3 id="docker-managed-volume">docker managed volume</h3>
+<p>Managed volumes are different from bind mount volumes because the Docker daemon creates managed volumes in a portion of the host&rsquo;s file system that is owned by docker.</p>
+<p>This can be inspected by doing</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker inspect -f <span style="color:#e6db74">&#34;{ {json .Volumes} }&#34;</span> cass-shared
+</span></span></code></pre></div><p>This would show a key map pairing of the container to the host</p>
+<h3 id="sharing-volumes">Sharing volumes</h3>
+<p>There are two types of shared volumes</p>
+<ul>
+<li>host-dependent sharing</li>
+<li>generalised sharing and the volumes from flag</li>
+</ul>
+<h4 id="host-dependent-sharing">Host-dependent sharing</h4>
+<p>Two or more containers are siad to use host-dependent sharing when each has a bind mount volume for a single known location on the host file system.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker run --name woolf -d <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>--volume ~/web-logs-example:/data <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>dockerinaction/ch4_writer_a
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>docker run --name alcott -d <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>-v ~/web-logs-example:/data <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>dockerinaction/ch4_writer_b
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>docker run --rm --entrypoint head <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>-v ~/web-logs-example:/towatch:ro <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>alpine:latest <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>/towatch/logA
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>docker run --rm <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>-v ~/web-logs-example:/toread:ro <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>alpine:latest <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>head /toread/logB
+</span></span></code></pre></div><p>The above is an example of a docker container that creates two containers that writes logs to a file and the last container reads from it and displays it.</p>
+<p>But as the containers grow this becomes difficult because of the union file system issues. This is wher ethe generalised sharing comes in.</p>
+<h3 id="generalised-sharing-and-the-volumes-from-flag">Generalised sharing and the volumes-from flag</h3>
+<p>the <code>--volume-from</code> flag is used to copy the volumes from another container. This basically copies all the voluems that is given to a different container.</p>
+<h2 id="45-advanced-container-patterns-with-volumes">4.5 Advanced container patterns with volumes</h2>
+<h3 id="451-volume-container-pattern">4.5.1 Volume container pattern</h3>
+<p>This is a pattern where a <strong>volume container</strong> is created and every other container inherits the volume from this container using the <code>--volume-from</code> flag. This helps in making sure that when the volume changes in the parent container, it also changes everywhere. Making it simpler to use.</p>
+<h3 id="452-data-packed-volume-containers">4.5.2 Data-packed volume containers</h3>
+<p>Volume containers that are described above can also be used to seed new data that could be used by othe r containers.
+this can be done be doing a <code>cp</code> command at container-creation time.</p>
+<h3 id="453-polymorphic-container-pattern">4.5.3 Polymorphic container pattern</h3>
+<p>Volumes can help in injecting config files and such. So this makes it efficient to make new config files and use them in containers that need to be run differently.</p>
+<h1 id="5-network-exposure">5 Network exposure</h1>
+<h2 id="52-container-networking">5.2 Container networking</h2>
+<p>There are two types of networking.</p>
+<ul>
+<li>Single-host virtual networks</li>
+<li>multi-host networks</li>
+</ul>
+<h2 id="521-networking-with-standalone-containers">5.2.1 Networking with standalone containers</h2>
+<p>There is a seperate network stack for docker. This is called the <em>Operating system Network stack</em>. Each container has its own loopback interface as well as an Ethernet interface. Each container is assigned a different IP address. But this is not reachable from the external network.</p>
+<p>All of these are managed by the <code>docker0</code>, which is an interface to the docker bridge.</p>
+<p><img src="networking.png" alt="Networking illustrations"></p>
+<h2 id="522-four-network-container">5.2.2 Four network container</h2>
+<ul>
+<li>Closed containers</li>
+<li>Bridged containers</li>
+<li>Joined containers</li>
+<li>Open containers</li>
+</ul>
+<p><img src="network_types.png" alt="Network types"></p>
+<h2 id="53-closed-containers">5.3 Closed containers</h2>
+<p>These are containers that <strong>don&rsquo;t allow any network traffic</strong>. these process only has interface to a loopback.</p>
+<p>This has a lot of limitations as the container won&rsquo;t even be able to get access to the network.</p>
+<p>This can be done by setting the <code>--net none</code> flag.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker run --rm <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>--net none <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>alpine:latest <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>ip addr
+</span></span></code></pre></div><p>This container runs and emits the ip addresses that is accessible to it.
+as can be seen, it is only bound to the address 127.0.0.1</p>
+<p>This means that</p>
+<ul>
+<li>any program can connect to or wait on that interface. But only within the container</li>
+<li>Nothing outsid ethe container can connect to that interface</li>
+<li>internal programs can&rsquo;t reach anything outside.</li>
+</ul>
+<h2 id="54-bridged-containers">5.4 Bridged containers</h2>
+<p>These container have access to the network bridge as well as a loopback. These containers can talk with each other through docker0.</p>
+<h3 id="541-reaching-out">5.4.1 Reaching out</h3>
+<p>Bridged containers are the default way, containers are created. to specify, <code>--net bridge</code> flag can be used.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docekr run --rm <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>--net bridge <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>alpine:latest <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>ip addr
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>docker run --rm <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>alpine:latest <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>ping -w <span style="color:#ae81ff">2</span> 8.8.8.8
+</span></span></code></pre></div><p>This pings the google servers and provides output.</p>
+<h3 id="custom-name-resolution">Custom name resolution</h3>
+<p>Docker provides a way to create custom domain name resolution. Meaning, A simple DNS setup can be done and docker is able to access it.
+The <code>docker run</code>command has a <code>--hostname</code> flag adds an entry to the DNS override system inside the container.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker run --rm <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>--hostname barker <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>alpine:latest <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>nslookup barker
+</span></span></code></pre></div><p>The above command run an alpine container with the hostname barker and tries looking up for it within the contianer and exits.</p>
+<h3 id="543-opening-inbound--communication">5.4.3 Opening inbound  communication</h3>
+<p>inbound connections can be mapped using <code>-p &lt;hostport&gt;:&lt;containerport</code> and other such methods as mentioned in the docs</p>
+<p><code>-P</code> can be used o expose the relevant port. Saving a lot of writing</p>
+<h3 id="545-modifying-the-bridge-interface">5.4.5 Modifying the bridge interface</h3>
+<p>There are 3 options for modifying the bridge interface</p>
+<ul>
+<li>Define the address and subnet of the bridge.</li>
+<li>Define the range of the IP addresses that can be assigned to containers</li>
+<li>Define the Maximum Transmission Unit</li>
+</ul>
+<p><code>docker -d --bip &quot;192.168.0.128/25&quot;</code> Sets the IP of the bridge between 192.168.0.128 - 192.168.0.255 bip =&gt; bridge IP</p>
+<p><code>docker -d -mtu 1200</code> the MTU is the Maximum transmission Unit that is allowed in the network.This is usually capped at 1500 bytes.</p>
+<h2 id="57-inter-container-dependencies">5.7 Inter-container dependencies</h2>
+<p>there are situations where we need to be notified of some container coming up or dow</p>
+<h3 id="571-links-for-local-service-discovery">5.7.1 links for local service discovery</h3>
+<p>there is a way to tell Docker to link a container with another container. The container must be running when the new contianer must be running.</p>
+<p>Adding a link on a new container does three things.</p>
+<ul>
+<li>Environment variable describing the target container&rsquo;s end point will be created.</li>
+<li>the link alias wil be added to the DNS overrride list of the new container with the IP address of the target container.</li>
+<li>Is inter-container communication is disabled, Docker will add specific firewall rules to allow communication between linked containers.</li>
+</ul>
+<p>the ports that are open for communication are those that have been exposed by the target container. So the <code>--expose</code> flag provides a shortcut for <strong><em>only one particular type of container to host port mapping when ICC is enabled.</em></strong> When ICC is disabled, <code>--expose</code> becomes a tool for defining firewall rules and explicit declaration of a container&rsquo;s interface on the network.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker run -d --name Container1 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>--expose <span style="color:#ae81ff">3306</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&lt;some_image&gt; <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>echo container_start
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>docker run -d --name Container2 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>--link Container1:alias1 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&lt;some_image_2&gt; echo value
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>docker run -d --name Container3 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&lt;some_other_image&gt;
+</span></span></code></pre></div><p>In the example, the Container2 is able to access Container1, because it is linked with that. But the third program is unable to access data from Container1</p>
+<p>If inter-container communication is enabled, attackers would be able to attack the container1 through container3, which is not even configured to access the data from the container1</p>
+<h3 id="572-link-aliases">5.7.2 Link aliases</h3>
+<p>Link aliases are used to mention a linkage to a container. This argument is a map from a container name or ID to an alias. The alias has to be <strong>unique within that scope</strong>.
+If there is a collision that takes place. Even then, the link is created. But, it would be of no use as there will only be one entry in the record and the containers won&rsquo;t know which.</p>
+<p>If an application is written to expect an alias <code>db</code> for a database application. But the <code>db</code> alias was mistakenly configured to link with something else. Then we see that the whole application falls apart.</p>
+<p>So usually it is better to check if the alias is active before connecting with it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/sh
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -z <span style="color:#e6db74">${</span>DATABASE_PORT+x<span style="color:#e6db74">}</span> <span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;Link alias &#39;databse&#39; was not set!&#34;</span>
+</span></span><span style="display:flex;"><span>    exit
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>   exec <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>   
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span></code></pre></div><h3 id="573-environment-modifications">5.7.3 Environment modifications</h3>
+<p>The new link is <strong>injected</strong> to other containers by environment variables.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker run -d --name mydb <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>--expose <span style="color:#ae81ff">2222</span> --expose <span style="color:#ae81ff">3333</span> --expose 4444/udp <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>alpine:latest nc -l 0.0.0.0:2222
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>docker run -it --rm <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>--link mydb:database <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>alpine:latest env
+</span></span></code></pre></div><h2 id="61-resource-allowances">6.1 Resource allowances</h2>
+<p>Containers can hog all the resources when they are running, disrupting other services that are running. Docker has flags tha thelp in management of htose</p>
+<p><code>-m</code> or <code>--memory</code> The flag takes in a value and a unit. The format is, `<!-- raw HTML omitted --><!-- raw HTML omitted --> where unit=b, k, m or g. Representing byte, KB, MB, GB respectively</p>
+<p><code>--cpu-share</code> this takes in an integer</p>
+<h3 id="611-memory-limits">6.1.1 Memory limits</h3>
+<p>Syntax</p>
+<p><code>&lt;number&gt;&lt;optional unit&gt; where unit = b,k,m or g</code></p>
+<p>example</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker run -d --name ch6_mariadb <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>--memory 256m <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>--cpu-shares <span style="color:#ae81ff">1024</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>--cap-drop all <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>dockerfile/mariadb
+</span></span></code></pre></div><p>Memory allocation can move beyond the available memory of the system using <strong>swap space</strong></p>
+<h3 id="612-cpu">6.1.2 CPU</h3>
+<p>We can establish relative weights, with the <code>--cpu-shares</code> flag. The value provided is an integer.
+CPU restrictions are enforced only when there are memory constrained programs running.
+also the CPU sharing works in a percentage manner, for example if one container has <code>--cpu-shares 256</code> and another has <code>--cpu-shares128</code> Then the first one gets 2/3 of the cpu power and the second one gets 1/3.</p>
+<h3 id="613-access-to-devices">6.1.3 Access to devices</h3>
+<p>it is possible to give access to specific device resources, like keyboard, webcam and stuff.</p>
+<p>for example</p>
+<pre tabindex="0"><code>docker -it --rm \
+--device /dev/video0:/dev/video) \
+ubuntu:latest ls -al /dev
+</code></pre><p>This mounts The camera that is available at /dev/video0 in the host to the /dev/video of the container.</p>
+<h3 id="62-shared-memory">6.2 Shared memory</h3>
+<p>It is possible to share memory between containers running in the same contianer.</p>
+<p>This is called InterProcessCommunication (IPC). by default Docker creates unique IPC namespace.
+This helps in making two containers share messages</p>
+<h3 id="621-sharing-ipc-between-containers">6.2.1 Sharing IPC between containers</h3>
+<p>creating a producer</p>
+<pre tabindex="0"><code>docker run -d -u nobody --name ch6_ipc_producer \
+--ipc=&#34;shareable&#34; \
+docekrinaction/ch6_ipc -producer
+
+
+docker run -d --name ch6_ipc_consumer \
+--ipc container:ch6_ipc_producer \
+dockerinaction/ch6_ipc -consumer
+</code></pre><p>The first container creates a processor that writes to a queue, while the second one reads from those queues. note the <code>--ipc=&quot;shareable&quot;</code> which makes its IPC namespace accessible by others</p>
+<p>if not this, then we would have to expose a port between each other and relay messages, this is just a simpler way of doing the same</p>
+<h3 id="622-using-an-open-memory-container">6.2.2 using an open memory container</h3>
+<p>Open memory containers use the host memory to relay messages</p>
+<pre tabindex="0"><code>docekr -d --name ch6_ipc_producer \
+--ipc host \
+dockerinaction/ch6_ipc -producer
+
+docker -d --name ch6_ipc_consumer \
+--ipc host \
+dockerinaction/ch6_ipc -consumer
+</code></pre><h2 id="7-packaging-software-in-images">7 Packaging software in images</h2>
+<h3 id="union-file-system">Union file system</h3>
+
+    
+    
+    
+
+  </body>
+</html>

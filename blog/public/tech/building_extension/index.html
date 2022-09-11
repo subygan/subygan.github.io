@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Suriya 🧚🏻‍♂️</title>
+  <meta name="description" content="🧚🏻‍♂️">
+  <meta name="author" content="Suriya Ganesh">
+
+  <meta property="og:title" content="Suriya Ganesh">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.suriyaganesh.com">
+  <meta property="og:description" content="Chrome extensions have been an area of interest for a while. I tried building an extension that would help me save stuff in my readlog. Sort of simply highlight stuff from within the page.
+Chrome extension Architecture. There are Broadly a few moving pieces in an extension, manifest.json, Background script/service worker, content-script, popup.html, popup.js
+manifest.json Manifest.json is the central part that makes sure that the extension gets registered properly.
+Background script Background script is simply just a service worker that runs in the background.">
+  <meta property="og:image" content="image.png">
+  
+  
+  <link rel="stylesheet" href="https://suriya.cc/style.c0567bab15ad3417bd4691eec0b7a6b29d866c255ddd2c667e96703d35f764bb.css" integrity="sha256-wFZ7qxWtNBe9RpHuwLemsp2GbCVd3SxmfpZwPTX3ZLs=">
+    <link rel="icon" type="image/x-icon" href="/assets/images/head.svg">
+
+</head>
+  <nav class="navbar">
+  <a href="/">Home</a>
+  <a href="/tech">Tech</a>
+  <a href="/meta">Meta</a>
+  <a href="/now">Now</a>
+  <a href="/about">About</a>
+</nav>
+
+
+  <body class='typora-export'>
+
+      
+<main>
+
+    <div class='typora-export-content'>
+
+        <div id='write' class=''>
+            <header>
+
+                <div class="page-header-icon undefined"><span class="icon">🦤</span></div>
+                <h1 class="page-title">Building an extension</h1>
+            </header>
+            <div class="blender" id="blender"></div>
+            <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Suriya 🧚🏻‍♂️</title>
+  <meta name="description" content="🧚🏻‍♂️">
+  <meta name="author" content="Suriya Ganesh">
+
+  <meta property="og:title" content="Suriya Ganesh">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.suriyaganesh.com">
+  <meta property="og:description" content="Chrome extensions have been an area of interest for a while. I tried building an extension that would help me save stuff in my readlog. Sort of simply highlight stuff from within the page.
+Chrome extension Architecture. There are Broadly a few moving pieces in an extension, manifest.json, Background script/service worker, content-script, popup.html, popup.js
+manifest.json Manifest.json is the central part that makes sure that the extension gets registered properly.
+Background script Background script is simply just a service worker that runs in the background.">
+  <meta property="og:image" content="image.png">
+  
+  
+  <link rel="stylesheet" href="https://suriya.cc/style.c0567bab15ad3417bd4691eec0b7a6b29d866c255ddd2c667e96703d35f764bb.css" integrity="sha256-wFZ7qxWtNBe9RpHuwLemsp2GbCVd3SxmfpZwPTX3ZLs=">
+    <link rel="icon" type="image/x-icon" href="/assets/images/head.svg">
+
+</head>
+            <p>Chrome extensions have been an area of interest for a while. I tried building an extension that would help me save stuff in my <a href="/readlog">readlog</a>. Sort of simply highlight stuff from within the page.</p>
+<h2 id="chrome-extension-architecture">Chrome extension Architecture.</h2>
+<p>There are Broadly a few moving pieces in an extension, <code>manifest.json</code>, <code>Background script/service worker</code>, <code>content-script</code>, <code>popup.html</code>, <code>popup.js</code></p>
+<p><img src="/assets/extension_architecture.png" alt="extension Architecture"></p>
+<h3 id="manifestjson">manifest.json</h3>
+<p>Manifest.json is the central part that makes sure that the extension gets registered properly.</p>
+<h3 id="background-script">Background script</h3>
+<p>Background script is simply just a <a href="https://developers.google.com/web/fundamentals/primers/service-workers">service worker</a> that runs in the background. Each chrome profile that has an extension has exactly one service-worker. This is shared across all tabs
+The debugging window for a background script can be found from the <a href="chrome://extensions/">chrome://extensions/</a> window.</p>
+<h3 id="content-script">Content-Script</h3>
+<p>Content scripts are spawned per tab and are run for that tab, specifically. This helps in getting tab specific content and execute scripts in tabs.</p>
+<h3 id="popuphtml">popup.html</h3>
+<p>This is the thing that gets displayed when the icon is clicked from the window.</p>
+<h3 id="popupjs">popup.js</h3>
+<p>Popup js is should be sent with the app bundle and loaded from <code>popup.html</code> and it can&rsquo;t be loaded from third party site as the Content Security policy prevents it.</p>
+<h3 id="messaging-passing">Messaging passing</h3>
+<p><code>popup.js</code>, <code>content-script</code> and <code>background script</code> all talk with each other by passing messages with each other by using the <a href="https://developer.chrome.com/docs/extensions/mv3/messaging/">chrome messages api</a>.</p>
+<h3 id="chromescriptinghttpsdeveloperchromecomdocsextensionsreferencescripting-api"><a href="https://developer.chrome.com/docs/extensions/reference/scripting/">Chrome.scripting</a> API</h3>
+<p>this api can be used to execute arbitrary script in a tab.</p>
+<h3 id="stuff-i-found-useful">stuff I found useful</h3>
+<ul>
+<li><a href="https://github.com/SimGus/chrome-extension-v3-starter">Chrome extension V3</a></li>
+</ul>
+
+
+            <ul>
+                
+                
+                <li>
+                    
+                    <a href="https://suriya.cc/tech/building_extension/issues/"> 🗿 | Fixing chrome extension issues</a>
+                    
+
+                </li>
+                
+            </ul>
+            
+            
+</main>
+
+
+  </body>
+</html>
