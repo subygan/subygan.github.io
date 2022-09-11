@@ -1,0 +1,14 @@
+baseURL: https://suriya.cc
+disablePathToLower: true
+languageCode: en-us
+title: Suriya's site
+params:
+  author: Suriya Ganesh
+  description: Suriya's blog3 of awesome stuff
+
+module:
+  imports:
+  - path: hugomod
+
+staticDir:
+  - static
