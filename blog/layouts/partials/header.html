@@ -1,0 +1,19 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Suriya 🧚🏻‍♂️</title>
+  <meta name="description" content="🧚🏻‍♂️">
+  <meta name="author" content="Suriya Ganesh">
+
+  <meta property="og:title" content="Suriya Ganesh">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.suriyaganesh.com">
+  <meta property="og:description" content="{{ .Summary }}">
+  <meta property="og:image" content="image.png">
+  {{ $sass := resources.Get "style.scss" }}
+  {{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+    <link rel="icon" type="image/x-icon" href="/assets/images/head.svg">
+
+</head>
