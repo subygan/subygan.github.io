@@ -1,6 +1,4 @@
 ---
-layout: base
-type: page
 emoji:  🤺
 title: Hacks
 description: hacky stuff when I'm tinkering with software stuff 
