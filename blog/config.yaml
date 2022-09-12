@@ -1,10 +1,10 @@
-baseURL: https://suriya.cc
+baseURL: https://www.suriya.cc
 disablePathToLower: true
 languageCode: en-us
 title: Suriya's site
 params:
   author: Suriya Ganesh
-  description: Suriya's blog3 of awesome stuff
+  description: Suriya's blog of awesome stuff
 
 module:
   imports:
