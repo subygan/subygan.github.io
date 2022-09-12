@@ -13,7 +13,7 @@
   <meta property="og:image" content="image.png">
   {{ $sass := resources.Get "style.scss" }}
   {{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+  <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="/assets/images/head.svg">
 
 </head>
