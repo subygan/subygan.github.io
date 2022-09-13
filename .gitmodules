@@ -10,3 +10,6 @@
 [submodule "blog/content/tech/golang_learn"]
 	path = blog/content/tech/golang_learn
 	url = https://github.com/suriya-ganesh/golang_learn.git
+[submodule "blog/content/tech/flutter_learn"]
+	path = blog/content/tech/flutter_learn
+	url = https://github.com/suriya-ganesh/flutter_learn.git
