@@ -7,3 +7,4 @@
   - Would be useful with posterity and sharability
 - View someone's twitter profile in reverse order, i.e. oldest tweet first.
   - Not a lot of tools exist right now
+- Hovering widget app with timer + schedule in mac
