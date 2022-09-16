@@ -7,6 +7,335 @@ the internet here date: "now"
 toc: true
 ---
 
+## 2022-09-15
+
+- [ The gossip trap ](https://erikhoel.substack.com/p/the-gossip-trap?utm_source=substack&utm_medium=email)
+- [ Billionaire No More: Patagonia Founder Gives Away the Company ](https://archive.is/u9bqj#selection-271.0-271.61)
+- [ How Apple overcame its culture of secrecy to create AirPods Pro ](https://www.fastcompany.com/90748492/apple-airpods-pro-creation)
+- [ shortest date, and ketchup ](https://sive.rs/ketchup)
+
+## 2022-09-14
+
+- [ My First BillG Review ](https://www.joelonsoftware.com/2006/06/16/my-first-billg-review/)
+- [ This Man Is Trying to Put Mirrors in Space to Generate Solar Power at Night ](https://www.vice.com/en/article/n7z3yq/this-man-is-trying-to-put-mirrors-in-space-to-generate-solar-power-at-night?utm_source=tldrnewsletter)
+- [ Meet the wellness guru who's worked with Kanye West and Vladimir Putin ](https://mattruby.substack.com/p/meet-the-wellness-guru-whos-worked?utm_source=substack&utm_medium=email)
+
+## 2022-09-12
+
+- [ How Microsoft Lost the API War – Joel on Software ](https://www.joelonsoftware.com/2004/06/13/how-microsoft-lost-the-api-war/)
+- [Emacs Quick reference](http://ocean.stanford.edu/research/quick_emacs.html )
+
+## 2022-09-10
+
+- [ Excuse me but why are you eating so many frogs ](https://experimentalhistory.substack.com/p/excuse-me-but-why-are-you-eating)
+
+## 2022-09-09
+
+- [ Edge Case Poisoning ](https://buttondown.email/hillelwayne/archive/edge-case-poisoning/)
+
+## 2022-09-08
+
+- [ Here’s Snap CEO Evan Spiegel’s Internal Memo to Staff in Full ](https://archive.is/Wq3SY#selection-3341.0-3341.61)
+- [ Digital Exile: How I Got Banned for Life from AirBnB ](https://jacksoncunningham.medium.com/digital-exile-how-i-got-banned-for-life-from-airbnb-615434c6eeba)
+- [ Your attention span is being robbed! ](https://unstructed.tech/2022/09/07/your-attention-span-is-being-robbed/)
+- [ A few months ago, a complete stranger gave me $10,000. Here’s what I did with it. ](https://sarahdrinkwater.medium.com/a-few-months-ago-a-complete-stranger-gave-me-10-000-heres-what-i-did-with-it-d5bc65f59d17)
+- [ Our Letter to Chevron ](https://strive.com/strive-asset-management-letter-to-chevron/)
+- [ The story BCG offered me $16,000 not to tell | The Tech](https://thetech.com/2010/04/09/dubai-v130-n18 )
+
+## 2022-09-07
+
+- [ What the interns have wrought, 2022 edition ](https://blog.janestreet.com/what-the-interns-have-wrought-2022/)
+- [ Is Engineering Management Bullshit? ](https://www.makeartwithpython.com/blog/is-engineering-management-bullshit/)
+- [ “The great human error,” Weil announced, “is to reason in place of finding out.” ](https://www.wsj.com/articles/two-philosophers-found-purpose-in-the-world-of-work-11662177661)
+- Two Philosophers Found Purpose in the World of Work
+- [ Why We Are Changing the License for Akka ](https://www.lightbend.com/blog/why-we-are-changing-the-license-for-akka)
+- [ Mister Gotcha ](https://thenib.com/mister-gotcha/)
+- [ Git’s database internals I: packed object store ](https://github.blog/2022-08-29-gits-database-internals-i-packed-object-store/?utm_source=abyteofcodingnewsletter)
+- [ White House Bans Paywalls on Taxpayer-Funded Research ](https://www.extremetech.com/extreme/339162-white-house-bans-paywalls-on-taxpayer-funded-research)
+- [ The quantum computing bubble ](https://archive.ph/0VB0K#selection-1447.0-1447.28)
+- [ Seven years in the life of Hypergiants' off-nets ](https://www.micahlerner.com/2022/09/03/seven-years-in-the-life-of-hypergiants-off-nets.html?utm_campaign=Systems%20Papers&utm_medium=email&utm_source=Revue%20newsletter)
+- [ They built a Minecraft crypto empire. Then it all came crashing down ](https://restofworld.org/2022/minecraft-nft-ban-critterz/?utm_source=Rest+of+World+Newsletter&utm_campaign=69c4fb9eeb-EMAIL_CAMPAIGN_2022_09_05_01_10&utm_medium=email&utm_term=0_b91e039431-69c4fb9eeb-446196006)
+- [Privacy Enhancing Technologies](https://ico.org.uk/media/about-the-ico/consultations/4021464/chapter-5-anonymisation-pets.pdf)
+
+## 2022-09-04
+
+- [ Master Foo and the Recruiter](http://www.catb.org/~esr/writings/unix-koans/recruiter.html)
+- [ I ran the world's largest DDoS-for-Hire empire and CloudFlare helped](https://rasbora.dev/blog/I-ran-the-worlds-largest-ddos-for-hire-empire-and-cloudflare-helped)
+
+
+## 2022-09-03
+
+- [ Nokia CEO Stephen Elop rallies troops in brutally honest 'burning platform' memo? (update: it's real!) | Engadget](https://www.engadget.com/2011-02-08-nokia-ceo-stephen-elop-rallies-troops-in-brutally-honest-burnin.html )
+- [ How Stephen Elop Destroyed Nokia (NYSE:NOK) | Seeking Alpha](https://seekingalpha.com/article/916271-how-stephen-elop-destroyed-nokia)
+
+## 2022-08-30
+
+- [China Tech Layoffs](https://restofworld.org/2022/china-tech-layoffs/)
+- [Whatsapp grocery shopping](https://restofworld.org/2022/brazil-trela-whatsapp-grocery-shopping/)
+
+## 2022-08-29
+
+- [Hardcore Software | UltraSEver - Steven Sinofsky]( https://hardcoresoftware.learningbyshipping.com/p/096-ultraseven)
+- [ Samsung vs. iPhone | Elon Musk's schedule ](https://www.techemails.com/p/samsung-vs-iphone-elon-musks-schedule )
+- [ champonthis | dev/rand/lack-of-attention ](https://www.champonthis.de/dev/rand/lack-of-attention )
+
+## 2022-08-28
+
+- [ Why none of my books are available on Audible | by Cory Doctorow | Jul, 2022 | Medium]( https://doctorow.medium.com/why-none-of-my-books-are-available-on-audible-83cb182f2f91)
+- [ André Staltz - Time Till Open Source Alternative ](https://staltz.com/time-till-open-source-alternative.html)
+
+## 2022-08-25
+
+- [ Automatic Reliability Testing For Cluster Management Controllers ](https://www.micahlerner.com/2022/07/24/automatic-reliability-testing-for-cluster-management-controllers.html?utm_campaign=Systems%20Papers&utm_medium=email&utm_source=Revue%20newsletter)
+- [ 1/ On Being Efficient With Busy People ](https://threadreaderapp.com/thread/1562510420644343810.html)
+- [ John Carmack on Twitter: "I do not have “magical” discipline and focusing ability — I struggle with distractions like everyone else. Often it is better to just remove the option to distract yourself instead of fighting he urges. When I decided to get serious about my AI work, I made a few changes: \" / Twitter https://mobile.twitter.com/id_aa_carmack/status/1562104562219196416 ]
+  [ Patent Trolls Inbound: Our First Lawsuit - comma.ai blog ](https://blog.comma.ai/ourfirstlawsuit/)
+  [ The Project Jengo Saga: How Cloudflare Stood up to a Patent Troll – and Won! ](https://blog.cloudflare.com/the-project-jengo-saga-how-cloudflare-stood-up-to-a-patent-troll-and-won/)
+
+## 2022-08-24
+
+- [ They built their businesses on Instagram. Then the platform changed ](https://edition.cnn.com/2022/08/21/tech/instagram-changes-small-business/index.html?utm_source=sg&utm_medium=email&utm_campaign=article_email&utm_content=article-8582)
+- [ A List of Things People Blamed on Bicycles ](https://threadreaderapp.com/thread/1561848479470694403.html)
+- [ Network Tokenization: Everything You Need to Know - Skyflow]( https://www.skyflow.com/post/network-tokenization-everything-you-need-to-know )
+- [ How SQLite Scales Read Concurrency · Fly ](https://fly.io/blog/sqlite-internals-wal/ )
+
+## 2022-08-21
+
+- [ 10,000 Hours with Reid Hoffman: What I Learned ](https://casnocha.com/reid-hoffman-lessons)
+- [ PLG CRM: What it is and why you don't need one - Toplyne ](https://www.toplyne.io/blog/plg-crm-curing-symptoms-not-diseases)
+- [ Is Nothing Sacred? ](https://granta.com/is-nothing-sacred/)
+- [Mobile handset privacy measuring the data ios and Android send to apple and google](https://www.scss.tcd.ie/doug.leith/apple_google.pdf)
+
+## 2022-08-20
+
+- [ Better Compression with Zstandard ](https://gregoryszorc.com/blog/2017/03/07/better-compression-with-zstandard/)
+
+## 2022-08-19
+
+- [ Janet Jackson had the power to crash laptop computers ](https://devblogs.microsoft.com/oldnewthing/20220816-00/?p=106994?utm_source=tldrnewsletter)
+- [ More content by people, for people in Search ](https://blog.google/products/search/more-content-by-people-for-people-in-search/)
+- [ How a viral NFT project survived the crypto crash ](https://www.platformer.news/p/how-a-viral-nft-project-survived?utm_source=substack&utm_medium=email)
+
+## 2022-08-18
+
+- [ The Fisherman and the Businessman ](https://kerkour.com/fisherman)
+- [ How I Got MicroAcquired: Build for an Ecosystem if You Want to Grow Fast, Says Ex Founder of Tomorrow’s Tools ](https://resources.microacquire.com/how-i-got-microacquired-build-for-ecosystem/?utm_source=tldrnewsletter)
+- [ How eBPF will solve Service Mesh – Goodbye Sidecars ](https://isovalent.com/blog/post/2021-12-08-ebpf-servicemesh/?s=31)
+
+## 2022-08-17
+
+- [ Get outside of your comfort zone, says Salesforce.com's Anshu Sharma ](https://www.firstpost.com/world/get-outside-of-your-comfort-zone-says-salesforce-coms-anshu-sharma-21429.html)
+- [ Instagram, TikTok, and the Three Trends ](https://stratechery.com/2022/instagram-tiktok-and-the-three-trends/?utm_source=tldrnewsletter)
+- [ I wanted to address a few things we’re working on to make Instagram a better experience. ](https://www.instagram.com/reel/CgeQ5DqgSyv/?utm_source=ig_embed&ig_rid=bc698a40-bd47-4bf4-92a8-f49040d93e33)
+- [ An Open Letter from Mark Zuckerberg: ](https://m.facebook.com/nt/screen/?params=%7B%22note_id%22%3A2832474983634072%7D&path=%2Fnotes%2Fnote%2F)
+
+## 2022-08-16
+
+- [ Ads, privacy and confusion ](https://www.ben-evans.com/benedictevans/2021/8/27/understanding-privacy)
+- [ Managing Your Mental Health While Running a Startup ](https://future.com/managing-your-mental-health-while-running-a-startup/?utm_medium=email&utm_source=newsletter&mkt_tok=MzgyLUpaQi03OTgAAAGD9iNGFkf4HsFz_Y2rt5g0JKWAnC-9KMefvYVas2_Z7_xYdVynXHxUYaIojzDyIROXizM-p99JVgqwX-RU0vRff3NnN9WN6KygkWdysvlwWHoH)
+- [ Investing in Flow ](https://a16z.com/2022/08/15/investing-in-flow/)
+
+## 2022-08-15
+
+- [ Why I am not an effective altruist ](https://erikhoel.substack.com/p/why-i-am-not-an-effective-altruist?utm_source=substack&utm_medium=email)
+- [ Doing Something That’s Never Been Done ](https://www.henricodolfing.com/2022/08/doing-something-thats-never-been-done.html)
+
+## 2022-08-14
+
+- [ Inside the Layoffs at Klarna ](https://blog.pragmaticengineer.com/layoffs-at-klarna/)
+- [ 094. First Public Windows 7 Demo ](https://hardcoresoftware.learningbyshipping.com/p/094-first-public-windows-7-demo?utm_source=substack&utm_medium=email)
+- [ Wannabe Billionaire: Arun Pudur's Tech Fortune May Be Largely Fiction ](https://www.forbes.com/sites/gracechung/2016/07/06/wannabe-billionaire/?sh=1c08b1117f89)
+- [ Arun Pudur: From Bengaluru to billions ](https://www.deccanherald.com/content/466022/arun-pudur-bengaluru-billions.html)
+
+## 2022-08-13
+
+- [ What I'm frustrated by in crypto ](https://amirbolous.com/posts/crypto-frustrations/?ref=refind)
+- [ Webhooks Are Not the Same as APIs ](https://hackernoon.com/webhooks-are-not-the-same-as-apis?ref=refind)
+
+## 2022-08-12
+
+- [When parents tell their kids to work hard do they send the wrong message?](https://hbswk.hbs.edu/item/when-parents-tell-kids-to-work-hard-do-they-send-the-wrong-message)
+
+## 2022-08-11
+
+- [ Bridgewater swiftly remediates Log4shell vulnerabilities with Wiz ](https://www.wiz.io/customers/bridgewater)
+
+## 2022-08-10
+
+- [ How SQLite Helps You Do ACID ](https://fly.io/blog/sqlite-internals-rollback-journal/)
+- [ How to market to developers on Twitter: Learnings from 4 months of Supabase feed ](https://www.developermarkepear.com/blog/developer-marketing-on-social-media-twitter-supabase)
+- [ The Rise of the LinkedIn B2B Influencer ](https://www.bloomberg.com/news/articles/2022-08-08/b2b-businesses-embrace-linkedin-influencer-marketing?utm_campaign=article_email&utm_content=article-8484&utm_source=sg&utm_medium=email)
+
+## 2022-08-08
+
+- [ “You Don’t Want That!” — A Rant from Lance Walter on Product Management Communications ](https://kellblog.com/2022/06/03/you-dont-want-that-a-rant-from-lance-walter-on-product-management-communications/)
+- [ What is Observability ](https://brendangregg.com/blog/2021-05-23/what-is-observability.html)
+- [ Use One Big Server ](https://specbranch.com/posts/one-big-server/?utm_source=abyteofcodingnewsletter)
+- [ Why Are Your Best People Not Working on This? ](https://www.henricodolfing.com/2022/08/put-your-best-people-on-your-critical-projects.html)
+- [ I Have Been Through This Before ](https://www.tabletmag.com/sections/arts-letters/articles/i-have-been-through-this-before-bauer)
+
+## 2022-08-07
+
+- [ new Title ](http://localhost:4000/ex)
+
+## 2022-08-05
+
+- [ Reflections: The ecosystem is moving ](https://signal.org/blog/the-ecosystem-is-moving/)
+- [ SharpTongue Deploys Clever Mail-Stealing Browser Extension “SHARPEXT” ](https://www.volexity.com/blog/2022/07/28/sharptongue-deploys-clever-mail-stealing-browser-extension-sharpext/)
+- [ Productivity Porn ](https://calebschoepp.com/blog/2022/productivity-porn/?utm_source=tldrnewsletter)
+
+## 2022-08-03
+
+- [ Content moderation at TikTok: b*obs, or no b*obs? ](https://zoningout.substack.com/p/content-moderation-at-tiktok-bobs?utm_source=substack&utm_medium=email)
+
+## 2022-08-02
+
+- [ 092. Platform Disruption…While Building Windows 7 [Ch. XIII] ](https://hardcoresoftware.learningbyshipping.com/p/092-platform-disruption-while-building-windows-7?utm_source=substack&utm_medium=email&utm_content=share)
+
+## 2022-08-01
+
+- [ The overworked humans behind China’s virtual influencers ](https://restofworld.org/2022/china-virtual-idols-labor/?utm_source=tldrnewsletter)
+- [ How Dropbox CEO Drew Houston stays motivated by solving problems that matter ](https://mitsloan.mit.edu/ideas-made-to-matter/how-dropbox-ceo-drew-houston-stays-motivated-solving-problems-matter?utm_source=Tech+Productivity&utm_campaign=699145a4c0-EMAIL_CAMPAIGN_2022_03_14_10_52_COPY_01&utm_medium=email&utm_term=0_362b1686a3-699145a4c0-594878555)
+- [ The right to never be forgotten ](https://www.thepullrequest.com/p/the-right-to-never-be-forgotten?utm_source=substack&utm_medium=email)
+
+## 2022-07-31
+
+- [ The War To Sell You A Mattress Is An Internet Nightmare ](https://www.fastcompany.com/3065928/sleepopolis-casper-bloggers-lawsuits-underside-of-the-mattress-wars)
+- [ statically typed languages rely on type ](https://mozilla.github.io/pdf.js/web/viewer.html)
+
+## 2022-07-30
+
+- [ TH3 ](https://www.sqlite.org/th3.html)
+- [ Modified condition/decision coverage ](https://en.wikipedia.org/wiki/Modified_condition/decision_coverage)
+- [ The Untold Story of SQLite ](https://corecursive.com/066-sqlite-with-richard-hipp/#)
+- [ Are You Too Responsible? ](https://hbr.org/2022/07/are-you-too-responsible?ref=refind)
+- [ There is no iceberg ](https://world.hey.com/dhh/there-is-no-iceberg-d34f45bb)
+- [ Investing in VeeFriends ](https://a16zcrypto.com/investing-in-veefriends/)
+
+## 2022-07-27
+
+- [ Shipping multi-tenant SaaS using Postgres Row-Level Security ](https://www.thenile.dev/blog/multi-tenant-rls)
+
+## 2022-07-26
+
+- [ Facebook's growth woes in India: too much nudity, not enough women ](https://www.reuters.com/technology/facebooks-growth-woes-india-too-much-nudity-not-enough-women-2022-07-21/)
+- [ Surf the Web ](https://sadgrl.online/cyberspace/surf-the-web.html)
+- [ I Regret My $46k Website Redesign ](https://mtlynch.io/tinypilot-redesign/)
+- [ Shamelessness as a strategy ](https://nadia.xyz/shameless)
+- [ Case Study 8: How Hertz Paid Accenture $32 Million for a Website That Never Went Live ](https://www.henricodolfing.com/2019/10/case-study-hertz-accenture-website.html)
+
+## 2022-07-24
+
+- [Why GNU tar extracts in quadtratic time](https://mort.coffee/home/tar/)
+
+## 2022-07-23
+
+- [ The $2B Calm rocketship 🧘‍♀️ ](https://www.producthunt.com/stories/the-2b-calm-rocketship?ref=hpfeed)
+- [ THE MAINTENANCE RACE ](https://www.worksinprogress.co/issue/the-maintenance-race/)
+- [ What I Miss About Working at Stripe ](https://every.to/p/what-i-miss-about-working-at-stripe)
+
+## 2022-07-22
+
+- [ Why Taxpayers Pay McKinsey $3M a Year for a Recent College Graduate Contractor ](https://mattstoller.substack.com/p/why-taxpayers-pay-mckinsey-3m-a-year)
+- [ Case Study 8: How Hertz Paid Accenture $32 Million for a Website That Never Went Live ](https://www.henricodolfing.com/2019/10/case-study-hertz-accenture-website.html)
+
+## 2022-07-21
+
+- [ We don’t have a hundred biases, we have the wrong model ](https://www.worksinprogress.co/issue/biases-the-wrong-model/)
+- [ Chartdump #2 ](https://pavchartbook.substack.com/p/market-wrap-2)
+- [ When your poster child gets assassinated”: Airlift’s collapse shocks Pakistan’s startup world ](https://restofworld.org/2022/airlifts-collapse-shocks-pakistans/?utm_source=Rest+of+World+Newsletter&utm_campaign=9791d1dc74-EMAIL_CAMPAIGN_2022_07_18_04_25&utm_medium=email&utm_term=0_b91e039431-9791d1dc74-446196006)
+- [ Everything You Need to Know About the CRO and CMO Working Relationship: In One Story ](https://kellblog.com/2022/07/20/the-parable-of-the-amicable-cmo-cro-relationship/)
+- [ Why does culture get less happy year after year? ](https://erikhoel.substack.com/p/why-does-culture-get-less-happy-year?utm_source=substack&utm_medium=email)
+- [ Everything is bad everywhere all at once. How is that even possible? 🤔 ](https://mattruby.substack.com/p/everything-is-bad-everywhere-all?utm_source=substack&utm_medium=email)
+
+## 2022-07-20
+
+- [ I once killed a $125 million deal by being “too honest.” ](https://threadreaderapp.com/thread/1449856639331340289.html)
+- [ As the world celebrated Steve Jobs’s ](https://threadreaderapp.com/thread/1447251334814523392.html)
+
+## 2022-07-18
+
+- [ EMERGENT VS. DELIBERATE STRATEGY: HOW & WHEN TO USE EACH ](https://online.hbs.edu/blog/post/emergent-vs-deliberate-strategy)
+- [ More Emergent Strategies: Groupon, Greendot ](https://kellblog.com/2010/09/10/more-emergent-strategies-groupon-greendot/)
+- [ Ten Lessons I wish I had been Taught ](https://alumni.media.mit.edu/~cahn/life/gian-carlo-rota-10-lessons.html)
+- [The submarine - Paul graham](http://paulgraham.com/submarine.html)
+
+## 2022-07-17
+
+- [ Grey whales taught me how to mother, how to endure, how to live ](https://psyche.co/ideas/grey-whales-taught-me-how-to-mother-how-to-endure-how-to-live)
+- [ The New Numbers on Music Consumption Are Very Ugly ](https://tedgioia.substack.com/p/the-new-numbers-on-music-consumption)
+- [ George Orwell's 1940 Review of Mein Kampf ](https://bookmarks.reviews/george-orwells-1940-review-of-mein-kampf/)
+- [ The high price we pay for social media ](https://timharford.com/2022/07/the-high-price-we-pay-for-social-media/)
+- [ I've started using Mozilla Firefox and now I can never go back to Google Chrome ](https://www.techradar.com/in/features/ive-started-using-mozilla-firefox-and-now-i-can-never-go-back-to-google-chrome)
+- [ How I Became a Pathological Liar ](https://archive.is/MsmMC#selection-319.0-319.32)
+- [ Meet Algo, the VPN that works ](https://blog.trailofbits.com/2016/12/12/meet-algo-the-vpn-that-works/)
+- [ The post the pit and the dance floor ](http://jamie-wong.com/post/the-pit/)
+
+## 2022-07-16
+
+- [ How to Self-Host a WireGuard VPN on Amazon AWS ](https://graspingtech.com/self-host-vpn-aws-lightsail/)
+- [ IF YOU’RE SCARED YOU’RE WINNING ](https://pam-moore.com/2019/01/16/if-youre-scared-youre-winning/)
+- [ The compositor is evil ](https://raphlinus.github.io/ui/graphics/2020/09/13/compositor-is-evil.html)
+- [ Advice for the next dozen Rust GUIs ](https://raphlinus.github.io/rust/gui/2022/07/15/next-dozen-guis.html)
+- [ A Guide to the Go Garbage Collector ](https://tip.golang.org/doc/gc-guide)
+
+## 2022-07-15
+
+- [ 10% of the Top 1 Million Sites are Dead ](https://ccampbell.io/posts/10-percent-of-top-million-sites-are-dead/)
+- [ From idea to paying customer ](https://www.linen.dev/s/linen-community/t/545988/from-idea-to-paying-customers)
+- [ What do I think about network states? ](https://vitalik.ca/general/2022/07/13/networkstates.html)
+- [ TBM 30/52: Why Don’t We Have a Strategy? ](https://cutlefish.substack.com/p/tbm-3052-why-do-we-have-no-strategy)
+
+## 2022-07-14
+
+- [ When rustc explodes ](https://fasterthanli.me/articles/when-rustc-explodes)
+- [ The DALL·E 2 Prompt Book ](https://dallery.gallery/the-dalle-2-prompt-book/)
+- [ How I Built A $420K/Year Business Transforming Podcasts Into Articles ](https://www.starterstory.com/stories/podreacher)
+- [ ZIRP explains the world ](https://www.readmargins.com/p/zirp-explains-the-world)
+- [ Doordash and Pizza Arbitrage ](https://www.readmargins.com/p/doordash-and-pizza-arbitrage)
+
+## 2022-07-13
+
+- [ Desiderata #3: links and commentary ](https://erikhoel.substack.com/p/desiderata-3-links-and-commentary?utm_source=substack&utm_medium=email)
+- [ Short stories: How much do you make? How do you sell one? How long does it take to write? ](https://superamit.substack.com/p/short-stories-how-much-do-you-make)
+- [ Have Product, Will Travel ](https://www.zumsteg.net/2022/07/05/unchecked-ab-testing-destroys-everything-it-touches/)
+- [ The night watch - James Mickens](https://www.usenix.org/system/files/1311_05-08_mickens.pdf)
+
+## 2022-07-12
+
+- [ You Wouldn't Download a Backend ](https://cjohanaja.com/musings/wouldnt-download-backend)
+- [ Giving a Shit as a Service ](https://allenpike.com/2022/giving-a-shit)
+- [ Responsible stewardship of the UEFI secure boot ecosystem ](https://mjg59.dreamwidth.org/60248.html)
+- [ 20 Modern Heresies ](https://www.secretorum.life/p/20-modern-heresies)
+- [ Sufficient Decentralization for Social Networks ](https://www.varunsrinivasan.com//2022/01/11/sufficient-decentralization-for-social-networks)
+
+## 2022-07-11
+
+- [ Botnet that hid for 18 months boasted some of the coolest tradecraft ever | Ars Technica](https://arstechnica.com/information-technology/2022/05/how-hackers-used-smarts-and-a-novel-iot-botnet-to-plunder-email-for-months/)
+- [High Scalability July 11th](http://highscalability.com/blog/2022/7/11/stuff-the-internet-says-on-scalability-for-july-11th-2022.html)
+
+## 2022-07-10
+
+- [ Mocking with the Postman API ](https://learning.postman.com/docs/designing-and-developing-your-api/mocking-data/mock-with-api/)
+- [ Sundial: Fault-tolerant Clock Synchronization for Datacenters ](https://www.micahlerner.com/2022/07/03/sundial-fault-tolerant-clock-synchronization-for-datacenters.html?utm_campaign=Systems%20Papers&utm_medium=email&utm_source=Revue%20newsletter)
+- [ SOC2: The Screenshots Will Continue Until Security Improves ](https://fly.io/blog/soc2-the-screenshots-will-continue-until-security-improves/)
+- [ The SSO Wall of Shame ](https://sso.tax/)
+- [ Work on what matters. ](https://lethain.com/work-on-what-matters/?ref=theslice&utm_source=emailoctopus&utm_medium=email&utm_campaign=Issue%20104%20%28for%207-jul%202022%29)
+
+## 2022-07-09
+
+- [ Steps to Bring Your Tech Startup Idea to Life ](https://www.reddit.com/r/startups/comments/vu7ilf/steps_to_bring_your_tech_startup_idea_to_life/)
+
+## 2022-07-08
+
+- [ Inside China's Biggest Live-Streaming Superstar Factory ](https://www.vice.com/en/article/pgzamm/chinas-live-streaming-factory)
+- [ Copyright in Characters: What Can I Use? Part II ](https://www.aspectlg.com/posts/copyright-in-characters-what-can-i-use-part-ii)
+- [ Copyright in Characters: What Can I Use? ](https://www.aspectlg.com/posts/copyright-in-characters-what-can-i-use)
+- [ Why we started Cacheflow ](https://www.getcacheflow.com/post/why-we-started-cacheflow)
+- [Games](https://web.archive.org/web/20210515142312/https://copyright.gov/fls/fl108.pdf)
+- [Copyright](https://copyright.gov/circs/circ34.pdf)
+
+
 ## 2022-07-07
 
 - [ Sequoia and Tiger Global Take SoftBank to the Cleaners ](https://www.bloomberg.com/opinion/articles/2022-07-06/sequoia-and-tiger-global-take-softbank-to-the-cleaners?sref=DtF0tJD5)
