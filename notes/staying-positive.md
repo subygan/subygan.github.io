@@ -7,6 +7,8 @@ Being positive is a good type of placebo that leads to good effects. irrespectiv
 
 Obviously it is good to think of the negative side of things. But the default should always be being positive. This is similar to the idea behind `Occams razor` it is better to assume ignorance than maleficence
 
+Think of all the use cases where, Homeopathic medicines work. Might be anecdotal and might not be replicable but that doesn't mean that looking forward towards a brighter future doesn't help deal with live.
+
 ### What am I fixing?
 - Being negative about most things.
 - Start most things with "But....".
