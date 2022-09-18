@@ -8,6 +8,7 @@ layout: base
 
 - Everything you ever wanted to know about terminals
   - http://xn--rpa.cc/irl/term.html
+  - [Bill gates interview 1992 PDC 1992](https://learn.microsoft.com/en-us/events/pdc-pdc-1992/pdc-1992-keynote-bill-gates)
 - Signal: You were the chosen one [video]
   - [https://media.ccc.de/v/mch2022-196-signal-you-were-the-chosen-one-](https://media.ccc.de/v/mch2022-196-signal-you-were-the-chosen-one-)
 - The untold story of sqlite
