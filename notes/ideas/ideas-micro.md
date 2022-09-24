@@ -8,3 +8,6 @@
 - View someone's twitter profile in reverse order, i.e. oldest tweet first.
   - Not a lot of tools exist right now
 - Hovering widget app with timer + schedule in mac
+- **focusmate for exam preparing**
+  - There could be seperate cohorts who are trying to prepare for separate exams.
+  - This is better than focusmate, because those who match would have a shared context

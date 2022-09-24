@@ -2,7 +2,6 @@
 title: AWS SES
 emoji: 💌
 layout: base
-type: page
 description: Working with AWS ses
 date: 2022-09-17 14:14:11
 ---

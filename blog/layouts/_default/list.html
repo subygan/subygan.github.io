@@ -16,14 +16,15 @@
             <ul>
                 <!-- Ranges through content/posts/*.md -->
                 {{ range .Pages }}
+                {{ if .Title }}
                 <li>
                     {{ if .Params.emoji }}
                     <a href="{{.Permalink}}">{{ .Params.emoji }} | {{.Title}}</a>
                     {{ else }}
                     <a href="{{.Permalink}}"> 🗿 | {{.Title}}</a>
                     {{ end }}
-
                 </li>
+                {{ end }}
                 {{ end }}
             </ul>
             {{ partial "footer.html" . }}
