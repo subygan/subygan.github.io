@@ -2,7 +2,6 @@
 title: Pocketbase
 emoji: 📦
 layout: base
-type: page
 description: Trying out pocketbase.
 date: 2022-09-01 22:15:00
 ---
