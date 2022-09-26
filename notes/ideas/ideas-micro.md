@@ -11,3 +11,5 @@
 - **focusmate for exam preparing**
   - There could be seperate cohorts who are trying to prepare for separate exams.
   - This is better than focusmate, because those who match would have a shared context
+- Update extension
+- Extension to convert any audio/video to text.

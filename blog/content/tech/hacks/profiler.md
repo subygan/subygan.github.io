@@ -1,10 +1,10 @@
 ---
 layout: base
 type: page
-emoji:
+emoji: 🔍
 title: visualising Performance
 description: Notes on how to visualise flame graph
-date: 2022-04-13 22:15:00
+date: 2022-04-13
 ---
 
 ### Interesting:
@@ -12,7 +12,7 @@ date: 2022-04-13 22:15:00
 - Flame graphs don't show sequentiality. They are not sorted based on time. They are sorted by alphabets. Which means in the flame graphs, if
 
 eg.
-![flamegraph image](../../../static/assets/images/flamegraph.png)
+![flamegraph image](/assets/images/flamegraph.png)
 
 here, the function `h()` was not run after `b()`. it's after `b()` because it's alphabetically after `h()` 
 

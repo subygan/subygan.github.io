@@ -1,8 +1,6 @@
 ---
 title: Theory Stuff
 description: Here are stuff that I learn theory from
-layout: base
-type: page
 emoji: 📚
 date: 2022-03-15 22:15:00
 ---
