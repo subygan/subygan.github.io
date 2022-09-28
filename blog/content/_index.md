@@ -21,7 +21,7 @@ I try to write stuff I'm interested about, here.
 
 🦾  [all](/all)
 
-🦏   [Feed](/feed.xml)
+🦏   [Feed](/index.xml)
 
 You can find the [table of contents here](/toc)
 

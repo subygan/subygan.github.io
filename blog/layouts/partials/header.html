@@ -15,5 +15,8 @@
   {{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="/assets/images/head.svg">
+  {{ range .AlternativeOutputFormats -}}
+  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
 
 </head>
