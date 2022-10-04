@@ -1,2 +1,7 @@
+## 2022-10-04
+- [ ] reject policy authoring on where
+
 ## 2022-09-27
-- deletetenantAccount curl to sai
+- [x] deletetenantAccount curl to sai
+- [ ] Business Visa?
+- [ ] Blog?

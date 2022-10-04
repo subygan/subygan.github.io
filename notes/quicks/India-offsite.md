@@ -40,5 +40,48 @@ note:
 
 # Customer Implementations:
 
+- Always appreciate people, and double highlight the positives and absorb all the negatives.
 
+# Product Implementations (2022-09-28):
 
+- Skyflow => privacy cloud
+- User table should be isolated
+ltv => build teh platform that helps our customers use their customer data with privacy and security
+
+- "Customer service use cases" => simpler to do.
+- Skyflow + snowflake partnership => Deeper integration with data analytics.
+- SF + okta => data residency for equifax.
+- Skyflow + Segment => extract customer data before the customer sends data to skyflow before sending to segment to isolate PII. Also DR
+- Not chasing partnerships aggressively. Accept it, as they come.
+- Gradual disclosure.
+- How will customers have (or be ready for) the exact architecture that we expect them to have. Won't there be an adoption valley. (look at shopify Google Docs)
+- Monthly burn 1.8 Mil, Contracting expenses
+
+# Solutions Architecture (2022-09-28):
+
+### Role of Solution Architects
+- Bridge the product customer gap.
+  - might become a product feature, but not readily
+- Evangelising the product
+
+## Use Cases:
+
+### Vanguard (prospect):
+
+- provide "Privacy Safe Data" on Vanguard's Data Lake to ensure Vanguard is not subject to financial (loss of clients).
+
+- better Architecture, have come up with the solution pretty much themselves.
+
+### SAP Concur (prospect):
+
+- Pretty much know the ways the data flows through the system. Better grasp on the solution they need.
+
+- Snatched from VGS. in a pause due to macroeconomic environment.
+
+### XPV (prospect):
+
+- Small startup doing wealth management for high net worth individuals.
+- Focused on security.
+- Complex client side access rules.
+- Sophisticated governance policies.
+- Require IP restrictions on the backend.
