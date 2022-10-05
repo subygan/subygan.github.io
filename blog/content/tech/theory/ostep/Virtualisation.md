@@ -30,7 +30,7 @@ __Program counter/ Instruction pointer__ ? Points Which instruction of the progr
 
 __Stackpointer and function pointer__ ? Used to manage the stack for function parameters
 
-![loading from disk](assets/loading.png)
+![loading from disk](/tech/theory/ostep/assets/loading.png)
 
 When code executes all the manipulated objects are kept in memory.
 
@@ -55,7 +55,7 @@ OS allocates __Program Heap__ : used for dynamically allocated objects
 - __scheduled__ - process is _ready to run_
 - __descheduled__ - process is _moved from running to ready_
 
-![process-state-transition](assets/process-state-transition.png)
+![process-state-transition](/tech/theory/ostep/assets/process-state-transition.png)
 
 
 #### Process list:
@@ -145,7 +145,7 @@ kill => arbitrarily kill a process
 
 limited direct execution is a method of sharing resources. By allowing the direct execution of programs.
 
-![DEP.png](assets/DEP.png)
+![DEP.png](/tech/theory/ostep/assets/DEP.png)
 
 The Direct execution protocol given above
 
@@ -193,7 +193,7 @@ _Switching_
 
 This is a typical direct execution done for systems.
 
-![LDE-TI.png](assets/LDE-TI.png)
+![LDE-TI.png](/tech/theory/ostep/assets/LDE-TI.png)
 
 
 # ch7: CPU Scheduling
@@ -225,11 +225,11 @@ Since we assumed all jobs arrive at the same time T<sub>arrival</sub> = 0 and he
 
 The simplest algorithm is, FIFO. This would lead to a solution like this.
 
-![FIFO-sched.png](assets/FIFO-sched.png)
+![FIFO-sched.png](/tech/theory/ostep/assets/FIFO-sched.png)
 
 Now, lets try to loose our first assumption `Each job runs for the same amount of time`. In this case how would the worst performance look like?
 
-![FIFO-bad-sched.png](assets/FIFO-bad-sched.png)
+![FIFO-bad-sched.png](/tech/theory/ostep/assets/FIFO-bad-sched.png)
 
 We schedule something and it's hogging up resources while the simpler ones are waiting
 
@@ -237,20 +237,20 @@ We schedule something and it's hogging up resources while the simpler ones are w
 
 Since we have the assumption that `The run-time of each job is known`. we can schedule jobs based on how long they run
 
-![SJF-sched](assets/SJF-sched.png)
+![SJF-sched](/tech/theory/ostep/assets/SJF-sched.png)
 
 With our assumption, we can prove that SJF if the most optimal solution.
 
 We'll try relaxing another assumption `All jobs arrive at the same time.`
 Which means, A arrives at t=0 and needs to run for 100s, whereas B and C arrive at t = 0 and each run for 10 seconds.
 
-![STCF-sched.png](assets/STCF-sched.png)
+![STCF-sched.png](/tech/theory/ostep/assets/STCF-sched.png)
 
 #### Shortest Time-to-Completion First (STCF):
 
 To accomodate losing assumption 2, we can relax assumption 3 as well, `Once started, each job runs to completion.` 
 
-![STCF-optimal-sched.png](assets/STCF-optimal-sched.png)
+![STCF-optimal-sched.png](/tech/theory/ostep/assets/STCF-optimal-sched.png)
 
 Here we are stopping process A and then letting C run and then rerunning A. This is provably optimal as well.
 
@@ -272,7 +272,7 @@ A round robin algorithm, runs a program for a time slice and then switches to an
 
 The interrupt has to be a __multiple for the timer interrupt__. eg, the timer interrupt is 10 ms, then the round robin interrupt can be at 10ms, 20ms,...
 
-![RR-sched](assets/RR-sched.png)
+![RR-sched](/tech/theory/ostep/assets/RR-sched.png)
 
 Context switching has a cost associated with it. but this can be minimised by increasing the time slice.
 
@@ -288,11 +288,11 @@ the scheduler also has to make a decision when the I/O completes. when that occu
 
 eg. 2 process A and B are running, A issues an I/O every 10 ms. and the time slice we use is 100 ms. in this case the operation looks like this.
 
-![poor-resource.png](assets/poor-resource.png)
+![poor-resource.png](/tech/theory/ostep/assets/poor-resource.png)
 
 time is wasted on waiting over I/O. this can be better packed by using the wait time to run other important stuff
 
-![better-resource.png](assets/better-resource.png)
+![better-resource.png](/tech/theory/ostep/assets/better-resource.png)
 
 we can now remove our final assumption as well `The run-time of each job is known`. With our current scenario, we really don't need to know the run-time of each job.
 
@@ -332,18 +332,18 @@ In the below example it is obvious that as a long running job runs, it's priorit
 
 Every time it occupies resources, we slowly reduce its priority.
 
-![long running job](assets/ex1-long_running.png)
+![long running job](/tech/theory/ostep/assets/ex1-long_running.png)
 
 ### Example 2: __A short job in between__
 
 When a short jobs comes in between this task, then it's priority in the beginning is high, so it is given preference to run.
 
-![along came a short job](assets/ex2-shor_job.png)
+![along came a short job](/tech/theory/ostep/assets/ex2-shor_job.png)
 
 
 Also, when a process has a lot of IOs then its priority is kept high
 
-![lots of ios](assets/ex3-ios.png)
+![lots of ios](/tech/theory/ostep/assets/ex3-ios.png)
 
 ## Problems with this MLFQ implementation
 
