@@ -1,6 +1,6 @@
 ---
 title: ARM
-emoji: 🤳🏼
+emoji: 📠
 layout: base
 ---
 
@@ -48,5 +48,31 @@ At one point in 1999 ARM was valued at 300 times it's Earnings. In the early 200
 
 ARM Attained a period of maturity through 2002 - 20005. Microprocessors were being required everywhere. Designing a microprocessor became more and more complex and required big teams of engineers. This started becoming ARM's moat, not a lot of companies had the upfront capital to setup and operate a humongous design team efficiently. It was faster and cheaper to license it out from ARM.
 
+ARM has a very symbiotic relationship with all partners. ARM's success depends very crucially on partners success. 
 
+By 2008, The Smartphone market boom happened and power efficient chips went from good to have to absolute necessity. And pretty much the only company with decades of power efficient chips was ARM. Depending on how you calculate, today it has a market share of 96% of all mobile chipsets.
+
+the business model of ARM is such that, licensing for designs gets ARM up-front revenue but the royalties come into play much later sometimes even after 5 years. An example is, the ARM7, it is no longer supported by ARM but it is being shipped more and more every year. This shows the strength and insidious nature of ARM's products and their returns
+
+on July 18, 2016 Softbank made an agreed offer for ARM for 23.4 Billion. The transaction was completed on september 5 and ARM Became part of Masayoshi Sun's Softbank. Later the ownership was restructured so that 25% of the stake was given to the Softbank Vision Fund. 
+
+In 13 Sept 2020, Nvidia tries to Buy ARM from Softbank. This cold have been a huge blow to the competitors, because Nvidia could have strong Armed every competitor to submission by increasing the premium for licensing except themselves, Resulting in a very unfair market. This was thankfully stopped by Regulatory rules
+
+Feb 2022, Rene Haas becomes CEO and he is trying to take ARM public. 
+
+ARM today has competitors in RISC V and other architectures. But, Rene strongly believes that ARM's stability of instruction set will win over time. Unlike RISC V which allows custom instruction set. ARM does not allow custom instruction set and that prevents fragmentation.
+
+Irrespective of their competitive status, everybody is a customer of ARM. Microsoft, Google, Samsung and so many others. ARM has horses in all lane, no matter who wins, it's a win for ARM. Rene says their focusing more and more on providing single System on Chip (SOC) solutions, like apple's M1's which should accelerate the industry very much. 
+
+
+References:
+
+- https://www.theverge.com/23373371/arm-chips-chip-shortage-ceo-rene-haas-tech-intel-apple-decoder
+- https://archive.computerhistory.org/resources/access/text/2012/06/102746190-05-01-acc.pdf
+- https://web.archive.org/web/20210325060916/https://www.latimes.com/archives/la-xpm-1990-11-28-fi-4993-story.html
+- https://arstechnica.com/gadgets/2022/09/a-history-of-arm-part-1-building-the-first-chip/
+- https://en.wikipedia.org/wiki/Arm_(company)
+- https://community.arm.com/arm-community-blogs/b/architectures-and-processors-blog/posts/a-brief-history-of-arm-part-1
+- https://community.arm.com/arm-community-blogs/b/architectures-and-processors-blog/posts/a-brief-history-of-arm-part-2
+- http://www.rougol.jellybaby.net/meetings/2012/PaulFellows/index.html
 

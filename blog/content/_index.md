@@ -19,6 +19,8 @@ I try to write stuff I'm interested about, here.
 
 🛍      [To Consume](/to_consume)
 
+📜   [essays](/essays)
+
 🦾  [all](/all)
 
 🦏   [Feed](/index.xml)
