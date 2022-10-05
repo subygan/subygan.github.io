@@ -76,13 +76,3 @@ Hermann supported Wilson, by introducing them to  IBMs RISC research paper.
         - Joins Acorn with Hermann after graduation.
         - Writes the first BASIC assembler to avoid hand coding from scratch
 
-References:
-
-- https://www.theverge.com/23373371/arm-chips-chip-shortage-ceo-rene-haas-tech-intel-apple-decoder
-- https://archive.computerhistory.org/resources/access/text/2012/06/102746190-05-01-acc.pdf
-- https://web.archive.org/web/20210325060916/https://www.latimes.com/archives/la-xpm-1990-11-28-fi-4993-story.html
-- https://arstechnica.com/gadgets/2022/09/a-history-of-arm-part-1-building-the-first-chip/
-- https://en.wikipedia.org/wiki/Arm_(company)
-- https://community.arm.com/arm-community-blogs/b/architectures-and-processors-blog/posts/a-brief-history-of-arm-part-2
-- https://community.arm.com/arm-community-blogs/b/architectures-and-processors-blog/posts/a-brief-history-of-arm-part-1
-- http://www.rougol.jellybaby.net/meetings/2012/PaulFellows/index.html

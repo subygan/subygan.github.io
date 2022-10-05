@@ -1,6 +1,4 @@
 ---
-layout: base
-type: page
 emoji: 🐼
 title: SEO thingies
 description: My journey on experimenting with SEO
