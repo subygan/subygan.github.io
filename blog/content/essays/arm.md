@@ -75,4 +75,3 @@ References:
 - https://community.arm.com/arm-community-blogs/b/architectures-and-processors-blog/posts/a-brief-history-of-arm-part-1
 - https://community.arm.com/arm-community-blogs/b/architectures-and-processors-blog/posts/a-brief-history-of-arm-part-2
 - http://www.rougol.jellybaby.net/meetings/2012/PaulFellows/index.html
-
