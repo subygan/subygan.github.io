@@ -19,3 +19,7 @@ copyright: This work is licensed under a Creative Commons Attribution-ShareAlike
   International License.
 
 enableRobotsTXT: true
+sitemap:
+  changefreq: weekly
+  filename: sitemap.xml
+  priority: 0.5
