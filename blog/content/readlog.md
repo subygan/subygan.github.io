@@ -984,8 +984,8 @@ toc: true
       side step the regulatory authority prohibiting early stage companies from doing IPOs willy nilly. Which also makes
       sense that so many VCs want companies to be web3 ones. they're just easily cashable, not because the underlying
       tech is awesome, but the law has no idea about this, yet.
-- [https://erikhoel.substack.com/p/follow-up-why-we-stopped-making-einsteins?s=r](reply to hoel's writeup)
-- [https://www.econlib.org/archives/2015/09/why_im_homescho.html](Why I'm homeschooling - Brian caplan)
+- [reply to hoel's writeup](https://erikhoel.substack.com/p/follow-up-why-we-stopped-making-einsteins?s=r)
+- [Why I'm homeschooling - Brian caplan](https://www.econlib.org/archives/2015/09/why_im_homescho.html)
     - Brian Caplan, the economist is homeschooling his kids and he lays out the logic behind this decision
 - [There is something off about ape coin](https://www.platformer.news/p/theres-something-off-about-apecoin?)
     - Very interesting idea of thinking tokens like a easily cashable equity. I'm guessing this is one of the ways to
