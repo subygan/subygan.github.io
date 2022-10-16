@@ -2,8 +2,8 @@
 layout: base
 type: page
 emoji:  ☁
-title: local tunnels with cloudflare
-description: notes while tinkering with ruby
+title: local tunnels
+description: Making local tunnels
 date: 2021-07-06 22:15:00
 ---
 
@@ -26,3 +26,8 @@ https://community.cloudflare.com/t/unsolicited-utomatic-caching-via-argo-tunnels
 ### Downsides
 
 - js is cached making it harder to do js development. (stale: 25Jul2022, use page rules)
+
+
+### Web socket tunnel
+
+
