@@ -12,17 +12,17 @@ committed to the directory
 - [x] Simple sub indexing system in ruby.
 
 
-## Workflow
-The workflow is simple, 
-- create a new notebook in notion. keep taking notes there. Notion is especially
-incredible for this task.
+~~## Workflow~~
+~~The workflow is simple,~~ 
+~~- create a new notebook in notion. keep taking notes there. Notion is especially~~
+~~incredible for this task.~~
   
-- if notion is with header then use /blog/example/example_with_header_img.html
-and fill content from typora 
+~~- if notion is with header then use /blog/example/example_with_header_img.html~~
+~~and fill content from typora~~ 
   
-- else, use /blog/example/example.html
+~~- else, use /blog/example/example.html~~
 
-- the difference between the two is actually just a css tag.
+~~- the difference between the two is actually just a css tag.~~
 
 
 
