@@ -1,6 +1,4 @@
 ---
-layout: base
-type: page
 emoji:  💂🏻‍♂️
 title: Searching for a self-hosted VPN
 description: I'm trying to find a self-hosted VPN solution that is able to maintain an ACL. 
