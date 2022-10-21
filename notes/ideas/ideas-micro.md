@@ -13,3 +13,4 @@
   - This is better than focusmate, because those who match would have a shared context
 - Update extension
 - Extension to convert any audio/video to text.
+- Using the same idea as the clock in email thing. But, it can be used to serve advertisements in news letters

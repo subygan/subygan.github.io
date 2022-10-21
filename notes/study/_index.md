@@ -2,6 +2,7 @@
 
 TODO:
 
-- ARM
+- ARM ✅
 - Apple
 - JP Morgan
+- TSMC

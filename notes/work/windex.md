@@ -1,4 +1,6 @@
 
+## 2022-10-21
+- [ ] VAT document for api token.
 
 ## 2022-10-18
 - [ ] Razorpay, apply
