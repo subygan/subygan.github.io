@@ -1,14 +1,25 @@
----
-title: On Focus
-emoji: 🎧
-layout: base
-type: page
-description: Focusing is a very difficult thing for me. My journal on trying to learn to focus on stuff I have to instead of fibrillating a thousand different things.
-date: 2021-04-16 22:15:00
----
+[//]: # (---)
+
+[//]: # (title: On Focus)
+
+[//]: # (emoji: 🎧)
+
+[//]: # (description: Focusing is a very difficult thing for me. My journal on trying to learn to focus on stuff I have to instead of fibrillating a thousand different things.)
+
+[//]: # (date: 2021-04-16 22:15:00)
+
+[//]: # (---)
+
+Focusing on one thing is something I've been fighting for a long while. Maybe I have mild ADHD, But it doesn't matter, I will have ot get better at focusing on stuff. The problem is basically that I have so many things going on in my head at any given time that, it is hard to think of just one thing. Making it harder and harder to focus on the work/meeting I'm handling in the moment. This is not only not optimal in the longterm, I would be actively damaging everything.
+
+A lot of times, this is because I __lack intent__ to when I do stuff. This results in me wandering aimlessly and this becoming a problem unto itself. Before doing a task, I should record it's intent in it.
+
+notes:
+- Talk with vishnu
+  - Appu, reading for 5 minutes and taking breaks to text vs him finishing chapter after chapter
 
 
-### Experiment1 - Time based "focus" segments
+<s> ### Experiment1 - Time based "focus" segments
 
 I generally don't believe timing, focus is a bad way of doing it because. The belief is that, when you are in "focus", you forget time and get all into it. But, this happens very rarely and hard to replicate.
 
@@ -42,3 +53,4 @@ These are my frequent distractions these days.
 - A bunch of newsletters I've subscribed to
 - Trying to switch songs on Youtube.
 
+</s>
