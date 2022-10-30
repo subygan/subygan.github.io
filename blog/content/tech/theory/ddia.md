@@ -193,8 +193,81 @@ which is a lot more verbose. and this has the disadvantage of not using the opti
 
 ### Map reduce
 
+Map reduce is a model to process large amount of data across many machines.
+
+
+eg, counting the number of elements in a db
+this can be done by querying for all observations with the criteria and then counting them. example,
+`SELECT data_trunc('month', observation_timestamp) AS observation_month, sum(num_animals) AS total_animals FROM observations WHERE family='Sharks' GROUP BY observation_month`
+
+in map reduce can, this can be done by
+
+```js
+db.observations.mapReduce( 
+    function map() { //2. Map, called once for every document
+      var year = this.observationTimestamp.getFullYear(); 
+      var month = this.observationTimestamp.getMonth() + 1; 
+      emit(year + "-" + month, this.numAnimals); //3 emit string of format "2014-12" and a value
+    },
+    function reduce(key, values) { //4. emitted values from map go here as args. This is then processed
+      return Array.sum(values); 
+      },
+    {
+      query: { family: "Sharks" }, //1.Query filter
+      out: "monthlySharkReport"
+    });
+
+```
+
+This enables us to perform distributed queries. But, nothing is stopping SQL DBs to not do the same. They are able to handle the same very well as well.
+
+## Graph like Data Models
+
+Graph DBs are very useful in one-to-many cases. But, _relational models can only handle simple cases of relations_. In cases where much more complicated Databases are required, a graph database makes a lot more sense. Graph DBs generally have vertices and edges some examples include 
+- _social graphs_,  Vertices are people and edges indicate which people know each other
+- _web graph_, Vertices are web pages and edges indicate HTML links to other pages
+- _Rail networks_, Vertices are junctions, and edges represent the roads or lines between them
+
+Navigation systems, Shortest path finding algorithms can work on these databases
+
+## Property graphs
+
+Each vertex consists of 
+
+- A unique identifier
+- A set of outgoing edges
+- A set of incoming edges
+- A collection of properties(kv pairs)
+
+Each edge consists of
+
+- A unique identifier
+- The vertex at which the edge starts (the tail vertex)
+- The vertex at which the edge ends (the _head_ vertex)
+- A label to describe the kind of relationship between the two vertices
+- A collection of properties (key-value pairs)
+
+
+In this model, both vertex and edge can be tables in a DB and everything can be done using queries
+for example,
+A property graph can be created using
+
+## Triple-Stores and SPARQL
+
+The triple-store model is mostly equivalent to the property graph model.
+in a triple-store, all informations is stored in the form of very simple three-part statements: (subject, predicate, object). for example,
+
+(Jim, likes, bananas). The subject is equivalent to a vertex in a graph. 
+
+
+### Cypher Query language
+query language for property graphs
+
+
+## Ch-3 Storage and retrieval
 
 ## Technical Words:
 
 - __impedence mismatch__ - Drift between, ORM and actual DB model
 - __data normalisation__ - Standardising data representation by using entity reference instead of, 
+- __Triple-Store__ - Model of data where, tuples of 3 are stored in graph like databases and can be queried
