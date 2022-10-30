@@ -6,7 +6,7 @@
 - [ ] One click link saving feature
 - [ ] Add note taking in oread extension
   - [ ] Publish?
-  - 
+  - [ ] Clear tracking URLs in oread. (Also migrate old URLs?)
 - [ ] Move oread backend to zappa?
   - If that does not work, deploy it manually?
 

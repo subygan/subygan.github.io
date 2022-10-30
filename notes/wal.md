@@ -1,5 +1,14 @@
-- 2022-10-29 8:45 am - 
-- 2022-10-28 8:29 pm - Read DDAI 2 hours ✅
+- 2022-10-30 2:26 pm - Read ddai -
+- 2022-10-30 12:12 pm - oread-highlighter add save url ✅ - 1:31 pm still pending some wiring 
+- 2022-10-30 11:53 am - oread, setup ✅
+- 2022-10-30 10:51 am - aion, Finish sqlite intg  ❌ - worked for 20 minutes, motivations problems 
+- 2022-10-30 7:27 am - read the crypto story - ✅ - 4 hours 
+- 2022-10-29 4:29 pm - piano till 5:30. ❌4:48 pm 
+- 2022-10-29 12:57 pm - aion, setup title. - 100 mins ✅
+- 2022-10-29 10:52 am - Setup raspberry pi - 1 hour ✅ 
+  - to buy, ups, micro HDMI
+- 2022-10-29 9:49 am - complete healer x mongo + test ✅- partially done.
+- 2022-10-28 8:29 pm - Read DDAI 2 hours ✅- partially done. 1 hour
 - 2022-10-25 12:47 pm - Create comparison for old vs new policy for 1 hour ❌
 - 2022-10-24 11:59 am - Read, DDAI for 1 hour ✅ 📈 1:29 pm  
 - 2022-10-23 10:56 am - Read, DDAI for 1 hour ✅ 
