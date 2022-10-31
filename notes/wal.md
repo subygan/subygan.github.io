@@ -1,4 +1,10 @@
-- 2022-10-30 2:26 pm - Read ddai -
+- 2022-10-31 5:31 pm - Aion
+- 2022-10-31 7:32 am - connect healer x mongo ❌
+- 2022-10-31 6:30 am - connect healer x mongo ❌ 7:15 am worked for 10 minutes, distractions
+- 2022-10-30 9:27 pm - oread-highlighter, add migration  ❌ Dinner distractions
+- 2022-10-30 5:20 pm - oread-highlighter, finish what you started ✅ Needs work on doing migration for bad data modelling
+- 2022-10-30 3:34 pm - port evernote => markdown ✅ 4:21 pm - ported quotes
+- 2022-10-30 2:26 pm - Read ddai -3:34 pm ch-2 finished.
 - 2022-10-30 12:12 pm - oread-highlighter add save url ✅ - 1:31 pm still pending some wiring 
 - 2022-10-30 11:53 am - oread, setup ✅
 - 2022-10-30 10:51 am - aion, Finish sqlite intg  ❌ - worked for 20 minutes, motivations problems 
@@ -11,5 +17,5 @@
 - 2022-10-28 8:29 pm - Read DDAI 2 hours ✅- partially done. 1 hour
 - 2022-10-25 12:47 pm - Create comparison for old vs new policy for 1 hour ❌
 - 2022-10-24 11:59 am - Read, DDAI for 1 hour ✅ 📈 1:29 pm  
-- 2022-10-23 10:56 am - Read, DDAI for 1 hour ✅ 
+- 2022-10-23 10:56 am - Read, DDAI for 1 hour ✅
 - 2022-10-21 - Clone and setup, ram's timer app ✅
