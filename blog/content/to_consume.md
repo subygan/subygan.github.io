@@ -9,6 +9,11 @@ layout: base
 - [http crash course nobody asked for](https://fasterthanli.me/articles/the-http-crash-course-nobody-asked-for) 
 - Everything you ever wanted to know about terminals
   - http://xn--rpa.cc/irl/term.html
+- [Taxonomy of Moats](https://reactionwheel.net/2019/09/a-taxonomy-of-moats.html)
+- [Leverage Points](https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/)
+- [All Markets Are Not Created Equal: 10 Factors To Consider When Evaluating Digital Marketplaces](https://abovethecrowd.com/2012/11/13/all-markets-are-not-created-equal-10-factors-to-consider-when-evaluating-digital-marketplaces/)
+- [What is amazon](https://zackkanter.com/2019/03/13/what-is-amazon/)
+- [Ai: Startup vs incumbent value](https://blog.eladgil.com/p/ai-startup-vs-incumbent-value)
 - [Bill gates interview 1992 PDC 1992](https://learn.microsoft.com/en-us/events/pdc-pdc-1992/pdc-1992-keynote-bill-gates)
 - [https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript](https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript)
 - Signal: You were the chosen one [video]

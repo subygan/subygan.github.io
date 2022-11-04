@@ -114,3 +114,9 @@
 - You Know something only once but you realize it multiple times - Swapnil
 
 - Your life is ending, 1 minute at a time - Fight Club 
+- 
+- The never ending now - https://perell.com/essay/never-ending-now/
+
+- Software is eating the world - mark andreesen
+
+- Be wary of all earnestness - Mike Rowe of Dirty Jobs 

@@ -1,4 +1,9 @@
-- 2022-10-31 5:31 pm - Aion
+- 2022-11-03 8:17 pm - DDIA
+- 2022-11-03 11:29 am - healer tests
+- 2022-11-02 12:29 pm - finish healer
+- 2022-11-01 4:51 pm - port one note - ✅ 5:19 pm a lot of things are not required, actually. 
+- 2022-11-01 4:18 pm - DDIA - 4:51 pm ✅
+- 2022-10-31 5:31 pm - Aion, add db wrapper ✅
 - 2022-10-31 7:32 am - connect healer x mongo ❌
 - 2022-10-31 6:30 am - connect healer x mongo ❌ 7:15 am worked for 10 minutes, distractions
 - 2022-10-30 9:27 pm - oread-highlighter, add migration  ❌ Dinner distractions
