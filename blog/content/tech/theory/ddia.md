@@ -266,8 +266,47 @@ query language for property graphs
 
 ## Ch-3 Storage and retrieval
 
+- simplest database possible.
+  - append data to a file in comma seperated fashion. fetch when required
+    eg,
+  ```shell
+    db_set () {
+    echo "$1,$2" >> database
+    }
+    db_get () {
+    grep "^$1," database | sed -e "s/^$1,//" | tail -n 1
+    }
+  ```
+  - writes are fast, read is slow as O(n).
+  - To _effectively find the keys_  we need an _index_ . But writing to the index takes extra time during writes, slowing it down
+  - The trade off is, well chosen indexes fasten queries. But, slowdown writes
+  - Simplest index would be a hashmap which stores the offset of the data in the file. making it faster to fetch
+Usecase, we need to record number of times a video is played.
+  - We can only append to a file. break the file into even sized chunks, when it reaches a certain size. _compaction_ can then be performed on these segments.
+  - While compaction is happening, reads can still happen in the old files. Merging of multiple segments can also be done, without impact to reads
+  - Here, every segment has it's own hashmap. To find a key, we check in the recent segment's hashmap and then the next and then the next.
+  - __file format__ binary blob is better than csv
+  - __Deleting__ When deleting a special record is made against that key. While merging, those keys are deleted
+  - __Crash recovery__ Hashmap creation for every segment while startup would be slow. writing down index to disk helps in that
+  - __Partially written records__ When database crashes while appending, it could mangle the data. Bitcask files include checksums, allowing corruption detection
+  - __Concurrency control__ have only one writer thread. Reads, can be concurrent
+  - This only works if the _hashtables fit into memory_. Hash maps on disk is finnicky. Range queries are not efficient
+
+### SSTables and LSM-Trees
+
+- In the same above structure, _we can store logs in string sorted format_ . Also, _a key only appears once in a merged segment_
+
+- maintain a memtable before writing anything down. when the memtable becomes bigger than a threshold. Write to disk as an SSTable file.
+- While reading, we can try the memtable first and in the most recent disk segment and the next and so on.
+- Occassionally Merge segments with these properties => compaction + merge
+
+### Making an LSM-tree from
+
 ## Technical Words:
 
 - __impedence mismatch__ - Drift between, ORM and actual DB model
 - __data normalisation__ - Standardising data representation by using entity reference instead of, 
 - __Triple-Store__ - Model of data where, tuples of 3 are stored in graph like databases and can be queried
+- __Compaction__ - throwing away duplicate keys in the log and using only the recent ones.
+- __Sorted String tables__ - 
+- __memtable__ - in-memory tree

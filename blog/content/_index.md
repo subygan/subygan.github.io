@@ -1,10 +1,10 @@
 ---
 title: Suriya
 emoji: 🧑🏻‍💻
-description: Suriya
+description: Suriya's website
 ---
 
-I try to write stuff I'm interested about, here.
+My place on the internet where, I try to write about stuff I'm interested in.
 
 
 💻  [tech](tech)
