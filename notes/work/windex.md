@@ -3,7 +3,7 @@
 - [ ] VAT document for api token.
 
 ## 2022-10-18
-- [ ] Razorpay, apply
+- [x] Razorpay, apply
 
 ## 2022-10-08
 - [ ] test for reject policy authoring on where to

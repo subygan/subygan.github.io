@@ -31,3 +31,7 @@ This, I believe is mostly because of the innovation gap we are facing. Innovatio
 We've become a whole generation of software developers who can't think deeper than Web APIs and Web apps. And it shows. There are close to no representation in Indian open source based startups and other such truly technical areas. We've missed out (and are missing out?) innovations in all those places for the love of react, node and CRUD apps.
 
 My question now is about how do I bridge that gap?
+
+update: 2022-11-04 8:54 pm 
+
+I suppose, I could've been fairly tunnel visioned in my definition of what "innovation" is. Now that I'm a little older and wiser. I think, there is definitely a lot of value in creating the "crufty" stuff that I would've sneered at, a year back.

@@ -300,7 +300,10 @@ Usecase, we need to record number of times a video is played.
 - While reading, we can try the memtable first and in the most recent disk segment and the next and so on.
 - Occassionally Merge segments with these properties => compaction + merge
 
-### Making an LSM-tree from
+### Making an LSM-tree from SSTree:
+
+
+
 
 ## Technical Words:
 
@@ -308,5 +311,6 @@ Usecase, we need to record number of times a video is played.
 - __data normalisation__ - Standardising data representation by using entity reference instead of, 
 - __Triple-Store__ - Model of data where, tuples of 3 are stored in graph like databases and can be queried
 - __Compaction__ - throwing away duplicate keys in the log and using only the recent ones.
-- __Sorted String tables__ - 
+- __SSTables__ - Sorted String Tables, store strings in sorted order. 
 - __memtable__ - in-memory tree
+- __LSM-tree__ - Log-Structured Merge-Tree. where data is appended in a log like fraction and merged occasionally.
