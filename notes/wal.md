@@ -1,4 +1,11 @@
-- 2022-11-03 8:17 pm - DDIA
+- 2022-11-07 9:01 am - fill readlog 
+- 2022-11-07 7:16 am - healer tests
+- 2022-11-06 5:33 pm - setup raspberry pi ✅ - yet to figure out auto start thing
+- 2022-11-06 4:46 pm - complete readlog ❌
+- 2022-11-06 4:12 pm - url enabler ✅
+- 2022-11-06 12:04 pm - finish migration oread ✅ - realised migration is not needed.
+- 2022-11-06 8:45 am - DDIA ✅
+- 2022-11-03 8:17 pm - DDIA ✅
 - 2022-11-03 11:29 am - healer tests
 - 2022-11-02 12:29 pm - finish healer
 - 2022-11-01 4:51 pm - port one note - ✅ 5:19 pm a lot of things are not required, actually. 

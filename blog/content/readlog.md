@@ -3,9 +3,244 @@ title: Readlog
 emoji: 🧑🏻‍🏫 
 layout: base
 description: I try to write collate all the stuff I find around
-the internet here date: "now"
+the internet here 
+date: "now"
 toc: true
 ---
+
+## 2022-11-06
+
+- [ What is OpenTelemetry? ](https://opentelemetry.io/docs/concepts/what-is-opentelemetry/)
+- [ Crows Perform Yet Another Skill Once Thought Distinctively Human ](https://archive.ph/zLgN0#selection-499.0-505.0)
+- [leveled compaction in cassandra](https://www.datastax.com/blog/leveled-compaction-apache-cassandra )
+- [bloom filters for the preplexed](https://sagi.io/2017/07/bloom-filters-for-the-perplexed/)
+
+
+## 2022-11-04
+
+- [A lot has changed if you are starting a Saas business]( https://www.linkedin.com/posts/desaipranay_a-lot-has-changed-if-youre-starting-a-saas-activity-6994177516093538304-K8o_ )
+- [ David Sacks zenefits]( https://twitter.com/DavidSacks/status/804921026912063488 )
+- [ Reconstruction of a train wreck how a priming research went sideways ]( https://replicationindex.com/2017/02/02/reconstruction-of-a-train-wreck-how-priming-research-went-of-the-rails/comment-page-1/#:~:text=I%20accept%20the%20basic%20conclusions%20of%20this%20blog.%20To%20be%20clear%2C%20I%20do%20so%20(1)%20without%20expressing%20an%20opinion%20about%20the%20statistical%20techniques%20it%20employed%20and%20(2)%20without%20stating%20an%20opinion%20about%20the%20validity%20and%20replicability%20of%20the%20individual%20studies%20I%20cited. )
+- [ Problem with moderation ]( https://twitter.com/yishan/status/1586955288061452289 )
+  - freedom of speech is not an issue. (eg, spam)
+  - Finding controversial content in an unknown language is hard.
+
+## 2022-10-30
+
+- [ Don’t Surround Yourself With Smarter People ](https://www.ribbonfarm.com/2014/11/05/dont-surround-yourself-with-smarter-people/)
+- [ “It’s an efficient way to get venture capitalists to put money into software projects.” ](https://www.bloomberg.com/features/2022-the-crypto-story/?leadSource=uverify%20wall)
+  - MONEY IS A SOCIAL FACT, EVEN WHEN THE MONEY IS BITCOIN OR ETHER
+  - Finance, at its heart, is about moving future wealth into the present by borrowing, or moving present wealth into the future by saving.
+  - The mechanism would be a smart contract that holds A tokens of type T1, and B tokens of type T2, and maintains the invariant that A * B = k for some constant k (in the version where people can invest, k can change, but only during investment/withdrawal transactions, NOT trades). Anyone can buy or sell by selecting a new point on the xy=k curve, and supplying the missing A tokens and in exchange receiving the extra B tokens (or vice versa). The “marginal price” is simply the implicit derivative of the curve xy=k, or y/x.
+  - central limit order book, or CLOB.
+  - “like if the Wright Brothers sold air miles to finance inventing the airplane.”
+- [ melsloop ](https://melsloop.com/)
+- [ On Michael crichton vs John Grisham's ambition ](https://www.calnewport.com/blog/2022/10/28/on-michael-crichtons-busy-ambition/)
+  - Michael crichton is wildly ambitious publishing books even while studying for medicine. had 5 marriages
+  - Grisham is slow. Published one book per year consistently. married for 30 years
+
+## 2022-10-29
+
+- [ most famous description of Bitcoin, attributed to a Twitter poster, might be: ](https://www.bloomberg.com/features/2022-the-crypto-story/?leadSource=uverify%20wall)
+- The Crypto Story
+- [ Taking Lichess to the Next Level ](https://lichess.org/blog/Y1wpBhEAAB8AwbeG/taking-lichess-to-the-next-level)
+- [ Truck nuts ](https://www.reddit.com/r/Entrepreneur/comments/yeriqj/whats_the_absolute_worst_business_idea_youve_ever/)
+- guy that worked at our company decided to quit and walk across the country in a teddy bear costume. Called him self BearSun. I thought he was crazy until he showed me his Shopify account and he had sold close to 500k in merchandise
+- Trick people into thinking the super hard shiny rocks are waaaaaaaaaay more valuable than they really are then control the supply to jack up the prices even more.
+- What's the absolute worst business idea you've ever heard that actually worked?
+
+## 2022-10-28
+
+- [ It was in K&R that “Hello, world!” became the canonical example program for any language ](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/#grabbag)
+- [ WHAT IS BUSINESSWEEK JUNE 11, 2015BY PAUL FORD CODE? ](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/)
+
+## 2022-10-27
+
+- [ No Safe Efficient Ways to Do Three-way String Comparisons in Go ](https://go101.org/blog/2022-10-01-three-way-string-comparison.html)
+
+## 2022-10-26
+
+- [ Metaballs ](https://varun.ca/metaballs/)
+- [ Time is an illusion, Unix time doubly so... ](https://www.netmeister.org/blog/epoch.html)
+- [ Inside the elaborate set-up of a scam HQ, staffed by people forced to scam ](https://www.channelnewsasia.com/cna-insider/inside-elaborate-set-scam-hq-staffed-people-forced-scam-3018966)
+- [ If Richard Feynman applied for a job at Microsoft ](https://sellsbrothers.com/12395)
+
+## 2022-10-25
+
+- [ From zero to 10 million lines of Kotlin ](https://engineering.fb.com/2022/10/24/android/android-java-kotlin-migration/)
+
+## 2022-10-24
+
+- [ Today we cut our Redis Engine CPU Utilization by 80% and survived to live (and grow) another day! ](https://twitter.com/daveschatz/status/1583342175005220864?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1583342175005220864%7Ctwgr%5E31673d23b365f228d63d673d2e7eafd194c986cc%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fthreadreaderapp.com%2Fthread%2F1583343357664714754.html%3Fs%3D12t%3DmVx6rwYa5sfeOTgpYyLSNA)
+- [ Out of the Tar Pit (2006) ](https://web.archive.org/web/20130221005236/http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.93.8928)
+- [ 3 things I did before app launch and what I wish I have done ](https://www.sagiodev.com/blog/lessons_learned_app_launch/)
+
+## 2022-10-23
+
+- [ THE HIERARCHY IS BULLSHIT (AND BAD FOR BUSINESS) ](https://charity.wtf/2022/09/23/the-hierarchy-is-bullshit-and-bad-for-business/?ref=refind)
+
+## 2022-10-22
+
+- [ Replacing Middle Management with APIs ](https://rein.pk/replacing-middle-management-with-apis)
+- [ Product-Driven versus Customer-Driven ](https://www.ribbonfarm.com/2014/04/24/product-driven-versus-customer-driven/)
+- [ The Premium Mediocre Life of Maya Millennial ](https://www.ribbonfarm.com/2017/08/17/the-premium-mediocre-life-of-maya-millennial/)
+- [ Getting to Gnome Mode ](https://studio.ribbonfarm.com/p/getting-to-gnome-mode)
+- [ Allegory of the cave ](https://en.wikipedia.org/wiki/Allegory_of_the_cave)
+- [ dealized organizations are not perfect. They are perfectly pathological ](https://www.ribbonfarm.com/2009/10/07/the-gervais-principle-or-the-office-according-to-the-office/)
+  - organizations don’t suffer pathologies; they are intrinsically pathological constructs
+  - The Gervais Principle, Or The Office According to “The Office”
+- [ People Staring at Computers ](https://kylemcdonald.net/psac/)
+
+## 2022-10-20
+
+- [ Manna – Two Views of Humanity’s Future – Chapter 1 ](https://marshallbrain.com/manna1)
+- [ We are still early with the cloud: why software development is overdue for a change ](https://erikbern.com/2022/10/19/we-are-still-early-with-the-cloud.html)
+- [ Wait vs interrupt culture ](http://benjaminrosshoffman.com/wait-vs-interrupt-culture/)
+  - Cutting people off when they are talking something is wrong. Even if you (think, you) know more than the other person
+  - It might be fine, in cases where there are absolutes. In amorphous situations, Everybody is more likely right. So, it is better to listen than speak.
+
+## 2022-10-18
+
+- [ Case Study 16: Nike’s 100 Million Dollar Supply Chain "Speed bump" ](https://www.henricodolfing.com/2022/10/case-study-nike-i2-supply-chain-management.html)
+- [ Announcing General Availability of Twilio Functions and Assets ](https://www.twilio.com/blog/functions-assets-general-availability?utm_campaign=GA_functionsAndAssets&utm_source=linkedin&utm_medium=twiliodevs)
+- [ YAGNI exceptions ](https://lukeplant.me.uk/blog/posts/yagni-exceptions/)
+
+## 2022-10-17
+
+- [ From Software Developer to Product Manager: Meet Maria van Keulen ](https://www.mongodb.com/blog/post/from-software-developer-product-manager-meet-maria-van-keulen)
+- [ Optimizations in C++ Compilers ](https://queue.acm.org/detail.cfm?id=3372264)
+
+## 2022-10-16
+
+- [ Deno v. Bun performance is rigged | by uNetworking AB | Oct, 2022 ](https://unetworkingab.medium.com/deno-v-bun-performance-is-rigged-a0500e13464c)
+- [ Building a container from scratch in Go - Liz Rice (Microscaling Systems) - YouTube](https://m.youtube.com/watch?v=Utf-A4rODH8)
+
+## 2022-10-15
+
+- [ Hello World under the microscope ](https://asawicki.info/articles/Hello_world_under_the_microscope.php5)
+
+## 2022-10-12
+
+- [ You Can’t Fix a CAC Payback Period: The Operator vs. Investor View of SaaS Metrics ](https://kellblog.com/2022/10/11/you-cant-fix-a-cac-payback-period-the-operator-vs-investor-view-of-saas-metrics/)
+
+## 2022-10-11
+
+- [ Why You Should Never Pay For Online Dating ](https://web.archive.org/web/20100821041938/http://blog.okcupid.com/index.php/why-you-should-never-pay-for-online-dating/)
+- [ Science is the belief in the ignorance of experts ](https://lemire.me/blog/2020/07/12/science-is-the-belief-in-the-ignorance-of-experts/)
+- [ New patterns for amazing apps ](https://web.dev/new-patterns-for-amazing-apps/)
+
+## 2022-10-10
+
+- [ In gold-standard trial, colonoscopy fails to reduce rate of cancer deaths ](https://www.statnews.com/2022/10/09/in-gold-standard-trial-colonoscopy-fails-to-reduce-rate-of-cancer-deaths/)
+- [ PDF processing and analysis with open-source tools ](https://www.bitsgalore.org/2021/09/06/pdf-processing-and-analysis-with-open-source-tools)
+- [ Skyfall: eBPF agent for infrastructure observability ](https://engineering.linkedin.com/blog/2022/skyfall--ebpf-agent-for-infrastructure-observability?ref=Architecture+Notes-newsletter)
+- [ Software engineering practices ](https://simonwillison.net/2022/Oct/1/software-engineering-practices/?ref=Architecture+Notes-newsletter)
+
+## 2022-10-09
+
+- [ 101. Reimagining Windows from the Chipset to the Experience: The Chipset [Ch. XV] ](https://hardcoresoftware.learningbyshipping.com/p/101-reimagining-windows-chipset?utm_source=post-email-title&publication_id=82387&post_id=75881900&isFreemail=true&utm_medium=email)
+- [ Stripe is Paypal circa 2010 ](https://learnjsthehardway.com/blog/18-stripe-is-paypal-circa-2010/)
+- [ Why millennials are facing the scariest financial future of any generation since the Great Depression. ](https://highline.huffingtonpost.com/articles/en/poor-millennials/)
+- [ A summary of “Escaping the build trap” by Melissa Perri ](https://t-ziegelbecker.medium.com/a-summary-of-escaping-the-build-trap-by-melissa-perri-d247f943a7b3)
+- [ Master Direction – Credit Card and Debit Card – Issuance and Conduct Directions, 2022 ](https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12300)
+- [ RBI’s tokenisation plans: Here’s what’s changing for users ](https://indianexpress.com/article/technology/tech-news-technology/rbis-new-auto-debit-rules-heres-what-it-means-for-you-7688687/)
+- [ The Most Precious Resource is Agency ](https://simonsarris.substack.com/p/the-most-precious-resource-is-agency)
+- [ I Listened to 1000 B2B SaaS Sales Calls ](https://www.sofuckingagile.com/blog/i-listened-to-1000-b2b-saas-sales-calls)
+- [Digital communications protocols - spreadsheet](https://docs.google.com/spreadsheets/d/1-UlA4-tslROBDS9IqHalWVztqZo7uxlCeKPQ-8uoFOU/edit#gid=0)
+
+## 2022-10-08
+
+- [ Using Sqlite with django and zappa ](https://blog.perwagnernielsen.dk/django_sqlite_zappa.html)
+
+## 2022-10-07
+
+- [ How to Fix the NET::ERR_CERT_COMMON_NAME_INVALID Error (9 Methods) ](https://kinsta.com/knowledgebase/net-err_cert_common_name_invalid/)
+- [ Reality Is Just a Game Now ](https://www.thenewatlantis.com/publications/reality-is-just-a-game-now)
+- [ How We Remember Last Weekend ](https://nautil.us/how-we-remember-last-weekend-240328/)
+- [ IBM swallows Red Hat storage products ](https://blocksandfiles.com/2022/10/04/ibm-red-hat-storage/)
+
+## 2022-10-06
+
+- [ The banker who caused the 1929 stock crash ](https://thehustle.co/the-banker-who-caused-the-1929-stock-crash/)
+
+## 2022-10-02
+
+- [ 100. A Daring and Bold Vision ](https://hardcoresoftware.learningbyshipping.com/p/100-daring-and-bold?utm_source=substack&utm_medium=email)
+- [ there are no absolute guarantees ](https://lkml.org/lkml/2022/9/19/1105#1105.php)
+- [Gambler's ruin](http://www.columbia.edu/~ks20/FE-Notes/4700-07-Notes-GR.pdf)
+
+## 2022-10-01
+
+- [ AN END TO DOOMERISM Or why I’m coming out as an impatient optimist. ](https://view.ceros.com/freethink/hub-1-1?heightOverride=14200&tabletHeightOverride=14963&mobileHeightOverride=17120)
+
+## 2022-09-30
+
+- [ Why “Go Nuts, Show Nuts” Doesn’t Work in 2022 ](https://photomatt.tumblr.com/post/696629352701493248/why-go-nuts-show-nuts-doesnt-work-in-2022)
+
+## 2022-09-28
+
+- [ How Arm conquered the chip market without making a single chip, with CEO Rene Haas ](https://www.theverge.com/23373371/arm-chips-chip-shortage-ceo-rene-haas-tech-intel-apple-decoder?utm_source=tldrnewsletter)
+
+## 2022-09-27
+
+- [ The Next Century of Computing ](https://bzogrammer.substack.com/p/the-next-century-of-computing)
+
+## 2022-09-26
+
+- [ A history of ARM, part 1: Building the first chip ](https://arstechnica.com/gadgets/2022/09/a-history-of-arm-part-1-building-the-first-chip/?utm_source=tldrnewsletter)
+- [ Learning is Remembering ](https://saveall.ai/blog/learning-is-remembering)
+
+## 2022-09-25
+
+- [Bus Ticket theory of genius - Paul Graham](http://paulgraham.com/genius.html)
+  - genius comes from incredible patient repetition, despite other people finding it useless eg. bus ticket collectors.
+  - A lot of times the genius might not be useful. But, some times, in some fields it might result in big payoffs for humanity
+
+
+## 2022-09-24
+
+- [ Why WebRTC? ](https://pion.ly/blog/why-webrtc/)
+- [ Tor SNOWFLAKE ](https://snowflake.torproject.org/)
+- [Earnest - paul graham](http://paulgraham.com/earnest.html)
+
+## 2022-09-23
+
+- [ Software I’m thankful for ](https://crawshaw.io/blog/thankful-for-technology)
+- [ Be critical or be corrupted ](https://www.cenizal.com/be-critical-or-be-corrupted/)
+- [ The Elves Leave Middle Earth – Sodas Are No Longer Free ](https://steveblank.com/2009/12/21/the-elves-leave-middle-earth-%E2%80%93-soda%E2%80%99s-are-no-longer-free/)
+- [ The sum of all knowledge ](https://christianheilmann.com/2022/08/29/the-sum-of-all-knowledge/)
+
+## 2022-09-22
+
+- [ The Road to Realistic Full-Body Deepfakes ](https://metaphysic.ai/the-road-to-realistic-full-body-deepfakes/)
+- [ What Does the Post Crash VC Market Look Like? ](https://bothsidesofthetable.com/what-does-the-post-crash-vc-market-look-like-ed81cd884021)
+- [ Build a better mousetrap, and the world will beat a path to your door ](https://en.wikipedia.org/wiki/Build_a_better_mousetrap,_and_the_world_will_beat_a_path_to_your_door)
+- [ So You Want To Compete With Steam ](https://www.fortressofdoors.com/so-you-want-to-compete-with-steam/)
+- [ Are book summaries legal? [COMPLETE ANSWER] ](https://1minutebook.com/are-book-summaries-legal/)
+
+## 2022-09-21
+
+- [ Wasmtime Reaches 1.0: Fast, Safe and Production Ready! ](https://bytecodealliance.org/articles/wasmtime-1-0-fast-safe-and-production-ready)
+
+## 2022-09-20
+
+- [ Stable Diffusion based Image Compression ](https://matthias-buehlmann.medium.com/stable-diffusion-based-image-compresssion-6f1f0a399202)
+- [ Using an unsafe language is a design flaw ]( http://trevorjim.com/using-an-unsafe-language-is-a-design-flaw/)
+
+
+## 2022-09-18
+
+- [ 012. I Shipped, Therefore I Am ](https://hardcoresoftware.learningbyshipping.com/p/012-i-shipped-therefore-i-am)
+- [ 098. A Sea of Worry at the Consumer Electronics Show ](https://hardcoresoftware.learningbyshipping.com/p/098-sea-of-worry)
+
+## 2022-09-17
+
+- [ "The Suck" (Learning Anything by Writing It Out by Hand... Word-for-Word) ](https://scottscheper.com/letter/40/)
+
+## 2022-09-16
+
+- [ How we built Pingora, the proxy that connects Cloudflare to the Internet ](https://blog.cloudflare.com/how-we-built-pingora-the-proxy-that-connects-cloudflare-to-the-internet/)
+- [ THE SPECTACULAR COLLAPSE OF CRYPTOKITTIES, THE FIRST BIG BLOCKCHAIN GAME ](https://spectrum.ieee.org/cryptokitties)
 
 ## 2022-09-15
 

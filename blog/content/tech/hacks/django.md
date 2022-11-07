@@ -13,3 +13,28 @@ This happens because there is no `CSRF_TRUSTED_ORIGINS` in the settings file. Al
  
  ---
 
+log all sql queries
+
+simply add in `settings.py`
+
+```python
+LOGGING = {
+ 'version': 1,
+ 'disable_existing_loggers': False,
+ 'handlers': {
+  'file': {
+   'level': 'DEBUG',
+   'class': 'logging.FileHandler',
+   'filename': 'sql.log',
+  },
+ },
+ 'loggers': {
+  'django.db.backends': {
+   'handlers': ['file'],
+   'level': 'DEBUG',
+   'propagate': True,
+  },
+ },
+}
+
+```
