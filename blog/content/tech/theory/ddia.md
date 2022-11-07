@@ -300,7 +300,11 @@ Usecase, we need to record number of times a video is played.
 - While reading, we can try the memtable first and in the most recent disk segment and the next and so on.
 - Occassionally Merge segments with these properties => compaction + merge
 
-### Making an LSM-tree from SSTree:
+
+SSTables, idea works very well because, the idea of adding log files sequentially increases throughput. While, compaction running in the background, enables fast fetch from the disk I/O.
+
+
+### B-Trees
 
 
 
@@ -314,3 +318,5 @@ Usecase, we need to record number of times a video is played.
 - __SSTables__ - Sorted String Tables, store strings in sorted order. 
 - __memtable__ - in-memory tree
 - __LSM-tree__ - Log-Structured Merge-Tree. where data is appended in a log like fraction and merged occasionally.
+- __Leveled Compaction__ - based on LevelDB, having n-tier levels for compaction
+- __size-tiered compaction__ - Compaction done, after waiting for the file to become a certain size.
