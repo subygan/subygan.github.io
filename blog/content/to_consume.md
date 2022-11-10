@@ -7,8 +7,9 @@ layout: base
 # Blog posts
 
 - [http crash course nobody asked for](https://fasterthanli.me/articles/the-http-crash-course-nobody-asked-for) 
-- Everything you ever wanted to know about terminals
-  - http://xn--rpa.cc/irl/term.html
+- [lessons from running codepen](https://blog.codepen.io/2022/08/03/379-chris-alex-have-been-running-codepen-for-10-years-what-have-they-learned-heres-the-top-10/)
+- [Everything you ever wanted to know about terminals](http://xn--rpa.cc/irl/term.html) 
+- [Rqlite design](https://github.com/rqlite/rqlite/blob/master/DOC/DESIGN.md)
 - [Taxonomy of Moats](https://reactionwheel.net/2019/09/a-taxonomy-of-moats.html)
 - [Leverage Points](https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/)
 - [All Markets Are Not Created Equal: 10 Factors To Consider When Evaluating Digital Marketplaces](https://abovethecrowd.com/2012/11/13/all-markets-are-not-created-equal-10-factors-to-consider-when-evaluating-digital-marketplaces/)
