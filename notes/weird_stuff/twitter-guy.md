@@ -28,8 +28,5 @@ questions,
 - How many people does it take to maintain 100 accounts?
 
 
-
-
-
 [another twitter guy](https://twitter.com/legendgora)
 

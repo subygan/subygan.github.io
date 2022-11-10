@@ -1,3 +1,7 @@
+- 2022-11-10 12:07 pm - ddia
+- 2022-11-09 7:35 pm - setup healer base scripts
+- 2022-11-09 8:17 am - run healer locally ✅
+- 2022-11-09 8:04 am - finish merge ✅
 - 2022-11-07 9:01 am - fill readlog 
 - 2022-11-07 7:16 am - healer tests
 - 2022-11-06 5:33 pm - setup raspberry pi ✅ - yet to figure out auto start thing
