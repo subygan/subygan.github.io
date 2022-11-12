@@ -6,3 +6,4 @@ TODO:
 - Apple
 - JP Morgan
 - TSMC
+- 

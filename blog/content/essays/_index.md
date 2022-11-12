@@ -1,6 +1,6 @@
 ---
 title: Essays
 emoji: 📜
-description: This is the description 
+description: Essays of stuff that I find mildly interesting to very interesting 
 date: 2022-10-05
 ---

@@ -1,4 +1,8 @@
-- 2022-11-12 1:53 pm - create table of contents
+- 
+- 2022-11-12 6:30 pm - ddia ✅
+- 2022-11-12 3:54 pm - ddia ✅
+- 2022-11-12 3:36 pm - healer fetch policies ❌ Motivation issues
+- 2022-11-12 1:53 pm - create table of contents ✅ Still very much a WIP
 - 2022-11-12 11:43 am - create Algorithms section ✅ Did bloom filters as well
 - 2022-11-12 10:00 am - ddia for an hour ✅
 - 2022-11-10 12:07 pm - ddia ❌

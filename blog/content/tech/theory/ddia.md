@@ -6,7 +6,7 @@ description: My notes on reading, designing data intensive applications
 date: 2022-10-23
 ---
 
-## Ch-1: Reliable, Scalable and maintainable applications
+# Ch-1: Reliable, Scalable and maintainable applications
 
 - reliability, The system should continue to work __correctly__ even in the face of adversity (hw, sw or human).
   - __faults__ (either synthetic or natural) are when only part of the system misbehaves, If the whole system goes down then it is a __failure__.
@@ -49,7 +49,7 @@ date: 2022-10-23
   - _Simplicity_, Complexity in software slows everyone down and brings down productivity, these are complex systems are called _a big ball of mud_ . Software which is easier to understand.
     - there are several possible _symptoms of complexity_ __explosion of the state space, tight coupling of modules, tangled dependencies, inconsistent naming and terminology, hacks to solve performance problems, special-casing to work around issues elsewhere
 
-## Ch-2 Data models and Query Languages
+# Ch-2 Data models and Query Languages
 
 Data models impacts _How we think about the problem_ making it an important part of decision making.
 
@@ -264,7 +264,7 @@ in a triple-store, all informations is stored in the form of very simple three-p
 query language for property graphs
 
 
-## Ch-3 Storage and retrieval
+# Ch-3 Storage and retrieval
 
 - simplest database possible.
   - append data to a file in comma seperated fashion. fetch when required
@@ -396,6 +396,72 @@ This also could be useful in cases where, we have
 - Another benefit, is that, in-memory databases provide access to non-harddisk friendly datastructure. eg. Redis gives access to priority queues and sets.
 - In some cases, in-memory databases can dump Least Recently used data to disk. This is the reverse of what the OS does with virtual memory and disk swap.
 
+### OLTP and OLAP
+
+In Early days when computers were mostly business devices. _Commercial Transactions_ had to be recorded. But, over time the same idea of "transaction" in databases stuck and we started using the same idea. These types of data processing is called _Online transaction processing (OLTP)_. This has nothing to do with ACID. this just means that, the changes are instantaneous and not in batch processes
+
+Databases are increasingly used in Data analytics as well. So, Databases started supporting data analytics changes. these data are often written by business analysts. This is called _Online Analytic Processing_ (OLAP).
+
+### Data Warehousing
+
+- Data present in OLTP databases can be ported to a different place where queries can be run to get results. This is called a _Data Warehouse_.
+- Data warehouses can also be optimised for analytic access patterns.
+
+### OLTP and data warehouse divergence
+
+- Acceess patterns are different which means that, there are increasingly different products that satisfy both needs.
+- _Teradata, Vertica, ParAccel_ are under commercial entereprise license. and only support Analytic workload. There are other open source projects like, _Apache Hive, Spark SQL, Cloudera, Impala, Facebook Presto, Apache Tajo_ 
+
+### Schemas for analytics: __Stars__ and __Snowflakes__ 
+
+- In OLAP databases there are _fact tables_ which holds a single event. This is used to point to other events that happened. like below.
+
+![star_schema](/assets/images/ddia/star_schema.png)
+(example given in "Designing Data intensive applciations")
+
+facts are usually captured as individual events, as they arrive. In the above example some are attributes, while others are references.
+The star name is because of the way how, fact table is in the center while dimension tables are on the outside
+
+There is another pattern called snowflake. where the dimension tables are further broken down into other processes.
+
+### Column-Oriented Storage
+
+- fact tables have the potential to grow  to trillions of rows and petabytes of data.
+- Generally, even though fact-tables can have 100s of columns. 4 - 5 are accessed per query.
+- In OLTPs, data is stored in row fashion.
+- in columnar storage, each column is seperated into different files and to fetch data of nth element, only the columns that are required can be loaded into memory and nth element from each file can be gotten. This reduces the search space substantially.
+
+### Column Compression
+Since columnar data are one-dimensional, they can be compressed quite a bit using methods such as, _run-length encoding_ There are different compression schema for different data types
+
+### Sort order in Column Storage:
+
+In columnar storages. It is better to store columns in a sorted order. All columns cannot be sorted independently though, the power of the column storage comes because we know all Kth element in the columnar files represent the same row. If date_key is the first sort key, it might make sense for product_sk to be the second sort key.
+
+
+#### Several different sort orders
+
+A clever extension of this idea is to sort every column in several different ways and replicate them across machines. This is similar to having multiple indexes across different files.
+
+### Writing to Column-Oriented Storage
+
+The base assumption for column-oriented storage is that, there are a lot more reads and pretty much no overwrites or in-place changes. This means that data can be easily appended to column files but not necessarily changed easily. Changing data, would take a lot of writes and would be very costly.
+
+## Aggregation: Data Cubes and Materialized Views:
+
+Data warehouses often perform operations like, COUNT, SUM, AVG, MIN, or MAX over a _Materialised aggregate_.  This is usually run over a _Materialised view_. In a relational data model, It is like a standard/virtual view but it is written to disk. When the underlying data changes the materialized view also changes. This means increased writes and this is why it is not used in OLTP databases 
+
+In OLAP warehouses there is a common special view known as _OLAP cube_. It is a grid of aggregates grouped by different dimensions.
+
+![data_summing](/assets/images/ddia/data_summing.png)
+(example given in "Designing Data intensive applciations")
+
+In the above example, each data is represented in different ways and can be easily derived.
+
+# Ch-4 Encoding and Evolution:
+
+
+
 
 ## Technical Words:
 
@@ -415,4 +481,10 @@ This also could be useful in cases where, we have
 - __Clustered index__ - Key where data is stored near the index (eg InnoDB storage engine)
 - __covering indexes__ or __index with included columns__ secondary indexes where some columns are stored within the index.
 - __concatenated indexes__ - com=bines several fields into one key by appending one column to another. (eg phone book which has a 'lastname-firstname' index. it can be used to find people with certain lastname (or) people with certain 'lastname-firstname' combination. But, totally useless if you want people with certain firstname)
-- 
+- __OLTP__ - Online Transaction Processing. A type of database operation which gurantees instantaneousness
+- __OLAP__ - Online Analytics Processing. Database operation which is not expected to be instantaneous and can be done after the fact.
+- __fact table__ - In OLAP tables, a fact table is used to represents an event that occured at a certain time.
+- __Run length encoding__ - in a one dimensional list of data, it can be reduced by counting the number of times an element gets repeated and then encoding alongside it.
+- __Materialized aggregate__ - aggregate function over a _materialized view_.
+- __Materialized view__ - like a standard (virtual) view, but the contents of the result is written to disk. When the underlying data changes, materilised view also changes
+- __OLAP cube__ - a materialized view with aggregate data of content
