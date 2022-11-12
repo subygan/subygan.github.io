@@ -11,6 +11,16 @@ committed to the directory
 - [ ] Make a simple navigation bar
 - [x] Simple sub indexing system in ruby.
 
+## Manual:
+
+### importing code snippets from other files.
+```
+{{% code file="./file.go" language="go" %}}
+```
+"./" for relative imports "/assets/file/" for absolute imports
+
+
+
 
 ~~## Workflow~~
 ~~The workflow is simple,~~ 

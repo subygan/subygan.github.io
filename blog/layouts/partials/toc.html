@@ -1,0 +1,10 @@
+<div id="toc">
+    {{ range .Site.Pages }}
+    <li>
+
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        "{{ . | urlize }}"{{ .Title }} {{ .IsPage }} {{ .RelPermalink }}
+    </li>
+
+    {{ end }}
+</div>

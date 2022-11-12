@@ -6,6 +6,7 @@ layout: base
 
 # Blog posts
 
+- [Coding for SSDs](https://codecapsule.com/2014/02/12/coding-for-ssds-part-1-introduction-and-table-of-contents/)
 - [http crash course nobody asked for](https://fasterthanli.me/articles/the-http-crash-course-nobody-asked-for) 
 - [lessons from running codepen](https://blog.codepen.io/2022/08/03/379-chris-alex-have-been-running-codepen-for-10-years-what-have-they-learned-heres-the-top-10/)
 - [Everything you ever wanted to know about terminals](http://xn--rpa.cc/irl/term.html) 
