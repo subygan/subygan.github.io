@@ -1,4 +1,7 @@
-- 2022-11-10 12:07 pm - ddia
+- 2022-11-12 1:53 pm - create table of contents
+- 2022-11-12 11:43 am - create Algorithms section ✅ Did bloom filters as well
+- 2022-11-12 10:00 am - ddia for an hour ✅
+- 2022-11-10 12:07 pm - ddia ❌
 - 2022-11-09 7:35 pm - setup healer base scripts
 - 2022-11-09 8:17 am - run healer locally ✅
 - 2022-11-09 8:04 am - finish merge ✅

@@ -11,3 +11,5 @@
 ## have read
 
 ## partially read
+
+{{% code file="./file.go" language="go" %}}

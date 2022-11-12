@@ -306,7 +306,95 @@ SSTables, idea works very well because, the idea of adding log files sequentiall
 
 ### B-Trees
 
+introduced in 1970 and "ubiquitous" within 10 years.
 
+- Keys are stored in sorted key-value pairs.
+- in log-structured indexes writes are done by appending to file of specific segment. But, in B-trees data is written in _fixed sized blocks_ called __blocks__ or pages, generally 4KB. 
+- Each page can be identified using an address or location. Pages can refer each other. Sort of like pointers, but for hard disk.
+- One page is called the __root of the b-tree__. All lookups start here.
+
+![btree_lookup](/assets/images/ddia/btree_lookup.png)
+(example given in "Designing Data intensive applciations")
+
+- The keys are branched out based on ranges. in the above example fi we are trying to find 252 key. Then in the root node we can predict that we will have to look at the ref in between 200 and 300. and in the next level between 250 and 270.
+- For updates, we want to update the value of an existing key in a B-tree. then we search for the _leaf node_ and then insert the data. if the page is full, then we split the leaf node and update the parent. like so, 
+
+![btree_page_splitting](/assets/images/ddia/btree_page_splitting.png)
+(example given in "Designing Data intensive applciations")
+
+The algorithm ensure that the tree remains balanced: a B-tree with _n_ keys always has a depth of O(log n). Data can be fit in 3 - 4 levels. So not a lot of page references are required. 4KB page with branching factor of 500 at 4 levels can store upto 256 TB
+
+### B-tree reliability
+
+- New data in a page is written by overwriting a page on disk with new data. The working assumption is that the reference does not change.
+- Overwriting a page on disk is a hardware operation and can limit the actual write throughput. in SSDs
+- A write ahead log (WAL) is used to recover from database crashes. This is an append-only log of the operation about to be performed.
+
+### B-tree Optimizations
+
+- LMDB uses _copy-on-write_ instead of overwriting. copy on write, copies the file to a new location and edits the file and updates the reference in the parent
+- page space can be saved by storing abbreviated keys. more keys per page => bigger branching factor => greater performance
+- Since the pages can be across the disk. Disk seeks becomes expensive this can be overcome by writing sequentially. It is difficult to maintain that order as the tree grows, which is where, LSM trees perform great.
+
+## LSM vs B-Tree
+
+- By nature of the algorithms LSM-trees are faster than B-trees for writes. While B-trees are faster for reads. This is Because LSM-trees would have to check multiple structures to find a key. While B-trees are consistently O(log n)
+
+### LSM-tree advantages 
+- B-tree => 2 writes per data => 1) WAL 2) actual data. There is also the overhead of overwriting a whole page even for small mutations.
+- LSM indexes also rewrite data multiple times for merging and compaction. This act of writing multiple times to the drive for one entry in the DB is called _write-amplification_ 
+- In write-heavy applications, the performance bottleneck will be the write throughput. LSM-trees are able to sustain higher throughput because of low write-amplification.
+- Also, sequential writes makes writing to disk much faster
+- LSM-trees can be compressed better => information density is high.
+- B-trees have wasted space due to fragmentation.
+
+### LSM-tree disadvantages
+
+- Compaction can sometimes interfere with the performance of ongoing reads and writes despite, making sure compaction is _incremental_ and without affecting concurrent access.
+- At high throughputs disk's write bandwidth needs to be shared between, initial write and compaction. This is important because, _without the right balance_ data would be written forever, without compaction until the disk runs out of space.
+
+### Other indexing structures
+
+- All of the above discussions assume one _Primary key_ for indexing purposes. There can also be _secondary indexes_.
+- A secondary index => need not have unique keys. There can be multiple values behind the same key. These are very useful in aggregate type queries.
+
+### Storing values within the index
+
+- The key in an index is what queries search for. The value could either be the row itself or, it could be a reference to the row stored elsewhhere. In the latter case, the place where rows are stored is known as a heap file.
+- heap file stores data in no particular order. When just updating files, heaps can be very effiient.
+- In a lot of cases, it would be simply be easier to store data next to the index. This is called a _clustered index_ 
+- Middle ground between _clustered index_ and _non-clustered_ index is, _covering index_ or _index with included columns_, which stores come of a tables columns within the index. This could _increase read speed_ while reducing writes.
+
+### Multi-column indexes:
+
+- most common type => _concatenated index_ simply combines several fields into one key by appending one column to another.
+- This can be used as a more general way of querying several columns at once. eg. Geospatial data
+
+```sql
+SELECT * FROM restaurants WHERE latitude > 51.4946 AND latitude < 51.5079 AND longitude > -0.1162 AND longitude < -0.1004;
+```
+A standard BSM-tree or LSM-tree is unable to answer this query.
+This can be done more efficiently with multi-column indexes.
+
+This also could be useful in cases where, we have 
+
+### Full-text search and fuzzy indexes
+
+- full text search engines allow synonyms and typos of a certain distance.
+- Full text can be stored in memory in a _trie_ like automaton. This automaton can be transformed into a _Levenshtein automaton_ which supports efficient search for words within a given edit distance.
+- in Lucene the keys are stored in a _trie_ and then this is transformed into a levenshtein automaton 
+
+### In-memory everything
+
+- Hard-disks come packed with limitations and we tolerate this, because they are cheap + durable.
+- There are another class of databases using RAM for everything.
+- Durability can be achieved by writing everything in a log.
+- VoltDB, MemSQL and others provide strong durability by writing to the log and writing.
+- Redis and Couchbase provide weak durability by writing the log asynchronously
+- The speed is not purely because all data is, in-memory Because, given enough memory in a machine, the OS loads most of the recent in memory instead of in the hard disk.
+- The speed is because in-memory databases don't have to encode data from memory to disk.
+- Another benefit, is that, in-memory databases provide access to non-harddisk friendly datastructure. eg. Redis gives access to priority queues and sets.
+- In some cases, in-memory databases can dump Least Recently used data to disk. This is the reverse of what the OS does with virtual memory and disk swap.
 
 
 ## Technical Words:
@@ -320,3 +408,11 @@ SSTables, idea works very well because, the idea of adding log files sequentiall
 - __LSM-tree__ - Log-Structured Merge-Tree. where data is appended in a log like fraction and merged occasionally.
 - __Leveled Compaction__ - based on LevelDB, having n-tier levels for compaction
 - __size-tiered compaction__ - Compaction done, after waiting for the file to become a certain size.
+- __leaf page__ - in B-trees leaf pages are, ones where we have come down to individual keys.
+- __Branching factor__ - maximum number of references that can be in a page in a b-tree. 
+- __copy-on-write__ - A way of updating data in b-tree where the data(of a page) is copied to a new location and then the refs are updated.
+- __write-amplification__ - One write to the DB resulting in multiple _disk writes_.
+- __Clustered index__ - Key where data is stored near the index (eg InnoDB storage engine)
+- __covering indexes__ or __index with included columns__ secondary indexes where some columns are stored within the index.
+- __concatenated indexes__ - com=bines several fields into one key by appending one column to another. (eg phone book which has a 'lastname-firstname' index. it can be used to find people with certain lastname (or) people with certain 'lastname-firstname' combination. But, totally useless if you want people with certain firstname)
+- 

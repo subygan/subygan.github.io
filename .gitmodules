@@ -13,3 +13,6 @@
 [submodule "blog/content/tech/flutter_learn"]
 	path = blog/content/tech/flutter_learn
 	url = https://github.com/suriya-ganesh/flutter_learn.git
+[submodule "blog/content/tech/algos"]
+	path = blog/content/tech/algos
+	url = https://github.com/suriya-ganesh/Algorithms.git

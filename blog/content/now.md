@@ -4,6 +4,7 @@ emoji: 🐵
 layout: base
 ---
 
+
 Things I'm focusing on right now
 
 ## 2022-10-18

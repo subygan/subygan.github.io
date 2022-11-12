@@ -19,7 +19,7 @@
                 {{ if .Title }}
                 <li>
                     {{ if .Params.emoji }}
-                    <a href="{{.Permalink}}">{{ .Params.emoji }}   {{.Title}}</a>
+                    <a href="{{.Permalink}}"><p class="">{{ .Params.emoji }} &nbsp;&nbsp;&nbsp;&nbsp;{{.Title}}</p></a>
                     {{ else }}
                     <a href="{{.Permalink}}"> 🗿   {{.Title}}</a>
                     {{ end }}
