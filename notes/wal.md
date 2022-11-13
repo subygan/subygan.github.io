@@ -1,4 +1,6 @@
-- 
+- 2022-11-12 9:57 pm 
+- 2022-11-12 8:56 pm - oread serverless ✅ deployed with fly.io worked on the first try. Was staring at it in awe. 
+- 2022-11-12 8:42 pm - healer fetch policies ❌
 - 2022-11-12 6:30 pm - ddia ✅
 - 2022-11-12 3:54 pm - ddia ✅
 - 2022-11-12 3:36 pm - healer fetch policies ❌ Motivation issues
