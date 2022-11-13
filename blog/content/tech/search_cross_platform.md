@@ -3,6 +3,7 @@ emoji: ⚔️
 title: Searching for a cross platform framework
 description: My journey on trying to find a cross platform application development framework.
 date: 2022-01-29 22:15:00
+layout: base
 ---
 
 This is still a WIP and I'll be updating each one as I discover and play with new stuff.
