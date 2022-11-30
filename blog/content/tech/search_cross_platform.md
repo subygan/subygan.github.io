@@ -44,7 +44,6 @@ creates a node runtime in the browser to render the website. which means, on fir
 
 ![node_modules image](/assets/images/nodem.png)
 
-
 One nice(?) thing about NWjs is that it still supports windows xp.
 
 ### [NeutralinoJS](https://neutralino.js.org/)
