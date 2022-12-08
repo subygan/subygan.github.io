@@ -1,3 +1,7 @@
+## 2022-11-30
+- [ ] visa process
+- [ ] download resume
+
 
 ## 2022-10-21
 - [ ] Add Action title in Aion. 

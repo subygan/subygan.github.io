@@ -1,4 +1,9 @@
-- 2022-11-12 9:57 pm 
+- 2022-12-08 9:27 am - healer finish test
+- 2022-12-04 9:04 pm - fly.io DNS setup cloudflare ✅
+- 2022-12-04 5:50 pm -  ssh to fly.io ✅
+- 2022-12-04 12:56 pm - Read system design 
+- 2022-12-01 10:19 am - Read system design
+- 2022-11-30 7:37 pm - Read about kafka
 - 2022-11-12 8:56 pm - oread serverless ✅ deployed with fly.io worked on the first try. Was staring at it in awe. 
 - 2022-11-12 8:42 pm - healer fetch policies ❌
 - 2022-11-12 6:30 pm - ddia ✅

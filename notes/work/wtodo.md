@@ -1,3 +1,8 @@
+## 2022-11-30
+
+- [ ] srilakshmi intermittent policy issue
+- [ ] healer change file - Avradip
+- [ ] healer, fix tests
 
 ## 2022-10-21
 - [ ] VAT document for api token.
