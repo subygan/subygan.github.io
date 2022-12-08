@@ -9,7 +9,8 @@
 - The Code breakers
 
 ## have read
+- mamba mentality - Kobe bryant
+
 
 ## partially read
 
-{{% code file="./file.go" language="go" %}}

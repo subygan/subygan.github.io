@@ -478,7 +478,7 @@ In the above example, each data is represented in different ways and can be easi
 - __Branching factor__ - maximum number of references that can be in a page in a b-tree. 
 - __copy-on-write__ - A way of updating data in b-tree where the data(of a page) is copied to a new location and then the refs are updated.
 - __write-amplification__ - One write to the DB resulting in multiple _disk writes_.
-- __Clustered index__ - Key where data is stored near the index (eg InnoDB storage engine)
+- __Clustered index__ - Key where data is stored near the index (e.g. InnoDB storage engine)
 - __covering indexes__ or __index with included columns__ secondary indexes where some columns are stored within the index.
 - __concatenated indexes__ - com=bines several fields into one key by appending one column to another. (eg phone book which has a 'lastname-firstname' index. it can be used to find people with certain lastname (or) people with certain 'lastname-firstname' combination. But, totally useless if you want people with certain firstname)
 - __OLTP__ - Online Transaction Processing. A type of database operation which gurantees instantaneousness
