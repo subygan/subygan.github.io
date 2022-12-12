@@ -1,3 +1,8 @@
+## 2022-12-09
+- [ ] Rust multi threading
+- [ ] golang concurrency
+- [ ] actor model in scala
+
 ## 2022-11-30
 - [ ] visa process
 - [ ] download resume

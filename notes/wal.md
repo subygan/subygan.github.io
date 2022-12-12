@@ -1,3 +1,6 @@
+- 2022-12-10 5:18 am - problem ✅
+- 2022-12-09 10:08 pm - sys design notes
+- 2022-12-09 5:18 am - problem ✅
 - 2022-12-08 9:27 am - healer finish test
 - 2022-12-04 9:04 pm - fly.io DNS setup cloudflare ✅
 - 2022-12-04 5:50 pm -  ssh to fly.io ✅
