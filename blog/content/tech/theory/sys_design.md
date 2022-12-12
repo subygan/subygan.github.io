@@ -30,8 +30,12 @@ NoSQL databases are easier to scale across multiple machines.
 
 ## Data centers
 
-__GeoDNS__ is used to resolve IP addresses based on the location of a user
+### request routing
+- __GeoDNS__ is used to resolve IP addresses based on the location of a user
 This is useful to serve the requests of the user fast and on the edge
+- Get __routable address block__ and advertise on BGP4 to route traffic to the nearest server 
+- Have the client ping all servers and figure out the fastest one and use it.
+
 
 ## Message queue
 
@@ -66,6 +70,11 @@ Making joins across tables becomes harder as we shard the data more.
 
 ## Estimation
 
+progression:
+
+1KB => 1MB => 1GB => 1TB => 1PB
+
+
 2<sup>10</sup> => 1 KB
 2<sup>20</sup> => 1 MB
 2<sup>30</sup> => 1 GB
@@ -77,3 +86,58 @@ L2 cache reference => 7 ns
 Branch mispredict => 5 ns
 Mutex lock/unlock  => 100 ns
 Main memory reference => 100 ns
+
+
+## Questions to ask
+
+- If Designing db
+  - bytes per record ?
+  - number of Reads per second, number of writes per second ?
+  - Delay time ?
+  - Consistency model?
+- Designing a service?
+  - max QPS?
+  - Availability regions?
+- Media?
+  - Load time?
+  - CDN cost?
+
+
+## Rate limiter
+used to limit how many requests are allowed per IP, api token, user, etc...
+
+
+Where to put the rate limiter? alongside the application? in the load  balancer?
+return _429_ too many requests 
+
+### Available algorithms:
+- __Token bucket__, have an in memory structure per user/token/IP that counts down, if becomes 0 reject else, count down and allow. For every minute/second/hour update all structures to their maximum value.
+  - Updating all structure might be cheap for small number of users. But, as the number of users increase, updating for all users would be very costly and slow.
+- __Leaking bucket__, Requests are put into a fixed size queue. And for every interval requests are pulled and processed.
+  - Might not work for requests that move slow.
+- __Fixed window counter__, there are tokens for predefined window sizes where we count every request and then count up and drop everything that crosses the limit.
+  - problem happens when requests come out on the edges. eg. in the window between 500ms of the previous time window and 500 ms of the current time window. a burst of 3 + 3 requests could end up 6 requests in that 1s. Which might not be reliable, for some use cases.
+- __Sliding window log__, Time stamps are stored in memory for every request by a user. When a new request comes in, timestamp older than current window are thrown away while the other requests are kept. if the count between these, two timestamps is more than the threshold request is rejected else accepted. _redis sorted sets_ can be used to store data 
+  - Too much memory consumption and is wasted
+- __Sliding window counter__, 
+  - This, takes the fixed window counter and then adds a layer of calculation, where we do the formula 
+    ```shell
+    req in current window + %age overlap * req in prev window
+    ```
+  - this is pretty smart, as it interpolates from already available data
+  - might not work for strict look-back windows.
+
+### Rate limiter in Distributed environment.
+
+- __Race conditions_
+  - Use mutexes to increment values. Use sorted data structures in redis, which removes rate limiting
+- __Synchronization issue__
+  - web-tier is stateless, requests from same origin could be directed to the same servers
+
+
+
+
+## Technical Words
+
+- __GeoDNS__, routes all requests to the closest
+- __BGP4__, Border Gateway Protocol 4  is an internet protocol that is able to store and share reachability information with others in the Autonomous System.
