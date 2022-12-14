@@ -9,3 +9,7 @@ date: 2022-12-10
 ## Rust and ownership
 
 Rust has __no garbage collector__ 
+
+## Garbage collectors
+
+## Scala and actor model
