@@ -7,13 +7,189 @@ date: "now"
 toc: true
 ---
 
+
+## 2022-12-13
+
+- [ The scourge of job-title inflation ](https://www.economist.com/business/2022/12/08/the-scourge-of-job-title-inflation)
+- [ Statement from Fosshost's Founder ](https://fosshost.org/founder.html)
+- [ What I learned at GitLab that I don't want to forget ](https://blog.boleary.dev/what-i-learned-at-gitlab-that-i-dont-want-to-forget/)
+- [ The silent struggles of workers with ADHD ](https://www.bbc.com/worklife/article/20221209-the-silent-struggles-of-workers-with-adhd)
+- [ Engineering productivity in a hybrid world](https://www.datocms-assets.com/65181/1667327773-iconiq-analytics-insights-engineering-in-a-hybrid-world.pdf)
+
+## 2022-12-12
+
+- [ I'm obsessed with 1-person companies and have spent over 50 hours researching them. ](https://twitter.com/volodarik/status/1601964069023531011?cxt=HHwWhoCy0an1qLssAAAA)
+
+## 2022-12-11
+
+- [ The End of Blitzscaling ](https://collabfund.com/blog/the-end-of-blitzscaling/)
+- [ Apache Kafka Needs No Keeper: Removing the Apache ZooKeeper Dependency ](https://www.confluent.io/blog/removing-zookeeper-dependency-in-kafka/)
+- [ Submarine Cable Map ](https://www.submarinecablemap.com/)
+
+## 2022-12-10
+
+- [ A fake job offer gone wrong ](https://indeedjobscam.pages.dev/)
+- [ The rise of the one-person unicorn ](https://www.nothingventured.com/the-rise-of-the-one-person-unicorn/?utm_source=pocket_mylist)
+- [ Time-constrained person ](https://abishekmuthian.com/time-constrained-person/)
+- [ About hitstartup ](https://hitstartup.com/about/#FindDate)
+- [ was told I would become quadriplegic ](https://news.ycombinator.com/item?id=17903847)
+- [ I was told, I would become quadriplegic ](https://abishekmuthian.com/i-was-told-i-would-become-quadriplegic-68c0371e6f05/)
+- [ How to build the team for our startup ](https://hitstartup.com/how-to-build-the-team-for-our-startup/)
+- [ In the wild world of tech hiring in India, engineer is now king ](https://www.moneycontrol.com/news/trends/in-the-wild-world-of-tech-hiring-in-india-engineer-is-now-king-7295401.html)
+- [ Why am I a solopreneur ](https://hitstartup.com/why-am-i-a-solopreneur/)
+- [ Dasher interface for paraplegic people ](http://www.inference.org.uk/dasher/DasherSummary2.html)
+
+## 2022-12-09
+
+- [  Border Gateway Protocol ](https://www.bgp4.as/)
+- [ The 5-hour CDN ](https://fly.io/blog/the-5-hour-content-delivery-network/)
+- [ Experiment: The hidden costs of waiting on slow build times ](https://github.blog/2022-12-08-experiment-the-hidden-costs-of-waiting-on-slow-build-times/)
+- [ Stripe's real pricing: a primer ](https://github.com/getlago/lago/wiki/Stripe%27s-real-pricing:-a-primer)
+
+## 2022-12-08
+
+- [ Data Structures useful in multi-threaded programming [closed] ](https://stackoverflow.com/questions/23493301/data-structures-useful-in-multi-threaded-programming)
+- [ Multithreading Structure ](https://docs.oracle.com/cd/E19120-01/open.solaris/816-5137/mtintro-95600/index.html)
+- [ CACHEFLOW: MODERNIZING THE WAY BUSINESSES BUY AND SELL SAAS ](https://www.gv.com/news/cacheflow-modernizing-saas)
+- [ What happens to old flats in India? ](https://liet.org/india/what-happens-to-old-flats-in-india.html)
+- [ CS 007: PERSONAL FINANCE FOR ENGINEERS ](https://cs007.blog/)
+- [ Being overconfident ](https://www.benkuhn.net/overconfidence/)
+
+## 2022-12-06
+
+- [ What do Staff engineers actually do? ](https://lethain.com/what-do-staff-engineers-actually-do/)
+- [ What Happened to IPv5? ](https://www.lifewire.com/what-happened-to-ipv5-3971327)
+
+## 2022-12-07
+
+- [ ticket servers for distributed unique primary keys - flickr tech blog](https://code.flickr.net/2010/02/08/ticket-servers-distributed-unique-primary-keys-on-the-cheap/)
+
+
+## 2022-12-05
+
+- [ Administrators Have Seized the Ivory Tower ](https://www.jamesgmartin.center/2022/11/administrators-have-seized-the-ivory-tower/)
+
+## 2022-12-04
+
+- [ Behold GPT-Pong ! ](https://twitter.com/aaronomullan/status/1599197646144831489)
+- [ PhilTel is looking to install new (to us) payphones within the city of Philadelphia. ](https://philtel.org/)
+- [ Building A Virtual Machine inside ChatGPT ](https://www.engraved.blog/building-a-virtual-machine-inside/)
+
+## 2022-12-03
+
+- [ Using Rust at a startup: A cautionary tale ](https://scribe.rip/using-rust-at-a-startup-a-cautionary-tale-42ab823d9454)
+- [ Survival of the Mediocre Mediocre ](https://www.ribbonfarm.com/2018/04/24/survival-of-the-mediocre-mediocre/?utm_source=substack&utm_medium=email)
+
+## 2022-12-01
+
+- [ 3:48 / 46:37 • What is Federated Learning Federated Learning: Machine Learning on the Edge // Varun Kumar Khare // Reading group #3 ](https://www.youtube.com/watch?v=IWxBKGPHOBQ)
+- [ Running Out of Time: Three Lessons From a Failed Fitness Startup ](https://blog.hubspot.com/the-hustle/lessons-from-a-failed-fitness-startup)
+- [ Today, we are sharing the difficult news that GoodGood ](https://goodgood.co/password)
+- [ Physicians Committee’s Response to Neuralink’s Nov. 30, 2022 “Show and Tell” ](https://www.pcrm.org/news/good-science-digest/physicians-committees-response-neuralinks-nov-30-2022-show-and-tell)
+- [ What are Executive Off-Sites Good For? ](https://tomcritchlow.com/2022/10/06/exec-offsites/)
+- [ SURELY YOU’RE PUBLISHING, MR. FEYNMAN! ](https://praveshkoirala.com/2022/11/03/surely-you-are-publishing-mr-feynman/)
+- [ A long expected update ](https://ericlippert.com/2022/11/30/a-long-expected-update/)
+
+## 2022-11-30
+
+- [ What Is Apache Kafka? ](https://developer.confluent.io/learn-kafka/apache-kafka/events/)
+- [ Cloudflare Magic Transit Gets Wikimedia Back Online After Massive DDoS Attack ](https://www.cloudflare.com/en-in/case-studies/wikimedia-foundation/?utm_source=nrt&utm_medium=email&utm_campaign=acg221n-mt-nurture-wikimedialp&mkt_tok=NzEzLVhTQy05MTgAAAGIYy4Y06rbkGhgOzF-E2zmVqRgOKbUiaT043rKBWW5iiKGS-OSZjxTobrEnCmzCYEHpoqdet8SJJJNxXU1TlooTt5EietHLW8ZmkKKTWa4uLBYx7v3wg)
+
+## 2022-11-29
+
+- [ The Buy And Hold Mindset ](https://avc.com/2022/11/the-buy-and-hold-mindset/)
+- [ Why some tech CEOs are rooting for Musk ](https://www.platformer.news/p/why-some-tech-ceos-are-rooting-for?utm_source=substack&utm_medium=email)
+
+## 2022-11-27
+
+- [ Workspaces, packages, and targets ](https://bazel.build/concepts/build-ref)
+- [ The 7 Habits of Highly Overrated People ](https://daedtech.com/the-7-habits-of-highly-overrated-people/)
+- [ Cache invalidation really is one of the hardest problems in computer science – Surfing Complexity ](https://surfingcomplexity.blog/2022/11/25/cache-invalidation-really-is-one-of-the-hardest-things-in-computer-science/)
+
+## 2022-11-26
+
+- [ Use a payments system (described above) to turn personal data into more of a marketplace ](https://twitter.com/jaltucher/status/1595591620677844993)
+- [ RAMCloud Project - Confluence ](https://ramcloud.atlassian.net/wiki/spaces/RAM/overview )
+
+## 2022-11-22
+
+- [ Is Wine Fake? Scott Alexander ](https://asteriskmag.com/issues/1/is-wine-fake)
+
+## 2022-11-21
+
+- [ You're In A Cult ](https://labskausleben.bearblog.dev/youre-in-a-cult/)
+- [ Having a safe CEX: proof of solvency and beyond ](https://vitalik.ca/general/2022/11/19/proof_of_solvency.html)
+- [ client := &Client{name: r.RemoteAddr, events: make(chan *DashBoard, 10)} ](https://dev.to/rafaelgfirmino/golang-and-sse-3l56)
+- [ AWS and Blockchain ](https://www.tbray.org/ongoing/When/202x/2022/11/19/AWS-Blockchain)
+- [ Jeff Bezos on acquiring Ring ](https://www.techemails.com/p/jeff-bezos-on-acquiring-ring?utm_source=post-email-title&publication_id=378002&post_id=84388591&isFreemail=true&utm_medium=email)
+
+## 2022-11-20
+
+- [ I Was the Head of Trust and Safety at Twitter. This Is What Could Become of It. ](https://archive.ph/VZsAI#selection-309.0-309.79)
+- [ Lawful but Awful? Control over Legal Speech by Platforms, Governments, and Internet Users ](https://lawreviewblog.uchicago.edu/2022/06/28/keller-control-over-speech/)
+
+## 2022-11-18
+
+- [ Introducing Tailscale Funnel ](https://tailscale.com/blog/introducing-tailscale-funnel/)
+
+## 2022-11-17
+
+- [ Ahead of Its Time, Behind the Curve: Why Evernote Failed to Realize Its Potential ](https://nira.com/evernote-history/)
+- [Seven Levels of Busy](https://randsinrepose.com/archives/the-seven-levels-of-busy/)
+
+## 2022-11-14
+
+- [ The $40,000 Olive: How Entrepreneurs Can Spend Time Saving Money ](https://www.forbes.com/sites/moiravetter/2015/06/04/the-40000-olive-how-entrepreneurs-can-spend-time-saving-money/?sh=7f9920cf5fbb)
+
+## 2022-11-13
+
+- [ It all started @ 60ms. Secret acheivement of the day. ](https://twitter.com/Suhail/status/1112970313329852418)
+- [ THE IMAGE SOCIETY: HOW NASIR AHMED SHAPED IMAGE-BASED LIFE ](https://hiddenheroes.netguru.com/nasir-ahmed)
+- [ Is your working style Jazz or Classical ](https://twitter.com/marius/status/1590056610625650688?s=20&t=fp8afF3g2oQGgDaQuFJm9A)
+
+## 2022-11-12
+
+- [ What if regular exercise is the best cognitive exercise? ](https://blog.vslira.net/2022/11/what-if-regular-exercise-is-best.html)
+- [ Index selection, while it's largely about ](https://twitter.com/methode/status/1261259179983081473?ref_src=twsrc%5Etfw)
+- [ Levenshtein automaton ](https://en.wikipedia.org/wiki/Levenshtein_automaton)
+- [ Finite-state machine ](https://en.wikipedia.org/wiki/Finite-state_machine)
+- [ OODA loop ](https://en.wikipedia.org/wiki/OODA_loop?utm_source=substack&utm_medium=email)
+
+## 2022-11-11
+
+- [ The Sad, Sad Story of Laika, the Space Dog, and Her One-Way Trip Into Orbit ](https://www.smithsonianmag.com/smithsonian-institution/sad-story-laika-space-dog-and-her-one-way-trip-orbit-1-180968728/)
+
+## 2022-11-10
+
+- [ Only Solve One New Problem At A Time ](https://www.bennadel.com/blog/4352-only-solve-one-new-problem-at-a-time.htm)
+- [ Here is the note we sent to our LPs in GGFIII regarding FTX. ](https://twitter.com/sequoia/status/1590522718650499073)
+- [ Sam Bankman-Fried Has a Savior Complex—And Maybe You Should Too ](https://www.sequoiacap.com/article/sam-bankman-fried-spotlight/)
+- [ The bubble has popped for unprofitable software companies ](https://world.hey.com/dhh/the-bubble-has-popped-for-unprofitable-software-companies-2a0a5f57)
+
+## 2022-11-09
+
+- [ Why is Rosetta 2 fast? ](https://dougallj.wordpress.com/2022/11/09/why-is-rosetta-2-fast/)
+- [ “It would be career limiting..." ](https://doomedprojects.com/post/it-would-be-career-limiting)
+- [ Rewriting the Modern Web in Rust ](https://implfuture.dev/blog/rewriting-the-modern-web-in-rust#rewriting-the-modern)
+- [ The Design Sprint ](https://www.gv.com/sprint/)
+
+## 2022-11-08
+
+- [ YOU MIGHT ALSO LIKE ](https://basicappleguy.com/basicappleblog/you-might-also-like)
+
+## 2022-11-07
+
+- [ Chat log exhibits from Twitter v. Musk case ](https://danluu.com/elon-twitter-texts/)
+- [ iMessage for Android ](https://www.techemails.com/p/imessage-for-android?utm_source=post-email-title&publication_id=378002&post_id=81292235&isFreemail=true&utm_medium=email)
+
 ## 2022-11-06
 
+- [ Leveled compaction in Apache Cassandra ](https://www.datastax.com/blog/leveled-compaction-apache-cassandra)
+- [ bloom filters ](https://sagi.io/2017/07/bloom-filters-for-the-perplexed/)
 - [ What is OpenTelemetry? ](https://opentelemetry.io/docs/concepts/what-is-opentelemetry/)
 - [ Crows Perform Yet Another Skill Once Thought Distinctively Human ](https://archive.ph/zLgN0#selection-499.0-505.0)
 - [leveled compaction in cassandra](https://www.datastax.com/blog/leveled-compaction-apache-cassandra )
 - [bloom filters for the preplexed](https://sagi.io/2017/07/bloom-filters-for-the-perplexed/)
-
 
 ## 2022-11-04
 

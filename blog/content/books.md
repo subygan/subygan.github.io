@@ -1,11 +1,10 @@
 ## To Read
 
-- 
 - The mythical man month
 - Behave - Robert Sapolsky
 - Why zebras don't get ulcer - Sapolsky
 - Public Opinion - Lippman
-- The man who mistook his wife for a hat
+r- The man who mistook his wife for a hat
 - The Code breakers
 - Images of Organization - Morgan
 - The Organization man - whyte
@@ -15,12 +14,15 @@
 
 - Barbarians at the gate - Bryan Burroughs  ✅
 - Thinking in bets -  ✅
+  - Everything is a bet. Every decision that is made, basicall
 - Communist Manifest - Karl Marx ✅
 - Cuckoo's egg -  ✅
 - Mamba mentality - Kobe bryant  2022-11-20 ✅
 - Six Easy Pieces - Richard Feynman ✅ 
 - System Design: An insider's guide - Alex xu - 2022-12-07 ✅
-
+- Blink  ✅
+- Educated - tara westover ✅
+- Zero to one ✅
 
 ## partially read
 

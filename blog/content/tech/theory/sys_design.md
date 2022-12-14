@@ -120,7 +120,7 @@ return _429_ too many requests
 - __Sliding window log__, Time stamps are stored in memory for every request by a user. When a new request comes in, timestamp older than current window are thrown away while the other requests are kept. if the count between these, two timestamps is more than the threshold request is rejected else accepted. _redis sorted sets_ can be used to store data 
   - Too much memory consumption and is wasted
 - __Sliding window counter__, 
-  - This, takes the fixed window counter and then adds a layer of calculation, where we do the formula 
+  - This, takes the fixed window log and then adds a layer of calculation, where we do the formula 
     ```shell
     req in current window + %age overlap * req in prev window
     ```
@@ -130,14 +130,20 @@ return _429_ too many requests
 ### Rate limiter in Distributed environment.
 
 - __Race conditions_
-  - Use mutexes to increment values. Use sorted data structures in redis, which removes rate limiting
+  - Use mutexes to increment values. 
+  - Use `sorted set` like data structures in redis, which removes rate limiting. while also moving data storage to a different source.
 - __Synchronization issue__
   - web-tier is stateless, requests from same origin could be directed to the same servers
 
 
+## Consistent Hashing
 
 
 ## Technical Words
 
 - __GeoDNS__, routes all requests to the closest
 - __BGP4__, Border Gateway Protocol 4  is an internet protocol that is able to store and share reachability information with others in the Autonomous System.
+- __Token Bucket__, rate limiting algorithm by having counters and refreshing them in intervals
+- __leaking bucket__, rate limiting algorithm by pushing everything to a `bounded queue` and batch processing per interval.
+- __sliding window log__, rate limiting algorithm, where we store every request within the permitted window and count everything within before allowing requests to pass through.
+- 
