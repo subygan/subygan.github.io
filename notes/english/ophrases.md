@@ -23,3 +23,5 @@
 - __raison d'etre__ - reason to exist 
 
 - __Qué Sera Sera__ - Whatever will be will be
+
+- __Je ne sais quoi__ - a certain quality 
