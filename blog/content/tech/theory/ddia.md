@@ -449,7 +449,7 @@ The base assumption for column-oriented storage is that, there are a lot more re
 
 ## Aggregation: Data Cubes and Materialized Views:
 
-Data warehouses often perform operations like, COUNT, SUM, AVG, MIN, or MAX over a _Materialised aggregate_.  This is usually run over a _Materialised view_. In a relational data model, It is like a standard/virtual view but it is written to disk. When the underlying data changes the materialized view also changes. This means increased writes and this is why it is not used in OLTP databases 
+Data warehouses often perform operations like, COUNT, SUM, AVG, MIN, or MAX over a _Materialised aggregate_.  This is usually run over a _Materialised view_. In a relational data model, It is like a standard/virtual view but it is written to disk. When the underlying data changes the materialised view also changes. This means increased writes and this is why it is not used in OLTP databases 
 
 In OLAP warehouses there is a common special view known as _OLAP cube_. It is a grid of aggregates grouped by different dimensions.
 
@@ -460,7 +460,78 @@ In the above example, each data is represented in different ways and can be easi
 
 # Ch-4 Encoding and Evolution:
 
+Applications and their underlying data representations change over time. Application design should ideally allow flexibilty towards changes.
+- In memory structures
+  - objects, structs, lists, arrays, hash-tables, trees.... These are efficient to be used as in-memory structures
+- To persist these data in a file/ send over a network. These in-memory structures should be made as a self-contained sequence of bytes like JSON
 
+### Problems with encoding/decoding:
+
+- if language specific encoding is used. Cross language decoding is difficult. This inability to interoperate makes it harder to adopt and use multiple programming languages
+- To restore same object/struct types the decoder needs to be able to instantiate new objects. If an attacker could make the decoder, read an arbitrary stream of bytes they will be able to make the decoder create arbitrary objects and get access to the application
+- _data versioning_ is hard.
+- Very _inefficient_ in a lot of cases
+
+
+JSON, XML and CSV are popular formats and each come with their own caveat
+
+- JSON => no `int` vs `float` distinction.
+- JSON,XML => handles unicode well, but no arbitrary binary representation
+- CSV => No schema, and a lot of vaguery in definition.
+
+
+### Binary encodings
+When used, within an organization, there is scope to make the format a lot tighter than the lowest common denominator.
+We can customise these binary representations, based on use case
+
+### Thrift and Protocol Buffers
+These are _binary encoding libraries_ that are able to make space efficient binary representations.
+Thrift has to levels, _Binary Protocol_ and _Compact Protocol_. in compact protocol, _there are no field names only representations to them_ (similar to protobuf field tags that is used).
+
+### Apache Avro
+
+Avro has writer's schema and reader's schema.
+Both schemas generate some code.
+- When the bytes are being decoded both writer and reader schemas are evaluated side by side. the order of the representations does not matter
+- If the writer has a field and the reader does not have the field, then that field is _ignored_.
+- if the reader has a field and the writer does not have the field, then a _default value is given_.
+
+
+## Data Flow
+
+### Data flow through databases
+Service writes, data to db and then another service reads from the database.
+There can be legacy data and hence migration might be required for the new application code to be able to view the data.
+
+### Data flow through Services: REST and RPC
+REST uses json, mostly and is used in 
+RPCs are used to call a function in a remote networks service.
+### Problems with RPCs
+- Local function call is predictable to succeed or fail. Network requests are not, request/response can be lost in a network problem, machine might be slow hanging up the whole program.
+- local functions return with 3 states, `throw exception`, `return a result`, or `never returns`. in RPCs there's another possibility that there is a `timeout`
+- somtimes, only responses could be dropped. in those cases we generally retry, but there is no way to know, if any of the requests got through or not.
+- Network latencies are larger than local function calls
+- In local function calls pointers can be passed around. But for RPCs the whole data needs to be passed around.
+- RPC is language independent, so data needs to be translated into its local representation irrespective of the source language.
+
+### Data flow through Message-passing:
+
+This is a mix of both data flow through databases and REST/RPCs. Data is sent to a database like structure from where data is then processed by services asynchronously. This includes services like, Kafka celery and others
+
+## Distributed actor frameworks
+
+- In actor model, instead of dealing directly with threads and their problems (race conditions, locking, deadlock...), this logic is encapsulated in actors. Each actor represents a client/entity.
+- _Communication between actors_ is done through _asynchronous messaging_.
+- Since each actor only processes one message at a time, it does not need ot worry about threads and can be scheduled independently. Also, we _expect messages to be lost_ and that provides us with advantages
+- A _distributed actor framework_ essentially integrates a message broker and the actor programming model into a single framework. Messages are encoded and decoded over the network.
+- performing rolling updates in a  distributed actor framework is hard. Forward and backward compatibility will have to be handled.
+
+### Famous distributed actor frameworks
+- _Akka_ uses Java's built-in serialization by default, which does not provide forward or backward compatibility. However protobufs can be used to handle forward and backward compatibility
+- _Orleans_ uses a custom data format and does not support rolling upgrade deployments. To deploy a new version of your application, a new cluster has to be setup and traffic should be redirected there.
+- _Erlang OTP_ Record schema changes are hard to make.
+
+# Ch-5 Replication
 
 
 ## Technical Words:
@@ -488,3 +559,8 @@ In the above example, each data is represented in different ways and can be easi
 - __Materialized aggregate__ - aggregate function over a _materialized view_.
 - __Materialized view__ - like a standard (virtual) view, but the contents of the result is written to disk. When the underlying data changes, materilised view also changes
 - __OLAP cube__ - a materialized view with aggregate data of content
+- __encoding, serialization, marshalling__, in-memory representation => byte sequence
+- __decoding, deserializaiton, unmarshalling__, byte sequence => in-memory representation
+- __data outlives code__ in a lot of cases, data in the db is persisted forever while the application keeps evolving, this has implications like, backward-compatibility and database migrations.
+- __Service Oriented Architecture (SOA)__, uses discrete, self-contained services instead of monolithic architectures.
+- 
