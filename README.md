@@ -13,6 +13,8 @@ committed to the directory
 
 ## Manual:
 
+- `{{ partial "toc.html" .}}` can be used in any default template to be tested
+
 ### importing code snippets from other files.
 ```
 {{% code file="./file.go" language="go" %}}

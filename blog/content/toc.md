@@ -1,6 +1,6 @@
 ---
 title: Suriya
 emoji: 🧑🏻‍💻
+layout: base
 description: Suriya
 ---
-{{ site.pages | directory_get:page.url }}

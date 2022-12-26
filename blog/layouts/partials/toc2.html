@@ -1,0 +1,15 @@
+<div id="toc">
+
+
+        {{ $m := dict (slice "n" "m" "new") "true" }}
+        {{ $m }}
+    {{ range .Site.Pages }}
+        {{ $sp := split .RelPermalink "/"}}
+        {{ $sp }}
+        {{ $m2 := dict $sp "true"  }}
+        ||    {{ $m2 }}
+        {{ $m = merge $m $m2 }}
+        !! {{ $m }}
+        <p></p>
+    {{ end }}
+</div>

@@ -1,3 +1,11 @@
+---
+title: Books
+emoji: 📚
+layout: base
+description: My book reading list 
+date: 2022-12-25
+---
+
 ## To Read
 
 - The mythical man month
@@ -14,7 +22,7 @@ r- The man who mistook his wife for a hat
 
 - Barbarians at the gate - Bryan Burroughs  ✅
 - Thinking in bets -  ✅
-  - Everything is a bet. Every decision that is made, basicall
+  - Everything is a bet.
 - Communist Manifest - Karl Marx ✅
 - Cuckoo's egg -  ✅
 - Mamba mentality - Kobe bryant  2022-11-20 ✅
@@ -23,9 +31,11 @@ r- The man who mistook his wife for a hat
 - Blink  ✅
 - Educated - tara westover ✅
 - Zero to one ✅
+- What if? Serious Scientific Answers to absurd hypothetical - Randal Munroe
+- Almanack of Naval Ravikant
+- Educated - Tara Westover
 
 ## partially read
 
 - Design of everyday things
-- Almanack of Naval Ravikant
 
