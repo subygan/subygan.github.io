@@ -96,7 +96,7 @@ If the user has free-text fields for entering the region and the industry, then 
 
 Generally __Human understandable/used words can change, So it is better to use references, and use ID for the word everywhere else__. Because Human known words can and do change (name of a city, person, place or thing for example). The rule of thumb is that we use references in places where human understandable words are used. This, _reduces duplication_ while also giving flexibility to change in the name.
 
-Normalising of this type of data uses a _many to one _ relationship. This does not fit nicely into the document model. In relational databases, it is normal to refere to rows in other tables by ID, because joins are easy. But, in document model joins are a lot harder perform because multiple queries will have to be performed. 
+Normalising of this type of data uses a _many to one _ relationship. This does not fit nicely into the document model. In relational databases, it is normal to refer to rows in other tables by ID, because joins are easy. But, in document model joins are a lot harder perform because multiple queries will have to be performed. 
 
 In the resume example, we could simplify it by __making schools as entities__ And then referencing them in the resume. This allows us to group people from same school together. Making people as entities would let us build features like, a section where people can recommend each other.
 
@@ -551,7 +551,7 @@ This is a mix of both data flow through databases and REST/RPCs. Data is sent to
 - __write-amplification__ - One write to the DB resulting in multiple _disk writes_.
 - __Clustered index__ - Key where data is stored near the index (e.g. InnoDB storage engine)
 - __covering indexes__ or __index with included columns__ secondary indexes where some columns are stored within the index.
-- __concatenated indexes__ - com=bines several fields into one key by appending one column to another. (eg phone book which has a 'lastname-firstname' index. it can be used to find people with certain lastname (or) people with certain 'lastname-firstname' combination. But, totally useless if you want people with certain firstname)
+- __concatenated indexes__ - combines several fields into one key by appending one column to another. (eg phone book which has a 'lastname-firstname' index. it can be used to find people with certain lastname (or) people with certain 'lastname-firstname' combination. But, totally useless if you want people with certain firstname)
 - __OLTP__ - Online Transaction Processing. A type of database operation which gurantees instantaneousness
 - __OLAP__ - Online Analytics Processing. Database operation which is not expected to be instantaneous and can be done after the fact.
 - __fact table__ - In OLAP tables, a fact table is used to represents an event that occured at a certain time.
@@ -563,4 +563,3 @@ This is a mix of both data flow through databases and REST/RPCs. Data is sent to
 - __decoding, deserializaiton, unmarshalling__, byte sequence => in-memory representation
 - __data outlives code__ in a lot of cases, data in the db is persisted forever while the application keeps evolving, this has implications like, backward-compatibility and database migrations.
 - __Service Oriented Architecture (SOA)__, uses discrete, self-contained services instead of monolithic architectures.
-- 

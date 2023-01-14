@@ -5,7 +5,8 @@ layout: base
 ---
 
 # Blog posts
-
+- [There's no getting around you're building a distributed system](https://queue.acm.org/detail.cfm?id=2482856)
+- [Getting real about distributed system reliability](https://blog.empathybox.com/post/19574936361/getting-real-about-distributed-system-reliability)
 - [Coding for SSDs](https://codecapsule.com/2014/02/12/coding-for-ssds-part-1-introduction-and-table-of-contents/)
 - [Personal finance](https://cs007.blog/)
   - 2022-12-08 4:57 am 
