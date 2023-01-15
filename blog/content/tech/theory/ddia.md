@@ -533,6 +533,33 @@ This is a mix of both data flow through databases and REST/RPCs. Data is sent to
 
 # Ch-5 Replication
 
+Data Replication is done for many reasons,
+- To keep data geographically closer to users
+- To allow the system to continue despite multiple failures
+- To Scale out number of machines that can serve read queries
+
+
+## Leaders and Followers
+Each node that stores a copy of the database is called a __replica__.
+Every write needs to be processed by the replica. Else, the replica would be inconsistent with the master.
+
+### Leader-based replication
+
+- One replica is the leader/master and when it writes some change to the database it has to send the data to all the nodes as part of _replication log_ or _change stream_.
+- The other replicas/followers read from the change stream and update their data replica as well.
+
+
+## Synchronous vs Asynchronous replication
+
+Synchronous replication is when the leader responds after all replicas are consistent with the write. 
+Asynchronous is when The leader assumes the followers will catch up and responds to the write request after it has written to the replication log.
+
+Asynchronous systems could lose data if the leader fails or if the message itself fails to get sent
+
+![asynchronous_replication](/assets/images/ddia/asynchronous_replication.png)
+(example given in "Designing Data intensive applciations")
+
+
 
 ## Technical Words:
 
@@ -563,3 +590,6 @@ This is a mix of both data flow through databases and REST/RPCs. Data is sent to
 - __decoding, deserializaiton, unmarshalling__, byte sequence => in-memory representation
 - __data outlives code__ in a lot of cases, data in the db is persisted forever while the application keeps evolving, this has implications like, backward-compatibility and database migrations.
 - __Service Oriented Architecture (SOA)__, uses discrete, self-contained services instead of monolithic architectures.
+- __Replica__ - Nodes storing a copy of the data
+- __leader based replication__ - A leader/master node streams out the write/update changes that it is receiving 
+- __Change stream/ replication log__ - Change stream is the stream sent by the master node to it's slaves.
