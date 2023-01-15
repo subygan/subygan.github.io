@@ -1,3 +1,10 @@
+---
+title: Books
+emoji: 📖
+layout: base
+description: My list of books to read
+date: 2023-01-15
+---
 ## To Read
 
 - The mythical man month
@@ -18,7 +25,6 @@
 - Curious incident of dog in the night time ✅
 - Thinking in bets -  ✅
   - Everything is a bet on some future event. Every decision that is made. from a decision to buy that donut to predicting how the market will perform
-  - 
 - Communist Manifesto - Karl Marx ✅
 - What got you here won't get you there
 - Cuckoo's egg -  ✅
@@ -30,11 +36,14 @@
 - Zero to one ✅
 - Almanack of Naval Ravikant ✅
 - Essays on skepticism - Bertrand Russell - 2023-01-08  ✅
+- Accidental Empires - 2023-01-15 -Robert Cringely ✅
+  - Good book on the history of computing.
+  - Showed a lot of the underbelly of the tech ecosystem
 
 ## partially read
 
 - Designing Data Intensive Application - Martin Kleppman
 - Design of everyday things
 - Mythical man month
-- Accidental Empires - Robert Cringely
+- Only the paranoid survive - Andrew Grove
 
