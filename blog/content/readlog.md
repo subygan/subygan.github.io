@@ -7,6 +7,212 @@ date: "now"
 toc: true
 ---
 
+## 2023-01-18
+
+- [ Cruel optimism (and lazy pessimism) ](https://tegowerk.eu/posts/cruel-optimism/) ⭐️
+  - 
+- [ What is Internet Bandwidth? Meaning and Measurement ](https://www.agora.io/en/blog/what-is-internet-bandwidth-meaning-and-measurement/)
+
+## 2023-01-17
+
+- [ Daniel Ellsberg on the Limits of Knowledge ](https://www.motherjones.com/kevin-drum/2010/02/daniel-ellsberg-limitations-knowledge/)
+- [ Programmer salaries in the age of LLMs ](https://milkyeggs.com/?p=303)
+
+## 2023-01-16
+
+- [Art and science of spending money](https://collabfund.com/blog/the-art-and-science-of-spending-money)
+  - 1.Your family background and past-experiences heavily influences your spending preferences.
+  - 2.Entrapped by spending: Rather than using money to build a life, your life is built around money.
+  - 3.Frugality inertia: a lifetime of good savings habits can’t be transitioned to a spending phase.
+  - 4.An emotional attachment to large purchases, particularly a house.
+  - 5.The joy of spending can diminish as income rises because there’s less struggle, sacrifice, and sweat represented in purchases.
+  - 6.Asking $3 questions when $30,000 questions are all that matter
+  - 7.Social aspiration spending: Trickle-down consumption patterns from one socioeconomic group to the next.
+  - 8.An underappreciation of the long-term cost of purchases, with too much emphasis on the initial price.
+  - 9.No one is impressed with your possessions as much as you are.
+  - 10.Not knowing what kind of spending will make you happy because you haven’t tried enough new and strange forms of spending.
+  - 11.The social signaling aspect of money, on both things you buy for yourself and charity given to others.
+  - 12.The social hierarchy of spending, positioning you against your peers.
+  - 13.Spending can be a representation of how hard you’ve worked and how much stress went into earning your paycheck.
+  - “If you only wished to be happy, this could be easily accomplished; but we wish to be happier than other people, and this is always difficult, for we believe others to be happier than they are.”
+- [ The Cab Ride I'll Never Forget ](https://kentnerburn.com/the-cab-ride-ill-never-forget/)
+- [ Memory Safe Languages in Android 13 ](https://security.googleblog.com/2022/12/memory-safe-languages-in-android-13.html)
+- [ The Shit Show ](https://furbo.org/2023/01/15/the-shit-show/)
+- [ For your next side project, make a browser extension ](https://www.geoffreylitt.com/2023/01/08/for-your-next-side-project-make-a-browser-extension.html)
+
+## 2023-01-15
+
+- [ Calling C code from go ](https://karthikkaranth.me/blog/calling-c-code-from-go/)
+- [ The Hiker's Dilemma ](https://acko.net/blog/the-hikers-dilemma/)
+- [ MapReduce | Building a Recommendation System for the OTT Platform ](https://www.linkedin.com/pulse/mapreduce-building-recommendation-system-ott-platform-saurav-prateek/?trackingId=QuqVJJghQrQG3nxsUkK5dA%3D%3D)
+- [ FedJAX: Federated Learning Simulation with JAX ](https://ai.googleblog.com/2021/10/fedjax-federated-learning-simulation.html)
+- [ Why Big Companies Keep Failing: The Stack Fallacy ](https://techcrunch.com/2016/01/18/why-big-companies-keep-failing-the-stack-fallacy/)
+- [ Identifying the right use cases for federated learning and analytics ](https://www.integrate.ai/blog/identifying-the-right-use-cases-for-federated-learning-pftl)
+- [  ](https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2014/money-creation-in-the-modern-economy.pdf?la=en&hash=9A8788FD44A62D8BB927123544205CE476E01654)
+
+## 2023-01-14
+
+- [ Why the blockchain needs the cloud ](https://mostlycloudy.substack.com/p/why-the-blockchain-needs-the-cloud)
+- [ How Federated Learning Protects Privacy ](https://pair.withgoogle.com/explorables/federated-learning/)
+- [ Time to rethink mandatory password changes ](https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2016/03/time-rethink-mandatory-password-changes)
+
+## 2023-01-13
+
+- [ Federated Learning with Formal Differential Privacy Guarantees ](https://ai.googleblog.com/2022/02/federated-learning-with-formal.html)
+- [ A federated learning platform that helps aggregate models trained on completely separate and private data sources ](https://intellegens.com/products-services/ichnite/)
+- [ Federated Learning ](https://florian.github.io/federated-learning/)
+- [ Encrypted Data For Efficient Markets ](https://medium.com/numerai/encrypted-data-for-efficient-markets-fffbe9743ba8)
+- [ FLUTE: A scalable federated learning simulation platform ](https://www.microsoft.com/en-us/research/blog/flute-a-scalable-federated-learning-simulation-platform/)
+- [ Federated Learning for Firefox ](https://florian.github.io/federated-learning-firefox/)
+- [ Working for a Dating Website Home / Working for a Dating Website ](https://caseysoftware.com/blog/working-for-a-dating-website)
+- [ FEDERATED LEARNING FOR CREDIT SCORING ](https://blog.openmined.org/federated-credit-scoring/)
+- [ Federated Learning ](https://federated.withgoogle.com/)
+- [ NN loss landscapes are full of permutation ](https://twitter.com/SamuelAinsworth/status/1569719494645526529)
+- [ Can you crowdfund the compute for GPT? ](https://news.ycombinator.com/item?id=34353049)
+- [ Federated Learning: Collaborative Machine Learning without Centralized Training Data ](https://ai.googleblog.com/2017/04/federated-learning-collaborative.html)
+- [ Intel and Penn Medicine Announce Results of Largest Medical Federated Learning Study ](https://www.intel.com/content/www/us/en/newsroom/news/intel-penn-medicine-federated-learning-brain-tumor-detection.html#gs.mg6wd8)
+- [ Part II: The failure points from $5m to $100m in ARR ](https://tracy.posthaven.com/part-ii-the-failure-points-from-$5m-to-$100m-in-arr)
+
+## 2023-01-12
+
+- [ The Disappearance of the Hit-Driven Business Model ](https://dearproducer.com/the-disappearance-of-the-hit-driven-business/)
+
+## 2023-01-11
+
+- [ Kernel parameter SHMALL and SHMAX ](https://unix.stackexchange.com/questions/298354/kernel-parameter-shmall-and-shmax)
+- [ What Happens When A CPU Starts: ](https://lateblt.tripod.com/bit68.txt)
+- [ Don't use Tailwind for your Design System ](https://sancho.dev/blog/tailwind-and-design-systems)
+- [ A CEO running a B-to-B startup in needs to live in the city where their business is – or else they’ll never scale. ](https://steveblank.com/2023/01/10/be-where-your-business-is/)
+- [ Tech Companies Are Irrational Pop Cultures ](https://softwarecrisis.dev/letters/tech-is-a-pop-culture/)
+
+## 2023-01-10
+
+- [ Indians are taking over corporate America–and tech layoffs won’t stop them. Here’s why you should believe the hype ](https://fortune.com/2022/12/16/indians-taking-over-corporate-america-tech-layoffs-visas-ceos-companies-success-nitin-bajaj/)
+
+## 2023-01-09
+
+- [ Designer's Digest - Steve Jobs on the role of product and marketing people. ](https://www.youtube.com/watch?v=P4VBqTViEx4)
+- [ Illegal number ](https://en.wikipedia.org/wiki/Illegal_number)
+- [ Alan Kay on “Should web browsers have stuck to being document viewers?” and a discussion of Smalltalk, NeWS and HyperCard ](https://donhopkins.medium.com/alan-kay-on-should-web-browsers-have-stuck-to-being-document-viewers-and-a-discussion-of-news-5cb92c7b3445)
+- [ Commentary: Cory Doctorow: Social Quitting ](https://locusmag.com/2023/01/commentary-cory-doctorow-social-quitting/)
+
+## 2023-01-07
+
+- [ SLIME MOLD TIME MOLD – Mad Science Blogging ](https://slimemoldtimemold.com/)
+
+## 2023-01-06
+
+- [ How to Hire Insanely Great Employees ](https://www.folklore.org/StoryView.py?project=Macintosh&story=How_to_Hire_Insanely_Great_Employees.txt)
+- [ The New Statesman Essay - The tyranny of Nicespeak ](https://web.archive.org/web/20011106205530/http://www.consider.net/forum_new.php3?newTemplate=OpenObject&newTop=200111050017&newDisplayURN=200111050017)
+
+## 2023-01-05
+
+- [ Some examples of people quickly accomplishing ambitious things together ](https://patrickcollison.com/fast)
+- [ Small teams ](https://stevepulec.com/posts/small/)
+- [ Tech Notes: Two surprises in browser crashes ](https://neugierig.org/software/blog/2023/01/browser-crashes.html)
+
+## 2023-01-04
+
+- [ Going Full Time on My SaaS After 13 Years ](https://mattmazur.com/2023/01/04/going-full-time-on-my-saas-after-13-years/)
+- [ Even More Bay Area House Party ](https://astralcodexten.substack.com/p/even-more-bay-area-house-party)
+
+## 2023-01-03
+
+- [ Sea Change ](https://www.oaktreecapital.com/insights/memo/sea-change)
+- [ Measuring Money: Currency, M1, and M2 ](https://pressbooks-dev.oer.hawaii.edu/principlesofeconomics/chapter/27-2-measuring-money-currency-m1-and-m2/)
+- [ The infrastructure behind ATMs ](https://www.bitsaboutmoney.com/archive/the-infrastructure-behind-atms/)
+- [ The Strangest Computer Manual Ever Written ](https://ironicsans.substack.com/p/the-strangest-computer-manual-ever)
+- [ Oracle hit with unprecedented penalties for America's Cup cheating ](https://www.reuters.com/article/us-sailing-americascup-cheating/oracle-hit-with-unprecedented-penalties-for-americas-cup-cheating-idUSBRE98211Y20130904)
+- [ Are You Sure You Want to Use MMAP in Your Database Management System? ](https://db.cs.cmu.edu/mmap-cidr2022/)
+- [ Databases in 2022: A Year in Review ](https://ottertune.com/blog/2022-databases-retrospective/)
+
+## 2023-01-02
+
+- [ THE YEAR OF C++ SUCCESSOR LANGUAGES ](https://accu.org/journals/overload/30/172/teodorescu/)
+- [ Conversation Skills Essentials ](https://tynan.com/letstalk/)
+
+## 2022-12-31
+
+- [ Surviving disillusionment - by Slava Akhmechet ](https://www.spakhm.com/p/surviving-disillusionment)
+
+## 2022-12-30
+
+- [ Best Practices for TCP Optimization in 2019 ](https://www.extrahop.com/company/blog/2016/tcp-nodelay-nagle-quickack-best-practices/)
+- [ Why you should understand (a little) about TCP ](https://jvns.ca/blog/2015/11/21/why-you-should-understand-a-little-about-tcp/)
+- [ Once upon a time long ago, I was sitting alone in the UCLA ARPANET site #1 computer room late one night ](https://mastodon.laurenweinstein.org/@lauren/109588605178700335)
+- [ What You Get Is the World ](https://theconvivialsociety.substack.com/p/what-you-get-is-the-world)
+- [ Herb Kelleher: Manage in Good Times So You'll Do Well in the Bad Times ](https://www.gsb.stanford.edu/insights/herb-kelleher-manage-good-times-so-youll-do-well-bad-times)
+- [ You Can Achieve Anything If You Focus On ONE Thing - Darius Foroux ](https://dariusforoux.com/one-thing/)
+
+## 2022-12-29
+
+- [ What Can We Learn from Barnes & Noble's Surprising Turnaround? ](https://tedgioia.substack.com/p/what-can-we-learn-from-barnes-and)
+- [ Hard truths I learned when I got laid off from my SWE job ](https://news.ycombinator.com/item?id=34161822)
+- [ 8 Hard Truths I learned when I got laid off from my SWE job ](https://www.stevenbuccini.com/8-hard-truths-on-getting-laid-off)
+
+## 2022-12-28
+
+- [ A Guide to the Terminal, Console, and Shell ](https://thevaluable.dev/guide-terminal-shell-console/)
+
+## 2022-12-27
+
+- [ What’s in a PR statement: LastPass breach explained ](https://palant.info/2022/12/26/whats-in-a-pr-statement-lastpass-breach-explained/)
+- [ Start here: Evolution has not prepared your brain for today's porn ](https://web.archive.org/web/20180907033837/https://www.yourbrainonporn.com/doing-what-you-evolved-to-do)
+- [ Are Video Games Addictive? ](https://www.psychologytoday.com/intl/blog/media-spotlight/201308/are-video-games-addictive)
+- [ Supernormal Stimuli: How the Internet, Junk Food, and Porn Hijacked Our Brains ](https://www.sparringmind.com/supernormal-stimuli/)
+- [ Creepy Website Similarity ](https://memex.marginalia.nu/log/69-creepy-website-similarity.gmi)
+
+## 2022-12-26
+
+- [ Unbundling Tools for Thought ](https://borretti.me/article/unbundling-tools-for-thought)
+- [ Meet the Customer Service Reps for Disney and Airbnb Who Have to Pay to Talk to You ](https://www.propublica.org/article/meet-the-customer-service-reps-for-disney-and-airbnb-who-have-to-pay-to-talk-to-you)
+- [ General guidance when working as a cloud engineer ](https://www.lockedinspace.com/posts/001.html)
+- [ Pitch Drop experiment ](https://smp.uq.edu.au/pitch-drop-experiment)
+- [ .Scratch ](https://gohugo.io/functions/scratch/)
+- [ Why do bees die when they sting you?](https://www.subanima.org/bees/)
+
+## 2022-12-25
+
+- [ Why Competitive Advantages Die ](https://collabfund.com/blog/why-competitive-advantages-die/)
+- [ Fat, Happy, And In Over Your Head ](https://collabfund.com/blog/fat-happy-and-in-over-your-head/)
+
+## 2022-12-24
+
+- [ Square Pixel Inventor Tries to Smooth Things Out ](https://www.wired.com/2010/06/smoothing-square-pixels/)
+- [ How ASUS and a Microsoft Bug Almost Broke Remote Work ](https://nuxx.net/blog/2022/12/23/how-asus-and-a-microsoft-bug-almost-broke-remote-work/)
+- [ Things to argue about over the holidays instead of politics ](https://dynomight.net/arguments/)
+- [ An Unexpected Ass Kicking | IMPOSSIBLE ](https://impossiblehq.com/an-unexpected-ass-kicking/)
+
+## 2022-12-23
+
+- [ UnifiedPush: a decentralized, open-source push notification protocol ](https://f-droid.org/2022/12/18/unifiedpush.html)
+- [ Don't Call Yourself A Programmer, And Other Career Advice ](https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/)
+- [ Intro to Threads and Processes in Python ](https://medium.com/@bfortuner/python-multithreading-vs-multiprocessing-73072ce5600b)
+
+## 2022-12-22
+
+- [ Difference between subprocess and thread ](https://stackoverflow.com/questions/37430255/difference-between-subprocess-and-thread)
+- [ Why Google stores billions of lines of code in a single repository ](https://dl.acm.org/doi/10.1145/2854146)
+
+## 2022-12-19
+
+- [ Reinventing Backend Subsetting at Google ](https://queue.acm.org/detail.cfm?id=3570937)
+- [ Marx's theory of alienation ](https://en.wikipedia.org/wiki/Marx%27s_theory_of_alienation)
+- [ Everything As a Service ](https://curiositysink.substack.com/p/everything-as-a-service)
+- [ Community Guidelines to bio-remediation ]( https://semspub.epa.gov/work/HQ/401583.pdf )
+
+## 2022-12-18
+
+- [ As winter approaches, here's a story about why hardware is hard. ](https://twitter.com/tessalau/status/1604018884662951938)
+- [ I Think We’re Alone Now ](https://www.lrb.co.uk/the-paper/v44/n24/andrew-o-hagan/short-cuts)
+
+## 2022-12-16
+
+- [ Things I want as SRE/DevOps from Devs :: oschvr.com ](https://oschvr.com/posts/what-id-like-as-sre/)
+
+## 2022-12-14
+
+- [ Strings, bytes, runes and characters in Go ](https://go.dev/blog/strings)
 
 ## 2022-12-13
 
