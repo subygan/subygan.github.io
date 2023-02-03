@@ -36,10 +36,17 @@ date: 2023-01-15
 - Zero to one ✅
 - Almanack of Naval Ravikant ✅
 - Essays on skepticism - Bertrand Russell - 2023-01-08  ✅
-- Accidental Empires - 2023-01-15 -Robert Cringely ✅
+- [The Art of making money](https://www.gutenberg.org/files/8581/8581-h/8581-h.htm#link2H_4_0001) -  PT. Barnum - 2023-01-20 ✅ 
+  - Live, well under your means.
+  - Location matters a lot.
+  - Dedicate yourself to your work.
+  - Generally a good book with a lot of generic advices.
+- Accidental Empires - Robert Cringely - 2023-01-15 ✅
   - Good book on the history of computing.
   - Showed a lot of the underbelly of the tech ecosystem
-
+- Only the Paranoid survive - Andrew Grove - 2023-02-3 21:12
+  - Nice book, couldn't relate to a lot of it.
+  - But, That is only because the book is aimed at the middle management.
 ## partially read
 
 - Designing Data Intensive Application - Martin Kleppman

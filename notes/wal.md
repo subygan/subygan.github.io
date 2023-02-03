@@ -1,4 +1,6 @@
-- 2023-01-16 5:10 am - healer rearchitect
+- 2023-01-19 9:56 pm - SOP general
+- 2023-01-19 8:18 pm - ddia ch-5 notes ✅
+- 2023-01-16 5:10 am - healer rearchitect ✅
 - 2023-01-15 6:27 pm - University search ✅
 - 2023-01-15 5:20 pm - setup todoer ✅
 - 2022-12-10 5:18 am - problem ✅
