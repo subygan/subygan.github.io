@@ -1,3 +1,4 @@
 - What does your typical day look like?
   - what the fuck am I supposed to say
 - What does done mean to you?
+- 
