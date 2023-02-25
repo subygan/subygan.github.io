@@ -35,6 +35,8 @@ date: 2023-01-15
 - Educated - tara westover ✅
 - Zero to one ✅
 - Almanack of Naval Ravikant ✅
+
+## 2023
 - Essays on skepticism - Bertrand Russell - 2023-01-08  ✅
 - [The Art of making money](https://www.gutenberg.org/files/8581/8581-h/8581-h.htm#link2H_4_0001) -  PT. Barnum - 2023-01-20 ✅ 
   - Live, well under your means.
@@ -44,13 +46,23 @@ date: 2023-01-15
 - Accidental Empires - Robert Cringely - 2023-01-15 ✅
   - Good book on the history of computing.
   - Showed a lot of the underbelly of the tech ecosystem
-- Only the Paranoid survive - Andrew Grove - 2023-02-3 21:12
+- Only the Paranoid survive - Andrew Grove - 2023-02-3 21:12 ✅
   - Nice book, couldn't relate to a lot of it.
   - But, That is only because the book is aimed at the middle management.
+  - I might have to come back to this one.
+- lost Focus - Johann Hari - 2023-02-15 22:16 ✅
+  - The book was good, but not great. 
+  - the middle chapters from __simplistic Optimism__ were pretty interesting.
+  - Could've skipped the initial chapter with the authors' story of trying to be less distracted. I suppose, it adds for a good narrative. But, didn't enlighten me as much as it could have.
+- Waiting for a Visa - BR Ambedkar - 2023-02-15 23:25 ✅
+  - The stories are very moving and clarified a lot of misconception I had about Ambedkar's life.
+- flatlands, A romance of many dimensions (1884)- Edwin A Abbot - 2023-02-19 22:7 ✅
+  - Incredible book with great content
+  - The idea of 2 dimensional and 1 dimensional and 0 dimensional worlds were very interesting. each representing a metaphor of peoples lives and worlds.
+
 ## partially read
 
 - Designing Data Intensive Application - Martin Kleppman
 - Design of everyday things
 - Mythical man month
-- Only the paranoid survive - Andrew Grove
-
+- Long Road to Freedom - Martin Luther King

@@ -1,8 +1,14 @@
 ---
-title: To Consume
+title: To Do
 emoji: 🛍
 layout: base
 ---
+
+# courses and competitions
+
+- [Build your own redis](https://build-your-own.org/redis/) 
+- [Distributed system from maelstorm](https://github.com/jepsen-io/maelstrom#documentation)
+- [Gossip glomers, fly.io](https://fly.io/dist-sys/)
 
 # Blog posts
 - [There's no getting around you're building a distributed system](https://queue.acm.org/detail.cfm?id=2482856)
