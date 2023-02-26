@@ -59,10 +59,14 @@ date: 2023-01-15
 - flatlands, A romance of many dimensions (1884)- Edwin A Abbot - 2023-02-19 22:7 ✅
   - Incredible book with great content
   - The idea of 2 dimensional and 1 dimensional and 0 dimensional worlds were very interesting. each representing a metaphor of peoples lives and worlds.
+- Long walk to Freedom - Nelson Mandela - 2023-02-26 17:58 ✅
+  - Being a law man and a freedom fighter is a combination that is very much a necessity, if one is about to stand up against law.
+  - Being solid about ones resolve is very important to go through the struggle.
+  - Leader's source is people's trust over their decisions and their willingness to participate in it. Overpromisisng and not achieving goals erodes that trust. So, leader's have a dilemma of aggressively setting goals vs delivering the goals.
+- Designing Data Intensive Application - Martin Kleppman - 2023-02-25 17:58 ✅
+  - [notes are here](/tech/theory/ddia/)
 
 ## partially read
 
-- Designing Data Intensive Application - Martin Kleppman
 - Design of everyday things
 - Mythical man month
-- Long Road to Freedom - Martin Luther King

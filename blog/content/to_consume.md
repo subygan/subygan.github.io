@@ -14,9 +14,6 @@ layout: base
 - [There's no getting around you're building a distributed system](https://queue.acm.org/detail.cfm?id=2482856)
 - [Getting real about distributed system reliability](https://blog.empathybox.com/post/19574936361/getting-real-about-distributed-system-reliability)
 - [Coding for SSDs](https://codecapsule.com/2014/02/12/coding-for-ssds-part-1-introduction-and-table-of-contents/)
-- [Personal finance](https://cs007.blog/)
-  - 2022-12-08 4:57 am 
-  - 
 - [http crash course nobody asked for](https://fasterthanli.me/articles/the-http-crash-course-nobody-asked-for) 
 - [lessons from running codepen](https://blog.codepen.io/2022/08/03/379-chris-alex-have-been-running-codepen-for-10-years-what-have-they-learned-heres-the-top-10/)
 - [Everything you ever wanted to know about terminals](http://xn--rpa.cc/irl/term.html) 
@@ -28,7 +25,8 @@ layout: base
 - [Ai: Startup vs incumbent value](https://blog.eladgil.com/p/ai-startup-vs-incumbent-value)
 - [Bill gates interview 1992 PDC 1992](https://learn.microsoft.com/en-us/events/pdc-pdc-1992/pdc-1992-keynote-bill-gates)
 - [https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript](https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript)
-- Signal: You were the chosen one [video]
+- [Personal finance](https://cs007.blog/) ✅
+- Signal: You were the chosen one [video] ✅
   - [https://media.ccc.de/v/mch2022-196-signal-you-were-the-chosen-one-](https://media.ccc.de/v/mch2022-196-signal-you-were-the-chosen-one-)
 - The untold story of sqlite
   - [https://corecursive.com/066-sqlite-with-richard-hipp/#](https://corecursive.com/066-sqlite-with-richard-hipp/#) ✅
