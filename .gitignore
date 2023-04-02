@@ -11,3 +11,5 @@ tmp/*
 *.env
 
 1
+
+blog/resources/_gen

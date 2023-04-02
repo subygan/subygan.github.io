@@ -12,4 +12,39 @@
         {{ .Content }}
         {{ partial "footer.html" . }}
         {{ partial "scripts.html" . }}
+        {{ $d := dict "essays" (dict "end" "is here" ) }}
+
+
+        -- {{ $d }}
+        <p></p>
+
+        {{ $val := slice "essays" "val" "something" }}
+
+
+        {{ $val := slice "essays" "val" "something" }}
+        {{ $d2 := dict $val "what" }}
+
+        {{ $d = merge $d $d2 }}
+
+        ___ {{ $d }}
+        <p></p>
+        {{ $local := print "" }}
+        
+        {{ range $i, $v := $val }}
+            
+            {{ $local := print $local " " $v }}
+            {{ $dval := index $d $local }}
+            {{ with $dval }}
+                dval {{ $dval }}
+            {{ else }}
+            no dval
+
+            {{ end }}
+        <p></p>
+        {{ end }}
+
+        <p></p>
+        {{ partial "toc2.html" . }}
+
+
         {{ end }}

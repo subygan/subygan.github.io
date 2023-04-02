@@ -1,15 +1,30 @@
-<div id="toc">
+{{ $m := dict }}
+{{ $endKey := "aaaaaaaaa" }}
 
+{{ range .Site.Pages }}
+<p></p>
 
-        {{ $m := dict (slice "n" "m" "new") "true" }}
-        {{ $m }}
-    {{ range .Site.Pages }}
-        {{ $sp := split .RelPermalink "/"}}
-        {{ $sp }}
-        {{ $m2 := dict $sp "true"  }}
-        ||    {{ $m2 }}
-        {{ $m = merge $m $m2 }}
-        !! {{ $m }}
+<!--    Trim the trailing and preceding slashes in the link-->
+    {{ $link := substr .RelPermalink 1 }}
+    {{ $link := substr $link 0 -1 }}
+
+    {{ with $link }}
         <p></p>
-    {{ end }}
+        {{ $sp := split $link "/"}}
+
+        {{ $m2 := dict $sp (dict $endKey true)  }}
+        <!--        ||    {{ $m2 }}-->
+
+        {{ $m = merge $m $m2 }}
+        {{ range $k, $v := $sp }}
+        {{ end }}
+        <!--        !! {{ $m }}-->
+
+    {{ end}}
+
+{{ end }}
+    !! {{ $m }}
+
+<div id="tock">
+{{ partial "parse_dict.html" (dict "dictionary" $m "prefix" "") }}
 </div>
