@@ -1,6 +1,6 @@
 ---
-title: Suriya
+title: Site index
 emoji: 🧑🏻‍💻
-layout: list
-description: Suriya
+layout: index
+description: Index for the site
 ---

@@ -1,20 +1,33 @@
 {{ define "main" }}
-<div class='typora-export-content'>
+<main>
 
-    <div id='write'  class=''>
-        <header>
+    <div class='typora-export-content'>
 
-            <div class="page-header-icon undefined"><span class="icon">{{ .Params.emoji }}</span></div>
-            <h1 class="page-title">{{ .Title }}</h1>
-        </header>
-        <div class="blender" id="blender"></div>
-        {{ partial "header.html" . }}
+        <div id='write' class=''>
+            <header>
 
-        {{ partial "toc.html" . }}
+                <div class="page-header-icon undefined"><span class="icon">{{ .Params.emoji }}</span></div>
+                <h1 class="page-title">{{ .Title }}</h1>
+            </header>
+            <div class="blender" id="blender"></div>
+            {{ partial "header.html" . }}
+            {{ .Content }}
 
-        {{ partial "footer.html" . }}
-        {{ partial "scripts.html" . }}
-
-
-
-        {{ end }}
+            <ul>
+                <!-- Ranges through content/posts/*.md -->
+                {{ range .Pages }}
+                {{ if .Title }}
+                <li>
+                    {{ if .Params.emoji }}
+                    <a href="{{.Permalink}}"><p class="">{{ .Params.emoji }} &nbsp;&nbsp;&nbsp;&nbsp;{{.Title}}</p></a>
+                    {{ else }}
+                    <a href="{{.Permalink}}"> 🗿   {{.Title}}</a>
+                    {{ end }}
+                </li>
+                {{ end }}
+                {{ end }}
+            </ul>
+            {{ partial "footer.html" . }}
+            {{ partial "scripts.html" . }}
+</main>
+{{ end }}

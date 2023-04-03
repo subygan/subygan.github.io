@@ -4,16 +4,8 @@
 {{ range .Site.Pages }}
 <p></p>
 
-    {{ . }}
-    {{ .Params }}
-
     {{ $title := .Params.title }}
 
-    {{ with $title }}
-    title : {{ $title }}
-    {{ else }}
-    notitle
-    {{ end }}
 <!--    Trim the trailing and preceding slashes in the link-->
     {{ $link := substr .RelPermalink 1 }}
     {{ $link := substr $link 0 -1 }}
