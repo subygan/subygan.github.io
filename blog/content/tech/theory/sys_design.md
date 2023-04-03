@@ -1,3 +1,11 @@
+---
+emoji: 👨🏼‍🎨 
+title: System Design
+description: notes while learning system design
+date: 2023-04-3, Mon, 19:42
+layout: base
+---
+
 ## Scaling to million users
 - isolate, process and database
 ### DB scaling

@@ -1,10 +1,12 @@
 ---
-title: Image Cache control
-emoji: 📡
+emoji: 🕸️ 
+title: Web
+description: Web stuff that are curious or interesting
+date: 2023-04-3, Mon, 19:34
 layout: base
-description: Working with image cache control in the web
-date: 2022-10-09
 ---
+
+### No cache image
 
 ```shell
 curl -s -I -X GET https://i.countdownmail.com/2212f0.gif
@@ -26,3 +28,8 @@ curl -s -I -X GET https://i.countdownmail.com/2212f0.gif
 ```
 
 Basically, this is a service that creates timer gifs. based on the URL. the `cache-control` part is the most interesting. This is pretty efficient and asks the browser to not cache anything. This ensures that everytime the cache is new
+
+
+### Subresource integrity
+
+https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity

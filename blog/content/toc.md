@@ -1,6 +1,6 @@
 ---
 title: Suriya
 emoji: 🧑🏻‍💻
-layout: base
+layout: list
 description: Suriya
 ---

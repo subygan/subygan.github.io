@@ -1,1 +1,0 @@
-## Some apps can be simple scripts accessible over the web running in a tiny tiny server.
