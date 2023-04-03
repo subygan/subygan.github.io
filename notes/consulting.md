@@ -10,3 +10,8 @@ Why not self?
 - Due to lax deadlines, I work much slower.
 - There is no real enforcement.
 - Tried and failed multiple times.
+
+Why now?
+
+- I need to build more  and I should've been doing it yesterday.
+- I can learn from collaboration with others.

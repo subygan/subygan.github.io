@@ -96,7 +96,7 @@ If the user has free-text fields for entering the region and the industry, then 
 
 Generally __Human understandable/used words can change, So it is better to use references, and use ID for the word everywhere else__. Because Human known words can and do change (name of a city, person, place or thing for example). The rule of thumb is that we use references in places where human understandable words are used. This, _reduces duplication_ while also giving flexibility to change in the name.
 
-Normalising of this type of data uses a _many to one _ relationship. This does not fit nicely into the document model. In relational databases, it is normal to refere to rows in other tables by ID, because joins are easy. But, in document model joins are a lot harder perform because multiple queries will have to be performed. 
+Normalising of this type of data uses a _many to one _ relationship. This does not fit nicely into the document model. In relational databases, it is normal to refer to rows in other tables by ID, because joins are easy. But, in document model joins are a lot harder perform because multiple queries will have to be performed. 
 
 In the resume example, we could simplify it by __making schools as entities__ And then referencing them in the resume. This allows us to group people from same school together. Making people as entities would let us build features like, a section where people can recommend each other.
 
@@ -449,7 +449,7 @@ The base assumption for column-oriented storage is that, there are a lot more re
 
 ## Aggregation: Data Cubes and Materialized Views:
 
-Data warehouses often perform operations like, COUNT, SUM, AVG, MIN, or MAX over a _Materialised aggregate_.  This is usually run over a _Materialised view_. In a relational data model, It is like a standard/virtual view but it is written to disk. When the underlying data changes the materialized view also changes. This means increased writes and this is why it is not used in OLTP databases 
+Data warehouses often perform operations like, COUNT, SUM, AVG, MIN, or MAX over a _Materialised aggregate_.  This is usually run over a _Materialised view_. In a relational data model, It is like a standard/virtual view but it is written to disk. When the underlying data changes the materialised view also changes. This means increased writes and this is why it is not used in OLTP databases 
 
 In OLAP warehouses there is a common special view known as _OLAP cube_. It is a grid of aggregates grouped by different dimensions.
 
@@ -459,6 +459,164 @@ In OLAP warehouses there is a common special view known as _OLAP cube_. It is a 
 In the above example, each data is represented in different ways and can be easily derived.
 
 # Ch-4 Encoding and Evolution:
+
+Applications and their underlying data representations change over time. Application design should ideally allow flexibilty towards changes.
+- In memory structures
+  - objects, structs, lists, arrays, hash-tables, trees.... These are efficient to be used as in-memory structures
+- To persist these data in a file/ send over a network. These in-memory structures should be made as a self-contained sequence of bytes like JSON
+
+### Problems with encoding/decoding:
+
+- if language specific encoding is used. Cross language decoding is difficult. This inability to interoperate makes it harder to adopt and use multiple programming languages
+- To restore same object/struct types the decoder needs to be able to instantiate new objects. If an attacker could make the decoder, read an arbitrary stream of bytes they will be able to make the decoder create arbitrary objects and get access to the application
+- _data versioning_ is hard.
+- Very _inefficient_ in a lot of cases
+
+
+JSON, XML and CSV are popular formats and each come with their own caveat
+
+- JSON => no `int` vs `float` distinction.
+- JSON,XML => handles unicode well, but no arbitrary binary representation
+- CSV => No schema, and a lot of vaguery in definition.
+
+
+### Binary encodings
+When used, within an organization, there is scope to make the format a lot tighter than the lowest common denominator.
+We can customise these binary representations, based on use case
+
+### Thrift and Protocol Buffers
+These are _binary encoding libraries_ that are able to make space efficient binary representations.
+Thrift has to levels, _Binary Protocol_ and _Compact Protocol_. in compact protocol, _there are no field names only representations to them_ (similar to protobuf field tags that is used).
+
+### Apache Avro
+
+Avro has writer's schema and reader's schema.
+Both schemas generate some code.
+- When the bytes are being decoded both writer and reader schemas are evaluated side by side. the order of the representations does not matter
+- If the writer has a field and the reader does not have the field, then that field is _ignored_.
+- if the reader has a field and the writer does not have the field, then a _default value is given_.
+
+
+## Data Flow
+
+### Data flow through databases
+Service writes, data to db and then another service reads from the database.
+There can be legacy data and hence migration might be required for the new application code to be able to view the data.
+
+### Data flow through Services: REST and RPC
+REST uses json, mostly and is used in 
+RPCs are used to call a function in a remote networks service.
+### Problems with RPCs
+- Local function call is predictable to succeed or fail. Network requests are not, request/response can be lost in a network problem, machine might be slow hanging up the whole program.
+- local functions return with 3 states, `throw exception`, `return a result`, or `never returns`. in RPCs there's another possibility that there is a `timeout`
+- somtimes, only responses could be dropped. in those cases we generally retry, but there is no way to know, if any of the requests got through or not.
+- Network latencies are larger than local function calls
+- In local function calls pointers can be passed around. But for RPCs the whole data needs to be passed around.
+- RPC is language independent, so data needs to be translated into its local representation irrespective of the source language.
+
+### Data flow through Message-passing:
+
+This is a mix of both data flow through databases and REST/RPCs. Data is sent to a database like structure from where data is then processed by services asynchronously. This includes services like, Kafka celery and others
+
+## Distributed actor frameworks
+
+- In actor model, instead of dealing directly with threads and their problems (race conditions, locking, deadlock...), this logic is encapsulated in actors. Each actor represents a client/entity.
+- _Communication between actors_ is done through _asynchronous messaging_.
+- Since each actor only processes one message at a time, it does not need ot worry about threads and can be scheduled independently. Also, we _expect messages to be lost_ and that provides us with advantages
+- A _distributed actor framework_ essentially integrates a message broker and the actor programming model into a single framework. Messages are encoded and decoded over the network.
+- performing rolling updates in a  distributed actor framework is hard. Forward and backward compatibility will have to be handled.
+
+### Famous distributed actor frameworks
+- _Akka_ uses Java's built-in serialization by default, which does not provide forward or backward compatibility. However protobufs can be used to handle forward and backward compatibility
+- _Orleans_ uses a custom data format and does not support rolling upgrade deployments. To deploy a new version of your application, a new cluster has to be setup and traffic should be redirected there.
+- _Erlang OTP_ Record schema changes are hard to make.
+
+# Ch-5 Replication
+
+Data Replication is done for many reasons,
+- To keep data geographically closer to users
+- To allow the system to continue despite multiple failures
+- To Scale out number of machines that can serve read queries
+
+
+## Leaders and Followers
+Each node that stores a copy of the database is called a __replica__.
+Every write needs to be processed by the replica. Else, the replica would be inconsistent with the master.
+
+### Leader-based replication
+
+- One replica is the leader/master and when it writes some change to the database it has to send the data to all the nodes as part of _replication log_ or _change stream_.
+- The other replicas/followers read from the change stream and update their data replica as well.
+
+
+## Synchronous vs Asynchronous replication
+
+Synchronous replication is when the leader responds after all replicas are consistent with the write. 
+Asynchronous is when The leader assumes the followers will catch up and responds to the write request after it has written to the replication log.
+
+Asynchronous systems could lose data if the leader fails or if the message itself fails to get sent
+
+![asynchronous_replication](/assets/images/ddia/asynchronous_replication.png)
+(example given in "Designing Data intensive applciations")
+
+### Setting up new followers.
+
+How to setup new followers when the leader is getting updated constantly?
+Take snapshot of leader => copy to follower => Follower comes up and requests all change since the time of the snapshot / since the last log sequence number it has
+
+### Handling Node Outages
+
+ability to stop/restart individual nodes is desirable => makes a robust system
+
+- __Follower Failure: Catch-up recovery__, is when The follower goes down and comes back, it is able to look at the backup in its disk and request for all changes since the last request
+- __Leader Failure: Failover__, The leader node could also go down, in those cases, we need a way to  figure out who to promote to a leader
+  - _Determining the leader has failed_, Minimum threshold for non-responsiveness. eg, if the node does not reply in 30 seconds it's assumed dead.
+  - _Choosing a new leader_, _Controller node_ who elected the previous leader can be delegated the task of finding a new leader. The follower with the most upto date data could also be promoted 
+  - _Reconfiguring nodes to follow new leader_, All clients now, need to route all write requests to the leader.
+
+## Implementation of Replication Logs
+There are several replication techniques
+
+- __Statement-based replication__ Sending the whole write query to all followers. this is harder for cases where we have to update time, random number and others as each node might compute a different value. Workarounds are possible, but generally not desired
+- __WAL shipping__ We ship the whole Write ahead log that the database is using to keep track of operations that it is performing.
+- __Logical (row-based) log replication__ This log is a very logical seperation between the database and storage. So, When an update/insert/write occurs, it is a logically isolated part, that has all the data to replicate the data.
+- __Trigger-based replication__ - We can have separate triggers based on specific change in specific areas.
+
+## Problems with Replication lag
+
+Generally there is a time delay between data replication and the actual write. This means, depending on where the read request is landing, the data returned could be different. These challenges could be addressed differently.
+
+- __Reading Your own Writes__, in a lot of cases, when the writer is asking for the write that they did, they want their most up-to-date data not stale data from a replica. This can be addressed by
+  - Read from the leaer if it is the writer asking back for their write.
+  - Keep track of the replication lag and read from the replica if threshold is within limits. So, that we don't overwhelm the leader.
+  - Client can remember the recent update and request for the most updated version after that.
+- __Monotonic Reads__, This happens when the reader reads from multiple replicas that are inconsistent (for the time being). 
+- __Consistent prefix reads__, a guarantee that  if a sequence of writes happen in a certain order, then anyone reading those writes will them in the same order.
+
+## multi-leader replication
+
+Leader-based replication has the downside that if there is network interruption for the leader, then write throughput will be abyssmal. To solve cases like these, each node that processes a write must forward that data change to all the other nodes.
+
+### Multi-datacenter operation
+
+There could be two leaders in different data centers and both leaders sync with each other and resolve conflicts and distribute that data to their followers.
+- _Performance_, In a multi-leader configuration, every write can be processed in the local datacenter means the queries are processed faster than a single leader
+- _Tolerance for outages_, Even when one datacenter goes down the service is up, because there are multiple leaders.
+
+### Clients with offline operation
+The same idea used for multi-datacenter operation can be performed in offline operations. Basically when offline the local data store becomes the leader and when online it syncs with the leader in the datacenter.
+
+### Collaborative editing
+
+Collaborative editing is similar to a database replication problem, when a user edits some data locally then the changes are instantly applied to their local replica and asynchronously replicated with the server. If there is to be a guarantee that there won't be any conflicts then the writer must get a lock on the document, before they start editing. And after editing it can be delegated to someone else. This is similar to _Single-leader replication with transactions on the leader_.
+
+
+## conflicts
+
+Synchronous versus asynchronous conflict detection, Synchronous conflict detection = single-leader replication because, you would have to wait until everyone has the data replicated.
+- _conflict avoidance_, If the application can ensure that all writes for a particular record go through the same leader, then conflicts cannot occur. eg, same user gets the same data-center
+- _Converging towards consistency_, Even though all replication is asynchronous we can converge to a consensus.  
+
 
 
 
@@ -480,7 +638,7 @@ In the above example, each data is represented in different ways and can be easi
 - __write-amplification__ - One write to the DB resulting in multiple _disk writes_.
 - __Clustered index__ - Key where data is stored near the index (e.g. InnoDB storage engine)
 - __covering indexes__ or __index with included columns__ secondary indexes where some columns are stored within the index.
-- __concatenated indexes__ - com=bines several fields into one key by appending one column to another. (eg phone book which has a 'lastname-firstname' index. it can be used to find people with certain lastname (or) people with certain 'lastname-firstname' combination. But, totally useless if you want people with certain firstname)
+- __concatenated indexes__ - combines several fields into one key by appending one column to another. (eg phone book which has a 'lastname-firstname' index. it can be used to find people with certain lastname (or) people with certain 'lastname-firstname' combination. But, totally useless if you want people with certain firstname)
 - __OLTP__ - Online Transaction Processing. A type of database operation which gurantees instantaneousness
 - __OLAP__ - Online Analytics Processing. Database operation which is not expected to be instantaneous and can be done after the fact.
 - __fact table__ - In OLAP tables, a fact table is used to represents an event that occured at a certain time.
@@ -488,3 +646,16 @@ In the above example, each data is represented in different ways and can be easi
 - __Materialized aggregate__ - aggregate function over a _materialized view_.
 - __Materialized view__ - like a standard (virtual) view, but the contents of the result is written to disk. When the underlying data changes, materilised view also changes
 - __OLAP cube__ - a materialized view with aggregate data of content
+- __encoding, serialization, marshalling__, in-memory representation => byte sequence
+- __decoding, deserializaiton, unmarshalling__, byte sequence => in-memory representation
+- __data outlives code__ in a lot of cases, data in the db is persisted forever while the application keeps evolving, this has implications like, backward-compatibility and database migrations.
+- __Service Oriented Architecture (SOA)__, uses discrete, self-contained services instead of monolithic architectures.
+- __Replica__ - Nodes storing a copy of the data
+- __leader based replication__ - A leader/master node streams out the write/update changes that it is receiving 
+- __Change stream/ replication log__ - Change stream is the stream sent by the master node to it's slaves.
+- __Catch-up recovery__ - 
+- __Failover__ - 
+- __Controller node__ - 
+- __Logical row replication.__ 
+- __Monotonic reads__ 
+- __Multi-leader configuration__ 
