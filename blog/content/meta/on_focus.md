@@ -1,14 +1,4 @@
-[//]: # (---)
 
-[//]: # (title: On Focus)
-
-[//]: # (emoji: 🎧)
-
-[//]: # (description: Focusing is a very difficult thing for me. My journal on trying to learn to focus on stuff I have to instead of fibrillating a thousand different things.)
-
-[//]: # (date: 2021-04-16 22:15:00)
-
-[//]: # (---)
 
 Focusing on one thing is something I've been fighting for a long while. Maybe I have mild ADHD, But it doesn't matter, I will have ot get better at focusing on stuff. The problem is basically that I have so many things going on in my head at any given time that, it is hard to think of just one thing. Making it harder and harder to focus on the work/meeting I'm handling in the moment. This is not only not optimal in the longterm, I would be actively damaging everything.
 

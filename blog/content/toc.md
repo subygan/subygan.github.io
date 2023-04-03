@@ -1,6 +1,6 @@
 ---
-title: Suriya
+title: Site index
 emoji: 🧑🏻‍💻
-description: Suriya
+layout: index
+description: Index for the site
 ---
-{{ site.pages | directory_get:page.url }}

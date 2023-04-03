@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<div class='typora-export-content'>
+
+    <div id='write'  class=''>
+        <header>
+
+            <div class="page-header-icon undefined"><span class="icon">{{ .Params.emoji }}</span></div>
+            <h1 class="page-title">{{ .Title }}</h1>
+        </header>
+        <div class="blender" id="blender"></div>
+        {{ partial "header.html" . }}
+        {{ .Content }}
+        {{ partial "footer.html" . }}
+        {{ partial "scripts.html" . }}
+
+        {{ end }}

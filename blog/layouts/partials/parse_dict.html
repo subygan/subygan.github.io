@@ -1,0 +1,17 @@
+{{ $pre := .prefix }}
+{{ $endKey := "aaaaaaaaa" }}
+
+
+<ul>
+    {{ range $k, $v := .dictionary }}
+    
+    {{ if (eq $k $endKey) }}
+    <li><a href="{{ print $pre }}">{{ $v.title }}</a> </li>
+    {{ else }}
+    {{ if reflect.IsMap $v }}
+    {{ partial "parse_dict.html" (dict "dictionary" $v "prefix" (print $pre "/" $k )) }}
+    {{ end }}
+    {{ end }}
+
+    {{ end }}
+</ul>

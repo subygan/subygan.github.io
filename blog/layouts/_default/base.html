@@ -11,6 +11,8 @@
     <div class="blender" id="blender"></div>
     {{ partial "header.html" . }}
     {{ .Content }}
+    {{ partial "toc.html" .}}
     {{ partial "footer.html" . }}
     {{ partial "scripts.html" . }}
+
     {{ end }}
