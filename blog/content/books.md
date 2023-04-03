@@ -1,9 +1,9 @@
 ---
 title: Books
-emoji: 📖
+emoji: 📚
 layout: base
-description: My list of books to read
-date: 2023-01-15
+description: My book reading list 
+date: 2022-12-25
 ---
 ## To Read
 
@@ -24,9 +24,11 @@ date: 2023-01-15
 - Barbarians at the gate - Bryan Burroughs  ✅
 - Curious incident of dog in the night time ✅
 - Thinking in bets -  ✅
+
   - Everything is a bet on some future event. Every decision that is made. from a decision to buy that donut to predicting how the market will perform
 - Communist Manifesto - Karl Marx ✅
 - What got you here won't get you there
+
 - Cuckoo's egg -  ✅
 - Mamba mentality - Kobe bryant  2022-11-20 ✅
 - Six Easy Pieces - Richard Feynman ✅ 
@@ -34,6 +36,7 @@ date: 2023-01-15
 - Blink  ✅
 - Educated - tara westover ✅
 - Zero to one ✅
+
 - Almanack of Naval Ravikant ✅
 
 ## 2023
@@ -146,5 +149,7 @@ date: 2023-01-15
 ## partially read
 
 - Design of everyday things
+
 - Mythical man month
 - When wizards stay up late
+

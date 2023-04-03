@@ -1,3 +1,11 @@
+---
+emoji: ▓ 
+title: Kafka
+description: Reading kafka documentation
+date: 2023-04-3, Mon, 20:51
+layout: base
+---
+
 ## Apache kafka
 __event streaming platform__ 
 

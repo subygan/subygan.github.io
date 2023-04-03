@@ -4,7 +4,6 @@ emoji: 🧑🏻‍🏫
 layout: base
 description: I try to write collate all the stuff I find around the internet here 
 date: "now"
-toc: true
 ---
 
 ## 2023-03-04

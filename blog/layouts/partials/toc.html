@@ -1,10 +1,35 @@
-<div id="toc">
-    {{ range .Site.Pages }}
-    <li>
+{{ $m := dict }}
+{{ $endKey := "aaaaaaaaa" }}
 
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        "{{ . | urlize }}"{{ .Title }} {{ .IsPage }} {{ .RelPermalink }}
-    </li>
+{{ range .Site.Pages }}
+<p></p>
+
+    {{ $title := .Params.title }}
+
+<!--    Trim the trailing and preceding slashes in the link-->
+    {{ $link := substr .RelPermalink 1 }}
+    {{ $link := substr $link 0 -1 }}
+
+    {{ with $title }}
+    {{ with $link }}
+        <p></p>
+        {{ $sp := split $link "/"}}
+
+        {{ $metadata := dict "title" $title }}
+
+        {{ $m2 := dict $sp (dict $endKey $metadata)  }}
+        <!--        ||    {{ $m2 }}-->
+
+        {{ $m = merge $m $m2 }}
+        {{ range $k, $v := $sp }}
+        {{ end }}
+        <!--        !! {{ $m }}-->
 
     {{ end }}
+    {{ end }}
+
+{{ end }}
+
+<div id="tock">
+{{ partial "parse_dict.html" (dict "dictionary" $m "prefix" "") }}
 </div>
