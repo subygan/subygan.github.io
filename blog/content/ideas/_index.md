@@ -20,6 +20,7 @@ layout: base
   - similar stuff, https://www.datree.io/
 
 ### serverless
+
 If ec2 made the jump from having to own a machine to just spinning one up virtually from a bigger machine managed by someone else. Serverless will do the same thing to ec2. From having to spin up containers and manage their resources to shifting that responsibility to the platform underneath.
 
 I predict that, very similar to "traditional" softwares vs virtualised machines. Hardcore software would take a while to get converted to serverless, but until then it will be for tinkering, small projects and hobby projects. eg. netlify, vercel
@@ -63,6 +64,7 @@ Event driven architectures are gaining a lot of momentum. There are a few proble
   - Generic payments gateway that lets us A/B testing
 
 ### ETL
+
 ETL solutions, either to aggregate data in some form or matter
 - Services that take one format of input and transform to another are also very much in demand. The problem is, there is no clear path to productisation other than providing the underlying infra to run these workflows or building tools to build these workflows, of which there are many.
   - https://www.alteryx.com/products/designer-cloud and appian and many many others.
