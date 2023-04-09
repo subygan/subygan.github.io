@@ -145,11 +145,31 @@ date: 2022-12-25
     - Be on the lookout for weasel words like, "We hear that...", "Insider reports...", "Maybe...", "some speculate that....", "people are of the opinion that...." and other similar ones.
     - These are words that absolve the reporters from their responsibility and delegate it to an unknown third party.
   - The book was pretty good and for an outsider like me these are things that I've been speculating about, but couldn't put my finger on. This was a great read and would definitely suggest it to people
+- Where wizards stay up late -  2023-03-15 14:28 ✅
+  - An incredible book, looking back at the birth of a technological marvel.
+  - Any idea requires its own faithful followers. Packets in the internet are the building blocks of internet, but it took 4 - 5 years for people from the traditional phone industry to see the utility.
+  - Things we assume as just regular reality today was just a spark in someone's mind years ago. This is true for the structure of a typical email to the laws and structures around us.
+- The Psychology of Money - Katie Hafner and Matthew Lyon - 2023-03-28 14:28 ✅
+  - Great book on about money and other ideas, I definitely suggest it as a great read.
+  - How we spend money is mostly dependent on our childhood and how we were raised. Children raised during the great depression are more thrifty than children who grow up during times of great increases in wealth. This feels obvious, until we realise that this applies to us as well. Growing from an environment of low resources makes us very efficient with them and vice versa.
+  - Luck and Risk are tightly coupled together in most cases. We call the upside of risk as luck. So, when you luck out, it means there was a possiblity of a downside as well. We generally don't appreciate all the things we are lucky for. Like, how healthy we are or, how we have a loving family and the ability to protect them and the state of society in general. The story of the investment banker who shorted during the great depressions and then went on to lose all of his wealth is telling.
+  - __Never Enough__ - The ability of a truly Rich person, is being able to say What I have is enough and exit the game. Mistaking a streak of luck for unbeatable skill and staking it all in Russian roulette is bound to make you broke. Knowing and having the freedom to quit is a super that is worth striving for. Stories of Madoff and Rajat Gupta.
+  - __Compounding is leverage__ - Humans naturally don't understand compounding. We take it easy. Story of warren buffet with 13% compounding for 50 years vs the other guy investment banker with 30 % compounding for 20 years. It  is impossible to for the latter to catch up to the former in a lifetime. Short term setbacks don't matter, what matters is the ability to let compounding do its thing despite everything and trusting in the process. High frequency trading might be great for making a quick buck. But compounding is where the game actually is.
+  - __Making wealth vs holding on to that wealth__ are two completely different skill sets and state of minds. The distinction is important to succeed in the long term. In general success in finance is not about making the one-off great pay up but, __it's all about consistently not screwing up__ and folding the cards when the game is not in our favour. Warren buffet has been only consistently not picking the failures. and that is what makes him a great investor. He can find stuff to not invest in.
+  - By __having a bigger upside than downside__ we can make sure that we come out on top, irrespective of the outcomes. But, being consistent about how we make those decisions is hard.
+  - Controlling our own future is the best way to feel free in our lives. There are researches showing that people who are able to call shots in their lives are the happiest. Dying people don't really care about the amount of money in their bank accounts, they only care about all the things they were able to do.
+  - __Wealth is what we don't see__, We see a person in a ferrari and assume he's wealthy despite having no idea whether its rented or loaned or whatever. Usually wealth of a person is what you don't see, the cars they didn't buy the show-offs they didn't do. Living under your means and having your baselines satisfied is the most important thing in life.
+  - __Saving consistently__ is one of the best predictor of financial success. it's like being on a diet for a healthier body. We might crave to buy that thing that we don't really need but the ability to say no and stick with our saving structure is very important.
+  - __Being reasonable is more important than being rational__ because we are emotional beings and we need to take decisions based on multiple dimensions, in those cases being reasonable is more important than being coldly rational, especially when it comes to family.
+  - History is only a map of what happened in the past not a map of what would happen in the future. Projecting something in the  past to the future is a fallacy that a lot of people make and something that is not reasonable. Surprising things happen constantly around us. But, the conundrum is that we are only able to predict something based on past incidents. 
+  - Having and __error margin is very important__, because predictions carry risk with them and can turn tides quickly. In those case, having a healthy amount of margin of error is important.
+  - The problem with consistent compounding is that we need to create a plan and then stick with it for years. But, we are humans and we change constantly, So will our goals, financial or otherwise. So, it is very important to take time to strategize better and have fallbacks.
+  - When somebody is offering advice for free. be sure you understand their motivations properly. Usually, nothing comes for free and there are a lot of grifters trying to make a quick buck. For examples a company's stock price was supposed to represent it's value in the long term. But, some short term grifters aggregate onto a specific stock and push its value to high in the short term and creating a bubble.
+  - Pessimism is easy because humans are generally risk averse and avoid ruin at all costs. Being optimistic takes a lot more creativity. Be the reason for a little bit more optimism in the world.
 
 ## partially read
 
 - Design of everyday things
-
 - Mythical man month
-- When wizards stay up late
+- Build 
 
