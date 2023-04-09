@@ -6,6 +6,144 @@ description: I try to write collate all the stuff I find around the internet her
 date: "now"
 ---
 
+## 2023-04-05
+
+- [ What is Computational Biology? ](https://cbd.cmu.edu/about-us/what-is-computational-biology.html)
+- [ Computational biology ](https://en.wikipedia.org/wiki/Computational_biology)
+- [ What is Gene Therapy? ](https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/what-gene-therapy)
+- [ Impeller & Flutter ](https://medium.com/@NGM44/impeller-flutter-8d8aba691fa3)
+  
+## 2023-04-03
+
+- [ SAFARI RELEASES ARE DEVELOPMENT HELL ](https://www.construct.net/en/blogs/ashleys-blog-2/safari-releases-development-1616)
+- [ Free the internet from mass surveillance. With the Mullvad Browser. ](https://mullvad.net/en/browser)
+- [ Programs are dead ](https://pouria.dev/programs-are-dead/)
+- [ Drawing parallels to a previous generation, services are the new process ](https://queue.acm.org/detail.cfm?id=2482856)
+- There's Just No Getting around It: You're Building a Distributed System
+- [ The Data Delusion ](https://www.newyorker.com/magazine/2023/04/03/the-data-delusion)
+- [ The Inner Ring ](https://www.lewissociety.org/innerring/)
+- [ The Status Trap ](https://every.to/no-small-plans/the-status-trap)
+- [ how-software-companies-die ](https://gist.github.com/eliot-akira/6eaecda619d0fafd1d74)
+  
+## 2023-04-02
+
+- [ The Priest in the Arena ](https://studio.ribbonfarm.com/p/the-priest-in-the-arena?utm_source=post-email-title&publication_id=9973&post_id=111879825&isFreemail=true&utm_medium=email)
+  
+## 2023-03-30
+
+- [ A miracle drug sold over the counter ](https://trevorklee.substack.com/p/a-miracle-drug-sold-over-the-counter)
+- [ Who’s Good At Data Privacy? ](https://www.forbes.com/sites/forbestechcouncil/2022/02/22/whos-good-at-data-privacy/)
+
+## 2023-03-29
+
+- [ You Are You. We Live Here. This is Now. - Freddie deBoer ](https://freddiedeboer.substack.com/p/you-are-you-we-live-here-this-is) ⭐️
+
+## 2023-03-24
+
+- [ I Bought Back My Acquihired Startup ](https://steveridout.com/2023/03/23/buy-back.html)
+  
+## 2023-03-22
+
+- [ The Age of AI has begun ](https://www.gatesnotes.com/The-Age-of-AI-Has-Begun?WT.mc_id=20230321100000_Artificial-Intelligence_BG-EM_&WT.tsrc=BGEM)
+  
+## 2023-03-21
+
+- [ Netflix, Shein and MrBeast ](https://www.ben-evans.com/benedictevans/2023/3/15/netflix-shein-and-mrbeast)
+- [ Building ClickHouse Cloud From Scratch in a Year ](https://clickhouse.com/blog/building-clickhouse-cloud-from-scratch-in-a-year)
+- [ The real thing: my battle to beat a 27-year Diet Coke addiction | Soft drinks | The Guardian ](https://www.theguardian.com/food/2021/feb/02/the-real-thing-my-battle-to-beat-a-27-year-diet-coke-addiction)
+- [ Lessons from a Pessimist: Make Your Pessimism Productive | Armin Ronacher's Thoughts and Writings ](https://lucumr.pocoo.org/2023/3/20/lessons-from-a-pessimist/)
+- [ Web fingerprinting is worse than I thought ](https://www.bitestring.com/posts/2023-03-19-web-fingerprinting-is-worse-than-I-thought.html)
+  
+## 2023-03-20
+
+- [ Report Cards ](https://www.ribbonfarm.com/2023/03/16/report-cards/)
+- [ Meta layoffs ](https://brandur.org/fragments/meta-layoffs)
+  
+## 2023-03-19
+
+- [ Design of GNU Parallel ](https://www.gnu.org/software/parallel/parallel_design.html)
+- [ Anki-fy Your Life ](https://abouttolearn.substack.com/p/anki-fy-your-life)
+  
+## 2023-03-18
+
+- [ a Nirav or a Naval? - that is the question ](https://auren.substack.com/p/a-nirav-or-a-naval-that-is-the-question)
+- [ "do not change minds, just open a little wider." ](https://www.edge.org/adversarial-collaboration-daniel-kahneman)
+- it turns out that I have preferences about theories and theoretical styles. I like phenomenology and Gestalt psychology more than I like analysis. I don't like to reduce cognitive processes to flow charts and to mathematical models. I have a strong preference for facts over theory and I like irony. These stylistic tastes matter because they determine the character of the work I do.
+  
+## 2023-03-17
+
+- [ I said that old people don't really kick themselves. Their regret is wistful, almost pleasant. It's not emotionally intense. We ran an experiment, and everyone was wrong. It turned out that delayed regret is mostly wistful, but it can be intense. ](https://www.edge.org/adversarial-collaboration-daniel-kahneman)
+- [ NIGERIA’S TECH WORKERS GOT USED TO GOOD SALARIES AND HIGH DEMAND. THEN CAME THE CRASH ](https://restofworld.org/2023/techs-bad-year-nigeria-layoffs/?utm_source=Rest+of+World+Newsletter&utm_campaign=bcee4a8ad6-EMAIL_CAMPAIGN_2023_03_14_02_02&utm_medium=email&utm_term=0_-bcee4a8ad6-%5BLIST_EMAIL_ID%5D)
+  
+## 2023-03-16
+
+- [ Uber Go Style Guide ](https://github.com/uber-go/guide/blob/master/style.md)
+  
+## 2023-03-15
+
+- [ 11 Reasons Not to Become Famous (or “A Few Lessons Learned Since 2007”) ](https://tim.blog/2020/02/02/reasons-to-not-become-famous/)
+- [ “I WILL SLAUGHTER YOU” ](https://daniel.haxx.se/blog/2021/02/19/i-will-slaughter-you/)
+- [ My Startup Banking Story ](https://mitchellh.com/writing/my-startup-banking-story)
+- MITCHELL HASHIMOTO
+- [ Grow: How Perfectly Imperfect’s snowball growth started with word of mouth ](https://on.substack.com/p/grow-series-27-perfectly-imperfect?utm_source=post-email-title&publication_id=1&post_id=108152366&isFreemail=true&utm_medium=email)
+  
+## 2023-03-14
+
+- [ Schemaless Databases Don't Exist ](https://orangematter.solarwinds.com/2015/02/24/schemaless-databases-dont-exist/)
+- [ Why was Hippo Chips Discontinued? | Hippo Chips Failure ](https://startuptalky.com/hippo-chips-failure/)
+- [ Table Maintenance after Bulk Modifications ](https://sqlfordevs.com/table-maintenance-bulk-modification?ref=Newsletter)
+- [ Fragility & Boundary Conditions ](https://www.analogmantra.com/blog/2023-02-27-fragility-and-boundary-conditions/)
+- [ Good Pressure, Bad Pressure ](https://medium.com/the-year-of-the-looking-glass/good-pressure-bad-pressure-c8d9ff4530a5)
+- [ WebAssembly serverless functions in AWS Lambda ](https://www.cncf.io/blog/2021/08/25/webassembly-serverless-functions-in-aws-lambda/)
+- [ The serverless revolution deserves more than just a serverless database ](https://stack.convex.dev/serverless-revolution)
+- [ A RedMonk Conversation: Why the future of serverless databases is distributed document-relational. ](https://redmonk.com/jgovernor/2022/08/10/a-redmonk-conversation-why-the-future-of-serverless-databases-is-distributed-document-relational/)
+  
+## 2023-03-12
+
+- [ C++ Casting, or: “Oh No, They Broke Malloc!” ](https://embeddedartistry.com/blog/2017/03/15/c-casting-or-oh-no-they-broke-malloc/)
+- [ Laptop Class (noun): ](https://twitter.com/pmarca/status/1513113304104783875)
+- [ Career Growth Speed, Deconstructed ](https://medium.com/geekculture/career-growth-speed-deconstructed-a8005fec0a25)
+  
+## 2023-03-11
+
+- [ What is size_t for? How do I iterate over an object in C? ](https://jameshfisher.com/2016/11/29/size_t_iterator/)
+- [ What is Systems Programming, Really? ](https://willcrichton.net/notes/systems-programming/)
+- [ 'printf' vs. 'cout' in C++ ](https://stackoverflow.com/questions/2872543/printf-vs-cout-in-c)
+- [ Why Choose Process Goals? (Over Outcome-Based Goals) ](https://durmonski.com/self-improvement/process-goals/?ref=refind)
+- [ Why Turborepo is migrating from Go to Rust ](https://vercel.com/blog/turborepo-migration-go-rust)
+- [ The Bones of Time ](https://studio.ribbonfarm.com/p/the-bones-of-time?utm_source=post-email-title&publication_id=9973&post_id=107688537&isFreemail=true&utm_medium=email)
+  
+## 2023-03-10
+
+- [ Google dusts off the failed Google+ playbook to fight ChatGPT ](https://arstechnica.com/gadgets/2023/03/google-dusts-off-the-failed-google-playbook-to-fight-chatgpt/)
+  
+## 2023-03-09
+
+- [Alvy Ray smith to ed catamul on pixar](http://alvyray.com/Pixar/documents/edfromalvy_2004.pdf)
+- [ The complexity of success and failure: the story of the Gimli Glider ](https://resilienceroundup.com/issues/the-complexity-of-success-and-failure-the-story-of-the-gimli-glider/)
+- [ Luck based medicine: my resentful story of becoming a medical miracle ](https://www.lesswrong.com/posts/fFY2HeC9i2Tx8FEnK/luck-based-medicine-my-resentful-story-of-becoming-a-medical)
+  
+## 2023-03-08
+
+- [ Fixing the Next 10,000 Aliasing Bugs ](https://blog.polybdenum.com/2023/03/05/fixing-the-next-10-000-aliasing-bugs.html?utm_source=abyteofcodingnewsletter)
+- [ Metrics for Success: Why and How to Evaluate Privacy Choice Usability ](https://cacm.acm.org/magazines/2023/3/270204-metrics-for-success/abstract)
+- [ What is Secure Multi-Party Computation? ](https://www.skyflow.com/post/what-is-secure-multi-party-computation)
+  
+## 2023-03-07
+
+- [ UUIDs to prevent Enumeration Attacks ](https://sqlfordevs.com/uuid-prevent-enumeration-attack?ref=Newsletter)
+- [ The LLaMA is out of the bag. Should we expect a tidal wave of disinformation? ](https://aisnakeoil.substack.com/p/the-llama-is-out-of-the-bag-should?utm_source=post-email-title&publication_id=1008003&post_id=106860489&isFreemail=true&utm_medium=email)
+- [ Reliability: It’s Not Great ](https://community.fly.io/t/reliability-its-not-great/11253)
+- [ Retail, search and Amazon’s $40bn ‘advertising’ business ](https://www.ben-evans.com/benedictevans/2023/3/6/ways-to-think-about-amazon-advertising)
+  
+## 2023-03-06
+
+- [ 5 Years of Indie Hacking ](https://allisonseboldt.com/5-years-of-indie-hacking/)
+  
+## 2023-03-05
+
+- [ What is Polymorphic Encryption? ](https://www.skyflow.com/post/a-look-at-polymorphic-encryption-the-new-paradigm-of-data-privacy)
+
 ## 2023-03-04
 
 - [ Infosys co-chair Nilekani quits to join govt ](https://www.reuters.com/article/idINIndia-40593720090625)

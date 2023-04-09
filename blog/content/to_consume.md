@@ -13,6 +13,7 @@ These are the things that I am interested in learning.
 - [Gossip glomers, fly.io](https://fly.io/dist-sys/)
 - [Advanced compilers: self guided online course \(cornell\)](https://www.cs.cornell.edu/courses/cs6120/2020fa/self-guided/)
 - [pintos: a simple operating system](https://web.stanford.edu/class/cs140/projects/pintos/pintos_1.html)
+- [lets write a browser](https://nearthespeedoflight.com/browser.html)
 
 
 # Projects
