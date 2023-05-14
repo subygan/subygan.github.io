@@ -1,6 +1,7 @@
 ---
 title: To Consume
 emoji: 🛍
+description: My to-do list of learning.
 layout: base
 ---
 These are the things that I am interested in learning.
@@ -11,9 +12,14 @@ These are the things that I am interested in learning.
 - [Build your own redis](https://build-your-own.org/redis/) 
 - [Distributed system from maelstorm](https://github.com/jepsen-io/maelstrom#documentation)
 - [Gossip glomers, fly.io](https://fly.io/dist-sys/)
-- [Advanced compilers: self guided online course \(cornell\)](https://www.cs.cornell.edu/courses/cs6120/2020fa/self-guided/)
+- [Advanced compilers: self-guided online course \(cornell\)](https://www.cs.cornell.edu/courses/cs6120/2020fa/self-guided/)
 - [pintos: a simple operating system](https://web.stanford.edu/class/cs140/projects/pintos/pintos_1.html)
-- [lets write a browser](https://nearthespeedoflight.com/browser.html)
+- [let's write a browser](https://nearthespeedoflight.com/browser.html)
+- [interview with shang Yi Chiang, R&D head at TSMC](https://archive.computerhistory.org/resources/access/text/2022/07/102792671-05-01-acc.pdf)
+- [Explained from first principles](https://explained-from-first-principles.com/)
+- [Programmer's introduction to Mathematics](https://pimbook.org/)
+- [write your own git](https://wyag.thb.lt/)
+- [How does a database work, database internals](https://cstack.github.io/db_tutorial/)
 
 
 # Projects
@@ -23,7 +29,7 @@ These are the things that I am interested in learning.
 
 
 # Blog posts
-- [Adverserial collaboration - Daniel Kahneman](https://www.edge.org/adversarial-collaboration-daniel-kahneman)
+- [how to do Distributed locking](https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html)
 - [There's no getting around you're building a distributed system](https://queue.acm.org/detail.cfm?id=2482856)
 - [Getting real about distributed system reliability](https://blog.empathybox.com/post/19574936361/getting-real-about-distributed-system-reliability)
 - [Coding for SSDs](https://codecapsule.com/2014/02/12/coding-for-ssds-part-1-introduction-and-table-of-contents/)
@@ -37,6 +43,7 @@ These are the things that I am interested in learning.
 - [What is amazon](https://zackkanter.com/2019/03/13/what-is-amazon/)
 - [Bill gates interview 1992 PDC 1992](https://learn.microsoft.com/en-us/events/pdc-pdc-1992/pdc-1992-keynote-bill-gates)
 - [https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript](https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript)
+- ~~[Adverserial collaboration - Daniel Kahneman](https://www.edge.org/adversarial-collaboration-daniel-kahneman)~~
 
 
 

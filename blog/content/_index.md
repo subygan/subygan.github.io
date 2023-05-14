@@ -7,24 +7,22 @@ description: Suriya's website
 
 My place on the internet where, I try to write about stuff I'm interested in.
 
-
 💻  [tech](tech)
+
+📚  [books](books)
 
 🦋  [meta](/meta)
 
 🧙🏻  [about](/about)
 
-🐵   [now](/now)
+🔥   [lit](/lit)
 
-🧑🏻‍🏫    [Readlog](/readlog)
+🧑🏻‍🏫 [Readlog](/readlog)
 
-🛍      [To Consume](/to_consume)
+🛍 [To Consume](/to_consume)
 
 📜   [essays](/essays)
 
-🦾  [all](/all)
-
-🦏   [Feed](/index.xml)
 
 You can find the [table of contents here](/toc)
 

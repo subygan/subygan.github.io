@@ -6,7 +6,7 @@ date: 2023-03-28
 layout: base
 ---
 
-- Great book on about money and other ideas, I definitely suggest it as a great read.
+- Great book on about money and other ideas, I definitely suggest it as a good read.
 - How we spend money is mostly dependent on our childhood and how we were raised. Children raised during the great depression are more thrifty than children who grow up during times of great increases in wealth. This feels obvious, until we realise that this applies to us as well. Growing from an environment of low resources makes us very efficient with them and vice versa.
 - Luck and Risk are tightly coupled together in most cases. We call the upside of risk as luck. So, when you luck out, it means there was a possiblity of a downside as well. We generally don't appreciate all the things we are lucky for. Like, how healthy we are or, how we have a loving family and the ability to protect them and the state of society in general. The story of the investment banker who shorted during the great depressions and then went on to lose all of his wealth is telling.
 - __Never Enough__ - The ability of a truly Rich person, is being able to say What I have is enough and exit the game. Mistaking a streak of luck for unbeatable skill and staking it all in Russian roulette is bound to make you broke. Knowing and having the freedom to quit is a super that is worth striving for. Stories of Madoff and Rajat Gupta.
