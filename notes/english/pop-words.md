@@ -10,3 +10,4 @@
 - cultural appropriation
 - [We from Toilet Duck recommend Toilet Duck](https://nl.wikipedia.org/wiki/Wij_van_Wc-eend_adviseren_Wc-eend) - Used to represent how a company suggests its own product 
 - Basic - people who are unsophisticated. 
+- Allegory of the cave - https://en.wikipedia.org/wiki/Allegory_of_the_cave

@@ -6,6 +6,142 @@ description: I try to write collate all the stuff I find around the internet her
 date: "now"
 ---
 
+## 2023-05-14
+
+- [ Whispers of Immortality ](https://www.poetryfoundation.org/poems/52563/whispers-of-immortality)
+
+## 2023-05-11
+
+- [ I encountered Wrong Answer/Runtime Error for a specific test case. When I test my code using this test case, it produced the correct output. Why? ](https://support.leetcode.com/hc/en-us/articles/360011834174-I-encountered-Wrong-Answer-Runtime-Error-for-a-specific-test-case-When-I-test-my-code-using-this-test-case-it-produced-the-correct-output-Why-)
+
+## 2023-05-06
+
+- [ High Variance Management ](https://blog.sbensu.com/posts/high-variance-management/)
+
+## 2023-05-05
+
+- [ Staff engineer archetypes. ](https://lethain.com/staff-engineer-archetypes/)
+
+## 2023-05-04
+
+- [ Google "We Have No Moat, And Neither Does OpenAI" ](https://www.semianalysis.com/p/google-we-have-no-moat-and-neither)
+
+## 2023-05-03
+
+- [ Elite overproduction is a concept developed by Peter Turchin, which describes the condition of a society which is producing too many potential elite-members relative to its ability to absorb them into the power structure. ](https://en.wikipedia.org/wiki/Elite_overproduction)
+- [ I want to talk about WebGPU ](https://cohost.org/mcc/post/1406157-i-want-to-talk-about-webgpu)
+- [ Explaining tech's notion of talent scarcity ](https://nadia.xyz/top-talent)
+- Normal distribution
+- The competitive advantage of these companies lies not in a select number of top performers, but in the strength of its processes, built on specialized knowledge that is refined through years of practice.
+- Workers’ roles are clearly defined and rarely change. They need to be competent and reliable,
+- individualism is gently discouraged, as it threatens the resilience of the process.
+
+## 2023-05-02
+
+- [ on kernel management style ](https://lwn.net/Articles/105375/)
+- Linus on kernel management style
+- [ The scapegoating of Peter Thiel ](https://unherd.com/2021/09/how-peter-thiel-became-a-scapegoat/)
+- [ The Karikó problem: Lessons for funding basic research ](https://www.statnews.com/2022/02/01/kariko-problem-lessons-funding-basic-research/)
+- [ ``You and Your Research'' ](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
+- You don't have to tell other people, but shouldn't you say to yourself, ``Yes, I would like to do something significant.''
+- ``You would be surprised Hamming, how much you would know if you worked as hard as he did that many years.''
+- I thought hard about where was my field going, where were the opportunities, and what were the important things to do. Let me go there so there is a chance I can do important things.
+- if you have the door to your office closed, you get more work done today and tomorrow, and you are more productive than most. But 10 years later somehow you don't know quite know what problems are worth working on;
+- The people who do great work with less ability but who are committed to it, get more done that those who have great skill and dabble in it, who work during the day and go home and do other things and come back and work the next day.
+- if you adopt the present method and do what you can do single-handedly, you can go just that far and no farther than you can do single-handedly. If you will learn to work with the system, you can go as far as the system will support you.'
+- After all, if you want a decision `No', you just go to your boss and get a `No' easy. If you want to do something, don't ask, do it. Present him with an accomplished fact. Don't give him a chance to tell you `No'. But if you want a `No', it's easy to get a `No'.
+
+## 2023-04-30
+
+- [ Steve Jobs negotiates Apple's deal with Microsoft ](https://www.techemails.com/p/apples-deal-with-microsoft?utm_source=substack&utm_medium=email)
+- [ If you’ve ever wondered “how do they make landing pages @stripe ?”, ](https://twitter.com/narrowd/status/1648015670452297754?utm_source=dailydevlinks.com&utm_medium=newsletter&utm_campaign=dailydevlinks.com&ref=dailydevlinks.com)
+- [ "A little bit of slope makes up for a lot of y-intercept" ](https://gist.github.com/gtallen1187/e83ed02eac6cc8d7e185)
+- [ How to be consistent ](https://csprimer.com/articles/consistency/)
+
+## 2023-04-29
+
+- [ My product is my garden](https://herman.bearblog.dev/my-product-is-my-garden/)
+
+## 2023-04-28
+
+- [ Driver adventures for a 1999 webcam ](https://blog.benjojo.co.uk/post/quickcam-usb-userspace-driver)
+
+## 2023-04-27
+
+- [ Less TikTok, More Screaming ](https://persinette.substack.com/p/less-tiktok-more-screaming)
+
+## 2023-04-24
+
+- [ principles - Nabeel Qureshi]( https://nabeelqu.co/principles )
+- [ Searching for outliers | benkuhn.net]( https://www.benkuhn.net/outliers/ )
+
+
+## 2023-04-23
+
+- [ My High-Flying Life as a Corporate Spy Who Lied His Way to the Top ](https://narratively.com/my-high-flying-life-as-a-corporate-spy-who-lied-his-way-to-the-top/)
+- [ For Better and for Worse When my husband was finally diagnosed with dementia, I vowed to take care of him. Then he filed for divorce. ](https://www.thecut.com/2023/04/dementia-diagnosis-marriage.html)
+
+## 2023-04-21
+
+- [ Chekhov's gun ](https://en.wikipedia.org/wiki/Chekhov%27s_gun)
+- [ Go's Error Handling Is a Form of Storytelling ](https://preslav.me/2023/04/14/golang-error-handling-is-a-form-of-storytelling/)
+- [ Revisiting The Fast Inverse Square Root - Is It Still Useful? ](https://hllmn.net/blog/2023-04-20_rsqrt/)
+
+## 2023-04-18
+
+- [ Startup CEOs learned Engineering Management from Captain Kirk ](https://www.amazingcto.com/startup-ceo-startrek-kirk-engineering-management/)
+- [ My Biggest Regret As A Programmer ](https://thecodist.com/my-biggest-regret-as-a-programmer/)
+- [ Implementers, Solvers, and Finders ](https://rkoutnik.com/2016/04/21/implementers-solvers-and-finders.html)
+- [ You're not uncool. Making friends as an adult is just hard ](https://www.wbur.org/hereandnow/2021/11/10/making-friends-adults)
+- [ You didn’t just do that, Heroku ](https://openfolder.sh/heroku-anti-dx)
+
+## 2023-04-17
+
+- [ My Marriage Didn’t End When I Became a Widow ](https://archive.nytimes.com/opinionator.blogs.nytimes.com/2016/01/06/my-marriage-didnt-end-when-i-became-a-widow/)
+- [ ‘ I l o v e P a u l f o r e v e r ’ ](https://stanmed.stanford.edu/lucy-kalanithi-love-five-years-later-husband-paul/)
+- [ Five years later: Lucy Kalanithi on loss, grief and love ](https://scopeblog.stanford.edu/2020/04/20/five-years-later-lucy-kalanithi-on-loss-grief-and-love/)
+- [ How Long Have I Got Left? ](https://www.nytimes.com/2014/01/25/opinion/sunday/how-long-have-i-got-left.html)
+- [ Paul Kalanithi, writer and neurosurgeon, dies at 37 ](https://med.stanford.edu/news/all-news/2015/03/stanford-neurosurgeon-writer-paul-kalanithi-dies-at-37.html)
+- [ A Strange Relativity: Altered Time for Surgeon-Turned-Patient ](https://www.youtube.com/watch?v=d5u753wQeyM&t=13s)
+- [ B e f o r e I g o ](https://stanmed.stanford.edu/before-i-go/)
+
+## 2023-04-16
+
+- [ My favourite quote of all time is a misattribution. ](https://medium.com/the-mission/my-favourite-quote-of-all-time-is-a-misattribution-66356f22843d)
+
+## 2023-04-14
+
+- [ The early days of Linux ](https://lwn.net/SubscriberLink/928581/841b747332791ac4/ )
+
+
+## 2023-04-13
+
+- [ How the U.S. Air Force Deployed Kubernetes and Istio on an F-16 in 45 days ](https://thenewstack.io/how-the-u-s-air-force-deployed-kubernetes-and-istio-on-an-f-16-in-45-days/)
+- [ A Sister’s Eulogy for Steve Jobs ](https://archive.is/kxlvy#selection-387.0-387.32)
+- [ Got Milk? How the iconic campaign came to be, 25 years ago ](https://www.fastcompany.com/40556502/got-milk-how-the-iconic-campaign-came-to-be-25-years-ago)
+- [ CMake vs. Make: What’s the Difference? ](https://earthly.dev/blog/cmake-vs-make-diff/)
+
+## 2023-04-12
+
+- [ ManyCam dishonored my lifetime license ](https://www.amazingcto.com/beware-manycam-licensing-pricing/)
+- [ Barnum effect - Wikipedia ](https://en.wikipedia.org/wiki/Barnum_effect)
+- [ Digital twins: From one twin to the enterprise metaverse ](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/digital-twins-from-one-twin-to-the-enterprise-metaverse?utm_source=bulletpitch.beehiiv.com&utm_medium=newsletter&utm_campaign=decisionfacts)
+- [ 201. Does your company serve "weenies" or "shrimp"? ](https://hardcoresoftware.learningbyshipping.com/p/201-weenies-or-shrimp?utm_source=post-email-title&publication_id=82387&post_id=114141558&isFreemail=true&utm_medium=email)
+
+## 2023-04-10
+
+- [ 50 Ideas That Changed My Life ](https://perell.com/essay/50-ideas-that-changed-my-life/)
+- [ What does a research grant pay for? ](https://austinhenley.com/blog/grantbudget.html)
+- [ The Story of a Lonely Orca ](https://nautil.us/the-story-of-a-lonely-orca-293568/?utm_source=nautilus-newsletter&utm_medium=email&he=c34778f1922fb6c259a97cf2e9ee51ec)
+
+## 2023-04-09
+
+- [ The Cello in Soho Square ](https://randsinrepose.com/archives/the-cello-in-soho-square/)
+
+## 2023-04-07
+
+- [ Everything is a Practice There is no finish line. There is no winning, no losing. ](https://luxagraf.net/essay/everything-is-a-practice)
+
 ## 2023-04-05
 
 - [ What is Computational Biology? ](https://cbd.cmu.edu/about-us/what-is-computational-biology.html)
@@ -68,7 +204,7 @@ date: "now"
 
 - [ a Nirav or a Naval? - that is the question ](https://auren.substack.com/p/a-nirav-or-a-naval-that-is-the-question)
 - [ "do not change minds, just open a little wider." ](https://www.edge.org/adversarial-collaboration-daniel-kahneman)
-- it turns out that I have preferences about theories and theoretical styles. I like phenomenology and Gestalt psychology more than I like analysis. I don't like to reduce cognitive processes to flow charts and to mathematical models. I have a strong preference for facts over theory and I like irony. These stylistic tastes matter because they determine the character of the work I do.
+  - it turns out that I have preferences about theories and theoretical styles. I like phenomenology and Gestalt psychology more than I like analysis. I don't like to reduce cognitive processes to flow charts and to mathematical models. I have a strong preference for facts over theory and I like irony. These stylistic tastes matter because they determine the character of the work I do.
   
 ## 2023-03-17
 
@@ -154,7 +290,7 @@ date: "now"
 - [ Gartner hype cycle ](https://en.wikipedia.org/wiki/Gartner_hype_cycle)
 - [Personal finance](https://cs007.blog/)
 - [Ai: Startup vs incumbent value](https://blog.eladgil.com/p/ai-startup-vs-incumbent-value)
-- [Masayoshi sun may quarter update](https://group.softbank/en/news/webcast/20220512_02_en?utm_source=sg&utm_medium=email&utm_campaign=article_email&utm_content=article-7944
+- [Masayoshi sun may quarter update](https://group.softbank/en/news/webcast/20220512_02_en?utm_source=sg&utm_medium=email&utm_campaign=article_email&utm_content=article-7944)
 - Signal: You were the chosen one [video] 
   - [https://media.ccc.de/v/mch2022-196-signal-you-were-the-chosen-one-](https://media.ccc.de/v/mch2022-196-signal-you-were-the-chosen-one-)
 - The untold story of sqlite
@@ -985,8 +1121,8 @@ date: "now"
 
 - [ What the interns have wrought, 2022 edition ](https://blog.janestreet.com/what-the-interns-have-wrought-2022/)
 - [ Is Engineering Management Bullshit? ](https://www.makeartwithpython.com/blog/is-engineering-management-bullshit/)
-- [ “The great human error,” Weil announced, “is to reason in place of finding out.” ](https://www.wsj.com/articles/two-philosophers-found-purpose-in-the-world-of-work-11662177661)
-- Two Philosophers Found Purpose in the World of Work
+- [ Two Philosophers Found Purpose in the World of Work ](https://www.wsj.com/articles/two-philosophers-found-purpose-in-the-world-of-work-11662177661)
+  - “The great human error,” Weil announced, “is to reason in place of finding out.”
 - [ Why We Are Changing the License for Akka ](https://www.lightbend.com/blog/why-we-are-changing-the-license-for-akka)
 - [ Mister Gotcha ](https://thenib.com/mister-gotcha/)
 - [ Git’s database internals I: packed object store ](https://github.blog/2022-08-29-gits-database-internals-i-packed-object-store/?utm_source=abyteofcodingnewsletter)
@@ -1379,7 +1515,7 @@ date: "now"
 
 ## 2022-06-17
 
-- [ To Master the Day, Wash your Bowl ](https://findingzen.net/blog/to-master-your-day-wash-the-bowl)
+- [ To Master the Day, Wash your Bowl ](https://web.archive.org/web/20210327143652/https://findingzen.net/blog/to-master-your-day-wash-the-bowl)
 - [ GNOME has no thumbnails in the file picker (and my toilets are blocked) ](https://jayfax.neocities.org/mediocrity/gnome-has-no-thumbnails-in-the-file-picker.html)
 - [ Spotify Founder and CEO Daniel Ek’s Investor Day 2022 Remarks ](https://newsroom.spotify.com/2022-06-08/spotify-founder-and-ceo-daniel-eks-investor-day-2022-remarks/)
 - [ Computers are fast but you don't know it](https://shvbsle.in/computers-are-fast-but-you-dont-know-it-p1/)
@@ -1404,7 +1540,7 @@ date: "now"
 - [ Meet the fact-checkers decoding Sri Lanka’s meltdown ](https://restofworld.org/2022/meet-the-fact-checkers-decoding-sri-lankas-meltdown/?utm_source=Rest+of+World+Newsletter&utm_campaign=549a5070c7-EMAIL_CAMPAIGN_2022_06_13_06_36&utm_medium=email&utm_term=0_b91e039431-549a5070c7-446196006)
 - [ Building Self-driving Kafka clusters using open source components ](https://slack.engineering/building-self-driving-kafka-clusters-using-open-source-components/)
 - [ Turning $1,000 to $10,000 on Insight Prediction ](https://karlstack.substack.com/p/turning-1000-to-10000-on-insight?s=w)
-- [](http://www.art.net/~hopkins/Don/unix-haters/x-windows/xbugtool.html)
+- [xbugtool](http://www.art.net/~hopkins/Don/unix-haters/x-windows/xbugtool.html)
 
 ## 2022-06-13
 

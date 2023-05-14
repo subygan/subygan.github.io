@@ -2,3 +2,5 @@
 
 https://cult-escape.com/cult-test/
 A site to check if you are in a cult
+
+Site https://www.languagetransfer.org/

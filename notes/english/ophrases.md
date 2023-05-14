@@ -25,3 +25,5 @@
 - __Qué Sera Sera__ - Whatever will be will be
 
 - __Je ne sais quoi__ - a certain quality 
+
+- __Sic Transit Gloria__ - all glory is fleeting
