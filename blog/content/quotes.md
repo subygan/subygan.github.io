@@ -1,7 +1,7 @@
 ---
 emoji: ❝ 
 title: Quotes
-description: some quotes that I like
+description: Quotes that I like
 date: 2023-06-3
 layout: base
 ---
