@@ -11,7 +11,7 @@ Phone number, can be broken down into multiple
 ## Homomorphic Encryption
 homomorphic encryption scheme allows homomorphic operation on ciphertext.
 FHE - support all operations instead of just simple operations
-RSA => multiplicative homomorphic Encryption
+RSA => multiplicative homomorphic Encryptionw
 
 ## Control plane
 - controls provisioning, auth and permissions

@@ -2,8 +2,6 @@
 title: Books
 emoji: 📚
 description: My book reading/read lists
-layout: base
-
 ---
 
 ## To Read
@@ -64,10 +62,6 @@ layout: base
   - Leader's source is people's trust over their decisions and their willingness to participate in it. Overpromisisng and not achieving goals erodes that trust. So, leader's have a dilemma of aggressively setting goals vs delivering the goals.
 - __Designing Data Intensive Application__ - Martin Kleppman - 2023-02-25 17:58
   - [notes are here](/tech/theory/ddia/)
-- [__Trust me I'm lying__ - Ryan Holiday](trust_me)
-- [__Where Wizards stay up late__](wizard)
-- [__The Psychology of Money__](psych_money)
-- [__When Breath becomes air__](air)
-- [__Make something wonderful - Steve Jobs__](wonderful)
+
 
 
