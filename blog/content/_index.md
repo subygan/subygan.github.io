@@ -17,6 +17,8 @@ My place on the internet where, I try to write about stuff I'm interested in.
 
 🔥   [lit](/lit)
 
+❝ [quotes](/quotes)
+
 🧑🏻‍🏫 [Readlog](/readlog)
 
 🛍 [To Consume](/to_consume)
