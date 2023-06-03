@@ -1,10 +1,80 @@
 ---
-title: Readlog 
-emoji: 🧑🏻‍🏫 
+title: Readlog
+emoji: 🧑🏻‍🏫
 layout: base
-description: I try to write collate all the stuff I find around the internet here 
+description: I try to write collate all the stuff I find around the internet here
 date: "now"
 ---
+
+## 2023-06-01
+
+- [ distcc: a fast, free distributed C/C++ compiler ](https://www.distcc.org/)
+- [ Why would anyone learn this stuff](http://flint.cs.yale.edu/cs421/papers/art-of-asm/pdf/FORWARD.PDF)
+
+## 2023-05-31
+
+- [ We would like to inform you that we have decided to shut down our site. ](https://web.archive.org/web/20230531105653/https://rarbg.to/index80.php)
+- [ Feedback: I try to answer "how to become a systems engineer" ](https://rachelbythebay.com/w/2023/05/30/eng/)
+- [ Privacy Enhancing Technologies: An Introduction for Technologists](https://martinfowler.com/articles/intro-pet.html)
+
+## 2023-05-30
+
+- [ A Crisis in My Mental History. One Stage Onward ](https://web.archive.org/web/20120409023608if_/http://ebooks.adelaide.edu.au/m/mill/john_stuart/m645a/chapter5.html)
+- [ Stallman isn't great, but not the devil ](https://www.arp242.net/rms.html)
+- [ Overton window ](https://en.wikipedia.org/wiki/Overton_window)
+
+## 2023-05-29
+
+- [ Head-Trapped – Descartes, Dawkins, Hobbes, Marx, Mill, Darwin, And The Myth Of Western Civilisation ](https://www.medialens.org/2023/head-trapped-descartes-dawkins-hobbes-marx-mill-darwin-and-the-myth-of-western-civilisation/)
+  - Charles Darwin wrote in his autobiography: ‘My mind has changed during the last twenty or thirty years… Now for many years I cannot endure to read a line of poetry… I have also almost lost any taste for pictures or music… I retain some taste for fine scenery, but it does not cause me the exquisite delight which it formerly did…
+- [ Reflections on Ten Years Past The Snowden Revelations ](https://www.ietf.org/archive/id/draft-farrell-tenyearsafter-00.html)
+- [ Tom Hanks on the Rewards and “Vicious Reality” of Making Movies ](https://www.newyorker.com/culture/the-new-yorker-interview/tom-hanks-on-the-rewards-and-vicious-reality-of-making-movies)
+
+## 2023-05-28
+
+- [ Rent-seeking ](https://en.wikipedia.org/wiki/Rent-seeking)
+- [ Bell System ](https://en.wikipedia.org/wiki/Bell_System)
+- [ Reflections on Ten Years Past The Snowden Revelations ](https://www.ietf.org/archive/id/draft-farrell-tenyearsafter-00.html)
+
+## 2023-05-27
+
+- [ The only things you HAVE to know are how to make enough of a living to stay alive and how to get your taxes done. All the fun parts of life are optional. ](https://www.explainxkcd.com/wiki/index.php/1050:_Forgot_Algebra)
+- [ talk given by John Ousterhout about sustaining relationships](https://gist.github.com/gtallen1187/27a585fcf36d6e657db2)
+- [ How a mind-controlling fungal parasite turns insects into zombies – Harvard Gazette ](https://news.harvard.edu/gazette/story/2023/04/how-a-mind-controlling-fungal-parasite-turns-insects-into-zombies/ )
+- [ The Birth of the Self | The Hudson Review ](https://hudsonreview.com/?p=21100#.ZG551nbMKUk)
+
+## 2023-05-25
+
+- [ "The law, in its majestic equality, forbids rich and poor alike to sleep under bridges, to beg in the streets, and to steal their bread." ](https://news.ycombinator.com/item?id=36063346)
+- [ Years back I worked with a senior guy whose motto was “feedback as a gift“ ](https://news.ycombinator.com/item?id=36056299)
+
+## 2023-05-24
+
+- [ The Study Newsletter #052 ](https://preview.mailerlite.com/l8p7b1z8f2/2221898854637243727/e6o9/)
+    - I've been thinking lately about the illusionary mindsets
+
+## 2023-05-22
+
+- [ Same Stop ](https://www.engineersneedart.com/blog/samestop/samestop.html)
+
+## 2023-05-21
+
+- [ Memory allocation for char array ](https://stackoverflow.com/questions/32442600/memory-allocation-for-char-array)
+- [ Next Steps for Neeva ](https://neeva.com/blog/may-announcement)
+- [ Understanding storage of strings in C++ - Part 1…. Stack or heap? ](https://medium.com/obscure-system/understanding-storage-of-strings-in-c-part-1-stack-or-heap-98b15cded7ce)
+
+## 2023-05-18
+
+- [ What are the differences between a pointer variable and a reference variable? ](https://stackoverflow.com/questions/57483/what-are-the-differences-between-a-pointer-variable-and-a-reference-variable)
+
+## 2023-05-16
+
+- [ 5 things I wish I heard at the graduation I never had ](https://www.gatesnotes.com/NAU-Commencement-Speech?WT.mc_id=20230513100000_NAU-Commencement_BG-EM_&WT.tsrc=BGEM)
+    - you are never too smart to be confused.
+
+## 2023-05-15
+
+- [Cathedral and the bazaar](http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/ )
 
 ## 2023-05-14
 
@@ -32,7 +102,8 @@ date: "now"
 - [ I want to talk about WebGPU ](https://cohost.org/mcc/post/1406157-i-want-to-talk-about-webgpu)
 - [ Explaining tech's notion of talent scarcity ](https://nadia.xyz/top-talent)
 - Normal distribution
-- The competitive advantage of these companies lies not in a select number of top performers, but in the strength of its processes, built on specialized knowledge that is refined through years of practice.
+- The competitive advantage of these companies lies not in a select number of top performers, but in the strength of its
+  processes, built on specialized knowledge that is refined through years of practice.
 - Workers’ roles are clearly defined and rarely change. They need to be competent and reliable,
 - individualism is gently discouraged, as it threatens the resilience of the process.
 
@@ -43,13 +114,21 @@ date: "now"
 - [ The scapegoating of Peter Thiel ](https://unherd.com/2021/09/how-peter-thiel-became-a-scapegoat/)
 - [ The Karikó problem: Lessons for funding basic research ](https://www.statnews.com/2022/02/01/kariko-problem-lessons-funding-basic-research/)
 - [ ``You and Your Research'' ](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
-- You don't have to tell other people, but shouldn't you say to yourself, ``Yes, I would like to do something significant.''
+- You don't have to tell other people, but shouldn't you say to yourself, ``Yes, I would like to do something
+  significant.''
 - ``You would be surprised Hamming, how much you would know if you worked as hard as he did that many years.''
-- I thought hard about where was my field going, where were the opportunities, and what were the important things to do. Let me go there so there is a chance I can do important things.
-- if you have the door to your office closed, you get more work done today and tomorrow, and you are more productive than most. But 10 years later somehow you don't know quite know what problems are worth working on;
-- The people who do great work with less ability but who are committed to it, get more done that those who have great skill and dabble in it, who work during the day and go home and do other things and come back and work the next day.
-- if you adopt the present method and do what you can do single-handedly, you can go just that far and no farther than you can do single-handedly. If you will learn to work with the system, you can go as far as the system will support you.'
-- After all, if you want a decision `No', you just go to your boss and get a `No' easy. If you want to do something, don't ask, do it. Present him with an accomplished fact. Don't give him a chance to tell you `No'. But if you want a `No', it's easy to get a `No'.
+- I thought hard about where was my field going, where were the opportunities, and what were the important things to do.
+  Let me go there so there is a chance I can do important things.
+- if you have the door to your office closed, you get more work done today and tomorrow, and you are more productive
+  than most. But 10 years later somehow you don't know quite know what problems are worth working on;
+- The people who do great work with less ability but who are committed to it, get more done that those who have great
+  skill and dabble in it, who work during the day and go home and do other things and come back and work the next day.
+- if you adopt the present method and do what you can do single-handedly, you can go just that far and no farther than
+  you can do single-handedly. If you will learn to work with the system, you can go as far as the system will support
+  you.'
+- After all, if you want a decision `No', you just go to your boss and get a `No' easy. If you want to do something,
+  don't ask, do it. Present him with an accomplished fact. Don't give him a chance to tell you `No'. But if you want a `
+  No', it's easy to get a `No'.
 
 ## 2023-04-30
 
@@ -74,7 +153,6 @@ date: "now"
 
 - [ principles - Nabeel Qureshi]( https://nabeelqu.co/principles )
 - [ Searching for outliers | benkuhn.net]( https://www.benkuhn.net/outliers/ )
-
 
 ## 2023-04-23
 
@@ -113,7 +191,6 @@ date: "now"
 
 - [ The early days of Linux ](https://lwn.net/SubscriberLink/928581/841b747332791ac4/ )
 
-
 ## 2023-04-13
 
 - [ How the U.S. Air Force Deployed Kubernetes and Istio on an F-16 in 45 days ](https://thenewstack.io/how-the-u-s-air-force-deployed-kubernetes-and-istio-on-an-f-16-in-45-days/)
@@ -148,7 +225,7 @@ date: "now"
 - [ Computational biology ](https://en.wikipedia.org/wiki/Computational_biology)
 - [ What is Gene Therapy? ](https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/what-gene-therapy)
 - [ Impeller & Flutter ](https://medium.com/@NGM44/impeller-flutter-8d8aba691fa3)
-  
+
 ## 2023-04-03
 
 - [ SAFARI RELEASES ARE DEVELOPMENT HELL ](https://www.construct.net/en/blogs/ashleys-blog-2/safari-releases-development-1616)
@@ -160,11 +237,11 @@ date: "now"
 - [ The Inner Ring ](https://www.lewissociety.org/innerring/)
 - [ The Status Trap ](https://every.to/no-small-plans/the-status-trap)
 - [ how-software-companies-die ](https://gist.github.com/eliot-akira/6eaecda619d0fafd1d74)
-  
+
 ## 2023-04-02
 
 - [ The Priest in the Arena ](https://studio.ribbonfarm.com/p/the-priest-in-the-arena?utm_source=post-email-title&publication_id=9973&post_id=111879825&isFreemail=true&utm_medium=email)
-  
+
 ## 2023-03-30
 
 - [ A miracle drug sold over the counter ](https://trevorklee.substack.com/p/a-miracle-drug-sold-over-the-counter)
@@ -172,16 +249,17 @@ date: "now"
 
 ## 2023-03-29
 
-- [ You Are You. We Live Here. This is Now. - Freddie deBoer ](https://freddiedeboer.substack.com/p/you-are-you-we-live-here-this-is) ⭐️
+- [ You Are You. We Live Here. This is Now. - Freddie deBoer ](https://freddiedeboer.substack.com/p/you-are-you-we-live-here-this-is)
+  ⭐️
 
 ## 2023-03-24
 
 - [ I Bought Back My Acquihired Startup ](https://steveridout.com/2023/03/23/buy-back.html)
-  
+
 ## 2023-03-22
 
 - [ The Age of AI has begun ](https://www.gatesnotes.com/The-Age-of-AI-Has-Begun?WT.mc_id=20230321100000_Artificial-Intelligence_BG-EM_&WT.tsrc=BGEM)
-  
+
 ## 2023-03-21
 
 - [ Netflix, Shein and MrBeast ](https://www.ben-evans.com/benedictevans/2023/3/15/netflix-shein-and-mrbeast)
@@ -189,32 +267,35 @@ date: "now"
 - [ The real thing: my battle to beat a 27-year Diet Coke addiction | Soft drinks | The Guardian ](https://www.theguardian.com/food/2021/feb/02/the-real-thing-my-battle-to-beat-a-27-year-diet-coke-addiction)
 - [ Lessons from a Pessimist: Make Your Pessimism Productive | Armin Ronacher's Thoughts and Writings ](https://lucumr.pocoo.org/2023/3/20/lessons-from-a-pessimist/)
 - [ Web fingerprinting is worse than I thought ](https://www.bitestring.com/posts/2023-03-19-web-fingerprinting-is-worse-than-I-thought.html)
-  
+
 ## 2023-03-20
 
 - [ Report Cards ](https://www.ribbonfarm.com/2023/03/16/report-cards/)
 - [ Meta layoffs ](https://brandur.org/fragments/meta-layoffs)
-  
+
 ## 2023-03-19
 
 - [ Design of GNU Parallel ](https://www.gnu.org/software/parallel/parallel_design.html)
 - [ Anki-fy Your Life ](https://abouttolearn.substack.com/p/anki-fy-your-life)
-  
+
 ## 2023-03-18
 
 - [ a Nirav or a Naval? - that is the question ](https://auren.substack.com/p/a-nirav-or-a-naval-that-is-the-question)
 - [ "do not change minds, just open a little wider." ](https://www.edge.org/adversarial-collaboration-daniel-kahneman)
-  - it turns out that I have preferences about theories and theoretical styles. I like phenomenology and Gestalt psychology more than I like analysis. I don't like to reduce cognitive processes to flow charts and to mathematical models. I have a strong preference for facts over theory and I like irony. These stylistic tastes matter because they determine the character of the work I do.
-  
+    - it turns out that I have preferences about theories and theoretical styles. I like phenomenology and Gestalt
+      psychology more than I like analysis. I don't like to reduce cognitive processes to flow charts and to
+      mathematical models. I have a strong preference for facts over theory and I like irony. These stylistic tastes
+      matter because they determine the character of the work I do.
+
 ## 2023-03-17
 
 - [ I said that old people don't really kick themselves. Their regret is wistful, almost pleasant. It's not emotionally intense. We ran an experiment, and everyone was wrong. It turned out that delayed regret is mostly wistful, but it can be intense. ](https://www.edge.org/adversarial-collaboration-daniel-kahneman)
 - [ NIGERIA’S TECH WORKERS GOT USED TO GOOD SALARIES AND HIGH DEMAND. THEN CAME THE CRASH ](https://restofworld.org/2023/techs-bad-year-nigeria-layoffs/?utm_source=Rest+of+World+Newsletter&utm_campaign=bcee4a8ad6-EMAIL_CAMPAIGN_2023_03_14_02_02&utm_medium=email&utm_term=0_-bcee4a8ad6-%5BLIST_EMAIL_ID%5D)
-  
+
 ## 2023-03-16
 
 - [ Uber Go Style Guide ](https://github.com/uber-go/guide/blob/master/style.md)
-  
+
 ## 2023-03-15
 
 - [ 11 Reasons Not to Become Famous (or “A Few Lessons Learned Since 2007”) ](https://tim.blog/2020/02/02/reasons-to-not-become-famous/)
@@ -222,7 +303,7 @@ date: "now"
 - [ My Startup Banking Story ](https://mitchellh.com/writing/my-startup-banking-story)
 - MITCHELL HASHIMOTO
 - [ Grow: How Perfectly Imperfect’s snowball growth started with word of mouth ](https://on.substack.com/p/grow-series-27-perfectly-imperfect?utm_source=post-email-title&publication_id=1&post_id=108152366&isFreemail=true&utm_medium=email)
-  
+
 ## 2023-03-14
 
 - [ Schemaless Databases Don't Exist ](https://orangematter.solarwinds.com/2015/02/24/schemaless-databases-dont-exist/)
@@ -233,13 +314,13 @@ date: "now"
 - [ WebAssembly serverless functions in AWS Lambda ](https://www.cncf.io/blog/2021/08/25/webassembly-serverless-functions-in-aws-lambda/)
 - [ The serverless revolution deserves more than just a serverless database ](https://stack.convex.dev/serverless-revolution)
 - [ A RedMonk Conversation: Why the future of serverless databases is distributed document-relational. ](https://redmonk.com/jgovernor/2022/08/10/a-redmonk-conversation-why-the-future-of-serverless-databases-is-distributed-document-relational/)
-  
+
 ## 2023-03-12
 
 - [ C++ Casting, or: “Oh No, They Broke Malloc!” ](https://embeddedartistry.com/blog/2017/03/15/c-casting-or-oh-no-they-broke-malloc/)
 - [ Laptop Class (noun): ](https://twitter.com/pmarca/status/1513113304104783875)
 - [ Career Growth Speed, Deconstructed ](https://medium.com/geekculture/career-growth-speed-deconstructed-a8005fec0a25)
-  
+
 ## 2023-03-11
 
 - [ What is size_t for? How do I iterate over an object in C? ](https://jameshfisher.com/2016/11/29/size_t_iterator/)
@@ -248,34 +329,34 @@ date: "now"
 - [ Why Choose Process Goals? (Over Outcome-Based Goals) ](https://durmonski.com/self-improvement/process-goals/?ref=refind)
 - [ Why Turborepo is migrating from Go to Rust ](https://vercel.com/blog/turborepo-migration-go-rust)
 - [ The Bones of Time ](https://studio.ribbonfarm.com/p/the-bones-of-time?utm_source=post-email-title&publication_id=9973&post_id=107688537&isFreemail=true&utm_medium=email)
-  
+
 ## 2023-03-10
 
 - [ Google dusts off the failed Google+ playbook to fight ChatGPT ](https://arstechnica.com/gadgets/2023/03/google-dusts-off-the-failed-google-playbook-to-fight-chatgpt/)
-  
+
 ## 2023-03-09
 
 - [Alvy Ray smith to ed catamul on pixar](http://alvyray.com/Pixar/documents/edfromalvy_2004.pdf)
 - [ The complexity of success and failure: the story of the Gimli Glider ](https://resilienceroundup.com/issues/the-complexity-of-success-and-failure-the-story-of-the-gimli-glider/)
 - [ Luck based medicine: my resentful story of becoming a medical miracle ](https://www.lesswrong.com/posts/fFY2HeC9i2Tx8FEnK/luck-based-medicine-my-resentful-story-of-becoming-a-medical)
-  
+
 ## 2023-03-08
 
 - [ Fixing the Next 10,000 Aliasing Bugs ](https://blog.polybdenum.com/2023/03/05/fixing-the-next-10-000-aliasing-bugs.html?utm_source=abyteofcodingnewsletter)
 - [ Metrics for Success: Why and How to Evaluate Privacy Choice Usability ](https://cacm.acm.org/magazines/2023/3/270204-metrics-for-success/abstract)
 - [ What is Secure Multi-Party Computation? ](https://www.skyflow.com/post/what-is-secure-multi-party-computation)
-  
+
 ## 2023-03-07
 
 - [ UUIDs to prevent Enumeration Attacks ](https://sqlfordevs.com/uuid-prevent-enumeration-attack?ref=Newsletter)
 - [ The LLaMA is out of the bag. Should we expect a tidal wave of disinformation? ](https://aisnakeoil.substack.com/p/the-llama-is-out-of-the-bag-should?utm_source=post-email-title&publication_id=1008003&post_id=106860489&isFreemail=true&utm_medium=email)
 - [ Reliability: It’s Not Great ](https://community.fly.io/t/reliability-its-not-great/11253)
 - [ Retail, search and Amazon’s $40bn ‘advertising’ business ](https://www.ben-evans.com/benedictevans/2023/3/6/ways-to-think-about-amazon-advertising)
-  
+
 ## 2023-03-06
 
 - [ 5 Years of Indie Hacking ](https://allisonseboldt.com/5-years-of-indie-hacking/)
-  
+
 ## 2023-03-05
 
 - [ What is Polymorphic Encryption? ](https://www.skyflow.com/post/a-look-at-polymorphic-encryption-the-new-paradigm-of-data-privacy)
@@ -291,15 +372,15 @@ date: "now"
 - [Personal finance](https://cs007.blog/)
 - [Ai: Startup vs incumbent value](https://blog.eladgil.com/p/ai-startup-vs-incumbent-value)
 - [Masayoshi sun may quarter update](https://group.softbank/en/news/webcast/20220512_02_en?utm_source=sg&utm_medium=email&utm_campaign=article_email&utm_content=article-7944)
-- Signal: You were the chosen one [video] 
-  - [https://media.ccc.de/v/mch2022-196-signal-you-were-the-chosen-one-](https://media.ccc.de/v/mch2022-196-signal-you-were-the-chosen-one-)
+- Signal: You were the chosen one [video]
+    - [https://media.ccc.de/v/mch2022-196-signal-you-were-the-chosen-one-](https://media.ccc.de/v/mch2022-196-signal-you-were-the-chosen-one-)
 - The untold story of sqlite
-  - [https://corecursive.com/066-sqlite-with-richard-hipp/#](https://corecursive.com/066-sqlite-with-richard-hipp/#) ✅
-  - notes
-    - 100,000 unique test cases. > 1B unique test cases.
-    - *Modified condition Decision coverage* (MCDC) is a way to test the condition of a decision.
-    - Writing everything from scratch to maintain freedom and control. SCM, Query parser, TH3, etc.
-  
+    - [https://corecursive.com/066-sqlite-with-richard-hipp/#](https://corecursive.com/066-sqlite-with-richard-hipp/#) ✅
+    - notes
+        - 100,000 unique test cases. > 1B unique test cases.
+        - *Modified condition Decision coverage* (MCDC) is a way to test the condition of a decision.
+        - Writing everything from scratch to maintain freedom and control. SCM, Query parser, TH3, etc.
+
 ## 2023-03-03
 
 - [ The vertical farming bubble is finally popping ](https://www.fastcompany.com/90824702/vertical-farming-failing-profitable-appharvest-aerofarms-bowery)
@@ -377,9 +458,10 @@ date: "now"
 - [ Waiting for a visa ](http://www.columbia.edu/itc/mealac/pritchett/00ambedkar/txt_ambedkar_waiting.html)
 - [ Canonical vs. non-canonical terminal input ](https://stackoverflow.com/questions/358342/canonical-vs-non-canonical-terminal-input)
 - [ The TCSAFLUSH argument specifies when to apply the change: in this case, it waits for all pending output to be written to the terminal, and also discards any input that hasn’t been read ](https://viewsourcecode.org/snaptoken/kilo/02.enteringRawMode.html)
-  - The ECHO feature causes each key you type to be printed to the terminal, so you can see what you’re typing.
-  - We can set a terminal’s attributes by (1) using tcgetattr() to read the current attributes into a struct, (2) modifying the struct by hand, and (3) passing the modified struct to tcsetattr()
-  - Entering raw mode
+    - The ECHO feature causes each key you type to be printed to the terminal, so you can see what you’re typing.
+    - We can set a terminal’s attributes by (1) using tcgetattr() to read the current attributes into a struct, (2)
+      modifying the struct by hand, and (3) passing the modified struct to tcsetattr()
+    - Entering raw mode
 - [ Setup ](https://viewsourcecode.org/snaptoken/kilo/01.setup.html)
 
 ## 2023-02-14
@@ -393,7 +475,8 @@ date: "now"
 ## 2023-02-08
 
 - [Big Data is dead]( https://motherduck.com/blog/big-data-is-dead/)
-  - Google bigquery founder writes about how big data is actually a pipe dream and nobody actually used big data for "big" data.
+    - Google bigquery founder writes about how big data is actually a pipe dream and nobody actually used big data for "
+      big" data.
 
 ## 2023-02-09
 
@@ -428,6 +511,7 @@ date: "now"
 - [Some insects I found inside turkish figs from trader joes](https://colinpurrington.com/2023/01/some-insects-i-found-inside-dried-turkish-figs-from-trader-joes/)
 
 ## 2023-01-26
+
 - [ Internal comms for executives. ](https://lethain.com/internal-comms-execs/)
 
 ## 2023-01-25
@@ -480,20 +564,23 @@ date: "now"
 ## 2023-01-16
 
 - [Art and science of spending money](https://collabfund.com/blog/the-art-and-science-of-spending-money)
-  - 1.Your family background and past-experiences heavily influences your spending preferences.
-  - 2.Entrapped by spending: Rather than using money to build a life, your life is built around money.
-  - 3.Frugality inertia: a lifetime of good savings habits can’t be transitioned to a spending phase.
-  - 4.An emotional attachment to large purchases, particularly a house.
-  - 5.The joy of spending can diminish as income rises because there’s less struggle, sacrifice, and sweat represented in purchases.
-  - 6.Asking $3 questions when $30,000 questions are all that matter
-  - 7.Social aspiration spending: Trickle-down consumption patterns from one socioeconomic group to the next.
-  - 8.An underappreciation of the long-term cost of purchases, with too much emphasis on the initial price.
-  - 9.No one is impressed with your possessions as much as you are.
-  - 10.Not knowing what kind of spending will make you happy because you haven’t tried enough new and strange forms of spending.
-  - 11.The social signaling aspect of money, on both things you buy for yourself and charity given to others.
-  - 12.The social hierarchy of spending, positioning you against your peers.
-  - 13.Spending can be a representation of how hard you’ve worked and how much stress went into earning your paycheck.
-  - “If you only wished to be happy, this could be easily accomplished; but we wish to be happier than other people, and this is always difficult, for we believe others to be happier than they are.”
+    - 1.Your family background and past-experiences heavily influences your spending preferences.
+    - 2.Entrapped by spending: Rather than using money to build a life, your life is built around money.
+    - 3.Frugality inertia: a lifetime of good savings habits can’t be transitioned to a spending phase.
+    - 4.An emotional attachment to large purchases, particularly a house.
+    - 5.The joy of spending can diminish as income rises because there’s less struggle, sacrifice, and sweat represented
+      in purchases.
+    - 6.Asking $3 questions when $30,000 questions are all that matter
+    - 7.Social aspiration spending: Trickle-down consumption patterns from one socioeconomic group to the next.
+    - 8.An underappreciation of the long-term cost of purchases, with too much emphasis on the initial price.
+    - 9.No one is impressed with your possessions as much as you are.
+    - 10.Not knowing what kind of spending will make you happy because you haven’t tried enough new and strange forms of
+      spending.
+    - 11.The social signaling aspect of money, on both things you buy for yourself and charity given to others.
+    - 12.The social hierarchy of spending, positioning you against your peers.
+    - 13.Spending can be a representation of how hard you’ve worked and how much stress went into earning your paycheck.
+    - “If you only wished to be happy, this could be easily accomplished; but we wish to be happier than other people,
+      and this is always difficult, for we believe others to be happier than they are.”
 - [ The Cab Ride I'll Never Forget ](https://kentnerburn.com/the-cab-ride-ill-never-forget/)
 - [ Memory Safe Languages in Android 13 ](https://security.googleblog.com/2022/12/memory-safe-languages-in-android-13.html)
 - [ The Shit Show ](https://furbo.org/2023/01/15/the-shit-show/)
@@ -729,7 +816,6 @@ date: "now"
 
 - [ ticket servers for distributed unique primary keys - flickr tech blog](https://code.flickr.net/2010/02/08/ticket-servers-distributed-unique-primary-keys-on-the-cheap/)
 
-
 ## 2022-12-05
 
 - [ Administrators Have Seized the Ivory Tower ](https://www.jamesgmartin.center/2022/11/administrators-have-seized-the-ivory-tower/)
@@ -862,22 +948,27 @@ date: "now"
 - [ David Sacks zenefits]( https://twitter.com/DavidSacks/status/804921026912063488 )
 - [ Reconstruction of a train wreck how a priming research went sideways ]( https://replicationindex.com/2017/02/02/reconstruction-of-a-train-wreck-how-priming-research-went-of-the-rails/comment-page-1/#:~:text=I%20accept%20the%20basic%20conclusions%20of%20this%20blog.%20To%20be%20clear%2C%20I%20do%20so%20(1)%20without%20expressing%20an%20opinion%20about%20the%20statistical%20techniques%20it%20employed%20and%20(2)%20without%20stating%20an%20opinion%20about%20the%20validity%20and%20replicability%20of%20the%20individual%20studies%20I%20cited. )
 - [ Problem with moderation ]( https://twitter.com/yishan/status/1586955288061452289 )
-  - freedom of speech is not an issue. (eg, spam)
-  - Finding controversial content in an unknown language is hard.
+    - freedom of speech is not an issue. (eg, spam)
+    - Finding controversial content in an unknown language is hard.
 
 ## 2022-10-30
 
 - [ Don’t Surround Yourself With Smarter People ](https://www.ribbonfarm.com/2014/11/05/dont-surround-yourself-with-smarter-people/)
 - [ “It’s an efficient way to get venture capitalists to put money into software projects.” ](https://www.bloomberg.com/features/2022-the-crypto-story/?leadSource=uverify%20wall)
-  - MONEY IS A SOCIAL FACT, EVEN WHEN THE MONEY IS BITCOIN OR ETHER
-  - Finance, at its heart, is about moving future wealth into the present by borrowing, or moving present wealth into the future by saving.
-  - The mechanism would be a smart contract that holds A tokens of type T1, and B tokens of type T2, and maintains the invariant that A * B = k for some constant k (in the version where people can invest, k can change, but only during investment/withdrawal transactions, NOT trades). Anyone can buy or sell by selecting a new point on the xy=k curve, and supplying the missing A tokens and in exchange receiving the extra B tokens (or vice versa). The “marginal price” is simply the implicit derivative of the curve xy=k, or y/x.
-  - central limit order book, or CLOB.
-  - “like if the Wright Brothers sold air miles to finance inventing the airplane.”
+    - MONEY IS A SOCIAL FACT, EVEN WHEN THE MONEY IS BITCOIN OR ETHER
+    - Finance, at its heart, is about moving future wealth into the present by borrowing, or moving present wealth into
+      the future by saving.
+    - The mechanism would be a smart contract that holds A tokens of type T1, and B tokens of type T2, and maintains the
+      invariant that A * B = k for some constant k (in the version where people can invest, k can change, but only
+      during investment/withdrawal transactions, NOT trades). Anyone can buy or sell by selecting a new point on the
+      xy=k curve, and supplying the missing A tokens and in exchange receiving the extra B tokens (or vice versa). The
+      “marginal price” is simply the implicit derivative of the curve xy=k, or y/x.
+    - central limit order book, or CLOB.
+    - “like if the Wright Brothers sold air miles to finance inventing the airplane.”
 - [ melsloop ](https://melsloop.com/)
 - [ On Michael crichton vs John Grisham's ambition ](https://www.calnewport.com/blog/2022/10/28/on-michael-crichtons-busy-ambition/)
-  - Michael crichton is wildly ambitious publishing books even while studying for medicine. had 5 marriages
-  - Grisham is slow. Published one book per year consistently. married for 30 years
+    - Michael crichton is wildly ambitious publishing books even while studying for medicine. had 5 marriages
+    - Grisham is slow. Published one book per year consistently. married for 30 years
 
 ## 2022-10-29
 
@@ -885,8 +976,10 @@ date: "now"
 - The Crypto Story
 - [ Taking Lichess to the Next Level ](https://lichess.org/blog/Y1wpBhEAAB8AwbeG/taking-lichess-to-the-next-level)
 - [ Truck nuts ](https://www.reddit.com/r/Entrepreneur/comments/yeriqj/whats_the_absolute_worst_business_idea_youve_ever/)
-- guy that worked at our company decided to quit and walk across the country in a teddy bear costume. Called him self BearSun. I thought he was crazy until he showed me his Shopify account and he had sold close to 500k in merchandise
-- Trick people into thinking the super hard shiny rocks are waaaaaaaaaay more valuable than they really are then control the supply to jack up the prices even more.
+- guy that worked at our company decided to quit and walk across the country in a teddy bear costume. Called him self
+  BearSun. I thought he was crazy until he showed me his Shopify account and he had sold close to 500k in merchandise
+- Trick people into thinking the super hard shiny rocks are waaaaaaaaaay more valuable than they really are then control
+  the supply to jack up the prices even more.
 - What's the absolute worst business idea you've ever heard that actually worked?
 
 ## 2022-10-28
@@ -927,8 +1020,8 @@ date: "now"
 - [ Getting to Gnome Mode ](https://studio.ribbonfarm.com/p/getting-to-gnome-mode)
 - [ Allegory of the cave ](https://en.wikipedia.org/wiki/Allegory_of_the_cave)
 - [ dealized organizations are not perfect. They are perfectly pathological ](https://www.ribbonfarm.com/2009/10/07/the-gervais-principle-or-the-office-according-to-the-office/)
-  - organizations don’t suffer pathologies; they are intrinsically pathological constructs
-  - The Gervais Principle, Or The Office According to “The Office”
+    - organizations don’t suffer pathologies; they are intrinsically pathological constructs
+    - The Gervais Principle, Or The Office According to “The Office”
 - [ People Staring at Computers ](https://kylemcdonald.net/psac/)
 
 ## 2022-10-20
@@ -936,8 +1029,10 @@ date: "now"
 - [ Manna – Two Views of Humanity’s Future – Chapter 1 ](https://marshallbrain.com/manna1)
 - [ We are still early with the cloud: why software development is overdue for a change ](https://erikbern.com/2022/10/19/we-are-still-early-with-the-cloud.html)
 - [ Wait vs interrupt culture ](http://benjaminrosshoffman.com/wait-vs-interrupt-culture/)
-  - Cutting people off when they are talking something is wrong. Even if you (think, you) know more than the other person
-  - It might be fine, in cases where there are absolutes. In amorphous situations, Everybody is more likely right. So, it is better to listen than speak.
+    - Cutting people off when they are talking something is wrong. Even if you (think, you) know more than the other
+      person
+    - It might be fine, in cases where there are absolutes. In amorphous situations, Everybody is more likely right. So,
+      it is better to listen than speak.
 
 ## 2022-10-18
 
@@ -1033,9 +1128,10 @@ date: "now"
 ## 2022-09-25
 
 - [Bus Ticket theory of genius - Paul Graham](http://paulgraham.com/genius.html)
-  - genius comes from incredible patient repetition, despite other people finding it useless eg. bus ticket collectors.
-  - A lot of times the genius might not be useful. But, some times, in some fields it might result in big payoffs for humanity
-
+    - genius comes from incredible patient repetition, despite other people finding it useless eg. bus ticket
+      collectors.
+    - A lot of times the genius might not be useful. But, some times, in some fields it might result in big payoffs for
+      humanity
 
 ## 2022-09-24
 
@@ -1066,7 +1162,6 @@ date: "now"
 
 - [ Stable Diffusion based Image Compression ](https://matthias-buehlmann.medium.com/stable-diffusion-based-image-compresssion-6f1f0a399202)
 - [ Using an unsafe language is a design flaw ]( http://trevorjim.com/using-an-unsafe-language-is-a-design-flaw/)
-
 
 ## 2022-09-18
 
@@ -1122,7 +1217,7 @@ date: "now"
 - [ What the interns have wrought, 2022 edition ](https://blog.janestreet.com/what-the-interns-have-wrought-2022/)
 - [ Is Engineering Management Bullshit? ](https://www.makeartwithpython.com/blog/is-engineering-management-bullshit/)
 - [ Two Philosophers Found Purpose in the World of Work ](https://www.wsj.com/articles/two-philosophers-found-purpose-in-the-world-of-work-11662177661)
-  - “The great human error,” Weil announced, “is to reason in place of finding out.”
+    - “The great human error,” Weil announced, “is to reason in place of finding out.”
 - [ Why We Are Changing the License for Akka ](https://www.lightbend.com/blog/why-we-are-changing-the-license-for-akka)
 - [ Mister Gotcha ](https://thenib.com/mister-gotcha/)
 - [ Git’s database internals I: packed object store ](https://github.blog/2022-08-29-gits-database-internals-i-packed-object-store/?utm_source=abyteofcodingnewsletter)
@@ -1136,7 +1231,6 @@ date: "now"
 
 - [ Master Foo and the Recruiter](http://www.catb.org/~esr/writings/unix-koans/recruiter.html)
 - [ I ran the world's largest DDoS-for-Hire empire and CloudFlare helped](https://rasbora.dev/blog/I-ran-the-worlds-largest-ddos-for-hire-empire-and-cloudflare-helped)
-
 
 ## 2022-09-03
 
@@ -1261,7 +1355,8 @@ date: "now"
 
 ## 2022-08-03
 
-- [ Content moderation at TikTok: b*obs, or no b*obs? ](https://zoningout.substack.com/p/content-moderation-at-tiktok-bobs?utm_source=substack&utm_medium=email)
+- [ Content moderation at TikTok: b*obs, or no
+  b*obs? ](https://zoningout.substack.com/p/content-moderation-at-tiktok-bobs?utm_source=substack&utm_medium=email)
 
 ## 2022-08-02
 
@@ -1409,7 +1504,6 @@ date: "now"
 - [ Why we started Cacheflow ](https://www.getcacheflow.com/post/why-we-started-cacheflow)
 - [Games](https://web.archive.org/web/20210515142312/https://copyright.gov/fls/fl108.pdf)
 - [Copyright](https://copyright.gov/circs/circ34.pdf)
-
 
 ## 2022-07-07
 
@@ -1596,7 +1690,7 @@ date: "now"
 - [How we spent 30K in less than 72 hours](https://hackernoon.com/how-we-spent-30k-usd-in-firebase-in-less-than-72-hours-307490bd24d)
 - [serverless, a lesson learned the hard way](https://sourcebox.be/serverless-a-lesson-learned-the-hard-way/) Good notes
   on things to take care of before deploying a server less service
-  - [Serv](https://sourcebox.be/serverless-follow-up-on-my-last-post/)
+    - [Serv](https://sourcebox.be/serverless-follow-up-on-my-last-post/)
 
 ## 2022-05-31
 
