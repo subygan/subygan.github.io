@@ -2,6 +2,13 @@ html {
   overflow-x: initial !important;
 }
 
+code.has-jax {
+    -webkit-font-smoothing: antialiased;
+    background: inherit !important;
+    border: none !important;
+    font-size: 100%;
+}
+
 #toc {
   float: left;
 }
