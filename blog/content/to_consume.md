@@ -21,7 +21,9 @@ These are the things that I am interested in learning.
 - [How does a database work, database internals](https://cstack.github.io/db_tutorial/)
 - [makefiles](https://makefiletutorial.com/#makefile-cookbook)
 - [Embedded system](https://users.ece.utexas.edu/~valvano/Volume1/E-Book/)
-
+- [Stanford crypto ](http://crypto.stanford.edu/~dabo/cs255/)
+  - [associated book](https://crypto.stanford.edu/~dabo/cryptobook/BonehShoup_0_4.pdf)
+- [GDPR](https://gdpr.eu/tag/gdpr/)
 
 # Projects
 

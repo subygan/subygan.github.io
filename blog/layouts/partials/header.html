@@ -9,7 +9,7 @@
   <meta property="og:title" content="Suriya Ganesh">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.suriya.cc">
-  <meta property="og:description" content="{{ .Summary }}">
+  <meta property="og:description" content="{{ .Params.description }}">
   <meta property="og:image" content="image.png">
   {{ $sass := resources.Get "style.scss" }}
   {{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
@@ -18,5 +18,5 @@
   {{ range .AlternativeOutputFormats -}}
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
-
+  {{ if .Params.mathjax }}{{ partial "mathjax.html" . }}{{ end }}
 </head>
