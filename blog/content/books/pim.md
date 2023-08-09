@@ -22,6 +22,4 @@ A __Function__ is defined by a pair of I/O. {(a<sub>1</sub>,b<sub>1</sub>)} wher
 When \\(a \\ne 0\\), there are two solutions to (ax^2 + bx + c = 0 ) and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
-{{< math >}}$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$${{< /math >}}
-
 __preimage__ of b is denoted as 
