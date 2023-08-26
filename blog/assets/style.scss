@@ -27,6 +27,16 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+.content-area{
+display:flex;
+column-gap: 100px;
+margin:30px;
+border-left: 100px;
+#tock{
+max-width: 300px;
+}
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -64,6 +74,10 @@ a:active, a:hover {
   color: var(--select-text-font-color);
 }
 
+#toc{
+
+}
+
 #write {
   margin: 0 auto;
   height: auto;
@@ -73,6 +87,7 @@ a:active, a:hover {
   position: relative;
   white-space: normal;
   overflow-x: visible;
+  flex-grow: 8;
   padding-top: 36px;
 }
 
@@ -102,7 +117,15 @@ body.typora-export {
   pointer-events: none;
 }
 
+
+
 @media screen and (max-width: 500px) {
+
+  .content-area{
+  .toc{
+  display: none;
+  }
+  }
   body.typora-export {
     padding-left: 0px;
     padding-right: 0px;
@@ -783,6 +806,7 @@ mark .md-meta {
   margin: auto;
   display: flex;
   flex-direction: row;
+  flex-grow: 10;
 }
 
 .typora-export-sidebar {
@@ -808,6 +832,12 @@ mark .md-meta {
 }
 
 @media screen and (max-width: 1024px) {
+
+  .content-area{
+  .toc{
+  display: none;
+  }
+  }
   .typora-export-sidebar, .typora-export-sidebar .outline-content {
     width: 240px;
   }

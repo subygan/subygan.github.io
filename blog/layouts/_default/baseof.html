@@ -5,7 +5,11 @@
 
   <body class='typora-export'>
 
+  <div class="content-area">
+    <div class ="toc">
+    {{ partial "toc.html" .}}
+    </div>
       {{ block "main" . }}{{ end }}
-<!--      comment below section to test toc. this is located at /templates/partials/toc3.html-->
+  </div>
   </body>
 </html>
