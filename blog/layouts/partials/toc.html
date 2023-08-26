@@ -1,9 +1,8 @@
 {{ $m := dict }}
 {{ $endKey := "aaaaaaaaa" }}
 
-{{ range .Site.Pages }}
-<p></p>
 
+{{ range .Site.Pages }}
     {{ $title := .Params.title }}
 
 <!--    Trim the trailing and preceding slashes in the link-->
@@ -12,7 +11,6 @@
 
     {{ with $title }}
     {{ with $link }}
-        <p></p>
         {{ $sp := split $link "/"}}
 
         {{ $metadata := dict "title" $title }}
@@ -31,5 +29,6 @@
 {{ end }}
 
 <div id="tock">
+    <h4>Table of contents</h4>
 {{ partial "parse_dict.html" (dict "dictionary" $m "prefix" "") }}
 </div>

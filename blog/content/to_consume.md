@@ -24,6 +24,7 @@ These are the things that I am interested in learning.
 - [Stanford crypto ](http://crypto.stanford.edu/~dabo/cs255/)
   - [associated book](https://crypto.stanford.edu/~dabo/cryptobook/BonehShoup_0_4.pdf)
 - [GDPR](https://gdpr.eu/tag/gdpr/)
+- [Beej's guide to networking](https://beej.us/guide/)
 
 # Projects
 
