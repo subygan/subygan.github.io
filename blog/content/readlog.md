@@ -6,6 +6,82 @@ description: I try to write collate all the stuff I find around the internet her
 date: "now"
 ---
 
+## 2023-09-02
+
+- [ Category:United States in rem cases ](https://en.wikipedia.org/wiki/Category:United_States_in_rem_cases)
+
+
+## 2023-08-31
+
+- [ Search by text, voice, or image ](https://search.googleblog.com/2011/06/search-by-text-voice-or-image.html)
+
+## 2023-08-27
+
+- [ In This Essay I Will: On Distraction ](https://www.theparisreview.org/blog/2023/08/23/in-this-essay-i-will-on-distraction/)
+
+## 2023-08-26
+
+- [ Web Scraping for Me, But Not for Thee (Guest Blog Post) ](https://blog.ericgoldman.org/archives/2023/08/web-scraping-for-me-but-not-for-thee-guest-blog-post.htm)
+
+## 2023-08-24
+
+- [ Privacy UX and privacy culture ](https://www.theprivacywhisperer.com/p/privacy-ux-and-privacy-culture?utm_source=post-email-title&publication_id=808767&post_id=136332237&isFreemail=true&utm_medium=email)
+
+## 2023-08-23
+
+- [ Privacy Sandbox: Noise Lab ](https://www.youtube.com/watch?v=a3-Ga5ciQg8)
+
+## 2023-08-22
+
+- [ The Redis Protocol is pretty great. ](https://lethain.com/redis-protocol/)
+
+## 2023-08-21
+
+- [ Programmers At Work John Warnock-1986 ](https://programmersatwork.wordpress.com/john-warnock/)
+
+## 2023-08-18
+
+- [https://static.googleusercontent.com/media/research.google.com/en//archive/spanner-osdi2012.pdf](https://static.googleusercontent.com/media/research.google.com/en//archive/spanner-osdi2012.pdf)
+- [ What is Google Zanzibar? ](https://authzed.com/blog/what-is-google-zanzibar)
+- [ Dear Sir, You Have Built a Compiler ](https://rachit.pl/post/you-have-built-a-compiler/)
+- [ 🔥When human knowledge becomes feedstock ](https://www.theprivacywhisperer.com/p/when-human-knowledge-becomes-feedstock?utm_source=substack&utm_medium=email)
+- [ THE DIGITAL PERSONAL DATA PROTECTION ACT OF INDIA, EXPLAINED ](https://fpf.org/blog/the-digital-personal-data-protection-act-of-india-explained/?utm_source=substack&utm_medium=email)
+
+## 2023-08-17
+
+- [ Getting a job at Apple without going to college or doing LeetCode ](https://aheze.substack.com/p/getting-a-job-at-apple-without-going)
+
+## 2023-08-16
+
+- [ Finbarr Timbers Blog Books Advice Prompt engineering   How is LLaMa.cpp possible? ](https://finbarr.ca/how-is-llama-cpp-possible/)
+
+## 2023-08-14
+
+- [https://www.meity.gov.in/writereaddata/files/The%20Digital%20Personal%20Data%20Potection%20Bill%2C%202022_0.pdf](https://www.meity.gov.in/writereaddata/files/The%20Digital%20Personal%20Data%20Potection%20Bill%2C%202022_0.pdf)
+- [ If you succeed; you will fail 2022/07/21 (1242 words) ](https://boyter.org/posts/if-you-succeed-you-will-fail/)
+
+## 2023-08-10
+
+- [ Many temptations of an open-source chrome extension developer #670 ](https://github.com/extesy/hoverzoom/discussions/670)
+
+## 2023-08-09
+
+- [https://cpu.land/](https://cpu.land/)
+- [ Network byte order and host byte order ](https://www.ibm.com/docs/ja/zvm/7.2?topic=domains-network-byte-order-host-byte-order)
+- [ int getsockopt(int socket, int level, int option_name, void *option_value, socklen_t *option_len); ](https://pubs.opengroup.org/onlinepubs/7908799/xns/getsockopt.html)
+- [https://build-your-own.org/redis/02_intro_sockets](https://build-your-own.org/redis/02_intro_sockets)
+
+## 2023-08-08
+
+- [ WEI? I’m a frayed knot ](https://www.eff.org/deeplinks/2023/08/your-computer-should-say-what-you-tell-it-say-1)
+- [The fuck you pattern](https://cedwards.xyz/the-fuck-you-pattern/ )
+- [Creative industries](https://morepablo.com/2023/06/creatives-industries.html)
+- [Turning my hobby into business made me hated it](https://shant.nu/turning-my-passion-hobby-into-a-business-made-me-hate-it/)
+
+## 2023-08-07
+
+- [ Is this all the medicine we were promised? ](https://trevorklee.substack.com/p/is-this-all-the-medicine-we-were)
+- 
 ## 2023-06-01
 
 - [ distcc: a fast, free distributed C/C++ compiler ](https://www.distcc.org/)

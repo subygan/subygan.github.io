@@ -5,19 +5,14 @@ layout: base
 description: Suriya's website
 ---
 
-My place on the internet where, I try to write about stuff I'm interested in.
+My place on the internet. Where I record my learnings, thoughts and ideas.
 
-💻  [tech](tech)
 
-📚  [books](books)
+💻  [tech stuff I come across](tech)
+
+📚  [books that I've read/reading](/books)
 
 🦋  [meta](/meta)
-
-🧙🏻  [about](/about)
-
-🔥   [lit](/lit)
-
-❝ [quotes](/quotes)
 
 🧑🏻‍🏫 [Readlog](/readlog)
 
