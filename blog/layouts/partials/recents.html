@@ -1,0 +1,12 @@
+
+{{ $sortedPages := sort .everything.Site.Pages "PublishDate" "desc" }}
+{{ $sortedPages := first .count $sortedPages }}
+
+<!--<ul>-->
+{{ range $sortedPages }}
+    {{ if .Title }}
+    <h5><a href="{{ .Permalink}}">{{ .Params.Emoji }} {{ .Title }}, &nbsp; {{ .PublishDate.Format "Jan 2 2006" }}</a></h5>
+<p>{{ .Summary }}...<a href="{{.Permalink }}">click to read</a></p>
+    {{ end }}
+{{end}}
+<!--</ul>-->

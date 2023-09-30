@@ -2,7 +2,8 @@
 title: Privacy Articles
 emoji: 📕
 description: Articles about privacy that I come across
-date: 2022-09-19 6:37 am 
+date: 2023-09-19 6:37 am
+layout: base
 ---
 
 ## Blogs
@@ -22,4 +23,3 @@ date: 2022-09-19 6:37 am
 ## Tools
 
 - [Browser Privacy Test](https://privacytests.org/)
-- 

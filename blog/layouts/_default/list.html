@@ -12,17 +12,22 @@
             <div class="blender" id="blender"></div>
             {{ partial "header.html" . }}
             {{ .Content }}
-
-            <ul>
+            <h2>Posts</h2>
+            <ul class="page-list">
                 <!-- Ranges through content/posts/*.md -->
-                {{ range .Pages }}
+                {{ $sortedPages := sort .Pages "PublishDate" "desc" }}
+                {{ range $sortedPages }}
                 {{ if .Title }}
                 <li>
+                    <a href="{{.Permalink}}"><p class="">
                     {{ if .Params.emoji }}
-                    <a href="{{.Permalink}}"><p class="">{{ .Params.emoji }} &nbsp;&nbsp;&nbsp;&nbsp;{{.Title}}</p></a>
-                    {{ else }}
-                    <a href="{{.Permalink}}"> 🗿   {{.Title}}</a>
+                    {{ .Params.emoji }} &nbsp;
+                        &nbsp;&nbsp;&nbsp;{{.Title}}
                     {{ end }}
+                    {{ if .Params.date }}
+                        ,{{.PublishDate.Format "Jan 2,'06"}}&nbsp;
+                    {{end}}
+                        &nbsp;</p></a>
                 </li>
                 {{ end }}
                 {{ end }}

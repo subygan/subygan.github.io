@@ -1,10 +1,11 @@
 baseURL: https://www.suriya.cc
 disablePathToLower: true
 languageCode: en-us
+summaryLength: 20
 title: Suriya's site
 params:
   author: Suriya Ganesh
-  description: Suriya's blog of Stuff he dabbles with
+  description: Suriya's blog of Stuff dabbles with
 
 module:
   imports:

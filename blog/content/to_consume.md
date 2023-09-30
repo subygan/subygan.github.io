@@ -3,6 +3,7 @@ title: To Consume
 emoji: 🛍
 description: My to-do list of learning.
 layout: base
+
 ---
 These are the things that I am interested in learning.
 

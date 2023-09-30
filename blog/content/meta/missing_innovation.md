@@ -3,7 +3,7 @@ title: The Missing innovation
 emoji: 🕵🏻‍♂️
 layout: base
 description: Focusing is a very difficult thing for me. My journal on trying to learn to focus on stuff I have to instead of fibrillating a thousand different things.
-publishdate: 2017-03-24
+publishdate: 2020-03-24
 ---
 
 Historically, Most innovation has originated from developed nations and trickled down to developing ones, very much following the [Trickle down efffect](https://en.wikipedia.org/wiki/Trickle-down_effect)
