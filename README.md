@@ -4,11 +4,19 @@ we're using notion for writing and typora for its design.
 So everything that we write on notion, has to be transferred to typora, compiled to html and then
 committed to the directory
 
+### Articles to write
+
+- [ ] PIPL review
+- [ ] DPDPA review
+- [ ] ML notes
+
 ### TODO
 
-- [ ] 
-- [ ] Recent articles at the bottom/sides?
-- [ ] Make a simple navigation bar
+- [ ] Newsletter
+- [ ] back button
+- [ ] update ML/AI section
+- [x] Recent articles at the bottom/sides?
+- [x] Make a simple navigation bar
 - [x] Simple sub indexing system in ruby.
 
 ## Manual:
