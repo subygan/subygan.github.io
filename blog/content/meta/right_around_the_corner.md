@@ -3,6 +3,7 @@ title: Right around the corner, A story of million possibilities
 emoji: 🎲
 description: Thoughts on Innovation, Economics and Opportunities
 place: CMU TCS hall
+date: 2023-09-21
 layout: base
 ---
 
@@ -40,7 +41,9 @@ The dark lined graph is where we are right now, and the dotted line was where we
 
 Notice the right end of the graph, where there are very few practitioners? This is the place where you would want to be. The __On-demand minority__. But, the problem is that being the edge of anything comes with a risk, You are potentially betting yourself onto something That might be a great thing or a dud. For a lot of people this is the part that is scary because uncertainty has always been pushed away and nobody wants to deal with the uncertainty of having to figure out what the future looks like. So, most people tend to get coagulated in the middle where, something is the "common wisdom" and end up doing what everyone else is doing, thereby making it difficult for everyone.
 
-If you somehow entered the market when something started growing, and rode it till the end. Yaay! to you, you can call yourself talented and retire with a lot of money. But, typically, when we start working we don't time what we get into, the market does. Hence, it is difficult to actually predict 
+In an ideal scenario we stay in the left end, It's okay to move up and down. within the left. 
+
+If you somehow entered the market when something started growing, and rode it till the end. Yaay! to you, you can call yourself talented and retire with a lot of money. But, typically, when we start working we don't time what we get into, the market does. Hence, it is difficult to actually predict what the future looks like.
 
 But, There is actually a sweet spot between when something is a pretty small tight-knit community and a huge opportunity. Timing it and being prepared for it requires bets into the future on our actions. But, it is actually easier to do than having to fight for the last bone, stuck in the middle.
 

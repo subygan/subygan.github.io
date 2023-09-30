@@ -8,9 +8,17 @@
             <div class="page-header-icon undefined"><span class="icon">{{ .Params.emoji }}</span></div>
             <h1 class="page-title">{{ .Title }}</h1>
         </header>
+        {{ if .Params.date }}
+        <p class="article-date">{{ .PublishDate.Format "January 2,2006" }}</p>
+        {{ end }}
         <div class="blender" id="blender"></div>
-        {{ partial "header.html" . }}
+
+
         {{ .Content }}
+        <H2>Recent Posts</H2>
+        {{ partial "recents.html" (dict "everything" . "count" 5) }}
+        <a href="/recents">Recents...</a>
+
         {{ partial "footer.html" . }}
         {{ partial "scripts.html" . }}
 

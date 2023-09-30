@@ -2,18 +2,25 @@
 title: Now
 emoji: 🐵
 layout: base
+date: 2023-09-13
 ---
 
 
 Things I'm focusing on right now
 
+## 2023-09-21
+
+- [ ] Learn 
+- [ ]
+
+
 ## 2022-10-18
 
-- [ ] Building Data intensive application - Martin Kleppman
+- [x] Building Data intensive application - Martin Kleppman
 - [ ] focusmate like app for study groups.
 
 ## 220306
-- [x] Learning [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
+- [x] Reading [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 - [x] Building a chrome extension
 
 ## 211213

@@ -6,6 +6,8 @@ html {
   float: left;
 }
 
+
+
 :root {
   --bg-color: #ffffff;
   --text-color: #333333;
@@ -117,6 +119,11 @@ body.typora-export {
   pointer-events: none;
 }
 
+.article-date{
+  font-size: 0.8rem;
+  color: #999;
+  margin-bottom: 10px;
+  }
 
 
 @media screen and (max-width: 500px) {
@@ -1486,15 +1493,19 @@ ol li {
   list-style-position: outside;
 }
 
+ol, ul {
+  list-style: none;
+}
+
 ul li {
+  .page-list{
+    list-style-type: none;
+    color: red;
+  }
   list-style-type: disc;
   list-style-position: outside;
 }
 
-ol,
-ul {
-  list-style: none;
-}
 
 blockquote,
 q {
@@ -2353,14 +2364,14 @@ pre > code {
 
 
 .navbar {
-  display: flex;
-  justify-content: center;
   width: 100%;
   positon: fixed;
   height: 2.5rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
+  display: flex;
 
+  justify-content: center;
   a {
     text-decoration: none;
     font-family: "Verdana", sans-serif;
@@ -2382,6 +2393,9 @@ pre > code {
 
     &:hover::after {
       width: 105%;
+    }
+    .back{
+      text-align: left;
     }
   }
 }
