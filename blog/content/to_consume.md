@@ -1,5 +1,5 @@
 ---
-title: To Consume
+title: To Learn
 emoji: 🛍
 description: My to-do list of learning.
 layout: base
@@ -26,6 +26,10 @@ These are the things that I am interested in learning.
   - [associated book](https://crypto.stanford.edu/~dabo/cryptobook/BonehShoup_0_4.pdf)
 - [GDPR](https://gdpr.eu/tag/gdpr/)
 - [Beej's guide to networking](https://beej.us/guide/)
+
+
+# Games:
+https://flexboxfroggy.com/
 
 # Projects
 
