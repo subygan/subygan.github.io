@@ -10,9 +10,7 @@ Things I'm focusing on right now
 
 ## 2023-09-21
 
-- [ ] Learn 
-- [ ]
-
+- [ ] I'm doing my Graduate studies in privacy Engineering at CMU
 
 ## 2022-10-18
 
@@ -21,10 +19,10 @@ Things I'm focusing on right now
 
 ## 220306
 - [x] Reading [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
-- [x] Building a chrome extension
+- [x] Building a Chrome extension
 
 ## 211213
-- [ ] ~~Build my own self hosted music player~~
+- [ ] ~~Build my own self-hosted music player~~
 - [x] Learn docker using the book [Docker in action](https://books.google.co.in/books/about/Docker_in_Action_Second_Edition.html?id=qzozEAAAQBAJ&source=kp_book_description&redir_esc=y)
 
 ## 211113

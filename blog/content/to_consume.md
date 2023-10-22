@@ -8,6 +8,11 @@ layout: base
 These are the things that I am interested in learning.
 
 
+## Privacy
+
+- Science, Privacy, and Freedom: Issues and Proposals for the 1970's. Part I--The Current Impact of Surveillance on Privacy, Alan F. Westin
+  Columbia Law Review, Vol. 66, No. 6 (Jun., 1966), pp. 1003-1050 (48 pages) https://www.jstor.org/stable/1120997
+
 # courses and competitions
 
 - [Build your own redis](https://build-your-own.org/redis/) 

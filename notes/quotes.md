@@ -17,8 +17,6 @@
 
 - “My life is the highest of values, too high to give up without a fight.” – Ayn Rand, Atlas Shrugged
 
-- “We are a species that devotes enormous resources, effort and time to touching each other’s genitals.” – Adam Rutherford (article in guardian)
-
 - “The proper function of man is to live, not to exist. I shall not waste my days in trying to prolong them. I shall use my time.” - Jack London
 
 - “We are modern yet ancient, advanced yet primitive. We are animals.” – will storr (“selfie” book)
@@ -26,10 +24,6 @@
 - Also, learn something everyday that will help you fight poverty and keep you in sparkling health - Marcus Aurelius
 
 - As our Island of knowledge grows, so does the shore of ignorance - John A Wheeler
-
-- Be wary of all earnestness - Mike Rowe
-
-- Big dreams live here, as do the genius to make them happen - Tim Cook
 
 - Cease to Hope and you will Cease to fear. - Hecato of Rhodes.
 

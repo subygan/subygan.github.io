@@ -9,6 +9,8 @@ layout: base
 ## Blogs
 
 - [Privacy best practices](https://blog.ovalerio.net/archives/2615)
+- [Why we care about privacy](https://www.scu.edu/ethics/focus-areas/internet-ethics/resources/why-we-care-about-privacy/)
+- [reflections on snowden revealations](https://www.ietf.org/archive/id/draft-farrell-tenyearsafter-00.html)
 - [PETs an intro to technologists](https://martinfowler.com/articles/intro-pet.html)
 - [Privacy UX and privacy culture](https://www.theprivacywhisperer.com/p/privacy-ux-and-privacy-culture)
 - [Who's good at data privacy](https://www.forbes.com/sites/forbestechcouncil/2022/02/22/whos-good-at-data-privacy/)
