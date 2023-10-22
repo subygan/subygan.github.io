@@ -4,9 +4,11 @@ title: Do the hard things.
 layout: base
 ---
 
-> Your life is ending, 1 minute at a time - Fight Club
+> Things may come to those who wait, but only the things left by those who hustle - Abraham Lincoln
 
 Life is short.
+
+I'm running to make the most out of it.
 
 I want to make time for all the words I haven't spoken with the people in my life.
 
