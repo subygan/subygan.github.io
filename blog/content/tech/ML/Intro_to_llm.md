@@ -1,5 +1,5 @@
 ---
-emoji: 💽
+emoji: 🐲
 title: Intro to LLM
 description: Andrej Karpathy's introduction to LLM talk.
 date: 2023-11-23
@@ -94,7 +94,7 @@ Just like in old stack. There are multiple security threats.
 
 ### My take:
 
-The custom data used to fine-tune models are the biggest moat for LLM companies.
+The custom data used to fine-tune models are the biggest moat for LLM products.
 
 How deep the customization occurs in the model makes The model 
 Creating customization at the prompt level is very cheap, just like how a lot of storytelling companies are doing these are the "wrappers over chatgpt". Making customization at the RAG level is slightly costlier like how customGPT does, I guess that is why the customGPT price is $0.2 per GB per user. Fine-tuning the model with custom data is going to be obviously the best way to get better results because they become part of the model and the model "understands" that information better.
