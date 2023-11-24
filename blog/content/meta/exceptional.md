@@ -2,8 +2,7 @@
 emoji: 🚀
 title: Be Exceptional
 description: collection of things on why being your best self is important.
-date: 2023-11-9
-layout: base
+date: 2023-11-09
 ---
 
 Move faster. Slowness anywhere justifies slowness everywhere.
@@ -12,4 +11,4 @@ Move faster. Slowness anywhere justifies slowness everywhere.
 
 Moving fast compounds so much more than people realize. - [Sam Altman](https://twitter.com/sama/status/1345140364995227648)
 
-
+c
