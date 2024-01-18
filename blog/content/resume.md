@@ -2,7 +2,7 @@
 emoji: 🎓
 title: Resume
 description: My Resume
-date: 2024-01-17
+date: 2024-01-09
 layout: base
 ---
 
