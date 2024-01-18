@@ -26,8 +26,4 @@ Other than that, in almost every other tests, LlamaGuard performs better in Meta
 Except for adaptability. where the model is expected to adapt to a new policy change. In this case, LLamaGuard performs better than OpenAI in OpenAI's own OpenAi Mod benchmark.
 Adaptability was tested purely with prompts, as this is a very flexible way of improving the policy
 It is great that Meta is publishing these model completely available to everyone.
-It is also interesting to note that, we now have multiple SOTA models specializing in different tasks.
-
-## notes and References:
-
-- [Simon Willson's blog](https://simonwillison.net/2023/Dec/8/purple-llama/)
+It is also interesting to note that, we now have multiple SOTA models specializing in different tasks other than OpenAI
