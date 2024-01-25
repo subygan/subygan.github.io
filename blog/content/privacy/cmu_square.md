@@ -47,7 +47,7 @@ This, Broadly involves 9 steps,
 ## My notes
 The framework focuses very much on __Requirement Engineering Team__ and their requirement. To me it feels like, This assumes a waterfall like model, or before the systems are put into place.
 
-This is my personal opinion, but the framework expects and provides a very happy path to the requirement definition goal. Usually organizations are more chaotic and the expectations of the stakeholders changes over time. 
+This is my personal opinion, but the framework expects and provides a very happy path to the requirement definition goal. Usually organizations are more chaotic and the expectations of the stakeholders changes over time.
 
 ## References:
 - [https://insights.sei.cmu.edu/library/security-quality-requirements-engineering-square](https://insights.sei.cmu.edu/library/security-quality-requirements-engineering-square)
