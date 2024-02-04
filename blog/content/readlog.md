@@ -6,6 +6,17 @@ description: I try to write collate all the stuff I find around the internet her
 date: "now"
 ---
 
+## 2023-02-04
+
+- https://www.npr.org/sections/goatsandsoda/2019/03/13/685533353/a-playful-way-to-teach-kids-to-control-their-anger
+- 
+
+## 2023-01-31
+
+- https://embracethered.com/blog/posts/2023/google-bard-data-exfiltration/
+- https://arxiv.org/abs/2302.12173
+- https://promptarmor.substack.com/p/data-exfiltration-from-writercom
+
 ## 2023-09-02
 
 - [ Category:United States in rem cases ](https://en.wikipedia.org/wiki/Category:United_States_in_rem_cases)

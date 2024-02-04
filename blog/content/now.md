@@ -11,6 +11,7 @@ Things I'm focusing on right now
 ## 2023-09-21
 
 - [ ] I'm doing my Graduate studies in privacy Engineering at CMU
+- [ ] Fervently Doing [leetcode](./tech/leetode_list).
 
 ## 2022-10-18
 
