@@ -5,6 +5,8 @@ A site to check if you are in a cult
 
 Site https://www.languagetransfer.org/
 
+https://www.window-swap.com/
+
 ### Games in arcane places
 
 - https://eieio.games/nonsense/game-11-flappy-bird-finder/
