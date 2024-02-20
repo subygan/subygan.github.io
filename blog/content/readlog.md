@@ -8,9 +8,10 @@ date: "now"
 
 ## 2023-02-04
 
-- https://www.npr.org/sections/goatsandsoda/2019/03/13/685533353/a-playful-way-to-teach-kids-to-control-their-anger
-- 
-
+- [How Inuit children  are taught anger control](https://www.npr.org/sections/goatsandsoda/2019/03/13/685533353/a-playful-way-to-teach-kids-to-control-their-anger)
+- [You are what you love](https://gspanos.tech/posts/facts-1/)
+  - This article was interesting, But, I loved this perspective from HN "This is such a privileged take", because most of the population is unable to or cannot "love their job". Most jobs are, by design menial and are outsourced because the person cannot be bothered with those jobs. like, pushing carts, or 
+- [How profanity check was made](https://victorzhou.com/blog/better-profanity-detection-with-scikit-learn/)
 ## 2023-01-31
 
 - https://embracethered.com/blog/posts/2023/google-bard-data-exfiltration/

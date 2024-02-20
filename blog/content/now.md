@@ -4,13 +4,12 @@ emoji: 🐵
 layout: base
 date: 2023-09-13
 ---
-
-
-Things I'm focusing on right now
+I have a long-running ailment called the [Shiny Object Syndrome](https://en.wikipedia.org/wiki/Shiny_object_syndrome). I come back to this page to remind self what my life's focus is currently. As you can see, I change my mind pretty consistently
 
 ## 2023-09-21
 
-- [ ] I'm doing my Graduate studies in privacy Engineering at CMU
+- [ ]g I'm doing my Graduate studies in privacy Engineering at CMU
+- [ ] My current
 - [ ] Fervently Doing [leetcode](./tech/leetode_list).
 
 ## 2022-10-18
