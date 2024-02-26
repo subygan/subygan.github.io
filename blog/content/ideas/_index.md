@@ -3,7 +3,6 @@ emoji: 💡
 title: Ideas
 description: General ideas that I come up with.
 date: 2023-03-14, Tue, 2:7
-layout: base
 ---
 
 ### cicd

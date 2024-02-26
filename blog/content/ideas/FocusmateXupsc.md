@@ -1,3 +1,10 @@
+---
+emoji: 🧐
+title: Prepmate
+description: a focumate like thing for exam preparation
+date: 2022-07-16
+layout: base
+---
 ### PrepMate
 
 Aspirants who are preparing for exams are heavily moving towards remote preparation. Barring the exceptional few, it is hard to keep motivation alive. and work and work and work.

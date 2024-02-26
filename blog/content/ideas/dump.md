@@ -1,4 +1,13 @@
+---
+emoji: 🗑️
+title: Idea dump
+description: A dump of ideas
+date: 2022-02-26
+layout: base
+---
+
 ### idea dump/graveyard
+
 - So, in email newsletters, the sponsor block is usually embedded into the newsletters. But, we could do better than that. We can have a dynamic, sponsor section. with gif. If you remember that timer-in-mail thing. It fetches gif based on the timing. We can do something very similar, but for ads. this means, You can show new ads to repeat customers. but there are certain problems. The resolution cannot be great. Also, we don’t have any data on how many people reopen old emails. My guess is not a lot.
 - serverless database solution. Which will be consistently distributed. While also being super cheap.
 - github, slack or such integration which could notify you on many devices.  You could just write a dirty script and then you will be notified sorta like this. https://ntfy.sh/

@@ -1,3 +1,11 @@
+---
+emoji: 🦠
+title: Micro ideas
+description: small ideas that I come up with 
+date: 2022-11-23
+layout: base
+---
+
 ## micro ideas
 
 - chat widget for websites connected with slack

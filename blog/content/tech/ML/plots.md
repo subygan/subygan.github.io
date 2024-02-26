@@ -1,4 +1,4 @@
-----
+---
 emoji: 📊
 title: Different types of graphs I come across
 description: Speedrunning Data Science
@@ -7,3 +7,4 @@ layout: base
 ---
 
 
+### Pandas
