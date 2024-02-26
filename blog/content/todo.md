@@ -15,6 +15,7 @@ These are the things that I am interested in learning.
 
 # courses and competitions
 
+- [Mamba the easy way](https://jackcook.com/2024/02/23/mamba.html)
 - [Build your own redis](https://build-your-own.org/redis/) 
 - [Distributed system from maelstorm](https://github.com/jepsen-io/maelstrom#documentation)
 - [Gossip glomers, fly.io](https://fly.io/dist-sys/)
@@ -69,6 +70,8 @@ https://flexboxfroggy.com/
 
 # Books
 
+- Harry Potter and the Methods of Rationality
+  - https://hpmor.com/
 - Algorithms for decision making
   - https://algorithmsbook.com/files/dm.pdf
 - Linux insides
