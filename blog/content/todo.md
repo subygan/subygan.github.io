@@ -65,7 +65,7 @@ https://flexboxfroggy.com/
 
 
 # small books
-
+- [Git from the ground up](https://jwiegley.github.io/git-from-the-bottom-up/)
 - [post quantum cryptography](https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/Brochure/quantum-safe-cryptography.pdf;jsessionid=0A645BD930E85BDED22DD2597C0A35DD.internet471?__blob=publicationFile&v=4)
 
 # Books

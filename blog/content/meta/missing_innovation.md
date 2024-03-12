@@ -2,7 +2,7 @@
 title: The Missing innovation
 emoji: 🕵🏻‍♂️
 layout: base
-description: Focusing is a very difficult thing for me. My journal on trying to learn to focus on stuff I have to instead of fibrillating a thousand different things.
+description: The missing innovation in 
 publishdate: 2020-03-24
 ---
 

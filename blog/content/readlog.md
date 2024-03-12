@@ -6,6 +6,8 @@ description: I try to write collate all the stuff I find around the internet her
 date: "now"
 ---
 
+
+
 ## 2023-02-04
 
 - [How Inuit children  are taught anger control](https://www.npr.org/sections/goatsandsoda/2019/03/13/685533353/a-playful-way-to-teach-kids-to-control-their-anger)
