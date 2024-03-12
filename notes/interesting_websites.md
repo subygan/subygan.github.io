@@ -14,3 +14,8 @@ https://www.window-swap.com/
 
 
 - LLM visualization, https://bbycroft.net/llm
+
+
+## Programming weirdness
+
+- https://k8s.af/

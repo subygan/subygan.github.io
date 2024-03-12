@@ -279,12 +279,12 @@ query language for property graphs
   ```
   - writes are fast, read is slow as O(n).
   - To _effectively find the keys_  we need an _index_ . But writing to the index takes extra time during writes, slowing it down
-  - The trade off is, well chosen indexes fasten queries. But, slowdown writes
+  - The tradeoff is, wellchosen indexes fasten queries. But, slowdown writes
   - Simplest index would be a hashmap which stores the offset of the data in the file. making it faster to fetch
 Usecase, we need to record number of times a video is played.
   - We can only append to a file. break the file into even sized chunks, when it reaches a certain size. _compaction_ can then be performed on these segments.
   - While compaction is happening, reads can still happen in the old files. Merging of multiple segments can also be done, without impact to reads
-  - Here, every segment has it's own hashmap. To find a key, we check in the recent segment's hashmap and then the next and then the next.
+  - Here, every segment has its own hashmap. To find a key, we check in the recent segment's hashmap and then the next and then the next.
   - __file format__ binary blob is better than csv
   - __Deleting__ When deleting a special record is made against that key. While merging, those keys are deleted
   - __Crash recovery__ Hashmap creation for every segment while startup would be slow. writing down index to disk helps in that
