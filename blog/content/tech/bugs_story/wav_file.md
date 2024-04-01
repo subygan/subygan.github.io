@@ -1,0 +1,17 @@
+---
+emoji: 🥴
+title: Wav file shenanigans
+description: I go around fixing problems with wav files. 
+date: 2024-03-19
+layout: base
+---
+
+Python's default `wave` library throws this error on specific wave file.
+
+```shell
+wave.Error: unknown format: 65534
+```
+This sucks because now, untrusted wav files can just crash the code.
+In this case, it is better to utilize Soundfile, which is more robust and is able to 
+I also uploaded this as a [pip installable package](https://pypi.org/project/transform-wav/).
+
