@@ -17,3 +17,7 @@ layout: base
   - Creating a knowledge graph to ground the reasoning of the LLM helps in fixing the hallucination problem
 - [Reasoning on Graphs](https://arxiv.org/pdf/2310.01061.pdf)
   - Using a Graph to generate reasoning paths and utilize it to answer questions.
+- [Should LLMs replace mTurk](https://osf.io/preprints/psyarxiv/4zdx9)
+  - Models are with a lot of biases built in them
+- [Artificial Artifical intelligence: Crowd workers...](https://arxiv.org/pdf/2306.07899.pdf)
+  - 

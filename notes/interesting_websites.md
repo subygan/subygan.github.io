@@ -16,6 +16,11 @@ https://www.window-swap.com/
 - LLM visualization, https://bbycroft.net/llm
 
 
-## Programming weirdness
+### interesting design websites
+
+- [Really good design stuff](https://iradesign.io/gallery/illustrations)
+- https://f ffuel.co/
+
+## Programming weirdnessg
 
 - https://k8s.af/
