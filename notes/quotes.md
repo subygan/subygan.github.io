@@ -6,7 +6,7 @@
 - The purpose of a habit is to remove that action from self- negotiation. You no longer expend energy deciding whether to do it. You just do it. Good habits can range from telling the truth, to flossing. - Kevin Kelly
 
 - We only see what we know.” - Goethe
-
+e
 - …therefore all change comes from unreasonable [people]. - George Bernard Shaw
 
 - At some point, the pain of not doing it becomes greater than the pain of doing it. – Steven Pressfield , (art of war)
