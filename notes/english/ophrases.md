@@ -14,7 +14,7 @@
 
 - __Tour De force__ - a show of skills it
 
-- __Cri de coer__ - a passionate complaint or protest
+- __cri de coer__ - a passionate complaint or protest
 
 - __passé__ -  out of fashion
 

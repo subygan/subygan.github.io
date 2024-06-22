@@ -6,6 +6,10 @@ date: 2023-06-3
 layout: base
 ---
 
+> "But I have promises to keep,
+> And miles to go before I sleep."
+> ― Robert frost, Stopping by woods
+
 >Frodo: "It's a pity Bilbo didn't kill Gollum when he had the chance."
 > 
 >Gandalf: "Pity? It's a pity that stayed Bilbo's hand. Many that live deserve death. Some that die deserve life. Can you give it to them, Frodo? Do not be too eager to deal out death in judgment. Even the very wise cannot see all ends. My heart tells me that Gollum has some part to play in it, for good or evil, before this is over. The pity of Bilbo may rule the fate of many." 

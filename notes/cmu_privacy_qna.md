@@ -45,7 +45,6 @@ Privacy is evolving from multiple areas and CMU has a strong security and privac
 
 - Handling releases at acko had to coordinate with more than 20 different developers per release and had 5 releases per week. This was before we had any CICD
 - Performance issue in the policy Engine at Skyflow, 150 ms to little over 5 ms.
-- 
 
 ## What do you want to achieve with your masters
 
