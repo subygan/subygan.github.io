@@ -1,0 +1,34 @@
+{{ $m := dict }}
+{{ $endKey := "aaaaaaaaa" }}
+
+
+{{ range .Site.Pages }}
+{{ $title := .Params.title }}
+
+<!--    Trim the trailing and preceding slashes in the link-->
+{{ $link := substr .RelPermalink 1 }}
+{{ $link := substr $link 0 -1 }}
+
+{{ with $title }}
+{{ with $link }}
+{{ $sp := split $link "/"}}
+
+{{ $metadata := dict "title" $title }}
+
+{{ $m2 := dict $sp (dict $endKey $metadata)  }}
+<!--        ||    {{ $m2 }}-->
+
+{{ $m = merge $m $m2 }}
+{{ range $k, $v := $sp }}
+{{ end }}
+<!--        !! {{ $m }}-->
+
+{{ end }}
+{{ end }}
+
+{{ end }}
+
+<div id="sidebar">
+
+    {{ partial "parse_dict.html" (dict "dictionary" $m "prefix" "") }}
+</div>

@@ -23,7 +23,7 @@ Email: sayyampe at andrew.cmu.edu
 
 
 -----------------------------------------------------------------------
-**Anna University**, *Apr 2019*
+*Anna University*, *Apr 2019*
 
 *Bachelor Engineering, Instrumentation Engineering*, *Chennai, India*
 -----------------------------------------------------------------------

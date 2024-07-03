@@ -2,11 +2,6 @@ html {
   overflow-x: initial !important;
 }
 
-#toc {
-  float: left;
-}
-
-
 
 :root {
   --bg-color: #ffffff;
@@ -29,14 +24,15 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-.content-area{
-display:flex;
-column-gap: 100px;
-margin:30px;
-border-left: 100px;
-#tock{
-max-width: 300px;
-}
+.content-area {
+  display: flex;
+  column-gap: 100px;
+  margin: 0.5rem;
+  border-left: 100px;
+
+  #sidebar {
+    max-width: 300px;
+  }
 }
 
 body {
@@ -76,7 +72,7 @@ a:active, a:hover {
   color: var(--select-text-font-color);
 }
 
-#toc{
+#sidebar {
 
 }
 
@@ -119,19 +115,19 @@ body.typora-export {
   pointer-events: none;
 }
 
-.article-date{
+.article-date {
   font-size: 0.8rem;
   color: #999;
   margin-bottom: 10px;
-  }
+}
 
 
 @media screen and (max-width: 500px) {
 
-  .content-area{
-  .toc{
-  display: none;
-  }
+  .content-area {
+    #sidebar {
+      display: none;
+    }
   }
   body.typora-export {
     padding-left: 0px;
@@ -840,19 +836,22 @@ mark .md-meta {
 
 @media screen and (max-width: 1024px) {
 
-  .content-area{
-  .toc{
-  display: none;
+  .content-area {
+    .toc {
+      display: none;
+    }
   }
-  }
-  .typora-export-sidebar, .typora-export-sidebar .outline-content {
-    width: 240px;
+  .typora-export-sidebar, .typora-export-sidebar .outline-content  {
+    width: 2400px;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .typora-export-sidebar {
+  .typora-export-sidebar{
     display: none;
+  }
+  .typora-export-content {
+    max-width: 100%;
   }
 }
 
@@ -1498,10 +1497,11 @@ ol, ul {
 }
 
 ul li {
-  .page-list{
+  .page-list {
     list-style-type: none;
     color: red;
   }
+
   list-style-type: disc;
   list-style-position: outside;
 }
@@ -2372,6 +2372,11 @@ pre > code {
   display: flex;
 
   justify-content: center;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures the navbar stays on top */
+  background-color: #f3f2ee; /* Adjust as needed */
   a {
     text-decoration: none;
     font-family: "Verdana", sans-serif;
@@ -2394,9 +2399,38 @@ pre > code {
     &:hover::after {
       width: 105%;
     }
-    .back{
+
+    .back {
       text-align: left;
     }
+  }
+}
+
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 0.25rem;
+  background-color: #ACD1DA;
+  z-index: 1000;
+}
+#topBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position */
+  bottom: 20px; /* 20px from the bottom */
+  right: 30px; /* 30px from the right */
+  z-index: 99; /* Stay on top */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #555; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  .hover {
+    background-color: #000; /* Add a dark-grey background on hover */
   }
 }
 
