@@ -1,6 +1,6 @@
 ---
 emoji: 🔥 
-title: Incredibly lit articles
+title: My Favorite list of incredibly lit articles
 description: These are some nice articles I like coming back to when I'm down
 date: 2023-05-2
 layout: base
@@ -12,6 +12,6 @@ layout: base
 - [Constant Curiosity](https://mentalpivot.substack.com/p/mental-pivot-55-constant-curiosity)
 - [The cab ride I'll never forget](https://kentnerburn.com/the-cab-ride-ill-never-forget/)
 - [examples of people quickly accomplishing amitious things together](https://patrickcollison.com/fast)
-- [michael crichton vs john grisham's amition](https://calnewport.com/on-michael-crichtons-busy-ambition/)
+- [michael crichton vs John Grisham's ambition](https://calnewport.com/on-michael-crichtons-busy-ambition/)
 - [On being earnest](http://paulgraham.com/earnest.html)
 - [Don't kill time](https://perell.com/essay/dont-kill-time/)

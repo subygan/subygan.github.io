@@ -7,6 +7,27 @@ date: "now"
 ---
 
 
+## 2024-06-23
+
+- [ Where Are the Elites? ](https://studio.ribbonfarm.com/p/where-are-the-elites?utm_source=post-email-title&publication_id=9973&post_id=145893367&utm_campaign=email-post-title&isFreemail=true&r=6yqkp&triedRedirect=true&utm_medium=email)
+- [ After my dad died, I ran and sold his company (and I was completely clueless) ](https://anandsanwal.me/2018/06/19/dad-company-sale/)
+
+## 2024-06-22
+
+- [ Current state of LLM Risks and AI Guardrails ](https://arxiv.org/html/2406.12934v1)
+
+## 2024-06-18
+
+- [ The better the models get, the harder it is for me to form a mental model of what goes on inside of them. ](https://news.ycombinator.com/item?id=40718566)
+- [ Estimating Work Lag ](https://two-wrongs.com/estimating-work-lag.html)
+- [ The Story of Reformatting 100k Files at Google in 2012 ](https://laurent.le-brun.eu/blog/the-story-of-reformatting-100k-files-at-google-in-2011)
+- [ Unskilled and unaware: second-order judgments increase with miscalibration for low performers ](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1252520/full)
+
+## 2024-06-17
+
+- [ How I Made Trading Cards with E-Ink Displays ](https://howtoware.co/wyldcard)
+- [ Let Tim Cook ](https://www.wheresyoured.at/untitled/?ref=ed-zitrons-wheres-your-ed-at-newsletter)
+
 ## 2024-03-04
 
 - [Live vs dead players](https://samoburja.com/live-versus-dead-players/)

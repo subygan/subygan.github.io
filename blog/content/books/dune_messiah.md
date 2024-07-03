@@ -1,7 +1,7 @@
 ---
 emoji: 🏜️
 title: Dune - The Messiah
-description: Reading Dune
+description: The sequel to Dune
 date: 2024-06-22
 layout: base
 ---
@@ -16,4 +16,5 @@ This also reminded me that people on the helm always have trouble close by, simi
 The ending was very matrix 3 ish for me. Paul loses his eyesight (neo also loses eyesight), sees using his "vision" (neo sees with his vision as well), Chani dies giving birth to a daughter (Trinity dies while giving birth to a daughter), in the end both the protagonists dies.
 
 I liked the messiah more than dune, even though it seems like messiah was poorly received. messiah showed an environment where things are beyond an individual's controller, even if he's a god emperor.
+
 
