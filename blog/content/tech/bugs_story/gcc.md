@@ -2,7 +2,7 @@
 emoji: 🙃
 title: gccissues
 description: Making gcc work properly
-date: 2024-07-8
+date: 2024-07-07
 layout: base
 ---
 

@@ -16,3 +16,6 @@
 [submodule "blog/content/tech/algos"]
 	path = blog/content/tech/algos
 	url = https://github.com/suriya-ganesh/Algorithms.git
+[submodule "resume"]
+	path = resume
+	url = git@github.com:suriya-ganesh/resume.git
