@@ -37,7 +37,7 @@ let's take a wide field like, software engineering, where things are being const
 ![innovation graph](/assets/images/innovation.png)
 
 
-The dark lined graph is where we are right now, and the dotted line was where we were. just like in the supply demand graph. Jobs start with a very few people doing something in a high demand market, which then invites a lot of people, driving the prices down. know, that this graph is a generalization, in reality this graph would be constantly active, adjusting based on the market demand.
+The dark lined graph is where we are right now, and the dotted line was where we were. just like in the supply demand graph. Jobs start with a very few people doing something in a high demand market, which then invites a lot of people, driving the prices down. know that this graph is a generalization, in reality this graph would be constantly active and adjusting based on the market demand.
 
 Notice the right end of the graph, where there are very few practitioners? This is the place where you would want to be. The __On-demand minority__. But, the problem is that being the edge of anything comes with a risk, You are potentially betting yourself onto something That might be a great thing or a dud. For a lot of people this is the part that is scary because uncertainty has always been pushed away and nobody wants to deal with the uncertainty of having to figure out what the future looks like. So, most people tend to get coagulated in the middle where, something is the "common wisdom" and end up doing what everyone else is doing, thereby making it difficult for everyone.
 
@@ -47,7 +47,7 @@ If you somehow entered the market when something started growing, and rode it ti
 
 But, There is actually a sweet spot between when something is a pretty small tight-knit community and a huge opportunity. Timing it and being prepared for it requires bets into the future on our actions. But, it is actually easier to do than having to fight for the last bone, stuck in the middle.
 
-The only thing this requires is being sensitive to the market and it's changes making sure we are just a little ahead of the curve, this means making sure you are at a position where such an opportunity can be sensed ahead of time, knowing the "market makers" who dictate which direction the winds blow and being there when it happens. Obviously a lot of times, the bets are going to turn out to be a dud. This does not mean that you're a grifter going from crypto to gen-AI and the next cool thing because then you're just a snake oil salesmen with no belief.
+This requires being sensitive to the market and it's changes making sure we are just a little ahead of the curve, this means making sure you are at a position where such an opportunity can be sensed ahead of time, knowing the "market makers" who dictate which direction the winds blow and being there when it happens. Obviously a lot of times, the bets are going to turn out to be a dud. This does not mean that you're a grifter going from crypto to gen-AI and the next cool thing because then you're just a snake oil salesmen with no belief.
 
 Basically we have two choices, take the "popular opinion", cross our fingers and hope we are not in the middle. But to me, actively running towards the front is a better strategy because it puts more variables onto my hands. I guess, it's a personal preference. 
 

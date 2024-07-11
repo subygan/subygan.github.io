@@ -9,9 +9,6 @@ What is your goal after studying masters in privacy?
 What are your strengths and weaknesses?
 How does your typical work and weekend look like?
 
-
-
-
 ## What did you work on during your time at skyflow?
 
 - data residency by re-architecting the system to support multiple regions

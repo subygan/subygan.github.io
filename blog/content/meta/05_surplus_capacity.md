@@ -28,3 +28,8 @@ What are people supposed to do with so much free time in their hands? My argumen
 What does this mean to me personally? Do I just start following the same route as well? 
 
 Well, no. This is just an observation on how things are and how it could be progressing. I strongly believe that [groupthink can harm individuals](https://thomasprosser.substack.com/p/dont-be-ideological). And won't be falling into that bucket for a long time.
+
+
+## update 09/07/2024
+
+Reading again, I seem to have definitely used the word "utilitarian" very liberally. Now that I'm a little wiser, I think existing within society and being a consumer is a form of productive utilitarianism. You need not do anything more than earn money and spend it on something. If some entity is ready to pay for your services it shows that the market values your time and effort. And you are contributing to the society by being a consumer.
