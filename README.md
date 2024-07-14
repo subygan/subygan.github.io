@@ -13,8 +13,8 @@ committed to the directory
 ### TODO
 
 - [ ] Newsletter
-- [ ] back button
-- [ ] update ML/AI section
+- [x] back button
+- [x] update ML/AI section
 - [x] Recent articles at the bottom/sides?
 - [x] Make a simple navigation bar
 - [x] Simple sub indexing system in ruby.
