@@ -40,6 +40,20 @@ The SDK supports these operations,
 
 The annoying part in setting up the batch inference was the s3 permissioning errors.
 
-There were multiple, unable to access bucket with role type errors.
 
-Which could be solved by changing the trust boundary of the bucket to include bedrock.amazonaws.com
+## Debugging
+
+
+There were multiple, unable to access bucket with role type errors.
+Which could be solved by changing the **trust boundary** of the bucket to include `bedrock.amazonaws.com`
+
+
+Max file size allowed is, 512 MB.
+For my output token count of 1K at least, when I uploaded 250 MB input. The job failed with a Max time reached when it reached 60%.
+So, more likely the real valid file size is 150 MB.
+
+I fragmented my dataset into 150 MB chunks and made multiple jobs out of them. This worked well.
+
+### links
+- [troubleshooting bedrock doc](https://docs.aws.amazon.com/bedrock/latest/userguide/security_iam_troubleshoot.html) 
+- [Code samples doc](https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference-example.html)
