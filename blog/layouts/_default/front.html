@@ -16,7 +16,7 @@
 
         {{ .Content }}
         <H2>Recent Posts</H2>
-        {{ partial "recents.html" (dict "everything" . "count" 5) }}
+        {{ partial "recents.html" (dict "everything" . "count" 10) }}
         <a href="/recents">More Recents...</a>
         {{ partial "footer.html" . }}
         {{ partial "scripts.html" . }}
