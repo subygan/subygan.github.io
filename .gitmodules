@@ -19,3 +19,6 @@
 [submodule "resume"]
 	path = resume
 	url = git@github.com:suriya-ganesh/resume.git
+[submodule "notes"]
+	path = notes
+	url = git@github.com:suriya-ganesh/notes.git

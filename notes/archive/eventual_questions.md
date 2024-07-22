@@ -1,7 +1,0 @@
--
-- arrow2 downfall?
-- Future roadmap?
-- Cloud agnostic?
-- Bandwidth problems?
-- Ray and it's benefits
-- 

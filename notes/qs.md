@@ -1,1 +1,0 @@
-how do hot swapping cpus work

@@ -1,3 +1,0 @@
-
-
-Allegory of the cave
