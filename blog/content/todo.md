@@ -15,6 +15,7 @@ These are the things that I am interested in learning.
 
 # courses and competitions
 
+- [Beej's guide to networking](https://beej.us/guide/)
 - [Mamba the easy way](https://jackcook.com/2024/02/23/mamba.html)
 - [Build your own redis](https://build-your-own.org/redis/) 
 - [Distributed system from maelstorm](https://github.com/jepsen-io/maelstrom#documentation)
@@ -22,16 +23,16 @@ These are the things that I am interested in learning.
 - [Advanced compilers: self-guided online course \(cornell\)](https://www.cs.cornell.edu/courses/cs6120/2020fa/self-guided/)
 - [pintos: a simple operating system](https://web.stanford.edu/class/cs140/projects/pintos/pintos_1.html)
 - [let's write a browser](https://nearthespeedoflight.com/browser.html)
+- [write your own git](https://wyag.thb.lt/)
 - [Explained from first principles](https://explained-from-first-principles.com/)
 - [Programmer's introduction to Mathematics](https://pimbook.org/)
-- [write your own git](https://wyag.thb.lt/)
 - [How does a database work, database internals](https://cstack.github.io/db_tutorial/)
 - [makefiles](https://makefiletutorial.com/#makefile-cookbook)
 - [Embedded system](https://users.ece.utexas.edu/~valvano/Volume1/E-Book/)
+- [Nand2Tetris](https://www.nand2tetris.org/)
 - [Stanford crypto ](http://crypto.stanford.edu/~dabo/cs255/)
   - [associated book](https://crypto.stanford.edu/~dabo/cryptobook/BonehShoup_0_4.pdf)
-- [GDPR](https://gdpr.eu/tag/gdpr/)
-- [Beej's guide to networking](https://beej.us/guide/)
+- [GDPR](https://gdpr.eu/tag/gdpr/) ✅
 
 
 # Games:

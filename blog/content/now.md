@@ -10,7 +10,10 @@ I have a long-running ailment called the [Shiny Object Syndrome](https://en.wiki
 
 - [ ]g I'm doing my Graduate studies in privacy Engineering at CMU
 - [ ] My current
-- [ ] Fervently Doing [leetcode](./tech/leetode_list).
+- [ ] Build my own Database in c++
+- [ ] Write a numpy like kernel in c++
+- [ ] Write a simple compiler in c++
+- [ ] Write a simple OS in c++
 
 ## 2022-10-18
 

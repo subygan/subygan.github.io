@@ -6,6 +6,102 @@ description: I try to write collate all the stuff I find around the internet her
 date: "now"
 ---
 
+## 2024-07-23
+
+- [ a very short book about copying ](https://matthewstrom.com/writing/copying/)
+  - Bill Gates later reflected on these cases: “we both had this rich neighbor named Xerox ... I broke into his house to steal the TV set and found out that [Jobs] had already stolen it.”9
+- [ All the existential risk, none of the economic impact. That's a shitty trade ](https://www.theintrinsicperspective.com/p/all-the-existential-risk-none-of)
+
+## 2024-07-22
+
+- [ The Matasano Crypto Challenges ](https://blog.pinboard.in/2013/04/the_matasano_crypto_challenges/)
+- [ Workload: Broadcast ](https://github.com/jepsen-io/maelstrom/blob/main/doc/workloads.md#workload-broadcast)
+
+## 2024-07-18
+
+- [ LLM agents and integration dead-ends ](https://www.interconnects.ai/p/llm-agents-integration)
+- [ Intelligent agents guided by LLMs ](https://www.paepper.com/blog/posts/intelligent-agents-guided-by-llms/)
+- [ The Objects of Our Life ](https://stevejobsarchive.com/exhibits/objects-of-our-life)
+- [ Panic! at the Job Market ](https://matt.sh/panic-at-the-job-market)
+- [Browser company values based on roadtrips](https://thebrowser.company/values/)
+
+## 2024-07-17
+
+- [ Hey, That’s My Model! Introducing Chain & Hash, An LLM Fingerprinting Technique ](https://arxiv.org/html/2407.10887v1)
+  - Following this, each question in the chain is hashed
+
+## 2024-07-16
+
+- [ My pet theory of how great software gets started ](https://hiandrewquinn.github.io/til-site/posts/my-pet-theory-of-how-great-software-gets-started/)
+
+## 2024-07-15
+
+- [ The Fascinating and Complicated Sex Lives of White-throated Sparrows ](https://www.audubon.org/news/the-fascinating-and-complicated-sex-lives-white-throated-sparrows)
+- [ We need visual programming. No, not like that. ](https://blog.sbensu.com/posts/demand-for-visual-programming/)
+- [ The Project Gutenberg Open Audiobook Collection ](https://marhamilresearch4.blob.core.windows.net/gutenberg-public/Website/index.html)
+- [ Hi there! ](https://www.joshwcomeau.com/email/2024-07-13-deadmau5/)
+  - I don’t really enjoy dance music. I don’t partake, I don’t pump it in my car... I don’t get excited about it.
+- [ What if Sequoia, Goldman and Barclays are all wrong about the AI bubble? ](https://www.linkedin.com/pulse/what-sequoia-goldman-barclays-all-wrong-ai-bubble-anshu-sharma-zcimc/)
+- [ Just be Rich: Critiquing Paul Graham's essay ](https://keenen.xyz/just-be-rich/)
+- [ How To Know When It's Time To Go ](https://thecodist.com/how-to-know-when-its-time-to-go/)
+
+## 2024-07-13
+
+- [ Use A Work Journal To Recover Focus Faster And Clarify Your Thoughts ](https://fev.al/posts/work-journal/)
+
+## 2024-07-11
+
+- [ The Joy of Reading Books You Don’t Entirely Understand ](https://reactormag.com/the-joy-of-reading-books-you-dont-entirely-understand/)
+
+## 2024-07-09
+
+- [ Nick Brown Smelled Bull ](https://www.narratively.com/p/nick-brown-smelled-bull)
+- [ Entering text in the terminal is complicated ](https://jvns.ca/blog/2024/07/08/readline/)
+- [ How we tamed Node.js event loop lag: a deepdive ](https://trigger.dev/blog/event-loop-lag)
+- [ Three Filters Needed to Think Through Problems ](https://fs.blog/garrett-hardin-three-filters/)
+- [ Mental Models: Getting the World to Do the Work for You ](https://fs.blog/mental-models-world-do-work-for-you/)
+- [ How I turned seemingly ‘failed’ experiments into a successful Ph.D. ](https://www.science.org/content/article/how-i-turned-seemingly-failed-experiments-into-a-successful-phd)
+- [ Made in USA](https://paulgraham.com/usa.html)
+
+## 2024-07-08
+
+- [ Successful people tend to be persistent. ](https://paulgraham.com/persistence.html)
+
+## 2024-07-07
+
+- [ Mark Zuckerberg and Peter Thiel ](https://www.techemails.com/p/mark-zuckerberg-peter-thiel-millennials)
+- [ Hyrum's Law ](https://www.hyrumslaw.com/)
+- [ How malloc broke Serenity's JPGLoader, or: how to win the lottery ](https://sin-ack.github.io/posts/jpg-loader-bork/)
+
+## 2024-07-05
+
+- [ Async Rust Is A Bad Language ]( https://bitbashing.io/async-rust.html#mutex-based-concurrency-considered-harmful-or-hoare-was-right )
+- [ Insights from over 10,000 comments on "Ask HN: Who Is Hiring" using GPT-4o & LangChain ]( https://tamerc.com/posts/ask-hn-who-is-hiring/ )
+
+## 2024-07-06
+
+- [ Free and Open Source Software–and Other Market Failures ](https://cacm.acm.org/practice/free-and-open-source-software-and-other-market-failures/)
+
+## 2024-07-03
+
+- [ Microfeatures I Love in Blogs and Personal Websites ](https://danilafe.com/blog/blog_microfeatures/)
+
+## 2024-06-27
+
+- [ The Half-Truth of First-Mover Advantage ](https://hbr.org/2005/04/the-half-truth-of-first-mover-advantage)
+- [ on shortification of "learning" ](https://x.com/karpathy/status/1756380066580455557?lang=en)
+
+## 2024-06-26
+
+- [ crushes are often just misplaced ambition ](https://read.mindmine.xyz/p/crushes-are-often-just-misplaced)
+
+## 2024-06-25
+
+- [ First we shape our social graph; then it shapes us ](https://www.henrikkarlsson.xyz/p/first-we-shape-our-social-graph-then)
+
+## 2024-06-24
+
+- [ Meet WebAgent: DeepMind’s New LLM that Follows Instructions and Complete Tasks on Websites ](https://pub.towardsai.net/meet-webagent-deepminds-new-llm-that-follow-instructions-and-complete-tasks-on-websites-955d2b087a2d)
 
 ## 2024-06-23
 
@@ -27,6 +123,10 @@ date: "now"
 
 - [ How I Made Trading Cards with E-Ink Displays ](https://howtoware.co/wyldcard)
 - [ Let Tim Cook ](https://www.wheresyoured.at/untitled/?ref=ed-zitrons-wheres-your-ed-at-newsletter)
+
+## 2024-06-15
+
+- [ The bitter lesson ](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)
 
 ## 2024-03-04
 
