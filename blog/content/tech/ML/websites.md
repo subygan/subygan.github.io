@@ -24,7 +24,8 @@ https://www.window-swap.com/
 ### interesting design websites
 
 - [Really good design stuff](https://iradesign.io/gallery/illustrations)
-- https://fffuel.co/
+- [JS Design generation](https://fffuel.co/)
+- [Corporate Memphis Humaaans for every situation](https://www.humaaans.com/)
 
 ## Programming weirdness
 
