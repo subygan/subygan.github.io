@@ -6,7 +6,7 @@ description: How, Why and What of working at a startup
 layout: base
 date: 2023-09-13
 ---
-
+ 
 
 ### Why did I decide to work at a startup?
 
@@ -43,4 +43,4 @@ I've never worked at a large company, but If I had to guess these are the things
 - Building something with a lot of flexibility is a lot harder than, Building something with fine constraints.
 
 
-"If I Had More time, I would've written a shorter letter" - Blaise Pascal 
+> "If I Had More time, I would've written a shorter letter" - Blaise Pascal 
