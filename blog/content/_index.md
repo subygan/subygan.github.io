@@ -9,8 +9,7 @@ My place on the internet. Where I record my learnings, thoughts and ideas.
 
 I Love reading and experimenting with Distributed and embedded systems.
 
-I'm currently a privacy Engineering Graduate at CMU, and I'm currently working on the intersection between Machine Learning, Privacy and Systems Software.
-I'm also __looking for an internship for Summer 2024__.
+I'm currently doing my Masters in Privacy Engineering at CMU, and my research is on the intersection between Machine Learning, Privacy and Systems Software.
 
 I enjoy meeting new people. So definitely send a shout-out to me at, hi at suriya.cc. 🙂
 
