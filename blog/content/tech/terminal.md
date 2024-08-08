@@ -1,4 +1,5 @@
 
+
 __Raw mode__ in a terminal is receiving the raw bytes from the `STDIN` file.
 terminal usually gets opened in __canonical mode__ which means input is fed to the program one line at a time, instead of character by character. This can be done by unsetting the `ICANON` flag. There are a lot of these _bitflags_
 
