@@ -6,8 +6,9 @@ description: Trying out pocketbase.
 date: 2022-09-01 22:15:00
 ---
 
+I've been looking for an alternative to firebase. Because OSS FTW!!
 
-Pocketbase is an alternative to firebase, A bold claim.
+Pocketbase is an alternative with A bold claim.
 
 But, it really does 2 things very well, AUTH APIs and CRUD APIs over DBs.
 

@@ -7,11 +7,11 @@
                 {{ if or .Sections .Pages }}
                 <a href="#" class="sidebar-nav-link" data-href="{{ .RelPermalink }}">{{ .Title }}</a>
                 <ul class="sidebar-nav-submenu">
-                    {{ range .Sections }}
-                    <li>
-                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                    </li>
-                    {{ end }}
+<!--                    {{ range .Sections }}-->
+<!--                    <li>-->
+<!--                         <a href="{{ .RelPermalink }}">{{ .Title }}</a>-->
+<!--                    </li>-->
+<!--                    {{ end }}-->
                     {{ range .Pages }}
                     <li>
                         <a href="{{ .RelPermalink }}">{{ .Title }}</a>

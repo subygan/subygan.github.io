@@ -144,14 +144,22 @@ return _429_ too many requests
   - web-tier is stateless, requests from same origin could be directed to the same servers
 
 
+### Scaling Websockets to millions of conections
+
+- Heartbeat
+- Requirement for fallback, http long polling
+  - i.e. the client makes a request and the server for a long while
+
+Vertical Scaling has limits + single point of failure. Updates needs to break the connection
+
 ## Consistent Hashing
 
 
-## Technical Words
+
+## Definitions
 
 - __GeoDNS__, routes all requests to the closest
 - __BGP4__, Border Gateway Protocol 4  is an internet protocol that is able to store and share reachability information with others in the Autonomous System.
 - __Token Bucket__, rate limiting algorithm by having counters and refreshing them in intervals
 - __leaking bucket__, rate limiting algorithm by pushing everything to a `bounded queue` and batch processing per interval.
 - __sliding window log__, rate limiting algorithm, where we store every request within the permitted window and count everything within before allowing requests to pass through.
-- 

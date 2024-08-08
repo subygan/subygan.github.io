@@ -6,6 +6,9 @@ date: 2024-03-19
 layout: base
 ---
 
+Reading input from users is difficult.
+I faced this issue with 
+
 Python's default `wave` library throws this error on specific wave file.
 
 ```shell

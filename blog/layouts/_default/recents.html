@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<div class='suriya-blog-content'>
+
+  <div id='write'  class=''>
+    <header>
+
+      <div class="page-header-icon undefined"><span class="icon">{{ .Params.emoji }}</span></div>
+      <h1 class="page-title">{{ .Title }}</h1>
+      <p class="page-description">{{ .Description }}</p>
+    </header>
+    {{ if .Params.date }}
+    <p class="article-date">{{ .PublishDate.Format "January 2,2006" }}</p>
+    {{ end }}
+    <div class="blender" id="blender"></div>
+
+    {{ .Content }}
+
+    {{ partial "recents.html" (dict "everything" . "count" 50) }}
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+
+    {{ end }}

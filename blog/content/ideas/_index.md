@@ -1,6 +1,6 @@
 ---
 emoji: 💡 
-title: Ideas
+title: Startup Ideas
 description: General ideas that I come up with.
 date: 2023-03-14, Tue, 2:7
 ---
