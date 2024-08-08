@@ -3,14 +3,16 @@
   {{ partial "header.html" . }}
   {{ partial "navigation.html" .}}
 
-  <body class='typora-export'>
-  <button class="menu-toggle" id="menu-toggle" onclick="toggleSidebar()" aria-label="Toggle menu">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-      </svg>
-  </button>
+  <body class='suriya-blog'>
+  <div class="menu-toggle-container">
+      <button class="menu-toggle" id="menu-toggle" onclick="toggleSidebar()" aria-label="Toggle menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+      </button>
+  </div>
   <div class="sidebar" id="sidebar">
       {{ partial "sidebar.html" .}}
   </div>
@@ -49,20 +51,55 @@
         menuToggle.classList.toggle('open');
     }
 
-    function checkMobile() {
-        const sidebar = document.getElementById('sidebar');
-        const menuToggle = document.getElementById('menuToggle');
-        if (window.innerWidth <= 768) {
-            sidebar.classList.remove('open');
-            menuToggle.style.display = 'flex';
-        } else {
-            sidebar.classList.remove('open');
-            menuToggle.style.display = 'none';
-        }
-    }
+    // function checkMobile() {
+    //     const sidebar = document.getElementById('sidebar');
+    //     const menuToggle = document.getElementById('menuToggle');
+    //     if (window.innerWidth <= 768) {
+    //         sidebar.classList.remove('open');
+    //         menuToggle.style.display = 'flex';
+    //     } else {
+    //         sidebar.classList.remove('open');
+    //         menuToggle.style.display = 'none';
+    //     }
+    // }
 
-    window.addEventListener('resize', checkMobile);
-    checkMobile();
+    // window.addEventListener('resize', checkMobile);
+    // checkMobile();
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const sidebarLinks = document.querySelectorAll('.sidebar-nav-link');
+
+
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                sidebarLinks.forEach(l => {
+                    l.classList.remove('active');
+                });
+
+
+                // Add active class to clicked link
+                this.classList.add('active');
+                const submenu = this.nextElementSibling;
+                if (submenu && submenu.classList.contains('sidebar-nav-submenu')) {
+                    // Toggle submenu visibility
+                    submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+                } else {
+                    // If no submenu, navigate to the link's href
+                    const href = this.getAttribute('href');
+                    if (href && href !== '#') {
+                        window.location.href = href;
+                    } else {
+                        // For links with '#' href, navigate to the data-href
+                        const dataHref = this.getAttribute('data-href');
+                        if (dataHref) {
+                            window.location.href = dataHref;
+                        }
+                    }
+                }
+            });
+        });
+    });
 
   </script>
   </body>

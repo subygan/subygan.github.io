@@ -1,33 +1,29 @@
-{{ $m := dict }}
-{{ $endKey := "aaaaaaaaa" }}
-
-
-{{ range .Site.Pages }}
-{{ $title := .Params.title }}
-
-<!--    Trim the trailing and preceding slashes in the link-->
-{{ $link := substr .RelPermalink 1 }}
-{{ $link := substr $link 0 -1 }}
-
-{{ with $title }}
-{{ with $link }}
-{{ $sp := split $link "/"}}
-
-{{ $metadata := dict "title" $title }}
-
-{{ $m2 := dict $sp (dict $endKey $metadata)  }}
-<!--        ||    {{ $m2 }}-->
-
-{{ $m = merge $m $m2 }}
-{{ range $k, $v := $sp }}
+{{ define "partials/sidebar.html" }}
+<aside class="sidebar-content">
+    <nav>
+        <ul class="sidebar-nav">
+            {{ range .Site.Sections }}
+            <li class="sidebar-nav-item">
+                {{ if or .Sections .Pages }}
+                <a href="#" class="sidebar-nav-link" data-href="{{ .RelPermalink }}">{{ .Title }}</a>
+                <ul class="sidebar-nav-submenu">
+                    {{ range .Sections }}
+                    <li>
+                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </li>
+                    {{ end }}
+                    {{ range .Pages }}
+                    <li>
+                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+                {{ else }}
+                <a href="{{ .RelPermalink }}" class="sidebar-nav-link">{{ .Title }}</a>
+                {{ end }}
+            </li>
+            {{ end }}
+        </ul>
+    </nav>
+</aside>
 {{ end }}
-<!--        !! {{ $m }}-->
-
-{{ end }}
-{{ end }}
-
-{{ end }}
-
-<div class="sidebar-content">
-    {{ partial "parse_dict.html" (dict "dictionary" $m "prefix" "") }}
-</div>
