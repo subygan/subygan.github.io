@@ -1486,10 +1486,13 @@ ul li {
   .page-list {
     list-style-type: none;
     color: red;
+    font-weight: bold;
+    &-sub{
+      font-weight: normal;
+    }
+
   }
 
-  list-style-type: disc;
-  list-style-position: outside;
 }
 
 

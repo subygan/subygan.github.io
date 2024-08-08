@@ -13,25 +13,41 @@
             {{ partial "header.html" . }}
             {{ .Content }}
             <h2>Posts</h2>
-            <ul class="page-list">
                 <!-- Ranges through content/posts/*.md -->
-                {{ $sortedPages := sort .Pages "PublishDate" "desc" }}
-                {{ range $sortedPages }}
+                {{ range .Pages }}
+
                 {{ if .Title }}
-                <li>
-                    <a href="{{.Permalink}}"><p class="">
+                <h3>
+                    <a href="{{.Permalink}}">
                     {{ if .Params.emoji }}
                     {{ .Params.emoji }} &nbsp;
                         &nbsp;&nbsp;&nbsp;{{.Title}}
                     {{ end }}
                     {{ if .Params.date }}
-                        ,{{.PublishDate.Format "Jan 2,'06"}}&nbsp;
+                        ,  {{.PublishDate.Format "Jan 2,'06"}}&nbsp;
                     {{end}}
-                        &nbsp;</p></a>
-                </li>
+                        &nbsp;</a>
+                </h3>
+                {{ if .Pages }}
+                <ul class="page-list-sub">
+                {{ range .Pages }}
+                    <li><a href="{{.Permalink}}">
+                        {{ if .Params.emoji }}
+                        {{ .Params.emoji }} &nbsp;
+                        &nbsp;&nbsp;&nbsp;{{.Title}}
+                        {{ end }}
+                        {{ if .Params.date }}
+                        ,  {{.PublishDate.Format "Jan 2,'06"}}&nbsp;
+                        {{end}}
+                    </a></li>
+                {{ end }}
+                </ul>
+                {{ end }}
+
                 {{ end }}
                 {{ end }}
             </ul>
+        </div>
             {{ partial "footer.html" . }}
             {{ partial "scripts.html" . }}
 </main>

@@ -1,9 +1,9 @@
 ---
 layout: base
 type: page
-emoji: 
+emoji: 🦸🏻‍♂️ 
 title: superuser changes
-description: 
+description: Some quick way to become a super user. 
 date: 2022-07-06 22:15:00
 ---
 

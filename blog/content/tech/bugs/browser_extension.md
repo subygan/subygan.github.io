@@ -2,9 +2,12 @@
 title: Fixing chrome extension issues
 description: logging all the issues I've faced..
 layout: base
-emoji: 
+emoji: 🧩
 date: 2022-02-12 22:15:00
 ---
+
+Bugs in a browser extension are always frustrating because extensions are usually so brittle. There are so many error handling and other challenges.
+This is from when I was building one.
 
 ### an Unknown error occured while fetching the script.
 
