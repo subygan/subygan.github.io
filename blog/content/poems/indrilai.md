@@ -25,3 +25,10 @@ layout: base
     
     
         – சாலை இளந்திரையன்
+
+
+This is a favorite poem of mine.
+It talks about the importance of persistence and untiring efforts.
+
+This poem has been a huge inspiration in my life to not give up when things gets rough and I'm down.
+There's a sense of joy in the feeling that there's no rest until the outcome is fruitful

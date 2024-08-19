@@ -21,3 +21,5 @@ layout: base
   - Models are with a lot of biases built in them
 - [Artificial Artifical intelligence: Crowd workers...](https://arxiv.org/pdf/2306.07899.pdf)
   - 
+- [Chronicling America](https://www.neh.gov/sites/default/files/inline-files/Newspaper_Navigator_Dataset_Paper.pdf)
+  - 

@@ -1,15 +1,36 @@
 ---
-emoji: 🗑️
-title: Idea dump
-description: A dump of ideas
-date: 2022-02-26
+emoji: 🦠
+title: Ideas
+description: ideas that I come up with from here and there 
+date: 2022-11-23
 layout: base
 ---
+
+## Problems I have
+
+- 100 years ago today
+  - Wouldn't it be interesting to read a newspaper 100 years ago today.
+- Menu -> Images
+  - The menucard in hotels are shitty and I am having to google every single thing when I come up with a new cuisine. I would love to go from menu card to image with ingredients and other details.
+
+- [15/08/24, 17:48:15] Limin Ge - Cmu: I think the notion AI is still not what people need
+  [15/08/24, 17:49:21] Limin Ge - Cmu: It's a tool that you could talk with, no problem. But lots of the time user still want to read the original notes
+  [15/08/24, 17:49:38] Limin Ge - Cmu: And understand the big picture of all his notes and knowledge
+  [15/08/24, 17:50:32] Limin Ge - Cmu: He wants to see a network of all of the notes he has and has a visualization tool to zoom in/out, filter specific tag, see the layered relations of knowledge, etc
+  [15/08/24, 17:51:00] Limin Ge - Cmu: The user wants such an AI tool to auto generate tags, and categories relations
+  [15/08/24, 17:51:22] Limin Ge - Cmu: The only thing he needs to do himself is to just write random things
+  [15/08/24, 17:52:07] Limin Ge - Cmu: It doesn't even need to be an organized paragraph. Just a random sentence. And it shall be categorized and tagged, and pop up when the user is browsing that tag or category, or related category
+  [15/08/24, 17:53:53] Limin Ge - Cmu: Which would be more interesting is that if the interface is not textual, but audio. The user records his own conversation, and could read a summary report of his daily thoughts. And could refer to any of his thought he had had one year ago
+  [15/08/24, 17:56:31] Limin Ge - Cmu: I mean context window will always be a constraint  for users. The bigger the context window of any AI is, the bigger the context will be. It's like the Wintel relation
+  [15/08/24, 17:57:43] Limin Ge - Cmu: Notion QA is a tool that suits for smaller window, human still need to refer to the whole knowledge base or database themselves. A lot more often than refer to the answer given by any QA tool, indeed.
+  - ^^^^^^^^^^ from my friend Limin 
+- Bulk processing gpt stuff is still a pain. I'd love a simple interface to dump some csv, jsonl etc and receive outputs.
 
 ### idea dump/graveyard
 
 - So, in email newsletters, the sponsor block is usually embedded into the newsletters. But, we could do better than that. We can have a dynamic, sponsor section. with gif. If you remember that timer-in-mail thing. It fetches gif based on the timing. We can do something very similar, but for ads. this means, You can show new ads to repeat customers. but there are certain problems. The resolution cannot be great. Also, we don’t have any data on how many people reopen old emails. My guess is not a lot.
 - serverless database solution. Which will be consistently distributed. While also being super cheap.
+  - 16/08/2024 this is being done 
 - github, slack or such integration which could notify you on many devices.  You could just write a dirty script and then you will be notified sorta like this. https://ntfy.sh/
 - Micro hosting services. Not every service needs to have six 9 SLA. A lot of services can go down occasionally and can still be fine. Providing a service which would make it cheap to host small stuff would be super useful. It could be marketed like a tinkerer's machine
 - A newsletter platform that is simple to use, embed etc. I’ve tried, mailchimp and others. There is too much back and forth to make a newsletter. Right now, substack is pretty much the only people who are doing this. Maybe a simple dashboard where you bring the domain name and we setup everything else. And all you have to do is embed the newsletter onto any site. and it comes with out of the box email verification and all
@@ -26,3 +47,20 @@ layout: base
 - Like, you can just outsource a trip or an experience to be custom built for you. All logistics problems will be solved by the concierge on behalf of you. This could be stuff like, finding the best way to organize a party. Either by getting quotes/ideas from multiple agents and compiling them or completing an end-to-end solution for a marriage or company party. Just state the problem, explain the ideal solution. Somebody will get it done for you.
 - Friendly running community. The application will help people keep tabs of each others running and their health. People can even run together, even when apart. schedule events and so on... The key to this business though is, building a community of people who are passionate about running.
 - Privacy based solutions
+
+## micro ideas 2022-11-23
+
+- chat widget for websites connected with slack
+- Github bot to figure out dead links in a repo
+- Github CI failure notifications for PRs I raised, in a private message in slack
+- wedding photo album for easy sharing.
+  - Would be useful with posterity and sharability
+- View someone's twitter profile in reverse order, i.e. oldest tweet first.
+  - Not a lot of tools exist right now
+- Hovering widget app with timer + schedule in mac
+- **focusmate for exam preparing**
+  - There could be seperate cohorts who are trying to prepare for separate exams.
+  - This is better than focusmate, because those who match would have a shared context
+- Update extension
+- Extension to convert any audio/video to text.
+- Using the same idea as the clock in email thing. But, it can be used to serve advertisements in news letters
