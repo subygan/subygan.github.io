@@ -1482,19 +1482,6 @@ ol, ul {
   list-style: none;
 }
 
-ul li {
-  .page-list {
-    list-style-type: none;
-    color: red;
-    font-weight: bold;
-    &-sub{
-      font-weight: normal;
-    }
-
-  }
-
-}
-
 
 blockquote,
 q {
@@ -2496,6 +2483,10 @@ $mobile-breakpoint: 768px;
     display: flex;
 
   }
+}
+
+ul li {
+  list-style-type: disc;
 }
 
 

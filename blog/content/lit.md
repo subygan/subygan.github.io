@@ -2,9 +2,11 @@
 emoji: 🔥 
 title: My Favorite list of incredibly lit articles
 description: These are some nice articles I like coming back to when I'm down
-date: 2023-05-2
+date: 2023-05-02
 layout: base
 ---
+
+Velocity matters the most
 
 - [Getting things done - Joel Spolsky](https://www.joelonsoftware.com/2006/10/25/the-guerrilla-guide-to-interviewing-version-30/)
 - [A little bit of slope makes up for a lot of y-intercept](https://gist.github.com/gtallen1187/e83ed02eac6cc8d7e185)
