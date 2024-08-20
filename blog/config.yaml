@@ -1,4 +1,5 @@
-baseURL: https://www.suriya.cc
+baseURL: https://suriya.cc
+enableGitInfo: true
 disablePathToLower: true
 languageCode: en-us
 summaryLength: 20

@@ -10,6 +10,29 @@ layout: base
 
 If you are on a unix-like environment, ports < 1024 (like 80) will require superuser privileges.
 
+## Disk mounting and unmounting
+
+```shell
+sudo mount -o discard,defaults <diskid> <dir>
+```
+
+you can get the disk id by
+
+```shell
+ls -l /dev/disk/by-id
+```
+
+Checking disk usage
+
+```shell
+df
+```
+
+## size of sum of files in directory
+
+```shell
+du -bch <dirname>
+```
 
 ## Checking the OS
 
@@ -73,3 +96,5 @@ screen -S <id> -X quit
 Scroll, `ctrl+A` then `esc` and scroll
 
 detach, `ctrl+A,D`
+
+

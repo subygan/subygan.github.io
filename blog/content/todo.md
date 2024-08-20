@@ -15,6 +15,7 @@ These are the things that I am interested in learning.
 
 # courses and competitions
 
+- [Build your own c compiler](https://nostarch.com/writing-c-compiler)
 - [Beej's guide to networking](https://beej.us/guide/)
 - [Mamba the easy way](https://jackcook.com/2024/02/23/mamba.html)
 - [Build your own redis](https://build-your-own.org/redis/) 
