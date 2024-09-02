@@ -6,7 +6,7 @@ date: 2024-07-14
 layout: base
 ---
 
-I experimented with a lot of models, and as advertised claude3-haiku gave the best results, in terms of quality and cost. At the time of writing 1K input tokens cost $0.00025. Which is mind blowingly good, because the next best model was about 8 times costlier not to mention gpt 4o which was about 20 times costlier.
+I experimented with a lot of models, and as advertised claude3-haiku gave the best results, in terms of quality and cost. At the time of writing 1K input tokens cost $0.00025. Which is mind blowingly cheap, because the next best model was about 8 times costlier not to mention gpt 4o which was about 20 times costlier.
 
 AWS was obvious for my experiments, Apart from chatgpt group of models, they have pretty wide range of models and it's fairly easy to experiment with them in the playground.
 But the SDK are still in beta, and the documentation is still strewn across multiple places.

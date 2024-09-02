@@ -26,8 +26,9 @@ I was also stuck with the app being unable to access the microphone or reach the
 
 As a primordial example of premature optimization, I also spent 6 hours setting up a functional Github-Actions pipeline. So that, I'll have the installation file magically land on my lap when I merge to main. Oh! how wrong I was. Every single platform has its own build pipeline and requirement and asset management styles. Why with 35 years of personal computer history isn't there a single asset management solution is beyond me.
 
-In the end we realized, the easiest way to distribute an application was through the web and spent another 10 hours writing a web version as well. I guess PG [was right](https://paulgraham.com/road.html) in focusing only on the web, It just took me 23 years extra.
+In the end we realized, the easiest way to distribute an application was through the web and spent another 10 hours writing a web version as well. I guess PG [was right](https://paulgraham.com/road.html) in focusing only on the web, It just took me 23 extra years .
 
-Part of the Mistakes were because, I was a noob to the platform and part of it was because how tangled Frontend development is.
+Part of the Mistakes were because, I was a noob to the platforms and part of it was because how tangled Frontend development is. 
 I've developed a massive respect to people work on these application which work consistency across so many platforms.
+
 And, I kinda don't blame companies for shipping every app with a chrome browser anymore.
