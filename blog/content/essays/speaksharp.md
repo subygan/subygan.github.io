@@ -9,7 +9,7 @@ layout: base
 
 # The problem
 
-Foreign Students in the US have a hard time understanding and integrating with the culture.
+International Students have a hard time understanding and integrating with the culture.
 This is true even if there's a good grasp of the language. 
 
 The problem is not the language itself. But the accent, the word usage, and the million different cultural references.
