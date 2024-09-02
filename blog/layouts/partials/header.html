@@ -3,18 +3,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{{.Params.Title}}</title>
+
+  {{ if .Params.description }}
+  <meta property="og:description" content="{{ .Params.description }}">
+  <meta property="description" content="{{ .Params.description }}">
+  {{ else }}
   <meta name="description" content="My place on the web with my content">
+  {{ end }}
   <meta name="author" content="Suriya Ganesh">
 
   <meta property="og:title" content="Suriya Ganesh">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.suriya.cc">
-  <meta property="og:description" content="{{ .Params.description }}">
-  <meta property="og:image" content="image.png">
+  {{ if .Params.image }}
+
+  <meta property="og:image" content="{{ .Params.image }}">
+  {{ else }}
+  <meta property="og:image" content="/assets/images/s.png">
+  {{ end }}
   {{ $sass := resources.Get "style.scss" }}
   {{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
-    <link rel="icon" type="image/x-icon" href="/assets/images/head.svg">
+    <link rel="icon" type="image/x-icon" href="/assets/images/s.png">
   {{ range .AlternativeOutputFormats -}}
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}

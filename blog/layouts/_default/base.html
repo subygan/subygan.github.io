@@ -11,11 +11,19 @@
     </header>
     {{ if .Params.date }}
     <p class="article-date">{{ .PublishDate.Format "January 2,2006" }}</p>
+
     {{ end }}
     <div class="blender" id="blender"></div>
 
 
     {{ .Content }}
+
+    {{ with .GitInfo }}
+    <p class="article-date">last update: {{ .AuthorDate.Format "2006-01-02" }}</p>
+    {{ end }}
+
+
+
     {{ partial "footer.html" . }}
     {{ partial "scripts.html" . }}
 
