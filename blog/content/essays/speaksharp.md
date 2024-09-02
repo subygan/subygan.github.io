@@ -4,6 +4,7 @@ title: Postmortem from building an AI speech coach
 description: We spent 3 months building a product that a lot of people wanted, but nobody used. These are all my learnings from doing 15 expert discussions and 50 user sessions.
 date: 2024-09-01
 layout: base
+image: /assets/images/speaksharp.png
 ---
 
 
