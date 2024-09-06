@@ -6,6 +6,11 @@ date: 2024-12-17
 layout: base
 ---
 
+## tools
+
+https://linkpreview.xyz/
+
+
 ## Weirdnesss
 
 https://cult-escape.com/cult-test/
@@ -32,7 +37,8 @@ https://www.window-swap.com/
 - https://k8s.af/
 - https://research.wmz.ninja/projects/phd/index.html
 
-## LLMs
+## ML
 
 - LLM visualization, https://bbycroft.net/llm
+- Model visualizer, https://netron.app/
 - https://chat.lmsys.org/

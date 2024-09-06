@@ -1,0 +1,111 @@
+{{/* layouts/shortcodes/media-carousel.html */}}
+{{ $carouselHTML := "" }}
+{{ $carouselHTML = printf "%s<div class='carousel'><div class='carousel-inner'>" $carouselHTML }}
+
+    {{ range .Params }}
+    {{ $media := . }}
+    {{ $mediaSrc := . }}
+    {{ $isVideo := false }}
+    {{ $fileExtension := path.Ext . }}
+    {{ if or (eq $fileExtension ".mp4") (eq $fileExtension ".webm") (eq $fileExtension ".ogg") }}
+    {{ $isVideo = true }}
+    {{ end }}
+
+    {{ if hasPrefix . "/assets/" }}
+    {{ $resource := resources.Get (strings.TrimPrefix "/assets/" .) }}
+    {{ if $resource }}
+    {{ $mediaSrc = $resource.RelPermalink }}
+    {{ else }}
+    {{ $mediaSrc = printf "%s" . }}
+    {{ end }}
+    {{ else if not (hasPrefix . "http") }}
+    {{ $mediaSrc = printf "%s%s" .Site.BaseURL . }}
+    {{ end }}
+
+    {{ if $isVideo }}
+    {{ $carouselHTML = printf "%s<video src='%s' controls style='max-width:100%%;height:auto;'>Your browser does not support the video tag.</video>" $carouselHTML $mediaSrc }}
+    {{ else }}
+    {{ $carouselHTML = printf "%s<img src='%s' alt='Carousel Image' style='max-width:100%%;height:auto;'>" $carouselHTML $mediaSrc }}
+    {{ end }}
+    {{ end }}
+
+    {{ $carouselHTML = printf "%s</div><button class='prev'>&lt;</button><button class='next'>&gt;</button></div>" $carouselHTML }}
+
+{{ $carouselHTML | safeHTML }}
+
+<style>
+    .carousel {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .carousel-inner {
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .carousel-inner img,
+    .carousel-inner video {
+        width: 100%;
+        flex-shrink: 0;
+        object-fit: contain;
+    }
+
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0,0,0,0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .prev { left: 10px; }
+    .next { right: 10px; }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const carousels = document.querySelectorAll('.carousel');
+
+        carousels.forEach(carousel => {
+            const inner = carousel.querySelector('.carousel-inner');
+            const prevBtn = carousel.querySelector('.prev');
+            const nextBtn = carousel.querySelector('.next');
+            const mediaElements = inner.querySelectorAll('img, video');
+            let currentIndex = 0;
+
+            function showMedia(index) {
+                inner.style.transform = `translateX(-${index * 100}%)`;
+                mediaElements.forEach((el, idx) => {
+                    if (el.tagName === 'VIDEO') {
+                        if (idx === index) {
+                            el.play();
+                        } else {
+                            el.pause();
+                        }
+                    }
+                });
+            }
+
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + mediaElements.length) % mediaElements.length;
+                showMedia(currentIndex);
+            });
+
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % mediaElements.length;
+                showMedia(currentIndex);
+            });
+
+            // Initial setup
+            showMedia(0);
+        });
+    });
+</script>

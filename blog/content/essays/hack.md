@@ -6,7 +6,7 @@ date: 2024-08-20
 layout: base
 ---
 
-Please tell us about the time you most successfully hacked some (non-computer) system to your advantage: They’re looking for evidence that you are clever. The ability to think out of the box and manipulate large systems to your advantage are critical to gaining an edge on the market when you have no capital advantage (which is usually the case with startups) https://medium.com/@zan2434/y-combinator-applicant-advice-289c58a2ca89
+YC is looking for evidence that you are clever. The ability to think out of the box and manipulate large systems to your advantage are critical to gaining an edge on the market when you have no capital advantage (which is usually the case with startups) https://medium.com/@zan2434/y-combinator-applicant-advice-289c58a2ca89
 
 
 Paul Graham (Co-Founder & Partner at Y Combinator)

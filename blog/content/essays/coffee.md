@@ -4,6 +4,7 @@ title: Coffee
 description: Increased Coffee-ness in my life.
 date: 2024-06-22
 layout: base
+image: /assets/images/heart_latte.jpg
 ---
 
 I've been getting ~~into~~ addicted to Coffee since last year. Currently, I'm at 4 shots of espresso per day right now.
