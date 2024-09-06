@@ -53,7 +53,7 @@ If someone says JIRA. Turn around and walk away. It won't work.
 
 ## Mistake #2: Not Listening to users more often
 
-I understand product problem quite intimately. I knew the language barrier that stops me from making new friends. I myself was an International student in foreign grounds. I had a hard time understanding the culture and the language. So everybody would want to improve in that dimension right?
+I knew the problem quite intimately. I've felt the language barrier that stops me from making new friends. I myself was an International student in foreign grounds. I had a hard time understanding the culture and the language. So everybody would want to improve in that dimension right?
 
 Wrong.
 
