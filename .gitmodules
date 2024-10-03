@@ -1,24 +1,24 @@
 [submodule "blog/content/tech/docker_learn"]
 	path = blog/content/tech/practice/docker
-	url = https://github.com/suriya-ganesh/docker_learn.git
+	url = https://github.com/subygan/docker_learn.git
 [submodule "blog/content/tech/js_learn"]
 	path = blog/content/tech/practice/js
-	url = https://github.com/suriya-ganesh/js_learn.git
+	url = https://github.com/subygan/js_learn.git
 [submodule "blog/content/tech/github_action_learn"]
 	path = blog/content/tech/practice/github_actions
-	url = https://github.com/suriya-ganesh/github_action_learn.git
+	url = https://github.com/subygan/github_action_learn.git
 [submodule "blog/content/tech/golang_learn"]
 	path = blog/content/tech/practice/golang
-	url = https://github.com/suriya-ganesh/golang_learn.git
+	url = https://github.com/subygan/golang_learn.git
 [submodule "blog/content/tech/flutter_learn"]
 	path = blog/content/tech/practice/flutter
-	url = https://github.com/suriya-ganesh/flutter_learn.git
+	url = https://github.com/subygan/flutter_learn.git
 [submodule "blog/content/tech/algos"]
 	path = blog/content/tech/algos
-	url = https://github.com/suriya-ganesh/Algorithms.git
+	url = https://github.com/subygan/Algorithms.git
 [submodule "resume"]
 	path = resume
-	url = git@github.com:suriya-ganesh/resume.git
+	url = git@github.com:subygan/resume.git
 [submodule "notes"]
 	path = notes
-	url = git@github.com:suriya-ganesh/notes.git
+	url = git@github.com:subygan/notes.git
