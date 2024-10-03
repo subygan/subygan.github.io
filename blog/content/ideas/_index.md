@@ -7,9 +7,23 @@ date: 2023-03-14, Tue, 2:7
 
 Inspiration comes from many places. I love jotting them down here.
 
+### Small app ideas
+- talk with a youtube video
+	- Simple extension to inject a chat window + summarization
+- LLamacoder for any LL
+	- https://github.com/nutlope/llamacoder
+- 
 
 ## Problems I have
 
+- LLM x privacy
+- Consumer AI products - character.ai, 
+- Automated Browser agent
+- Data manager
+- Simple to use embedded database + plugins
+- Large scale unstructured to structured data system
+- LLM workspace
+- LLM Operating System
 - 100 years ago today
   - Wouldn't it be interesting to read a newspaper 100 years ago today.
 - Menu -> Images

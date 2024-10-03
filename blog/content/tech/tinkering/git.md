@@ -7,6 +7,43 @@ layout: base
 ---
 
 
+
+## global gitignore
+
+I'm surprised I only came to know on 2024 that you can have a global gitignore
+
+you can just put this inside `~/.gitignore`
+
+
+```
+# Node
+npm-debug.log
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# WebStorm
+.idea/
+
+# vi
+*~
+
+# General
+log/
+*.log
+```
+
+
+and then do,
+
+```
+git config --global core.excludesfile ~/.gitignore
+```
+
+good riddance .DS_Store
 ## Installing Git-lfs
 
 MacOS:

@@ -57,7 +57,7 @@ I knew the problem quite intimately. I've felt the language barrier that stops m
 
 Wrong.
 
-While everyone is going through it, nobody wants to improve.
+It's true that everyone is going through it. Nobody wants to improve.
 
 Even our close friend circle didn't use the product more than a couple of times and needed constant reminders to use it.
 
@@ -74,13 +74,13 @@ I've been a systems engineer for the last 5 years. While I could configure a k8s
 
 And it was an idiotic ambitious idea to try to build an app that ran on all platforms from day 1.
 
-Flutter was completely new. While its a great framework, it abstracts too many platforms and each platform comes with their own thorny issues. For example, permissioning model for macOS, Windows, Android and iOS are all different. And I had to learn all of them and spent a day on it.
+Flutter was completely new. Its an awesome framework, but it abstracts too many platforms and each platform comes with their own thorny issues. For example, permissioning model for macOS, Windows, Android and iOS are all different. And I had to learn all of them and spent a day on it.
 
 Even setting up each of these development environment is an uphill battle with multiple IDEs and SDKs.
 
 I should've probably started with something that I was more familiar with, like react and deployed it on the web. (But No!!! my mind said - We want it native! We want it smooth! and We want it "always-on"! )
 
-I've documented (most)  my fronted development woes [here](/tech/bugs/frontend).
+I've documented (most) of  my fronted development woes [here](/tech/bugs/frontend).
 
 
 ## Things that went Great

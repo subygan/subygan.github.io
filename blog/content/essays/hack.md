@@ -1,5 +1,5 @@
 ---
-emoji: 
+emoji: 🤺
 title: Tell us about the time you most successfully hacked some (non-computer) system to your advantage
 description: collecting information about the classic question "Please tell us about the time you most successfully hacked some (non-computer) system to your advantage. (i.e. meeting hard to reach people, getting free stuff or money, getting out of a punishment, etc)"
 date: 2024-08-20

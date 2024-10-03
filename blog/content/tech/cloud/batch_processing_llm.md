@@ -15,7 +15,7 @@ As of the writing of this article, the stable channel of SDKs are not shipped wi
 
 Uninstall any botocore or boto3 that you might have installed previously.
 ```shell
-pip install botocore boto3
+pip uninstall botocore boto3
 ```
 
 Install the bedrock SDK by running 

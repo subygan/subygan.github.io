@@ -8,7 +8,6 @@ layout: base
 ---
 
 browser extensions have been an area of interest for a while. I tried building an extension that would help me save stuff in my [readlog](/readlog). Sort of simply highlight stuff from within the page.
-
 ## Chrome extension Architecture.
 
 There are Broadly a few moving pieces in an extension, `manifest.json`, `Background script/service worker`, `content-script`, `popup.html`, `popup.js`
@@ -43,6 +42,28 @@ Popup js is should be sent with the app bundle and loaded from `popup.html` and 
 ### [Chrome.scripting](https://developer.chrome.com/docs/extensions/reference/scripting/) API
 
 this api can be used to execute arbitrary script in a tab.
+
+
+## good extension templates
+
+```shell
+npm create chrome-ext@latest ext -- --template react-ts
+```
+
+This is the one I use the most, its super simple, clean and helps you hit the ground running immediately. although, not having hot reloading is quite annoying for me.
+
+
+```shell
+pnpm create plasmo --with-firebase-auth ext2
+```
+
+plasmo is also a project that is incredibly awesome and comes with an insane amount of batteries included and they also have a cloud offering that is specific to extensions
+comes with hot reloading. which makes life that much more easy. but takes some getting used to.
+
+### login
+
+use the `identity` permission in the extension. You'll save yourself a world of pain.
+
 
 ### stuff I found useful
 
