@@ -47,14 +47,8 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
-      - name: check python
-        run: python3 --version
-      - name: check dir
-        run: pwd
-      - name: validate
-        run: ls -la
       - name: install packages
-        run: pip install -r .github/workflows/requirements.txt
+        run: pip install -r requirements.txt
       - name: encrypt files
         run: python3 encrypt.py "${{ secrets.ENCRYPTION_KEY }}" blog/content/journal/
       - name: Install Node.js dependencies
