@@ -22,3 +22,6 @@
 [submodule "notes"]
 	path = notes
 	url = git@github.com:subygan/notes.git
+[submodule "blog/content/journal"]
+	path = blog/content/journal
+	url = git@github.com:subygan/journal.git

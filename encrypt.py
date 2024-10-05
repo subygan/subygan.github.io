@@ -51,18 +51,24 @@ def process_file(file_path, password):
         frontmatter = yaml.safe_load(frontmatter_content)
 
         if frontmatter.get('hasEncryptedContent') == True:
+            # Encrypt the frontmatter
             encrypted_frontmatter = encrypt_frontmatter(frontmatter, password)
             new_frontmatter = yaml.dump(encrypted_frontmatter, default_flow_style=False)
-            content = re.sub(frontmatter_pattern, f'---\n{new_frontmatter}---\n', content, flags=re.DOTALL)
 
-    pattern = r'{{< encrypt >}}(.*?){{< /encrypt >}}'
+            # Extract the body content (everything after the frontmatter)
+            body_content = content[frontmatter_match.end():]
 
-    def encrypt_match(match):
-        original_content = match.group(1)
-        encrypted_content = encrypt_content(original_content, password)
-        return f'<div class="hugo-encryptor-container"><div class="hugo-encryptor-cipher-text">{encrypted_content}</div>'
+            # Encrypt the entire body content
+            encrypted_body = encrypt_content(body_content, password)
 
-    new_content = re.sub(pattern, encrypt_match, content, flags=re.DOTALL)
+            # Construct the new content with encrypted frontmatter and body
+            new_content = f'---\n{new_frontmatter}---\n<div class="hugo-encryptor-container"><div class="hugo-encryptor-cipher-text">{encrypted_body}</div>'
+        else:
+            # If hasEncryptedContent is not True, keep the content as is
+            new_content = content
+    else:
+        # If there's no frontmatter, keep the content as is
+        new_content = content
 
     with open(file_path, 'w') as file:
         file.write(new_content)
