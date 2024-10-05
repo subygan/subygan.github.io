@@ -1,77 +1,62 @@
 import os
-import re
 import sys
 import base64
-import yaml
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad
 from Crypto.Hash import MD5
+from bs4 import BeautifulSoup
 
 def encrypt_content(content, password):
-    # Hash the password with MD5
     key = MD5.new(password.encode('utf-8')).hexdigest().encode('utf-8')
-    iv = key[:16]  # Use first 16 bytes of key as IV
-
-    # Add validation string and encode
-    content = "--- VALIDATION STRING ---"+content
+    iv = key[:16]
+    content = "--- VALIDATION STRING ---" + content
     content_bytes = content.encode('utf-8')
-
-    # Pad the content
     padded_content = pad(content_bytes, AES.block_size)
-
-    # Encrypt
     cipher = AES.new(key, AES.MODE_CBC, iv)
     ct_bytes = cipher.encrypt(padded_content)
-
-    # Encode to base64
     ct_base64 = base64.b64encode(ct_bytes).decode('utf-8')
-
+    print(f"Debug: Encrypted content length: {len(ct_base64)}")
     return ct_base64
 
-def encrypt_frontmatter(frontmatter, password):
-    encrypted_frontmatter = {}
-    for key, value in frontmatter.items():
-        if key in ['layout', 'date', 'hasEncryptedContent']:
-            encrypted_frontmatter[key] = value
-        elif isinstance(value, str):
-            encrypted_frontmatter[key] = encrypt_content(value, password)
-        else:
-            encrypted_frontmatter[key] = value
-    return encrypted_frontmatter
-
 def process_file(file_path, password):
-    with open(file_path, 'r') as file:
+    with open(file_path, 'r', encoding='utf-8') as file:
         content = file.read()
 
-    frontmatter_pattern = r'^---\s*\n(.*?)\n---\s*\n'
-    frontmatter_match = re.match(frontmatter_pattern, content, re.DOTALL)
+    soup = BeautifulSoup(content, 'html.parser')
 
-    if frontmatter_match:
-        frontmatter_content = frontmatter_match.group(1)
-        frontmatter = yaml.safe_load(frontmatter_content)
+    # Check for the hasEncryptedContent meta tag
+    meta_tag = soup.find('meta', attrs={'name': 'hasEncryptedContent', 'content': 'true'})
+    if not meta_tag:
+        return
+    print(f"Debug: File {file_path} has hasEncryptedContent meta tag.")
 
-        if frontmatter.get('hasEncryptedContent') == True:
-            # Encrypt the frontmatter
-            encrypted_frontmatter = encrypt_frontmatter(frontmatter, password)
-            new_frontmatter = yaml.dump(encrypted_frontmatter, default_flow_style=False)
+    content_area = soup.find('div', class_='content-area')
 
-            # Extract the body content (everything after the frontmatter)
-            body_content = content[frontmatter_match.end():]
+    if content_area:
+        print(f"Debug: Content area found in {file_path}")
+        print(f"Debug: Content area length before encryption: {len(str(content_area))}")
 
-            # Encrypt the entire body content
-            encrypted_body = encrypt_content(body_content, password)
+        # Encrypt the content area
+        encrypted_content = encrypt_content(str(content_area), password)
 
-            # Construct the new content with encrypted frontmatter and body
-            new_content = f'---\n{new_frontmatter}---\n<div class="hugo-encryptor-container"><div class="hugo-encryptor-cipher-text">{encrypted_body}</div>'
-        else:
-            # If hasEncryptedContent is not True, keep the content as is
-            new_content = content
+        # Replace the content area with the encrypted version
+        new_div = soup.new_tag('div')
+        new_div['class'] = 'content-area hugo-encryptor-container'
+        cipher_div = soup.new_tag('div')
+        cipher_div['class'] = 'hugo-encryptor-cipher-text'
+        cipher_div.string = encrypted_content
+        new_div.append(cipher_div)
+        content_area.replace_with(new_div)
+
+        new_content = str(soup)
+        print(f"Debug: New content length after encryption: {len(new_content)}")
+
+        with open(file_path, 'w', encoding='utf-8') as file:
+            file.write(new_content)
+
+        print(f"Debug: File {file_path} encrypted successfully.")
     else:
-        # If there's no frontmatter, keep the content as is
-        new_content = content
-
-    with open(file_path, 'w') as file:
-        file.write(new_content)
+        print(f"Debug: No content area found in {file_path}")
 
 def main():
     if len(sys.argv) != 3:
@@ -87,7 +72,7 @@ def main():
 
     for root, dirs, files in os.walk(directory_path):
         for file in files:
-            if file.endswith(('.md', '.html')):  # Process Markdown and HTML files
+            if file.endswith('.html'):  # Process only HTML files
                 file_path = os.path.join(root, file)
                 print(f"Processing file: {file_path}")
                 process_file(file_path, password)

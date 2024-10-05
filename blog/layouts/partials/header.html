@@ -21,6 +21,13 @@
   {{ else }}
   <meta property="og:image" content="/assets/images/s.png">
   {{ end }}
+
+  {{ if .Params.hasEncryptedContent }}
+  <meta name="hasEncryptedContent" content="true">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script type="module" src="/assets/js/decrypt.js"></script>
+  {{ end }}
+
   {{ $sass := resources.Get "style.scss" }}
   {{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">

@@ -47,10 +47,8 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
-      - name: install packages
-        run: pip install -r requirements.txt
-      - name: encrypt files
-        run: python3 encrypt.py "${{ secrets.ENCRYPTION_KEY }}" blog/content/journal/
+
+
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo
@@ -63,6 +61,10 @@ jobs:
             --minify \
             --baseURL "https://suriya.cc"
 
+      - name: install packages
+        run: pip install -r requirements.txt
+      - name: encrypt files
+        run: python3 encrypt.py "${{ secrets.ENCRYPTION_KEY }}" blog/public
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
