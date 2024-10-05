@@ -35,6 +35,10 @@ jobs:
     steps:
       - name: check python
         run: python3 --version
+      - name: check dir
+        run: pwd
+      - name: validate
+        run: cd
       - name: install packages
         run: python3 -m pip install -r requirements.txt
       - name: encrypt files
