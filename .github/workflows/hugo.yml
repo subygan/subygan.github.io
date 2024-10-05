@@ -33,6 +33,12 @@ jobs:
     env:
       HUGO_VERSION: 0.120.4
     steps:
+      - name: check python
+        run: python3 --version
+      - name: install packages
+        run: python3 -m pip install -r requirements.txt
+      - name: encrypt files
+        run: python3 encrypt.py "${{ secrets.ENCRYPTION_KEY }}" blog/content/journal/
       - name: Install Hugo CLI
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \

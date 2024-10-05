@@ -1,0 +1,7 @@
+<!-- layouts/shortcodes/encrypt.html -->
+{{ $content := .Inner | base64Encode }}
+<div class="encrypted" data-encrypted="{{ $content }}">
+    <!-- Placeholder content -->
+    <p>[Encrypted Content]</p>
+</div>
+{{ .Page.Store.Set "hasEncryptedContent" true }}
