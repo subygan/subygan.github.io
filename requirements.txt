@@ -1,2 +1,4 @@
+beautifulsoup4==4.12.3
 pycryptodome==3.21.0
 PyYAML==6.0.2
+soupsieve==2.6

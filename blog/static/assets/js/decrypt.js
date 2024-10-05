@@ -1,5 +1,5 @@
 const COOKIE_NAME = 'encrypted_content_password';
-const COOKIE_EXPIRY = 7 * 24 * 60 * 60 * 1000; // 7 days
+const COOKIE_EXPIRY = 3 * 24 * 60 * 60 * 1000; // 7 days
 const VALIDATION_STRING = "--- VALIDATION STRING ---";
 
 function getCookie(name) {
@@ -16,12 +16,8 @@ function setCookie(name, value, expiryMs) {
 }
 
 function decryptContent(encryptedContent, password) {
-    console.log("Encrypted content:", encryptedContent);
-    console.log("Password:", password);
-
     // Hash the password with MD5
     const key = CryptoJS.MD5(password).toString();
-    console.log("Hashed key:", key);
     const iv = CryptoJS.enc.Utf8.parse(key.slice(0, 16));
 
     // Decode base64
@@ -34,14 +30,10 @@ function decryptContent(encryptedContent, password) {
         { iv: iv, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7 }
     );
 
-    const decryptedString = decrypted.toString(CryptoJS.enc.Utf8);
-    console.log("Decrypted content:", decryptedString);
-
-    return decryptedString;
+    return decrypted.toString(CryptoJS.enc.Utf8);
 }
 
 function showPasswordPrompt() {
-
     // Create modal overlay
     const overlay = document.createElement('div');
     overlay.style.position = 'fixed';
@@ -91,27 +83,23 @@ function showPasswordPrompt() {
     });
 }
 
-
 async function decryptPage() {
-    console.log("starting decryption");
+    if (!document.querySelector('meta[name="hasEncryptedContent"][content="true"]')) {
+        return; // No encrypted content on this page
+    }
+
     let password = getCookie(COOKIE_NAME);
     if (!password) {
         password = await showPasswordPrompt();
         setCookie(COOKIE_NAME, password, COOKIE_EXPIRY);
     }
 
-    // Decrypt main content
-    const encryptedElements = document.querySelectorAll('.hugo-encryptor-cipher-text');
-    console.log(encryptedElements);
-    encryptedElements.forEach(element => {
-        const encryptedContent = element.textContent;
+    const encryptedElements = document.querySelectorAll('.hugo-encryptor-container');
+    encryptedElements.forEach(container => {
+        const encryptedContent = container.querySelector('.hugo-encryptor-cipher-text').textContent;
         try {
             const decryptedContent = decryptContent(encryptedContent, password);
-
-
-            console.log("Decryption result:", decryptedContent);
             if (decryptedContent.includes(VALIDATION_STRING)) {
-                const container = element.closest('.hugo-encryptor-container');
                 container.innerHTML = decryptedContent.replace(VALIDATION_STRING, "");
             } else {
                 console.log("Decryption failed: Invalid content");
