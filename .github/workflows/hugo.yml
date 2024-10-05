@@ -38,7 +38,7 @@ jobs:
       - name: check dir
         run: pwd
       - name: validate
-        run: ls
+        run: ls -la
       - name: install packages
         run: pip install -r ./requirements.txt
       - name: encrypt files
