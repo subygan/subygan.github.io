@@ -38,9 +38,9 @@ jobs:
       - name: check dir
         run: pwd
       - name: validate
-        run: cd
+        run: ls
       - name: install packages
-        run: python3 -m pip install -r requirements.txt
+        run: pip install -r ./requirements.txt
       - name: encrypt files
         run: python3 encrypt.py "${{ secrets.ENCRYPTION_KEY }}" blog/content/journal/
       - name: Install Hugo CLI
