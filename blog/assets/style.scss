@@ -23,6 +23,15 @@ html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+
+.hugo-encryptor-cipher-text {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 body, html {
   margin: 0;
   padding: 0;
