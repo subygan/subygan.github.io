@@ -7,6 +7,9 @@ layout: base
 ---
 
 
+- aiaac, AI incidents database.
+
+
 - [Scalable Extraction of Traning Data from \(Production\) Language Models](https://arxiv.org/pdf/2311.17035.pdf)
   - Making LLMs repeat the same word over and over again makes them emit the training data 3.5X better
 - [The pain of Building copilots](//)
