@@ -6,7 +6,7 @@ date: 2024-04-20
 layout: base
 ---
 
-[repo](https://github.com/suriya-ganesh/SpeechStream)
+[repo](https://github.com/subygan/SpeechStream)
 
 - [Nemo Speaker diarization training](https://github.com/NVIDIA/NeMo/blob/main/tutorials/speaker_tasks/Speaker_Diarization_Training.ipynb)
 - [MultiSpeaker Simulation](https://github.com/NVIDIA/NeMo/blob/main/tutorials/tools/Multispeaker_Simulator.ipynb)

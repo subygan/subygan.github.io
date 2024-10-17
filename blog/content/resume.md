@@ -12,7 +12,7 @@ Email: sayyampe at andrew.cmu.edu
 
 [linkedin.com/in/suriya-ganesh](https://linkedin.com/in/suriya-ganesh/)
 
-[github.com/suriya-ganesh](https://github.com/suriya-ganesh)
+[github.com/subygan](https://github.com/subygan)
 
 # Education
 

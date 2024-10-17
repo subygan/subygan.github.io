@@ -2549,3 +2549,30 @@ ul li {
     }
   }
 }
+
+.page-footer {
+  flex-shrink: 0;
+  padding: 20px 0;
+  bottom: 0;
+  width: 100%;
+}
+.line {
+  border-top: 1px solid #dee2e6;
+  margin-bottom: 20px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+}
+.social__icon {
+  margin: 0 10px;
+}
+.social__icon a {
+  color: #6c757d;
+  display: inline-block;
+}
+.social__icon svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}

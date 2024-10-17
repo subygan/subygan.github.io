@@ -3274,7 +3274,7 @@ date: "now"
 ## 211212
 
 - Was reading (and writing!!!) about Docker and its internals which can be
-  found [here](https://github.com/suriya-ganesh/docker_learn)
+  found [here](https://github.com/subygan/docker_learn)
 - [https://lwn.net/Articles/105375/](https://lwn.net/Articles/105375/)
     - Linus Torvalds article on management Torvalds, is quite the good dark comic writer.
 - [https://www.kj7nzl.net/blog/sending-sms-messages-through-iss/](https://www.kj7nzl.net/blog/sending-sms-messages-through-iss/)
