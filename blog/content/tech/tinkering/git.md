@@ -44,6 +44,9 @@ git config --global core.excludesfile ~/.gitignore
 ```
 
 good riddance .DS_Store
+
+# LFS
+
 ## Installing Git-lfs
 
 MacOS:

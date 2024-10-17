@@ -46,6 +46,7 @@ https://flexboxfroggy.com/
 
 
 # Blog posts
+- [Peter Thiel's CS183](https://blakemasters.tumblr.com/peter-thiels-cs183-startup)
 - [interview with shang Yi Chiang, R&D head at TSMC](https://archive.computerhistory.org/resources/access/text/2022/07/102792671-05-01-acc.pdf)
 - [how to do Distributed locking](https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html)
 - [There's no getting around you're building a distributed system](https://queue.acm.org/detail.cfm?id=2482856)
@@ -61,7 +62,7 @@ https://flexboxfroggy.com/
 - [What is amazon](https://zackkanter.com/2019/03/13/what-is-amazon/)
 - [Bill gates interview 1992 PDC 1992](https://learn.microsoft.com/en-us/events/pdc-pdc-1992/pdc-1992-keynote-bill-gates)
 - [https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript](https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript)
-- ~~[Adverserial collaboration - Daniel Kahneman](https://www.edge.org/adversarial-collaboration-daniel-kahneman)~~
+- [Adverserial collaboration - Daniel Kahneman](https://www.edge.org/adversarial-collaboration-daniel-kahneman)
 
 
 

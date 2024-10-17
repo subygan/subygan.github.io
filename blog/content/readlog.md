@@ -6,10 +6,121 @@ description: I try to write collate all the stuff I find around the internet her
 date: "now"
 ---
 
+## 2024-10-17
+
+- [ Gamma Radiation: The Incredible Hulk As a Model for Personal Growth ](https://www.shyamsankar.com/p/gamma-radiation-the-incredible-hulk)
+  - Intelligence is compounding all the time, and correspondingly, so are complacency and missed opportunity.
+- [ THE TYRANNY of STRUCTURELESSNESS ](https://www.jofreeman.com/joreen/tyranny.htm)
+- [ Existential risk, AI, and the inevitable turn in human history ](https://marginalrevolution.com/marginalrevolution/2023/03/existential-risk-and-the-turn-in-human-history.html)
+- [ Reflections on Palantir ](https://nabeelqu.substack.com/p/reflections-on-palantir)
+- [ CS183: Startup - Peter Thiel Class Notes ](https://blakemasters.tumblr.com/peter-thiels-cs183-startup)
+  
+## 2024-10-11
+
+- [ Life Lessons from the First Half-Century of My Career ](https://cacm.acm.org/opinion/life-lessons-from-the-first-half-century-of-my-career/)
+  
+## 2024-10-09
+
+- [ OUR ANDROID APP IS FROZEN IN CARBONITE ](https://ia.net/topics/our-android-app-is-frozen-in-carbonite)
+- [ End of the Road for Google Drive in Transmit ](https://blog.panic.com/end-of-the-road-for-google-drive-and-transmit/)
+  
+## 2024-10-08
+
+- [ The Checklist ](https://archive.is/0H188#selection-671.0-671.13)
+  
+## 2024-10-04
+
+- [ A Startup Founder To Scaleup CEO’s Journey from $0 to $25billion (Halliganism’s) ](https://www.linkedin.com/pulse/startup-founder-scaleup-ceos-journey-from-0-25billion-brian-halligan-e1f4e/)
+- [ I Solve Problems ](https://it-notes.dragas.net/2024/10/03/i-solve-problems-eurobsdcon/)
+
+## 2024-10-01
+
+- [ From bare metal to a 70B model: infrastructure set-up and scripts - imbue](https://imbue.com/research/70b-infrastructure/)
+  
+## 2024-09-30
+
+- [ NotebookLM’s automatically generated podcasts are surprisingly effective ](https://simonwillison.net/2024/Sep/29/notebooklm-audio-overview/)
+- [ Being Raised by the Internet ](https://jimmyhmiller.github.io/raised)
+  
+## 2024-09-26
+
+- [ A few notes on AWS Nitro Enclaves: Attack surface ](https://blog.trailofbits.com/2024/09/24/notes-on-aws-nitro-enclaves-attack-surface/)
+  
+## 2024-09-17
+
+- [ THIS. I would like to tell you a bit of a personal story and this may shed some light on your question. Disclaimer* I am American. ](https://news.ycombinator.com/item?id=41555679)
+  
+## 2024-09-03
+
+- [ The Art of Finishing ](https://www.bytedrum.com/posts/art-of-finishing/)
+  
+## 2024-09-01
+
+- [ Talk Less, Listen More ](https://thereformedbroker.com/2020/12/30/talk-less-listen-more/)
+- [ Why You Should Learn Linux ](https://opiero.medium.com/why-you-should-learn-linux-9ceace168e5c)
+  
+## 2024-08-31
+
+- [ The Most Dangerous Email I've Sent ](https://www.notyourlanguage.com/post/scariest_email/)
+
+
+## 2024-08-25
+
+[ You Are NOT Dumb, You Just Lack the Prerequisites](https://lelouch.dev/blog/you-are-probably-not-dumb/)
+  
+## 2024-08-21
+
+- [ On Being A Senior Engineer ](https://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/)
+  
+## 2024-08-19
+
+- [ Stripe's monorepo developer environment ](https://blog.nelhage.com/post/stripe-dev-environment/)
+
+## 2024-08-18
+
+- [ Ask for Advice, Not Permission](https://boz.com/articles/advice-not-permission)
+- [ Postmortem of my 9 year journey at Google - Tiny struggles](https://tinystruggles.com/posts/google_postmortem/) 
+  
+## 2024-08-11
+
+- [ Building a highly-available web service without a database ](https://blog.screenshotbot.io/2024/08/10/building-a-highly-available-web-service-without-a-database/)
+  
+## 2024-08-09
+
+- [ Sequential Consistency ](https://jepsen.io/consistency/models/sequential)
+- [ Do Quests, Not Goals ](https://www.raptitude.com/2024/08/do-quests-not-goals/)
+- [ How we migrated onto K8s in less than 12 months ](https://www.figma.com/blog/migrating-onto-kubernetes/)
+- [ Downcycled: The story of Samsung's failed deal with iFixit, as told by iFixit's CEO ](https://www.androidauthority.com/samsung-ifixit-partnership-story-3456726/)
+  
+## 2024-08-03
+
+- [ What they talk about when they talk about Privacy Engineering ](https://shivankaul.com/blog/privacy-engineering-archetypes)
+- [ Bullshitization and Common Indifference Problems ](https://studio.ribbonfarm.com/p/bullshitization-and-common-indifference?utm_source=post-email-title&publication_id=9973&post_id=147289303&utm_campaign=email-post-title&isFreemail=true&r=6yqkp&triedRedirect=true&utm_medium=email)
+  
+## 2024-08-02
+
+- [ Unprofessionalism ](https://allenpike.com/2013/unprofessionalism)
+- [ nico’s blog ](https://cropp.blog/2024/08/job-searching-in-2024-is-horribly-broken)
+- Job searching in 2024 is horribly broken A network engineer in search of greener pastures
+  
+## 2024-07-28
+
+- [ The Rise of Agentic Data Generation ](https://huggingface.co/blog/mlabonne/agentic-datagen)
+  
+## 2024-07-25
+
+- [ Kamala Harris, Usha Vance, and the twice-born thrice-selected Indian American elite ](https://srajagopalan.substack.com/p/kamala-harris-usha-vance-and-the)
+  
+## 2024-07-24
+
+- [ maelstrom/doc/01-getting-ready /index.md ](https://github.com/jepsen-io/maelstrom/blob/main/doc/01-getting-ready/index.md)
+  
 ## 2024-07-23
 
+- [ UNIX Permissions ](https://mason.gmu.edu/~montecin/UNIXpermiss.htm)
+- [ Open Source AI Is the Path Forward ](https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/)
 - [ a very short book about copying ](https://matthewstrom.com/writing/copying/)
-  - Bill Gates later reflected on these cases: “we both had this rich neighbor named Xerox ... I broke into his house to steal the TV set and found out that [Jobs] had already stolen it.”9
+  - Bill Gates later reflected on these cases: “we both had this rich neighbor named Xerox ... I broke into his house to steal the TV set and found out that [Jobs] had already stolen it.”
 - [ All the existential risk, none of the economic impact. That's a shitty trade ](https://www.theintrinsicperspective.com/p/all-the-existential-risk-none-of)
 
 ## 2024-07-22

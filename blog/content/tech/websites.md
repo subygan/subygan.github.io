@@ -29,6 +29,8 @@ https://www.window-swap.com/
 ### interesting design websites
 
 - [Really good design stuff](https://iradesign.io/gallery/illustrations)
+- https://www.framer.com/
+- https://spline.design/
 - https://2019.makemepulse.com/
 - [JS Design generation](https://fffuel.co/)
 - [Corporate Memphis Humaaans for every situation](https://www.humaaans.com/)
@@ -43,3 +45,8 @@ https://www.window-swap.com/
 - LLM visualization, https://bbycroft.net/llm
 - Model visualizer, https://netron.app/
 - https://chat.lmsys.org/
+
+
+## Scholarly links
+
+- http://www.wikicfp.com
