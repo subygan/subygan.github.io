@@ -15,12 +15,12 @@
     {{ end }}
     <div class="blender" id="blender"></div>
 
+    {{ with .GitInfo }}
+    <p class="article-date" style="color:grey">last update: {{ .AuthorDate.Format "2006-01-02" }}</p>
+    {{ end }}
 
     {{ .Content }}
 
-    {{ with .GitInfo }}
-    <p class="article-date">last update: {{ .AuthorDate.Format "2006-01-02" }}</p>
-    {{ end }}
 
 
     {{ partial "footer.html" . }}
