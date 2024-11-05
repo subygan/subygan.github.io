@@ -17,7 +17,7 @@ Inspiration comes from many places. I love jotting them down here.
 - async prompt processing APIs
 - Python library for overarching batch prompts
 - Release Youtube chrome Extension
-- Browser automation
+- Browser automation for testing, automatically booking tickets etc.
 - native MP3 player, with a remote library
 
 ## Problems I have
