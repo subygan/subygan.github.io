@@ -2,7 +2,7 @@
 emoji: ⛴️
 title: The Practice
 description: Shipping Creative Work
-date: 2024-11-6
+date: 2024-11-06
 layout: base
 ---
 

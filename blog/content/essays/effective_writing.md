@@ -2,7 +2,7 @@
 emoji: ✒️
 title: Writing
 description: the why, the what, the how
-date: 2024-11-5
+date: 2024-11-05
 layout: base
 ---
 
@@ -16,6 +16,8 @@ So it means a lot to me that I improve my writing for other people to understand
 
 
 # Notes from Larry's lecture
+
+handouts are [here](/writing_uchicago.pdf)
 
 Writing is not primitive task. Writing is not something you learn early and stop learning for the rest of your life
 
