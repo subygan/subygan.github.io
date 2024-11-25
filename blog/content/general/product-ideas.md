@@ -10,6 +10,12 @@ Inspiration comes from many places. I love jotting them down here.
 
 
 ### Small app ideas
+- Something with Audio models such as [fugatto](https://fugatto.github.io/)
+  - Isolate tracks
+  - humming -> Song
+  - Unlimited song/rap/metallic generation.
+  - Introduce a product
+  - Introduce
 - Ideas with [Model Context Protocol](https://www.anthropic.com/news/model-context-protocol) enabling LLM Agents with cool tools
   - Object storage for models
   - Memory layer for any agent
@@ -56,7 +62,7 @@ Inspiration comes from many places. I love jotting them down here.
   [15/08/24, 17:57:43] friend - Cmu: Notion QA is a tool that suits for smaller window, human still need to refer to the whole knowledge base or database themselves. A lot more often than refer to the answer given by any QA tool, indeed.
   - ^^^^^^^^^^ from my friend
 - 19/08/2024 Bulk processing gpt stuff is still a pain. I'd love a simple interface to dump some csv, jsonl etc and receive outputs.
-
+ 
 ### idea dump/graveyard
 
 - So, in email newsletters, the sponsor block is usually embedded into the newsletters. But, we could do better than that. We can have a dynamic, sponsor section. with gif. If you remember that timer-in-mail thing. It fetches gif based on the timing. We can do something very similar, but for ads. this means, You can show new ads to repeat customers. but there are certain problems. The resolution cannot be great. Also, we don’t have any data on how many people reopen old emails. My guess is not a lot.
