@@ -6,9 +6,17 @@ date: 2023-06-3
 layout: base
 ---
 
-> "But I have promises to keep,
-> And miles to go before I sleep."
-> ― Robert frost, Stopping by woods
+
+>The indispensable first step to getting what you want is this: decide what you want.
+> —Saying
+
+>Tell me, what is it you plan to do
+>With your one wild and precious life?
+> —Mary Oliver, “The Summer Day”
+
+> But I have promises to keep,
+> And miles to go before I sleep.
+>  ― Robert frost, Stopping by woods
 
 >Frodo: "It's a pity Bilbo didn't kill Gollum when he had the chance."
 > 

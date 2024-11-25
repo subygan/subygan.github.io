@@ -10,8 +10,17 @@ Inspiration comes from many places. I love jotting them down here.
 
 
 ### Small app ideas
+- Ideas with [Model Context Protocol](https://www.anthropic.com/news/model-context-protocol) enabling LLM Agents with cool tools
+  - Object storage for models
+  - Memory layer for any agent
+  - Auth layer for agents to authenticate into a page. It is quite obvious how this can even be extended into a secret manager for agents as when these things grow there is a need to manage private and personal data. Maybe credit card information, etc.
+- Inventory management with Video models. Going from video -> list of inventory. Gemini can do it, tested.
 - talk with a youtube video
   - Simple extension to inject a chat window + summarization
+- Talking with a document
+- Unstructured data to structured data
+- Image or Video cropping with SAM2 or [SAMURAI](https://yangchris11.github.io/samurai/) models.
+- Video Editing LLM going from a long form video
 - LLamacoder for any LL
   - https://github.com/nutlope/llamacoder
 - async prompt processing APIs
@@ -35,18 +44,17 @@ Inspiration comes from many places. I love jotting them down here.
 - Menu -> Images
   - The menucard in hotels are shitty and I am having to google every single thing when I come up with a new cuisine. I would love to go from menu card to image with ingredients and other details.
 
-- [15/08/24, 17:48:15] Limin Ge - Cmu: I think the notion AI is still not what people need
-  [15/08/24, 17:49:21] Limin Ge - Cmu: It's a tool that you could talk with, no problem. But lots of the time user still want to read the original notes
-  [15/08/24, 17:49:38] Limin Ge - Cmu: And understand the big picture of all his notes and knowledge
-  [15/08/24, 17:50:32] Limin Ge - Cmu: He wants to see a network of all of the notes he has and has a visualization tool to zoom in/out, filter specific tag, see the layered relations of knowledge, etc
-  [15/08/24, 17:51:00] Limin Ge - Cmu: The user wants such an AI tool to auto generate tags, and categories relations
-  [15/08/24, 17:51:22] Limin Ge - Cmu: The only thing he needs to do himself is to just write random things
-  [15/08/24, 17:52:07] Limin Ge - Cmu: It doesn't even need to be an organized paragraph. Just a random sentence. And it shall be categorized and tagged, and pop up when the user is browsing that tag or category, or related category
-  [15/08/24, 17:53:53] Limin Ge - Cmu: Which would be more interesting is that if the interface is not textual, but audio. The user records his own conversation, and could read a summary report of his daily thoughts. And could refer to any of his thought he had had one year ago
-  [15/08/24, 17:56:31] Limin Ge - Cmu: I mean context window will always be a constraint  for users. The bigger the context window of any AI is, the bigger the context will be. It's like the Wintel relation
-  [15/08/24, 17:57:43] Limin Ge - Cmu: Notion QA is a tool that suits for smaller window, human still need to refer to the whole knowledge base or database themselves. A lot more often than refer to the answer given by any QA tool, indeed.
-  - ^^^^^^^^^^ from my friend Limin
-
+- [15/08/24, 17:48:15] friend - Cmu: I think the notion AI is still not what people need
+  [15/08/24, 17:49:21] friend - Cmu: It's a tool that you could talk with, no problem. But lots of the time user still want to read the original notes
+  [15/08/24, 17:49:38] friend - Cmu: And understand the big picture of all his notes and knowledge
+  [15/08/24, 17:50:32] friend - Cmu: He wants to see a network of all of the notes he has and has a visualization tool to zoom in/out, filter specific tag, see the layered relations of knowledge, etc
+  [15/08/24, 17:51:00] friend - Cmu: The user wants such an AI tool to auto generate tags, and categories relations
+  [15/08/24, 17:51:22] friend - Cmu: The only thing he needs to do himself is to just write random things
+  [15/08/24, 17:52:07] friend - Cmu: It doesn't even need to be an organized paragraph. Just a random sentence. And it shall be categorized and tagged, and pop up when the user is browsing that tag or category, or related category
+  [15/08/24, 17:53:53] friend - Cmu: Which would be more interesting is that if the interface is not textual, but audio. The user records his own conversation, and could read a summary report of his daily thoughts. And could refer to any of his thought he had had one year ago
+  [15/08/24, 17:56:31] friend - Cmu: I mean context window will always be a constraint  for users. The bigger the context window of any AI is, the bigger the context will be. It's like the Wintel relation
+  [15/08/24, 17:57:43] friend - Cmu: Notion QA is a tool that suits for smaller window, human still need to refer to the whole knowledge base or database themselves. A lot more often than refer to the answer given by any QA tool, indeed.
+  - ^^^^^^^^^^ from my friend
 - 19/08/2024 Bulk processing gpt stuff is still a pain. I'd love a simple interface to dump some csv, jsonl etc and receive outputs.
 
 ### idea dump/graveyard
