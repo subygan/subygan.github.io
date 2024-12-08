@@ -1,10 +1,8 @@
 {{ define "main" }}
-
-<div class='suriya-blog-content'>
-
+<div class="suriya-blog-content">
   <div class="content-area">
     <div class="suriya-blog-content">
-      <div id="write" class="">
+      <div id="write">
         <header>
           <div class="page-header-icon undefined"><span class="icon">{{ .Params.emoji }}</span></div>
           <h1 class="page-title">{{ .Title }}</h1>
@@ -12,7 +10,7 @@
         </header>
 
         {{ if .Params.date }}
-        <p class="article-date">{{ .PublishDate.Format "January 2,2006" }}</p>
+        <p class="article-date">{{ .PublishDate.Format "January 2, 2006" }}</p>
         {{ end }}
 
         <div class="blender" id="blender"></div>
@@ -26,94 +24,95 @@
 
         {{ .Content }}
 
-
         {{ partial "footer.html" . }}
+      </div>
+    </div>
+  </div>
+</div>
 
-  <script>
-    async function fetchAndRenderContent() {
-      try {
-        const response = await fetch('https://olivier.fly.dev/combined/575182560/suriya');
-        const jsonData = await response.json();
-        const contentDiv = document.getElementById('dynamic-content');
+<script>
+  async function fetchAndRenderContent() {
+    try {
+      const response = await fetch('https://olivier.fly.dev/combined/575182560/suriya');
+      const jsonData = await response.json();
+      const contentDiv = document.getElementById('dynamic-content');
 
-        // Sort dates in descending order
-        const sortedDates = Object.keys(jsonData.data).sort((a, b) => new Date(b) - new Date(a));
+      // Sort dates in descending order
+      const sortedDates = Object.keys(jsonData.data).sort((a, b) => new Date(b) - new Date(a));
 
-        // Generate HTML for each date
-        const html = sortedDates.map(date => {
-          const dateData = jsonData.data[date];
-          let entriesHtml = '';
+      // Generate HTML for each date
+      const html = sortedDates.map(date => {
+        const dateData = jsonData.data[date];
+        let entriesHtml = '';
 
-          // Handle Telegram messages
-          if (dateData._telegram_messages) {
-            entriesHtml += dateData._telegram_messages.map(msg => `
-          <li>
-            <a href="#">${msg.text}</a>
-            ${msg.sub_text ? `
-              <ul>
-                <li>${msg.sub_text}</li>
-              </ul>
-            ` : ''}
-          </li>
-        `).join('');
-          }
-
-          // Handle other URLs
-          Object.entries(dateData).forEach(([url, content]) => {
-            if (url !== '_telegram_messages') {
-              const [title, ...excerpts] = content;
-              entriesHtml += `
+        // Handle Telegram messages
+        if (dateData._telegram_messages) {
+          entriesHtml += dateData._telegram_messages.map(msg => `
             <li>
-              <a href="${url}">${title}</a>
-              ${excerpts.length > 0 ? `
+              <a href="#">${msg.text}</a>
+              ${msg.sub_text ? `
                 <ul>
-                  ${excerpts.map(excerpt => `<li>${excerpt}</li>`).join('')}
+                  <li>${msg.sub_text}</li>
                 </ul>
               ` : ''}
             </li>
-          `;
-            }
-          });
+          `).join('');
+        }
 
-          return `
-        <h2 id="${date}">${date}</h2>
-        <ul>
-          ${entriesHtml}
-        </ul>
-      `;
-        }).join('');
+        // Handle other URLs
+        Object.entries(dateData).forEach(([url, content]) => {
+          if (url !== '_telegram_messages') {
+            const [title, ...excerpts] = content;
+            entriesHtml += `
+              <li>
+                <a href="${url}">${title}</a>
+                ${excerpts.length > 0 ? `
+                  <ul>
+                    ${excerpts.map(excerpt => `<li>${excerpt}</li>`).join('')}
+                  </ul>
+                ` : ''}
+              </li>
+            `;
+          }
+        });
 
-        contentDiv.innerHTML = html;
-      } catch (error) {
-        console.error('Error fetching content:', error);
-        document.getElementById('dynamic-content').innerHTML = '<p>Error loading content. Please try again later.</p>';
-      }
+        return `
+          <h2 id="${date}">${date}</h2>
+          <ul>
+            ${entriesHtml}
+          </ul>
+        `;
+      }).join('');
+
+      contentDiv.innerHTML = html;
+    } catch (error) {
+      console.error('Error fetching content:', error);
+      document.getElementById('dynamic-content').innerHTML = '<p>Error loading content. Please try again later.</p>';
     }
+  }
 
-    // Scroll to top functionality
-    window.onscroll = function() {
-      var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      var scrollPosition = (window.scrollY / docHeight) * 100;
-      document.getElementById("progress-bar").style.width = scrollPosition + "%";
-      scrollFunction();
-    };
+  // Scroll to top functionality
+  window.onscroll = function() {
+    var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrollPosition = (window.scrollY / docHeight) * 100;
+    document.getElementById("progress-bar").style.width = scrollPosition + "%";
+    scrollFunction();
+  };
 
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("topBtn").style.display = "block";
-      } else {
-        document.getElementById("topBtn").style.display = "none";
-      }
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("topBtn").style.display = "block";
+    } else {
+      document.getElementById("topBtn").style.display = "none";
     }
+  }
 
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 
-    // Call the function when the page loads
-    document.addEventListener('DOMContentLoaded', fetchAndRenderContent);
-  </script>
-
-  
-    {{ end }}
+  // Call the function when the page loads
+  document.addEventListener('DOMContentLoaded', fetchAndRenderContent);
+</script>
+{{ end }}
