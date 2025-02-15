@@ -35,6 +35,7 @@ description: My book reading/read lists
 - Educated - Tara Westover
 - Zero to one
 - Almanack of Naval Ravikant 
+- uncertain glory - amartya sen
 
 ### 2023
 - __Essays on skepticism__ - Bertrand Russell - 2023-01-08

@@ -9,6 +9,7 @@ date: 2024-02-4
 
 - Little book of Deep Learning [LBDL](https://fleuret.org/francois/lbdl.html)
 - [Neural Networks Zero to Hero - karpathy](https://karpathy.ai/zero-to-hero.html) 
+- Fast.ai Practical Deep Learning for Coders
 
 ## Types of Model to train from scratch
 
