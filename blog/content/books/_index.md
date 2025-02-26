@@ -65,7 +65,7 @@ description: My book reading/read lists
   - Being solid about ones resolve is very important to go through the struggle.
   - Leader's source is people's trust over their decisions and their willingness to participate in it. Overpromisisng and not achieving goals erodes that trust. So, leader's have a dilemma of aggressively setting goals vs delivering the goals.
 - __Designing Data Intensive Application__ - Martin Kleppman - 2023-02-25 17:58
-  - [notes are here](/tech/theory/ddia/)
+  - [notes are here](/tech/practice/ddia/)
 
 
 
