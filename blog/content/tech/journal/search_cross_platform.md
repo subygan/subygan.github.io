@@ -31,7 +31,7 @@ There are broadly a few ways this is being done.
 
 ## Browser based solutions
 
-### [Electron](https://www.electronjs.org/)
+### [Electron \[desktop\]](https://www.electronjs.org/)
 Electron supports all major desktop platforms. And simple HTML, CSS and JS stack works perfectly fine without any issue.
 
 Electron is unanimously disliked by everyone for being such a memory hog, which seems unescapable when you're shipping an entire browser with the application. Also, this kinda bloats up the app bundle as well. A hello world production app takes up about 50 MB which is insane. [station's story](https://web.archive.org/web/20200926071714/https://stationhq.com/blog/station-1-the-technical-back-story) is a cautionary tale to anyone who tries to go down this path.
@@ -64,6 +64,11 @@ examples: Coinbase, shopify, flipkart and [others](https://github.com/ReactNativ
 
 Personal notes:
 - the hot reload is nice
+- Community has dwindled a bit, there are too many popular but abandoned libraries. the community response is, "it works until it doesn't"
+
+
+ref
+- [showcase](https://reactnative.dev/showcase)
 
 ### [Qt](https://www.qt.io/)
 
@@ -74,11 +79,22 @@ Personal notes:
 
 example apps: telegram, skype
 
+
 ### [Flutter](https://flutter.dev/)
 
 Flutter is a multiplatform application development framework which uses dart as a main language. It's relatively new, being published in 2019. It supports android, ios, macOS, linux, windows and web. And runs in [near native performance](https://medium.com/swlh/flutter-vs-native-vs-react-native-examining-performance-31338f081980). It does not use native components directly, like React native instead choosing to paint all the widgets using the [Skia](https://skia.org/) 2d rendering engine, which means the widgets aren't exactly native but native-like. 
 
-examples: Zomato, Zerodha and [others](https://flutter.dev/showcase)
+
+__notes__
+
+
+- More inviting and a lot of new libraries.
+
+examples: wechat, google earth, alibaba, Zomato, Zerodha and [others](https://flutter.dev/showcase)
+
+ref:
+- [showcase](https://flutter.dev/showcase)
+
 
 ### [Kotlin](https://kotlinlang.org/docs/multiplatform.html)
 
