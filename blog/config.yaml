@@ -4,6 +4,7 @@ disablePathToLower: true
 languageCode: en-us
 summaryLength: 20
 title: Suriya's site
+disableAliases: true
 params:
   author: Suriya Ganesh
   description: Suriya's blog of Stuff dabbles with

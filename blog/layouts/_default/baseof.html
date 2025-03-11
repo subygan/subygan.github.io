@@ -1,9 +1,114 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
   {{ partial "header.html" . }}
+  <script>
+    // Prevent flash by applying dark mode immediately if set
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.documentElement.classList.add('dark-mode');
+      document.documentElement.style.backgroundColor = '#121212';
+      document.documentElement.style.color = '#e0e0e0';
+      
+      // Create and inject a style element with high-priority sidebar styles
+      const preventFlashStyles = document.createElement('style');
+      preventFlashStyles.textContent = `
+        #sidebar, .sidebar, div#sidebar, div.sidebar {
+          background-color: #121212 !important;
+          color: #e0e0e0 !important;
+          transition: none !important;
+        }
+        #sidebar *, .sidebar * {
+          background-color: #121212 !important;
+          color: #e0e0e0 !important;
+        }
+      `;
+      document.head.appendChild(preventFlashStyles);
+    }
+  </script>
+  <style>
+    .theme-toggle {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      z-index: 9999;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 5px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.7;
+      transition: all 0.3s ease;
+    }
+    
+    /* Pre-define icon states to prevent layout shift */
+    #lightIcon {
+      display: none;
+    }
+    
+    #darkIcon {
+      display: block;
+    }
+    
+    html.dark-mode #lightIcon {
+      display: block;
+    }
+    
+    html.dark-mode #darkIcon {
+      display: none;
+    }
+    
+    /* Dark mode styles applied to HTML element */
+    html.dark-mode,
+    html.dark-mode body {
+      background-color: #121212 !important;
+      color: #e0e0e0 !important;
+    }
+    
+    html.dark-mode .sidebar,
+    html.dark-mode #sidebar {
+      background-color: #121212 !important;
+      color: #e0e0e0 !important;
+    }
+    
+    /* Additional dark mode styles that were previously only applied to body */
+    html.dark-mode .content-area,
+    html.dark-mode nav, 
+    html.dark-mode .navbar,
+    html.dark-mode header {
+      background-color: #121212 !important;
+      color: #e0e0e0 !important;
+    }
+    
+    /* Enhanced sidebar dark mode styles with !important */
+    html.dark-mode .sidebar,
+    html.dark-mode #sidebar,
+    .dark-mode .sidebar,
+    .dark-mode #sidebar {
+      background-color: #121212 !important;
+      color: #e0e0e0 !important;
+      transition: none !important;
+    }
+    
+    /* Also target the sidebar before JavaScript runs */
+    #sidebar[style*="display:none"],
+    #sidebar:not(.open),
+    .sidebar[style*="display:none"],
+    .sidebar:not(.open) {
+      background-color: inherit;
+    }
+    
+    html.dark-mode #sidebar[style*="display:none"],
+    html.dark-mode #sidebar:not(.open),
+    html.dark-mode .sidebar[style*="display:none"],
+    html.dark-mode .sidebar:not(.open) {
+      background-color: #121212 !important;
+    }
+  </style>
   {{ partial "navigation.html" .}}
 
-  <body class='suriya-blog'>
+  <body class='suriya-blog' onload="applyInitialDarkMode()">
   <div class="menu-toggle-container">
       <button class="menu-toggle" id="menu-toggle" onclick="toggleSidebar()" aria-label="Toggle menu">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -13,6 +118,22 @@
           </svg>
       </button>
   </div>
+  <button onclick="toggleDarkMode()" id="darkModeBtn" title="Toggle dark mode" class="theme-toggle" aria-label="Toggle dark mode">
+    <svg id="lightIcon" class="theme-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+    <svg id="darkIcon" class="theme-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+  </button>
   <div class="sidebar" id="sidebar">
       {{ partial "sidebar.html" .}}
   </div>
@@ -51,24 +172,17 @@
         menuToggle.classList.toggle('open');
     }
 
-    // function checkMobile() {
-    //     const sidebar = document.getElementById('sidebar');
-    //     const menuToggle = document.getElementById('menuToggle');
-    //     if (window.innerWidth <= 768) {
-    //         sidebar.classList.remove('open');
-    //         menuToggle.style.display = 'flex';
-    //     } else {
-    //         sidebar.classList.remove('open');
-    //         menuToggle.style.display = 'none';
-    //     }
-    // }
-
-    // window.addEventListener('resize', checkMobile);
-    // checkMobile();
+    document.addEventListener('click', function(event) {
+        const sidebar = document.getElementById('sidebar');
+        const menuToggle = document.querySelector('.menu-toggle');
+        if (!sidebar.contains(event.target) && !menuToggle.contains(event.target)) {
+            sidebar.classList.remove('open');
+            menuToggle.classList.remove('open');
+        }
+    });
 
     document.addEventListener('DOMContentLoaded', function() {
         const sidebarLinks = document.querySelectorAll('.sidebar-nav-link');
-
 
         sidebarLinks.forEach(link => {
             link.addEventListener('click', function(e) {
@@ -76,7 +190,6 @@
                 sidebarLinks.forEach(l => {
                     l.classList.remove('active');
                 });
-
 
                 // Add active class to clicked link
                 this.classList.add('active');
@@ -99,8 +212,237 @@
                 }
             });
         });
+
+        // Check for saved dark mode preference
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Apply sidebar styles initially based on saved preference
+        applySidebarStyles();
     });
 
+    // Add dark mode styles
+    const darkModeStyles = `
+      body.dark-mode {
+        background-color: #121212 !important;
+        color: #e0e0e0 !important;
+      }
+      
+      /* Super specific sidebar selectors */
+      body.dark-mode .sidebar,
+      body.dark-mode #sidebar,
+      body.suriya-blog.dark-mode .sidebar,
+      body.suriya-blog.dark-mode #sidebar,
+      html body.dark-mode div.sidebar,
+      html body.dark-mode div#sidebar {
+        background-color: #121212 !important;
+        color: #e0e0e0 !important;
+        background-image: none !important;
+        box-shadow: none !important;
+      }
+      
+      /* Target all divs inside sidebar */
+      body.dark-mode .sidebar *,
+      body.dark-mode #sidebar * {
+        background-color: #121212 !important;
+        color: #e0e0e0 !important;
+      }
+      
+      /* Rest of the styles */
+      body.dark-mode .content-area,
+      body.dark-mode nav, 
+      body.dark-mode .navbar,
+      body.dark-mode header {
+        background-color: #121212 !important;
+        color: #e0e0e0 !important;
+      }
+      
+      body.dark-mode .menu-toggle-container,
+      body.dark-mode .menu-toggle {
+        background-color: #2d2d2d;
+        color: #e0e0e0;
+      }
+      body.dark-mode .sidebar-nav-link {
+        color: #bb86fc;
+      }
+      body.dark-mode .sidebar-nav-submenu {
+        background-color: #1a1a1a;
+      }
+      body.dark-mode #topBtn {
+        background-color: #333;
+        color: #e0e0e0;
+      }
+      body.dark-mode .sidebar {
+        border-right: 1px solid #333;
+      }
+      body.dark-mode header {
+        border-bottom: 1px solid #333;
+      }
+      body.dark-mode .navbar {
+        border-bottom: 1px solid #333;
+      }
+      
+      /* More specific selectors for navbar text elements */
+      body.dark-mode .navbar a,
+      body.dark-mode nav a,
+      body.dark-mode .navbar span,
+      body.dark-mode nav span,
+      body.dark-mode .navbar div,
+      body.dark-mode nav div,
+      body.dark-mode .navbar li,
+      body.dark-mode nav li {
+        color: #e0e0e0 !important;
+      }
+      
+      /* Ensure hover states are visible */
+      body.dark-mode .navbar a:hover,
+      body.dark-mode nav a:hover {
+        color: #bb86fc !important;
+      }
+      
+      /* Theme toggle button styling */
+      .theme-toggle {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        z-index: 9999;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.7;
+        transition: all 0.3s ease;
+      }
+      
+      .theme-toggle:hover {
+        opacity: 1;
+        transform: scale(1.1);
+      }
+      
+      .theme-icon {
+        color: #333;
+      }
+      
+      body.dark-mode .theme-icon {
+        color: #e0e0e0;
+      }
+      
+      #lightIcon {
+        display: none;
+      }
+      
+      #darkIcon {
+        display: block;
+      }
+      
+      body.dark-mode #lightIcon {
+        display: block;
+      }
+      
+      body.dark-mode #darkIcon {
+        display: none;
+      }
+    `;
+    const styleSheet = document.createElement("style");
+    styleSheet.type = "text/css";
+    styleSheet.innerText = darkModeStyles;
+    document.head.appendChild(styleSheet);
+
+    // Check for saved dark mode preference
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.body.classList.add('dark-mode');
+    }
+
+    // Update toggleDarkMode function to properly handle sidebar reset
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      document.documentElement.classList.toggle('dark-mode');
+      
+      if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('darkMode', 'enabled');
+        applyDarkSidebarStyles();
+      } else {
+        localStorage.setItem('darkMode', 'disabled');
+        resetLightSidebarStyles();
+      }
+    }
+
+    // Apply dark mode styles to sidebar and its children
+    function applyDarkSidebarStyles() {
+      const sidebar = document.getElementById('sidebar');
+      if (!sidebar) return;
+      
+      sidebar.style.cssText = 'background-color: #121212 !important; color: #e0e0e0 !important;';
+      const sidebarElements = sidebar.querySelectorAll('*');
+      sidebarElements.forEach(el => {
+        el.style.cssText += 'background-color: #121212 !important; color: #e0e0e0 !important;';
+      });
+    }
+
+    // Reset sidebar styles to light mode
+    function resetLightSidebarStyles() {
+      const sidebar = document.getElementById('sidebar');
+      if (!sidebar) return;
+      
+      // Clear inline styles completely
+      sidebar.style.cssText = '';
+      
+      // Clear inline styles from all children
+      const sidebarElements = sidebar.querySelectorAll('*');
+      sidebarElements.forEach(el => {
+        el.style.backgroundColor = '';
+        el.style.color = '';
+      });
+      
+      // Force a repaint to ensure styles are applied
+      sidebar.offsetHeight;
+    }
+
+    // Replace the old applySidebarStyles function
+    function applySidebarStyles(immediate = false) {
+      if (document.documentElement.classList.contains('dark-mode')) {
+        applyDarkSidebarStyles();
+      } else {
+        resetLightSidebarStyles();
+      }
+    }
+
+    // Function to apply dark mode on initial load
+    function applyInitialDarkMode() {
+      if (localStorage.getItem('darkMode') === 'enabled') {
+        applyDarkSidebarStyles();
+      } else {
+        resetLightSidebarStyles();
+      }
+    }
+    
+    // Call this immediately, don't wait for onload
+    applyInitialDarkMode();
+
+    document.addEventListener('DOMContentLoaded', function() {
+      // Apply immediately when DOM is ready
+      if (localStorage.getItem('darkMode') === 'enabled') {
+        applyDarkSidebarStyles();
+        document.getElementById('lightIcon').style.display = 'block';
+        document.getElementById('darkIcon').style.display = 'none';
+      } else {
+        resetLightSidebarStyles();
+        document.getElementById('lightIcon').style.display = 'none';
+        document.getElementById('darkIcon').style.display = 'block';
+      }
+      
+      // Add listener for the dark mode toggle button
+      document.getElementById('darkModeBtn').addEventListener('click', function() {
+        setTimeout(function() {
+          applySidebarStyles(true);
+        }, 10);
+      });
+    });
   </script>
   </body>
 </html>

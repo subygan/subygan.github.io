@@ -1,0 +1,42 @@
+/* ...existing code... */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode a {
+    color: #bb86fc;
+}
+
+body.dark-mode .menu-toggle svg {
+    stroke: #ffffff;
+}
+
+body.dark-mode .sidebar {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .content-area {
+    background-color: #1e1e1e;
+}
+
+#darkModeBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure the button is on top */
+}
+
+body.dark-mode #darkModeBtn {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* ...existing code... */
