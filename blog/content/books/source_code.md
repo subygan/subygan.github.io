@@ -4,7 +4,7 @@ type: page
 emoji: 🤓
 title: Source Code
 description: Bill Gates about his days at Microsoft
-date: 2025-02-26 02:53
+date: 2025-02-26
 ---
 
 Bill Gates starts this story from his roots up until the point he found Microsoft and it became a really serious thing. I like that the book closes right after the founding of Microsoft. Because much has been written about that part of the story
