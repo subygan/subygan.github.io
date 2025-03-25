@@ -6,12 +6,19 @@ date: 2023-09-13
 ---
 I have a long-running ailment called the [Shiny Object Syndrome](https://en.wikipedia.org/wiki/Shiny_object_syndrome). I come back to this page to remind self what my life's focus is currently. As you can see, I change my mind pretty consistently
 
+## 2025-03-25
+
+- [ ] Karpathy's Zero to hero
+- [ ] The Art and Science of doing Engineering - Richard Hamming
+- [x] Move To New York
+- [ ] Read all books from [Stripe Press](https://press.stripe.com)
+
+
 ## 2023-09-21
 
-- [ ]g I'm doing my Graduate studies in privacy Engineering at CMU
-- [ ] My current
-- [ ] Build my own Database in c++
-- [ ] Write a numpy like kernel in c++
+- [x] I'm doing my Graduate studies in privacy Engineering at CMU
+- [x] Build my own Database in c++ (needs more work!)
+- [x] Write a numpy like kernel in c++ (needs a lot more work!!)
 - [ ] Write a simple compiler in c++
 - [ ] Write a simple OS in c++
 
