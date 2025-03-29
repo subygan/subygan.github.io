@@ -4,7 +4,7 @@ type: page
 emoji: 📽️
 title: AI media Editor
 description: AI is changing the way content is being produced. How will it go?
-date: 2025-03-29 00:38
+date: 2025-03-29
 ---
 
 The first animation movie, toy story was made in 1995. At that time this was a break through. It involved a lot of proprietary software (Ray tracing, shaders, motion blur) and decades of research and development.
