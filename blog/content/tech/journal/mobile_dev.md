@@ -51,3 +51,6 @@ ref
 ## Flutter
 
 ![flutter](/assets/images/flutter-arch.png)
+
+
+https://stackoverflow.com/questions/26694108/what-is-the-difference-between-compilesdkversion-and-targetsdkversion
