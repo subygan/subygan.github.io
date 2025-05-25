@@ -2,7 +2,7 @@
 emoji: 📇
 title: To cut a long story short - Jeffrey Archer
 description: Collection of pretty interesting short stories 
-date: 2023-11-4
+date: 2023-11-04
 layout: base
 ---
 

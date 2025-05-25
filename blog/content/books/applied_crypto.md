@@ -2,7 +2,7 @@
 emoji: 🔐 
 title: A Graduate Course in Applied Cryptography
 description: Book by Dan Boneh and Victor Shoup from stanford
-date: 2023-06-4
+date: 2023-06-04
 layout: base
 ---
 

@@ -2,7 +2,7 @@
 emoji: 📇
 title: Motto
 description: My guiding principles for life
-date: 2025-02-7
+date: 2025-02-07
 layout: base
 ---
 

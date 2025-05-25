@@ -2,7 +2,7 @@
 emoji: 💻
 title: Privacy
 description: My learnings about Privacy 
-date: 2022-11-06 6:37 am
+date: 2022-11-06
 ---
 
 I'm very interested in Software Privacy. and Record my learning about Strategies techniques that impacts/improves privacy.

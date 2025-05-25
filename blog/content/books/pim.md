@@ -2,7 +2,7 @@
 emoji: 🧑🏻‍🏫 
 title: Programmers introduction to mathematics
 description: the pim book
-date: 2023-06-4
+date: 2023-06-04
 layout: base
 mathjax: true
 ---

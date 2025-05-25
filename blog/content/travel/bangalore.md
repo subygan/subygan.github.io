@@ -2,7 +2,7 @@
 emoji: 🏠
 title: Bangalore aka Bengaluru
 description: An Awesome city with mediocre management.
-date: 2024-09-6
+date: 2024-09-06
 layout: base
 ---
 

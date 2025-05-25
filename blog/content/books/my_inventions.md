@@ -2,7 +2,7 @@
 emoji: 🧑🏻‍🔬 
 title: My inventions - Nikola Tesla
 description: Tesla's autobiography about his early childhood and career 
-date: 2023-06-2
+date: 2023-06-02
 layout: base
 ---
 

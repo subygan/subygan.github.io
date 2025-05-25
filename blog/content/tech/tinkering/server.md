@@ -4,7 +4,7 @@ type: page
 emoji: 
 title: Server Setup
 description: I setup machines for one off coding tasks or ML training often and some stuff just needs to be setup that Ubuntu etc don't come with what I need
-date: 2025-03-07 16:20
+date: 2025-03-07
 ---
 
 

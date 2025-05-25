@@ -2,7 +2,7 @@
 emoji: 🚊
 title: ML Guardrails
 description: My research diary on looking at ML Guardrails AKA model alignment
-date: 2024-02-6
+date: 2024-02-06
 layout: base
 ---
 

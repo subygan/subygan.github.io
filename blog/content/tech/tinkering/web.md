@@ -2,7 +2,7 @@
 emoji: 🕸️ 
 title: Web
 description: Web stuff that are curious or interesting
-date: 2023-04-3, Mon, 19:34
+date: 2023-04-03
 layout: base
 ---
 

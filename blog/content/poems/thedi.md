@@ -2,7 +2,7 @@
 emoji: 🗡️
 title: வரங் கேட்டல் - பாரதி
 description: Bharathiyar asks a wish from shiva
-date: 2024-02-3
+date: 2024-02-03
 layout: base
 ---
 

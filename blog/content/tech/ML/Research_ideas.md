@@ -2,7 +2,7 @@
 emoji: 📜
 title: Research Ideas
 description: Some Research ideas that I have
-date: 2024-02-4
+date: 2024-02-04
 layout: base
 ---
 

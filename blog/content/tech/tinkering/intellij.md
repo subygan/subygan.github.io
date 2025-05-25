@@ -2,7 +2,7 @@
 emoji: 🧩 
 title: intellij hacks
 description: Wrangling with intellij
-date: 2023-04-3, Mon, 19:28
+date: 2023-04-03
 layout: base
 ---
 

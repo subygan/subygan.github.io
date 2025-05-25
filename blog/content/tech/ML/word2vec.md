@@ -2,7 +2,7 @@
 emoji: 🈴
 title: Word Embedding Models
 description: I've beeen working with word embeddings a lot lately.
-date: 2024-08-4
+date: 2024-08-04
 layout: base
 ---
 

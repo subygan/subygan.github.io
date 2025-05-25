@@ -2,7 +2,7 @@
 emoji: 🤖
 title: ML journal
 description: Journal of my Machine Learning twiddling
-date: 2024-08-8
+date: 2024-08-08
 layout: base
 ---
 

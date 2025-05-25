@@ -2,7 +2,7 @@
 emoji: 👨🏼‍🎨 
 title: System Design
 description: notes while learning system design
-date: 2023-04-3, Mon, 19:42
+date: 2023-04-03
 layout: base
 ---
 

@@ -4,7 +4,7 @@ type: page
 emoji: 
 title: 
 description: 
-date: 2025-02-24 20:05
+date: 2025-02-24
 ---
 
 makemore is a character level language model and models the sequences of characters.

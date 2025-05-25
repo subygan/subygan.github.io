@@ -2,7 +2,7 @@
 emoji: ▓ 
 title: Kafka
 description: Reading kafka documentation
-date: 2023-04-3, Mon, 20:51
+date: 2023-04-03
 layout: base
 ---
 
