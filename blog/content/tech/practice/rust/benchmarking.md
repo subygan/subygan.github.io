@@ -8,6 +8,7 @@ layout: base
 
 ## Libraries
 
+
 ### [Criterion.rs](https://github.com/bheisler/criterion.rs)
 
 - Has really good defaults and seems to work out of the box.
@@ -37,5 +38,7 @@ Divan is an incredible project that has pretty good defaults as well. It is up a
 There is need for services that are outside of these libraries themselves. To store the state of previous runs to make sure there are no performance regressions.
 
 ### Codspeed
+
+Codspeed primarily supports divan, but it also has very strong support for criterion.
 
 ### bencher

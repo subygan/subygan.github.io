@@ -24,7 +24,7 @@ here's a scaleless plot for a bunch of jobs based on my knowledge.
 
 ![supply demand graph](/assets/images/supply_demand.jpeg)
 
-Every knowledge based job starts at the top left and then slowly progresses towards the middle, and stays there, if the people are lucky. The movement speed is incredibly dependent on how difficult it is for people to train people. For example, "delivery gig work" started at the top left and moved to the right in under a decade, incredible. Because the know how for becoming a delivery agent is very low. As the job moves towards the right of the curve, it becomes incrementally harder for the practitioner to see any profit (i.e. stable life, holidays, bonus, dignity etc.).
+Every knowledge based job starts at the top left and then slowly progresses towards the middle, and stays there, if people are lucky. The movement speed is incredibly dependent on how difficult it is for people to train people. For example, "delivery gig work" started at the top left and moved to the right in under a decade, incredible. Because the know how for becoming a delivery agent is very low. As the job moves towards the right of the curve, it becomes incrementally harder for the practitioner to see any profit (i.e. stable life, holidays, bonus, dignity etc.).
 But, job markets operate in waves that have a granularity of a decade, which means it takes about a decade and a half for supply readjustment. And the job to climb back. 
 
 What does this imply for a person trying to navigate the employment economy?

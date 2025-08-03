@@ -10,11 +10,11 @@
                 {{ if or .Sections .Pages }}
                 <a href="#" class="sidebar-nav-link" data-href="{{ .RelPermalink }}">{{ .Title }}</a>
                 <ul class="sidebar-nav-submenu">
-                    {{ range .Sections }}
+                    <!-- {{ range .Sections }}
                     <li>
                          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
                     </li>
-                    {{ end }}
+                    {{ end }} -->
                     {{ range .Pages }}
                     <li>
                         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
