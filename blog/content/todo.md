@@ -8,11 +8,6 @@ layout: base
 These are the things that I am interested in learning.
 
 
-## Privacy
-
-- Science, Privacy, and Freedom: Issues and Proposals for the 1970's. Part I--The Current Impact of Surveillance on Privacy, Alan F. Westin
-  Columbia Law Review, Vol. 66, No. 6 (Jun., 1966), pp. 1003-1050 (48 pages) https://www.jstor.org/stable/1120997
-
 # courses and competitions
 
 - [Build your own c compiler](https://nostarch.com/writing-c-compiler)
@@ -36,14 +31,22 @@ These are the things that I am interested in learning.
 - [GDPR](https://gdpr.eu/tag/gdpr/) ✅
 
 
-# Games:
-https://flexboxfroggy.com/
 
-# Projects
+# Books
 
-- [etcd](https://github.com/etcd-io/etcd)
-- [cockroachDB](https://github.com/cockroachdb/cockroach)
-
+- [How to Scale Your Model](https://jax-ml.github.io/scaling-book/)
+- Harry Potter and the Methods of Rationality
+  - https://hpmor.com/
+- Algorithms for decision making
+  - https://algorithmsbook.com/files/dm.pdf
+- Linux insides
+  - https://0xax.gitbooks.io/linux-insides/content/
+- Google SRE
+  - https://sre.google/books/
+- compiler books
+  - https://www3.nd.edu/~dthain/compilerbook/compilerbook.pdf
+- [Git from the ground up](https://jwiegley.github.io/git-from-the-bottom-up/)
+- [post quantum cryptography](https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/Brochure/quantum-safe-cryptography.pdf;jsessionid=0A645BD930E85BDED22DD2597C0A35DD.internet471?__blob=publicationFile&v=4)
 
 # Blog posts
 - [Peter Thiel's CS183](https://blakemasters.tumblr.com/peter-thiels-cs183-startup)
@@ -64,25 +67,19 @@ https://flexboxfroggy.com/
 - [https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript](https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript)
 - [Adverserial collaboration - Daniel Kahneman](https://www.edge.org/adversarial-collaboration-daniel-kahneman)
 
+## Privacy
+
+- Science, Privacy, and Freedom: Issues and Proposals for the 1970's. Part I--The Current Impact of Surveillance on Privacy, Alan F. Westin
+  Columbia Law Review, Vol. 66, No. 6 (Jun., 1966), pp. 1003-1050 (48 pages) https://www.jstor.org/stable/1120997
 
 
+# Games:
+https://flexboxfroggy.com/
 
-# small books
-- [Git from the ground up](https://jwiegley.github.io/git-from-the-bottom-up/)
-- [post quantum cryptography](https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/Brochure/quantum-safe-cryptography.pdf;jsessionid=0A645BD930E85BDED22DD2597C0A35DD.internet471?__blob=publicationFile&v=4)
+# Projects
 
-# Books
-
-- Harry Potter and the Methods of Rationality
-  - https://hpmor.com/
-- Algorithms for decision making
-  - https://algorithmsbook.com/files/dm.pdf
-- Linux insides
-  - https://0xax.gitbooks.io/linux-insides/content/
-- Google SRE
-  - https://sre.google/books/
-- compiler books
-  - https://www3.nd.edu/~dthain/compilerbook/compilerbook.pdf
+- [etcd](https://github.com/etcd-io/etcd)
+- [cockroachDB](https://github.com/cockroachdb/cockroach)
 
 
 # Courses and others

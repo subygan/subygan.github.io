@@ -6,6 +6,8 @@ date: 2023-06-03
 layout: base
 ---
 
+>the more superficial and unsatisfying our lives become, the faster we need to progress
+> -Wendell Berry
 
 >The indispensable first step to getting what you want is this: decide what you want.
 > —Saying
@@ -41,7 +43,7 @@ layout: base
 
 > Is God willing to prevent evil, but not able? Then he is not omnipotent. Is he able, but not willing? Then he is malevolent. Is he both able and willing? Then whence cometh evil? Is he neither able nor willing? Then why call him God? ― Epicurus
 
-> At some point, the pain of not doing it becomes greater than the pain of doing it. ― Steven Pressfield , art of war
+> At some point, the pain of not doing it becomes greater than the pain of doing it. ― Steven Pressfield , The War of Art
 
 > “It is not bigotry to be certain we are right, but is bigotry to be unable to imagine how we might possibly have gone wrong.” ― G.K. Chesterton
 
