@@ -8,120 +8,83 @@ layout: base
 
 [Resume \[pdf\]](/surya-resume.pdf)
 
-Email: sayyampe at andrew.cmu.edu
+Email: suriyaganesh097 at gmail.com
 
 [linkedin.com/in/suriya-ganesh](https://linkedin.com/in/suriya-ganesh/)
 
 [github.com/subygan](https://github.com/subygan)
 
-# Education
+[google scholar](https://scholar.google.com/citations?user=G0CscfQAAAAJ&hl=en)
 
 
-**Carnegie Mellon University**, *Dec 2024*
+### EMPLOYMENT
 
-*Master of Science in Information Technology*     *Pittsburgh, PA*
+**Software Engineer**
+**Oxen.ai**
+**May 2025 - present**
+*   VCS system for large datasets using rust.
+*   Deduplication for large files to increase commit overlap and diff in large blobs and data frames.
+*   My contributions to oxen FOSS cli and server can be found [here](https://www.google.com/search?q=oxen+FOSS+cli)
 
+**Senior Systems Engineer**
+**NimbleEdge**
+**Jan 2023 - Feb 2024**
+*   Led a team of 8 Engineers on project execution and delivery.
+*   Designed Software Systems with 100M MAU. Systems I built were handling 20K requests per second at peak load. We did 50M inferences a day on EdgeML deployments.
+*   Implemented Federated Learning (FL) Research such as FedAvg, Model Fine-tuning in the edge, Client Selection Polling, Secure Aggregation, etc.papers into Deployable and maintainable applications.
+*   Architected embedded edgeML SDK built on top of Onnx runtime.
 
------------------------------------------------------------------------
-*Anna University*, *Apr 2019*
+**Software Development Engineer II**
+**Skyflow**
+**Oct 2021 - Dec 2022**
+*   Optimized the governance engine reducing p99 response time from 150 ms to 5ms at 15K RPS by leveraging hierarchical caches and cache invalidation algorithms.
+*   Redesigned control and data planes, from a single tenant architecture to a multi-tenant architecture. With data residency across multiple regions. Which Reduced Server cost by 67% annually.
+*   Migrated from an Arangodb based backend to Mongodb, with 80 Million records coming to about 1TB data, with zero downtime.
 
-*Bachelor Engineering, Instrumentation Engineering*, *Chennai, India*
------------------------------------------------------------------------
+**Platforms Engineer**
+**Acko Insurance**
+**July 2019 - Oct 2021**
+*   Built and maintained Internal CICD platform for application release across android, mac,
+*   Managed more than 300 Releases over a period of 7 months, while maintaining zero down time in a monolithic rust codebase.
+*   Collaborated across 9 teams and migrated their services into a common platform. Improving SLAs across different Lines of Businesses.
 
-# Relevant Coursework
+---
 
--   Systems Programming
+### EDUCATION
 
--   Data privacy
+**MS - Privacy Engineering**
+**Carnegie Mellon University**
+**Aug 2023 - Dec 2024**
+GPA 3.78/4, Coursework: Deep Learning, Al Governance, Browser Security, etc
 
--   Differential privacy
+**BE - Instrumentation Engineering**
+**Anna University**
+**April 2015 - April 2019**
+GPA 3.9/4, Coursework: Control System, Digital Signal Processing, VLSI Design, etc
 
--   Deep Learning
+---
 
--   Explainable ML
+### PROJECTS
 
--   Distributed System
+**Core Contributor**
+**Speaksharp**
+**Mar 2024 - Present**
+*   Built speaksharp, a digital language and communication coach converting your personal daily conversations to learning opportunities, using Python, voice diarization, prompt engineering, etc.
+*   Top 5% for YC Summer ‘24 batch.
 
-# Work Experience
+---
 
-**School of Computer Science, CMU**           *Sep 2023 -- present*
+### SKILLS
 
-*Part-time SDE, Computational Biology*     *Pittsburgh, Pennsylvania*
+*   **Languages:** Rust, Golang, C++, Java, python, js
+*   **Tools/Frameworks:** Onnx, kafka, K8s, Docker, EKS, Azure, gRPC, AWS, react-native, Ray, Kotlin, Elasticsearch
 
--    Contributed to Rust libraries used for computational biology
-    emulation and drug discovery
+---
 
---------------------------- ---------------------------
-**Nimbleedge**, *Jan 2023 -- July 2023*
-  
-*Senior Systems Engineer*, *Bangalore, India*
+### ACHIEVEMENTS AND PUBLICATIONS
 
--    Worked on nimbleedge's federated learning (FL) platform and
-    individually designed, built, deployed and managed their ML
-    model sampling, training and aggregation systems.
-
--    Worked with ML researchers to convert cutting edge FL
-    techniques and strategies into Deployable and maintainable
-    applications
-
--    Prototyped demonstrable systems to prospective customers to
-    showcase federated learning applications and their benefits.
-
--    Planned, Mentored and worked with Junior engineers and interns
-    on deliverables and deployments.
-
---------------------------------- --------------------------
-  **Skyflow**,*Oct 2021 -- Dec 2022*
-
-  *Software Development Engineer, Bangalore, India*
-
--    Part of the Governance team. Working on services Securing and
-    governing privacy-vault.
-
--    Worked on performance optimisations for the governance engine.
-    Which reduced p99 response time from 150 ms to 5ms at 15K rps.
-    Using Leveled caching and cache invalidation mechanisms
-
--    Worked on migration from a single tenant architecture to a
-    multitenant architecture. With data residency in multiple AWS
-    regions.
-
--    Migrated from a Arangodb based backend to Mongodb. To improve
-    reliability and performance.
-
---------------------------------- ---------------------------
-**Acko General Insurance**, *July 2019 -- Oct 2021*
-
-*Software Development Engineer, Bangalore, India*
-
--    As a member of the platforms team, built internal audit
-    service, pdf signing service.
-
--    Improved developer tooling over a rust codebase, with methods
-    like remote code compilation and cluster spawning.
-
--    stepped up, handling more than 150 releases over a period of 7
-    months coordinating across 8 different teams, besides regular
-    development tasks, during a period of management turmoil.
-
--    Built the internal CICD platform to test, run and deliver test
-    results to the stakeholders.
-
-# Technical Skills
-
-- **Languages**: Rust, Go, C++, python, javascript
-- **Technologies/Frameworks**: kafka, K8s, Docker, EKS, Azure, AWS
-
-# Other Activities and Achievements
-
-**HackCMU**,*September 2023*
-*Winner, ACM @ CMU*
-
--    Competed and won in the HackCMU 2023 contest. built a complete
-    interactive orbital satellite tracker overnight.
-
---------------------------- --------------------------
-**IEEE students chapter**     **Apr 2017 -- Apr 2019**
-*President*                          *Anna University*
-
-- Organised the international conference for Instrumentation engineers, 2018, with international delegates from multiple Universities.
+*   SPARK grant for Entrepreneurship, CMU '24
+*   Privacy Engineering Scholarship, CMU ’23
+*   7x Hackathon winner
+*   [Current state of LLM Risks and AI Guardrails](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=G0CscfQAAAAJ&citation_for_view=G0CscfQAAAAJ:qjMakFHDy7sC)
+*   [Trhough the Lens of LLMs: Unveiling Differential Privacy Challenges](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=G0CscfQAAAAJ&citation_for_view=G0CscfQAAAAJ:u5HHmVD_uO8C)
