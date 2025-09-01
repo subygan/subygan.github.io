@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/primeart/static/css/main.cc64ab5a.css",
+    "main.js": "/primeart/static/js/main.9b9813ab.js",
+    "static/js/453.37fa691a.chunk.js": "/primeart/static/js/453.37fa691a.chunk.js",
+    "index.html": "/primeart/index.html",
+    "main.cc64ab5a.css.map": "/primeart/static/css/main.cc64ab5a.css.map",
+    "main.9b9813ab.js.map": "/primeart/static/js/main.9b9813ab.js.map",
+    "453.37fa691a.chunk.js.map": "/primeart/static/js/453.37fa691a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc64ab5a.css",
+    "static/js/main.9b9813ab.js"
+  ]
+}

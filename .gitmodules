@@ -25,3 +25,6 @@
 [submodule "blog/content/journal"]
 	path = blog/content/journal
 	url = git@github.com:subygan/journal.git
+[submodule "projects/primeart"]
+	path = projects/primeart
+	url = git@github.com:subygan/primeart.git
