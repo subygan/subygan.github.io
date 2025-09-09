@@ -4,15 +4,14 @@
 
     <div id='write'  class=''>
         <header>
-
             <div class="page-header-icon undefined"><span class="icon">{{ .Params.emoji }}</span></div>
             <h1 class="page-title">{{ .Page.Title }}</h1>
+            <h2>{{ .Page.Description }}</h2>
         </header>
         {{ if .Params.date }}
         <p class="article-date">{{ .PublishDate.Format "January 2,2006" }}</p>
         {{ end }}
         <div class="blender" id="blender"></div>
-
 
         {{ .Content }}
         <H2>Recent Posts</H2>

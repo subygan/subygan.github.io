@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Not Found</title>
+
+  
+  <meta property="og:description" content="This page was not meant to be visited">
+
+  
+  <meta name="author" content="Suriya Ganesh">
+
+  <meta property="og:title" content="Suriya Ganesh">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.suriya.cc">
+  
+  <meta property="og:image" content="/assets/images/s.png">
+  
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://suriya.cc/style.2056362232012b211d89c9708f5b9474e8e9205110607a2ddc82779a78af6a96.css" integrity="sha256-IFY2IjIBKyEdiclwj1uUdOjpIFEQYHot3IJ3mnivapY=" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="/assets/images/s.png">
+  
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MTGWDYTZYR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MTGWDYTZYR');
+  </script>
+</head>
+  <script>
+    
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.documentElement.classList.add('dark-mode');
+      document.documentElement.style.backgroundColor = '#121212';
+      document.documentElement.style.color = '#e0e0e0';
+      
+      
+      const preventFlashStyles = document.createElement('style');
+      preventFlashStyles.textContent = `
+        #sidebar, .sidebar, div#sidebar, div.sidebar {
+          background-color: #121212 !important;
+          color: #e0e0e0 !important;
+          transition: none !important;
+        }
+        #sidebar *, .sidebar * {
+          background-color: #121212 !important;
+          color: #e0e0e0 !important;
+        }
+      `;
+      document.head.appendChild(preventFlashStyles);
+    }
+  </script>
+  <style>
+    .theme-toggle {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      z-index: 9999;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 5px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.7;
+      transition: all 0.3s ease;
+    }
+    
+     
+    #lightIcon {
+      display: none;
+    }
+    
+    #darkIcon {
+      display: block;
+    }
+    
+    html.dark-mode #lightIcon {
+      display: block;
+    }
+    
+    html.dark-mode #darkIcon {
+      display: none;
+    }
+    
+     
+    html.dark-mode,
+    html.dark-mode body {
+      background-color: #121212 !important;
+      color: #e0e0e0 !important;
+    }
+    
+    html.dark-mode .sidebar,
+    html.dark-mode #sidebar {
+      background-color: #121212 !important;
+      color: #e0e0e0 !important;
+    }
+    
+     
+    html.dark-mode .content-area,
+    html.dark-mode nav, 
+    html.dark-mode .navbar,
+    html.dark-mode header {
+      background-color: #121212 !important;
+      color: #e0e0e0 !important;
+    }
+    
+     
+    html.dark-mode .sidebar,
+    html.dark-mode #sidebar,
+    .dark-mode .sidebar,
+    .dark-mode #sidebar {
+      background-color: #121212 !important;
+      color: #e0e0e0 !important;
+      transition: none !important;
+    }
+    
+     
+    #sidebar[style*="display:none"],
+    #sidebar:not(.open),
+    .sidebar[style*="display:none"],
+    .sidebar:not(.open) {
+      background-color: inherit;
+    }
+    
+    html.dark-mode #sidebar[style*="display:none"],
+    html.dark-mode #sidebar:not(.open),
+    html.dark-mode .sidebar[style*="display:none"],
+    html.dark-mode .sidebar:not(.open) {
+      background-color: #121212 !important;
+    }
+  </style>
+  <nav class="navbar">
+  <a href="javascript:history.back()">&lt;</a>
+  <a href="/">Home</a>
+  <a href="/tech">Tech</a>
+  <a href="/now">Now</a>
+  <a href="javascript:history.forward()">></a>
+</nav>
+<div id="progress-bar"></div>
+
+
+  <body class='suriya-blog' onload="applyInitialDarkMode()">
+  <div class="menu-toggle-container">
+      <button class="menu-toggle" id="menu-toggle" onclick="toggleSidebar()" aria-label="Toggle menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+      </button>
+  </div>
+  <button onclick="toggleDarkMode()" id="darkModeBtn" title="Toggle dark mode" class="theme-toggle" aria-label="Toggle dark mode">
+    <svg id="lightIcon" class="theme-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+    <svg id="darkIcon" class="theme-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+  </button>
+  <div class="sidebar" id="sidebar">
+      
+<aside class="sidebar-content">
+    <nav>
+        
+        <ul class="sidebar-nav">
+            
+
+
+            <li class="sidebar-nav-item">
+                
+                <a href="#" class="sidebar-nav-link" data-href="/travel/">Travelling</a>
+                <ul class="sidebar-nav-submenu">
+                    
+                    
+                    <li>
+                        <a href="/travel/newyork/">New York</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/travel/rhodeisland/">Rhode Island</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/travel/madurai/">Madurai</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/travel/pittsburgh/">Pittsburgh</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/travel/atlanta/">Atlanta</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/travel/bangalore/">Bangalore aka Bengaluru</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+
+
+            <li class="sidebar-nav-item">
+                
+                <a href="#" class="sidebar-nav-link" data-href="/poems/">Poems</a>
+                <ul class="sidebar-nav-submenu">
+                    
+                    
+                    <li>
+                        <a href="/poems/dont-gentle/">Do Not Go Gentle into That Good Night</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/poems/puthiya/">புதிய ஆத்திசூடி</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/poems/indrilai/">பூத்தது மானுடம்</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/poems/thedi/">வரங் கேட்டல் - பாரதி</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+
+
+            <li class="sidebar-nav-item">
+                
+                <a href="#" class="sidebar-nav-link" data-href="/general/">General</a>
+                <ul class="sidebar-nav-submenu">
+                    
+                    
+                    <li>
+                        <a href="/general/never-complete/">Sweating the details</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/general/ai-media-editor/">AI media Editor</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/general/awesome-newsletters/">Newsletters and blogs that are interesting</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/general/awesome-incubators/">Awesome incubators/collectives for startups</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/general/product-ideas/">Product Ideas</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+
+
+            <li class="sidebar-nav-item">
+                
+                <a href="#" class="sidebar-nav-link" data-href="/privacy/">Privacy</a>
+                <ul class="sidebar-nav-submenu">
+                    
+                    
+                    <li>
+                        <a href="/privacy/right_to_forget/">Right to be Forgotten</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/privacy/privacy_ml/">Privacy problems and attacks in Machine Learning</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/privacy/cmu_square/">CMU Square</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/privacy/ml_governance/">AI governance and threat modelling</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/privacy/why_privacy/">Why Privacy?</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/privacy/browser_privacy/">Browser Privacy Test</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/privacy/articles/">Privacy Articles</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/privacy/gtm/">Cicumventing Ad block</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/privacy/privacy_law/"></a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+
+
+            <li class="sidebar-nav-item">
+                
+                <a href="#" class="sidebar-nav-link" data-href="/essays/">Essays</a>
+                <ul class="sidebar-nav-submenu">
+                    
+                    
+                    <li>
+                        <a href="/essays/07_shiptalk/">Shiptalk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/essays/product/">Product Building and fundamentals</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/essays/why-i-build/">Why I Build.</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/essays/effective_writing/">Writing</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/essays/organizational/">Organizational Wisdom</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/essays/leaky_abstractions/">Leaky Abstractions, or How we Understand the world</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/essays/inertia/">inertia</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/essays/speaksharp/">Postmortem from building an AI speech coach</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/essays/solution_v_feelings/">Solutions vs Feelings</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/essays/hack/">Tell us about the time you most successfully hacked some (non-computer) system to your advantage</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/essays/coffee/">Coffee</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/essays/01_exceptional/">Be Exceptional</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/essays/03_right_around_the_corner/">Right around the corner, A story of million possibilities</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/essays/04_startup_work/">working at a startup</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/essays/06_the_future_and_the_story/">The future and The story</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/essays/media_future/">The future of media</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/essays/05_surplus_capacity/">Surplus intellectual capacity</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/essays/arm/">ARM</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/essays/02_missing_innovation/">The Missing innovation</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+
+
+            <li class="sidebar-nav-item">
+                
+                <a href="#" class="sidebar-nav-link" data-href="/books/">Books</a>
+                <ul class="sidebar-nav-submenu">
+                    
+                    
+                    <li>
+                        <a href="/books/metamorphosis/">the metamorphosis - Franz Kafka</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/books/HeLa/">The Immortal Life of Henrietta Lacks</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/books/source_code/">Source Code</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/books/almond/">Almond</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/books/the_practice/">The Practice</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/books/dune/">Dune</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/books/dune_messiah/">Dune - The Messiah</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/books/allegory_of_the_cave/">Allegory of the cave</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/books/data_privacy/">Data privacy</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/books/little_prince/">The little prince - Antoine de Saint-Exupéry</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/books/long_story_short/">To cut a long story short - Jeffrey Archer</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/books/applied_crypto/">A Graduate Course in Applied Cryptography</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/books/pim/">Programmers introduction to mathematics</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/books/my_inventions/">My inventions - Nikola Tesla</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/books/straight_a/">Straight A</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/books/badminton/">Badminton Handbook</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/books/air/">When Breath becomes Air</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/books/trust_me/">Trust me I&#39;m lying</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/books/build/">Build - Tony Fadell</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/books/wonderful/">Make Something Wonderful - Steve Jobs</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/books/psych_money/">The Psychology of Money</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/books/wizard/">Where wizards stay up late</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/books/scattered_minds/"></a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+
+
+            <li class="sidebar-nav-item">
+                
+                <a href="#" class="sidebar-nav-link" data-href="/tech/">Technology</a>
+                <ul class="sidebar-nav-submenu">
+                    
+                    
+                    <li>
+                        <a href="/tech/websites/">websites that are interesting</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tech/algos/">Algorithms</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tech/ML/">Machine Learning</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tech/bugs/">A Bug&#39;s life</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tech/cloud/">Cloud</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tech/journal/">Journals</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tech/practice/">Practice</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tech/tinkering/">Tinkering</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+
+
+            <li class="sidebar-nav-item">
+                
+                <a href="/til/" class="sidebar-nav-link">Today I Learned</a>
+                
+            </li>
+            
+        </ul>
+    </nav>
+</aside>
+  </div>
+  <div class="content-area">
+
+
+      
+
+<div class='suriya-blog-content'>
+
+  <div id='write'  class=''>
+    <header>
+
+      <div class="page-header-icon undefined"><span class="icon"></span></div>
+      <h1 class="page-title">Not Found</h1>
+      <p class="page-description">This page was not meant to be visited</p>
+    </header>
+    
+    <div class="blender" id="blender"></div>
+
+    
+    <p class="article-date" style="color:grey">last update: 2024-10-16</p>
+    
+
+    <style type="text/css" media="screen">
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+</style>
+<div class="container">
+  <h1>404</h1>
+  <p><strong>Page not found :(</strong></p>
+  <p>The requested page could not be found.</p>
+</div>
+
+
+
+
+    <div class="page-footer">
+    <div class="line"></div>
+
+    <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+    <form action="https://app.kit.com/forms/7401965/subscriptions" class="seva-form formkit-form" method="post"
+          data-sv-form="7401965" data-uid="42df7c5be9" data-format="inline" data-version="5"
+          data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Success! Now check your email to confirm your subscription.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;fathom&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:true,&quot;url&quot;:&quot;https://kit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;5&quot;}"
+    >
+        <div data-style="full">
+            <div data-element="column" class="formkit-column">
+                <div class="formkit-background" style="opacity: 0.3;"></div>
+                <div class="formkit-header" data-element="header"
+                ><h2>Hear from me.</h2></div>
+                <div class="formkit-subheader" data-element="subheader"><p>I asked Llama to make a mascot for my blog.</p>
+                </div>
+                <div class="formkit-image formkit-image relative focus:outline-none" role="button" tabindex="0"><img
+                        class="cursor-pointer focus:outline-blue "
+                        src="https://embed.filekitcdn.com/e/rehFCLQuF8b7bvwTRhgMo2/b7bf3YJezhdjGPf5HyWkzp"></div>
+            </div>
+            <div data-element="column" class="formkit-column">
+                <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+                <div data-element="fields" class="seva-fields formkit-fields">
+                    <div class="formkit-field"><input class="formkit-input" name="email_address"
+                                                      aria-label="Email Address" placeholder="Email Address" required=""
+                                                      type="email">
+                    </div>
+                    <button data-element="submit" class="formkit-submit formkit-submit">
+                        <div class="formkit-spinner">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <span class="">Subscribe</span></button>
+                </div>
+                <div class="formkit-guarantee" data-element="guarantee"><p>I won't spam. Promise.</p>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="line"></div>
+    <div class="social">
+        <div class="social__icon">
+            <a href="https://github.com/subygan/" title="github">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                </svg>
+            </a>
+        </div>
+        <div class="social__icon">
+            <a href="mailto:suriyaganesh097@gmail.com" title="email">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+            </a>
+        </div>
+        <div class="social__icon">
+            <a href="https://t.me/SuriyaGanesh" title="telegram">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/>
+                </svg>
+            </a>
+        </div>
+        <div class="social__icon">
+            <a href="https://x.com/subygan" title="twitter">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+            </a>
+        </div>
+        <div class="social__icon">
+            <a href="https://www.instagram.com/suby.gan/" title="instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>
+    
+
+
+
+  </div>
+  <button onclick="topFunction()" id="topBtn" title="Go to top">Top ⬆️</button>
+  <script>
+    window.onscroll = function() {
+      var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrollPosition = (window.scrollY / docHeight) * 100;
+      document.getElementById("progress-bar").style.width = scrollPosition + "%";
+      scrollFunction()
+    };
+    
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("topBtn").style.display = "block";
+      } else {
+        document.getElementById("topBtn").style.display = "none";
+      }
+    }
+
+    
+    function topFunction() {
+      document.body.scrollTop = 0; 
+      document.documentElement.scrollTop = 0; 
+    }
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const menuToggle = document.querySelector('.menu-toggle');
+        sidebar.classList.toggle('open');
+        menuToggle.classList.toggle('open');
+    }
+
+    document.addEventListener('click', function(event) {
+        const sidebar = document.getElementById('sidebar');
+        const menuToggle = document.querySelector('.menu-toggle');
+        if (!sidebar.contains(event.target) && !menuToggle.contains(event.target)) {
+            sidebar.classList.remove('open');
+            menuToggle.classList.remove('open');
+        }
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const sidebarLinks = document.querySelectorAll('.sidebar-nav-link');
+
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                sidebarLinks.forEach(l => {
+                    l.classList.remove('active');
+                });
+
+                
+                this.classList.add('active');
+                const submenu = this.nextElementSibling;
+                if (submenu && submenu.classList.contains('sidebar-nav-submenu')) {
+                    
+                    submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+                } else {
+                    
+                    const href = this.getAttribute('href');
+                    if (href && href !== '#') {
+                        window.location.href = href;
+                    } else {
+                        
+                        const dataHref = this.getAttribute('data-href');
+                        if (dataHref) {
+                            window.location.href = dataHref;
+                        }
+                    }
+                }
+            });
+        });
+
+        
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            document.body.classList.add('dark-mode');
+        }
+
+        
+        applySidebarStyles();
+    });
+
+    
+    const darkModeStyles = `
+      body.dark-mode {
+        background-color: #121212 !important;
+        color: #e0e0e0 !important;
+      }
+      
+      /* Super specific sidebar selectors */
+      body.dark-mode .sidebar,
+      body.dark-mode #sidebar,
+      body.suriya-blog.dark-mode .sidebar,
+      body.suriya-blog.dark-mode #sidebar,
+      html body.dark-mode div.sidebar,
+      html body.dark-mode div#sidebar {
+        background-color: #121212 !important;
+        color: #e0e0e0 !important;
+        background-image: none !important;
+        box-shadow: none !important;
+      }
+      
+      /* Target all divs inside sidebar */
+      body.dark-mode .sidebar *,
+      body.dark-mode #sidebar * {
+        background-color: #121212 !important;
+        color: #e0e0e0 !important;
+      }
+      
+      /* Rest of the styles */
+      body.dark-mode .content-area,
+      body.dark-mode nav, 
+      body.dark-mode .navbar,
+      body.dark-mode header {
+        background-color: #121212 !important;
+        color: #e0e0e0 !important;
+      }
+      
+      body.dark-mode .menu-toggle-container,
+      body.dark-mode .menu-toggle {
+        background-color: #2d2d2d;
+        color: #e0e0e0;
+      }
+      body.dark-mode .sidebar-nav-link {
+        color: #bb86fc;
+      }
+      body.dark-mode .sidebar-nav-submenu {
+        background-color: #1a1a1a;
+      }
+      body.dark-mode #topBtn {
+        background-color: #333;
+        color: #e0e0e0;
+      }
+      body.dark-mode .sidebar {
+        border-right: 1px solid #333;
+      }
+      body.dark-mode header {
+        border-bottom: 1px solid #333;
+      }
+      body.dark-mode .navbar {
+        border-bottom: 1px solid #333;
+      }
+      
+      /* More specific selectors for navbar text elements */
+      body.dark-mode .navbar a,
+      body.dark-mode nav a,
+      body.dark-mode .navbar span,
+      body.dark-mode nav span,
+      body.dark-mode .navbar div,
+      body.dark-mode nav div,
+      body.dark-mode .navbar li,
+      body.dark-mode nav li {
+        color: #e0e0e0 !important;
+      }
+      
+      /* Ensure hover states are visible */
+      body.dark-mode .navbar a:hover,
+      body.dark-mode nav a:hover {
+        color: #bb86fc !important;
+      }
+      
+      /* Theme toggle button styling */
+      .theme-toggle {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        z-index: 9999;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.7;
+        transition: all 0.3s ease;
+      }
+      
+      .theme-toggle:hover {
+        opacity: 1;
+        transform: scale(1.1);
+      }
+      
+      .theme-icon {
+        color: #333;
+      }
+      
+      body.dark-mode .theme-icon {
+        color: #e0e0e0;
+      }
+      
+      #lightIcon {
+        display: none;
+      }
+      
+      #darkIcon {
+        display: block;
+      }
+      
+      body.dark-mode #lightIcon {
+        display: block;
+      }
+      
+      body.dark-mode #darkIcon {
+        display: none;
+      }
+    `;
+    const styleSheet = document.createElement("style");
+    styleSheet.type = "text/css";
+    styleSheet.innerText = darkModeStyles;
+    document.head.appendChild(styleSheet);
+
+    
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.body.classList.add('dark-mode');
+    }
+
+    
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      document.documentElement.classList.toggle('dark-mode');
+      
+      if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('darkMode', 'enabled');
+        applyDarkSidebarStyles();
+      } else {
+        localStorage.setItem('darkMode', 'disabled');
+        resetLightSidebarStyles();
+      }
+    }
+
+    
+    function applyDarkSidebarStyles() {
+      const sidebar = document.getElementById('sidebar');
+      if (!sidebar) return;
+      
+      sidebar.style.cssText = 'background-color: #121212 !important; color: #e0e0e0 !important;';
+      const sidebarElements = sidebar.querySelectorAll('*');
+      sidebarElements.forEach(el => {
+        el.style.cssText += 'background-color: #121212 !important; color: #e0e0e0 !important;';
+      });
+    }
+
+    
+    function resetLightSidebarStyles() {
+      const sidebar = document.getElementById('sidebar');
+      if (!sidebar) return;
+      
+      
+      sidebar.style.cssText = '';
+      
+      
+      const sidebarElements = sidebar.querySelectorAll('*');
+      sidebarElements.forEach(el => {
+        el.style.backgroundColor = '';
+        el.style.color = '';
+      });
+      
+      
+      sidebar.offsetHeight;
+    }
+
+    
+    function applySidebarStyles(immediate = false) {
+      if (document.documentElement.classList.contains('dark-mode')) {
+        applyDarkSidebarStyles();
+      } else {
+        resetLightSidebarStyles();
+      }
+    }
+
+    
+    function applyInitialDarkMode() {
+      if (localStorage.getItem('darkMode') === 'enabled') {
+        applyDarkSidebarStyles();
+      } else {
+        resetLightSidebarStyles();
+      }
+    }
+    
+    
+    applyInitialDarkMode();
+
+    document.addEventListener('DOMContentLoaded', function() {
+      
+      if (localStorage.getItem('darkMode') === 'enabled') {
+        applyDarkSidebarStyles();
+        document.getElementById('lightIcon').style.display = 'block';
+        document.getElementById('darkIcon').style.display = 'none';
+      } else {
+        resetLightSidebarStyles();
+        document.getElementById('lightIcon').style.display = 'none';
+        document.getElementById('darkIcon').style.display = 'block';
+      }
+      
+      
+      document.getElementById('darkModeBtn').addEventListener('click', function() {
+        setTimeout(function() {
+          applySidebarStyles(true);
+        }, 10);
+      });
+    });
+  </script>
+  </body>
+</html>

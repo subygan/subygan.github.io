@@ -218,6 +218,7 @@ p {
 h1, h2, h3, h4, h5, h6 {
   break-after: avoid-page;
   break-inside: avoid;
+  margin-top: auto;
   orphans: 4;
 }
 
@@ -1519,6 +1520,7 @@ h3,
 h4,
 h5,
 h6 {
+  margin-top: auto;
   font-weight: bold;
 }
 
@@ -1694,6 +1696,7 @@ li li ol > li {
 h2,
 h3 {
   margin-bottom: .75em;
+  margin-top: auto;
 }
 
 hr {
@@ -1705,6 +1708,8 @@ hr {
 
 h1 {
   border-color: #c5c5c5;
+  margin-bottom: 2;
+  padding: 0%;
 }
 
 blockquote {

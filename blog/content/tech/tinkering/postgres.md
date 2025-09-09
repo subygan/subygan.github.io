@@ -7,6 +7,12 @@ type: page
 layout: base
 ---
 
+Often in postgres, there are some unique stuff that is there for postgres which slows stuff down or speeds up the query.
+
+Although 99% of the time I'm using an ORM to interface with the database. having an understanding of what's happening under the hood helps tune it to the requirement.
+
+These are non exhaustive list of things that I've faced, fixed and noted.
+
 
 ## Taking a db dump
 
@@ -21,7 +27,7 @@ COPY (select "id","url","type","promptTemplateId","createdAt", "updatedAt","rank
 ### load csv on table
 
 ```sql
-copy table_name  FROM '/Users/surya/code/nilinswap/glitr/ui/preview_images.csv' WITH (FORMAT CSV);
+copy table_name  FROM '/Users/surya/code/preview_images.csv' WITH (FORMAT CSV);
 ```
 
 

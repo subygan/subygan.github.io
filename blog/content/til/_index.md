@@ -1,5 +1,5 @@
 ---
-emoji:  📰
-title: Today I Learned
-description: Things I learned on a specific date.
+emoji: 📝
+title: journal
+description: some interesting daily incident goes here
 ---
