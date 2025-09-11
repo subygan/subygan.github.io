@@ -2,16 +2,16 @@
 title: Suriya
 emoji: 🧑🏻‍💻
 layout: front
-description: Suriya's site
+description: and his ramblings in the void
 ---
 
 Hi! 👋
 
-I'm Suriya (pronounced Soo-r-ya)
+I'm Suriya (pronounced Soo-ree-ya)
 
 I'm an Engineer, who loves to write. Suffice to say, I write here when I'm trying to think through something or when I've solved something.
 
-I'm currently doing my Masters in Privacy Engineering at CMU, and my research is on the intersection between Machine Learning, Privacy and Systems Software.
+I'm currently
 
 I Love reading and experimenting with Distributed and embedded systems.
 

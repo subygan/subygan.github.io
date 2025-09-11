@@ -8,8 +8,15 @@ layout: base
 These are the things that I am interested in learning.
 
 
+# to build
+- RL environment for agents
+- LMDB rust
+
+
 # courses and competitions
 
+- [Forking chrome to render in the terminal](https://fathy.fr/carbonyl)
+- [Wordle-RK Training Language Model to play wordle](https://charbull.github.io/wordle-lora-rl/)
 - [Build your own c compiler](https://nostarch.com/writing-c-compiler)
 - [Beej's guide to networking](https://beej.us/guide/)
 - [Mamba the easy way](https://jackcook.com/2024/02/23/mamba.html)
@@ -32,7 +39,7 @@ These are the things that I am interested in learning.
 
 
 
-# Books
+# Books to read
 
 - [How to Scale Your Model](https://jax-ml.github.io/scaling-book/)
 - Harry Potter and the Methods of Rationality
@@ -48,7 +55,10 @@ These are the things that I am interested in learning.
 - [Git from the ground up](https://jwiegley.github.io/git-from-the-bottom-up/)
 - [post quantum cryptography](https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/Brochure/quantum-safe-cryptography.pdf;jsessionid=0A645BD930E85BDED22DD2597C0A35DD.internet471?__blob=publicationFile&v=4)
 
-# Blog posts
+
+# Blogs to read
+
+- [Understanding Apache Fluss](https://jack-vanlightly.com/blog/2025/9/2/understanding-apache-fluss)
 - [Peter Thiel's CS183](https://blakemasters.tumblr.com/peter-thiels-cs183-startup)
 - [interview with shang Yi Chiang, R&D head at TSMC](https://archive.computerhistory.org/resources/access/text/2022/07/102792671-05-01-acc.pdf)
 - [how to do Distributed locking](https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html)
@@ -76,7 +86,7 @@ These are the things that I am interested in learning.
 # Games:
 https://flexboxfroggy.com/
 
-# Projects
+# Projects to go through
 
 - [etcd](https://github.com/etcd-io/etcd)
 - [cockroachDB](https://github.com/cockroachdb/cockroach)
@@ -85,11 +95,9 @@ https://flexboxfroggy.com/
 # Courses and others
 
 ## Dolby Webcast
-https://wsw.com/webcast/blair66/dlb/1747980
+https://wsw.com/webcast/blair66/dlb/1747980 ✅
 
 ## browsers
 - https://browser.engineering/
 
-## The power of nightmares - Adam curtis
-- https://archive.org/details/ThePowerOfNightmares-AdamCurtis
 
