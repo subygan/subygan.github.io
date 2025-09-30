@@ -24,7 +24,7 @@ He had a very practically stoic angle about risk. Which can only be summarized b
 Also a person, who had an indefatigable appetite for trial and error. He was working on a project on his own, trying to build a smart mirror, with a monitor underneath. Even when absolutely lost and have no hope of fixing something. He went at it for more than 10 days. Just completely locked in with the problem doing nothing else. Surprising to everyone but him, he made it work. 
 
 
-By the time our Final semester came on, he had a backlog of 30-ish courses. Which he cleared in one go on the final semester. Why he didn't apply himself early on has always been quite baffling. Definitely a person with the capacity to do well in exams. But somehow always ends up having 6 out of 6 backlogs each semester. I spent more time teaching him than preparing for my exams, in the hope that he clears at least some of them. 
+By the time our Final semester came on, he had a backlog of 30-ish courses. Which he cleared in one go. Why he didn't apply himself early on has always been quite baffling. Definitely a person with the capacity to do well in exams. But somehow always ends up having 6 out of 6 backlogs each semester. I spent more time teaching him than preparing for my exams, in the hope that he clears at least some of them. 
 
 
 I do miss our long walks at odd hours in 10 degree cold, talking about why life gets confusing and tiring some times.
