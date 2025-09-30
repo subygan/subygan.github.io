@@ -1,4 +1,4 @@
-### My website
+### My website located suriya.cc
 Super simple website with no complication
 we're using notion for writing and typora for its design.
 So everything that we write on notion, has to be transferred to typora, compiled to html and then

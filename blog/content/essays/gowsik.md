@@ -1,5 +1,5 @@
 ---
-emoji: 🚀
+emoji: 🧚🏻
 title: Life has no answers, but inifinite questions
 description: People we lose to the throes of life.
 date: 2025-09-28
@@ -8,7 +8,7 @@ layout: base
 
 He would have been 27 today.
 
-Been 3 quite long years since he decided he no longer wanted to do anything with life and took his own.
+Been three quite long years since he decided he no longer wanted to do anything with life and took his own.
 
 
 Gowsik was staying with me for 6 months, until 15 days before his final departure. It pained me a lot to realize that, there might've been signs of what he was going through and that I might've said something the wrong way haunts me to this day. I noticed nothing even 3 days before the incident when I called to talk about his job search.
