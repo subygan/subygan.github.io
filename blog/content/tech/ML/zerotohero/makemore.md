@@ -1,9 +1,9 @@
 ---
 layout: base
 type: page
-emoji: 
-title: 
-description: 
+emoji: ⛓️‍💥 
+title: Makemore
+description: building a LM that predicts sequence of characters
 date: 2025-02-24
 ---
 
