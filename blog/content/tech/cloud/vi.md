@@ -1,7 +1,7 @@
 ---
-emoji: 
-title: 
-description: 
+emoji: 𝐕
+title: Vim
+description: btw
 date: 2024-08-15
 layout: base
 ---

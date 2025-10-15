@@ -1,7 +1,7 @@
 ---
 emoji: 🔐
 title: Data privacy
-description: 
+description: What about it? does it matter? why is it important?
 date: 2024-01-16
 layout: base
 ---

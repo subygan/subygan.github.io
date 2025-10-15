@@ -3,7 +3,7 @@ layout: base
 type: page
 emoji: 🧠
 title: Surplus intellectual capacity
-description: 
+description: productivity and net benefit
 date: 2022-01-22 22:15:00
 ---
 

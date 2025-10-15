@@ -1,9 +1,9 @@
 ---
-title: VSCode and shenanigans
+title: VSCode 
 layout: base
 type: page
 emoji: 👨🏻‍💻
-description: 
+description: and shenanigans
 date: 2025-02-15
 ---
 

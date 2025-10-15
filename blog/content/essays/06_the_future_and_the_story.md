@@ -3,7 +3,7 @@ layout: base
 type: page
 emoji: 🧠
 title: The future and The story
-description: 
+description: Is all of economy just an endless story?
 date: 2022-04-11 22:15:00
 ---
 

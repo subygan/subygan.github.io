@@ -49,7 +49,7 @@
         if (dateData._telegram_messages) {
           entriesHtml += dateData._telegram_messages.map(msg => `
             <li>
-              <a href="#">${msg.text}</a>
+              <a href="${msg.text}">${msg.text}</a>
               ${msg.sub_text ? `
                 <ul>
                   <li>${msg.sub_text}</li>
