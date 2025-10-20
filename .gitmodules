@@ -28,3 +28,6 @@
 [submodule "projects/primeart"]
 	path = projects/primeart
 	url = git@github.com:subygan/primeart.git
+[submodule "blog/content/tech/erlang"]
+	path = blog/content/tech/practice/erlang
+	url = git@github.com:subygan/erlang.git
