@@ -32,6 +32,7 @@ This was the cold mail from Ramanujan then a clerk in madras to G.H.Hardy. which
 ## [Elliot Lindberg getting hired at Lovable](https://x.com/robiot/status/1981699553431863549)
 <br></br>
 
+
 ![elliot](elliot.png)
 
 
