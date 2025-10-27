@@ -3,4 +3,4 @@ emoji: 💻
 title: Technology
 ---
 
-I record my technical journey here
+A random walk through the tech world

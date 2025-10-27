@@ -23,3 +23,9 @@ split -l 1000 file.txt
 ```sh
 cat file1.txt file2.txt > file3.txt
 ```
+
+## find pid of port
+
+```sh
+sudo lsof -i :<portnumber>
+```

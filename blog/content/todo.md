@@ -15,11 +15,19 @@ These are the things that I am interested in learning.
 
 # courses and competitions
 
+## ML
+- [Karpathy Zero to Hero](https://karpathy.ai/zero-to-hero.html)
+- [RL on wordle](https://charbull.github.io/wordle-lora-rl/)
+- [RL on 2048](https://colab.research.google.com/github/openai/gpt-oss/blob/main/examples/reinforcement-fine-tuning.ipynb)
+- [nanochat](https://github.com/karpathy/nanochat)
+
+## others
+
 - [Forking chrome to render in the terminal](https://fathy.fr/carbonyl)
 - [Wordle-RK Training Language Model to play wordle](https://charbull.github.io/wordle-lora-rl/)
 - [Build your own c compiler](https://nostarch.com/writing-c-compiler)
 - [Beej's guide to networking](https://beej.us/guide/)
-- [Mamba the easy way](https://jackcook.com/2024/02/23/mamba.html)
+- [Mamba the easy way](https://jackcook.com/2024/02/23/ma mba.html)
 - [Build your own redis](https://build-your-own.org/redis/) 
 - [Distributed system from maelstorm](https://github.com/jepsen-io/maelstrom#documentation)
 - [Gossip glomers, fly.io](https://fly.io/dist-sys/)
