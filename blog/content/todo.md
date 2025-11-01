@@ -20,6 +20,7 @@ These are the things that I am interested in learning.
 - [RL on wordle](https://charbull.github.io/wordle-lora-rl/)
 - [RL on 2048](https://colab.research.google.com/github/openai/gpt-oss/blob/main/examples/reinforcement-fine-tuning.ipynb)
 - [nanochat](https://github.com/karpathy/nanochat)
+- [RL in Huggingface](https://huggingface.co/learn)
 
 ## others
 
