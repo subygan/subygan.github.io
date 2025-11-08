@@ -3260,3 +3260,42 @@ ul li {
 .formkit-form[data-uid="42df7c5be9"][min-width~="600"] .formkit-column:nth-child(2), .formkit-form[data-uid="42df7c5be9"][min-width~="700"] .formkit-column:nth-child(2), .formkit-form[data-uid="42df7c5be9"][min-width~="800"] .formkit-column:nth-child(2) {
   border-top: none;
 }
+
+@media (max-width: 768px) {
+  .suriya-blog-content {
+    padding: 0 15px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .navbar a {
+    margin: 0.5rem 0;
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .newsletter-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .page-footer {
+    padding: 10px 0;
+  }
+}

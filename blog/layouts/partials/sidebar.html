@@ -1,31 +1,18 @@
-
-<aside class="sidebar-content">
-    <nav>
-        
+<nav class="sidebar" id="sidebar">
+    <div class="sidebar-content">
         <ul class="sidebar-nav">
-            {{ range .Site.Sections }}
-
-
             <li class="sidebar-nav-item">
-                {{ if or .Sections .Pages }}
-                <a href="#" class="sidebar-nav-link" data-href="{{ .RelPermalink }}">{{ .Title }}</a>
-                <ul class="sidebar-nav-submenu">
-                    <!-- {{ range .Sections }}
-                    <li>
-                         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                    </li>
-                    {{ end }} -->
-                    {{ range .Pages }}
-                    <li>
-                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                    </li>
-                    {{ end }}
-                </ul>
-                {{ else }}
-                <a href="{{ .RelPermalink }}" class="sidebar-nav-link">{{ .Title }}</a>
-                {{ end }}
+                <a href="/" class="sidebar-nav-link{{ if .IsHome }} active{{ end }}">Home</a>
             </li>
-            {{ end }}
+            <li class="sidebar-nav-item">
+                <a href="/projects" class="sidebar-nav-link{{ if eq .Section "projects" }} active{{ end }}">Projects</a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="/notes" class="sidebar-nav-link{{ if eq .Section "notes" }} active{{ end }}">Notes</a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="/blog" class="sidebar-nav-link{{ if eq .Section "blog" }} active{{ end }}">Blog</a>
+            </li>
         </ul>
-    </nav>
-</aside>
+    </div>
+</nav>
