@@ -22,6 +22,11 @@ These are the things that I am interested in learning.
 - [nanochat](https://github.com/karpathy/nanochat)
 - [RL in Huggingface](https://huggingface.co/learn)
 
+
+## Shaders
+
+- [The book of Shaders](https://thebookofshaders.com/)
+
 ## others
 
 - [Forking chrome to render in the terminal](https://fathy.fr/carbonyl)
