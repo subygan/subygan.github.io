@@ -8,11 +8,6 @@ layout: base
 These are the things that I am interested in learning.
 
 
-# to build
-- RL environment for agents
-- LMDB rust
-
-
 # courses and competitions
 
 ## ML
@@ -21,6 +16,25 @@ These are the things that I am interested in learning.
 - [RL on 2048](https://colab.research.google.com/github/openai/gpt-oss/blob/main/examples/reinforcement-fine-tuning.ipynb)
 - [nanochat](https://github.com/karpathy/nanochat)
 - [RL in Huggingface](https://huggingface.co/learn)
+
+
+## cuda
+
+- [leetgpu](leetgpu.com)
+- [tensara](https://tensara.org/)
+- [programming massively parallel processors]
+
+### cuda misc
+- [How to Optimize a CUDA Matmul Kernel for cuBLAS-like Performance](http://siboehm.com/articles/22/CUDA-MMM)
+- [Outperforming cuBLAS on H100: a Worklog](http://cudaforfun.substack.com/p/outperforming-cublas-on-h100-a-worklog)
+- [Defeating Nondeterminism in LLM Inference:](http://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/)
+- [Making Deep Learning go Brrrr From First Principles: ](http://horace.io/brrr_intro.html)
+- [Transformer Inference Arithmetic:]( http://kipp.ly/transformer-inference-arithmetic/)
+- [Domain specific architectures for AI inference](http://fleetwood.dev/posts/domain-specific-architectures)
+- [A postmortem of three recent issues:](http://anthropic.com/engineering/a-postmortem-of-three-recent-issues)
+- [How To Scale Your Model:] (http://jax-ml.github.io/scaling-book/)
+- [The Ultra-Scale Playbook:] (http://huggingface.co/spaces/nanotron/ultrascale-playbook)
+- [The Case for Co-Designing Model Architectures with Hardware:]( http://arxiv.org/abs/2401.14489 )
 
 
 ## Shaders
@@ -92,6 +106,10 @@ These are the things that I am interested in learning.
 - [Bill gates interview 1992 PDC 1992](https://learn.microsoft.com/en-us/events/pdc-pdc-1992/pdc-1992-keynote-bill-gates)
 - [https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript](https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript)
 - [Adverserial collaboration - Daniel Kahneman](https://www.edge.org/adversarial-collaboration-daniel-kahneman)
+
+# to build
+- RL environment for agents
+- LMDB rust
 
 ## Privacy
 
