@@ -23,6 +23,9 @@ committed to the directory
 
 - `{{ partial "toc.html" .}}` can be used in any default template to be tested
 
+- `{{< pdf src="/vani_ma_recipes.pdf" >}}` can be used to embed pdf into the page.
+
+
 ### importing code snippets from other files.
 ```
 {{% code file="./file.go" language="go" %}}

@@ -1,5 +1,5 @@
 ---
-emoji: 📇
+emoji: 🛸
 title: Hail Mary
 description: Andy Weir
 date: 2025-11-24
