@@ -1,0 +1,54 @@
+baseURL: https://suriya.cc
+enableGitInfo: true
+disablePathToLower: true
+languageCode: en-us
+summaryLength: 20
+title: Suriya's site
+disableAliases: true
+params:
+  author: Suriya Ganesh
+  description: Suriya's blog of Stuff dabbles with
+
+taxonomies:
+  category: categories
+  tag: tags
+
+module:
+  imports:
+  - path: hugomod
+
+staticDir:
+  - static
+
+author:
+  name: Suriya Ganesh
+copyright: This work is licensed under a Creative Commons Attribution-ShareAlike 4.0
+  International License.
+
+enableRobotsTXT: true
+sitemap:
+  changefreq: weekly
+  filename: sitemap.xml
+  priority: 0.5
+
+markup:
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      linkifyProtocol: https
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute:
+        block: false
+        title: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false

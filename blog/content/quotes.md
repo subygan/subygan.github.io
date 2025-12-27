@@ -5,6 +5,9 @@ description: Quotes that I like
 date: 2023-06-03
 layout: base
 ---
+> Failure is seldom Fatal
+> - Winston Churchill 
+
 
 >Faithless is he that says farewell when the road darkens. 
 >— J.R.R. Tolkien
