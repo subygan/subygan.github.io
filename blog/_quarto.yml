@@ -1,0 +1,13 @@
+project:
+  type: hugo
+
+format: 
+  hugo-md:          # use hugo markdown format
+    maths: true
+    code-fold: false
+    method: goldmark # Ensures compatibility with Hugo's engine
+  
+execute: 
+  warning: false
+  freeze: auto       # prevents re-running code unless the file changes
+  cache: true        # Optional: speeds up rendering for files that ARE being run

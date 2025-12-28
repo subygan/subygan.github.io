@@ -33,6 +33,14 @@ committed to the directory
 "./" for relative imports "/assets/file/" for absolute imports
 
 
+### Quarto
+
+supports, `.qmd` files. to render math add `math: true` in the front matter. we use katex to convert it to latex on the client side.
+
+use `quarto render` to render the files
+
+When using quarto files, make sure the format is `topic/index.md` as opposed to `topic.md`
+
 
 
 ~~## Workflow~~
