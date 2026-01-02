@@ -7,7 +7,7 @@ description: and his ramblings in the void
 
 Hi! 👋
 
-I'm Suriya (pronounced Soo-ree-ya)
+Hi, I'm Surya. (I publish under my full name, Suriya Ganesh Ayyamperumal).
 
 I'm an Engineer, who loves to write. Suffice to say, I write here when I'm trying to think through something or when I've solved something.
 
@@ -26,8 +26,4 @@ I enjoy meeting new people. So definitely send a shout-out to me at, hi at suriy
 📜   [essays](/essays)
 
 You can find the [table of contents here](/toc)
-
-
-
-
 

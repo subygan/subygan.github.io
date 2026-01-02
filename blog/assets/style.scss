@@ -3260,3 +3260,11 @@ ul li {
 .formkit-form[data-uid="42df7c5be9"][min-width~="600"] .formkit-column:nth-child(2), .formkit-form[data-uid="42df7c5be9"][min-width~="700"] .formkit-column:nth-child(2), .formkit-form[data-uid="42df7c5be9"][min-width~="800"] .formkit-column:nth-child(2) {
   border-top: none;
 }
+
+.copyright {
+    text-align: center;
+    margin-top: 20px; /* Creates space between the icons and the text */
+    font-size: 0.9rem; /* Makes the font slightly smaller than body text */
+    color: #000000; /* Change this to match your text color (e.g., #333 or black) */
+    opacity: 0.8; /* Optional: makes it slightly distinct from main content */
+}

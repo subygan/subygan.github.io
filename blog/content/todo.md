@@ -8,8 +8,8 @@ layout: base
 These are the things that I am interested in learning.
 
 - [Nested Learning](https://research.google/blog/introducing-nested-learning-a-new-ml-paradigm-for-continual-learning/)
-
 - [Jeff Dean on performance](https://abseil.io/fast/hints.html)
+- [Non zero sum games](https://nonzerosum.games/)
 # courses and competitions
 
 ## ML
