@@ -2,7 +2,7 @@
 emoji: 📇
 title: Poor Richard's almanack
 description: Benjamin Franklin
-date: 2025-09-30
+date: 2025-12-28
 layout: base
 ---
 
