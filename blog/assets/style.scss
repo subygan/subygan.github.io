@@ -360,7 +360,7 @@ html.dark-mode .navbar {
 .menu-toggle {
   display: none;
   position: fixed;
-  top: calc(var(--header-height) + 1rem);
+  top: calc(var(--header-height) / 2 - 24px);
   left: 1rem;
   z-index: 1001;
   background-color: var(--bg-secondary);

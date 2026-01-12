@@ -10,7 +10,12 @@
       <p class="page-description">{{ .Description }}</p>
     </header>
     {{ if .Params.date }}
-    <p class="article-date">{{ .PublishDate.Format "January 2,2006" }}</p>
+    <p class="article-date">
+      {{ .PublishDate.Format "January 2, 2006" }} · {{ .ReadingTime }} min read
+      {{ if .Params.tags }}
+       · {{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}<a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}" style="color: var(--accent-color);">{{ $tag }}</a>{{ end }}
+      {{ end }}
+    </p>
 
     {{ end }}
     <div class="blender" id="blender"></div>

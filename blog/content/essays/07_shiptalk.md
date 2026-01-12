@@ -5,6 +5,7 @@ emoji: 🛳️
 title: Shiptalk
 description: Why Shipping matters
 date: 2025-02-15
+tags: ["product", "shipping", "startups", "building"]
 ---
 
 Building a product goes something like this.

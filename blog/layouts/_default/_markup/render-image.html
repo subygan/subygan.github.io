@@ -1,0 +1,10 @@
+{{- $alt := .Text -}}
+{{- $src := .Destination -}}
+{{- $title := .Title -}}
+
+<img src="{{ $src | safeURL }}"
+     alt="{{ $alt }}"
+     {{- with $title }} title="{{ . }}"{{ end }}
+     loading="lazy"
+     {{- with .Page.Params.imageWidth }} width="{{ . }}"{{ end }}
+     {{- with .Page.Params.imageHeight }} height="{{ . }}"{{ end }}>

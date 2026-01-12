@@ -1,0 +1,8 @@
+{{- $href := .Destination -}}
+{{- $text := .Text -}}
+{{- $title := .Title -}}
+
+<a href="{{ $href | safeURL }}"
+   {{- with $title }} title="{{ . }}"{{ end }}>
+   {{- $text | safeHTML -}}
+</a>
