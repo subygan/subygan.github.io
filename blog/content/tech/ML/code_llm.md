@@ -4,6 +4,7 @@ title: LLM Code generation notes
 description: I explore LLMs and generating code. 
 date: 2024-03-19
 layout: base
+tags: ["tech", "machine-learning"]
 ---
 
 

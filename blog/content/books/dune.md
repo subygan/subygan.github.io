@@ -4,6 +4,7 @@ title: Dune
 description: Reading Dune
 date: 2024-06-22
 layout: base
+tags: ["book", "fiction", "philosophy"]
 ---
 
 Dune was such a surprising read for me. I got interested in it after the movies, and I was blown away by the storyline.

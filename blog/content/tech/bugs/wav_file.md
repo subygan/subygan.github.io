@@ -4,6 +4,7 @@ title: Wav file shenanigans
 description: I go around fixing problems with wav files. 
 date: 2024-03-19
 layout: base
+tags: ["tech", "programming"]
 ---
 
 Reading input from users is difficult.

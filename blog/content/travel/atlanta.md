@@ -4,6 +4,7 @@ title: Atlanta
 description: A Week in Atlanta
 date: 2024-09-06
 layout: base
+tags: ["travel"]
 ---
 
 Atlanta is what happens if you put too many white collars in the same space.

@@ -4,6 +4,7 @@ title: Organizational Wisdom
 description: A rabbit hole of being inspired and intense.
 date: 2024-10-16
 layout: base
+tags: ["essay", "leadership", "philosophy"]
 ---
 
 What started with [Nabeel Qureshi's Reflections on Palantir](https://nabeelqu.substack.com/p/reflections-on-palantir) led me into an incredibly deep and rich rabbit hole of companies, intensity, operating them and, a whole host of new (to me) industry operators within the palantir circles such as, [Tyler Cowen](https://marginalrevolution.com/marginalrevolution/2022/02/context-is-that-which-is-scarce-2.html), [Shyam Sankar](https://www.shyamsankar.com/), etc.

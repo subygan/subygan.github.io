@@ -4,6 +4,7 @@ title: Life has no answers, but inifinite questions
 description: People we lose to the throes of life.
 date: 2025-09-28
 layout: base
+tags: ["essay"]
 ---
 
 He would have been 27 today.

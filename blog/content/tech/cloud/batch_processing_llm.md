@@ -4,6 +4,7 @@ title: Batch processing LLM Inference
 description: Notes from running LLM operation over 1M documents. 
 date: 2024-07-14
 layout: base
+tags: ["tech"]
 ---
 
 I experimented with a lot of models, and as advertised claude3-haiku gave the best results, in terms of quality and cost. At the time of writing 1K input tokens cost $0.00025. Which is mind blowingly cheap, because the next best model was about 8 times costlier not to mention gpt 4o which was about 20 times costlier.

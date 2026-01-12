@@ -4,6 +4,7 @@ title: AI governance and threat modelling
 description: AI/ML applications bring with them a new class of problems and solutions. These are my notes learning about this
 date: 2023-11-09
 layout: base
+tags: ["tech", "privacy"]
 ---
 
 ## How are ML systems measured.

@@ -4,6 +4,7 @@ title: Why I Build.
 description: My beliefs and why it defines who I am 
 date: 2024-11-26
 layout: base
+tags: ["essay", "building", "creativity"]
 ---
 
 I've spent all my free time building arcane projects that don't matter.

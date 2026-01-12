@@ -4,6 +4,7 @@ title: System Design
 description: notes while learning system design
 date: 2023-04-03
 layout: base
+tags: ["tech", "programming"]
 ---
 
 ## Scaling to million users

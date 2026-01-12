@@ -2,24 +2,90 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{{.Params.Title}}</title>
-
-  {{ if .Params.description }}
-  <meta property="og:description" content="{{ .Params.description }}">
-
+  <!-- Title -->
+  {{ if .IsHome }}
+  <title>{{ .Site.Title }} - Technical Writing & Life</title>
+  {{ else if .Params.Title }}
+  <title>{{ .Params.Title }} | {{ .Site.Params.author }} - Technical Writing</title>
   {{ else }}
-  <meta name="description" content="My place on the web with my content">
+  <title>{{ .Title }} | {{ .Site.Params.author }}</title>
   {{ end }}
-  <meta name="author" content="Suriya Ganesh">
 
-  <meta property="og:title" content="Suriya Ganesh">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.suriya.cc">
-  {{ if .Params.image }}
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ .Permalink }}">
 
-  <meta property="og:image" content="{{ .Params.image }}">
+  <!-- Description -->
+  {{ if .Params.description }}
+  <meta name="description" content="{{ .Params.description }}">
+  <meta property="og:description" content="{{ .Params.description }}">
+  {{ else if .Summary }}
+  <meta name="description" content="{{ .Summary | plainify | truncate 160 }}">
+  <meta property="og:description" content="{{ .Summary | plainify | truncate 160 }}">
   {{ else }}
-  <meta property="og:image" content="/assets/images/s.png">
+  <meta name="description" content="Suriya Ganesh's personal website featuring technical writing, essays, book notes, and life updates.">
+  <meta property="og:description" content="Suriya Ganesh's personal website featuring technical writing, essays, book notes, and life updates.">
+  {{ end }}
+
+  <!-- Author & Keywords -->
+  <meta name="author" content="Suriya Ganesh">
+  {{ with .Params.tags }}
+  <meta name="keywords" content="{{ delimit . ", " }}">
+  {{ end }}
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  {{ if .IsHome }}
+  <meta property="og:title" content="{{ .Site.Title }} - Technical Writing & Life">
+  {{ else }}
+  <meta property="og:title" content="{{ .Title }}">
+  {{ end }}
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  {{ if .Params.image }}
+  <meta property="og:image" content="{{ .Params.image | absURL }}">
+  {{ else }}
+  <meta property="og:image" content="{{ "/assets/images/s.png" | absURL }}">
+  {{ end }}
+
+  <!-- Article-specific Open Graph tags -->
+  {{ if .IsPage }}
+  {{ with .Date }}
+  <meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">
+  {{ end }}
+  {{ with .Lastmod }}
+  <meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">
+  {{ end }}
+  {{ with .Params.tags }}
+  {{ range . }}
+  <meta property="article:tag" content="{{ . }}">
+  {{ end }}
+  {{ end }}
+  <meta property="article:author" content="Suriya Ganesh">
+  {{ with .Section }}
+  <meta property="article:section" content="{{ . }}">
+  {{ end }}
+  {{ end }}
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@suriya">
+  <meta name="twitter:creator" content="@suriya">
+  {{ if .IsHome }}
+  <meta name="twitter:title" content="{{ .Site.Title }} - Technical Writing & Life">
+  {{ else }}
+  <meta name="twitter:title" content="{{ .Title }}">
+  {{ end }}
+  {{ if .Params.description }}
+  <meta name="twitter:description" content="{{ .Params.description }}">
+  {{ else if .Summary }}
+  <meta name="twitter:description" content="{{ .Summary | plainify | truncate 160 }}">
+  {{ else }}
+  <meta name="twitter:description" content="Suriya Ganesh's personal website featuring technical writing, essays, book notes, and life updates.">
+  {{ end }}
+  {{ if .Params.image }}
+  <meta name="twitter:image" content="{{ .Params.image | absURL }}">
+  {{ else }}
+  <meta name="twitter:image" content="{{ "/assets/images/s.png" | absURL }}">
   {{ end }}
 
   {{ if .Params.hasEncryptedContent }}
@@ -62,6 +128,108 @@
               ]
           });
       });
+  </script>
+  {{ end }}
+
+  <!-- JSON-LD Structured Data -->
+  {{ if .IsHome }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ .Site.Title }}",
+    "url": "{{ .Site.BaseURL }}",
+    "description": "Suriya Ganesh's personal website featuring technical writing, essays, book notes, and life updates.",
+    "author": {
+      "@type": "Person",
+      "name": "Suriya Ganesh",
+      "url": "{{ .Site.BaseURL }}"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Suriya Ganesh",
+    "url": "{{ .Site.BaseURL }}",
+    "sameAs": [
+      "https://github.com/subygan",
+      "https://twitter.com/suriya",
+      "https://linkedin.com/in/suriyaganesh"
+    ],
+    "jobTitle": "Software Engineer",
+    "description": "Technical writer and software engineer passionate about systems, ML, and building things."
+  }
+  </script>
+  {{ else if .IsPage }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "{{ if eq .Section "tech" }}TechArticle{{ else }}Article{{ end }}",
+    "headline": "{{ .Title }}",
+    "description": "{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}",
+    "author": {
+      "@type": "Person",
+      "name": "Suriya Ganesh",
+      "url": "{{ .Site.BaseURL }}"
+    },
+    "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+    "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+    "publisher": {
+      "@type": "Person",
+      "name": "Suriya Ganesh",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ "/assets/images/s.png" | absURL }}"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ .Permalink }}"
+    },
+    {{ if .Params.image }}
+    "image": "{{ .Params.image | absURL }}",
+    {{ else }}
+    "image": "{{ "/assets/images/s.png" | absURL }}",
+    {{ end }}
+    {{ if .Params.tags }}
+    "keywords": "{{ delimit .Params.tags ", " }}",
+    {{ end }}
+    "articleSection": "{{ .Section }}",
+    "wordCount": {{ .WordCount }},
+    "inLanguage": "en-US"
+  }
+  </script>
+  {{ end }}
+
+  <!-- BreadcrumbList Schema -->
+  {{ if not .IsHome }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "{{ .Site.BaseURL }}"
+      }{{ if .Section }},
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{ .Section | humanize | title }}",
+        "item": "{{ .Site.BaseURL }}{{ .Section }}"
+      }{{ end }}{{ if .IsPage }},
+      {
+        "@type": "ListItem",
+        "position": {{ if .Section }}3{{ else }}2{{ end }},
+        "name": "{{ .Title }}",
+        "item": "{{ .Permalink }}"
+      }{{ end }}
+    ]
+  }
   </script>
   {{ end }}
 

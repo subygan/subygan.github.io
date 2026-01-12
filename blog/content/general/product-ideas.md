@@ -4,6 +4,7 @@ title: Product Ideas
 description: a dump of Product ideas that I come up with 
 date: 2022-07-16
 layout: base
+tags: ["startups", "tech"]
 ---
 
 Inspiration comes from many places. I love jotting them down here.

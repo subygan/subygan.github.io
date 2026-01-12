@@ -4,6 +4,7 @@ title: A Backend Engineer Writes Frontend
 description: Writing frontend should be straightforward, Or so I thought...
 date: 2024-05-06
 layout: base
+tags: ["tech", "programming"]
 ---
 
 My friend Limin and I, were playing around with some LLM agents and realized that these agents could be a very good way to learn a language as they have a much better grip on the language and are able to provide great feedbacks.

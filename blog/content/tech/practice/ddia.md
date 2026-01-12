@@ -4,6 +4,7 @@ emoji: ⚜️
 layout: base
 description: My notes on reading, designing data intensive applications
 date: 2022-10-23
+tags: ["tech", "programming"]
 ---
 
 # Ch-1: Reliable, Scalable and maintainable applications

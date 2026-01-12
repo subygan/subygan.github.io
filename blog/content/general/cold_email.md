@@ -4,6 +4,7 @@ title: Successful Cold Emailing
 description: A very solid collection of wildly successful cold emails
 date: 2025-10-25
 layout: base
+tags: ["writing", "startups"]
 ---
 
 cold emailing is very powerful, but doing it effectively is a very difficult task. There are so many things to consider, before sending out an email. This is a collection of successful cold emails I've found around the web.

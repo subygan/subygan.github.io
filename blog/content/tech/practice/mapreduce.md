@@ -4,6 +4,7 @@ emoji: 🗺️
 layout: base
 description: Notes from the google's mapreduce paper
 date: 2022-12-24
+tags: ["tech", "programming"]
 ---
 
 MapReduce is a programming model published in 2004 by google, to process large data in clusters

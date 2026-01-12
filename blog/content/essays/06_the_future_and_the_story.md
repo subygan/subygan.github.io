@@ -1,10 +1,10 @@
 ---
 layout: base
-type: page
 emoji: 🧠
 title: The future and The story
 description: Is all of economy just an endless story?
 date: 2022-04-11 22:15:00
+tags: ["essay", "writing", "creativity"]
 ---
 
 Companies are valued much higher when they are pursuing something super big, super into the future. eg, facebook => meta, amazon => cloud, etc

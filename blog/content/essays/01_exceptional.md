@@ -4,6 +4,7 @@ title: Why Accelerate?
 description: reflections on doing everything with intensity and focus.
 date: 2023-11-09
 layout: base
+tags: ["essay", "philosophy"]
 ---
 
 ## [Parkinson's law](https://en.wikipedia.org/wiki/Parkinson%27s_law)

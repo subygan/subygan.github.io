@@ -4,6 +4,7 @@ title: LLMs and unstructured data
 description: How LLMs are changing the way unstructured data is being processed and understood.
 date: 2024-08-31
 layout: base
+tags: ["tech", "programming"]
 ---
 
 Close on the heels of running a [batch processing job over 1M documents](/tech/cloud/batch_processing_llm), I was thinking about how LLMs are changing the way we process unstructured data.

@@ -4,6 +4,7 @@ title: Allegory of the cave
 description: Plato allegory of the cave. and some of my thoughts on it 
 date: 2024-04-01
 layout: base
+tags: ["book", "philosophy"]
 ---
 
 [material](https://scholar.harvard.edu/files/seyer/files/plato_republic_514b-518d_allegory-of-the-cave.pdf)

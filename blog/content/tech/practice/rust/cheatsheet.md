@@ -4,6 +4,7 @@ title: Rust cheatsheet
 description: Looking back at rust and it's shenanigans.
 date: 2024-02-28
 layout: base
+tags: ["tech", "programming"]
 ---
 
 ```rust

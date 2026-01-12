@@ -4,6 +4,7 @@ title: gccissues
 description: Making gcc work properly
 date: 2024-07-07
 layout: base
+tags: ["tech", "programming"]
 ---
 
 A simple way to include all available libraries in cpp in most OSs is to just add `#include <bits/stdc++.h>`. 

@@ -4,6 +4,7 @@ title: ML Guardrails
 description: My research diary on looking at ML Guardrails AKA model alignment
 date: 2024-02-06
 layout: base
+tags: ["tech", "machine-learning"]
 ---
 
 The base premise is that, aligning the model for the goal that it was created for is a long tail problem and requires multiple guardrails to control it's output. Without this, the model could possibly go off the rails and create a lot of confusion.

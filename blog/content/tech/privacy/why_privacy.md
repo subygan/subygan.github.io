@@ -4,6 +4,7 @@ emoji: 🚪
 layout: base
 description: Why does privacy matter? Do we really need privacy? I don't have anything to hide, and other such ideas...
 date: 2023-10-03
+tags: ["tech", "privacy"]
 ---
 
 Fundamental problem has been that, privacy is hard to define.

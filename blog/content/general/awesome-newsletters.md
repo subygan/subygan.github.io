@@ -4,6 +4,7 @@ title: Newsletters and blogs that are interesting
 description: I read a lot from people 
 date: 2024-10-16
 layout: base
+tags: ["learning", "writing"]
 ---
 
 ### [Pg's Essays](https://paulgraham.com/articles.html)

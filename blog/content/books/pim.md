@@ -5,6 +5,7 @@ description: the pim book
 date: 2023-06-04
 layout: base
 mathjax: true
+tags: ["book", "learning"]
 ---
 
 ## polynomials

@@ -4,6 +4,7 @@ title: Intro to LLM
 description: Notes from Andrej Karpathy's introduction to LLM talk.
 date: 2023-11-23
 layout: base
+tags: ["tech", "machine-learning"]
 ---
 
 My notes on Karpathy's [Intro to LLM talk](https://youtu.be/zjkBMFhNj_g)

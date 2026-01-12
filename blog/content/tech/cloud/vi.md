@@ -4,6 +4,7 @@ title: Vim
 description: btw
 date: 2024-08-15
 layout: base
+tags: ["tech"]
 ---
 
 Vim stuff that I usually use and generally forget

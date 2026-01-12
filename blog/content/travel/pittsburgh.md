@@ -4,6 +4,7 @@ title: Pittsburgh
 description: The City of Rust.
 date: 2024-10-16
 layout: base
+tags: ["travel", "learning"]
 ---
 
 Pittsburgh has the quaint old town vibe with its own special antiquated ecosystems. It definitely has the feeling of a once flourising industrial town, now in its midlife crisis trying to find it's place in the world.

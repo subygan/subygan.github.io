@@ -4,6 +4,7 @@ title: Hail Mary
 description: Andy Weir
 date: 2025-11-24
 layout: base
+tags: ["book", "fiction"]
 ---
 
 Overall I loved this book a lot. bought me a new passion for reading fiction.

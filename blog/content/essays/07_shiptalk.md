@@ -1,10 +1,10 @@
 ---
 layout: base
-type: page
 emoji: 🛳️
 title: Shiptalk
 description: Why Shipping matters
 date: 2025-02-15
+tags: ["essay", "startups", "building"]
 ---
 
 Building a product goes something like this.

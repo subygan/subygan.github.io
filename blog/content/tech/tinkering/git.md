@@ -4,6 +4,7 @@ title: Git LFS
 description: Working with Git LFS and other problems
 date: 2024-07-11
 layout: base
+tags: ["tech", "programming"]
 ---
 
 

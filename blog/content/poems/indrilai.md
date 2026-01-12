@@ -4,6 +4,7 @@ title: பூத்தது மானுடம்
 description: சாலை. இளந்திரையன்
 date: 2024-02-03
 layout: base
+tags: ["poetry"]
 ---
 
 

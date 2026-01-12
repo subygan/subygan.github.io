@@ -4,6 +4,7 @@ title: QMD for Hugo
 description: How I handle qmd
 date: 2025-12-29
 layout: base
+tags: ["tech", "programming"]
 ---
 
 I really love just taking notes, run code and having it in my blog.

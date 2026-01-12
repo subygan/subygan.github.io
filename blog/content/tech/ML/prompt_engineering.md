@@ -4,6 +4,7 @@ title: Prompt Engineering
 description: prompt examples
 date: 2024-01-23
 layout: base
+tags: ["tech", "machine-learning"]
 ---
 
 ## In Context Learning

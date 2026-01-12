@@ -4,6 +4,7 @@ title: Privacy problems and attacks in Machine Learning
 description: ML problems are usually solved by throwing more data at it. More data, compounds the privacy problems faced by these models. This is a list of papers and articles that talk about these problems.
 date: 2024-07-19
 layout: base
+tags: ["tech", "privacy"]
 ---
 
 ## Privacy problems and attacks in Machine Learning

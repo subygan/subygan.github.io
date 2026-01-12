@@ -4,6 +4,7 @@ title: My Stack
 description: How I deploy personal and Hobby apps.
 date: 2024-07-15
 layout: base
+tags: ["tech"]
 ---
 
 I used to deploy everything in an ec2 instance with docker-compose and nginx. Keeps it clean to apply small updates and also take backups. Where I'll run different postgres containers for different containers, with some volume mapping and a backup container that triggers a backup push.

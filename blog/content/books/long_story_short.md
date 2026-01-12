@@ -4,6 +4,7 @@ title: To cut a long story short - Jeffrey Archer
 description: Collection of pretty interesting short stories 
 date: 2023-11-04
 layout: base
+tags: ["book", "writing"]
 ---
 
 I've previously read Jeffrey Archer's other Short story collection, __Twelve Red Herrings__ and __The Collected Short Stories__. This collection lacked the "punch" factor that "Twelve Red Herrings". But, I still enjoyed all the stories.   

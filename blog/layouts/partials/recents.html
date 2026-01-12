@@ -2,12 +2,18 @@
 {{ $sortedPages := sort .everything.Site.Pages "PublishDate" "desc" }}
 {{ $sortedPages := first .count $sortedPages }}
 
-<!--<ul>-->
+<div class="recent-posts-list">
 {{ range $sortedPages }}
     {{ if .Title }}
-    <h5><a href="{{ .Permalink}}"> {{ .Title }}, &nbsp; {{ .PublishDate.Format "Jan 2 2006" }}</a></h5>
-<p>{{ .Description }}...<a href="{{.Permalink }}">click to read</a></p>
+    <div class="recent-post-item">
+      <div class="recent-post-title">
+        <a href="{{ .Permalink}}">{{ .Title }}</a>
+        <span class="recent-post-date">{{ .PublishDate.Format "Jan 2, 2006" }}</span>
+      </div>
+      {{ if .Description }}
+      <p class="recent-post-description">{{ .Description }}</p>
+      {{ end }}
+    </div>
     {{ end }}
-<hr style="width:50%;text-align:left;margin-left:0">
 {{end}}
-<!--</ul>-->
+</div>

@@ -4,6 +4,7 @@ title: Data privacy
 description: What about it? does it matter? why is it important?
 date: 2024-01-16
 layout: base
+tags: ["book", "privacy", "tech"]
 ---
 
 These are my notes from Nishant's excellent book, [Data Privacy: Runbook for Engineers](https://www.oreilly.com/library/view/data-privacy/9781617298998/)

@@ -1,9 +1,10 @@
 ---
 emoji: 🪣
-title: Leaky Abstractions, or How we Understand the world 
+title: Leaky Abstractions, or How we Understand the world
 description: metaphors, examples and analogies are how we understand the world. but do they (pardon the pun) hold water, under scrutiny? How much do you depend on them?
 date: 2024-10-02
 layout: base
+tags: ["essay", "tech", "systems"]
 ---
 
 Languages are a lossy communication framework. You meant one thing, but your friend understood something else. The same words don't mean the same thing even a few hundred miles apart, etc. It is wildly unfair to try and represent billions of neurons firing together, in sound waves only a few amplitudes higher or lower.

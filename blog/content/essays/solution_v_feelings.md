@@ -4,6 +4,7 @@ title: Solutions vs Feelings
 description: Are you "solution-oriented" about a problem or in the feelings stage?
 date: 2024-08-31
 layout: base
+tags: ["essay", "psychology"]
 ---
 
 A friend of yours is going through a tough breakup.

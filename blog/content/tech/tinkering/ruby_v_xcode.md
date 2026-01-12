@@ -1,10 +1,10 @@
 ---
 layout: base
-type: page
 emoji: ♦️
 title: Installing jekyll for the first time and issues
 description: Faced this issue when installing ruby for the first time.
 date: 2021-12-21 22:15:00
+tags: ["tech", "programming"]
 ---
 
 I was trying to install jekyll in my local machine and faced this error

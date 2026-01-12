@@ -4,6 +4,7 @@ title: How and Why I Taught My Toddler to Read
 description: Larry Sanger
 date: 2025-10-03
 layout: base
+tags: ["book", "learning", "tech"]
 ---
 
 I will start out by saying I'm a big fan of ridiculously successful people taking their hobbies/passtimes to extreme ends. Which is why i really like, Linus torvalds building his scuba diving software or Nathan Myhrvold writing a five volume book set about bread. Something about it is just fascinating to me. Here is a person whose attention is extremely in demand and there are a million on other higher priority stuff that they could do. But they chose this, and decided to spend an insane amount of time mastering/fixing this niche little problem with the world.

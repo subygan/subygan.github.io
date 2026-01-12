@@ -4,6 +4,7 @@ title: Awesome incubators/collectives for startups
 description: There are awesome resources available for builders and tinkerers. A lot of VCs and others want to foster an ecosystem of building. This helps wit this.
 date: 2024-10-15
 layout: base
+tags: ["startups"]
 ---
 
 ### Socratics

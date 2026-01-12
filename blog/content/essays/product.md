@@ -4,6 +4,7 @@ title: Product Building and fundamentals
 description: Thoughts on building products and selling them.
 date: 2024-12-10
 layout: base
+tags: ["essay", "startups", "building"]
 ---
 
 Just like any other tech-pilled software engineer. I've spent my free hours and days working on side projects in the hope that someday to live Independent to the corporate day job and working on something I own full time.

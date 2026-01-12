@@ -4,6 +4,7 @@ title: Badminton Handbook
 description: badminton reference and strategies
 date: 2023-04-23
 layout: base
+tags: ["book", "learning"]
 ---
 
 I usually like watching videos or brute force play for picking up skills. But, I wanted a comprehensive read on the topic and here we are. I learnt a lot more than I could've just by watching a video. Even though explaining some topics are definitely harder in a written medium.

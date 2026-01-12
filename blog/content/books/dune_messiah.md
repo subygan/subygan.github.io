@@ -4,6 +4,7 @@ title: Dune - The Messiah
 description: The sequel to Dune
 date: 2024-06-22
 layout: base
+tags: ["book", "fiction", "philosophy"]
 ---
 
 The growth of Paul into a sort of Genghis Khan style oppressive ruler was interesting. 

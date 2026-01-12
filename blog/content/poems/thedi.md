@@ -4,6 +4,7 @@ title: வரங் கேட்டல் - பாரதி
 description: Bharathiyar asks a wish from shiva
 date: 2024-02-03
 layout: base
+tags: ["poetry"]
 ---
 
 ### தோத்திரப் பாடல்கள் - யோக சித்தி

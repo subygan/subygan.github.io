@@ -4,6 +4,7 @@ title: Why Accelerate?
 description: reflections on doing everything with intensity and focus.
 date: 2025-10-25
 layout: base
+tags: ["learning", "philosophy"]
 ---
 
 

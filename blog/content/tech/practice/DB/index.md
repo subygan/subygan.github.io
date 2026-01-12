@@ -2,9 +2,9 @@
 title: DBMS - CMU DB user group
 emoji: 💽
 layout: base
-type: page
 description: CMU intro to DBMS playlist notes
 date: 2022-07-30 22:15:00
+tags: ["tech", "systems"]
 ---
 
 ### Sources

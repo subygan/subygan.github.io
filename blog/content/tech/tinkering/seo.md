@@ -4,6 +4,7 @@ layout: base
 emoji: 🐈
 description: My (simplistic) journey on registering my site with google for the first time.
 date: 2021-12-23 22:15:00
+tags: ["tech", "programming"]
 ---
 
 Without praying at the altar of google, A site doesn't exist in the internet.

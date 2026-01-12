@@ -4,6 +4,7 @@ title: My inventions - Nikola Tesla
 description: Tesla's autobiography about his early childhood and career 
 date: 2023-06-02
 layout: base
+tags: ["book", "learning", "creativity"]
 ---
 
 This was an incredible book, that lets a peek inside the mind of a genius.

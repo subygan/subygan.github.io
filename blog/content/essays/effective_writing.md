@@ -4,6 +4,7 @@ title: Writing
 description: the why, the what, the how
 date: 2024-11-05
 layout: base
+tags: ["essay", "writing", "learning"]
 ---
 
 I write a lot. and I forget a lot.

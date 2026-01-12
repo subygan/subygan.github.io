@@ -4,6 +4,7 @@ title: Trust me I'm lying
 description: my notes on the book
 date: 2023-04-15
 layout: base
+tags: ["book", "fiction"]
 ---
 
 

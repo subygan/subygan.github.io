@@ -4,6 +4,7 @@ title: Right to be Forgotten
 description: Digging deeper into right to be forgotten and its extent
 date: 2024-08-06
 layout: base
+tags: ["tech", "privacy"]
 ---
 
 This is a (mostly) search engine specific requirement where individuals are protected from the harm of their past actions.

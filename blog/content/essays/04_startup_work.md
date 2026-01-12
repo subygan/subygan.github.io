@@ -5,6 +5,7 @@ emoji: 🚀
 description: How, Why and What of working at a startup
 layout: base
 date: 2023-09-13
+tags: ["essay", "startups", "building"]
 ---
  
 I've been involved with tech startups for the last 5 years. And every moment of my time I believe I've done very meaningful work.

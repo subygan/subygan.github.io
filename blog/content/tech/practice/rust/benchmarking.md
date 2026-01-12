@@ -4,6 +4,7 @@ title: Rust Benchmarking
 description: Benchmarking ecosystem in rust reallyyy sucks. Some notes from me
 date: 2025-06-25
 layout: base
+tags: ["tech", "programming"]
 ---
 
 ## Libraries
