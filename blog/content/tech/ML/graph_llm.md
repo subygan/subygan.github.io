@@ -4,6 +4,7 @@ title: Graphs and LLMs
 description: There are a lot of graph problems being re-thought __for LLMs__ and __by LLMs__
 date: 2024-02-11
 layout: base
+tags: ["tech", "machine-learning"]
 ---
 
 I'll add the ones with the most fun:utilization first

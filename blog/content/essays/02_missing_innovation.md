@@ -4,6 +4,7 @@ emoji: 🕵🏻‍♂️
 layout: base
 description: The Innovation that should've been but isn't.
 publishdate: 2020-03-24
+tags: ["essay", "startups", "tech"]
 ---
 
 Historically, Most innovation has originated from developed nations and trickled down to developing ones, very much following the [Trickle down efffect](https://en.wikipedia.org/wiki/Trickle-down_effect)

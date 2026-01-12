@@ -4,6 +4,7 @@ title: When Breath becomes Air
 description: Paul Kalanithi
 date: 2023-04-17
 layout: base
+tags: ["book", "learning"]
 ---
 
 Paul Kalanithi's heart touching story about his struggle to search for a life with meaning, across literature and medicine, finally having a calling in neuroscience only for it to slip away too soon in the form of lung cancer.

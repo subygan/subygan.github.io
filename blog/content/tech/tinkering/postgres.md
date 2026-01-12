@@ -3,8 +3,8 @@ emoji: 🦤
 title: postgres
 description: notes from working on postgres
 date: 2025-08-10
-type: page
 layout: base
+tags: ["tech", "programming"]
 ---
 
 Often in postgres, there are some unique stuff that is there for postgres which slows stuff down or speeds up the query.

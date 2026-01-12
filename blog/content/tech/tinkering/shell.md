@@ -4,6 +4,7 @@ title: Shell hacks
 description: Hacky tools and ways to do things
 date: 2024-07-23
 layout: base
+tags: ["tech", "programming"]
 ---
 
 ## number of lines in a file

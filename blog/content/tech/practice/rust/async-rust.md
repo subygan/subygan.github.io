@@ -4,6 +4,7 @@ title: Async rust
 description: Async Rust and performance benefits.
 date: 2025-08-10
 layout: base
+tags: ["tech", "programming"]
 ---
 
 

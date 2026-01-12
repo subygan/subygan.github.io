@@ -4,6 +4,7 @@ title: CMU Square
 description: My notes on CMU's Square framework
 date: 2024-01-18
 layout: base
+tags: ["tech", "privacy"]
 ---
 
 SQUARE (Software Quality Requirements Engineering) is SEI's framework for "Improving identification, analysis, specification and management (of software)".

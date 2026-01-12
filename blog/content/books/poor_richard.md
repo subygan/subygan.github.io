@@ -4,6 +4,7 @@ title: Poor Richard's almanack
 description: Benjamin Franklin
 date: 2025-12-28
 layout: base
+tags: ["book", "finance", "philosophy"]
 ---
 
 

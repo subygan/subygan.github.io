@@ -1,10 +1,10 @@
 ---
 layout: base
-type: page
 emoji: ♦️
 title: Django issues and quick fixes
 description: Fighting with django
 date: 2022-02-04 22:15:00
+tags: ["tech", "programming"]
 ---
 
 CSRF token invalid `__URL__` not in trusted origin

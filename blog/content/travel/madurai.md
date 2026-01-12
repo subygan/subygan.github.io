@@ -4,6 +4,7 @@ title: Madurai
 description: Best Goddamn South Indian food, pretty much anywhere in the world.
 date: 2024-10-25
 layout: base
+tags: ["travel"]
 ---
 
 I lived in Madurai till my first grade. So It's a really nostalgic town for me.

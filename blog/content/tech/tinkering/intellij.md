@@ -4,6 +4,7 @@ title: intellij hacks
 description: Wrangling with intellij
 date: 2023-04-03
 layout: base
+tags: ["tech", "programming"]
 ---
 
 live templates is very useful to record oft repeated patterns

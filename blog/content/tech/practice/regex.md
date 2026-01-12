@@ -4,6 +4,7 @@ emoji: ⠝
 layout: base
 description: Regex learning
 date: 2022-11-06
+tags: ["tech", "programming"]
 ---
 
 

@@ -4,6 +4,7 @@ title: Machines of Loving Grace
 description: Dario Amodei
 date: 2025-10-07
 layout: base
+tags: ["book", "tech", "philosophy"]
 ---
 
 

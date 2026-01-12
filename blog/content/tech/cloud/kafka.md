@@ -4,6 +4,7 @@ title: Kafka
 description: Reading kafka documentation
 date: 2023-04-03
 layout: base
+tags: ["tech"]
 ---
 
 ## Apache kafka

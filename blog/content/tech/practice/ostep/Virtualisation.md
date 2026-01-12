@@ -2,9 +2,9 @@
 title: OSTEP-1 Virtualisation
 emoji: 🧑🏻‍🏫
 layout: base
-type: page
 description: OSTEP Virtualisation notes
 date: 2021-04-01 22:15:00
+tags: ["tech", "systems", "learning"]
 ---
 
 # ch4 : Processes

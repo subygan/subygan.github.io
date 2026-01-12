@@ -4,6 +4,7 @@ title: Poetry
 description: The python package manager
 date: 2024-11-14
 layout: base
+tags: ["tech", "programming"]
 ---
 
 Python package management is a nightmare. Poetry somewhat solves it.

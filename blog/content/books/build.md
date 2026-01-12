@@ -4,6 +4,7 @@ title: Build - Tony Fadell
 description: My notes from Tony Fadell's book, build.
 date: 2023-04-13
 layout: base
+tags: ["book", "leadership", "startups"]
 ---
 
 Tony Fadell Writes about his lessons from his enrepreneurial and leadership role, shipping multiple successful products. A great book teaching about how companies, leaders and employees think

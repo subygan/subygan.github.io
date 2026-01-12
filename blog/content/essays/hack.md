@@ -4,6 +4,7 @@ title: Tell us about the time you most successfully hacked some (non-computer) s
 description: collecting information about the classic question "Please tell us about the time you most successfully hacked some (non-computer) system to your advantage. (i.e. meeting hard to reach people, getting free stuff or money, getting out of a punishment, etc)"
 date: 2024-08-20
 layout: base
+tags: ["essay", "startups", "building"]
 ---
 
 YC is looking for evidence that you are clever. The ability to think out of the box and manipulate large systems to your advantage are critical to gaining an edge on the market when you have no capital advantage (which is usually the case with startups) https://medium.com/@zan2434/y-combinator-applicant-advice-289c58a2ca89

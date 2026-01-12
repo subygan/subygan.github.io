@@ -4,6 +4,7 @@ emoji: 🚪
 layout: base
 description: Privacy across multiple browsers.
 date: 2023-09-19
+tags: ["tech", "privacy"]
 ---
 
 I came across this website which tracks and tests privacy of various browsers. https://privacytests.org/

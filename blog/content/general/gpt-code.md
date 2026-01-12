@@ -4,6 +4,7 @@ title: Software Engineering agents work. But only if you do
 description: When and where Agents work. Most importantly, How to work with them
 date: 2025-09-13
 layout: base
+tags: ["tech", "machine-learning", "programming"]
 ---
 
 Every week there is a new agent that the twitter micro-cosmos gets fired up about. This week it was agent 3.

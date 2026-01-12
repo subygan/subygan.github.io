@@ -1,10 +1,10 @@
 ---
 layout: base
-type: page
 emoji:  🤺
 title: ruby hack
 description: notes while tinkering with ruby
 date: 2021-07-06 22:15:00
+tags: ["tech", "programming"]
 ---
 
 

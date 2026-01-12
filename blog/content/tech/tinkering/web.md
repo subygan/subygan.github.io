@@ -4,6 +4,7 @@ title: Web
 description: Web stuff that are curious or interesting
 date: 2023-04-03
 layout: base
+tags: ["tech", "programming"]
 ---
 
 ### No cache image

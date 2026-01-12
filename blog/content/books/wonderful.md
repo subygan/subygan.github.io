@@ -4,6 +4,7 @@ title: Make Something Wonderful - Steve Jobs
 description: Steve Jobs about his life and theories in his own words
 date: 2023-04-04
 layout: base
+tags: ["book", "fiction"]
 ---
 
 

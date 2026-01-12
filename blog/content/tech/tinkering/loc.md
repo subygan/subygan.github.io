@@ -4,6 +4,7 @@ title: Library of Congress information
 description: Looking through the library of congress for a project
 date: 2024-08-17
 layout: base
+tags: ["tech", "programming"]
 ---
 
 Library of Congress is really an incredible repository of content.

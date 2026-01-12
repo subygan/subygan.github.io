@@ -3,6 +3,7 @@ title: ARM
 emoji: 📠
 layout: base
 date: 2020-09-25
+tags: ["essay", "tech"]
 ---
 
 A history lesson on ARM, The company that is at the epicenter of all tech innovation in the 21st century. 

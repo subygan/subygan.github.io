@@ -4,6 +4,7 @@ title: the metamorphosis - Franz Kafka
 description: The origin of kafkaesque. The story about a person getting transformed into a bug.
 date: 2025-04-01
 layout: base
+tags: ["book", "fiction", "philosophy"]
 ---
 
 Reading Kafka is a strange experience. There's an uncomfortable feeling, especially with *Metamorphosis*, that you're being told a story that is both completely impossible and deeply, uncomfortably true.

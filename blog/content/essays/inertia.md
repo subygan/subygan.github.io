@@ -4,6 +4,7 @@ title: inertia
 emoji: ♾️
 layout: base
 date: 2024-09-12
+tags: ["essay", "psychology"]
 ---
 
 Inertia is the best way to keep oneself active and consistent.

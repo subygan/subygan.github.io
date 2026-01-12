@@ -3,8 +3,8 @@ emoji: 🦤
 title: Building an extension
 description: My notes on building a browser extension
 date: 2022-02-02 22:15:00
-type: page
 layout: base
+tags: ["tech", "programming"]
 ---
 
 browser extensions have been an area of interest for a while. I tried building an extension that would help me save stuff in my [readlog](/readlog). Sort of simply highlight stuff from within the page.

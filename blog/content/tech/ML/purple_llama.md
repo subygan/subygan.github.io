@@ -4,6 +4,7 @@ title: Purple LLama
 description: Purple Llama CyberSecEval a secure coding benchmark
 date: 2023-12-11
 layout: base
+tags: ["tech", "machine-learning"]
 ---
 
 PurpleLlama is a new framework proposed by Meta to evaluate LLMs for their secure coding ability.

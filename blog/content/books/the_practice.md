@@ -4,6 +4,7 @@ title: The Practice
 description: Shipping Creative Work
 date: 2024-11-06
 layout: base
+tags: ["book", "creativity", "building"]
 ---
 
 > __Shipping__, because it doesn't count if you don't share it.

@@ -4,6 +4,7 @@ title: How Big Things get done
 description: Bent Flyvbjerg and Dan Gardner
 date: 2025-11-16
 layout: base
+tags: ["book", "leadership", "building"]
 ---
 
 

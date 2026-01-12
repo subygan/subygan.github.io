@@ -1,10 +1,10 @@
 ---
 layout: base
-type: page
 emoji: ⛓️‍💥 
 title: Makemore
 description: building a LM that predicts sequence of characters
 date: 2025-02-24
+tags: ["tech", "machine-learning"]
 ---
 
 makemore is a character level language model and models the sequences of characters.

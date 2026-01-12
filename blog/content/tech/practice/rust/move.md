@@ -4,6 +4,7 @@ title: Rust `move` keyword
 description: I use move way too often than I like, and needed to understand it a bit deeper. this is my attempt at it.
 date: 2025-09-09
 layout: base
+tags: ["tech", "programming"]
 ---
 
 

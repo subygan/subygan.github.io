@@ -4,6 +4,7 @@ title: If
 description:  Rudyard Kipling
 date: 2024-11-15
 layout: base
+tags: ["poetry", "philosophy"]
 ---
 
 

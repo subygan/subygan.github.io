@@ -4,6 +4,7 @@ title: Cicumventing Ad block
 description: New ways of ad block being circumvented
 date: 2023-04-22
 layout: base
+tags: ["tech", "privacy"]
 ---
 
 using a DNS aliasing to circumvent ad blocking tools got me wondering about the feasibility, because theoretically it should be possible.

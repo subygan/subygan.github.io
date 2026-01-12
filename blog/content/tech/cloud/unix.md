@@ -4,6 +4,7 @@ title: Unix
 description: Unix gets quite worrisome really fast
 date: 2024-08-19
 layout: base
+tags: ["tech"]
 ---
 
 

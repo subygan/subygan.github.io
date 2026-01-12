@@ -1,10 +1,10 @@
 ---
 layout: base
-type: page
 emoji:  📲
 title: Mobile Dev
 description: What you need to know before you dive in
 date: 2025-02-28
+tags: ["tech", "programming"]
 ---
 
 Mobile development is probably the most highest abstracted operation possible. because of this there are too many pitfalls that trip up

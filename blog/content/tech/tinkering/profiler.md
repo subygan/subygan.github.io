@@ -1,10 +1,10 @@
 ---
 layout: base
-type: page
 emoji: 🔍
 title: visualising Performance
 description: Notes on how to visualise flame graph
 date: 2022-04-13
+tags: ["tech", "programming"]
 ---
 
 ### Interesting:

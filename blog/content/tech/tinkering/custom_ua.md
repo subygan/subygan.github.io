@@ -1,9 +1,9 @@
 ---
 layout: base
-type: page
 emoji: 🐙
 title: Custom user Agent for testing
 description: Sending requests with custom user agent in chrome for debugging
+tags: ["tech", "programming"]
 ---
 
 A [user-agent](https://en.wikipedia.org/wiki/User_agent) is used to recognize the browser and the device the project, [whatismybrowser.com](https://developers.whatismybrowser.com/useragents/explore/) have a database of user agents it's just a string that says about your browser and device type that is sent as a cookie in every request. You can find your current user agent by googling "[what is my user agent](https://www.google.com/search?q=what+is+my+user+agent)"

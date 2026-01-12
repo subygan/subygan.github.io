@@ -5,6 +5,7 @@ description: We spent 3 months building a product that a lot of people wanted, b
 date: 2024-09-01
 layout: base
 image: /assets/images/speaksharp.png
+tags: ["essay", "writing"]
 ---
 
 

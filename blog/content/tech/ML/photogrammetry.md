@@ -4,6 +4,7 @@ title: Photogrammetry/VideoGrammetry or the dark art of capturing 2d and generat
 description: Exploring photogrammetry and adjacent areas
 date: 2024-10-11
 layout: base
+tags: ["tech", "machine-learning"]
 ---
 
 # Capturing

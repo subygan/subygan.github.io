@@ -4,6 +4,7 @@ title: புதிய ஆத்திசூடி
 description: Bharathiyar's modern recreation of ஆத்திசூடி
 date: 2024-02-03
 layout: base
+tags: ["poetry"]
 ---
 
 

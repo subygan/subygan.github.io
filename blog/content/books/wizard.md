@@ -4,6 +4,7 @@ title: Where wizards stay up late
 description:  Katie Hafner and Matthew Lyon
 date: 2023-03-15
 layout: base
+tags: ["book", "fiction"]
 ---
 
 - Where wizards stay up late -  2023-03-15 14:28

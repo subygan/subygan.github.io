@@ -1,10 +1,10 @@
 ---
 layout: base
-type: page
 emoji: 🌰 
 title: Almond 
 description: Sohn Won-pyung
 date: 2025-02-15
+tags: ["book", "fiction", "psychology"]
 ---
 
 the book starts with a tragedy and ends with a mild happiness/realization.

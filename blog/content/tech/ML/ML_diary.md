@@ -4,6 +4,7 @@ title: ML journal
 description: Journal of my Machine Learning twiddling
 date: 2024-08-08
 layout: base
+tags: ["tech", "machine-learning"]
 ---
 
 

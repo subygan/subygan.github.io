@@ -4,6 +4,7 @@ emoji: 📕
 description: Articles about privacy that I come across
 date: 2023-09-19
 layout: base
+tags: ["tech", "privacy"]
 ---
 
 ## Blogs

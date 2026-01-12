@@ -4,6 +4,7 @@ title: Bangalore aka Bengaluru
 description: An Awesome city with mediocre management.
 date: 2024-09-06
 layout: base
+tags: ["travel", "food"]
 ---
 
 

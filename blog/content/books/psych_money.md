@@ -4,6 +4,7 @@ title: The Psychology of Money
 description: morgan Housel
 date: 2023-03-28
 layout: base
+tags: ["book", "finance", "psychology"]
 ---
 
 - Great book on about money and other ideas, I definitely suggest it as a good read.

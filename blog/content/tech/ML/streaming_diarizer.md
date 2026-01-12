@@ -4,6 +4,7 @@ title: Streaming Diarizer
 description: Looking at implementing streaming diarizer
 date: 2024-04-20
 layout: base
+tags: ["tech", "machine-learning"]
 ---
 
 [repo](https://github.com/subygan/SpeechStream)

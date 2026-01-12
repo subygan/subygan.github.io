@@ -4,6 +4,7 @@ emoji: 📦
 layout: base
 description: Trying out pocketbase.
 date: 2022-09-01 22:15:00
+tags: ["tech", "programming"]
 ---
 
 I've been looking for an alternative to firebase. Because OSS FTW!!

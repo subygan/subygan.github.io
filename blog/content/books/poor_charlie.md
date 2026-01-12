@@ -4,6 +4,7 @@ title: Poor Charlie's almanack (2005)
 description: Charlie Munger
 date: 2025-09-30
 layout: base
+tags: ["book", "finance", "learning"]
 ---
 
 

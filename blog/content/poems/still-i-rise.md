@@ -4,6 +4,7 @@ title: Still I Rise
 description:  Maya Angelou
 date: 2024-11-15
 layout: base
+tags: ["poetry"]
 ---
 
 

@@ -1,0 +1,73 @@
+{{ define "main" }}
+
+<div class='suriya-blog-content'>
+  <div id='write'>
+    <header>
+      <div class="page-header-icon"><span class="icon">🏷️</span></div>
+      <h1 class="page-title">{{ .Title }}</h1>
+      <p class="page-description">Explore content by topic</p>
+    </header>
+
+    <div class="tags-cloud">
+      {{ range $key, $value := .Data.Terms.ByCount }}
+        {{ $tagURL := printf "/tags/%s" ($value.Page.Title | urlize) }}
+        <a href="{{ $tagURL }}" class="tag-cloud-item">
+          <span class="tag-name">#{{ $value.Page.Title }}</span>
+          <span class="tag-count">({{ len $value.Pages }})</span>
+        </a>
+      {{ end }}
+    </div>
+
+    <style>
+      .tags-cloud {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        font-family: var(--font-ui);
+      }
+
+      .tag-cloud-item {
+        display: inline-flex;
+        align-items: baseline;
+        gap: 0.3rem;
+        text-decoration: none;
+        color: var(--text-secondary);
+        transition: color var(--transition-fast);
+      }
+
+      .tag-cloud-item:hover {
+        color: var(--accent-color);
+      }
+
+      .tag-name {
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+
+      .tag-count {
+        font-size: 0.9rem;
+        opacity: 0.7;
+      }
+
+      @media (max-width: 768px) {
+        .tags-cloud {
+          gap: 1.25rem;
+        }
+
+        .tag-name {
+          font-size: 1rem;
+        }
+
+        .tag-count {
+          font-size: 0.85rem;
+        }
+      }
+    </style>
+
+    {{ partial "footer.html" . }}
+  </div>
+</div>
+
+{{ end }}

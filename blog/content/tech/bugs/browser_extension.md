@@ -4,6 +4,7 @@ description: logging all the issues I've faced..
 layout: base
 emoji: 🧩
 date: 2022-02-12 22:15:00
+tags: ["tech", "programming"]
 ---
 
 Bugs in a browser extension are always frustrating because extensions are usually so brittle. There are so many error handling and other challenges.

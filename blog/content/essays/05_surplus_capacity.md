@@ -1,10 +1,10 @@
 ---
 layout: base
-type: page
 emoji: 🧠
 title: Surplus intellectual capacity
 description: productivity and net benefit
 date: 2022-01-22 22:15:00
+tags: ["essay", "startups"]
 ---
 
 When I was around 13 or 14 I used to have this wild vision of the world, where everybody was optimising for the betterment of humanity and not "wasting" their brains on useless stuff like movie gossips and whatnots. My (idiot) reasoning at the time was that, if only people around me wouldn't bring in non-utilitarian information to me, I would be able to do "much" more. But in reality it was only my younger self, justifying being lazy and not actively doing stuff and just simply complaining everything around.

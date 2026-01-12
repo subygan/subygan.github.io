@@ -4,6 +4,7 @@ title: ZSH
 description: I use zsh with oh-my-zsh heavily.
 date: 2024-08-19
 layout: base
+tags: ["tech", "programming"]
 ---
 
 

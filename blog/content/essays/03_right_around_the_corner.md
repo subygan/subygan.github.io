@@ -5,6 +5,7 @@ description: Thoughts on Innovation, Economics and Opportunities
 place: CMU TCS hall
 date: 2023-09-21
 layout: base
+tags: ["essay", "tech", "philosophy"]
 ---
 
 The problem is, uncertainty.

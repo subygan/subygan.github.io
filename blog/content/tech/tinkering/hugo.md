@@ -4,6 +4,7 @@ emoji: 🦡
 layout: base
 description: Working with hugo 
 date: 2022-12-26
+tags: ["tech", "programming"]
 ---
 
 ### making a nested map

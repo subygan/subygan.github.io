@@ -4,6 +4,7 @@ title: Read the Docs
 description: Read. The. Fucking. Docs.
 date: 2024-07-23
 layout: base
+tags: ["tech", "programming"]
 ---
 
 Failing to read the documentation and understanding the code underneath is the bane of all software bugs and I've guilty of it on multiple counts

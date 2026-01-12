@@ -1,10 +1,10 @@
 ---
 title: VSCode 
 layout: base
-type: page
 emoji: 👨🏻‍💻
 description: and shenanigans
 date: 2025-02-15
+tags: ["tech", "programming"]
 ---
 
 

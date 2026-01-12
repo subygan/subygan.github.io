@@ -4,6 +4,7 @@ title: Terminal
 description: I built a terminal editor and had to dig deep into understanding the terminal better
 date: 2024-08-08
 layout: base
+tags: ["tech", "programming"]
 ---
 
 __Raw mode__ in a terminal is receiving the raw bytes from the `STDIN` file.

@@ -4,6 +4,7 @@ title: Word Embedding Models
 description: I've beeen working with word embeddings a lot lately.
 date: 2024-08-04
 layout: base
+tags: ["tech", "machine-learning"]
 ---
 
 __My aim for this blog was to keep it as not too technical as possible.__

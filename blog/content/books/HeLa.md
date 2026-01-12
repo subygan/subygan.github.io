@@ -1,10 +1,10 @@
 ---
 layout: base
-type: page
 emoji: 💁🏾‍♀️
 title: The Immortal Life of Henrietta Lacks
 description: Rebecca Skloot
 date: 2025-03-15
+tags: ["book", "learning"]
 ---
 
 HeLa Cells, as they're called by the science community. Has been through it all, exposed to radiation, injected with virus, exposed in space, treated with chemical burn. All of modern medicine depends on HeLa cells to create the medicine. HeLa cells are what are used to test vaccines, chemicals, and physics to see hwo humans cells would work under certain conditions, HeLa cells are being manufactured around the world in troves.
