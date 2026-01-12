@@ -1,125 +1,39 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-  {{ partial "header.html" . }}
-  <script>
-    // Prevent flash by applying dark mode immediately if set
-    if (localStorage.getItem('darkMode') === 'enabled') {
-      document.documentElement.classList.add('dark-mode');
-      document.documentElement.style.backgroundColor = '#121212';
-      document.documentElement.style.color = '#e0e0e0';
-      
-      // Create and inject a style element with high-priority sidebar styles
-      const preventFlashStyles = document.createElement('style');
-      preventFlashStyles.textContent = `
-        #sidebar, .sidebar, div#sidebar, div.sidebar {
-          background-color: #121212 !important;
-          color: #e0e0e0 !important;
-          transition: none !important;
-        }
-        #sidebar *, .sidebar * {
-          background-color: #121212 !important;
-          color: #e0e0e0 !important;
-        }
-      `;
-      document.head.appendChild(preventFlashStyles);
-    }
-  </script>
-  <style>
-    .theme-toggle {
-      position: fixed;
-      top: 15px;
-      right: 15px;
-      z-index: 9999;
-      background: transparent;
-      border: none;
-      cursor: pointer;
-      padding: 5px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0.7;
-      transition: all 0.3s ease;
-    }
-    
-    /* Pre-define icon states to prevent layout shift */
-    #lightIcon {
-      display: none;
-    }
-    
-    #darkIcon {
-      display: block;
-    }
-    
-    html.dark-mode #lightIcon {
-      display: block;
-    }
-    
-    html.dark-mode #darkIcon {
-      display: none;
-    }
-    
-    /* Dark mode styles applied to HTML element */
-    html.dark-mode,
-    html.dark-mode body {
-      background-color: #121212 !important;
-      color: #e0e0e0 !important;
-    }
-    
-    html.dark-mode .sidebar,
-    html.dark-mode #sidebar {
-      background-color: #121212 !important;
-      color: #e0e0e0 !important;
-    }
-    
-    /* Additional dark mode styles that were previously only applied to body */
-    html.dark-mode .content-area,
-    html.dark-mode nav, 
-    html.dark-mode .navbar,
-    html.dark-mode header {
-      background-color: #121212 !important;
-      color: #e0e0e0 !important;
-    }
-    
-    /* Enhanced sidebar dark mode styles with !important */
-    html.dark-mode .sidebar,
-    html.dark-mode #sidebar,
-    .dark-mode .sidebar,
-    .dark-mode #sidebar {
-      background-color: #121212 !important;
-      color: #e0e0e0 !important;
-      transition: none !important;
-    }
-    
-    /* Also target the sidebar before JavaScript runs */
-    #sidebar[style*="display:none"],
-    #sidebar:not(.open),
-    .sidebar[style*="display:none"],
-    .sidebar:not(.open) {
-      background-color: inherit;
-    }
-    
-    html.dark-mode #sidebar[style*="display:none"],
-    html.dark-mode #sidebar:not(.open),
-    html.dark-mode .sidebar[style*="display:none"],
-    html.dark-mode .sidebar:not(.open) {
-      background-color: #121212 !important;
-    }
-  </style>
-  {{ partial "navigation.html" .}}
+{{ partial "header.html" . }}
 
-  <body class='suriya-blog' onload="applyInitialDarkMode()">
-  <div class="menu-toggle-container">
-      <button class="menu-toggle" id="menu-toggle" onclick="toggleSidebar()" aria-label="Toggle menu">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="3" y1="12" x2="21" y2="12"></line>
-              <line x1="3" y1="6" x2="21" y2="6"></line>
-              <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-      </button>
-  </div>
-  <button onclick="toggleDarkMode()" id="darkModeBtn" title="Toggle dark mode" class="theme-toggle" aria-label="Toggle dark mode">
-    <svg id="lightIcon" class="theme-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<!-- Inline script to restore sidebar state BEFORE body renders to minimize flash -->
+<script>
+(function() {
+  const EXPANDED_KEY = 'sidebar-expanded-sections';
+  const stored = sessionStorage.getItem(EXPANDED_KEY);
+  if (stored) {
+    const expandedSections = JSON.parse(stored);
+    // Create style element to pre-expand sections (will be removed after JS takes over)
+    const style = document.createElement('style');
+    style.id = 'sidebar-init-styles';
+    let css = '';
+    expandedSections.forEach(function(section) {
+      css += '.sidebar-nav-arrow[data-section="' + section.replace(/"/g, '\\"') + '"] { opacity: 1; }\n';
+      css += '.sidebar-nav-arrow[data-section="' + section.replace(/"/g, '\\"') + '"] svg { transform: rotate(90deg); }\n';
+      css += '.sidebar-nav-submenu[data-parent="' + section.replace(/"/g, '\\"') + '"] { max-height: 5000px; margin-top: 0.25rem; }\n';
+    });
+    style.textContent = css;
+    document.head.appendChild(style);
+  }
+})();
+</script>
+
+<body class="suriya-blog">
+  <!-- Progress bar -->
+  <div id="progress-bar"></div>
+
+  <!-- Top navigation -->
+  {{ partial "navigation.html" . }}
+
+  <!-- Dark mode toggle -->
+  <button id="darkModeBtn" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+    <svg id="lightIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <circle cx="12" cy="12" r="5"></circle>
       <line x1="12" y1="1" x2="12" y2="3"></line>
       <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -130,319 +44,253 @@
       <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
       <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
     </svg>
-    <svg id="darkIcon" class="theme-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <svg id="darkIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
     </svg>
   </button>
-  <div class="sidebar" id="sidebar">
-      {{ partial "sidebar.html" .}}
-  </div>
-  <div class="content-area">
-<!--Make the sidebar slidable and move -->
 
+  <!-- Mobile menu toggle -->
+  <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </button>
+
+  <!-- Main layout -->
+  <div class="blog-layout">
+    <!-- Left sidebar -->
+    <aside class="sidebar" id="sidebar">
+      {{ partial "sidebar.html" . }}
+    </aside>
+
+    <!-- Main content -->
+    <main class="content-area">
       {{ block "main" . }}{{ end }}
+    </main>
+
+    <!-- Right TOC (only on article pages) -->
+    {{ if and (eq .Kind "page") (ne .Type "page") }}
+      {{ partial "article-toc.html" . }}
+    {{ end }}
   </div>
-  <button onclick="topFunction()" id="topBtn" title="Go to top">Top ⬆️</button>
+
+  <!-- Back to top button -->
+  <button id="topBtn" title="Go to top" aria-label="Back to top">↑</button>
+
+  <!-- JavaScript -->
   <script>
-    window.onscroll = function() {
-      var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      var scrollPosition = (window.scrollY / docHeight) * 100;
-      document.getElementById("progress-bar").style.width = scrollPosition + "%";
-      scrollFunction()
-    };
-    // When the user scrolls down 20px from the top of the document, show the button
+    // Initialize dark mode immediately to prevent flash
+    (function() {
+      if (localStorage.getItem('darkMode') === 'enabled') {
+        document.documentElement.classList.add('dark-mode');
+      }
+    })();
 
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("topBtn").style.display = "block";
-      } else {
-        document.getElementById("topBtn").style.display = "none";
-      }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
-    }
-    function toggleSidebar() {
-        const sidebar = document.getElementById('sidebar');
-        const menuToggle = document.querySelector('.menu-toggle');
-        sidebar.classList.toggle('open');
-        menuToggle.classList.toggle('open');
-    }
-
-    document.addEventListener('click', function(event) {
-        const sidebar = document.getElementById('sidebar');
-        const menuToggle = document.querySelector('.menu-toggle');
-        if (!sidebar.contains(event.target) && !menuToggle.contains(event.target)) {
-            sidebar.classList.remove('open');
-            menuToggle.classList.remove('open');
-        }
-    });
-
-    document.addEventListener('DOMContentLoaded', function() {
-        const sidebarLinks = document.querySelectorAll('.sidebar-nav-link');
-
-        sidebarLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                sidebarLinks.forEach(l => {
-                    l.classList.remove('active');
-                });
-
-                // Add active class to clicked link
-                this.classList.add('active');
-                const submenu = this.nextElementSibling;
-                if (submenu && submenu.classList.contains('sidebar-nav-submenu')) {
-                    // Toggle submenu visibility
-                    submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
-                } else {
-                    // If no submenu, navigate to the link's href
-                    const href = this.getAttribute('href');
-                    if (href && href !== '#') {
-                        window.location.href = href;
-                    } else {
-                        // For links with '#' href, navigate to the data-href
-                        const dataHref = this.getAttribute('data-href');
-                        if (dataHref) {
-                            window.location.href = dataHref;
-                        }
-                    }
-                }
-            });
-        });
-
-        // Check for saved dark mode preference
-        if (localStorage.getItem('darkMode') === 'enabled') {
-            document.body.classList.add('dark-mode');
-        }
-
-        // Apply sidebar styles initially based on saved preference
-        applySidebarStyles();
-    });
-
-    // Add dark mode styles
-    const darkModeStyles = `
-      body.dark-mode {
-        background-color: #121212 !important;
-        color: #e0e0e0 !important;
-      }
-      
-      /* Super specific sidebar selectors */
-      body.dark-mode .sidebar,
-      body.dark-mode #sidebar,
-      body.suriya-blog.dark-mode .sidebar,
-      body.suriya-blog.dark-mode #sidebar,
-      html body.dark-mode div.sidebar,
-      html body.dark-mode div#sidebar {
-        background-color: #121212 !important;
-        color: #e0e0e0 !important;
-        background-image: none !important;
-        box-shadow: none !important;
-      }
-      
-      /* Target all divs inside sidebar */
-      body.dark-mode .sidebar *,
-      body.dark-mode #sidebar * {
-        background-color: #121212 !important;
-        color: #e0e0e0 !important;
-      }
-      
-      /* Rest of the styles */
-      body.dark-mode .content-area,
-      body.dark-mode nav, 
-      body.dark-mode .navbar,
-      body.dark-mode header {
-        background-color: #121212 !important;
-        color: #e0e0e0 !important;
-      }
-      
-      body.dark-mode .menu-toggle-container,
-      body.dark-mode .menu-toggle {
-        background-color: #2d2d2d;
-        color: #e0e0e0;
-      }
-      body.dark-mode .sidebar-nav-link {
-        color: #bb86fc;
-      }
-      body.dark-mode .sidebar-nav-submenu {
-        background-color: #1a1a1a;
-      }
-      body.dark-mode #topBtn {
-        background-color: #333;
-        color: #e0e0e0;
-      }
-      body.dark-mode .sidebar {
-        border-right: 1px solid #333;
-      }
-      body.dark-mode header {
-        border-bottom: 1px solid #333;
-      }
-      body.dark-mode .navbar {
-        border-bottom: 1px solid #333;
-      }
-      
-      /* More specific selectors for navbar text elements */
-      body.dark-mode .navbar a,
-      body.dark-mode nav a,
-      body.dark-mode .navbar span,
-      body.dark-mode nav span,
-      body.dark-mode .navbar div,
-      body.dark-mode nav div,
-      body.dark-mode .navbar li,
-      body.dark-mode nav li {
-        color: #e0e0e0 !important;
-      }
-      
-      /* Ensure hover states are visible */
-      body.dark-mode .navbar a:hover,
-      body.dark-mode nav a:hover {
-        color: #bb86fc !important;
-      }
-      
-      /* Theme toggle button styling */
-      .theme-toggle {
-        position: fixed;
-        top: 15px;
-        right: 15px;
-        z-index: 9999;
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        padding: 5px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0.7;
-        transition: all 0.3s ease;
-      }
-      
-      .theme-toggle:hover {
-        opacity: 1;
-        transform: scale(1.1);
-      }
-      
-      .theme-icon {
-        color: #333;
-      }
-      
-      body.dark-mode .theme-icon {
-        color: #e0e0e0;
-      }
-      
-      #lightIcon {
-        display: none;
-      }
-      
-      #darkIcon {
-        display: block;
-      }
-      
-      body.dark-mode #lightIcon {
-        display: block;
-      }
-      
-      body.dark-mode #darkIcon {
-        display: none;
-      }
-    `;
-    const styleSheet = document.createElement("style");
-    styleSheet.type = "text/css";
-    styleSheet.innerText = darkModeStyles;
-    document.head.appendChild(styleSheet);
-
-    // Check for saved dark mode preference
-    if (localStorage.getItem('darkMode') === 'enabled') {
-      document.body.classList.add('dark-mode');
-    }
-
-    // Update toggleDarkMode function to properly handle sidebar reset
+    // Dark mode toggle
     function toggleDarkMode() {
-      document.body.classList.toggle('dark-mode');
       document.documentElement.classList.toggle('dark-mode');
-      
-      if (document.body.classList.contains('dark-mode')) {
-        localStorage.setItem('darkMode', 'enabled');
-        applyDarkSidebarStyles();
-      } else {
-        localStorage.setItem('darkMode', 'disabled');
-        resetLightSidebarStyles();
-      }
+      const darkModeEnabled = document.documentElement.classList.contains('dark-mode');
+      localStorage.setItem('darkMode', darkModeEnabled ? 'enabled' : 'disabled');
+      updateDarkModeIcon();
     }
 
-    // Apply dark mode styles to sidebar and its children
-    function applyDarkSidebarStyles() {
+    function updateDarkModeIcon() {
+      const isDark = document.documentElement.classList.contains('dark-mode');
+      document.getElementById('lightIcon').style.display = isDark ? 'block' : 'none';
+      document.getElementById('darkIcon').style.display = isDark ? 'none' : 'block';
+    }
+
+    document.getElementById('darkModeBtn').addEventListener('click', toggleDarkMode);
+    updateDarkModeIcon();
+
+    // Sidebar toggle for mobile
+    function toggleSidebar() {
       const sidebar = document.getElementById('sidebar');
-      if (!sidebar) return;
-      
-      sidebar.style.cssText = 'background-color: #121212 !important; color: #e0e0e0 !important;';
-      const sidebarElements = sidebar.querySelectorAll('*');
-      sidebarElements.forEach(el => {
-        el.style.cssText += 'background-color: #121212 !important; color: #e0e0e0 !important;';
-      });
+      const menuToggle = document.getElementById('menu-toggle');
+      sidebar.classList.toggle('open');
+      menuToggle.classList.toggle('open');
     }
 
-    // Reset sidebar styles to light mode
-    function resetLightSidebarStyles() {
+    document.getElementById('menu-toggle').addEventListener('click', toggleSidebar);
+
+    // Close sidebar when clicking outside on mobile
+    document.addEventListener('click', function(event) {
       const sidebar = document.getElementById('sidebar');
-      if (!sidebar) return;
-      
-      // Clear inline styles completely
-      sidebar.style.cssText = '';
-      
-      // Clear inline styles from all children
-      const sidebarElements = sidebar.querySelectorAll('*');
-      sidebarElements.forEach(el => {
-        el.style.backgroundColor = '';
-        el.style.color = '';
-      });
-      
-      // Force a repaint to ensure styles are applied
-      sidebar.offsetHeight;
-    }
-
-    // Replace the old applySidebarStyles function
-    function applySidebarStyles(immediate = false) {
-      if (document.documentElement.classList.contains('dark-mode')) {
-        applyDarkSidebarStyles();
-      } else {
-        resetLightSidebarStyles();
+      const menuToggle = document.getElementById('menu-toggle');
+      if (window.innerWidth <= 768 &&
+          !sidebar.contains(event.target) &&
+          !menuToggle.contains(event.target) &&
+          sidebar.classList.contains('open')) {
+        sidebar.classList.remove('open');
+        menuToggle.classList.remove('open');
       }
-    }
+    });
 
-    // Function to apply dark mode on initial load
-    function applyInitialDarkMode() {
-      if (localStorage.getItem('darkMode') === 'enabled') {
-        applyDarkSidebarStyles();
+    // Progress bar
+    window.addEventListener('scroll', function() {
+      const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrollPosition = (window.scrollY / docHeight) * 100;
+      document.getElementById('progress-bar').style.width = scrollPosition + '%';
+
+      // Show/hide back to top button
+      const topBtn = document.getElementById('topBtn');
+      if (window.scrollY > 300) {
+        topBtn.style.display = 'block';
       } else {
-        resetLightSidebarStyles();
+        topBtn.style.display = 'none';
       }
-    }
-    
-    // Call this immediately, don't wait for onload
-    applyInitialDarkMode();
+    });
 
+    // Back to top button
+    document.getElementById('topBtn').addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Notion-style recursive collapsible sidebar navigation
     document.addEventListener('DOMContentLoaded', function() {
-      // Apply immediately when DOM is ready
-      if (localStorage.getItem('darkMode') === 'enabled') {
-        applyDarkSidebarStyles();
-        document.getElementById('lightIcon').style.display = 'block';
-        document.getElementById('darkIcon').style.display = 'none';
-      } else {
-        resetLightSidebarStyles();
-        document.getElementById('lightIcon').style.display = 'none';
-        document.getElementById('darkIcon').style.display = 'block';
+      // Remove the inline init styles now that JS has taken over
+      const initStyles = document.getElementById('sidebar-init-styles');
+      if (initStyles) {
+        initStyles.remove();
       }
-      
-      // Add listener for the dark mode toggle button
-      document.getElementById('darkModeBtn').addEventListener('click', function() {
-        setTimeout(function() {
-          applySidebarStyles(true);
-        }, 10);
+
+      // Store expanded state in sessionStorage to persist during navigation
+      const EXPANDED_KEY = 'sidebar-expanded-sections';
+
+      function getExpandedSections() {
+        const stored = sessionStorage.getItem(EXPANDED_KEY);
+        return stored ? JSON.parse(stored) : [];
+      }
+
+      function saveExpandedSections(sections) {
+        sessionStorage.setItem(EXPANDED_KEY, JSON.stringify(sections));
+      }
+
+      function toggleSection(arrow, submenu, sectionPath) {
+        // Check both arrow and submenu to be safe
+        const isExpanded = arrow.classList.contains('expanded') || submenu.classList.contains('expanded');
+        const expandedSections = getExpandedSections();
+
+        if (isExpanded) {
+          // Collapse
+          arrow.classList.remove('expanded');
+          submenu.classList.remove('expanded');
+          // Remove from storage
+          const index = expandedSections.indexOf(sectionPath);
+          if (index > -1) {
+            expandedSections.splice(index, 1);
+          }
+        } else {
+          // Expand
+          arrow.classList.add('expanded');
+          submenu.classList.add('expanded');
+          // Add to storage
+          if (!expandedSections.includes(sectionPath)) {
+            expandedSections.push(sectionPath);
+          }
+        }
+
+        saveExpandedSections(expandedSections);
+      }
+
+      // Handle arrow clicks (toggle expand/collapse)
+      const arrows = document.querySelectorAll('.sidebar-nav-arrow');
+      arrows.forEach(function(arrow) {
+        arrow.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+
+          const wrapper = this.closest('.sidebar-nav-link-wrapper');
+          const submenu = wrapper.nextElementSibling;
+          const sectionPath = this.getAttribute('data-section');
+
+          if (submenu && submenu.classList.contains('sidebar-nav-submenu')) {
+            toggleSection(arrow, submenu, sectionPath);
+          }
+        });
       });
+
+      // Restore expanded state from storage (classes added by inline script in head)
+      const expandedSections = getExpandedSections();
+      arrows.forEach(function(arrow) {
+        const sectionPath = arrow.getAttribute('data-section');
+        if (expandedSections.includes(sectionPath)) {
+          arrow.classList.add('expanded');
+          const wrapper = arrow.closest('.sidebar-nav-link-wrapper');
+          const submenu = wrapper.nextElementSibling;
+          if (submenu && submenu.classList.contains('sidebar-nav-submenu')) {
+            submenu.classList.add('expanded');
+          }
+        }
+      });
+
+      // Auto-expand and highlight current section (walk up the tree)
+      const currentPath = window.location.pathname;
+      const allSidebarLinks = document.querySelectorAll('.sidebar-nav a[data-path]');
+
+      allSidebarLinks.forEach(function(link) {
+        const linkPath = link.getAttribute('data-path');
+
+        // Check if this is the current page
+        if (linkPath === currentPath) {
+          link.classList.add('active');
+
+          // Walk up the tree to expand all parent sections
+          let parent = link.closest('.sidebar-nav-submenu');
+          while (parent) {
+            parent.classList.add('expanded');
+
+            // Find the arrow for this submenu
+            const parentPath = parent.getAttribute('data-parent');
+            if (parentPath) {
+              const parentArrow = document.querySelector('.sidebar-nav-arrow[data-section="' + parentPath + '"]');
+              if (parentArrow) {
+                parentArrow.classList.add('expanded');
+
+                // Save to storage
+                const expandedSections = getExpandedSections();
+                if (!expandedSections.includes(parentPath)) {
+                  expandedSections.push(parentPath);
+                  saveExpandedSections(expandedSections);
+                }
+              }
+            }
+
+            // Move up to the next level
+            parent = parent.parentElement.closest('.sidebar-nav-submenu');
+          }
+        }
+      });
+
+      // TOC scroll tracking
+      const tocLinks = document.querySelectorAll('.toc-item a');
+      if (tocLinks.length > 0) {
+        const headings = Array.from(document.querySelectorAll('#write h2, #write h3, #write h4'))
+          .filter(h => h.id);
+
+        function updateTOC() {
+          let current = '';
+          headings.forEach(heading => {
+            const rect = heading.getBoundingClientRect();
+            if (rect.top <= 100) {
+              current = heading.id;
+            }
+          });
+
+          tocLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) {
+              link.classList.add('active');
+            }
+          });
+        }
+
+        window.addEventListener('scroll', updateTOC);
+        updateTOC();
+      }
     });
   </script>
-  </body>
+</body>
 </html>

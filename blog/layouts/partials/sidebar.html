@@ -1,31 +1,3 @@
-
-<aside class="sidebar-content">
-    <nav>
-        
-        <ul class="sidebar-nav">
-            {{ range .Site.Sections }}
-
-
-            <li class="sidebar-nav-item">
-                {{ if or .Sections .Pages }}
-                <a href="#" class="sidebar-nav-link" data-href="{{ .RelPermalink }}">{{ .Title }}</a>
-                <ul class="sidebar-nav-submenu">
-                    <!-- {{ range .Sections }}
-                    <li>
-                         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                    </li>
-                    {{ end }} -->
-                    {{ range .Pages }}
-                    <li>
-                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                    </li>
-                    {{ end }}
-                </ul>
-                {{ else }}
-                <a href="{{ .RelPermalink }}" class="sidebar-nav-link">{{ .Title }}</a>
-                {{ end }}
-            </li>
-            {{ end }}
-        </ul>
-    </nav>
-</aside>
+<nav>
+  {{- partial "sidebar-nav-recursive.html" (dict "pages" .Site.Sections "level" 0) -}}
+</nav>

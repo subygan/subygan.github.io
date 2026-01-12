@@ -1,0 +1,23 @@
+{{ $headings := findRE "<h[2-4].*?>(.|\n])+?</h[2-4]>" .Content }}
+{{ if gt (len $headings) 1 }}
+<aside class="toc-wrapper">
+  <div class="toc">
+    <h3 class="toc-title">On This Page</h3>
+    <ul class="toc-list">
+      {{ range $headings }}
+        {{ $heading := . }}
+        {{ $level := substr $heading 2 1 }}
+        {{ $id := replaceRE "<h[2-4].*?id=\"([^\"]+)\".*" "$1" $heading }}
+        {{ $text := replaceRE "<[^>]+>" "" $heading }}
+        {{ $text := replaceRE "\\s+" " " $text }}
+        {{ $text := strings.TrimSpace $text }}
+        {{ if $id }}
+        <li class="toc-item toc-h{{ $level }}">
+          <a href="#{{ $id }}">{{ $text }}</a>
+        </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </div>
+</aside>
+{{ end }}

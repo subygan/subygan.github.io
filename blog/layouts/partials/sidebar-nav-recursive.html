@@ -1,0 +1,40 @@
+{{- $pages := .pages -}}
+{{- $level := .level | default 0 -}}
+{{- $maxLevel := 5 -}}
+
+{{- if and $pages (lt $level $maxLevel) -}}
+<ul class="sidebar-nav sidebar-nav-level-{{ $level }}">
+  {{- range $pages -}}
+    <li class="sidebar-nav-item">
+      {{- $hasChildren := or .Sections .Pages -}}
+
+      {{- if $hasChildren -}}
+        <!-- Section with children - Notion-style -->
+        <div class="sidebar-nav-link-wrapper">
+          <span class="sidebar-nav-arrow" data-section="{{ .RelPermalink }}">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </span>
+          <a href="{{ .RelPermalink }}" class="sidebar-nav-link" data-path="{{ .RelPermalink }}">
+            {{ .Title }}
+          </a>
+        </div>
+
+        <!-- Recursive submenu -->
+        {{- $children := union .Sections .Pages -}}
+        {{- if $children -}}
+        <div class="sidebar-nav-submenu" data-parent="{{ .RelPermalink }}">
+          {{- partial "sidebar-nav-recursive.html" (dict "pages" $children "level" (add $level 1)) -}}
+        </div>
+        {{- end -}}
+      {{- else -}}
+        <!-- Page without children -->
+        <a href="{{ .RelPermalink }}" class="sidebar-nav-link sidebar-nav-link-no-children" data-path="{{ .RelPermalink }}">
+          {{ .Title }}
+        </a>
+      {{- end -}}
+    </li>
+  {{- end -}}
+</ul>
+{{- end -}}
