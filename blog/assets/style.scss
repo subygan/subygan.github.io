@@ -9,12 +9,12 @@
   --text-primary: #1f0909;
   --text-secondary: #666666;
   --border-color: #e0e0e0;
-  --accent-color: #065588;
+  --accent-color: #06B6D4;
   --sidebar-bg: #f3f2ee;
   --hover-bg: #e8e7e0;
   --code-bg: #f5f5f5;
   --code-text: #2d2d2d;
-  --progress-bar: #ACD1DA;
+  --progress-bar: #06B6D4;
 
   // Spacing & layout
   --sidebar-width: 280px;
@@ -41,12 +41,12 @@ html.dark-mode {
   --text-primary: #e0e0e0;
   --text-secondary: #a0a0a0;
   --border-color: #333333;
-  --accent-color: #bb86fc;
+  --accent-color: #22D3EE;
   --sidebar-bg: #121212;
   --hover-bg: #1e1e1e;
   --code-bg: #1e1e1e;
   --code-text: #e0e0e0;
-  --progress-bar: #bb86fc;
+  --progress-bar: #22D3EE;
 }
 
 // Reset & base styles
@@ -468,13 +468,14 @@ html.dark-mode .navbar {
   }
 
   a {
-    color: var(--accent-color);
+    color: var(--text-primary);
     text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: border-color var(--transition-fast);
+    border-bottom: 1px solid var(--text-secondary);
+    transition: all var(--transition-fast);
 
     &:hover {
-      border-bottom-color: var(--accent-color);
+      color: var(--text-secondary);
+      border-bottom-color: var(--text-primary);
     }
   }
 
@@ -522,6 +523,7 @@ html.dark-mode .navbar {
   }
 
   pre {
+    position: relative;
     background-color: var(--code-bg);
     padding: 1.25em;
     border-radius: 8px;
@@ -701,6 +703,72 @@ html.dark-mode .navbar {
 
   &:active svg {
     transform: rotate(360deg);
+  }
+}
+
+// Copy button for code blocks
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast) ease;
+  opacity: 0.7;
+  z-index: 10;
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    background-color: var(--bg-primary);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+  }
+
+  &--copied {
+    background-color: var(--accent-color);
+    color: white;
+    opacity: 1;
+  }
+}
+
+// Mobile responsive
+@media (max-width: 768px) {
+  .copy-btn {
+    width: 32px;
+    height: 32px;
+    padding: 6px;
+    top: 6px;
+    right: 6px;
+
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+  }
+}
+
+// Hide copy button in print
+@media print {
+  .copy-btn {
+    display: none;
   }
 }
 
