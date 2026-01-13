@@ -1,5 +1,5 @@
 ---
-title: About
+title: about
 emoji: 🧙🏻
 layout: base
 ---

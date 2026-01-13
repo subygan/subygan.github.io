@@ -1,6 +1,6 @@
 ---
 emoji: ❤️‍🔥
-title: Poems
+title: poems
 date: 2024-02-03
 ---
 

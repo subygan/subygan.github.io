@@ -44,7 +44,7 @@
   {{ if .Params.image }}
   <meta property="og:image" content="{{ .Params.image | absURL }}">
   {{ else }}
-  <meta property="og:image" content="{{ "/assets/images/s.png" | absURL }}">
+  <meta property="og:image" content="{{ "/assets/images/header-image.jpeg" | absURL }}">
   {{ end }}
 
   <!-- Article-specific Open Graph tags -->
@@ -85,7 +85,7 @@
   {{ if .Params.image }}
   <meta name="twitter:image" content="{{ .Params.image | absURL }}">
   {{ else }}
-  <meta name="twitter:image" content="{{ "/assets/images/s.png" | absURL }}">
+  <meta name="twitter:image" content="{{ "/assets/images/header-image.jpeg" | absURL }}">
   {{ end }}
 
   {{ if .Params.hasEncryptedContent }}

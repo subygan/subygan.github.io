@@ -1,5 +1,5 @@
 ---
-title: Books
+title: books
 emoji: 📚
 description: My book reading/read lists
 ---
