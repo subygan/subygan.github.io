@@ -1,7 +1,7 @@
 ---
 layout: base
 emoji: ⚗️
-title: React Native
+title: react native
 description: A month with React-Native
 date: 2025-02-22
 tags: ["tech", "programming"]
@@ -15,7 +15,7 @@ And, that is when you see the dark underside of things.
 
 
 
-## New Architecture
+## new architecture
 
 The New Architecture reduces the bridge overhead in passing data between the JS thread and the native thread.
 

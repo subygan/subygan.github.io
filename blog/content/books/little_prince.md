@@ -1,6 +1,6 @@
 ---
 emoji: 🤴🏻
-title: The little prince - Antoine de Saint-Exupéry
+title: the little prince - antoine de saint-exupéry
 description: Story of the little prince about the importance of love and being creative.
 date: 2023-11-05
 layout: base

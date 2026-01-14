@@ -1,6 +1,6 @@
 ---
 emoji: ⚜️
-title: Pittsburgh
+title: pittsburgh
 description: The City of Rust.
 date: 2024-10-16
 layout: base
@@ -10,17 +10,17 @@ tags: ["travel", "learning"]
 Pittsburgh has the quaint old town vibe with its own special antiquated ecosystems. It definitely has the feeling of a once flourising industrial town, now in its midlife crisis trying to find it's place in the world.
 I stayed in Pittsburgh from Aug 2023 - Dec 2024. Made really close friends here.
 
-## Duquesne Incline
+## duquesne incline
 
 Duquesne Incline perfectly captures the pittsburgh spirit for me, really quaint, vast and exciting.
 Definite visit if someone visits pittsburgh.
 
 
-## Carnegie Museum
+## carnegie museum
 
 Carnegie Museum is located really close to CMU and I visit this place often to just take my mind of the stress of being a student in uncertain footings in uncertain times. Anyone who visits Pittsburgh should visit Carnegie Museum it's definitely worth it.
 
-## CMU
+## cmu
 
 CMU is an incredible place if you have a bit of pocket-money and want to explore something of your interest without worldly pressure.
 
@@ -29,7 +29,7 @@ Maybe for a Phd it's a little less stressfult. But Undergrad or Masters at CMU i
 
 There's very little else to do other than study if you're located anywhere near the campus as all the pubs are 30 minute walk away and down town is a 30 minute bus ride. Which doesn't sound as bad, but you're constantly surrounded by the college campus and stiff walking students from the college.
 
-## Food Food Food
+## food food food
 
 If I'm being honest with myself, food in Pittsburgh is really mid nothing stands out as shockingly good. Especially the Indian food, was below par for me.
 

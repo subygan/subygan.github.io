@@ -1,7 +1,7 @@
 ---
 layout: base
 emoji:  📲
-title: Mobile Dev
+title: mobile dev
 description: What you need to know before you dive in
 date: 2025-02-28
 tags: ["tech", "programming"]
@@ -9,9 +9,9 @@ tags: ["tech", "programming"]
 
 Mobile development is probably the most highest abstracted operation possible. because of this there are too many pitfalls that trip up
 
-# Platforms arch
+# platforms arch
 
-## Android
+## android
 
 
 ![android](/assets/images/android.png)
@@ -39,7 +39,7 @@ ref:
 
 # app arch
 
-## React Native
+## react native
 
 ![react native](/assets/images/react-arch.png)
 
@@ -48,7 +48,7 @@ ref
 - [render pipeline](https://reactnative.dev/architecture/render-pipeline)
 
 
-## Flutter
+## flutter
 
 ![flutter](/assets/images/flutter-arch.png)
 

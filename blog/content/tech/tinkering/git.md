@@ -1,6 +1,6 @@
 ---
 emoji: 🦕
-title: Git LFS
+title: git lfs
 description: Working with Git LFS and other problems
 date: 2024-07-11
 layout: base
@@ -46,9 +46,9 @@ git config --global core.excludesfile ~/.gitignore
  
 good riddance .DS_Store
 
-# LFS
+# lfs
 
-## Installing Git-lfs
+## installing git-lfs
 
 MacOS:
 
@@ -64,7 +64,7 @@ curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.s
 sudo apt-get install git-lfs
 ```
 
-## Working with lfs
+## working with lfs
 
 LFS manages blobs by just storing the hash pointer of the file int the CVS and treating it as a blob of binary this is kept track in the `.gitattributes` file.
 

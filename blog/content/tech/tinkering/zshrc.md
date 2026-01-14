@@ -1,6 +1,6 @@
 ---
 emoji: 🥘
-title: ZSH
+title: zsh
 description: I use zsh with oh-my-zsh heavily.
 date: 2024-08-19
 layout: base
@@ -8,7 +8,7 @@ tags: ["tech", "programming"]
 ---
 
 
-## Setting up new zsh with oh my zsh
+## setting up new zsh with oh my zsh
 
 firs installing zsh involves
 
@@ -22,7 +22,7 @@ While I don't really trust and run randomly downloaded shell files. This one is 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-## Typical packages:
+## typical packages:
 
 - `git` 
 - `zsh-autosuggestions` 

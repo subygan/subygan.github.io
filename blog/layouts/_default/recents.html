@@ -6,7 +6,7 @@
     <header>
 
       <div class="page-header-icon undefined"><span class="icon">{{ .Params.emoji }}</span></div>
-      <h1 class="page-title">{{ .Title }}</h1>
+      <h1 class="page-title">{{ .Title | lower }}</h1>
       <p class="page-description">{{ .Description }}</p>
     </header>
     {{ if .Params.date }}

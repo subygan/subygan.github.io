@@ -1,6 +1,6 @@
 ---
 emoji: 👶🏻
-title: How and Why I Taught My Toddler to Read
+title: how and why i taught my toddler to read
 description: Larry Sanger
 date: 2025-10-03
 layout: base
@@ -12,19 +12,19 @@ I will start out by saying I'm a big fan of ridiculously successful people takin
 
 I've always been surprised that one of wikipedia's cofounder has written a 150 page book about teaching his child to read. I mean, this is wild and a different type of parenting than I'm exposed to. This book has been on my readin list for a while now. 
 
-### Teaching a Toddler to Read
+### teaching a toddler to read
 
 Sanger presents a compelling and meticulously documented account of teaching his son to read as a toddler. This is not just a proud father's anecdotal success story. it is quite a thoughtful and reflective exploration into the methodologies, philosophies, and controversies surrounding early childhood education.
 
 I can hear people running towards me with the pitchforks and torches for even suggesting that a child learn early. But I think Sanger has a very sound philosophy for why it makes sense and how to make it work.
 
 
-### Conventional Wisdom
+### conventional wisdom
 
 Sanger's 18-month-old son had learned the alphabet. if a child can master the alphabet at such a young age, is it not plausible that they could also learn to read? This inquiry led him down a rabbit hole of online research, where he discovered a burgeoning community of parents who were successfully teaching their babies and toddlers to read. This starkly contrasted with the prevailing wisdom from many child development experts who often dismiss the idea of "baby reading" as either impossible or detrimental.
 
 
-### Child-Led Approach
+### child-led approach
 
 What stands out most about Sanger's methodology is its multifaceted and adaptable nature. He did not subscribe to a single, rigid system but instead cherry-picked elements from various sources, always prioritizing his son's interest and engagement. This "eclectic method" can be broken down into several key components:
 
@@ -39,13 +39,13 @@ What stands out most about Sanger's methodology is its multifaceted and adaptabl
 
 -   __Child-Led Learning and the "That's Enough" Rule:__ Crucially, the entire process was driven by his son's enthusiasm. Sanger empowered his son to end a lesson at any time by teaching him to say "that's enough." This ensured that learning remained a positive and voluntary activity, never a chore. This directly counters the common criticism that early learning is about "pushy parenting."
 
-### The Influence of Doman and the Importance of Encyclopedic Knowledge
+### the influence of doman and the importance of encyclopedic knowledge
 
 A significant influence on Sanger's thinking was __Glenn Doman__, whose work, including *How to Teach Your Baby to Read*, has been both influential and controversial. Sanger was particularly intrigued by Doman's emphasis on the immense learning capacity of young children and his methods for introducing "encyclopedic knowledge" through flashcards and presentations.
 
 While Sanger found Doman's claims sometimes "over-the-top," he was inspired to create his own PowerPoint presentations on a wide array of topics, from animals and geography to art and science. He argues that this direct teaching of concepts and vocabulary is vital for reading comprehension. A child can decode words, but without the underlying knowledge to understand what they mean, reading becomes a mechanical and unrewarding exercise.
 
-### Addressing the Critics
+### addressing the critics
 
 A substantial portion of Sanger's essay is dedicated to addressing the numerous objections to early reading. He tackles these criticisms with intellectual rigor and a deep sense of reflection:
 
@@ -55,7 +55,7 @@ A substantial portion of Sanger's essay is dedicated to addressing the numerous 
 
 -   __The Conceptual Maturity Argument:__ Addressing the concerns of experts like __Jane M. Healy__, who argues that young children lack the conceptual maturity to truly comprehend what they read, Sanger makes a nuanced case. He agrees that a toddler's understanding is not as sophisticated as an older child's. However, he points out that his son, through a rich diet of books and direct concept-building, developed a surprisingly advanced vocabulary and comprehension for his age. Furthermore, he argues that the ability to decode text opens up the entire world of print—from street signs to cereal boxes—as a source of learning.
 
-### Takeaways
+### takeaways
 
 Larry Sanger's essay is a powerful testament to what is possible when parents become active and thoughtful participants in their children's education. The key takeaways are not about creating "genius" babies but about fostering a deep and abiding love of learning from the very beginning. For those of us documenting our own journeys in learning and self-improvement, Sanger's work provides a sharp, pointwise guide:
 

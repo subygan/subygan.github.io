@@ -1,5 +1,5 @@
 ---
 emoji:  🤺
-title: Tinkering
+title: tinkering
 description: Notes from twiddling with technology
 ---

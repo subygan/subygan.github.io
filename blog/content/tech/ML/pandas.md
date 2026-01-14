@@ -1,6 +1,6 @@
 ---
 emoji: 🐼
-title: Pandas fight
+title: pandas fight
 description: Struggling with pandas.
 date: 2024-02-24
 layout: base

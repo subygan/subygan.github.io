@@ -1,6 +1,6 @@
 ---
 emoji: ⛓️
-title: Rust `move` keyword
+title: rust `move` keyword
 description: I use move way too often than I like, and needed to understand it a bit deeper. this is my attempt at it.
 date: 2025-09-09
 layout: base
@@ -9,7 +9,7 @@ tags: ["tech", "programming"]
 
 
 
-## What is "move" 
+## what is "move" 
 
 When you assign a value to a new variable or pass a value to a function, the default behavior for types that don't implement the `Copy` trait is to "move" ownership of that value. This means the original variable can no longer be used after the move. This prevents double-free errors and other memory safety issues by ensuring there's always only one owner of the data at any given time. This forms the base of the ownership model, which can be represented like below.
 
@@ -27,7 +27,7 @@ fn main() {
 
 In this example, `String` does not implement the `Copy` trait. When `s1` is assigned to `s2`, the ownership of the `String` data (which lives on the heap) is transferred from `s1` to `s2`. Conceptually, `s1` is no longer valid, and trying to use it after the move will result in a compile-time error: "use of moved value: `s1`".
 
-## Under the Hood: What Happens During a Move?
+## under the hood: what happens during a move?
 
 To understand the internals a bit deeper let's consider how `String` is structured. A `String` in Rust is a struct that typically contains three pieces of information:
 
@@ -49,7 +49,7 @@ When you write `let s2 = s1;` for a `String`:
 2.  **Invalidation of Original:** To prevent a double-free, Rust conceptually "nukes" the original `s1`. This isn't a literal memory zeroing; instead, `s1` is marked as invalid, and its destructor (`drop` implementation) will not be called when `s1` goes out of scope. If `s1` were allowed to be dropped, it would attempt to free the same heap memory that `s2` now owns, leading to a use-after-free or double-free bug.
 
 
-## Moves with Function Calls
+## moves with function calls
 
 Passing a value to a function also involves a move:
 
@@ -68,7 +68,7 @@ fn main() {
 
 Here, `s` is moved into the `some_string` parameter of `takes_ownership`. After the function call, `s` is no longer valid.
 
-## Moves in Closures
+## moves in closures
 
 The `move` keyword is explicitly used in closures to force them to take ownership of the variables they capture from their environment, even if they would normally borrow them.
 
@@ -85,7 +85,7 @@ fn main() {
 
 Without `move`, if the closure only needed to immutably borrow `s`, it would do so. By adding `move`, you ensure the closure owns `s`, which is particularly useful when passing closures across threads or returning them from functions where their captured environment needs to outlive the original scope.
 
-## Types that `Copy` (and don't Move)
+## types that `Copy` (and don't move)
 
 Not all types move. Primitive types like integers (`i32`, `u64`), booleans (`bool`), floating-point numbers (`f64`), and characters (`char`), as well as tuples containing only `Copy` types, implement the `Copy` trait. For these types, a bitwise copy is performed, but the original variable remains valid. This is because these types have a known, fixed size at compile time, and their values are entirely stored on the stack. Copying them is cheap, and there's no heap data to worry about double-freeing.
 
@@ -100,7 +100,7 @@ fn main() {
 
 You can also derive the `Copy` trait for your own structs, but only if all of their fields implement `Copy`. If a struct contains a `String`, for example, it cannot implement `Copy`.
 
-## Edge Cases and Common Pitfalls I've faced
+## edge cases and common pitfalls i've faced
 
 1.  **Returning Values:** When a value is returned from a function, ownership is moved back to the caller.
 

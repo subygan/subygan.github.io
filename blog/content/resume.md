@@ -1,6 +1,6 @@
 ---
 emoji: 🎓
-title: Resume
+title: resume
 description: My Resume
 date: 2024-01-09
 layout: base
@@ -17,7 +17,7 @@ Email: suriyaganesh097 at gmail.com
 [google scholar](https://scholar.google.com/citations?user=G0CscfQAAAAJ&hl=en)
 
 
-### EMPLOYMENT
+### employment
 
 **Software Engineer**
 **Oxen.ai**
@@ -50,7 +50,7 @@ Email: suriyaganesh097 at gmail.com
 
 ---
 
-### EDUCATION
+### education
 
 **MS - Privacy Engineering**
 **Carnegie Mellon University**
@@ -64,7 +64,7 @@ GPA 3.9/4, Coursework: Control System, Digital Signal Processing, VLSI Design, e
 
 ---
 
-### PROJECTS
+### projects
 
 **Core Contributor**
 **Speaksharp**
@@ -74,14 +74,14 @@ GPA 3.9/4, Coursework: Control System, Digital Signal Processing, VLSI Design, e
 
 ---
 
-### SKILLS
+### skills
 
 *   **Languages:** Rust, Golang, C++, Java, python, js
 *   **Tools/Frameworks:** Onnx, kafka, K8s, Docker, EKS, Azure, gRPC, AWS, react-native, Ray, Kotlin, Elasticsearch
 
 ---
 
-### ACHIEVEMENTS AND PUBLICATIONS
+### achievements and publications
 
 *   SPARK grant for Entrepreneurship, CMU '24
 *   Privacy Engineering Scholarship, CMU ’23

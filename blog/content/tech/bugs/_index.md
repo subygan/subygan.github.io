@@ -1,6 +1,6 @@
 ---
 emoji: 🐞
-title: A Bug's life
+title: a bug's life
 description: Story of a Bug told from a programmers view
 ---
 

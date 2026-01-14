@@ -1,7 +1,7 @@
 ---
 layout: base
 emoji: 
-title: Server Setup
+title: server setup
 description: I setup machines for one off coding tasks or ML training often and some stuff just needs to be setup that Ubuntu etc don't come with what I need
 date: 2025-03-07
 tags: ["tech", "programming"]
@@ -10,7 +10,7 @@ tags: ["tech", "programming"]
 
 
 
-### Oh my zsh
+### oh my zsh
 
 - oh-my-zsh has hands down been a godsend for me.
 

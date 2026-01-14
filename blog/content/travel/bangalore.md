@@ -1,6 +1,6 @@
 ---
 emoji: 🏠
-title: Bangalore aka Bengaluru
+title: bangalore aka bengaluru
 description: An Awesome city with mediocre management.
 date: 2024-09-06
 layout: base
@@ -50,7 +50,7 @@ I still liked the biking. Not so much the layer of dust on my face after standin
 
 And, 2023 was adieu Bangalore. I started the year with applying to CMU and ended the year with landing in Pittsburgh. I was not happy to leave, but was glad I had a great time when it lasted.
 
-## Food, Food, Food
+## food, food, food
 
 I cooked the most in Bangalore. I had a Work From Home job and a lot of time to explore
 

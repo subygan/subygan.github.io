@@ -1,6 +1,6 @@
 ---
 emoji: 📇
-title: Poor Charlie's almanack (2005)
+title: poor charlie's almanack (2005)
 description: Charlie Munger
 date: 2025-09-30
 layout: base
@@ -10,7 +10,7 @@ tags: ["book", "finance", "learning"]
 
 I used to listen to Charlie Munger's psychology lectures a lot. So I had some idea what the book was going to be about, invert always invert, align incentives, do a simple thing consistently where ideas that I try to apply in my life. One of the things that I like a lot about charlie's view of life is how he focuses on perpetual, voracious learning. Being able to adapt to changing market winds and guiding such a huge investment portfolio at the age of 99 is just something that inspires me in a quite unique way.
 
-### The Latticework 
+### the latticework 
 
 At the heart of Munger's philosophy lies the concept of "worldly wisdom." He argues that to make good decisions, one must have a broad understanding of the big ideas from the major disciplines: psychology, economics, physics, biology, and history, among others. Relying on a single field of knowledge is like a man with only a hammer, to whom every problem looks like a nail.
 
@@ -21,7 +21,7 @@ The power of this approach he says is that it helps to reduce the chaos of a com
 
 Although this is a really inspiring idea. The problem for me personally is, how it's unclear how to gain the "latticework" or, how to keep in touch with the latticework. For example I read a ton of books, the idea itself gets outdated/disproved etc. Which means, I end up with a piece of my latticework rotten away. In a lot of cases, keeping upto date with the latticework is itself a full time job. Basically I'm unclear how to keep my latticework clean.
 
-### Inversion
+### inversion
 
 One of Munger's most powerful and counterintuitive mental models is the principle of "inversion". "Invert, always invert" is his most popular quote. Instead of asking how to achieve a goal, Munger would first ask what would cause failure and then diligently avoid those pitfalls. This is (to me) a profound shift in perspective which forces a consideration of potential obstacles and leads to more resilient strategies.
 
@@ -29,7 +29,7 @@ Although, its an interesting idea. Thinking about failures too much also tends t
 
 Charlie gives example of mathematician Carl Jacobi, whom Munger often quoted, said, "Invert, always invert." By thinking about a problem in reverse, it often becomes easier to solve. For instance, instead of asking "How can I help my business succeed?", one might ask "What would cause my business to fail?" By identifying and then avoiding those causes, the path to success becomes clearer. This approach helps in identifying and steering clear of what Munger called "standard stupidities."
 
-### Cognitive Flaws
+### cognitive flaws
 
 Munger placed immense importance on understanding psychology, particularly the predictable ways in which humans can be irrational. He developed a comprehensive checklist of 25 standard causes of human misjudgment, which he considered one of his most important contributions. These psychological tendencies, often working at a subconscious level, can lead to significant errors in judgment.
 
@@ -45,13 +45,13 @@ Some of the key tendencies Munger identified include:
 
 I used to have a large list of psychological biases that I've recognised, but seem like I've lost it to the digital rot. If I find some time to dig through my documents and find I'll fill it here.
 
-### Virtues
+### virtues
 
 Beyond the intellectual frameworks, "Poor Charlie's Almanack" comes with a strong moral and ethical compass. Munger championed virtues like preparation, discipline, patience, and decisiveness. He believed in the power of continuous learning, famously stating, "Spend each day trying to be a little wiser than you were when you woke up." For Munger, the acquisition of wisdom was a moral duty.
 
 He also emphasized the importance of integrity, honesty, and owning up to one's mistakes. Morality and ethics were not just abstract concepts for Munger; they were fundamental to long-term success in both business and life. He believed that in the long run, most people get what they deserve.
 
-### Key Takeaways 
+### key takeaways 
 
 "Poor Charlie's Almanack" is not a book to be passively read; it's a manual for active thinking. Here are some of the key takeaways to incorporate into your own life:
 

@@ -4,7 +4,7 @@ emoji: 📚
 description: My book reading/read lists
 ---
 
-## To Read
+## to read
 
 - The clockwork muse - Eviator Zerubavel
 - The mythical man month

@@ -1,5 +1,5 @@
 ---
-title: Why Privacy?
+title: why privacy?
 emoji: 🚪
 layout: base
 description: Why does privacy matter? Do we really need privacy? I don't have anything to hide, and other such ideas...
@@ -10,7 +10,7 @@ tags: ["tech", "privacy"]
 Fundamental problem has been that, privacy is hard to define.
 Privacy stretches and shrinks based on context, culture and time.
 
-#### Typical Conceptions of Privacy
+#### typical conceptions of privacy
 
 * Privacy as a right to be let alone
 * Privacy as secrecy
@@ -31,10 +31,10 @@ Privacy stretches and shrinks based on context, culture and time.
 * informational self-determination
 
 
-### __Alan Westin__
+### __alan westin__
 Professor and Public law professional. First significant work on consumer data privacy from Columbia University, 1960. His Books, __Privacy and Freedom__(1967) and __Databanks in a Free society__(1972) were cornerstones for US Privacy legislation and global privacy movements across multiple countries
 
-#### Alan Westin, Four functions of privacy
+#### alan westin, four functions of privacy
 
 - Personal autonomy
   - Not being manipulated or elbowed into doing something.
@@ -50,7 +50,7 @@ Professor and Public law professional. First significant work on consumer data p
 - Limited and protected communication
   - Setting interpesonal boundaries and sharing with trusted confidantes.
 
-#### Alan Westiin, Four States of privacy
+#### alan westiin, four states of privacy
 
 - Solitude
   - Freedom from observation by others.
@@ -83,7 +83,7 @@ When talking about modern societies alan says,
 What was interesting to me was that, Westin's concerns from 1960 are very much still alive and are multiple order of magnitudes possible today. And yet, discussion towards government surveillance is very little. World, without snowden whistleblowing sounds very dystopian indeed.
 
 
-### Privacy concerns, 
+### privacy concerns, 
 - Contextual Privacy
   - Privacy without context is incomprehensible. Something that is private in a context might not be, in a different context. This is strongly coupled with culture and other concerns.
 - Informational privacy
@@ -97,7 +97,7 @@ What was interesting to me was that, Westin's concerns from 1960 are very much s
   - opt-in/opt-out
   - Tech to facilitate informed consent
 
-### Facets of technology
+### facets of technology
 How disclosing about oneself result in increase privacy?
 - Security through obscurity
 - Decision control
@@ -113,7 +113,7 @@ How disclosing about oneself result in increase privacy?
 - Census, birth and death records, income, school records all help measure and maintain a healthy society.
 
 
-### Ryan Calo, Privacy Harms
+### ryan calo, privacy harms
 
 Ryan hypothesise that, Privacy harms fall under 2 definitions. subjective and objective
 
@@ -131,7 +131,7 @@ actions justified by reference to personal information.
 The subjective and objective harm are related but distinct. Ryan in his essay goes on to explain how privacy boundaries  are intruded in subjective and objective ways. 
 
 
-### solove: Taxonomy of Privacy
+### solove: taxonomy of privacy
 
 Daniel Solove's Taxonomy of privacy, quotes the following taxonomy for data privacy
 
@@ -140,18 +140,18 @@ Daniel Solove's Taxonomy of privacy, quotes the following taxonomy for data priv
 We can separate these out into sections.
 with quotes from Solove's, A Taxonomy of Privacy
 
-#### Information Collection and associated risks
+#### information collection and associated risks
 - __Surveillance__: "Watching, listening to, or recording of an individual's activities."
 - __Interrogation__: "various forms of questioning or probing for information."
 
-#### Information Processing and associated risks
+#### information processing and associated risks
 - __Aggregation__: "combination of various pieces of data about a person", (Reidentification attacks?)
 - __identification__: "linking information to particular indiviuals", 
 - __Insecurity__: "Carelessness in protecting stored information from leaks and improper access"
 - __Secondary use__: "use of information collected for one reason, for other purposes."
 - __Exclusion__: "failure to allow the data subject to know about the data that others have about them"
 
-#### Information Dissemination and associated risks:
+#### information dissemination and associated risks:
 - __Breach of confidentiality__: "breaking a promise to keep information confidential"
 - __Disclosure__: "revelation of truthful information about a person that impacts the way others judge her character"
 - __Exposure__: "revealing another's nudity, grief or bodily functions"
@@ -160,7 +160,7 @@ with quotes from Solove's, A Taxonomy of Privacy
 - __Appropriation__: "the use of the data subject's identity to server the aims and interests of another"
 - __Distortion__: "The dissemination of false or misleading information about individuals"
 
-#### Invasions
+#### invasions
 
 - __Intrusion__: "invasive acts that disturb one's tranquility or solitude."
 - __Decisional interference__: "the government's incursion into the data subject's decisions regarding private affairs."

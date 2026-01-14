@@ -1,6 +1,6 @@
 ---
 emoji: 🤔
-title: If
+title: if
 description:  Rudyard Kipling
 date: 2024-11-15
 layout: base

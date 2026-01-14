@@ -1,13 +1,13 @@
 ---
 emoji: 🔐 
-title: A Graduate Course in Applied Cryptography
+title: a graduate course in applied cryptography
 description: Book by Dan Boneh and Victor Shoup from stanford
 date: 2023-06-04
 layout: base
 tags: ["book", "tech", "privacy"]
 ---
 
-## Encryption
+## encryption
 
 Shannon cipher assumes a shared secret key that is no smaller than the message being transmitted.
 

@@ -4,7 +4,7 @@
   <div id='write'>
     <header>
       <div class="page-header-icon"><span class="icon">🏷️</span></div>
-      <h1 class="page-title">{{ .Title }}</h1>
+      <h1 class="page-title">{{ .Title | lower }}</h1>
       <p class="page-description">Explore content by topic</p>
     </header>
 
@@ -12,7 +12,7 @@
       {{ range $key, $value := .Data.Terms.ByCount }}
         {{ $tagURL := printf "/tags/%s" ($value.Page.Title | urlize) }}
         <a href="{{ $tagURL }}" class="tag-cloud-item">
-          <span class="tag-name">#{{ $value.Page.Title }}</span>
+          <span class="tag-name">#{{ $value.Page.Title | lower }}</span>
           <span class="tag-count">({{ len $value.Pages }})</span>
         </a>
       {{ end }}

@@ -1,24 +1,24 @@
 ---
 emoji: 🐣
-title: Awesome incubators/collectives for startups
+title: awesome incubators/collectives for startups
 description: There are awesome resources available for builders and tinkerers. A lot of VCs and others want to foster an ecosystem of building. This helps wit this.
 date: 2024-10-15
 layout: base
 tags: ["startups"]
 ---
 
-### Socratics
+### socratics
 
 website: https://socratica.info
 twitter: https://x.com/socraticainfo
 
 Open collective for builders, present in Multiple cities in the US and Canada. Really cool demos from their hackathon
 
-### YC
+### yc
 
 Everyone knows this one
 
-### SouthParkCommons
+### southparkcommons
 
 https://www.southparkcommons.com/
 
@@ -28,7 +28,7 @@ Started by founding Engineers from Facebook, Dropbox, Stripe as a builder's coll
 
 They also have a fellowship, in these cities for builders to build stuff.
 
-### BeOnDeck
+### beondeck
 
 ODF23 is an intense one-week in-person experience focused on meeting collaborators, exploring ideas, and gaining conviction.
 

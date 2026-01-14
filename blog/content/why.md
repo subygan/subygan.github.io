@@ -1,6 +1,6 @@
 ---
 emoji:  ❤️‍🔥
-title: Do the hard things.
+title: do the hard things.
 layout: base
 ---
 

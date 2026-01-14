@@ -1,6 +1,6 @@
 ---
 emoji: 🐲
-title: Intro to LLM
+title: intro to llm
 description: Notes from Andrej Karpathy's introduction to LLM talk.
 date: 2023-11-23
 layout: base
@@ -9,14 +9,14 @@ tags: ["tech", "machine-learning"]
 
 My notes on Karpathy's [Intro to LLM talk](https://youtu.be/zjkBMFhNj_g)
 
-### LLama-2-70b
+### llama-2-70b
 - comes with `run.c` ~500 lines of c for it to be a self-contained runnable model.
 - LLM are a lossy compression of the internet.
 - In the process of trying to predict the next word, The model would have to understand the World that led to the creation of that next word.
 - What the model does is closer to a dream, than determinism. The model only knows that something of a certain structure has to come there. It is not going to exactly replicate the world. It is dreaming about it and just like every dream the finer details could be hazy.
 - Reversal curse, knowledge that can be accessed from one angle, cannot be accessed when from another angle. And it is hard to understand why, because even though the equations behind the models are well understood. It is hard to reason within the billions of parameters and figure out why the model came to a certain conclusion. 
 
-### Assistant training
+### assistant training
 
 After training the Language model on a number of Epochs over the whole corpus of internet text.
 
@@ -42,7 +42,7 @@ In the end, the open model
 
 As the state of the art models get pushed, there will be better and better models available open source
 
-### LLM Scaling Laws
+### llm scaling laws
 - N, number of parameters in the network
 - D, The amount of text we train on
 
@@ -50,7 +50,7 @@ The prediction accuracy of the model can be obtained from just these two variabl
 Training a bigger model with more data, the accuracy just increases almost without much change.
 Algorithmic improvements are a nice to have, data "scaling" is the most significant factor in accuracy.
 
-### GPT and tool usage
+### gpt and tool usage
 
 ChatGPT, knows how to use a tool, based on the question context. 
 For example, searching online to find the valuation of a company, Just like how a human would use a "browser" a tool. ChatGPT does this.
@@ -63,11 +63,11 @@ System 1 and System 2 thinking in humans, during speed chess
 LLMs are using System 1 right now, they just produce words really really fast. We don't search for the next token "deeply". What we do is just look at the decision in a shallow manner, just like in speed chess. We will be moving onto deeper and deeper search
 The other angle of improvements is self-learning. Self-learning like in AlphaGo which played with itself lots of games and comes up with new and advanced strategies. Right now for LLMs, we are imitating humans, just like the older strategies for Go before Alphago. What Self-improvement look like for LLMs?
 
-### CustomGPT
+### customgpt
 
 It's a layer of customization over chatGPT. With Retrieval Augmented Generation (RAG) ChatGPT is browsing the documents and extracting content before answering. getting this information into the model and making stronger customization is an angle that needs to be looked up as well. There could also be models created that oversee and orchestrate many specialize models.
 
-### LLM OS
+### llm os
 There are multiple equivalence with an LLM to an OS.
 
 ![Andrej](/assets/images/andrej_slide.png)
@@ -80,7 +80,7 @@ image from Andrej Karpathy's slide
 - Multithreading con be thought of as using multiple tools being used. There is analogues to userspace and kernel space as well, with the Retrieval augmented generation maintaining. windows/macos -> proprietary models, Linux -> LLama. 
 - Its a race to go from the old stack onto the new stack
 
-### LLM Security
+### llm security
 
 Just like in old stack. There are multiple security threats.
 
@@ -95,7 +95,7 @@ Just like in old stack. There are multiple security threats.
 
 ---- End of talk ---
 
-### My take:
+### my take:
 
 Custom data used to fine-tune models are the biggest moat for LLM products.
 

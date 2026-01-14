@@ -1,5 +1,5 @@
 ---
-title: Registering with google and Other 
+title: registering with google and other 
 layout: base
 emoji: 🐈
 description: My (simplistic) journey on registering my site with google for the first time.
@@ -16,5 +16,5 @@ then, I had to give the location to my 'sitemap.xml' to them. It takes upto a da
 
 _"Crawled currently not indexed"_ means that Google has crawled it, but has decided to not index it in results, either because the content was low quality or other reasons. 
 
-### Refs
+### refs
 - https://support.google.com/webmasters/answer/7440203#crawled

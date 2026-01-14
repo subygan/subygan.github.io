@@ -1,6 +1,6 @@
 ---
 emoji: 🆕
-title: Product Building and fundamentals
+title: product building and fundamentals
 description: Thoughts on building products and selling them.
 date: 2024-12-10
 layout: base
@@ -37,7 +37,7 @@ __with very little capital__ For the amount of time I spent on these projects, i
 
 Thinking about this in hindsight 3 things are clear 
 
-## Problem
+## problem
 
 Clearly define the problem. Sit down, and write down what the problem is, how you're going to find the first user, the 10th user, the 1000th user.
 
@@ -47,13 +47,13 @@ Writing down also helps think if the problem is worth solving.
 
 The world is full of problems and only a few are worthwhile.
 
-## Time
+## time
 
 Be clear about the time commitment. Time is a resource.
 
 You're trying to live your life to the most intensity. If you're taking time off to work on something it better be reasonable important and leave a mark 
 
-## Cost
+## cost
 
 Be deliberate about the financial commitment for an endeavour, without this commitment it is pointless to pursue anything.
 

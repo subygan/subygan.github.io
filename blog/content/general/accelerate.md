@@ -1,6 +1,6 @@
 ---
 emoji: 🚀
-title: Why Accelerate?
+title: why accelerate?
 description: reflections on doing everything with intensity and focus.
 date: 2025-10-25
 layout: base
@@ -8,7 +8,7 @@ tags: ["learning", "philosophy"]
 ---
 
 
-## [Parkinson's law](https://en.wikipedia.org/wiki/Parkinson%27s_law)
+## [parkinson's law](https://en.wikipedia.org/wiki/parkinson%27s_law)
 
 > "work expands so as to fill the time available for its completion"
 
@@ -18,7 +18,7 @@ If you commit to doing something in 1 hour it'll take 1 hour. If you commit 10 i
 Which is what I end up doing, when I don't do things with 
 
 
-## [Just Say Yes - Eric Schmidt](https://www.youtube.com/watch?v=Bh804pcy5sc&t=402s)
+## [just say yes - eric schmidt](https://www.youtube.com/watch?v=bh804pcy5sc&t=402s)
 
 The world is probabilistic and opportunities for greatness are hidden in the crevice between, getting things done and saying yes.
 
@@ -27,7 +27,7 @@ Take on more responsibility. Accept invitations to be a part of someone's progre
 Saying yes, comes with the commitment to deliver on your promises. Which is harder the saying yes. and keeping it requires you to act with precision and results.
 
 
-## Velocity breeds focus.
+## velocity breeds focus.
 
 My wife says that we have to aspire to do everything within our reach. Which I think is quite inspirational, because it means you draw, but also work really hard and also take time for yourself. I never quite really reach that level of task effectivenes, although I try.
 

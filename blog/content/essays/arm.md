@@ -1,5 +1,5 @@
 ---
-title: ARM
+title: arm
 emoji: 📠
 layout: base
 date: 2020-09-25

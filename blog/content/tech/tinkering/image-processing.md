@@ -1,6 +1,6 @@
 ---
 emoji: 🎥
-title: Media processing in the CLI
+title: media processing in the cli
 description: using ffmpeg, imagemagick and so on
 date: 2025-12-12
 layout: base

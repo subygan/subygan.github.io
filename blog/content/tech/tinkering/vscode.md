@@ -1,5 +1,5 @@
 ---
-title: VSCode 
+title: vscode 
 layout: base
 emoji: 👨🏻‍💻
 description: and shenanigans
@@ -8,7 +8,7 @@ tags: ["tech", "programming"]
 ---
 
 
-## Why switch from Intellij
+## why switch from intellij
 
 Intellij was my most common IDE but I'm so tired of having to be a second citizen for every single plugin. Intellij needs to do a huge platform shift and become more open or be consumed by vscode. The amount of people who start with vscode is insane.
 

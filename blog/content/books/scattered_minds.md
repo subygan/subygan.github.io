@@ -2,7 +2,7 @@
 
 [//]: # (emoji: 🤯)
 
-[//]: # (title: Scattered minds)
+[//]: # (title: scattered minds)
 
 [//]: # (description: My notes from the book scattered minds)
 

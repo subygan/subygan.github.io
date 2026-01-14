@@ -1,6 +1,6 @@
 ---
 emoji: 🧑🏻‍🏫 
-title: Programmers introduction to mathematics
+title: programmers introduction to mathematics
 description: the pim book
 date: 2023-06-04
 layout: base
@@ -14,7 +14,7 @@ when we represent the output of a function f(x) in the y axis and the input in t
 
 All possible inputs are called __domain__ and all possible outputs are called __range__
 
-## Sets
+## sets
 
 __cardinality__ number of elements present in a set. an empty set has cardinality zero and non-finite sets have infinite cardinality
 __complement__ means all elements that are present in A, but not in B

@@ -1,5 +1,5 @@
 ---
-title: Hugo notes
+title: hugo notes
 emoji: 🦡
 layout: base
 description: Working with hugo 

@@ -1,6 +1,6 @@
 ---
 emoji: 🚊
-title: ML Guardrails
+title: ml guardrails
 description: My research diary on looking at ML Guardrails AKA model alignment
 date: 2024-02-06
 layout: base
@@ -20,15 +20,15 @@ There are multiple ways to align the model,
 By far, the last method is the most accessible and cheap method for application layer developers. This makes sense as, in a typical Model-as-a-service type services, the api usually only gives the decoded text output and at that point, usually the only thing left to do is to give it back to the model and hope it works.
 
 
-## NeMo
+## nemo
 
 It's a proxy between the user and LLM. allows devs to define programmatic rails using __Colang__
 
-### Topical Rails
+### topical rails
 
 - Dialogue flows (canonical form -> pre-defined user flows)
 
-### Execution Rails
+### execution rails
 - Fact Checking Rail
 - Hallucination Rail (Self consistency like SelfCheckGPT)
 - Moderation Rail (Jailbreak detection and malicious user messages)
@@ -36,7 +36,7 @@ It's a proxy between the user and LLM. allows devs to define programmatic rails 
   - Output moderation
 
 
-## Guardrails.ai 
+## guardrails.ai 
 
 This is another open source startup that is attacking the same problem. They have an XML base RAIL language definition that is used to define an LLM flow.
 they've implemented pydant to extract valid json output from the model and have reprompting and pipelining configs in the XML.
@@ -44,15 +44,15 @@ There are also multiple validators available out of the box so that it makes it 
 
 - IMO, XML is a little unwieldy.
 
-## SelfCheckGPT
+## selfcheckgpt
 
 - Generates the probability for a sentence
 - Multiple variants
 
-## chatGPT
+## chatgpt
 - OpenAI actualy 
 
-## Active problems
+## active problems
 - Re-prompting is expensive, both in  terms of cost and time. making multiple non-async API calls are very inefficient and take a lot of time to get any reasonable output.
 - The hypothesis of accessing the model through a REST API has actually reduced a lot of innovation possible in these areas. Unless companies start exposing ways to interact with the model and have access to deeper layers, the time delay problem is hard to solve. But, this is not in the horizon, especially with proprietary models.
 

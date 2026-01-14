@@ -1,6 +1,6 @@
 ---
 emoji: ⛴️
-title: The Practice
+title: the practice
 description: Shipping Creative Work
 date: 2024-11-06
 layout: base
@@ -14,7 +14,7 @@ tags: ["book", "creativity", "building"]
 >__Work__, because it is not a hobby.
 
 
-## Trust Yourself
+## trust yourself
 
 You're Stuck in a pattern of being you. What you want to be is beyond that.
 
@@ -49,7 +49,7 @@ Have faith in your practice and wait for your outcome. It was never going to be 
 The outcome is the side effect of the practice itself. Learn to love the practice. Be Relentless with it.
 
 
-## Generous
+## generous
 
 Your contribution--The one you want to make, the one you were born to make--that's what the world needs.
 
@@ -62,7 +62,7 @@ Time is fleeting and you only get today once.
 To say no to something with your full heart you need to have something that you say yes to.
 
 
-## The Professional
+## the professional
 
 A lifeguard does not jump into the water because she's the perfect swimmer or because she was certain she's the most qualified person to do the job. She did, because it was her job. Because she promised she would.
 
@@ -84,7 +84,7 @@ But, the mass means average. And that means reducing your quality.
 
 Delight an audience that really cares about the work you do and what you put out there.
 
-## Intent
+## intent
 
 What change do you seek in the world?
 
@@ -106,7 +106,7 @@ Authenticity is a farce. Only a tantrum is authentic. Everything else comes from
 Consistency is how you move forward. Not Sameness. Not repetition. But the intentional drive to improve consistently.
 
 
-## No Such Thing As Writer's Block
+## no such thing as writer's block
 
 Credentialing is a Roadblock. A lot of things in life don't need permission from authority.
 
@@ -148,7 +148,7 @@ Avoid Shortcuts.
 
 Build it for the smallest viable audience. Make it for someone. not everyone.
 
-## Make Assertions
+## make assertions
 
 Assertions are fundamental to creating something new.
 
@@ -158,7 +158,7 @@ Assertions are how you build your own genre.
 
 Strong Opinions, Loosely held. Is how you assert and still be flexible
 
-## Earn Your Skills
+## earn your skills
 
 Your skills are what make you special.
 
@@ -174,7 +174,7 @@ Do the reading. Go into the room not as a empty vessel. But as someone who's don
 
 Good Taste comes from domain knowledge. It's the ability to know what your audience or clients are going to want before they do.
 
-## Seek Out Constraints
+## seek out constraints
 
 
 Constraints make art possible.

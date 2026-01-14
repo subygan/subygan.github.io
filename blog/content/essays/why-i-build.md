@@ -1,6 +1,6 @@
 ---
 emoji: 🏗️
-title: Why I Build.
+title: why i build.
 description: My beliefs and why it defines who I am 
 date: 2024-11-26
 layout: base

@@ -1,6 +1,6 @@
 ---
 emoji: 📠
-title: Machines of Loving Grace
+title: machines of loving grace
 description: Dario Amodei
 date: 2025-10-07
 layout: base
@@ -20,7 +20,7 @@ tags: ["book", "tech", "philosophy"]
 
 From a strategic communication standpoint this essay was interesting. Amodei builds credibility by acknowledging the risks he is known for, which makes his subsequent turn to optimism more powerful and sincere. His reasoning for avoiding "propaganda" shows a deep understanding of public perception and the importance of intellectual honesty for a company in a field as hyped as AI. 
 
-## Notes:
+## notes:
 
 - __defining Powerful AI__ Amodei avoids the term "AGI" and instead defines a "powerful AI" with specific properties:
     -   Smarter than a Nobel Prize winner in most relevant fields.
@@ -39,7 +39,7 @@ From a strategic communication standpoint this essay was interesting. Amodei bui
     -   __Physical laws:__ Unbreakable laws of physics.
 
 
-### 1. Biology and Health
+### 1. biology and health
 
 I didn't know amodei was originally trained in Biology
 
@@ -58,7 +58,7 @@ I didn't know amodei was originally trained in Biology
 
 I liked his angle on making healthcare more accessible because it is that much more easier to get a model in the hands of people than it is to get a trained doctor and get them in a remote area
 
-### 2. Neuroscience and Mind
+### 2. neuroscience and mind
 
 
 - The "100 years of progress in 5-10 years" framework applies equally to neuroscience.
@@ -77,7 +77,7 @@ I liked his angle on making healthcare more accessible because it is that much m
 
 This section highlights a fascinating positive feedback loop. For decades, neuroscience inspired AI. Now, Amodei argues, AI will be the primary driver of progress in neuroscience. Studying artificial neural networks is easier, safer, and faster than studying biological ones, and the insights will be transferable. This is a game-changer for brain research.
 
-### 3. Economic Development and Poverty
+### 3. economic development and poverty
 
 
 -   __Distribution Challenge:__ developing world-changing technologies is one thing; ensuring everyone has access is another kind of challenges. He sees this as a moral imperative in making AI accessibel in everything
@@ -94,7 +94,7 @@ This section highlights a fascinating positive feedback loop. For decades, neuro
 I really liked his theory on why he thinks Developing nations should be allowed a path to become a developed country because without that we'll just have over dominant developed nations, which stymie development from developing nations.
 
 
-### 4. Peace and Governance
+### 4. peace and governance
 
 This was a chapter that I thought was loaded with propaganda from Amodei. Very strongly against China and strongly biased towards the US. While he doesn't name the nations all through this essay. It is quite obvious what the intended effect was.
 
@@ -109,7 +109,7 @@ This was a chapter that I thought was loaded with propaganda from Amodei. Very s
     -   __Strengthening Democracy:__ AI can help with "computational democracy" projects (aggregating public opinion) and improve the delivery of government services, reducing cynicism.
 
 
-### __5. Work and Meaning__
+### __5. work and meaning__
 
 -   __The Fuzzier Question:__ He admits this is the most difficult question to answer, as it relates to complex, decentralized societal organization. Although a bit of that kinda happened with the crypto bubble as well.
 -   __The Question of Meaning:__ Amodei argues that meaning is not primarily derived from economic labor. People find meaning in human relationships, hobbies, and personal challenges, even if they aren't the "best in the world" at them. An AI being better at a task doesn't make it meaningless to pursue.

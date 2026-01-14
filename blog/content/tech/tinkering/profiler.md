@@ -1,13 +1,13 @@
 ---
 layout: base
 emoji: 🔍
-title: visualising Performance
+title: visualising performance
 description: Notes on how to visualise flame graph
 date: 2022-04-13
 tags: ["tech", "programming"]
 ---
 
-### Interesting:
+### interesting:
 
 - Flame graphs don't show sequentiality. They are not sorted based on time. They are sorted by alphabets. Which means in the flame graphs, if
 
@@ -23,6 +23,6 @@ here, the function `h()` was not run after `b()`. it's after `b()` because it's 
 
 
 
-### Resources:
+### resources:
 
 - https://brendangregg.com/FlameGraphs/cpuflamegraphs.html

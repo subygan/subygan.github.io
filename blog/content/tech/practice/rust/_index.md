@@ -1,6 +1,6 @@
 ---
 emoji: ⛓️
-title: Rust
+title: rust
 description: Rust and everything related to it
 ---
 

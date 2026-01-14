@@ -1,6 +1,6 @@
 ---
 emoji: 🏗️
-title: LLMs and unstructured data
+title: llms and unstructured data
 description: How LLMs are changing the way unstructured data is being processed and understood.
 date: 2024-08-31
 layout: base

@@ -1,6 +1,6 @@
 ---
 emoji: ⚔️ 
-title: Searching for a cross platform framework
+title: searching for a cross platform framework
 description: My journey on trying to find a cross platform application development framework.
 date: 2022-01-29 22:15:00
 layout: base
@@ -9,10 +9,10 @@ tags: ["tech", "programming"]
 
 This is still a WIP and I'll be updating each one as I discover and play with new stuff.
 
-## Why Cross platform?
+## why cross platform?
 There are majorly 2 mobile platforms and 3 desktop platforms. Browsers are acting as a cool layer between this, within the realms of which applications are consistently rendered and usability is not spoilt. This is awesome, because now you don't need 5X the development effort to deliver a software experience But only one. Which means velocity can be much faster. But the problem with this, is that "websites" are not really perceived as serious applicaitons. And there is very little control over the user experience. Native apps are a better way to deliver applications.
 
-## Requirement
+## requirement
 
 - build apps across all 5 platforms with max code overlap across. (ideally)
 - Small build size
@@ -24,22 +24,22 @@ There are majorly 2 mobile platforms and 3 desktop platforms. Browsers are actin
     - uptodate API support
 
 
-## Options.
+## options.
 There are broadly a few ways this is being done.
 
 - Use a browser to render the application (electron, Deskgap, nwjs, et al.)
 - Provide SDKs that compile to native code (Qt, flutter, et al)
 
-## Browser based solutions
+## browser based solutions
 
-### [Electron \[desktop\]](https://www.electronjs.org/)
+### [electron \[desktop\]](https://www.electronjs.org/)
 Electron supports all major desktop platforms. And simple HTML, CSS and JS stack works perfectly fine without any issue.
 
 Electron is unanimously disliked by everyone for being such a memory hog, which seems unescapable when you're shipping an entire browser with the application. Also, this kinda bloats up the app bundle as well. A hello world production app takes up about 50 MB which is insane. [station's story](https://web.archive.org/web/20200926071714/https://stationhq.com/blog/station-1-the-technical-back-story) is a cautionary tale to anyone who tries to go down this path.
 
 examples: slack, discord, VS code, [more stuff here](https://www.electronjs.org/apps)
 
-### [NWjs](https://nwjs.io/)
+### [nwjs](https://nwjs.io/)
 creates a node runtime in the browser to render the website. which means, on first install it has to be bundled with everything that comes with it as well. This could get pretty heavy overtime.
 
 
@@ -47,7 +47,7 @@ creates a node runtime in the browser to render the website. which means, on fir
 
 One nice(?) thing about NWjs is that it still supports windows xp.
 
-### [NeutralinoJS](https://neutralino.js.org/)
+### [neutralinojs](https://neutralino.js.org/)
 Neutralinojs takes slightly a different(smarter?) approach by using the system's default browser instead of bundling a whole chromium browser with it.
 Neutralino clearly has its benefits over the other two in both build size and memory footprint. It still supports only desktop applications
 
@@ -57,7 +57,7 @@ similar
 
 examples: [here](https://neutralino.js.org/apps/)
 
-### [React Native](https://reactnative.dev/)
+### [react native](https://reactnative.dev/)
 
 As far as I've seen React Native feels like a mix of so many things. its a sublet from a "web"-framework that has been changed fairly to interact with native components written in `JAVA`, `objective C` and `C#` using so called bridges. This mildly reminds me of the [chimera](https://en.wikipedia.org/wiki/Chimera), a freak of nature not really sure why.
 
@@ -71,7 +71,7 @@ Personal notes:
 ref
 - [showcase](https://reactnative.dev/showcase)
 
-### [Qt](https://www.qt.io/)
+### [qt](https://www.qt.io/)
 
 Qt is a cross platform proprietory framework that is being used by a lot of applications. they provide a free version with an [LGpl](https://www.gnu.org/licenses/lgpl-3.0.en.html) license and link the app dynamically instead of statically. Which, might satisfying for most application. Also, it requires you to write in  `c++` and does not exactly support android. The widgets can get old. and new native features might be a bit late to come by.
 
@@ -81,7 +81,7 @@ Personal notes:
 example apps: telegram, skype
 
 
-### [Flutter](https://flutter.dev/)
+### [flutter](https://flutter.dev/)
 
 Flutter is a multiplatform application development framework which uses dart as a main language. It's relatively new, being published in 2019. It supports android, ios, macOS, linux, windows and web. And runs in [near native performance](https://medium.com/swlh/flutter-vs-native-vs-react-native-examining-performance-31338f081980). It does not use native components directly, like React native instead choosing to paint all the widgets using the [Skia](https://skia.org/) 2d rendering engine, which means the widgets aren't exactly native but native-like. 
 
@@ -97,7 +97,7 @@ ref:
 - [showcase](https://flutter.dev/showcase)
 
 
-### [Kotlin](https://kotlinlang.org/docs/multiplatform.html)
+### [kotlin](https://kotlinlang.org/docs/multiplatform.html)
 
 Kotlin Multiplatform is a framework build on top of kotlin to build apps for multiple platforms including, web, tvOS, macOS, android, ios. Kotlin skews more towards business logic and is heavy in that angle. It works by having custom modules for seperate platforms and one unifying part. Since Kotlin, has complete backward compatibility with Java and runs in the JVM, it is able to support multiple platforms.
 
@@ -108,7 +108,7 @@ personal notes:
 - Kotlin is pretty easy to pick up.
 
 
-## Resources I found useful
+## resources i found useful
 
 - [Flutter vs react Native](https://www.thedroidsonroids.com/blog/flutter-vs-react-native-what-to-choose-in-2021)
 - [kotlin vs xamarin vs flutter vs react native ](https://doit.software/blog/flutter-vs-kotlin-which-is-best-for-cross-platform-app-development#screen26)

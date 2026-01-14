@@ -1,6 +1,6 @@
 ---
 emoji: ❝ 
-title: Quotes
+title: quotes
 description: Quotes that I like
 date: 2023-06-03
 layout: base

@@ -1,6 +1,6 @@
 ---
 emoji: ✒️
-title: Writing
+title: writing
 description: the why, the what, the how
 date: 2024-11-05
 layout: base
@@ -16,7 +16,7 @@ It helps crystallize my ideas, understand complex stuff, etc. Often times even r
 So it means a lot to me that I improve my writing for other people to understand and operate.
 
 
-# Notes from Larry's lecture
+# notes from larry's lecture
 
 handouts are [here](/writing_uchicago.pdf)
 
@@ -66,7 +66,7 @@ Organized + useless it's useless
 
 Focus on the readers before you even start writing. They're the one who is finding it valuable.
 
-## Differences between readers
+## differences between readers
 
 Except in the world of standardized tests Readers differ in the way they operate.
 
@@ -110,7 +110,7 @@ And that's how it works.
 
 Literally saying that something "is important" does not make it important.
 
-## The code
+## the code
 
 Every community has a set of codes.
 
@@ -136,7 +136,7 @@ Do not explain about something. Argue why they might be wrong.
 Knowledge is created because it is challenged. and understanding the code is important to challenge being politically correct.
 
 
-## Essays
+## essays
 
 Anything you write should help your reader understand something.
 
@@ -170,7 +170,7 @@ Problem should be something the reader's care about and fix.
 A Thesis is a solution to a problem. So the problem should be there.
 
 
-## Problem
+## problem
 
 Always start with the problem. because this justifies why the reader should care about your work. Give them that.
 
@@ -182,7 +182,7 @@ A problem is usually,
 Readers are trying to understand inconsistency, instability and discontinuity. They're expecting tension in a problem.
 
 
-### Lit Review
+### lit review
 
 function of lit review
 
@@ -204,6 +204,6 @@ Argue why they have to care about it
 Knowledge is not bounded.
 
 
-# Ref
+# ref
 
 - [Craft of Writing Effectively](https://www.youtube.com/watch?v=vtIzMaLkCaM)

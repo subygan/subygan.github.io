@@ -1,6 +1,6 @@
 ---
 emoji: 🪣
-title: Leaky Abstractions, or How we Understand the world
+title: leaky abstractions, or how we understand the world
 description: metaphors, examples and analogies are how we understand the world. but do they (pardon the pun) hold water, under scrutiny? How much do you depend on them?
 date: 2024-10-02
 layout: base

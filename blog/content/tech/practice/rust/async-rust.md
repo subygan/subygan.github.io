@@ -1,6 +1,6 @@
 ---
 emoji: A␖c
-title: Async rust
+title: async rust
 description: Async Rust and performance benefits.
 date: 2025-08-10
 layout: base
@@ -12,7 +12,7 @@ Asynchronous programming is a powerful paradigm for building highly concurrent a
 
 I will dissect the core components of Rust's asynchrony, from the fundamental `Future` trait to the complexities of `Pin` and memory management. We will then unravel the inner workings of Tokio, the most popular async runtime, exploring its scheduler, I/O handling with `mio`, and how it all comes together to execute our asynchronous code.
 
-### The `Future` Trait
+### the `Future` trait
 
 At the absolute core of async Rust lies the `std::future::Future` trait. A `Future` is a value that represents a computation that may not have completed yet. Think of it as a placeholder for a result that will be available at some point in the future. Futures in Rust are lazy; they don't do anything until they are actively driven to completion.
 
@@ -72,7 +72,7 @@ impl Future for TimerFuture {
 }
 ```
 
-### The Magic of `async/await`
+### the magic of `async/await`
 
 Writing manual `Future` implementations can be cumbersome. This is where `async/await` comes in as a high-level, ergonomic syntax. An `async fn` is essentially syntactic sugar for a function that returns a type implementing `Future`.
 
@@ -137,7 +137,7 @@ impl Future for ReadAndWriteFuture {
 
 This state machine structure is why `async` functions can be self-referential—the generated struct holds both the state and the data that lives across suspension points.
 
-### The Necessity of `Pin`
+### the necessity of `Pin`
 
 The self-referential nature of `async` state machines introduces a significant challenge: memory safety. If we could move a `Future` in memory (for example, by moving it from the stack to the heap), any internal pointers within that `Future` would become invalid, leading to dangling pointers and undefined behavior.
 
@@ -147,7 +147,7 @@ This is where `Pin` comes to the rescue. `Pin` is a smart pointer that "pins" it
 
 By taking `self: Pin<&mut Self>`, the `poll` method guarantees that the `Future`'s memory location is stable, allowing for safe polling of self-referential futures. The `pin-project` crate is a commonly used tool that helps safely create projections from a pinned struct to its fields.
 
-### The Engine: The Tokio Runtime
+### the engine: the tokio runtime
 
 As mentioned earlier, `Future`s are inert until they are polled by an executor. An executor is responsible for managing a set of top-level futures (or "tasks") and polling them until they complete. Tokio is the most widely-used, production-ready async runtime in the Rust ecosystem.
 
@@ -166,7 +166,7 @@ async fn main() {
 }
 ```
 
-### Tokio's Multi-Threaded Scheduler
+### tokio's multi-threaded scheduler
 
 To leverage modern multi-core processors, Tokio provides a powerful multi-threaded scheduler that employs a work-stealing strategy. This scheduler operates on an M:N threading model, where a large number of user-space tasks (the "M") are multiplexed onto a smaller number of OS threads (the "N").
 
@@ -180,7 +180,7 @@ This work-stealing approach offers excellent load balancing and high CPU utiliza
 
 For workloads that don't require parallelism or to avoid the overhead of synchronization, Tokio also offers a single-threaded runtime. For CPU-bound or blocking operations that would otherwise stall a worker thread, Tokio provides `tokio::task::spawn_blocking`, which moves the blocking task to a dedicated thread pool, preventing it from halting the progress of other async tasks.
 
-### Under the Hood of I/O: `mio`
+### under the hood of i/o: `mio`
 
 Tokio doesn't communicate with the operating system's I/O APIs directly. Instead, it relies on a lower-level library called `mio` (Metal I/O). `mio` is a fast, low-level I/O library that provides a cross-platform, non-blocking API for building high-performance I/O applications.
 
@@ -197,7 +197,7 @@ Of course, here is the new section that was added to the blog post.
 
 ***
 
-### The `move` Keyword and Async Closures:
+### the `move` keyword and async closures:
 
 The interplay between closures and asynchronous tasks introduces important considerations around variable lifetimes, making the `move` keyword a crucial tool. This is most apparent when spawning new tasks with `tokio::spawn`.
 
@@ -267,7 +267,7 @@ async fn my_async_fn_shared() {
 ```
 In this example, we clone the `Arc`, which just increments a reference counter, and move the clone into the spawned task. This is a cheap operation that allows multiple tasks to safely share ownership of the same data without violating Rust's lifetime rules.
 
-### Putting It All Together: A Request's Journey
+### putting it all together: a request's journey
 
 tracing the lifecycle of an asynchronous network request in a web server built with Tokio to see how all these pieces fit together.
 
@@ -291,7 +291,7 @@ Of course, here is a new section about recursion in async Rust that you can add 
 
 ***
 
-### Navigating Async Recursion: The Challenge of Infinite Size
+### navigating async recursion: the challenge of infinite size
 
 Recursive patterns are a powerful tool in traditional synchronous programming, but they introduce a unique and fascinating challenge in the async world. The core of the issue lies in how Rust determines the size of types at compile time, a cornerstone of its memory safety guarantees.
 
@@ -309,7 +309,7 @@ async fn recursive_task(n: u32) {
 
 If we trace the compiler's logic, the state machine for `recursive_task` must contain the future returned by the nested call to `recursive_task`. This creates a type definition that contains itself, leading to a theoretically infinite size. Rust must know the size of every type at compile time, so this infinite recursion is disallowed. The compiler will stop you with an error, typically `E0733`, explaining that recursive `async fn` calls could be "infinitely sized".
 
-#### The Solution: Indirection with `Box::pin`
+#### the solution: indirection with `Box::pin`
 
 To break this infinite size cycle, we need to introduce a layer of indirection. Instead of storing the recursive future directly within the parent future's state machine, we can store a pointer to it on the heap. This gives the type a known, fixed size at compile time (the size of a pointer).
 
@@ -342,7 +342,7 @@ Here's what happens:
 
 Because the state machine for `recursive_task` now only needs to store a `Pin<Box<...>>` (a smart pointer) instead of the full `Future` object inline, the compiler can determine its size, and the code compiles successfully.
 
-#### A Practical Example: Traversing a Tree-like Structure
+#### a practical example: traversing a tree-like structure
 
 A common use case for async recursion is traversing a data structure where fetching child nodes is an asynchronous operation, such as querying a database or making a network request.
 
@@ -394,7 +394,7 @@ async fn main() {
 ```
 In this example, we've structured the function to return a `BoxFuture`, which is a type alias for `Pin<Box<dyn Future + ...>>`. This achieves the same goal of heap-allocating the future to break the recursive type definition. This pattern was more common before Rust 1.77 and is still very useful, especially in trait methods where you need to name the return type.
 
-#### The `async-recursion` Crate
+#### the `async-recursion` crate
 
 For those who find manual boxing cumbersome, the `async-recursion` crate provides a convenient procedural macro that handles the boxing automatically.
 
@@ -415,7 +415,7 @@ It is important to note that even with these techniques, async recursion is not 
 
 ***
 
-#### eg: Traversing a Tree-like Structure
+#### eg: traversing a tree-like structure
 
 A common use case for async recursion is traversing a data structure where fetching child nodes is an asynchronous operation, such as querying a database or making a network request.
 
@@ -470,7 +470,7 @@ In this example, we've structured the function to return a `BoxFuture`, which is
 
 tree or processing a structured API response. For logic that needs to run indefinitely, a loop is almost always the better choice.
 
-### The Broader Async Ecosystem
+### the broader async ecosystem
 
 While Tokio is the dominant runtime, it's worth noting that other options like `async-std` and `smol` exist, each with slightly different design philosophies.
 

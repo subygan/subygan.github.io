@@ -1,6 +1,6 @@
 ---
 emoji: ✾
-title: the metamorphosis - Franz Kafka
+title: the metamorphosis - franz kafka
 description: The origin of kafkaesque. The story about a person getting transformed into a bug.
 date: 2025-04-01
 layout: base

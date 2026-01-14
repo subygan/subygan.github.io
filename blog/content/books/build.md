@@ -1,6 +1,6 @@
 ---
 emoji: 🧱 
-title: Build - Tony Fadell
+title: build - tony fadell
 description: My notes from Tony Fadell's book, build.
 date: 2023-04-13
 layout: base
@@ -9,7 +9,7 @@ tags: ["book", "leadership", "startups"]
 
 Tony Fadell Writes about his lessons from his enrepreneurial and leadership role, shipping multiple successful products. A great book teaching about how companies, leaders and employees think
  
-### Build Yourself
+### build yourself
 
 - "The only failure in your twenties is inaction. Rest is trial and error"
 - In the early days of a career it is better to optimise for what one is naturally good at, instead of optimising for money, status or title. Because only what we are naturally interested about, would push us in direction where there is value to unlock/
@@ -19,7 +19,7 @@ Tony Fadell Writes about his lessons from his enrepreneurial and leadership role
 - Don't only look down at the roadmap. Because, knowing what you want built is more important than building the thing itself. On the flipside it is also __important know when to put be heads down and building__ Not doing either would be difficult. Fadell's story from General magic about how the team was totally detached from the end customer, made their product dead on arrival.
 - I liked this chapter because it speaks a lot about how having to work hard early is important and why having divergent thoughts than everybody around might not be such a bad thing.
 
-### Build your career
+### build your career
 - Tony knew when he had to split from general magic when the vision did not align and no way forward was to be found. He joined Panasonic as a 25-year-old CTO.
 - Trying to build a new and exciting product within a big behemoth is still worth it.
 - Managing people is drastically different than, being an individual contributor.
@@ -34,7 +34,7 @@ Tony Fadell Writes about his lessons from his enrepreneurial and leadership role
 - Knowing when to quit is very important. When General Magic was devoid of any touch to reality, Tony quit to build the thing that mattered. Trusting your instinct and doing the right work is more important than doing work you don't believe in.
 
 
-### Build the Product
+### build the product
 
 - Products are intangible when they are just ideas, and as humans, we focus on tangible things and ignore the intangible. Before building prototype everything so that the intangible is as tangible as possible. Being able to map and visualise the product is an important part.
 - Building and delivering the Product is just one part of the customer journey. the customer journey start from when they are aware of your product to how they perceive it, till they use it constantly and are delighted by it. Product is one piece of the puzzle, one has to get the whole pipeline correct to nail the customer experience. Tony's experience with nest adding a screw is very interesting.
@@ -45,7 +45,7 @@ Tony Fadell Writes about his lessons from his enrepreneurial and leadership role
   - Execution is __getting done what was already promised__.
 - the advantage of disruptive product is that, others can't replicate the same thing for a while and the barrier of entry has been raised up.
 
-### Build the product
+### build the product
 - Basic elements of an idea.
   - It solves the __why__. "What" comes after the "why" is figured out.
   - A lot of people have that problem.
@@ -60,7 +60,7 @@ Tony Fadell Writes about his lessons from his enrepreneurial and leadership role
 - When a crisis occurs, it is very important to know and understand that __focus should be on fixing the problem.__ Getting help from mentors and peers is important. Irrespective of who's mistake it was, taking responsibility and getting everything straightened out should take the front seat.
 - Tony's story on how they handled the "fire-waving" crisis at nest was very interesting. In times of crisis, it should be all hands on deck and complete transparency. And every should start contributing their share to solve the problem at hand. In a similar vein, Andy groves story on how they handled the float-miscalculation issue at intel also had similar ideas.
 
-### Build Your Team
+### build your team
 - The key to the success of companies is entirely dependent on the people. The people make the company even before the company was even a company. The early team, would be singularly focusing on delivering the best work and making the product a reality.
 - Investing on teaching interns and new hires is important as it cultures and ensures that there are people to take care of the future of the company.
 - Interviews should be conducted by people who would work directly with the person. 

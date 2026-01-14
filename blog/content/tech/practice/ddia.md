@@ -1,5 +1,5 @@
 ---
-title: Designing Data intensive applications notes
+title: designing data intensive applications notes
 emoji: ⚜️
 layout: base
 description: My notes on reading, designing data intensive applications
@@ -7,7 +7,7 @@ date: 2022-10-23
 tags: ["tech", "programming"]
 ---
 
-# Ch-1: Reliable, Scalable and maintainable applications
+# ch-1: reliable, scalable and maintainable applications
 
 - reliability, The system should continue to work __correctly__ even in the face of adversity (hw, sw or human).
   - __faults__ (either synthetic or natural) are when only part of the system misbehaves, If the whole system goes down then it is a __failure__.
@@ -50,7 +50,7 @@ tags: ["tech", "programming"]
   - _Simplicity_, Complexity in software slows everyone down and brings down productivity, these are complex systems are called _a big ball of mud_ . Software which is easier to understand.
     - there are several possible _symptoms of complexity_ __explosion of the state space, tight coupling of modules, tangled dependencies, inconsistent naming and terminology, hacks to solve performance problems, special-casing to work around issues elsewhere
 
-# Ch-2 Data models and Query Languages
+# ch-2 data models and query languages
 
 Data models impacts _How we think about the problem_ making it an important part of decision making.
 
@@ -85,7 +85,7 @@ For example the same document can be represented like, so.
 
 JSON's unstructured format can be an issue in some use cases. But, it provides better _locality_. The one to many relationships from user's positions educational history and contact info imply a tree structure.
 
-### Many-to-one and Many-to-Many Relationships
+### many-to-one and many-to-many relationships
 
 If the user has free-text fields for entering the region and the industry, then it makes sense to store them as plain-text strings. But, having a dropdown list with pre-assigned values has it's own benefits
 
@@ -103,7 +103,7 @@ In the resume example, we could simplify it by __making schools as entities__ An
 
 In some ways, NoSQL might be repeating history. IBM's Information Management System (IMS) developed in 1968, used a model called _hierarchical model_ , Which has similarities to JSON. IMS Worked well for one to many scenarios, it didn't fare well with many to many scenarios. In those times to solve the limitations of the hierarchical model, two new model of data representation where bought out, _Relational model_ and _network model_ The network model, even though had a fan following has basically faded into obscurity. 
 
-### The network model
+### the network model
 The network model was standardised by __Conference on Data System Langugages (CODASYL)__. This _CODASYL_ model was implemented by several database vendors.
 
 CODASYL model was a subset of the network model where each entity only had one parent, while the network model could have n parents. These were referenced with each others, unlike in SQL, these references were more like pointers, than IDs even though they were stored in the Disk.
@@ -111,7 +111,7 @@ CODASYL model was a subset of the network model where each entity only had one p
 This means, that every data had an _access path_ and these path had to be traversed from the root node, like you would traverse a linked list. Even the CODASYL committee agreed that, this is like traversing an N-dimensional data space.
 
 
-### Relational model
+### relational model
 
 Simple => a relation (table) is just a collection of tuples (rows)
 
@@ -120,18 +120,18 @@ Simple => a relation (table) is just a collection of tuples (rows)
 in RDBs the __query optimiser__ decides which parts of the query to execute in which order and what indexes to uses. => basically an _access path_ 
 query optimisers are complex entities and cool thing is that once you create a query optimiser, all applications that use it can leverage it.
 
-### Schema flexibility in document model
+### schema flexibility in document model
 
 document models have no schema and that is a big advantage => all schema evaluation can be enforced at the application level, instead of the database level. => makes document model very flexible, while the relational model is rigid and requires big migration of the database to add/remove columns.
 
 
-### Data locality for queries
+### data locality for queries
 
 if data is accessed often, having all the data in the same locality is better for performance. This is how document databases operate and makes it better for performance. relational database might not guarantee that all data for a particular query would be in the same segment in memory and might require multiple seeks to complete.
 
 Google spanner database offers same locality properties in relational data model, by schema to declare rows taht should be interleaved. Most relational databases also support XML and json formats. Postgres has a _jsonb_ format which stores json data in an optimal format making it easier to index data inside json blobs.
 
-### Query Languages for data
+### query languages for data
 
 SQL is a _declarative query language_ while, IMS and CODASYL have _imperative query language_ 
 
@@ -164,7 +164,7 @@ in SQL this would be,
 imperative => you decide the pattern of access, you decide the way to filter and everything else
 declarative => We dictate, how we want the data and the final conditions of the data, not how to fetch it. The data implementation detail is essentially hidden from the user and the database is allowed to make decisions based on the data it has. like, cleanup jobs and memory journaling.
 
-### Queries on the web
+### queries on the web
 
 css queries in html documents are an example of declarative queries as well.
 
@@ -192,7 +192,7 @@ var liElements = document.getElementsByTagName("li"); for (var i = 0; i < liElem
 ```
 which is a lot more verbose. and this has the disadvantage of not using the optimisations offered by the browser itself.
 
-### Map reduce
+### map reduce
 
 Map reduce is a model to process large amount of data across many machines.
 
@@ -222,7 +222,7 @@ db.observations.mapReduce(
 
 This enables us to perform distributed queries. But, nothing is stopping SQL DBs to not do the same. They are able to handle the same very well as well.
 
-## Graph like Data Models
+## graph like data models
 
 Graph DBs are very useful in one-to-many cases. But, _relational models can only handle simple cases of relations_. In cases where much more complicated Databases are required, a graph database makes a lot more sense. Graph DBs generally have vertices and edges some examples include 
 - _social graphs_,  Vertices are people and edges indicate which people know each other
@@ -231,7 +231,7 @@ Graph DBs are very useful in one-to-many cases. But, _relational models can only
 
 Navigation systems, Shortest path finding algorithms can work on these databases
 
-## Property graphs
+## property graphs
 
 Each vertex consists of 
 
@@ -253,7 +253,7 @@ In this model, both vertex and edge can be tables in a DB and everything can be 
 for example,
 A property graph can be created using
 
-## Triple-Stores and SPARQL
+## triple-stores and sparql
 
 The triple-store model is mostly equivalent to the property graph model.
 in a triple-store, all informations is stored in the form of very simple three-part statements: (subject, predicate, object). for example,
@@ -261,11 +261,11 @@ in a triple-store, all informations is stored in the form of very simple three-p
 (Jim, likes, bananas). The subject is equivalent to a vertex in a graph. 
 
 
-### Cypher Query language
+### cypher query language
 query language for property graphs
 
 
-# Ch-3 Storage and retrieval
+# ch-3 storage and retrieval
 
 - simplest database possible.
   - append data to a file in comma seperated fashion. fetch when required
@@ -293,7 +293,7 @@ Usecase, we need to record number of times a video is played.
   - __Concurrency control__ have only one writer thread. Reads, can be concurrent
   - This only works if the _hashtables fit into memory_. Hash maps on disk is finnicky. Range queries are not efficient
 
-### SSTables and LSM-Trees
+### sstables and lsm-trees
 
 - In the same above structure, _we can store logs in string sorted format_ . Also, _a key only appears once in a merged segment_
 
@@ -305,7 +305,7 @@ Usecase, we need to record number of times a video is played.
 SSTables, idea works very well because, the idea of adding log files sequentially increases throughput. While, compaction running in the background, enables fast fetch from the disk I/O.
 
 
-### B-Trees
+### b-trees
 
 introduced in 1970 and "ubiquitous" within 10 years.
 
@@ -325,23 +325,23 @@ introduced in 1970 and "ubiquitous" within 10 years.
 
 The algorithm ensure that the tree remains balanced: a B-tree with _n_ keys always has a depth of O(log n). Data can be fit in 3 - 4 levels. So not a lot of page references are required. 4KB page with branching factor of 500 at 4 levels can store upto 256 TB
 
-### B-tree reliability
+### b-tree reliability
 
 - New data in a page is written by overwriting a page on disk with new data. The working assumption is that the reference does not change.
 - Overwriting a page on disk is a hardware operation and can limit the actual write throughput. in SSDs
 - A write ahead log (WAL) is used to recover from database crashes. This is an append-only log of the operation about to be performed.
 
-### B-tree Optimizations
+### b-tree optimizations
 
 - LMDB uses _copy-on-write_ instead of overwriting. copy on write, copies the file to a new location and edits the file and updates the reference in the parent
 - page space can be saved by storing abbreviated keys. more keys per page => bigger branching factor => greater performance
 - Since the pages can be across the disk. Disk seeks becomes expensive this can be overcome by writing sequentially. It is difficult to maintain that order as the tree grows, which is where, LSM trees perform great.
 
-## LSM vs B-Tree
+## lsm vs b-tree
 
 - By nature of the algorithms LSM-trees are faster than B-trees for writes. While B-trees are faster for reads. This is Because LSM-trees would have to check multiple structures to find a key. While B-trees are consistently O(log n)
 
-### LSM-tree advantages 
+### lsm-tree advantages 
 - B-tree => 2 writes per data => 1) WAL 2) actual data. There is also the overhead of overwriting a whole page even for small mutations.
 - LSM indexes also rewrite data multiple times for merging and compaction. This act of writing multiple times to the drive for one entry in the DB is called _write-amplification_ 
 - In write-heavy applications, the performance bottleneck will be the write throughput. LSM-trees are able to sustain higher throughput because of low write-amplification.
@@ -349,24 +349,24 @@ The algorithm ensure that the tree remains balanced: a B-tree with _n_ keys alwa
 - LSM-trees can be compressed better => information density is high.
 - B-trees have wasted space due to fragmentation.
 
-### LSM-tree disadvantages
+### lsm-tree disadvantages
 
 - Compaction can sometimes interfere with the performance of ongoing reads and writes despite, making sure compaction is _incremental_ and without affecting concurrent access.
 - At high throughputs disk's write bandwidth needs to be shared between, initial write and compaction. This is important because, _without the right balance_ data would be written forever, without compaction until the disk runs out of space.
 
-### Other indexing structures
+### other indexing structures
 
 - All of the above discussions assume one _Primary key_ for indexing purposes. There can also be _secondary indexes_.
 - A secondary index => need not have unique keys. There can be multiple values behind the same key. These are very useful in aggregate type queries.
 
-### Storing values within the index
+### storing values within the index
 
 - The key in an index is what queries search for. The value could either be the row itself or, it could be a reference to the row stored elsewhhere. In the latter case, the place where rows are stored is known as a heap file.
 - heap file stores data in no particular order. When just updating files, heaps can be very effiient.
 - In a lot of cases, it would be simply be easier to store data next to the index. This is called a _clustered index_ 
 - Middle ground between _clustered index_ and _non-clustered_ index is, _covering index_ or _index with included columns_, which stores come of a tables columns within the index. This could _increase read speed_ while reducing writes.
 
-### Multi-column indexes:
+### multi-column indexes:
 
 - most common type => _concatenated index_ simply combines several fields into one key by appending one column to another.
 - This can be used as a more general way of querying several columns at once. eg. Geospatial data
@@ -379,13 +379,13 @@ This can be done more efficiently with multi-column indexes.
 
 This also could be useful in cases where, we have 
 
-### Full-text search and fuzzy indexes
+### full-text search and fuzzy indexes
 
 - full text search engines allow synonyms and typos of a certain distance.
 - Full text can be stored in memory in a _trie_ like automaton. This automaton can be transformed into a _Levenshtein automaton_ which supports efficient search for words within a given edit distance.
 - in Lucene the keys are stored in a _trie_ and then this is transformed into a levenshtein automaton 
 
-### In-memory everything
+### in-memory everything
 
 - Hard-disks come packed with limitations and we tolerate this, because they are cheap + durable.
 - There are another class of databases using RAM for everything.
@@ -397,23 +397,23 @@ This also could be useful in cases where, we have
 - Another benefit, is that, in-memory databases provide access to non-harddisk friendly datastructure. eg. Redis gives access to priority queues and sets.
 - In some cases, in-memory databases can dump Least Recently used data to disk. This is the reverse of what the OS does with virtual memory and disk swap.
 
-### OLTP and OLAP
+### oltp and olap
 
 In Early days when computers were mostly business devices. _Commercial Transactions_ had to be recorded. But, over time the same idea of "transaction" in databases stuck and we started using the same idea. These types of data processing is called _Online transaction processing (OLTP)_. This has nothing to do with ACID. this just means that, the changes are instantaneous and not in batch processes
 
 Databases are increasingly used in Data analytics as well. So, Databases started supporting data analytics changes. these data are often written by business analysts. This is called _Online Analytic Processing_ (OLAP).
 
-### Data Warehousing
+### data warehousing
 
 - Data present in OLTP databases can be ported to a different place where queries can be run to get results. This is called a _Data Warehouse_.
 - Data warehouses can also be optimised for analytic access patterns.
 
-### OLTP and data warehouse divergence
+### oltp and data warehouse divergence
 
 - Acceess patterns are different which means that, there are increasingly different products that satisfy both needs.
 - _Teradata, Vertica, ParAccel_ are under commercial entereprise license. and only support Analytic workload. There are other open source projects like, _Apache Hive, Spark SQL, Cloudera, Impala, Facebook Presto, Apache Tajo_ 
 
-### Schemas for analytics: __Stars__ and __Snowflakes__ 
+### schemas for analytics: __stars__ and __snowflakes__ 
 
 - In OLAP databases there are _fact tables_ which holds a single event. This is used to point to other events that happened. like below.
 
@@ -425,30 +425,30 @@ The star name is because of the way how, fact table is in the center while dimen
 
 There is another pattern called snowflake. where the dimension tables are further broken down into other processes.
 
-### Column-Oriented Storage
+### column-oriented storage
 
 - fact tables have the potential to grow  to trillions of rows and petabytes of data.
 - Generally, even though fact-tables can have 100s of columns. 4 - 5 are accessed per query.
 - In OLTPs, data is stored in row fashion.
 - in columnar storage, each column is seperated into different files and to fetch data of nth element, only the columns that are required can be loaded into memory and nth element from each file can be gotten. This reduces the search space substantially.
 
-### Column Compression
+### column compression
 Since columnar data are one-dimensional, they can be compressed quite a bit using methods such as, _run-length encoding_ There are different compression schema for different data types
 
-### Sort order in Column Storage:
+### sort order in column storage:
 
 In columnar storages. It is better to store columns in a sorted order. All columns cannot be sorted independently though, the power of the column storage comes because we know all Kth element in the columnar files represent the same row. If date_key is the first sort key, it might make sense for product_sk to be the second sort key.
 
 
-#### Several different sort orders
+#### several different sort orders
 
 A clever extension of this idea is to sort every column in several different ways and replicate them across machines. This is similar to having multiple indexes across different files.
 
-### Writing to Column-Oriented Storage
+### writing to column-oriented storage
 
 The base assumption for column-oriented storage is that, there are a lot more reads and pretty much no overwrites or in-place changes. This means that data can be easily appended to column files but not necessarily changed easily. Changing data, would take a lot of writes and would be very costly.
 
-## Aggregation: Data Cubes and Materialized Views:
+## aggregation: data cubes and materialized views:
 
 Data warehouses often perform operations like, COUNT, SUM, AVG, MIN, or MAX over a _Materialised aggregate_.  This is usually run over a _Materialised view_. In a relational data model, It is like a standard/virtual view but it is written to disk. When the underlying data changes the materialised view also changes. This means increased writes and this is why it is not used in OLTP databases 
 
@@ -459,14 +459,14 @@ In OLAP warehouses there is a common special view known as _OLAP cube_. It is a 
 
 In the above example, each data is represented in different ways and can be easily derived.
 
-# Ch-4 Encoding and Evolution:
+# ch-4 encoding and evolution:
 
 Applications and their underlying data representations change over time. Application design should ideally allow flexibilty towards changes.
 - In memory structures
   - objects, structs, lists, arrays, hash-tables, trees.... These are efficient to be used as in-memory structures
 - To persist these data in a file/ send over a network. These in-memory structures should be made as a self-contained sequence of bytes like JSON
 
-### Problems with encoding/decoding:
+### problems with encoding/decoding:
 
 - if language specific encoding is used. Cross language decoding is difficult. This inability to interoperate makes it harder to adopt and use multiple programming languages
 - To restore same object/struct types the decoder needs to be able to instantiate new objects. If an attacker could make the decoder, read an arbitrary stream of bytes they will be able to make the decoder create arbitrary objects and get access to the application
@@ -481,15 +481,15 @@ JSON, XML and CSV are popular formats and each come with their own caveat
 - CSV => No schema, and a lot of vaguery in definition.
 
 
-### Binary encodings
+### binary encodings
 When used, within an organization, there is scope to make the format a lot tighter than the lowest common denominator.
 We can customise these binary representations, based on use case
 
-### Thrift and Protocol Buffers
+### thrift and protocol buffers
 These are _binary encoding libraries_ that are able to make space efficient binary representations.
 Thrift has to levels, _Binary Protocol_ and _Compact Protocol_. in compact protocol, _there are no field names only representations to them_ (similar to protobuf field tags that is used).
 
-### Apache Avro
+### apache avro
 
 Avro has writer's schema and reader's schema.
 Both schemas generate some code.
@@ -498,16 +498,16 @@ Both schemas generate some code.
 - if the reader has a field and the writer does not have the field, then a _default value is given_.
 
 
-## Data Flow
+## data flow
 
-### Data flow through databases
+### data flow through databases
 Service writes, data to db and then another service reads from the database.
 There can be legacy data and hence migration might be required for the new application code to be able to view the data.
 
-### Data flow through Services: REST and RPC
+### data flow through services: rest and rpc
 REST uses json, mostly and is used in 
 RPCs are used to call a function in a remote networks service.
-### Problems with RPCs
+### problems with rpcs
 - Local function call is predictable to succeed or fail. Network requests are not, request/response can be lost in a network problem, machine might be slow hanging up the whole program.
 - local functions return with 3 states, `throw exception`, `return a result`, or `never returns`. in RPCs there's another possibility that there is a `timeout`
 - somtimes, only responses could be dropped. in those cases we generally retry, but there is no way to know, if any of the requests got through or not.
@@ -515,11 +515,11 @@ RPCs are used to call a function in a remote networks service.
 - In local function calls pointers can be passed around. But for RPCs the whole data needs to be passed around.
 - RPC is language independent, so data needs to be translated into its local representation irrespective of the source language.
 
-### Data flow through Message-passing:
+### data flow through message-passing:
 
 This is a mix of both data flow through databases and REST/RPCs. Data is sent to a database like structure from where data is then processed by services asynchronously. This includes services like, Kafka celery and others
 
-## Distributed actor frameworks
+## distributed actor frameworks
 
 - In actor model, instead of dealing directly with threads and their problems (race conditions, locking, deadlock...), this logic is encapsulated in actors. Each actor represents a client/entity.
 - _Communication between actors_ is done through _asynchronous messaging_.
@@ -527,12 +527,12 @@ This is a mix of both data flow through databases and REST/RPCs. Data is sent to
 - A _distributed actor framework_ essentially integrates a message broker and the actor programming model into a single framework. Messages are encoded and decoded over the network.
 - performing rolling updates in a  distributed actor framework is hard. Forward and backward compatibility will have to be handled.
 
-### Famous distributed actor frameworks
+### famous distributed actor frameworks
 - _Akka_ uses Java's built-in serialization by default, which does not provide forward or backward compatibility. However protobufs can be used to handle forward and backward compatibility
 - _Orleans_ uses a custom data format and does not support rolling upgrade deployments. To deploy a new version of your application, a new cluster has to be setup and traffic should be redirected there.
 - _Erlang OTP_ Record schema changes are hard to make.
 
-# Ch-5 Replication
+# ch-5 replication
 
 Data Replication is done for many reasons,
 - To keep data geographically closer to users
@@ -540,17 +540,17 @@ Data Replication is done for many reasons,
 - To Scale out number of machines that can serve read queries
 
 
-## Leaders and Followers
+## leaders and followers
 Each node that stores a copy of the database is called a __replica__.
 Every write needs to be processed by the replica. Else, the replica would be inconsistent with the master.
 
-### Leader-based replication
+### leader-based replication
 
 - One replica is the leader/master and when it writes some change to the database it has to send the data to all the nodes as part of _replication log_ or _change stream_.
 - The other replicas/followers read from the change stream and update their data replica as well.
 
 
-## Synchronous vs Asynchronous replication
+## synchronous vs asynchronous replication
 
 Synchronous replication is when the leader responds after all replicas are consistent with the write. 
 Asynchronous is when The leader assumes the followers will catch up and responds to the write request after it has written to the replication log.
@@ -560,12 +560,12 @@ Asynchronous systems could lose data if the leader fails or if the message itsel
 ![asynchronous_replication](/assets/images/ddia/asynchronous_replication.png)
 (example given in "Designing Data intensive applciations")
 
-### Setting up new followers.
+### setting up new followers.
 
 How to setup new followers when the leader is getting updated constantly?
 Take snapshot of leader => copy to follower => Follower comes up and requests all change since the time of the snapshot / since the last log sequence number it has
 
-### Handling Node Outages
+### handling node outages
 
 ability to stop/restart individual nodes is desirable => makes a robust system
 
@@ -575,7 +575,7 @@ ability to stop/restart individual nodes is desirable => makes a robust system
   - _Choosing a new leader_, _Controller node_ who elected the previous leader can be delegated the task of finding a new leader. The follower with the most upto date data could also be promoted 
   - _Reconfiguring nodes to follow new leader_, All clients now, need to route all write requests to the leader.
 
-## Implementation of Replication Logs
+## implementation of replication logs
 There are several replication techniques
 
 - __Statement-based replication__ Sending the whole write query to all followers. this is harder for cases where we have to update time, random number and others as each node might compute a different value. Workarounds are possible, but generally not desired
@@ -583,7 +583,7 @@ There are several replication techniques
 - __Logical (row-based) log replication__ This log is a very logical seperation between the database and storage. So, When an update/insert/write occurs, it is a logically isolated part, that has all the data to replicate the data.
 - __Trigger-based replication__ - We can have separate triggers based on specific change in specific areas.
 
-## Problems with Replication lag
+## problems with replication lag
 
 Generally there is a time delay between data replication and the actual write. This means, depending on where the read request is landing, the data returned could be different. These challenges could be addressed differently.
 
@@ -598,16 +598,16 @@ Generally there is a time delay between data replication and the actual write. T
 
 Leader-based replication has the downside that if there is network interruption for the leader, then write throughput will be abyssmal. To solve cases like these, each node that processes a write must forward that data change to all the other nodes.
 
-### Multi-datacenter operation
+### multi-datacenter operation
 
 There could be two leaders in different data centers and both leaders sync with each other and resolve conflicts and distribute that data to their followers.
 - _Performance_, In a multi-leader configuration, every write can be processed in the local datacenter means the queries are processed faster than a single leader
 - _Tolerance for outages_, Even when one datacenter goes down the service is up, because there are multiple leaders.
 
-### Clients with offline operation
+### clients with offline operation
 The same idea used for multi-datacenter operation can be performed in offline operations. Basically when offline the local data store becomes the leader and when online it syncs with the leader in the datacenter.
 
-### Collaborative editing
+### collaborative editing
 
 Collaborative editing is similar to a database replication problem, when a user edits some data locally then the changes are instantly applied to their local replica and asynchronously replicated with the server. If there is to be a guarantee that there won't be any conflicts then the writer must get a lock on the document, before they start editing. And after editing it can be delegated to someone else. This is similar to _Single-leader replication with transactions on the leader_.
 
@@ -622,7 +622,7 @@ Synchronous versus asynchronous conflict detection, Synchronous conflict detecti
 
 
 
-## Technical Words:
+## technical words:
 
 - __impedence mismatch__ - Drift between, ORM and actual DB model
 - __data normalisation__ - Standardising data representation by using entity reference instead of, 

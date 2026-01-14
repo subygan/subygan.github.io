@@ -1,7 +1,7 @@
 ---
 layout: base
 emoji: 📽️
-title: AI media Editor
+title: ai media editor
 description: AI is changing the way content is being produced. How will it go?
 date: 2025-03-29
 tags: ["tech", "machine-learning"]

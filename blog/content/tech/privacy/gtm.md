@@ -1,6 +1,6 @@
 ---
 emoji: ⏎
-title: Cicumventing Ad block
+title: cicumventing ad block
 description: New ways of ad block being circumvented
 date: 2023-04-22
 layout: base

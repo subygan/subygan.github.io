@@ -17,7 +17,7 @@
             </svg>
           </span>
           <a href="{{ .RelPermalink }}" class="sidebar-nav-link" data-path="{{ .RelPermalink }}">
-            {{ .Title }}
+            {{ .Title | lower }}
           </a>
         </div>
 
@@ -31,7 +31,7 @@
       {{- else -}}
         <!-- Page without children -->
         <a href="{{ .RelPermalink }}" class="sidebar-nav-link sidebar-nav-link-no-children" data-path="{{ .RelPermalink }}">
-          {{ .Title }}
+          {{ .Title | lower }}
         </a>
       {{- end -}}
     </li>

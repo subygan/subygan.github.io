@@ -1,6 +1,6 @@
 ---
 emoji: 🏜️
-title: Dune - The Messiah
+title: dune - the messiah
 description: The sequel to Dune
 date: 2024-06-22
 layout: base

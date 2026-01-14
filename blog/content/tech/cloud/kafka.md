@@ -1,18 +1,18 @@
 ---
 emoji: ▓ 
-title: Kafka
+title: kafka
 description: Reading kafka documentation
 date: 2023-04-03
 layout: base
 tags: ["tech"]
 ---
 
-## Apache kafka
+## apache kafka
 __event streaming platform__ 
 
 - _Events?_ - incident of change
 
-### Kafka and Events - Key/value pairs
+### kafka and events - key/value pairs
 
 based on __Distributed commit log__
 
@@ -25,7 +25,7 @@ _Values_ are typically serialised representation of a domain object
 _Keys_ can also be complex domain objects, but are often _primitive data types_ 
 
 
-### Kafka Topics
+### kafka topics
 A topic is like a table in an RDB. Topics can be used to hold different kinds of events.
 A topic is a __log of events__. They are _append only_. Events in the logs are immutable. its very difficult to make something "unhappen". 
 Logs are fundamentally durable things. Traditional enterprise messaging systems have topics and queues, buffering between source and destination
@@ -39,7 +39,7 @@ partitioning, takes a single topic log (imagine table) and breaks it into multip
 These partitions are represeneted as keys
 if a message has no key, all messages will be distributed round-robin among all the topic's partitions.
 
-### Kafka and file system
+### kafka and file system
 
 Kafka is hyper optimised for sequential read of messages.
 
@@ -47,7 +47,7 @@ The "Sequential" part is crucial as it lets as reduce a lot of architecture comp
 In a typical B-Tree you can expect these operations to have O(log N). But, in the case of Kafka only one is enough because kafka manages an append only log, which means read, write and update are all O(1)
 This relative ease of message management also enables kafka to maintain messages for longer periods than a typical message queue
 
-### Reduced Byte copying
+### reduced byte copying
 
 Typically, Data is read from input and then transformed and, pushed to output.
 
@@ -57,11 +57,11 @@ Kafka uses few optimizations to overcome this.
 - batching messages sent from server to client, so that data is packed efficiently per network call and there are no wasted bytes
 
 
-### Kafka Consumer design
+### kafka consumer design
 The consumer polls in batchs
 
 
 Kafka used to have zookeeper now, it utilizes a RAFT based consensus mechanism after the KIP-500 update.
-### Resources
+### resources
 
 - [A Gentle introduction to Kafka](https://www.gentlydownthe.stream/)

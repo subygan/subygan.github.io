@@ -1,7 +1,7 @@
 ---
 layout: base
 emoji: 🛳️
-title: Shiptalk
+title: shiptalk
 description: Why Shipping matters
 date: 2025-02-15
 tags: ["essay", "startups", "building"]

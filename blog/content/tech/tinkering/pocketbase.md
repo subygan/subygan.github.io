@@ -1,5 +1,5 @@
 ---
-title: Pocketbase
+title: pocketbase
 emoji: 📦
 layout: base
 description: Trying out pocketbase.
@@ -13,12 +13,12 @@ Pocketbase is an alternative with A bold claim.
 
 But, it really does 2 things very well, AUTH APIs and CRUD APIs over DBs.
 
-### Pros:
+### pros:
 - Is a single binary
 - Uses sqlite3, which means the database is integrated with the app itself
 - Written in go, but does not require CGO to integrate with sqlite3
 
-### Cons:
+### cons:
 - Sqlite is only horizontally scalable.
 - Feature set is limited.
 

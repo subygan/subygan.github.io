@@ -1,6 +1,6 @@
 ---
 emoji: 💸
-title: The Psychology of Money
+title: the psychology of money
 description: morgan Housel
 date: 2023-03-28
 layout: base

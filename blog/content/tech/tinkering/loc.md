@@ -1,6 +1,6 @@
 ---
 emoji: 📚
-title: Library of Congress information
+title: library of congress information
 description: Looking through the library of congress for a project
 date: 2024-08-17
 layout: base
@@ -20,14 +20,14 @@ Based on my initial exploration the OCR is fairly on point and I like how it han
 
 I'm working on converting this wall of text into a dataset of news content with date.
 
-## Bulk downloading.
+## bulk downloading.
 
 based on the task assignment each newspaper is bundled as tar files. 
 
 There's a file count limit of 10 file for 10 minutes.
 But other than that everything is fine.
 
-## LCCN
+## lccn
 
 Library of Congress Control Number is a well thought system to identify individual resources.
 there's an easy way to go from lccn to newspaper name and information.

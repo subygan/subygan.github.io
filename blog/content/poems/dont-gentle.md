@@ -1,6 +1,6 @@
 ---
 emoji: 🌕
-title: Do Not Go Gentle into That Good Night 
+title: do not go gentle into that good night 
 description:  Dylan Thomas
 date: 2024-11-15
 layout: base

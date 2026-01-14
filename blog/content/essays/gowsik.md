@@ -1,6 +1,6 @@
 ---
 emoji: 🧚🏻
-title: Life has no answers, but inifinite questions
+title: life has no answers, but inifinite questions
 description: People we lose to the throes of life.
 date: 2025-09-28
 layout: base

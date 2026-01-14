@@ -1,7 +1,7 @@
 ---
 layout: base
 emoji: ♦️
-title: Django issues and quick fixes
+title: django issues and quick fixes
 description: Fighting with django
 date: 2022-02-04 22:15:00
 tags: ["tech", "programming"]

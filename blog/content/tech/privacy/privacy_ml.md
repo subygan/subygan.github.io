@@ -1,13 +1,13 @@
 ---
 emoji: 🗝️
-title: Privacy problems and attacks in Machine Learning
+title: privacy problems and attacks in machine learning
 description: ML problems are usually solved by throwing more data at it. More data, compounds the privacy problems faced by these models. This is a list of papers and articles that talk about these problems.
 date: 2024-07-19
 layout: base
 tags: ["tech", "privacy"]
 ---
 
-## Privacy problems and attacks in Machine Learning
+## privacy problems and attacks in machine learning
 
 - __Membership inference attacks__: These aim to determine if a particular data point was used to train a model. Researchers study how to detect and mitigate such attacks to protect individuals' privacy.
 - __Model inversion attacks__: These attempt to reconstruct training data from model outputs. Understanding these vulnerabilities helps in developing more robust privacy-preserving techniques.
@@ -21,7 +21,7 @@ Privacy-preserving record linkage: Techniques to securely combine datasets from 
 
 
 
-## Papers and other readings
+## papers and other readings
 
 - [Membership Inference Attacks Against Machine Learning Models](https://www.cs.cornell.edu/~shmat/shmat_oak18.pdf)
   - MIA is an attack vector against ML models where the original dataset is inferred from the model's output distribution. This leverages a very curious failure of ML models where they overfit to previously seen data. Based on the confidence scores from the models it is possible to rebuild the original dataset. This has privacy impact in that, it is possible to rebuild a dataset from a model that was trained on it. This is a huge privacy violation.

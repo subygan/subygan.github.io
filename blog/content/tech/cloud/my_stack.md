@@ -1,6 +1,6 @@
 ---
 emoji: 🥞
-title: My Stack
+title: my stack
 description: How I deploy personal and Hobby apps.
 date: 2024-07-15
 layout: base
@@ -13,19 +13,19 @@ But when running stuff these many layers above the OS, Things kinda bloat up and
 
 I've wanted to move to a serverless system, because with these services that I don't expect to "scale" per se, it would be way way cheaper. 
 
-## History (circa 2020 - 2023)
+## history (circa 2020 - 2023)
 
-### AWS Lambda
+### aws lambda
 
 Back in 2020 when I tried this, the cold start was a non-starter for me. and I don't remember lambda having container support as well, which was a bummer because now I will have to de-containerize my services. Which is more painful than containerizing them in the first place.
 
 Plus when you're only receiving a couple dozen requests per day, it is quite impossible to keep the lambda warm.
 
-### Cloudflare Workers
+### cloudflare workers
 
 I liked the idea behind cloudflare workers very much, even the eventually consistent database was very alluring. But, Javascript (at the time) was a non-starter for me, because I burned myself very recently back then with a project and got stuck in the callback hell. I didn't want to go back there.
 
-### Zappa
+### zappa
 
 Zappa period was quite interesting because, they promise "serverless" from django (which was 40% of my services). Now, I don't have to manage lambdas myself, which I hated. But, I still have to manage the database and the server. Which is not what I wanted.
 
@@ -35,7 +35,7 @@ For example, I mounted an S3 bucket as a file system so that it can be written o
 without a simple solution for the database, zappa did not make sense to me
 
 
-## Current Stack (circa 2023)
+## current stack (circa 2023)
 
 I currently deploy all my services in fly.io. Their service is quite magical, it rewrites your dockerfile into a firecracker VM and runs it super cheap. at the lower end per service, I get like $ 1 per month in bill. 
 

@@ -1,6 +1,6 @@
 ---
 emoji: 🐚
-title: Shell hacks
+title: shell hacks
 description: Hacky tools and ways to do things
 date: 2024-07-23
 layout: base

@@ -1,6 +1,6 @@
 ---
 emoji: 🔐
-title: Data privacy
+title: data privacy
 description: What about it? does it matter? why is it important?
 date: 2024-01-16
 layout: base
@@ -10,7 +10,7 @@ tags: ["book", "privacy", "tech"]
 These are my notes from Nishant's excellent book, [Data Privacy: Runbook for Engineers](https://www.oreilly.com/library/view/data-privacy/9781617298998/)
 
 
-## 1 Privacy engineering
+## 1 privacy engineering
 
 - Data Security is usually tightly coupled with privacy. Data security is a base condition to guarantee privacy.
 - Data privacy is about how data of users is being accessed and processed.
@@ -20,11 +20,11 @@ These are my notes from Nishant's excellent book, [Data Privacy: Runbook for Eng
   - Data deletion
   - Data obfuscation
 
-### How data flows.
+### how data flows.
 - From a Tech leader's standpoint, they need a catalog of data to figure out the tooling to deploy for each case.
 - Without the catalog the leader would be flying blind.
 
-### Why privacy
+### why privacy
 - Direct motivators for companies
   - Fines are getting bigger and numerous each year.
   - non-investment in the Early stage cases late-stage headaches
@@ -46,13 +46,13 @@ Increasing Publich awareness about privacy has increased scrutiny for companies
 Once a law such as GDPR, or CCPA has been passed, it exposes companies to investigations and scrutiny. Which could damage trust and relationships in the business. These laws are backward enforceable, meaning it's applicable to tools and processes that were present before the law. 
 \[personal anecdote\], I've talked with people at companies where data is still replicated across multiple different services and deleting a user data is still something that a person manually spends, hours scrubbing across multiple databases. 
 
-### Privacy tools and options
+### privacy tools and options
 
 - Know the entrypoints of sensitive data such as, name, DOB, SSN, IP Address etc
 - Protect this information with Access control tools
 - Reduce the exposure of these data. Handle it like you would handle Radioactive elements.
 
-#### Build vs Buy
+#### build vs buy
 
 - Buying might mean the data is exposed to a third party. While, building might keep it in house.
 - In some cases, Buying might be cheaper than building. But, building would help you make it more customized.
@@ -60,7 +60,7 @@ Once a law such as GDPR, or CCPA has been passed, it exposes companies to invest
 
 The author also goes through detailed analysis of tools such as BigId and OneTrust. These tools are generally designed to be integrated __after__ data has proliferated a lot.
 
-## 2. Understanding Data Privacy
+## 2. understanding data privacy
 
 - Privacy is Hard because,
   - Privacy is subjective and could mean different things for different people
@@ -90,7 +90,7 @@ The author gave examples of data breach from Equifax, OPM, LabCorp and Quest Dia
 The customized gym example showed that unnecessary paranoia by companies also make them lose thier unique value proposition over time. There is a requirement for having __Adequate amount of safeguards.__
 
 
-### 3 Data classification
+### 3 data classification
 
 Why is data classification necessary?
 - There is an asymmetry between the data collector and the Data source. You can collect data from millions of people using a 5 - 6 orders of magnitude smaller teams of people. This is unlike traditional labour, where the effort required scales linearly with the volume of work to be done. 

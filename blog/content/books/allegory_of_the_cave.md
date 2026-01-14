@@ -1,6 +1,6 @@
 ---
 emoji: ✾
-title: Allegory of the cave
+title: allegory of the cave
 description: Plato allegory of the cave. and some of my thoughts on it 
 date: 2024-04-01
 layout: base

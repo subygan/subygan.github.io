@@ -1,6 +1,6 @@
 ---
 emoji: 🤺
-title: Tell us about the time you most successfully hacked some (non-computer) system to your advantage
+title: tell us about the time you most successfully hacked some (non-computer) system to your advantage
 description: collecting information about the classic question "Please tell us about the time you most successfully hacked some (non-computer) system to your advantage. (i.e. meeting hard to reach people, getting free stuff or money, getting out of a punishment, etc)"
 date: 2024-08-20
 layout: base
@@ -32,7 +32,7 @@ I believe the key to this question is demonstrating with a concrete example how 
 
 https://medium.com/@harryzhang/advice-on-yc-application-947e234fd74f
 
-## Lloyd Armbrust
+## lloyd armbrust
 
 [source](https://www.scribd.com/doc/111078156/Yc-Application)
 
@@ -43,7 +43,7 @@ batch: W10
 Our very first customer wanted a contract. This customer is notoriously picky aboutcontract terms, and a bolierplate off the internet wouldn't work. We had just spent about$3k on the incorporation process, and didn't want to drop another $2k on additional lawyerfees. Instead, I spent twelve hours scouring the web for example web-service agreements,random contracts, and a few forms purchased from Legal Zoom. It turns out that lawyersuse code just like hackers -- it felt a bit like learning PHP. Being an English major at heart,it was actually pretty fun.At the end I had a 15-page contract. I paid the lawyer $300 to look it over, hesaid: "Nice. Well written. Where'd you get it?
 
 
-## James Steinberg
+## james steinberg
 
 [source](https://mrsteinberg.com/my-first-y-combinator-application-that-got-me-the-interview/)
 
@@ -56,7 +56,7 @@ Shawn –  parking is troublesome, so I acquired a free permit from a department
 James – I got the highest rewards no-fee credit card (according to http://www.nerdwallet.com/) despite having $0 of income this year. I was instantly rejected by their application online and over the phone with a representative. However, I scoured the internet looking for the contact info of the executive board and eventually found the email of the CEO. I emailed him my case explaining I have never missed a payment on any credit card ever and quickly got approved.
 
 
-## Zac Townsend 
+## zac townsend 
 
 [source](https://blog.zactownsend.com/our-yc-s13-application)
 
@@ -67,7 +67,7 @@ When I started in Newark, I didn't have a computer or an email, and City Hall di
 I once spent hours looking at floorplans and historic housing lottery data so that my roommate and I could pick a HUGE double with our own bathroom despite having a terrible pick at Brown.
 
 
-## Flytenow
+## flytenow
 
 [source](https://docs.google.com/document/d/1AULcH93OJdBoexazc5VizdI_FKTC7iWqdfqxE1jXhCk/edit)
 status: ✅ S14
@@ -75,7 +75,7 @@ status: ✅ S14
 In my freshman year of school at Northeastern University, I watched a YouTube video featuring Jeff Bussgang of Flybridge Capital giving a lecture at the Harvard Innovation Lab about the Boston Startup Community. He said to the audience, “You’d have to be an idiot to not be going over to MIT and getting involved in the innovation going on there,” and I thought that I’d be an idiot as well to not be getting involved across the river at both MIT and Harvard. I immediately joined the Innovation Lab’s mailing list and scoured Google to discover some of their prominent entrepreneurial clubs and events. I took the 30 minute bike over there about three times a week to go to iLab classes or HackHarvard club meetings. At those meetings I was able to network with entrepreneurs there and learn about other clubs and organizations where I got on those mailing lists as well. Essentially, I attended Harvard only events and got to meet and hear from Paul Graham,  Sam Altman, Jack Dorsey, Ladar Levinson, Richard Stallman, Guy Steele, and other notable founders and tech entrepreneurs. These were events that I never would have known about had I not ventured off across the river and simply walked into events where they assumed I was a Harvard student. 
 
 
-## Lolipuff
+## lolipuff
 
 [source](https://web.archive.org/web/20200924130253/https://www.lollipuff.com/blog/102/lollipuffs-ycombinator-experience)
 
@@ -89,7 +89,7 @@ __Fei (bebefuzz)__: In grade school, I made money by selling rosewater and chive
 __David (dmohs)__: In high school, I received a ticket for not stopping at a stop sign before the intersection. I took pictures from various distances and proved to the judge, mathematically, that it would have been impossible to stop earlier than I did. The ticket was thrown out.
 
 
-## Namanh
+## namanh
 
 status: 
 Story is from 
@@ -117,7 +117,7 @@ __Nancy__ wanted to work in the Middle East but there wasn’t a culture of inte
 
 __At Google, Jeremy__ became an expert in free travel. After getting on shortlists for university recruiting, he positioned himself as a datacenter expert and visited many across America. After targeting developer relations, Jeremy got on the shortlist for places like Moscow, Berlin, Manila, Singapore, Sydney, and Tokyo, giving talks, meeting partners, and exploring- all for free.
 
-## Relationship Hero
+## relationship hero
 
 [source](https://shizune.co/yc-application-examples/relationship-hero)
 status: ✅ S17
@@ -126,7 +126,7 @@ __Liron Shapira__ – In 2012, when my company Quixey was struggling to find gre
 
 __Lior Gotesman__ – I graduated college in the middle of the market crash in 2009 with an Economics degree. Finding a career-building job felt like an insurmountable task. For the first time, the college-to-career system that’s been ingrained in my mind since elementary school seemed fundamentally broken. Going against conventional wisdom, I decided to pursue a programming career without any formal education. Since this was before coding bootcamps existed, I studied it all on my own and with Liron’s guidance. Last year, I was promoted to Senior Software Developer at Full Circle Insights. I hacked the career system that relied on having a formal education by teaching myself how to program and ignoring the part of job descriptions that say a computer science degree is required.
 
-## SketchDeck
+## sketchdeck
 
 [source](https://shizune.co/yc-application-examples/sketchdeck)
 
@@ -135,7 +135,7 @@ status: ✅ W14
 I've been on holiday most weeks this summer, thanks to micro‐adventures. A micro‐adventure is an adventure between 6pm and 9am. Head out of work, grab friends and jump on a train, in one hour reach wilderness. Hike, make a fire, cook, watch the stars in your bivi as you fall asleep beside the glowing embers. Arrive at work on time next morning. You're a tiny bit disheveled, but are relaxed, triumphant and feel you've just had a whole weekend.
 
 
-## Kash
+## kash
 
 [source](https://shizune.co/yc-application-examples/kash)
 
@@ -144,7 +144,7 @@ status: ✅ S14
 In 2011, I used math to help end the decades-long political disadvantage that my party had among immigrants to Canada. (To use an American comparison, imagine if the majority of the African American community voted for the next Republican candidate for President.) My party had lost 10 out 13 elections since the 60’s because we kept losing the votes of immigrants. In 2011, we reversed that trend, won the immigrant vote, and handed our opposition their biggest defeat in history.
 
 
-## Cruise
+## cruise
 
 [source](https://shizune.co/yc-application-examples/cruise)
 
@@ -152,7 +152,7 @@ status: ✅ W14
 
 Due to a weird California law, I couldn't apply for a real estate license since I dropped out of MIT and hadn't earned a college degree. I was told I'd need to earn my degree or spend two years as an apprentice. Neither of those options worked for me since I was busy with Justin.tv. So, I found a way to get a brand new Bachelor's degree by spending just four weeks on actual coursework. I now hold a degree in Information Technology (basically just how to install Windows). The loophole was to use a competency‑based online university (take the test, pass the class, repeat) rather than a semester‑based university. Amusing side note: I am both an MIT dropout and a college graduate.
 
-## One Month
+## one month
 
 [source](https://shizune.co/yc-application-examples/one-month)
 
@@ -161,7 +161,7 @@ status: ✅ S14
 In February I spent a month in Buenos Aires working on a book about growth hacking. I was afraid about starting with a blank slate. So the day before I left, I organized a 3-hour lecture and promised anyone who attended a free copy of my book when it was done. I recorded the session and paid someone on Elance to transcribe the audio into text ($200). The day I arrived in Buenos Aires I opened my email to find a 140-page transcription of my talk. It was beautifully formatted, with "Um"s and "Uh"s removed. Over the course of the month I extended the content to create a 250-page manuscript. Wiley emailed me out of the blue because they're looking for authors to write a book about growth hacking (my name shows up on the first page of Google search results) and I'm in talks with Wiley and a few literary agents, though I'm strongly considering self-publishing instead.
 
 
-## Standard Treasury
+## standard treasury
 
 [source](https://shizune.co/yc-application-examples/standard-treasury)
 
@@ -169,7 +169,7 @@ status: ✅ S13
 
 When I started in Newark, I didn't have a computer or an email, and City Hall didn't have wireless. So I tracked down one of the wireless networks I could find - owned by a bails bondsman close to the court, and negotiated with them for their wireless password. I once spent hours looking at floorplans and historic housing lottery data so that my roommate and I could pick a HUGE double with our own bathroom despite having a terrible pick at Brown.
 
-## MakeSchool 
+## makeschool 
 
 [source](https://shizune.co/yc-application-examples/make-school)
 
@@ -178,7 +178,7 @@ status: ✅ W12
 My iPhone's lock button was broken, so the screen would never turn off and the resulting poor battery life made the phone useless. I wrote a simple app that activated the proximity sensor, so when I slipped the phone in my pocket the screen went black. This software fix to a hardware problem restored the phone's battery life and saved me $600.
 
 
-## FamilyLeaf 
+## familyleaf 
 
 [source](https://shizune.co/yc-application-examples/familyleaf)
 
@@ -187,7 +187,7 @@ status: ✅ W12
 We used a comedy twitter account to get meetings with tech superstars who wouldn't have returned our emails. In the week before our YC interview, we started @YC_Y_U_NO as a joke with the tech community and ended up featured on TechCrunch -- and more importantly (coupled with serendipitously meeting Fred Wilson at the airport, who tweeted out Readstream) used cold DM's to build relationships with brilliant startup people, angel investors, and VCs (along with more than a few YC alums/Garry and Harj).
 
 
-## The Muse
+## the muse
 
 [source](https://shizune.co/yc-application-examples/the-muse)
 
@@ -196,7 +196,7 @@ status: ✅ W12
 I spent 77 days traveling around the world and only paid for a hotel room once; instead I stayed with friends from the year I spent living abroad, former colleagues from my time working at the UN, families I met en route, and a few shared hostel dorms when the first 3 options fell through. I spent time in Oman, China, and Ecuador as well as France, Australia and Sweden, and a lot of places in between. In Belize, I once managed to talk my way onto a plane that departed 12 minutes after I arrived at the airport. Traveling light and cheaply is all about hacking systems, finding work­arounds, turning strangers into allies and not giving up no matter how zany things get. I freaking love that stuff.
 
 
-## Proxino
+## proxino
 
 [source](https://shizune.co/yc-application-examples/proxino)
 
@@ -222,7 +222,7 @@ status: ✅ S09
 
 Last summer I managed to get an internship at Slide, but a month after accepting their offer I decided I wanted more hourly pay. Before I even started at Slide, I was able to convince the recruiter that I had numerous offers still outstanding from companies like RockYou and Zynga and had in-depth OpenSocial experience that was deserving of a $10/hr raise. Luckily, she was able to get it and pay was very good that summer.
 
-## Viktor Kyosev
+## viktor kyosev
 
 [source](https://viktor.substack.com/p/newsletter-9-tell-us-about-the-time)
 
@@ -243,7 +243,7 @@ All that on a very low budget, supported mainly by my university. My trip took m
 In fact, thanks to that hack, I am now based in Southeast Asia, running Greenhouse
 
 
-## Learn Venue
+## learn venue
 
 status: ❌ S18
 
@@ -263,7 +263,7 @@ Once I needed the permission for a whole year. I figured out a gap between how t
 My permission application got approved by the higher management. I went to the lower management and highlighted the part of the requirement for the whole year. They approved it without questioning the duration.
 
 
-## Thinksy
+## thinksy
 
 [source](https://medium.com/@EntreEden/fuck-it-lets-apply-to-y-combinator-6ab6389575cc)
 status
@@ -271,13 +271,13 @@ status
 When [company I work at] was acquired by [another company] they weren’t giving raises. I used this as a case to negotiate Fridays off. I did this by taking Fridays off with PTO for 1 quarter and created graphs comparing my work to others at my level to prove I was executing as much or more than my peers. This allowed me to get Fridays off indefinitely approved by my manager and HR without a pay decrease.
 
 
-## Craig Cannon
+## craig cannon
 
 one for a while and I think that the  silly world record actually might be the best one because it had like the largest outcome so basically what happened was there was this trend in cycling whatever I did is like four years ago where people were climbing the height of Everest on their bike and they called it Everesting and I was like I could probably do that meanwhile I'm not I mean I'm heavier now than I was then but even then I was like 170 pounds which in cycling is like heavy like you are you're the fattest cyclist if you're 170 guys who win are like 135 140 and they're taller than me so they're stronger than hate they all look very tall and skinny they look like skeleton so like you you're looking at
 probably like five eleven hundred and seven 137 pounds something like that and they're stronger than me yeah and so I'm like 170 pounds and yeah not not that so basically what I did was I did that Everesting thing. and so then I created a spreadsheet of all the hills in the East Bay where I could like maximize how much elevation I could get in like the shortest distance while also being like close to a  bathroom close also like not having enough trout or not having too much traffic like something that my friends could get to so they could like help me out and yeah through that spreadsheet I like unlock this place that just
 
 
-# Other interesting discourse in the internet for the same question
+# other interesting discourse in the internet for the same question
 
 https://beta.cent.co/cameron/+6nq96m
 

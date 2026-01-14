@@ -1,7 +1,7 @@
 ---
 layout: base
 emoji: 🧠
-title: Surplus intellectual capacity
+title: surplus intellectual capacity
 description: productivity and net benefit
 date: 2022-01-22 22:15:00
 tags: ["essay", "startups"]

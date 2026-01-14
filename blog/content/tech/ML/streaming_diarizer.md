@@ -1,6 +1,6 @@
 ---
 emoji: 🏞️
-title: Streaming Diarizer
+title: streaming diarizer
 description: Looking at implementing streaming diarizer
 date: 2024-04-20
 layout: base
@@ -13,12 +13,12 @@ tags: ["tech", "machine-learning"]
 - [MultiSpeaker Simulation](https://github.com/NVIDIA/NeMo/blob/main/tutorials/tools/Multispeaker_Simulator.ipynb)
 
 
-### Data sets
+### data sets
 
 - [LibriSpeech](https://www.openslr.org/12)
 - [VoxConverse](https://github.com/joonson/voxconverse)
 
-## Resources
+## resources
 
 - [Whisper Streaming](https://github.com/ufal/whisper_streaming)
 - [Diarist](https://ieeexplore.ieee.org/abstract/document/10446050)

@@ -1,5 +1,5 @@
 ---
-title: Recents
+title: recents
 emoji: 🧑🏻‍🏫
 layout: recents
 description: These are some of my recent stuffs.

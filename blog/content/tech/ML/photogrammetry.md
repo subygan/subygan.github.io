@@ -1,15 +1,15 @@
 ---
 emoji: 📷
-title: Photogrammetry/VideoGrammetry or the dark art of capturing 2d and generating 3d models
+title: photogrammetry/videogrammetry or the dark art of capturing 2d and generating 3d models
 description: Exploring photogrammetry and adjacent areas
 date: 2024-10-11
 layout: base
 tags: ["tech", "machine-learning"]
 ---
 
-# Capturing
+# capturing
 
-## Questions:
+## questions:
 
 Is it possible to go from, photo/video to high fidelity 3d model, with strong support for texture, without losing a lot of details on noise?
 
@@ -19,7 +19,7 @@ What is the upper limit to the accuracy of commodity sensors?
 
 How impactful is ML ideas such as NERFs and Gaussian splats
 
-## Prior Art
+## prior art
 
 One surprising [post](https://peterfalkingham.com/2019/01/16/small-object-photogrammetry-how-to-take-photos/) was from Peter Falkingham using a DSLR and a tripod.
 the final output was amazing. He was using 2018 version of [AliceVision Meshroom](https://alicevision.org/). Which was shockingly good, also open source. 
@@ -46,14 +46,14 @@ Apple provides native support for this, which is quite interesting. I personally
 
 # rendering
 
-## Questions
+## questions
 
 - Is WebGL/WebGPU enough to render 3d models ?
 - What is the battery load on rendering this? why do websites, wait for user interaction to load the model?
 - How likely can we go from photo -> 2.5D object -> render with `useAnimatedSensor` for deeper interaction?
 - AR/VR use cases?
 
-## Prior Art
+## prior art
 
 TBD
 

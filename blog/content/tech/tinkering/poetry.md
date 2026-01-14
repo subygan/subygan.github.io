@@ -1,6 +1,6 @@
 ---
 emoji: 📜
-title: Poetry
+title: poetry
 description: The python package manager
 date: 2024-11-14
 layout: base

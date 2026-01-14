@@ -1,6 +1,6 @@
 ---
 emoji: q🅫
-title: QMD for Hugo
+title: qmd for hugo
 description: How I handle qmd
 date: 2025-12-29
 layout: base

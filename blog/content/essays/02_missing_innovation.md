@@ -1,5 +1,5 @@
 ---
-title: The Missing innovation
+title: the missing innovation
 emoji: 🕵🏻‍♂️
 layout: base
 description: The Innovation that should've been but isn't.

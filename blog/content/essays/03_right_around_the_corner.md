@@ -1,5 +1,5 @@
 ---
-title: Right around the corner, A story of million possibilities
+title: right around the corner, a story of million possibilities
 emoji: 🎲
 description: Thoughts on Innovation, Economics and Opportunities
 place: CMU TCS hall

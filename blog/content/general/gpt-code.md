@@ -1,6 +1,6 @@
 ---
 emoji: 🤖
-title: Software Engineering agents work. But only if you do
+title: software engineering agents work. but only if you do
 description: When and where Agents work. Most importantly, How to work with them
 date: 2025-09-13
 layout: base

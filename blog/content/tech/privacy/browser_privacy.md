@@ -1,5 +1,5 @@
 ---
-title: Browser Privacy Test
+title: browser privacy test
 emoji: 🚪
 layout: base
 description: Privacy across multiple browsers.

@@ -1,6 +1,6 @@
 ---
 emoji: 📖
-title: Read the Docs
+title: read the docs
 description: Read. The. Fucking. Docs.
 date: 2024-07-23
 layout: base

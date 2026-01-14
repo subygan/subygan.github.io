@@ -1,5 +1,5 @@
 ---
-title: To Learn
+title: to learn
 emoji: 🛍
 description: My to-do list of learning.
 layout: base
@@ -12,7 +12,7 @@ These are the things that I am interested in learning.
 - [Non zero sum games](https://nonzerosum.games/)
 # courses and competitions
 
-## ML
+## ml
 - [Karpathy Zero to Hero](https://karpathy.ai/zero-to-hero.html)
 - [RL on wordle](https://charbull.github.io/wordle-lora-rl/)
 - [RL on 2048](https://colab.research.google.com/github/openai/gpt-oss/blob/main/examples/reinforcement-fine-tuning.ipynb)
@@ -39,7 +39,7 @@ These are the things that I am interested in learning.
 - [The Case for Co-Designing Model Architectures with Hardware:]( http://arxiv.org/abs/2401.14489 )
 
 
-## Shaders
+## shaders
 
 - [The book of Shaders](https://thebookofshaders.com/)
 
@@ -70,7 +70,7 @@ These are the things that I am interested in learning.
 
 
 
-# Books to read
+# books to read
 
 - [How to Scale Your Model](https://jax-ml.github.io/scaling-book/)
 - Harry Potter and the Methods of Rationality
@@ -87,7 +87,7 @@ These are the things that I am interested in learning.
 - [post quantum cryptography](https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/Brochure/quantum-safe-cryptography.pdf;jsessionid=0A645BD930E85BDED22DD2597C0A35DD.internet471?__blob=publicationFile&v=4)
 
 
-# Blogs to read
+# blogs to read
 
 - [Larry Sanger on baby reading](https://larrysanger.org/2010/12/baby-reading/)
 - [Understanding Apache Fluss](https://jack-vanlightly.com/blog/2025/9/2/understanding-apache-fluss)
@@ -113,24 +113,24 @@ These are the things that I am interested in learning.
 - RL environment for agents
 - LMDB rust
 
-## Privacy
+## privacy
 
 - Science, Privacy, and Freedom: Issues and Proposals for the 1970's. Part I--The Current Impact of Surveillance on Privacy, Alan F. Westin
   Columbia Law Review, Vol. 66, No. 6 (Jun., 1966), pp. 1003-1050 (48 pages) https://www.jstor.org/stable/1120997
 
 
-# Games:
+# games:
 https://flexboxfroggy.com/
 
-# Projects to go through
+# projects to go through
 
 - [etcd](https://github.com/etcd-io/etcd)
 - [cockroachDB](https://github.com/cockroachdb/cockroach)
 
 
-# Courses and others
+# courses and others
 
-## Dolby Webcast
+## dolby webcast
 https://wsw.com/webcast/blair66/dlb/1747980 ✅
 
 ## browsers

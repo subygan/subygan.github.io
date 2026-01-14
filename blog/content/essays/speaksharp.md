@@ -1,6 +1,6 @@
 ---
 emoji: 🌏
-title: Postmortem from building an AI speech coach 
+title: postmortem from building an ai speech coach 
 description: We spent 3 months building a product that a lot of people wanted, but nobody used. These are all my learnings from doing 15 expert discussions and 50 user sessions.
 date: 2024-09-01
 layout: base
@@ -9,14 +9,14 @@ tags: ["essay", "writing"]
 ---
 
 
-# The problem
+# the problem
 
 International Students have a hard time understanding and integrating with the culture.
 This is true even if there's a good grasp of the language. 
 
 The problem is not the language itself. But the accent, the word usage, and the million different cultural references.
 
-# The product
+# the product
 
 We believed we could solve this by building [SpeakSharp.io](https://speaksharp.io) an always-on language assistant, which would be able to provide concise feedback on the pronunciation and also provide context on the cultural references. Even if we acquire 5% of the total International student population in the US, we would have a $10M ARR, or so we calculated. We even had a [27 page business plan](https://docs.google.com/document/d/1VEPdhb_0AGbCJ7LVRn0hYCTi5gdUGs2PXwKDYX9Czj0/edit?usp=sharing).
 
@@ -29,11 +29,11 @@ As someone who's previously built things and failed. I was aware of the pitfalls
 
 But then, this did not matter because We had the idea!! ❤️‍🔥 and we were going to build it. Because we can prove them wrong.
 
-# The Mistakes
+# the mistakes
 
 I wanted to name these learnings. But, They are learnings only in Hindsight. They were mistakes when I was doing them.
 
-## Mistake #1: Doing everything in a "Scalable" way
+## mistake #1: doing everything in a "scalable" way
 
 
 This is by far the single most important learning for me. __Getting the product in front of users as fast as possible is the only important thing__, everything else is a distraction.
@@ -52,7 +52,7 @@ If the roadmap is anything more than a list of features and bugs, you should be 
 
 If someone says JIRA. Turn around and walk away. It won't work.
 
-## Mistake #2: Not Listening to users more often
+## mistake #2: not listening to users more often
 
 I knew the problem quite intimately. I've felt the language barrier that stops me from making new friends. I myself was an International student in foreign grounds. I had a hard time understanding the culture and the language. So everybody would want to improve in that dimension right?
 
@@ -67,7 +67,7 @@ We were fervently working under the guise that if only we could remove a little 
 If the users are unable to bear a little bit of friction, for the value that the product provides. How are they going to bear the friction of paying for it?
 
 
-## Mistake #3: Learning too many new things at once
+## mistake #3: learning too many new things at once
 
 I built the app from scratch.
 
@@ -84,7 +84,7 @@ I should've probably started with something that I was more familiar with, like 
 I've documented (most) of  my fronted development woes [here](/tech/bugs/frontend).
 
 
-## Things that went Great
+## things that went great
 
 I'm so thankful for the resources that we had at our perusal.
 
@@ -97,7 +97,7 @@ We won the SPARK grant - which was a great morale boost.
 I'm damn proud of the hours we put into making the individual pieces work. It was an absolute grind, but the possibility of making something that could change the lives of people was a great motivator.
 
 
-## What's next?
+## what's next?
 
 Even though I've stopped working on this. I believe this is quite a good idea and there is market for it.
 

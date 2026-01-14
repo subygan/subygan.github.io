@@ -1,6 +1,6 @@
 ---
 emoji: 🧐
-title: Product Ideas
+title: product ideas
 description: a dump of Product ideas that I come up with 
 date: 2022-07-16
 layout: base
@@ -10,7 +10,7 @@ tags: ["startups", "tech"]
 Inspiration comes from many places. I love jotting them down here.
 
 
-### Small app ideas
+### small app ideas
 - Something with Audio models such as [fugatto](https://fugatto.github.io/)
   - Isolate tracks
   - humming -> Song
@@ -36,7 +36,7 @@ Inspiration comes from many places. I love jotting them down here.
 - Browser automation for testing, automatically booking tickets etc.
 - native MP3 player, with a remote library
 
-## Problems I have
+## problems i have
 
 - LLM x privacy
 - Consumer AI products - character.ai,
@@ -142,7 +142,7 @@ There are also accelerators to these in the forms of web assembly, which lets de
 - Resources
   - https://firecracker-microvm.github.io/
 
-### Event driven
+### event driven
 Event driven architectures are gaining a lot of momentum. There are a few problems inherent to that system,
 
 - since calls are async, there are queues everywhere, this is generally addressed through a pub-sub system like kafka to relay the mesages in a a queue.
@@ -151,7 +151,7 @@ Event driven architectures are gaining a lot of momentum. There are a few proble
 - Retry seems to be the hailmary in most cases.
 - If the publisher is sending buggy messages and crashing the subscribers, it is inherently hard.
 
-### Integrations
+### integrations
 
 - integrations with multiple services and offerings to make them homogenous or generic is something almost everybody is interested in.
   - eg. Zapier,
@@ -160,13 +160,13 @@ Event driven architectures are gaining a lot of momentum. There are a few proble
   - Kubernetes for notifications infra. Basically a generic phone call/sms, email service which lets us switch the underlying providers easily like, twilio, gupshup .notification apis are
   - Generic payments gateway that lets us A/B testing
 
-### ETL
+### etl
 
 ETL solutions, either to aggregate data in some form or matter
 - Services that take one format of input and transform to another are also very much in demand. The problem is, there is no clear path to productisation other than providing the underlying infra to run these workflows or building tools to build these workflows, of which there are many.
   - https://www.alteryx.com/products/designer-cloud and appian and many many others.
 
-### Privacy
+### privacy
 
 privacy is the hot new talk of the town and there are a lot of gaps in the ecosystem.
 
@@ -185,13 +185,13 @@ privacy is the hot new talk of the town and there are a lot of gaps in the ecosy
 
 A lot of these ideas are future facing. Every future facing idea is usually a little twist on top of whatever is standard/hot/obvious right now. which means there will always be a huge middleground full of players who would be far enough behind that, they would need help covering the distance between past and the present. Which means, there is some type of consulting opportunity with every single piece above as well.
 
-### PrepMate
+### prepmate
 
 Aspirants who are preparing for exams are heavily moving towards remote preparation. Barring the exceptional few, it is hard to keep motivation alive. and work and work and work.
 
 PrepMate is a focusmate fork, specialised for exam preparation. People who are preparing for exams can schedule preparation sessions with each other and match with random people (or people from their own milieu) And Setup prepsession with them. When the time comes, people will be allowed to access the video call. Both parties can introduce themselves and their goals and then mute each other and work for 45 - 90 minutes. After that, there can be an optional discussion to go over each other's notes or maybe in discuss light stuff.
 
-### Happy flow (new user)
+### happy flow (new user)
 
 - Signs up with G
 - Gets introduction video/ guide about the platform.
@@ -204,7 +204,7 @@ PrepMate is a focusmate fork, specialised for exam preparation. People who are p
 - Participants are given 30 minutes to discuss their session and other banter.
 - Marks person as favorite (So that this person will be given preference next time).
 
-### Challenges
+### challenges
 
 - Video calls could end up being very resource intensive and require a lot of resources.
 - Stability of the calls + app. Study session __must__ not be broken. ++
@@ -213,12 +213,12 @@ PrepMate is a focusmate fork, specialised for exam preparation. People who are p
 - Supporting even very basic versions of phones not costly ones.
 - Which exams to focus on, in the beginning.
 
-### Why now?
+### why now?
 
 - Accelerated remote work
 - Hyper-focused audience group.
 
 
-### Competitors
+### competitors
 
 - Focusmate

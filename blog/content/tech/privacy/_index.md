@@ -1,6 +1,6 @@
 ---
 emoji: 💻
-title: Privacy
+title: privacy
 description: My learnings about Privacy 
 date: 2022-11-06
 ---

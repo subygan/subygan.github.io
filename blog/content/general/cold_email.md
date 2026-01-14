@@ -1,6 +1,6 @@
 ---
 emoji: 📧
-title: Successful Cold Emailing 
+title: successful cold emailing 
 description: A very solid collection of wildly successful cold emails
 date: 2025-10-25
 layout: base
@@ -14,7 +14,7 @@ This is meant to be a repository of successful cold emails that converted and cr
 These only cover cold emailing as an individual to a decision maker about something you want to get done. Not any other use cases.
 
 
-## [Ramanujan Cold mailing Hardy in 1913 ]()
+## [ramanujan cold mailing hardy in 1913 ]()
 
 This was the cold mail from Ramanujan then a clerk in madras to G.H.Hardy. which opened the door for ramanujan studying in Trinity College.
 
@@ -23,26 +23,26 @@ This was the cold mail from Ramanujan then a clerk in madras to G.H.Hardy. which
 ![ramanujan hardy](ramanujan.png)
 
 
-## [Tyler the Creator to a record label](https://www.reddit.com/r/HipHopImages/comments/7mmazu/found_an_old_promo_email_from_tyler_the_creator/)
+## [tyler the creator to a record label](https://www.reddit.com/r/hiphopimages/comments/7mmazu/found_an_old_promo_email_from_tyler_the_creator/)
 <br></br>
 
 ![tyler the creator](tyler.png)
 
 <br></br>
 
-## [Elliot Lindberg getting hired at Lovable](https://x.com/robiot/status/1981699553431863549)
+## [elliot lindberg getting hired at lovable](https://x.com/robiot/status/1981699553431863549)
 <br></br>
 
 
 ![elliot](elliot.png)
 
 
-## [allie Janoch cold email to $2.5M investment](https://medium.com/@alliehochjanoch/how-i-turned-a-cold-email-into-a-2-5m-seed-round-c33bd80f5590)
+## [allie janoch cold email to $2.5m investment](https://medium.com/@alliehochjanoch/how-i-turned-a-cold-email-into-a-2-5m-seed-round-c33bd80f5590)
 
 ![allie](allie.png)
 
 
-## [Richard Zheng to Mark Cuban](https://x.com/richardzphotoz/status/1897701087504932871)
+## [richard zheng to mark cuban](https://x.com/richardzphotoz/status/1897701087504932871)
 
 
 ![zheng](zheng.png)
@@ -52,12 +52,12 @@ Followup
 ![zheng followup](zheng2.png)
 
 
-## [Cold email to F1 world champion](https://x.com/_sonith/status/1897436493309698347)
+## [cold email to f1 world champion](https://x.com/_sonith/status/1897436493309698347)
 
 ![F1](f1.png)
 
 
-## [cold emailing Arianna Huffington to work at huffpost](https://ehandbook.com/how-i-successfully-cold-emailed-arianna-huffington-and-received-an-offer-3baa838214f7)
+## [cold emailing arianna huffington to work at huffpost](https://ehandbook.com/how-i-successfully-cold-emailed-arianna-huffington-and-received-an-offer-3baa838214f7)
 
 <br></br>
 
@@ -70,7 +70,7 @@ Arianna's reply
 ![nguyen2](nguyen2.png)
 
 
-## [Druv Ghulati raising $500K from Mark Cuban](https://www.reddit.com/r/SaaS/comments/1hs664z/dhruv_ghulati_guy_raised_500k_by_sending_just_one/)
+## [druv ghulati raising $500k from mark cuban](https://www.reddit.com/r/saas/comments/1hs664z/dhruv_ghulati_guy_raised_500k_by_sending_just_one/)
 
 <br></br>
 
@@ -78,12 +78,12 @@ Arianna's reply
 
 
 <!-- 
-## [Jack Altman on a podcast about cold email](https://youtu.be/wN6mVVZX4OU?si=H5T3kyLvin3BRRjP&t=3151)
+## [jack altman on a podcast about cold email](https://youtu.be/wn6mvvzx4ou?si=h5t3kylvin3brrjp&t=3151)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wN6mVVZX4OU?si=Zw6I-QmejJ-2JeCx&amp;start=3148" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 
 
-## Soham Parekh on working 5 simultaneous silicon valley jobs
+## soham parekh on working 5 simultaneous silicon valley jobs
 
 Soham Parekh got very popular, for getting caught working at up to 5 jobs at the same time for multiple years. He had a habit of cold emailing YC founders and getting them to respond.
 
@@ -95,7 +95,7 @@ NGL this is a very good cold email. it capture attention and keeps you engaged, 
 ![Soham](soham.jpeg)
 
 
-## [Devanshu getting hired on Cal.com](https://x.com/DevanshuXi/status/1981717937946862046)
+## [devanshu getting hired on cal.com](https://x.com/devanshuxi/status/1981717937946862046)
 
 <br></br>
 
@@ -103,7 +103,7 @@ NGL this is a very good cold email. it capture attention and keeps you engaged, 
 
 
 
-## [Arun messaging gdb](https://x.com/xprunie/status/1898122668026495217)
+## [arun messaging gdb](https://x.com/xprunie/status/1898122668026495217)
 
 <br></br>
 

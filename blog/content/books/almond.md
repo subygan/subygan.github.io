@@ -1,7 +1,7 @@
 ---
 layout: base
 emoji: 🌰 
-title: Almond 
+title: almond 
 description: Sohn Won-pyung
 date: 2025-02-15
 tags: ["book", "fiction", "psychology"]

@@ -1,5 +1,5 @@
 ---
-title: Regex
+title: regex
 emoji: ⠝
 layout: base
 description: Regex learning

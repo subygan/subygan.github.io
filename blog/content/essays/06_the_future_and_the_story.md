@@ -1,7 +1,7 @@
 ---
 layout: base
 emoji: 🧠
-title: The future and The story
+title: the future and the story
 description: Is all of economy just an endless story?
 date: 2022-04-11 22:15:00
 tags: ["essay", "writing", "creativity"]

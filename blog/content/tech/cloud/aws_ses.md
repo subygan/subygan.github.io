@@ -1,5 +1,5 @@
 ---
-title: AWS SES
+title: aws ses
 emoji: 💌
 layout: base
 description: Working with AWS ses

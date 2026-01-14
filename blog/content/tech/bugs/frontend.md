@@ -1,6 +1,6 @@
 ---
 emoji: 🦫
-title: A Backend Engineer Writes Frontend
+title: a backend engineer writes frontend
 description: Writing frontend should be straightforward, Or so I thought...
 date: 2024-05-06
 layout: base

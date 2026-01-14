@@ -1,7 +1,7 @@
 ---
 layout: base
 emoji: 🤓
-title: Source Code
+title: source code
 description: Bill Gates about his days at Microsoft
 date: 2025-02-26
 tags: ["book", "tech", "programming"]

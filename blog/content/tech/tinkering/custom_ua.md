@@ -1,7 +1,7 @@
 ---
 layout: base
 emoji: 🐙
-title: Custom user Agent for testing
+title: custom user agent for testing
 description: Sending requests with custom user agent in chrome for debugging
 tags: ["tech", "programming"]
 ---
@@ -31,6 +31,6 @@ It took me a while to realize that chrome might have a way to do that. and I sta
 6. Reload the page et voila, you have the response from custom user-agent. all from your browser
 
 
-### Note to self
+### note to self
 
 There are usually far simpler solutions if we just wait for a second and think. instead of jumping the gun and doing the most accessible solution. It probably is not the most optimal

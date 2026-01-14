@@ -1,6 +1,6 @@
 ---
 emoji: 🏸 
-title: Badminton Handbook
+title: badminton handbook
 description: badminton reference and strategies
 date: 2023-04-23
 layout: base
@@ -9,7 +9,7 @@ tags: ["book", "learning"]
 
 I usually like watching videos or brute force play for picking up skills. But, I wanted a comprehensive read on the topic and here we are. I learnt a lot more than I could've just by watching a video. Even though explaining some topics are definitely harder in a written medium.
 
-### The Racket
+### the racket
 
 Professional Rackets bend very less and don't twist when the cork hits on the sides. This means that the cork moves accurately irrespective where it hits in the bat. But, this also means that the bat is rigid and could break easily. 
 Bats are of two sizes, isometric and rounded. Isometric shape increases the optimal hit area.

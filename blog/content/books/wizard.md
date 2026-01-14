@@ -1,6 +1,6 @@
 ---
 emoji: 🧙🏻‍♂️ 
-title: Where wizards stay up late
+title: where wizards stay up late
 description:  Katie Hafner and Matthew Lyon
 date: 2023-03-15
 layout: base

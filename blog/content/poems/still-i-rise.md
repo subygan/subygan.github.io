@@ -1,6 +1,6 @@
 ---
 emoji: 🔥
-title: Still I Rise
+title: still i rise
 description:  Maya Angelou
 date: 2024-11-15
 layout: base

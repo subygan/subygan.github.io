@@ -1,7 +1,7 @@
 ---
 layout: base
 emoji: 💁🏾‍♀️
-title: The Immortal Life of Henrietta Lacks
+title: the immortal life of henrietta lacks
 description: Rebecca Skloot
 date: 2025-03-15
 tags: ["book", "learning"]

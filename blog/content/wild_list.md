@@ -1,6 +1,6 @@
 ---
 emoji: 📜
-title: Wild List 
+title: wild list 
 description: of things I want to get to in my lifetime
 date: 2023-06-03
 layout: base

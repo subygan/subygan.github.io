@@ -1,6 +1,6 @@
 ---
 emoji: 🏜️
-title: Dune
+title: dune
 description: Reading Dune
 date: 2024-06-22
 layout: base
@@ -11,7 +11,7 @@ Dune was such a surprising read for me. I got interested in it after the movies,
 
 It's very intricate and well woven.
 
-## Dune
+## dune
 
 The conception of a wide universe with strong ground realities is incredible. A space-faring generation that is bottlenecked by production of a single raw material ("spice" in this case is interesting.)
 Controlling Arrakis is the only important thing in the universe as it lets the controller squeeze the rest of the world.

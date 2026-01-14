@@ -1,6 +1,6 @@
 ---
 emoji: 📦
-title: Batch processing LLM Inference
+title: batch processing llm inference
 description: Notes from running LLM operation over 1M documents. 
 date: 2024-07-14
 layout: base
@@ -42,7 +42,7 @@ The SDK supports these operations,
 The annoying part in setting up the batch inference was the s3 permissioning errors.
 
 
-## Debugging
+## debugging
 
 
 There were multiple, unable to access bucket with role type errors.

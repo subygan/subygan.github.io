@@ -1,5 +1,5 @@
 ---
-title: OSTEP-1 Virtualisation
+title: ostep-1 virtualisation
 emoji: 🧑🏻‍🏫
 layout: base
 description: OSTEP Virtualisation notes
@@ -7,7 +7,7 @@ date: 2021-04-01 22:15:00
 tags: ["tech", "systems", "learning"]
 ---
 
-# ch4 : Processes
+# ch4 : processes
 
 <ins>The problem</ins>: How to create the illusion of many CPUs when, we only have few.
 
@@ -34,7 +34,7 @@ __Stackpointer and function pointer__ ? Used to manage the stack for function pa
 
 When code executes all the manipulated objects are kept in memory.
 
-## Process Creation
+## process creation
 
 
 program in disk => loaded into the address space of the process => OS reads this data, which is in an _executable format_ into memory.
@@ -47,7 +47,7 @@ OS allocates __Program Heap__ : used for dynamically allocated objects
 - The OS handles I/O and other stuff. There are 3 _file descriptors_ *input, output and error*
 
 
-## Process States
+## process states
 
 - __Running__ - The process is executing instructions on the processor
 - __Ready__ - process is ready, but the OS has decided not to run it
@@ -58,7 +58,7 @@ OS allocates __Program Heap__ : used for dynamically allocated objects
 ![process-state-transition](/tech/theory/ostep/assets/process-state-transition.png)
 
 
-#### Process list:
+#### process list:
 To keep track of  al the processus running
 
 xv6 proc structure
@@ -105,7 +105,7 @@ procedure state is more than the 3 discussed above.
 - __ZOMBIE__ state - When a process has been exited but not cleaned up.
 
 
-# ch5; Process API
+# ch5; process api
 
 <ins> The Problem </ins>: What interfaces should the OS provide to create and control functionality
 
@@ -130,7 +130,7 @@ makes a process wait for a certain time.
 Useful when _a program has to run a different program_
 
 
-### Process control
+### process control
 
 There are other signals that are used to control processes
 
@@ -141,7 +141,7 @@ control-z => SIGSTP - Signal stop to stop the process so that it can be continue
 
 kill => arbitrarily kill a process
 
-# ch6: Limited Direct Execution
+# ch6: limited direct execution
 
 limited direct execution is a method of sharing resources. By allowing the direct execution of programs.
 
@@ -168,14 +168,14 @@ __trap table__ is a priveleged part of the program which requires specific acces
 
 In LDE, how can the OS interrupt another process, when OS is _not_ running at all, but the process it.
 
-#### Approach 1: Wait for sys calls (Cooperative approach)
+#### approach 1: wait for sys calls (cooperative approach)
 
 Used in older systems. The OS _expects_ the program to __behave reasonably__
 
 These systems transfer the ownership of the processor between the OS and themselves often. This is done by the explicit `yield` sys call. Applicaitions also transfer ownership when they do something illegal, eg. seg fault
 
 
-#### Approach 2: The Os takes control (non-cooperative approach)
+#### approach 2: the os takes control (non-cooperative approach)
 
 in the cooperative approach when a process gets stuck in an infinite loop. The only recourse is to restart the system.
 
@@ -183,7 +183,7 @@ One way to handle is to use a __timer interrupt__. A timer device can be used to
 
 The OS should to inform the hardware which code to run, when the interrupt occurs. And setting up the timer is a privileged instruction. Once, the timer has begun the can be sure that, control will eventually be returned to it.
 
-### Saving and REstoring context
+### saving and restoring context
 
 When the OS regains control via sys call/timer interrupt. A decision has to ne made on _whether to contine the current process, or switch to a different one_. this decision is made by a __scheduler__
 
@@ -196,7 +196,7 @@ This is a typical direct execution done for systems.
 ![LDE-TI.png](/tech/theory/ostep/assets/LDE-TI.png)
 
 
-# ch7: CPU Scheduling
+# ch7: cpu scheduling
 
 <ins>The problem:</ins> Develop scheduling polizies
 
@@ -211,7 +211,7 @@ This is a typical direct execution done for systems.
 These assumptions are required to simplify the decision making process. We eventually will relax the rules one by one to arrive at a solution.
 
 
-#### Scheduling Metrics
+#### scheduling metrics
 
 __turnaround time__ - The time at which the job completes vs the time at which the job arrived
 
@@ -221,7 +221,7 @@ T<sub>turnaround</sub> = T<sub>completion</sub> - T<sub>arrival</sub>
 
 Since we assumed all jobs arrive at the same time T<sub>arrival</sub> = 0 and hence T<sub>turnaround</sub> = T<sub>completion</sub>.
 
-#### First In, First Out (FIFO)
+#### first in, first out (fifo)
 
 The simplest algorithm is, FIFO. This would lead to a solution like this.
 
@@ -233,7 +233,7 @@ Now, lets try to loose our first assumption `Each job runs for the same amount o
 
 We schedule something and it's hogging up resources while the simpler ones are waiting
 
-#### Shortest Job First (SJF)
+#### shortest job first (sjf)
 
 Since we have the assumption that `The run-time of each job is known`. we can schedule jobs based on how long they run
 
@@ -246,7 +246,7 @@ Which means, A arrives at t=0 and needs to run for 100s, whereas B and C arrive 
 
 ![STCF-sched.png](/tech/theory/ostep/assets/STCF-sched.png)
 
-#### Shortest Time-to-Completion First (STCF):
+#### shortest time-to-completion first (stcf):
 
 To accomodate losing assumption 2, we can relax assumption 3 as well, `Once started, each job runs to completion.` 
 
@@ -255,7 +255,7 @@ To accomodate losing assumption 2, we can relax assumption 3 as well, `Once star
 Here we are stopping process A and then letting C run and then rerunning A. This is provably optimal as well.
 
 
-#### Adding new scheduling metrics
+#### adding new scheduling metrics
 
 Response time
 
@@ -266,7 +266,7 @@ It is the time between the job's arrival and it's first run.
 
 This metric can be optimised by chopping a process into pieces and starting them.
 
-#### Round Robin
+#### round robin
 
 A round robin algorithm, runs a program for a time slice and then switches to another available process
 
@@ -280,7 +280,7 @@ While RR is pretty optimal if we calculate only Response time. But, if we consid
 
 This is the principle trade-off of a fair algorithm. being fair impacts your turn around time.
 
-#### incorporating I/O
+#### incorporating i/o
 
 We'll relax assumption 4 `All jobs only use the CPU (i.e no I/O)`. The scheduler has an option when a program initiates an I/O. The CPU won't be useful when the I/O is being processed.
 
@@ -297,7 +297,7 @@ time is wasted on waiting over I/O. this can be better packed by using the wait 
 we can now remove our final assumption as well `The run-time of each job is known`. With our current scenario, we really don't need to know the run-time of each job.
 
 
-# Ch8: Multi level feedback queue (MLFQ)
+# ch8: multi level feedback queue (mlfq)
 
 introduced by Corbato et al. 1962 in a system known as Compatible time sharing system.
 
@@ -306,7 +306,7 @@ MLFQ optimises turn around time as well as response time.
 <ins>the problem</ins> How to schedule without perfect knowledge of runtime?
 
 
-### MLFQ
+### mlfq
 
 MLFQ has a number of distinct queues, each assigned a different priority level. At any given time, a job that is ready to run is on a single queue. if multiple jobs in the queue have the same priority we just use RR to run them both
 
@@ -317,7 +317,7 @@ For example in cases where there are a lot of IO calls. The feedback for the use
 But then, If a task is doing a lot on the background and it is not immediately issuing IO then it's priority can be low.
 
 
-### Attempt 1: how to change priority?
+### attempt 1: how to change priority?
 
 - __Rule 3__ : When a job enters the system, it is placed at the highest
 priority (the topmost queue).
@@ -325,7 +325,7 @@ priority (the topmost queue).
 - __Rule 4b__ : If a job gives up the CPU before the time slice is up, it stays
 at the same priority level.
 
-### Example 1: __Single long running job__
+### example 1: __single long running job__
 
 
 In the below example it is obvious that as a long running job runs, it's priority gets lowered slowly.
@@ -334,7 +334,7 @@ Every time it occupies resources, we slowly reduce its priority.
 
 ![long running job](/tech/theory/ostep/assets/ex1-long_running.png)
 
-### Example 2: __A short job in between__
+### example 2: __a short job in between__
 
 When a short jobs comes in between this task, then it's priority in the beginning is high, so it is given preference to run.
 
@@ -345,12 +345,12 @@ Also, when a process has a lot of IOs then its priority is kept high
 
 ![lots of ios](/tech/theory/ostep/assets/ex3-ios.png)
 
-## Problems with this MLFQ implementation
+## problems with this mlfq implementation
 
 If there are too many interactive processes happens then __starvation__ of CPU happens resulting in reduced resources.
 
 A smart user could game the CPU to keep the process priority high by making a IOs at the very end of a process thereby keeping their priority high.
 
-## Alternate solution, Priority boost based MLFQ
+## alternate solution, priority boost based mlfq
 
 The idea here is that, in frequent intervals, we boost the priority of all the jobs in the system. This ensures that the Priorities are boosted for those systems and are able to 

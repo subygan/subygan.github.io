@@ -1,6 +1,6 @@
 ---
 emoji: 🦁
-title: Organizational Wisdom
+title: organizational wisdom
 description: A rabbit hole of being inspired and intense.
 date: 2024-10-16
 layout: base
@@ -14,7 +14,7 @@ Highly recommend spending a couple of hours going through their blogs.
 Incredibly strong and deep ideas
 
 
-## Orientation
+## orientation
 
 Palantir started as a defense service industry, when service industry was unsexy and frowned upon.
 
@@ -32,7 +32,7 @@ tldr
 - Go outside the building
 - Deliver outcomes, not Software
 
-## Leadership and People
+## leadership and people
 
 People need to be intense and quirky. 
 A lot of palantir's ideologies were deeply philosophically rooted. Peter Thiel being a philosophy major played a big part in it.
@@ -49,7 +49,7 @@ tldr
 - This is the marines vibe
 
 
-## Structure
+## structure
 
 Shyam Sankar in his blog mentions how a team needs complementary skills.
 

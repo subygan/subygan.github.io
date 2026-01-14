@@ -1,6 +1,6 @@
 ---
 emoji: 👩🏻‍🍳
-title: My Mother's recipe
+title: my mother's recipe
 description: My Brother documented a sliver of my mother's recipe. After sharing it a bunch of times, I figured it's better located here.
 date: 2025-12-25
 layout: base

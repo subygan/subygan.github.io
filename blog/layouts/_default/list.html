@@ -7,12 +7,12 @@
             <header>
 
                 <div class="page-header-icon undefined"><span class="icon">{{ .Params.emoji }}</span></div>
-                <h1 class="page-title">{{ .Title }}</h1>
+                <h1 class="page-title">{{ .Title | lower }}</h1>
             </header>
             <div class="blender" id="blender"></div>
             {{ partial "header.html" . }}
             {{ .Content }}
-            <h2>Posts</h2>
+            <h2>posts</h2>
                 <!-- Ranges through content/posts/*.md -->
                 {{ range .Pages }}
 
@@ -21,7 +21,7 @@
                     <a href="{{.Permalink}}">
                     {{ if .Params.emoji }}
                     {{ .Params.emoji }} &nbsp;
-                        &nbsp;&nbsp;&nbsp;{{.Title}}
+                        &nbsp;&nbsp;&nbsp;{{.Title | lower }}
                     {{ end }}
                     {{ if .Params.date }}
                         ,  {{.PublishDate.Format "Jan 2,'06"}}&nbsp;
@@ -34,7 +34,7 @@
                     <li><a href="{{.Permalink}}">
                         {{ if .Params.emoji }}
                         {{ .Params.emoji }} &nbsp;
-                        &nbsp;&nbsp;&nbsp;{{.Title}}
+                        &nbsp;&nbsp;&nbsp;{{.Title | lower }}
                         {{ end }}
                         {{ if .Params.date }}
                         ,  {{.PublishDate.Format "Jan 2,'06"}}&nbsp;

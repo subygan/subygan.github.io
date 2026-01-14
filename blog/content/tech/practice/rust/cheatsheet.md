@@ -1,6 +1,6 @@
 ---
 emoji: ⛓️
-title: Rust cheatsheet
+title: rust cheatsheet
 description: Looking back at rust and it's shenanigans.
 date: 2024-02-28
 layout: base
@@ -64,7 +64,7 @@ or
 let ( _ , right) = slice.split_at(middle);   //calls function, throws away left assigns right 
 ```
 
-### Functions:
+### functions:
 
 Start with braces, have their own scope
 
@@ -131,7 +131,7 @@ comments can be between statement
 let x = 5 + /*90+*/ 5; //This is valid comments 
 ```
 
-### Iterators:
+### iterators:
 
 
 Eg. `1..3` returns 1, 2
@@ -142,7 +142,7 @@ Eg. `1..=3` returns 1,2,3
 
  
 
-### Ownership
+### ownership
 
 In Rust, it makes creating dangling pointers and creates safeguards
 
@@ -151,7 +151,7 @@ Basically:
 - A reference cannot outlive its referent, You cannot refer and then send to an upper scope both the reference and the variable needs to outlive the scope
 - Mutable reference cannot be aliased, i.e. you cannot have two mutable borrows.
 
-### What does aliasing mean??
+### what does aliasing mean??
 similar in cpp where when two references to the same objects are being used for different functions like reading and writing. (i.e.) unexpected behaviour when threading differently.
 
 aliasing is useful for,
@@ -160,7 +160,7 @@ aliasing is useful for,
 - Moving/reordering reads and writes by proving there's no dependency.
 
 
-### Lifetimes in rust:
+### lifetimes in rust:
 
 Whenever a borrow or a reference is done in rust a new block is initialized.
 

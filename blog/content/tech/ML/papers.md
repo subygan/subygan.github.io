@@ -1,6 +1,6 @@
 ---
 emoji: 📄
-title: Research Papers
+title: research papers
 description: I 
 date: 2024-02-09
 layout: base

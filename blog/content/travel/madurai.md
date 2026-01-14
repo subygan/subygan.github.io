@@ -1,6 +1,6 @@
 ---
 emoji: 🛕
-title: Madurai
+title: madurai
 description: Best Goddamn South Indian food, pretty much anywhere in the world.
 date: 2024-10-25
 layout: base

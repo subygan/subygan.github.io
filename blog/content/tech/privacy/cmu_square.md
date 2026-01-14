@@ -1,6 +1,6 @@
 ---
 emoji: ◻️
-title: CMU Square
+title: cmu square
 description: My notes on CMU's Square framework
 date: 2024-01-18
 layout: base
@@ -45,11 +45,11 @@ This, Broadly involves 9 steps,
 9. __Requirement inspection__,
    - At this stage in the process, the stakeholders of the systems should come to a consensus on whether the requirements are aligned with their individual goals and help the org in progressing.
 
-## My notes
+## my notes
 The framework focuses very much on __Requirement Engineering Team__ and their requirement. To me it feels like, This assumes a waterfall like model, or before the systems are put into place.
 
 This is my personal opinion, but the framework expects and provides a very happy path to the requirement definition goal. Usually organizations are more chaotic and the expectations of the stakeholders changes over time.
 
-## References:
+## references:
 - [https://insights.sei.cmu.edu/library/security-quality-requirements-engineering-square](https://insights.sei.cmu.edu/library/security-quality-requirements-engineering-square)
 - [https://insights.sei.cmu.edu/documents/751/2005_005_001_14594.pdf](https://insights.sei.cmu.edu/documents/751/2005_005_001_14594.pdf)

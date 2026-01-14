@@ -1,7 +1,7 @@
 ---
 layout: base
 emoji: ⛓️‍💥 
-title: Makemore
+title: makemore
 description: building a LM that predicts sequence of characters
 date: 2025-02-24
 tags: ["tech", "machine-learning"]
@@ -21,7 +21,7 @@ is an exponential modelling of the problem
 ## bag of words 
 
 
-## MLP for name creation
+## mlp for name creation
 
 Bengio et al
 

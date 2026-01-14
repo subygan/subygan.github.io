@@ -1,5 +1,5 @@
 ---
-title: Privacy Articles
+title: privacy articles
 emoji: 📕
 description: Articles about privacy that I come across
 date: 2023-09-19
@@ -7,7 +7,7 @@ layout: base
 tags: ["tech", "privacy"]
 ---
 
-## Blogs
+## blogs
 
 - [Privacy best practices](https://blog.ovalerio.net/archives/2615)
 - [Why we care about privacy](https://www.scu.edu/ethics/focus-areas/internet-ethics/resources/why-we-care-about-privacy/)
@@ -23,6 +23,6 @@ tags: ["tech", "privacy"]
 - [Interoperability without sacrificing privacy: Matrix and the DMA](https://matrix.org/blog/2022/03/25/interoperability-without-sacrificing-privacy-matrix-and-the-dma/)
 - 
 
-## Tools
+## tools
 
 - [Browser Privacy Test](https://privacytests.org/)

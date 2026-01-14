@@ -1,6 +1,6 @@
 ---
 emoji: 🅰️ 
-title: Straight A 
+title: straight a 
 description: How to become a straight A student - Cal Newport
 date: 2023-06-02
 layout: base

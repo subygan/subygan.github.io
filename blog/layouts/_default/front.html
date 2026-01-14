@@ -5,7 +5,7 @@
     <div id='write'  class=''>
         <header>
             <div class="page-header-icon undefined"><span class="icon">{{ .Params.emoji }}</span></div>
-            <h1 class="page-title">{{ .Page.Title }}</h1>
+            <h1 class="page-title">{{ .Page.Title | lower }}</h1>
             <h2>{{ .Page.Description }}</h2>
         </header>
         {{ if .Params.date }}
@@ -14,7 +14,7 @@
         <div class="blender" id="blender"></div>
 
         {{ .Content }}
-        <H2>Recent Posts</H2>
+        <h2>recent posts</h2>
         {{ partial "recents.html" (dict "everything" . "count" 10) }}
         <a href="/recents">More Recents...</a>
         {{ partial "footer.html" . }}

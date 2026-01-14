@@ -1,6 +1,6 @@
 ---
 emoji: 🖥️
-title: Unix
+title: unix
 description: Unix gets quite worrisome really fast
 date: 2024-08-19
 layout: base
@@ -11,7 +11,7 @@ tags: ["tech"]
 
 If you are on a unix-like environment, ports < 1024 (like 80) will require superuser privileges.
 
-## Disk mounting and unmounting
+## disk mounting and unmounting
 
 ```shell
 sudo mount -o discard,defaults <diskid> <dir>
@@ -35,7 +35,7 @@ df
 du -bch <dirname>
 ```
 
-## Checking the OS
+## checking the os
 
 ```shell
 lsb_release -a
@@ -47,7 +47,7 @@ cat etc/os-release
 ```
 
 
-### Sudo issues
+### sudo issues
 
 When using aws a lot of times its annoying to type `sudo` for all commands. instead it is much simpler to just grant super user privileges to the ubuntu user only.
 
@@ -75,7 +75,7 @@ usermod -aG sudo ubuntu
 This provides super user privileges to ubuntu.
 
 
-### Linux Screen
+### linux screen
 
 I've run too many processes on a screen
 

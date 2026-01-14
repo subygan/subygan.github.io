@@ -1,6 +1,6 @@
 ---
 emoji: 🐢
-title: Terminal
+title: terminal
 description: I built a terminal editor and had to dig deep into understanding the terminal better
 date: 2024-08-08
 layout: base

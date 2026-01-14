@@ -1,5 +1,5 @@
 ---
-title: Now
+title: now
 emoji: 🐵
 layout: base
 date: 2023-09-13
