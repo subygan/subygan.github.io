@@ -11,6 +11,9 @@ Inspiration comes from many places. I love jotting them down here.
 
 
 ### small app ideas
+
+- Create
+- link storage and recording as a telegram bot or email etc with the ability to show case in a website
 - Something with Audio models such as [fugatto](https://fugatto.github.io/)
   - Isolate tracks
   - humming -> Song

@@ -25,6 +25,6 @@ The next 3 years are going to be 10x faster the past 20 years. This is not only 
 
 For example we have a completely new medium of interaction with a computer. i 
 
-[English is the new programming language](https://x.com/karpathy/status/1617979122625712128) This is evident from people vibecoding end to end apps making hundreds of thousands in revenue. While we as engineers like to think that our skills are defensible, in a strong nod to.
+[English is the new programming language](https://x.com/karpathy/status/1617979122625712128) This is evident from people vibecoding end to end apps making hundreds of thousands in revenue. While we as engineers like to think that our skills are defensible, in a strong nod to the blind spot fallacy.
 
 At an even higher level what are people supposed to do in a post scarcity world?

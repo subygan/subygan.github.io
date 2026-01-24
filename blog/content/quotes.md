@@ -60,6 +60,8 @@ layout: base
 
 > “The proper function of man is to live, not to exist. I shall not waste my days in trying to prolong them. I shall use my time.” ― Jack London
 
+> In juggling, you have to keep your eye on all the balls... but the most important ball is the one that’s about to hit the ground. - Howard Stevenson
+
 > Also, learn something everyday that will help you fight poverty and keep you in sparkling health ― Marcus Aurelius
 
 > As our Island of knowledge grows, so does the shore of ignorance ― John A Wheeler

@@ -90,6 +90,7 @@ These are the things that I am interested in learning.
 # blogs to read
 
 - [Larry Sanger on baby reading](https://larrysanger.org/2010/12/baby-reading/)
+- [How to win friends and influence people unabridged](https://socialskillswisdom.com/)
 - [Understanding Apache Fluss](https://jack-vanlightly.com/blog/2025/9/2/understanding-apache-fluss)
 - [Peter Thiel's CS183](https://blakemasters.tumblr.com/peter-thiels-cs183-startup)
 - [interview with shang Yi Chiang, R&D head at TSMC](https://archive.computerhistory.org/resources/access/text/2022/07/102792671-05-01-acc.pdf)

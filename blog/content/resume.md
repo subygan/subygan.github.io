@@ -16,6 +16,8 @@ Email: suriyaganesh097 at gmail.com
 
 [google scholar](https://scholar.google.com/citations?user=G0CscfQAAAAJ&hl=en)
 
+[orcid](https://orcid.org/0000-0002-4702-5219)
+
 
 ### employment
 
