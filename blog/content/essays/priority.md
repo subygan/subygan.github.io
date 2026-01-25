@@ -35,7 +35,7 @@ The key thing is, it is important to think about life and pursuits as a marathon
 A good broader strategy is that, when you embark on a journey. Finishing each smaller task in itself should be gratifying. Surviving one more day to face this problem should be gratifying in a way the competition cannot comprehend. Because the ultimate gold is not at some point X. it is in each time you become your better self and 
 
 
-I started this essay about priorities. Your utmost priority in the next few minutes should be to the task at hand and give it your everything to finish it. Your long term priority should be to strengthen yourself and everyone around you.
+I started this essay about priorities. My current belief is, utmost priority in the next few minutes should be to the task at hand and give it my all to finish it. long term priority should be to strengthen yourself and everyone around you.
 
 
 > Also, learn something everyday that will help you fight poverty and keep you in sparkling health ― Marcus Aurelius
