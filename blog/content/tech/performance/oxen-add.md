@@ -35,7 +35,7 @@ With performance sensitive application. Often less is more and simple is better.
 I often think about this [quote from Fabien](https://x.com/rygorous/status/1271296834439282690).
 
 
-![Fabien performance quote](/assets/images/fabien-performance.png)
+![Fabien performance quote](/assets/images/fabian-performance.png)
 
 
 In this case, it was true. In good software engineering fashion, all our layers had clear separation of concerns. Which lead to repeated context retrieval for each thread / async operation leading to thread contention for the same resource. Personally this was a lesson for me on thinking about the Design and impact of the whole system even when adding a seemingly isolated feature.
