@@ -22,8 +22,7 @@ As is usual for all performance work. I profiled the `commit`  command with, [sa
 If you notice closely, >90% of the time was being spent just getting the lock on the staging RocksDB. This was because all our parallel workers are graduating the files from staged to committed by creating the respective nodes for the directories and creating a complete view of the repository at that commit.
 
 
-but because we have this data (file name, etc.) passed back and forth between different layers in the code. we were doing lots of `.clone()` and `db.open()` at different layers to fetch the same data. The interesting part for me was that, this change *reduced our* 
-
+but because we have this data (file name, etc.) passed back and forth between different layers in the code. we were doing lots of `.clone()` and `db.open()` at different layers to fetch the same data. The interesting part for me was that, this change removed code instead of adding.
 
 The final [PR](https://github.com/Oxen-AI/Oxen/pull/127/changes) looked like this to improve performance by 20X
 
