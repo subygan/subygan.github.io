@@ -17,7 +17,7 @@ I was noting that our add times were pretty quick. ~1 minute for 1M files. But, 
 
 As is usual for all performance work. I profiled the `commit`  command with, [samply](https://github.com/mstange/samply) which is a wildly convenient tool to profile binaries and view it on a nice UI.
 
-![Oxen commit perf](/assets/image/oxen-commit.png)
+![Oxen commit perf](/assets/images/oxen-commit.png)
 
 If you notice closely, >90% of the time was being spent just getting the lock on the staging RocksDB. This was because all our parallel workers are graduating the files from staged to committed by creating the entries in the nodes.
 
@@ -27,7 +27,7 @@ but because we have this data (file name, etc.) passed back and forth between di
 
 The final [PR](https://github.com/Oxen-AI/Oxen/pull/127/changes) looked like this to improve performance by 20X
 
-![Oxen commit perf](/assets/image/oxen-commit-diff.png)
+![Oxen commit perf](/assets/images/oxen-commit-diff.png)
 
 With performance sensitive application. Often less is more and simple is better.
 
@@ -35,7 +35,7 @@ With performance sensitive application. Often less is more and simple is better.
 I often think about this [quote from Fabien](https://x.com/rygorous/status/1271296834439282690).
 
 
-![Fabien performance quote](/assets/image/fabien-performance.png)
+![Fabien performance quote](/assets/images/fabien-performance.png)
 
 
 In this case, it was true. In good software engineering fashion, all our layers had clear separation of concerns. Which lead to repeated context retrieval for each thread / async operation leading to thread contention for the same resource. Personally this was a lesson for me on thinking about the Design and impact of the whole system even when adding a seemingly isolated feature.
