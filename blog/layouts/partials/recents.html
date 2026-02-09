@@ -1,5 +1,5 @@
 
-{{ $sortedPages := sort .everything.Site.Pages "PublishDate" "desc" }}
+{{ $sortedPages := sort .everything.Site.RegularPages "PublishDate" "desc" }}
 {{ $sortedPages := first .count $sortedPages }}
 
 <div class="recent-posts-list">
