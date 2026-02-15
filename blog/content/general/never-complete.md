@@ -1,7 +1,7 @@
 ---
 emoji: ⏱️
 title: sweating the details
-description: Why Creation is difficult or why giving a shit about something is painful. and yet why you should.
+description: Why Creation is difficult or why giving a about something is painful. and yet why you should.
 date: 2025-06-15
 layout: base
 tags: ["philosophy"]

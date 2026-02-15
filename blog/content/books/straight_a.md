@@ -12,7 +12,7 @@ Also, this book is heavily biased towards too well-rounded, smart students and i
 
 >  If the questionnaire revealed the student to be a grind— someone who earns high grades simply by studying an excessive amount—I discarded the responses.
 
-I agree there is some sort of optimality that can be extended by structuring and routinizing work. But, Waving it as a magic solution, while also shitting on other authors and students is just not nice.
+I agree there is some sort of optimality that can be extended by structuring and routinizing work. But, Waving it as a magic solution, while also making fun of other authors and students is just not nice.
 
 That being said, I liked the idea behind __pseudo work__. As a heavy pseudo-worker, who sits in front of my laptop for extended hours, contemplating life and other such trivia, instead of getting the work at hand done, the words felt very true and as I often do, I painfully rediscovered my abysmal work-efficiency.
 

@@ -52,7 +52,7 @@ Inspiration comes from many places. I love jotting them down here.
 - 100 years ago today
   - Wouldn't it be interesting to read a newspaper 100 years ago today.
 - Menu -> Images
-  - The menucard in hotels are shitty and I am having to google every single thing when I come up with a new cuisine. I would love to go from menu card to image with ingredients and other details.
+  - The menucard in hotels are bad and I am having to google every single thing when I come up with a new cuisine. I would love to go from menu card to image with ingredients and other details.
 
 - [15/08/24, 17:48:15] friend - Cmu: I think the notion AI is still not what people need
   [15/08/24, 17:49:21] friend - Cmu: It's a tool that you could talk with, no problem. But lots of the time user still want to read the original notes

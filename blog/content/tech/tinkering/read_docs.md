@@ -1,7 +1,7 @@
 ---
 emoji: 📖
 title: read the docs
-description: Read. The. Fucking. Docs.
+description: Read. The. Docs.
 date: 2024-07-23
 layout: base
 tags: ["tech", "programming"]

@@ -34,7 +34,7 @@ Finding a problem is easy enough, but finding the right problem is a trickster, 
 The trick about rolling your sleeves and going to solve the problem is that it is an incredibly sisyphean task with little in return at least in the short run. 
 Before going into solving the problem, enough time needs to be spent understanding what the unknowns are, what your pain tolerance is and what you are willing to give up to solve this problem.
 
-Its not only about the pain tolerance it is also about the amount of shit shoveling you need to do to get where you want to be.
+Its not only about the pain tolerance it is also about the amount of shoveling you need to do to get where you want to be.
 
 the counter side of it is that, pushing for something with no end in sight is a real way to be masochistic and totally screw up your life.
 

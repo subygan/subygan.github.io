@@ -10,7 +10,7 @@ tags: ["essay", "startups", "building"]
  
 I've been involved with tech startups for the last 5 years. And every moment of my time I believe I've done very meaningful work.
 
-I attribute most of my love for startups because typically a startup is non-corporatized. There are (usually) no bullshit job, red tapes or corporate fences that people who like playing political games put up.
+I attribute most of my love for startups because typically a startup is non-corporatized. There are (usually) no job, red tapes or corporate fences that people who like playing political games put up.
 
 With a startup there is a hypothesis and we are marching along that general direction to see if there is any value in that direction the team members are very aligned and are trying to get stuff done fast.
 

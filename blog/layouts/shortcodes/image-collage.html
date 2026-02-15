@@ -1,0 +1,114 @@
+{{/* layouts/shortcodes/image-collage.html */}}
+{{ $size := .Get "size" | default "500px" }}
+{{ $cols := .Get "cols" | default "3" }}
+
+{{ $collageHTML := "" }}
+{{ $collageHTML = printf "%s<div class='image-collage' style='max-width: %s; column-count: %s;'>" $collageHTML $size $cols }}
+
+{{ $lines := split .Inner "\n" }}
+{{ range $lines }}
+  {{ $img := strings.TrimSpace . }}
+  {{ if ne $img "" }}
+    {{ $imgSrc := $img }}
+
+    {{ if hasPrefix $img "/assets/" }}
+      {{ $resource := resources.Get (strings.TrimPrefix "/assets/" $img) }}
+      {{ if $resource }}
+        {{ $imgSrc = $resource.RelPermalink }}
+      {{ else }}
+        {{ $imgSrc = printf "%s" $img }}
+      {{ end }}
+    {{ else if not (hasPrefix $img "http") }}
+      {{/* relative path - resolved by browser */}}
+    {{ end }}
+
+    {{ $collageHTML = printf "%s<div class='collage-item'><img src='%s' alt='Collage Image' loading='lazy'></div>" $collageHTML $imgSrc }}
+  {{ end }}
+{{ end }}
+
+{{ $collageHTML = printf "%s</div>" $collageHTML }}
+
+<!-- Lightbox modal -->
+{{ $collageHTML = printf "%s<div class='collage-lightbox' onclick='this.classList.remove(\"active\")'><img src='' alt='Full size'><span class='collage-lightbox-close'>&times;</span></div>" $collageHTML }}
+
+{{ $collageHTML | safeHTML }}
+
+<style>
+    .image-collage {
+        overflow: hidden;
+        aspect-ratio: 1;
+        column-gap: 6px;
+        margin: 0.5rem auto;
+        border-radius: 8px;
+    }
+
+    .collage-item {
+        break-inside: avoid;
+        margin-bottom: 6px;
+    }
+
+    .collage-item img {
+        width: 100%;
+        display: block;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: opacity 0.2s ease;
+    }
+
+    .collage-item img:hover {
+        opacity: 0.85;
+    }
+
+    .collage-lightbox {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .collage-lightbox.active {
+        display: flex;
+    }
+
+    .collage-lightbox img {
+        max-width: 90vw;
+        max-height: 90vh;
+        object-fit: contain;
+        border-radius: 4px;
+    }
+
+    .collage-lightbox-close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const lightbox = document.querySelector('.collage-lightbox');
+        const lightboxImg = lightbox ? lightbox.querySelector('img') : null;
+
+        document.querySelectorAll('.collage-item img').forEach(img => {
+            img.addEventListener('click', () => {
+                if (lightbox && lightboxImg) {
+                    lightboxImg.src = img.src;
+                    lightbox.classList.add('active');
+                }
+            });
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox) {
+                lightbox.classList.remove('active');
+            }
+        });
+    });
+</script>
