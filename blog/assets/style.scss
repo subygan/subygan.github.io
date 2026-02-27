@@ -835,6 +835,13 @@ html.dark-mode .navbar {
   font-family: var(--font-ui);
 }
 
+.location-icon {
+  width: 0.9em;
+  height: 0.9em;
+  vertical-align: -0.1em;
+  margin-right: 0.2em;
+}
+
 // Footer
 .page-footer {
   grid-column: 1 / -1;

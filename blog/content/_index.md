@@ -11,7 +11,7 @@ hi, i'm surya. (I publish under my full name, suriya ganesh ayyamperumal).
 
 i'm an Engineer, who loves to write. suffice to say, i write here when i'm trying to think through something or when i've solved something.
 
-i'm currently working
+i'm currently working at oxen.ai on lightning fast version control and model finetuning
 
 i enjoy meeting new people. so definitely send a shout-out to me at, hi at suriya.cc. 🙂
 

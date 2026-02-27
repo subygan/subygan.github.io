@@ -2,7 +2,7 @@
 title: right around the corner, a story of million possibilities
 emoji: 🎲
 description: Thoughts on Innovation, Economics and Opportunities
-place: CMU TCS hall
+location: CMU TCS hall
 date: 2023-09-21
 layout: base
 tags: ["essay", "tech", "philosophy"]
