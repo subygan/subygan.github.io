@@ -93,7 +93,8 @@ while there are limitations to this implementation. this is a clear sign of thin
 - all the dependencies are locked and the only goal of the agents is to move towards compatibility with the tests. if the dependencies were also being shuffled around by agents it creates more uncertainty.
 
 
-all of these feel obvious in hindsight. but are quite hard to replicate and is only applicable for a very narrow set of software system. because a lot of software, 
+all of these feel obvious in hindsight. but are quite hard to replicate and is only applicable for a very narrow set of software system. because a lot of software problems, 
 
-- does not have such extensive tests.
-- 
+- do not have such extensive tests.
+- it's unclear what shape the problem is and how to start solving it.
+- the agents add slop to an ambiguous problem causing more confusion.
