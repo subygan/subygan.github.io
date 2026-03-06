@@ -89,3 +89,13 @@ git commit -m "Add <filename> to Git LFS"
 ```
 
 
+## to sort branches by created-date
+
+sometimes I lose a branch among all the random things I have locally. this helps when you need to find the latest branch you created.
+
+
+this should've been in the original git imo
+
+```
+git for-each-ref --sort=-authordate
+```

@@ -12,7 +12,8 @@ committed to the directory
 
 ### TODO
 
-- [ ] Newsletter
+- [ ] migrate stuff from thesuriyaganesh.wordpress.com
+- [x] Newsletter
 - [x] back button
 - [x] update ML/AI section
 - [x] Recent articles at the bottom/sides?
