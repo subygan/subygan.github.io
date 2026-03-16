@@ -32,7 +32,7 @@ This is me, every single time I try to finish something.
 The key thing is, it is important to think about life and pursuits as a marathon. The only difference between you and the competition is your ability to refresh and stand up, long after you're tired. This is similar to the ideas behing [default alive](https://paulgraham.com/aord.html), [Antifragile](https://en.wikipedia.org/wiki/Antifragile_(book)), [20 mile march](https://www.jimcollins.com/concepts/twenty-mile-march.html) etc. Before you start, align everything in a way that, stress that comes on your way would reduce your competition and increase your probability of success in the long run. Burning everything in one fell swoop is not a winning strategy as the likelihood of you folding is much higher as time goes on.
 
 
-A good broader strategy is that, when you embark on a journey. Finishing each smaller task in itself should be gratifying. Surviving one more day to face this problem should be gratifying in a way the competition cannot comprehend. Because the ultimate gold is not at some point X. it is in each time you become your better self and 
+A good broader strategy is that, when you embark on a journey. Finishing each smaller task in itself should be gratifying. Surviving one more day to face this problem should be gratifying in a way the competition cannot comprehend. Because the ultimate gold is not at some point X. it is in each time you become your better self and be there for everyone who trusts you
 
 
 I started this essay about priorities. My current belief is, utmost priority in the next few minutes should be to the task at hand and give it my all to finish it. long term priority should be to strengthen yourself and everyone around you.
