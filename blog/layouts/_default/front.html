@@ -4,7 +4,13 @@
 
     <div id='write'  class=''>
         <header>
-            <div class="page-header-icon undefined"><span class="icon">{{ .Params.emoji }}</span></div>
+            <div class="page-header-icon undefined">
+                {{ with .Params.image }}
+                <img class="hero-image" src="{{ . | relURL }}" alt="{{ $.Page.Title }}">
+                {{ else }}
+                <span class="icon">{{ .Params.emoji }}</span>
+                {{ end }}
+            </div>
             <h1 class="page-title">{{ .Page.Title | lower }}</h1>
             <h2>{{ .Page.Description }}</h2>
         </header>

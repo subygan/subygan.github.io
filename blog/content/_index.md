@@ -1,6 +1,6 @@
 ---
 title: suriya
-emoji: 🧑🏻‍💻
+image: /assets/images/surya.png
 layout: front
 description: and his ramblings in the void
 ---

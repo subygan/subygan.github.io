@@ -41,6 +41,7 @@ Inspiration comes from many places. I love jotting them down here.
 
 ## problems i have
 
+- Foss app to send pictures to a widget in someone else's phone
 - LLM x privacy
 - Consumer AI products - character.ai,
 - Automated Browser agent
