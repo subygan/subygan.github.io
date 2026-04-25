@@ -1,9 +1,15 @@
 {{/* layouts/shortcodes/image-collage.html */}}
 {{ $size := .Get "size" | default "500px" }}
 {{ $cols := .Get "cols" | default "3" }}
+{{ $aspect := .Get "aspect" | default "1" }}
+{{ $layout := .Get "layout" | default "column" }}
 
 {{ $collageHTML := "" }}
-{{ $collageHTML = printf "%s<div class='image-collage' style='max-width: %s; column-count: %s;'>" $collageHTML $size $cols }}
+{{ if eq $layout "row" }}
+  {{ $collageHTML = printf "%s<div class='image-collage image-collage-row' style='max-width: %s;'>" $collageHTML $size }}
+{{ else }}
+  {{ $collageHTML = printf "%s<div class='image-collage' style='max-width: %s; column-count: %s; aspect-ratio: %s;'>" $collageHTML $size $cols $aspect }}
+{{ end }}
 
 {{ $lines := split .Inner "\n" }}
 {{ range $lines }}
@@ -36,10 +42,21 @@
 <style>
     .image-collage {
         overflow: hidden;
-        aspect-ratio: 1;
         column-gap: 6px;
         margin: 0.5rem auto;
         border-radius: 8px;
+    }
+
+    .image-collage-row {
+        display: flex;
+        gap: 6px;
+        align-items: flex-start;
+    }
+
+    .image-collage-row .collage-item {
+        flex: 1 1 0;
+        min-width: 0;
+        margin-bottom: 0;
     }
 
     .collage-item {

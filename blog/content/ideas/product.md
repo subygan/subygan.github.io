@@ -13,6 +13,11 @@ Inspiration comes from many places. I love jotting them down here.
 ### small app ideas
 
 - virtual bookshelf where you can showcase your books.
+  - I wonder if this can be self serve. like I can just take a video of a book, convert it into a gaussian cloud and create a virtual library.
+  - Are Gaussian models there, where I can run them client side.
+  - the goal is to get stripe press like aesthetics for books.
+  - I'm not sure about the legality.
+  - It might be easier to have a book shape and attach the front back etc.
 - link storage and recording as a telegram bot or email etc with the ability to show case in a website
 - Something with Audio models such as [fugatto](https://fugatto.github.io/)
   - Isolate tracks
