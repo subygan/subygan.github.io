@@ -178,6 +178,8 @@ DeepMind + EPFL, Nature 2022. An RL policy adjusts 19 magnetic coils **10,000 ti
 
 Also DeepMind, separately (2016 advisory; 2018 autonomous). Sensors → action → reward (less energy). The before/after PUE chart is one of the cleanest "AI made money" graphs ever published.
 
+![DeepMind data center cooling: PUE before/after AI control](/assets/images/RL/data-center.webp)
+
 [The chart →](https://deepmind.google/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-by-40/)
 
 ---
@@ -186,15 +188,16 @@ Also DeepMind, separately (2016 advisory; 2018 autonomous). Sensors → action �
 
 The "AI Clinician" (Komorowski et al., Nature Medicine 2018). 17,000+ ICU admissions. The policy recommended fluid and vasopressor doses; mortality was lowest when human doctors' actions matched the AI's recommendations.
 
-No video. Just a lesson: RL doesn't need a simulator. It can learn a policy from a log of past decisions and outcomes.
 
 [Paper →](https://www.nature.com/articles/s41591-018-0213-5)
 
 ---
 
-## RL agents are clicking around your computer
+## RL agents are clicking around your computer (2025)
 
 OpenAI Operator (Jan 2025), orders groceries, books restaurants, fills out forms. OpenAI says the strategies were *discovered* by RL across thousands of virtual machines, not hand-coded.
+
+![Operator agent navigating a browser](/assets/images/RL/operator.webp)
 
 [Operator hero reel →](https://openai.com/index/introducing-operator/)
 
