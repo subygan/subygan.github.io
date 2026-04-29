@@ -23,7 +23,7 @@ These data center cost a lot to setup. So if someone wanted to just run a small 
 So basically any large computer (called a "host") can simulate many, smaller "machines".
 
 
-creatin one big computer and then simulating smaller computers within it, is more efficient because, you can deliver power very efficiently, you can keep the computers cool even more efficiently. making it 5 - 10 times more efficient than running a separate small computer. It is also cheaper, because big data center buyers can buy the physical components (like wires and chips) for bulk rates.
+creating one big computer and then simulating smaller computers within it, is more efficient because, you can deliver power very efficiently, you can keep the computers cool even more efficiently. making it 5 - 10 times more efficient than running a separate small computer. It is also cheaper, because big data center buyers can buy the physical components (like wires and chips) for bulk rates.
 
 
 ## AWS: 
