@@ -26,6 +26,7 @@ Generally though
 
 - Be comfortable with chaos, there are multiple situations, where everything is crazy, and multiple things are being figured out on the fly.
 - Ownership and Responsibility, Very often we are building and selling with incredible resource constraints. Typically, people working with you will also be handling 10 things that they are new to. In situations like these the expectation is that, you will be handed a problem, and are expected to come back with a solution, more often than not it is outside the area of your expertise. So, "I don't know" / "It's not something I work on" is usually not an excuse. 
+- be able to scope ambiguous product problems. Most times it is unclear what exactly the way forward is, but it is upto you to nail down the MVP solution for the problem.
 
 ### what is something that i learned at startups that i wouldn't have at a larger company ?
 
@@ -38,7 +39,7 @@ Broadly to me there are three reasons major reasons why working at a startup is 
 If you try very hard, Maybe you can cover one of the three in a large conglomerate, But good luck trying to work your way into a position where Research and Development happens through you.
 
 
-I've never worked at a large company, but If I had to guess these are the things that would've happened.
+these are the things that wouldn't have happened.
 
 - I wouldn't expect to have touched upon such a vast surface of the products We've built.
 - It also, wouldn't have been able to talk and interact with the amount of customers that I have.

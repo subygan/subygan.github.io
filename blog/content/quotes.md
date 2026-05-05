@@ -137,3 +137,5 @@ layout: base
 > Your life is ending, 1 minute at a time ― Fight Club
 
 > The never ending now - https://perell.com/essay/never-ending-now/
+
+>The more your self-worth depends on being perceived as advanced, the harder it becomes to do the beginner work that's needed to actually become advanced. - [Justin Skycak](https://x.com/justinskycak/status/2050007291483627534)
