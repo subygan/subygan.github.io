@@ -20,6 +20,19 @@ module:
 staticDir:
   - static
 
+outputFormats:
+  feed:
+    mediaType: application/rss+xml
+    baseName: feed
+    isPlainText: false
+    rel: alternate
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - feed
+
 author:
   name: Suriya Ganesh
 copyright: This work is licensed under a Creative Commons Attribution-ShareAlike 4.0
