@@ -3,3 +3,5 @@ public/*
 **/*.quarto_ipynb
 
 **/*.jupyter_cache/*
+
+_freeze

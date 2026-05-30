@@ -1,11 +1,12 @@
 ---
 emoji: ☁️
 title: Cloud intro
-description: a brief intro to cloud.
+description: an intro to cloud for non-engineers.
 date: 2026-04-28
 layout: base
 tags: ["tech", "cloud"]
 ---
+
 
 ## What is the cloud ?
 
