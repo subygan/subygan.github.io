@@ -70,8 +70,8 @@
       {{ block "main" . }}{{ end }}
     </main>
 
-    <!-- Right TOC (only on article pages) -->
-    {{ if and (eq .Kind "page") (ne .Type "page") }}
+    <!-- Right TOC (article pages + home) -->
+    {{ if or (and (eq .Kind "page") (ne .Type "page")) (eq .Kind "home") }}
       {{ partial "article-toc.html" . }}
     {{ end }}
   </div>

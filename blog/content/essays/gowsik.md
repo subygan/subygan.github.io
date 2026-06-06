@@ -1,7 +1,7 @@
 ---
 emoji: 🧚🏻
-title: life has no answers, but inifinite questions
-description: People we lose to the throes of life.
+title: Gowsik
+description: Most kind guy, who was always lost.
 date: 2025-09-28
 layout: base
 tags: ["essay"]

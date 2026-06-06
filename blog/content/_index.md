@@ -5,25 +5,24 @@ layout: front
 description: and his ramblings in the void
 ---
 
-hi! 👋
+hi, i'm surya 👋
 
-hi, i'm surya. (I publish under my full name, suriya ganesh ayyamperumal).
+i'm an engineer who writes about infra, ML finetuning, and whatever rabbit hole i've fallen into this week. no ai wrote any of this.
 
-i'm an Engineer, who loves to write. suffice to say, i write here when i'm trying to think through something or when i've solved something.
+currently at oxen.ai building lightning-fast version control and model finetuning. i publish under my full name, suriya ganesh ayyamperumal.
 
-i'm currently working at oxen.ai on lightning fast version control and model finetuning
+i like meeting new people — say hi at hi at suriya.cc 🙂
 
-i enjoy meeting new people. so definitely send a shout-out to me at, hi at suriya.cc. 🙂
 
-📚  [books that I've read/reading](/books)
+## the usual
 
-🚪 [Privacy Things](privacy)
+📚 [books i've read / am reading](/books)
 
-🧑🏻‍🏫 [Readlog](/readlog)
+📜 [essays](/essays)
 
-🛍 [ToDo](/todo)
+🧑🏻‍🏫 [readlog](/readlog)
 
-📜   [essays](/essays)
+🛍 [todo](/todo)
 
 you can find the [table of contents here](/toc)
 
