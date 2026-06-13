@@ -6,14 +6,14 @@ date: 2023-06-03
 layout: base
 ---
 > Failure is seldom Fatal
-> - Winston Churchill 
+> -Winston Churchill 
 
 
 >Faithless is he that says farewell when the road darkens. 
->— J.R.R. Tolkien
+> — J.R.R. Tolkien
 
 >to be is to do
->- Kant
+> -Kant
 
 >the more superficial and unsatisfying our lives become, the faster we need to progress
 > -Wendell Berry
