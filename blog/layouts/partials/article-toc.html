@@ -13,7 +13,7 @@
         {{ $text := strings.TrimSpace $text }}
         {{ if $id }}
         <li class="toc-item toc-h{{ $level }}">
-          <a href="#{{ $id }}">{{ $text }}</a>
+          <a href="#{{ $id }}">{{ $text | safeHTML }}</a>
         </li>
         {{ end }}
       {{ end }}
