@@ -868,6 +868,32 @@ header:has(.hero-image) {
 }
 
 // Footer
+.page-quote {
+  margin-top: 5rem;
+  padding-top: 2.5rem;
+  border-top: 1px dashed var(--border-color);
+
+  &__label {
+    display: block;
+    margin-bottom: 1rem;
+    font-family: var(--font-ui);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    opacity: 0.7;
+  }
+
+  blockquote {
+    margin: 0;
+    background-color: transparent;
+    border-left: none;
+    padding: 0;
+    font-size: 0.95rem;
+    opacity: 0.85;
+  }
+}
+
 .page-footer {
   grid-column: 1 / -1;
   padding: 3rem 2rem;

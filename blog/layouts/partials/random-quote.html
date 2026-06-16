@@ -1,0 +1,30 @@
+{{- /* Renders a random quote sourced from content/quotes.md.
+       Picks one server-side (works without JS) and reshuffles client-side on each load.
+       Skipped on the quotes page itself. */ -}}
+{{- $quotesPage := .Site.GetPage "/quotes" -}}
+{{- if and $quotesPage (ne .RelPermalink $quotesPage.RelPermalink) -}}
+  {{- $raw := replace $quotesPage.RawContent "\r\n" "\n" -}}
+  {{- $quotes := slice -}}
+  {{- range split $raw "\n\n" -}}
+    {{- $block := trim . " \n\t" -}}
+    {{- if and (ne $block "") (hasPrefix $block ">") -}}
+      {{- $quotes = $quotes | append ($block | markdownify) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if gt (len $quotes) 0 -}}
+    {{- $default := index (shuffle $quotes) 0 -}}
+    <div class="page-quote">
+      <span class="page-quote__label">a quote i like</span>
+      <div class="page-quote__content" id="page-quote">{{ $default }}</div>
+    </div>
+    <script>
+      (function () {
+        var quotes = {{ $quotes | jsonify | safeJS }};
+        var el = document.getElementById("page-quote");
+        if (el && quotes.length) {
+          el.innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
+        }
+      })();
+    </script>
+  {{- end -}}
+{{- end -}}
