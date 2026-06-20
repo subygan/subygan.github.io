@@ -1099,3 +1099,56 @@ header:has(.hero-image) {
     }
   }
 }
+
+// =====================================
+// Footnote hover popups (Gwern-style)
+// =====================================
+
+// The footnote reference markers in the prose: hint that they're hoverable.
+#write a.footnote-ref {
+  cursor: help;
+  text-decoration: none;
+}
+
+// The floating card. Always in the layout (so JS can measure it), but
+// invisible and click-through until shown.
+.fn-popup {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  max-width: #{"min(380px, calc(100vw - 24px))"};
+  padding: 0.75rem 1rem;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: left;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-fast);
+
+  &.fn-popup--visible {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  p {
+    margin: 0 0 0.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    color: var(--accent-color);
+  }
+}
+

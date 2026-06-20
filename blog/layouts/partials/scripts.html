@@ -1,0 +1,130 @@
+{{- /*
+  Footnote hover popups (Gwern-style).
+
+  Turns native Goldmark footnotes into hover-cards on desktop and tap-to-pin
+  cards on touch devices. Reads content straight from the rendered footnote
+  <li>, so the markdown is unchanged: just keep writing `text[^id]` + `[^id]: …`.
+
+  Degrades gracefully: with JS off (or on failure) the footnote refs remain
+  normal in-page anchor links that jump to the notes at the bottom.
+*/ -}}
+<script>
+(function () {
+  function init() {
+    var root = document.getElementById('write');
+    if (!root) return;
+    var refs = root.querySelectorAll('a.footnote-ref');
+    if (!refs.length) return;
+
+    // Single shared popup element, reused for every footnote.
+    var popup = document.createElement('div');
+    popup.className = 'fn-popup';
+    popup.setAttribute('role', 'tooltip');
+    document.body.appendChild(popup);
+
+    var hideTimer = null;
+    var pinned = false;        // true while a tap/click is holding the card open
+    var activeRef = null;
+
+    function noteHTML(ref) {
+      var href = ref.getAttribute('href') || '';      // "#fn:1"
+      if (href.charAt(0) !== '#') return null;
+      var note = document.getElementById(href.slice(1));
+      if (!note) return null;
+      // Clone so we can strip the back-reference arrow without touching the page.
+      var clone = note.cloneNode(true);
+      clone.querySelectorAll('.footnote-backref').forEach(function (b) { b.remove(); });
+      return clone.innerHTML.trim();
+    }
+
+    function place(ref) {
+      var r = ref.getBoundingClientRect();
+      var margin = 12;
+      // visibility:hidden still yields real dimensions, so we can measure now.
+      var pw = popup.offsetWidth;
+      var ph = popup.offsetHeight;
+
+      var left = r.left + r.width / 2 - pw / 2;
+      left = Math.max(margin, Math.min(left, window.innerWidth - pw - margin));
+
+      var top;
+      if (r.top > ph + margin) {
+        top = r.top - ph - 8;          // above the ref when there's room
+      } else {
+        top = r.bottom + 8;            // otherwise below
+      }
+      top = Math.max(margin, top);
+
+      popup.style.left = Math.round(left) + 'px';
+      popup.style.top = Math.round(top) + 'px';
+    }
+
+    function show(ref) {
+      var html = noteHTML(ref);
+      if (!html) return;
+      popup.innerHTML = html;
+      activeRef = ref;
+      place(ref);
+      popup.classList.add('fn-popup--visible');
+    }
+
+    function hide() {
+      popup.classList.remove('fn-popup--visible');
+      activeRef = null;
+      pinned = false;
+    }
+
+    function scheduleHide() {
+      if (pinned) return;
+      clearTimeout(hideTimer);
+      hideTimer = setTimeout(hide, 180); // grace period to move into the popup
+    }
+
+    function cancelHide() {
+      clearTimeout(hideTimer);
+    }
+
+    refs.forEach(function (ref) {
+      ref.addEventListener('mouseenter', function () {
+        cancelHide();
+        if (!pinned) show(ref);
+      });
+      ref.addEventListener('mouseleave', scheduleHide);
+
+      // Click / tap: pin the card open (and don't jump to the bottom of the page).
+      ref.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (pinned && activeRef === ref) {
+          hide();
+        } else {
+          pinned = false;
+          show(ref);
+          pinned = true;
+        }
+      });
+    });
+
+    // Keep the card open while the pointer is inside it.
+    popup.addEventListener('mouseenter', cancelHide);
+    popup.addEventListener('mouseleave', scheduleHide);
+
+    // Dismiss a pinned card on outside click or Escape.
+    document.addEventListener('click', function (e) {
+      if (!pinned) return;
+      if (popup.contains(e.target)) return;
+      if (e.target.closest && e.target.closest('a.footnote-ref')) return;
+      hide();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') hide();
+    });
+    window.addEventListener('scroll', function () { if (!pinned) hide(); }, { passive: true });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
