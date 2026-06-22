@@ -16,7 +16,7 @@ Villages are actually filled with narrow-minded, parochial people, completely ob
 It surprises many when I say that untouchability is a real thing that is still being followed to this day. But, the harsh reality is that they are. I’ve known fights because a lower caste person sat near a higher caste one. I’ve been advised against getting too friendly with lower caste people. I’ve been enquired what caste I am, either in a bluntly straightforward fashion, indirectly or behind my back.
 
 
-Even though it hurts me to acknowledge this, even my family follows at least some form of this abomination. The sad part is that people due to their low knowledge of anything beyond their village, tend to assume that it is the truth and reality and go with it. The people from lower communities accept the oppression from the higher class and their lives are bent since their birth.
+The sad part is that people due to their low knowledge of anything beyond their village, tend to assume that it is the truth and reality and go with it. The people from lower communities accept the oppression from the higher class and their lives are bent since their birth.
 
 
 On the other hand, people of upper classes of society get immense pleasure in boasting their castes and take pride over it. They are taught to do so from their childhood and they live in the reality that lower caste people should be kept in check. They actually believe that lower caste people are trash and treat them as such.

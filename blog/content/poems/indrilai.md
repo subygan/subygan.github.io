@@ -33,3 +33,5 @@ It talks about the importance of persistence and untiring efforts.
 
 This poem has been a huge inspiration in my life to not give up when things gets rough and I'm down.
 There's a sense of joy in the feeling that there's no rest until the outcome is fruitful
+
+I've been trying hard to find a hard or soft copy of the original poem collection. If you have some idea, please reach out.
