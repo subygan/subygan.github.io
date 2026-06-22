@@ -2,7 +2,8 @@
 emoji: 🌏
 title: Memetic transfer
 description: The ecosystem of information exchange.
-date: 2026-06-21
+date: 2026-06-22
+draft: true
 layout: base
 tags: ["essay", "writing"]
 ---
