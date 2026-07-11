@@ -140,8 +140,6 @@ in a very optimistically nihilistic way, what you do won't matter anyway. but at
 
 
 
-
-
 [^1]: My grandfather was a coffee farmer / merchant
 
 
