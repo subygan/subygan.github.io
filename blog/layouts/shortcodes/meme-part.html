@@ -1,0 +1,147 @@
+{{/* shortcodes/meme-part.html — render one piece of the memetic engine, themed to the blog.
+     usage: {{< meme-part boundary >}}   ·   hide label: {{< meme-part meme caption=off >}}
+     parts: meme host bubble network attention boundary carrier medium speed fidelity assembled */}}
+{{- $part := trim (.Get 0) " " -}}
+{{- $showcap := ne (.Get "caption") "off" -}}
+
+{{- if not (.Page.Store.Get "memeEngineCSS") -}}
+  {{- partial "meme-engine-style.html" . -}}
+  {{- .Page.Store.Set "memeEngineCSS" true -}}
+{{- end -}}
+
+{{- $meta := dict
+  "meme"      (dict "no" "01" "label" "meme"                  "dot" "var(--signal)")
+  "host"      (dict "no" "02" "label" "host"                  "dot" "var(--struct)")
+  "bubble"    (dict "no" "03" "label" "bubble"                "dot" "var(--struct)")
+  "network"   (dict "no" "04" "label" "network of bubbles"    "dot" "var(--struct)")
+  "attention" (dict "no" "05" "label" "attention"             "dot" "var(--signal)")
+  "boundary"  (dict "no" "06" "label" "boundary"              "dot" "var(--signal)")
+  "carrier"   (dict "no" "07" "label" "carrier"               "dot" "var(--struct)")
+  "medium"    (dict "no" "08" "label" "medium"                "dot" "var(--signal)")
+  "speed"     (dict "no" "09" "label" "speed of transmission" "dot" "var(--signal)")
+  "fidelity"  (dict "no" "10" "label" "fidelity"              "dot" "var(--drift)")
+  "assembled" (dict "no" "—"  "label" "one meme's journey"    "dot" "var(--signal)")
+-}}
+{{- $m := index $meta $part -}}
+{{- if not $m -}}
+  {{- errorf "meme-part: unknown piece %q (page %s). valid: meme host bubble network attention boundary carrier medium speed fidelity assembled" $part .Page.File.Path -}}
+{{- end -}}
+
+<figure class="meme-engine meme-part{{ if eq $part "assembled" }} me-wide{{ end }}">
+  <div class="me-frame"><span class="me-catno">{{ $m.no }}</span>
+  {{- if eq $part "assembled" }}<div class="me-scroll">{{ end -}}
+
+  {{- if eq $part "meme" -}}
+    <svg viewBox="0 0 240 150" aria-label="a single meme radiating outward">
+      <g transform="translate(120,74)"><path class="mem" d="M0,-22 L15,0 L0,22 L-15,0 Z"/></g>
+      <g stroke="var(--signal)" stroke-width="1.6" opacity=".5"><line x1="120" y1="40" x2="120" y2="26"/><line x1="120" y1="108" x2="120" y2="122"/><line x1="150" y1="74" x2="166" y2="74"/><line x1="90" y1="74" x2="74" y2="74"/></g>
+    </svg>
+  {{- else if eq $part "host" -}}
+    <svg viewBox="0 0 240 150" aria-label="a host carrying a meme beside an empty extinct host">
+      <circle class="host" cx="78" cy="75" r="34"/><path class="mem" d="M78,60 L88,75 L78,90 L68,75 Z"/>
+      <circle class="host-dead" cx="170" cy="75" r="32"/>
+      <line class="lead-soft" x1="156" y1="61" x2="184" y2="89"/><line class="lead-soft" x1="184" y1="61" x2="156" y2="89"/>
+      <text x="78" y="128" text-anchor="middle" class="glab">alive</text><text x="170" y="128" text-anchor="middle" class="glab">extinct</text>
+    </svg>
+  {{- else if eq $part "bubble" -}}
+    <svg viewBox="0 0 240 150" aria-label="a membrane enclosing several hosts, some carrying memes">
+      <ellipse class="memb" cx="120" cy="75" rx="98" ry="56"/>
+      <circle class="host" cx="78" cy="58" r="13"/><path class="mem" d="M78,51 L83,58 L78,65 L73,58 Z"/>
+      <circle class="host" cx="135" cy="50" r="13"/><path class="mem" d="M135,43 L140,50 L135,57 L130,50 Z"/>
+      <circle class="host" cx="160" cy="92" r="13"/><path class="mem" d="M160,85 L165,92 L160,99 L155,92 Z"/>
+      <circle class="host-dead" cx="95" cy="100" r="12"/><circle class="host-dead" cx="120" cy="86" r="11"/>
+    </svg>
+  {{- else if eq $part "network" -}}
+    <svg viewBox="0 0 240 150" aria-label="three overlapping bubbles forming a network">
+      <ellipse class="memb" cx="86" cy="68" rx="56" ry="44"/><ellipse class="memb" cx="156" cy="62" rx="52" ry="42"/><ellipse class="memb" cx="124" cy="106" rx="50" ry="34"/>
+      <path class="mem" d="M70,58 L75,64 L70,70 L65,64 Z"/><path class="mem" d="M92,50 L97,56 L92,62 L87,56 Z"/><path class="mem" d="M78,80 L82,85 L78,90 L74,85 Z"/>
+      <circle class="host-dead" cx="168" cy="56" r="8"/><circle class="host-dead" cx="132" cy="110" r="8"/>
+      <text x="120" y="142" text-anchor="middle" class="glab-i">memes pool, then seep through overlaps</text>
+    </svg>
+  {{- else if eq $part "attention" -}}
+    <svg viewBox="0 0 240 150" aria-label="many memes compete for a host with only three attention slots">
+      <rect x="150" y="40" width="74" height="74" rx="6" class="host"/><text x="187" y="34" text-anchor="middle" class="glab">3 slots</text>
+      <rect x="162" y="54" width="14" height="14" rx="2" fill="var(--signal-soft)" stroke="var(--struct)"/><path class="mem" d="M169,57 l4,4 l-4,4 l-4,-4 Z"/>
+      <rect x="184" y="54" width="14" height="14" rx="2" fill="var(--signal-soft)" stroke="var(--struct)"/><path class="mem" d="M191,57 l4,4 l-4,4 l-4,-4 Z"/>
+      <rect x="173" y="84" width="14" height="14" rx="2" fill="var(--signal-soft)" stroke="var(--struct)"/><path class="mem" d="M180,87 l4,4 l-4,4 l-4,-4 Z"/>
+      <path class="mem" d="M30,52 L37,59 L30,66 L23,59 Z"/><path class="mem" d="M30,84 L37,91 L30,98 L23,91 Z"/><path class="mem-d" d="M30,116 L36,122 L30,128 L24,122 Z"/>
+      <g class="lead-soft"><path d="M42,59 q40,-2 100,-7" marker-end="url(#mp-at)"/><path d="M42,91 q30,0 122,4" marker-end="url(#mp-at)"/><path d="M42,118 q26,6 40,18" stroke="var(--decay)"/></g>
+      <text x="62" y="142" class="glab">rejected ↘</text>
+      <defs><marker id="mp-at" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--me-line-bold)"/></marker></defs>
+    </svg>
+  {{- else if eq $part "boundary" -}}
+    <svg viewBox="0 0 240 150" aria-label="a boundary membrane filtering memes; one passes, two are rejected">
+      <line x1="120" y1="14" x2="120" y2="136" stroke="var(--struct)" stroke-width="2" stroke-dasharray="6 5"/>
+      <text x="58" y="22" text-anchor="middle" class="glab">bubble a</text><text x="182" y="22" text-anchor="middle" class="glab">bubble b</text>
+      <path class="mem" d="M44,52 L52,62 L44,72 L36,62 Z"/><path class="lead" d="M56,62 H112" marker-end="url(#mp-bd)"/>
+      <path class="mem" d="M150,62 L156,68 L150,74 L144,68 Z" opacity=".95"/>
+      <path class="mem" d="M44,100 L52,110 L44,120 L36,110 Z"/><path class="lead" d="M56,110 H108"/><path class="lead" d="M108,110 q14,-8 4,-22" marker-end="url(#mp-bd)"/>
+      <path class="mem-d" d="M120,84 l5,5 l-5,5 l-5,-5 Z"/><path class="mem-d" d="M150,108 l4,4 l-4,4 l-4,-4 Z"/>
+      <defs><marker id="mp-bd" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--me-ink)"/></marker></defs>
+    </svg>
+  {{- else if eq $part "carrier" -}}
+    <svg viewBox="0 0 240 150" aria-label="a carrier host straddling two bubbles moves a meme across">
+      <ellipse class="memb" cx="74" cy="75" rx="62" ry="50"/><ellipse class="memb" cx="166" cy="75" rx="62" ry="50"/>
+      <circle class="host" cx="48" cy="72" r="11"/><path class="mem" d="M48,66 L52,72 L48,78 L44,72 Z"/>
+      <circle class="host-hot" cx="120" cy="75" r="18"/><path class="mem" d="M120,67 L126,75 L120,83 L114,75 Z"/>
+      <path class="lead" d="M62,73 H100" marker-end="url(#mp-ca)"/><path class="lead" d="M140,75 H176" marker-end="url(#mp-ca)"/>
+      <circle class="host-dead" cx="192" cy="74" r="10"/><text x="120" y="116" text-anchor="middle" class="glab">carrier</text>
+      <defs><marker id="mp-ca" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--me-ink)"/></marker></defs>
+    </svg>
+  {{- else if eq $part "medium" -}}
+    <svg viewBox="0 0 240 150" aria-label="a meme forced through a narrow aperture and cropped">
+      <path class="mem" d="M52,75 L70,55 L88,75 L70,95 Z"/>
+      <path class="lead" d="M118,40 L138,68 L138,82 L118,110"/><path class="lead" d="M170,40 L150,68 L150,82 L170,110"/>
+      <rect x="138" y="68" width="12" height="14" fill="var(--struct-soft)" stroke="var(--struct)" stroke-width="1.2"/>
+      <path class="lead-soft" d="M92,75 H134" marker-end="url(#mp-me)"/>
+      <path class="mem" d="M188,75 L196,68 L196,82 Z"/><path class="lead-soft" d="M156,75 H184" marker-end="url(#mp-me)"/>
+      <text x="144" y="128" text-anchor="middle" class="glab">surprisal capped</text>
+      <defs><marker id="mp-me" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--me-line-bold)"/></marker></defs>
+    </svg>
+  {{- else if eq $part "speed" -}}
+    <svg viewBox="0 0 240 150" aria-label="a meme moving fast, with a novelty gauge">
+      <path class="lead-soft" d="M30,60 H196" marker-end="url(#mp-sp)"/>
+      <path class="mem" d="M150,60 L162,48 L174,60 L162,72 Z"/>
+      <g stroke="var(--signal)" stroke-width="1.5" opacity=".5"><line x1="120" y1="55" x2="138" y2="55"/><line x1="112" y1="60" x2="132" y2="60"/><line x1="120" y1="65" x2="138" y2="65"/></g>
+      <text x="30" y="98" class="glab">novelty (surprisal)</text>
+      <rect x="30" y="104" width="166" height="12" rx="2" fill="none" stroke="var(--me-line-bold)"/>
+      <rect x="30" y="104" width="166" height="12" rx="2" fill="url(#mp-nov)"/>
+      <line x1="170" y1="100" x2="170" y2="120" stroke="var(--me-ink)" stroke-width="1.6"/>
+      <text x="30" y="134" class="glab">low → fizzles</text><text x="196" y="134" text-anchor="end" class="glab">high → travels</text>
+      <defs><linearGradient id="mp-nov" x1="0" x2="1"><stop offset="0" stop-color="var(--decay)"/><stop offset="1" stop-color="var(--signal)"/></linearGradient>
+        <marker id="mp-sp" markerWidth="8" markerHeight="8" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="var(--me-line-bold)"/></marker></defs>
+    </svg>
+  {{- else if eq $part "fidelity" -}}
+    <svg viewBox="0 0 240 150" aria-label="a meme passed hop to hop, drifting and fading on every hop">
+      <circle class="host" cx="38" cy="70" r="15"/><path class="mem" d="M38,62 L45,70 L38,78 L31,70 Z"/>
+      <circle class="host" cx="98" cy="70" r="15"/><path class="mem-g" d="M98,63 L104,70 L98,77 L92,70 Z"/>
+      <circle class="host" cx="158" cy="70" r="15"/><path class="mem-t" d="M158,64 L163,70 L157,77 L153,69 Z"/>
+      <circle class="host" cx="210" cy="70" r="15"/><path class="mem-d" d="M210,65 l6,5 l-7,6 l-4,-6 Z"/>
+      <g class="lead-soft" stroke-dasharray="3 3"><path d="M55,70 H81" marker-end="url(#mp-fi)"/><path d="M115,70 H141" marker-end="url(#mp-fi)"/><path d="M175,70 H193" marker-end="url(#mp-fi)"/></g>
+      <text x="124" y="116" text-anchor="middle" class="glab-i">the telephone game</text>
+      <defs><marker id="mp-fi" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--me-line-bold)"/></marker></defs>
+    </svg>
+  {{- else if eq $part "assembled" -}}
+    <svg viewBox="0 0 740 230" aria-label="a meme travelling from a source bubble through a carrier, boundary and medium into a destination bubble">
+      <ellipse class="memb" cx="92" cy="115" rx="80" ry="74"/><text x="92" y="34" text-anchor="middle" class="glab">source bubble</text>
+      <circle class="host" cx="58" cy="96" r="12"/><path class="mem" d="M58,90 L63,96 L58,102 L53,96 Z"/>
+      <circle class="host" cx="92" cy="142" r="12"/><path class="mem" d="M92,136 L97,142 L92,148 L87,142 Z"/>
+      <circle class="host-hot" cx="210" cy="115" r="20"/><path class="mem" d="M210,106 L217,115 L210,124 L203,115 Z"/><text x="210" y="156" text-anchor="middle" class="glab">carrier</text>
+      <line x1="318" y1="46" x2="318" y2="184" stroke="var(--struct)" stroke-width="2" stroke-dasharray="6 5"/><text x="318" y="34" text-anchor="middle" class="glab">boundary</text>
+      <path class="lead" d="M408,70 L432,108 L432,122 L408,160"/><path class="lead" d="M470,70 L446,108 L446,122 L470,160"/><text x="439" y="34" text-anchor="middle" class="glab">medium</text>
+      <ellipse class="memb" cx="650" cy="115" rx="80" ry="74"/><text x="650" y="34" text-anchor="middle" class="glab">destination bubble</text>
+      <circle class="host" cx="660" cy="150" r="12"/><circle class="host-dead" cx="624" cy="92" r="11"/>
+      <path class="lead-soft" d="M118,115 H214" marker-end="url(#mp-as)"/><path class="lead-soft" d="M232,115 H312" marker-end="url(#mp-as)"/><path class="lead-soft" d="M324,115 H404" marker-end="url(#mp-as)"/><path class="lead-soft" d="M474,115 H636" marker-end="url(#mp-as)"/>
+      <path class="mem-t" d="M150,150 L156,156 L150,162 L144,156 Z"/><path class="mem-t" d="M180,150 L186,156 L180,162 L174,156 Z"/>
+      <g transform="translate(370,115)"><path class="mem-g" d="M0,-9 L7,0 L0,9 L-7,0 Z"/></g>
+      <text x="370" y="212" text-anchor="middle" class="glab-i">a meme fades as it is rebuilt on the far side</text>
+      <defs><marker id="mp-as" markerWidth="8" markerHeight="8" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="var(--me-line-bold)"/></marker></defs>
+    </svg>
+  {{- end -}}
+
+  {{- if eq $part "assembled" }}</div>{{ end -}}
+  </div>
+  {{- if $showcap }}
+  <figcaption class="me-partcap"><span class="dot" style="background:{{ $m.dot }}"></span>{{ $m.label }}</figcaption>
+  {{- end }}
+</figure>

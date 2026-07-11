@@ -1,5 +1,5 @@
 ---
-title: suriya
+title: surya
 image: /assets/images/surya.png
 layout: front
 description: and his ramblings in the void
@@ -13,15 +13,15 @@ I write all my blogs by hand.
 
 currently at oxen.ai building lightning-fast version control and model finetuning. i publish under my full name, suriya ganesh ayyamperumal.
 
-i like meeting new people — say hi at hi at suriya.cc 🙂
+i like meeting new people — say hi at suriyaganesh097 at gmail.com 🙂
 
 
 
 
-### 🔥 controversial opinions i have
+### controversial opinions i have
 - __pessimism is defaulting to laziness. optimism is the harder, rarer skill.__
-- __say "no" to more obligations and defend your time.__
 - __you should have enemies.__
+- __say "no" to more obligations and defend your time aggressively.__
 
 ### 🔁 things i changed my mind about
 
@@ -48,11 +48,33 @@ i like meeting new people — say hi at hi at suriya.cc 🙂
 - __employee Analytics for companies to better retain people.__
 
 
-### 🤫 [things nobody told me about software](/)
+### 🤫 things nobody told me about software
 
 - __it is better to copy paste the relevant code__, instead of loading a library / framework for it.
 - __everything is just a text representation of binary data__
-- all protocols are synthetic and __will__ have nuances / bugs
+- all protocols are synthetic and __will__ have nuances / bugs [^new]
+
+
+### ❓ questions i can't stop thinking about
+
+- 
+
+### 📈 overrated / underrated
+- 
+
+### 🕳 rabbit holes i've fell into
+
+### 💸 the best money i ever spent
+
+
+### 🧠 advice i'd give my younger self
+
+- Focus on deep work, commit to a single thing for more than a few months only those matter in the long run
+
+📊 my life in numbers
+
+⏳ what i'd do with 6 months and no rent
+
 
 updated on, Jun, 13 2026
 
@@ -68,3 +90,7 @@ updated on, Jun, 13 2026
 
 you can find the [table of contents here](/toc)
 
+
+[^new]: what is this new thing!!
+can it do a second line?
+is there anything else happening??

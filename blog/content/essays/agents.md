@@ -10,6 +10,14 @@ tags: ["essay", "tech", "software"]
 
 In the past few weeks there have been examples of successful agent usage at a shocking scale. some in production no less.
 
+## [bun](bun.sh)
+
+Jarred Sumner, the super talented founder of Bun. basically rewrote bun in rust in [this PR](https://github.com/oven-sh/bun/pull/30412). It was a `+1,009,257 -4,024` line change PR. that basically worked on all the tests and he merged it.
+
+
+This is crazy because, bun is a super impressive runtime 
+
+
 ## [ladybird](https://ladybird.org/)
 
 after struggling with swift in the browser for a year or so. andreas kling the bdfl for ladybird concluded it was [not worth pursuing swift](https://github.com/LadybirdBrowser/ladybird/issues/933). it was such a rebellious choice at the time for a browser. but ffi in swift needs a ton of working it seems like.

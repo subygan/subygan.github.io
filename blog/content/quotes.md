@@ -5,6 +5,20 @@ description: Quotes that I like
 date: 2023-06-03
 layout: base
 ---
+
+>Angels appear as what you fear, devils appear as what you desire.
+> – Holly Herndon
+
+> कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।
+>
+> मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥ 47 ॥
+>
+> translation:
+>
+> You have a right to perform your duties, but the results of your actions are not your concern. Never consider yourself to be the cause of the results of your activities, nor be attached to inaction.
+>
+> Bhagavad Gita, Chapter 2, Verse 47
+
 > Failure is seldom fatal.
 > ― Winston Churchill
 

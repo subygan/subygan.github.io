@@ -1,0 +1,60 @@
+{{/* partials/meme-engine-style.html — diagram styling mapped onto the blog's own theme tokens
+     (ink = text colour, accent = the meme, grey = dead/noise). dark-mode aware. emitted once per page. */}}
+<style>
+  .meme-engine{
+    --me-ink:var(--text-primary);
+    --me-muted:var(--text-secondary);
+    --me-line:var(--border-color);
+    --me-line-bold:var(--text-secondary);
+    --me-panel:var(--bg-secondary);
+    --me-ground:var(--code-bg);
+    --signal:var(--accent-color);
+    --signal-soft:color-mix(in srgb, var(--accent-color) 16%, transparent);
+    --struct:var(--text-primary);
+    --struct-soft:color-mix(in srgb, var(--text-primary) 8%, transparent);
+    --struct-wash:color-mix(in srgb, var(--text-primary) 6%, transparent);
+    --drift:var(--text-secondary);
+    --decay:var(--text-secondary);
+    color:var(--me-ink);
+  }
+  .meme-engine *{box-sizing:border-box}
+
+  .meme-part{margin:2em auto; max-width:420px}
+  .meme-part .me-frame{
+    background:var(--me-ground);
+    border:1px solid var(--me-line);
+    border-radius:8px;
+    padding:16px 18px;
+    position:relative;
+  }
+  .meme-part .me-frame svg{width:100%; height:auto; display:block; overflow:visible}
+  .meme-part .me-catno{
+    position:absolute; top:9px; right:12px;
+    font-family:var(--font-ui); font-size:.66rem; font-weight:600;
+    letter-spacing:.1em; color:var(--me-muted); opacity:.75;
+  }
+  .meme-part .me-partcap{
+    display:flex; align-items:center; justify-content:center; gap:8px;
+    margin-top:.7rem; font-family:var(--font-ui); font-size:.72rem; font-weight:600;
+    letter-spacing:.08em; text-transform:uppercase; color:var(--me-muted);
+  }
+  .meme-part .me-partcap .dot{width:8px; height:8px; flex:none; border-radius:50%}
+
+  .meme-part.me-wide{max-width:640px}
+  .meme-part .me-scroll{overflow-x:auto}
+  .meme-part .me-scroll svg{min-width:540px}
+
+  /* svg primitives — all colours resolve from the theme tokens above */
+  .meme-engine .mem{fill:var(--signal)}
+  .meme-engine .mem-g{fill:var(--signal); opacity:.5}
+  .meme-engine .mem-t{fill:var(--decay)}
+  .meme-engine .mem-d{fill:var(--decay); opacity:.55}
+  .meme-engine .host{fill:var(--me-panel); stroke:var(--struct); stroke-width:2.2}
+  .meme-engine .host-dead{fill:none; stroke:var(--decay); stroke-width:2; stroke-dasharray:3 4; opacity:.7}
+  .meme-engine .host-hot{fill:var(--struct); stroke:var(--struct); stroke-width:2.2}
+  .meme-engine .memb{fill:var(--struct-wash); stroke:var(--struct); stroke-width:1.4; stroke-dasharray:5 4}
+  .meme-engine .lead{stroke:var(--me-ink); stroke-width:1.6; fill:none}
+  .meme-engine .lead-soft{stroke:var(--me-line-bold); stroke-width:1.4; fill:none; opacity:.7}
+  .meme-engine .glab{font-family:var(--font-ui); font-size:9px; letter-spacing:.04em; fill:var(--me-muted)}
+  .meme-engine .glab-i{font-family:var(--font-body); font-style:italic; font-size:10px; fill:var(--me-muted)}
+</style>
