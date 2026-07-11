@@ -3,7 +3,6 @@ emoji: 🌏
 title: Memetic transfer
 description: The ecosystem of information exchange. and the attention economy.
 date: 2026-06-22
-draft: true
 layout: base
 tags: ["essay", "writing"]
 ---
