@@ -113,7 +113,7 @@ when being a host inside a bubble, whatever the bubble is currently consumed by 
 
 take the metaphorical overnight bus. if you travel far enough your most important problem in the world is unintelligible noise to the new bubble, and theirs never trended at all. my friends back home spent those same years worried about rain and crop prices, and no feed anywhere was on fire about it. importance inside a bubble measures how much attention a meme captured, not how much the problem matters. so when something out of your control feels overwhelmingly important, you should take a break to ask who benefits from you feeling that way, who benefits the most by ragebaiting you into a topic that you weren't interested in the first place? hans rosling has a rule for exactly this in *factfulness*: when someone pressures you to decide *right now*, say no.[^rosling] it is almost never now-or-never, and a decision made under urgency is far more likely to be a bad one, which is precisely why the pressure gets applied. the news cycle runs on the same instinct, everything is breaking, everything is a crisis, act before you think. urgency is not a property of the problem, it is a property of the sales pitch by the attention economy. One of my favorite pastimes back home is to find a newsstand with a newspaper headline that doesn't trigger you or have an exclamation mark "!" in it. I've never managed to find one, ever.
 
-![a typical newsstand in tamilnadu](/essays/meme/newstand.jpg)
+![a typical newsstand in tamilnadu](/essays/meme/newsstand.jpg)
 
 
 

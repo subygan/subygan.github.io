@@ -15,69 +15,6 @@ currently at oxen.ai building lightning-fast version control and model finetunin
 
 i like meeting new people — say hi at suriyaganesh097 at gmail.com 🙂
 
-
-
-
-### controversial opinions i have
-- __pessimism is defaulting to laziness. optimism is the harder, rarer skill.__
-- __you should have enemies.__
-- __say "no" to more obligations and defend your time aggressively.__
-
-### 🔁 things i changed my mind about
-
-- __what Language you speak is important.__
-- __everyone should be running towards a goal or dream all the time__
-- __college Degree actually matters__
-
-### 🤦 stuff i was completely wrong about
-
-- __you'll have to work weekends to win.__
-- __one guy hacking away in the back can build a lasting product.__
-- __building software in Untyped Languages is fine.__
-
-### 🎲 predictions i'm betting on
-- __affordances for agents will be inherently different than affordances for humans.__
-- __probabilistic software systems are going to be the most deployed type of software.__
-- __RL is going to be a very important paradigm__ (if it isn't already)
-
-
-### 🧪 experiments that didn't work
-
-- __building an always on Ai agent to teach languages. [learnings here](/essays/speaksharp)__
-- __marketplace for artworks.__
-- __employee Analytics for companies to better retain people.__
-
-
-### 🤫 things nobody told me about software
-
-- __it is better to copy paste the relevant code__, instead of loading a library / framework for it.
-- __everything is just a text representation of binary data__
-- all protocols are synthetic and __will__ have nuances / bugs [^new]
-
-
-### ❓ questions i can't stop thinking about
-
-- 
-
-### 📈 overrated / underrated
-- 
-
-### 🕳 rabbit holes i've fell into
-
-### 💸 the best money i ever spent
-
-
-### 🧠 advice i'd give my younger self
-
-- Focus on deep work, commit to a single thing for more than a few months only those matter in the long run
-
-📊 my life in numbers
-
-⏳ what i'd do with 6 months and no rent
-
-
-updated on, Jun, 13 2026
-
 ## the usual
 
 📚 [books i've read / am reading](/books)
@@ -90,7 +27,12 @@ updated on, Jun, 13 2026
 
 you can find the [table of contents here](/toc)
 
+## opinions i'll defend
 
-[^new]: what is this new thing!!
-can it do a second line?
-is there anything else happening??
+- pessimism is defaulting to laziness. optimism is the harder, rarer skill.
+- affordances for agents will be inherently different than affordances for humans.
+- it is better to copy paste the relevant code, instead of loading a library / framework for it.
+
+the full list of [takes, bets, and things i was wrong about is here](/takes) 🌶
+
+updated on Jul 11, 2026
