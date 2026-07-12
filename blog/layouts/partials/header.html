@@ -97,7 +97,7 @@
   {{ $sass := resources.Get "style.scss" }}
   {{ $style := $sass | css.Sass | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
-    <link rel="icon" type="image/x-icon" href="/assets/images/s.png">
+    <link rel="icon" type="image/x-icon" href="/assets/images/surya.png">
   {{ range .AlternativeOutputFormats -}}
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
@@ -183,7 +183,7 @@
       "name": "Suriya Ganesh",
       "logo": {
         "@type": "ImageObject",
-        "url": "{{ "/assets/images/s.png" | absURL }}"
+        "url": "{{ "/assets/images/surya.png" | absURL }}"
       }
     },
     "mainEntityOfPage": {
@@ -193,7 +193,7 @@
     {{ if .Params.image }}
     "image": "{{ .Params.image | absURL }}",
     {{ else }}
-    "image": "{{ "/assets/images/s.png" | absURL }}",
+    "image": "{{ "/assets/images/surya.png" | absURL }}",
     {{ end }}
     {{ if .Params.tags }}
     "keywords": "{{ delimit .Params.tags ", " }}",
