@@ -1152,3 +1152,30 @@ header:has(.hero-image) {
   }
 }
 
+// Substack embed — transparent iframes, one per theme
+.footer-newsletter {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 1rem;
+}
+
+.substack-embed {
+  border: 0;
+  background: transparent;
+  max-width: 100%;
+}
+
+.substack-embed--dark {
+  display: none;
+}
+
+html.dark-mode {
+  .substack-embed--light {
+    display: none;
+  }
+
+  .substack-embed--dark {
+    display: block;
+  }
+}
+

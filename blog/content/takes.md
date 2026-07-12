@@ -2,7 +2,7 @@
 emoji: 🌶
 title: takes
 description: opinions i'll defend, bets i'm making, and things i was wrong about
-date: 2026-07-11
+date: 2024-07-11
 layout: base
 ---
 
