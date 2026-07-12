@@ -134,6 +134,30 @@ whether you like it or not, whatever you build, create, write or ship enters thi
 which raises the practical question: how do you go from being just a node in someone else's bubble to being able to influence one, at any size? the era of silent operating excellence, do great work and let it speak for itself, is over. the work never speaks for itself, it gets spoken *for*, by whoever narrates it first. "all the world's a stage"[^stage], and owning your narrative means being able to move a bubble. the size matters less than you'd think. a small bubble you can genuinely move is worth more than a huge one where you're just a consumer, because influence compounds at the boundaries. the reliable path is to become a carrier yourself, sit in the overlap between two bubbles, and translate. take what is obvious in one and re-express it for the other. that position is rare, and the network rewards it far out of proportion to the effort. Evolve yourself __from host to player__.
 
 
+memes aren't the only things that migrate across the network. __hosts migrate too__, and they obey the same physics. i've felt out of place in most bubbles other than back home, and it took me a long time to understand that this is structural, not personal.
+
+
+every bubble has a __density__, a measure of how much reach and impact its hosts have on the bubbles outside it. there is a small bubble of high performing individuals who pretty much decide what the next generation grows up thinking about politics, education, relationships, etc. directionally, you want to be moving into denser and denser bubbles, the ones whose memes shape the world instead of just reacting to it. essentially increasing your leverage to the world.
+
+
+but you cannot coexist in a bubble too far from your own. you can find a bubble you aspire to, an awesome group of authors, an incredible set of smart people, but you cannot jump into it. there is too much memetic knowledge you lack to even parse what is happening inside, let alone exist there. i call this __bubble shock__. moving from a village to a city took me four years of feeling lost to understand it. moving from college to a job took another two. the same rule that governs memes governs hosts: a meme from four layers away is indistinguishable from noise, and so are you, to a bubble four layers away. a host, like a meme, can only ever migrate to an *adjacent* bubble, before it becomes impossible to ramp up.
+
+
+which makes the whole thing a pathfinding problem.[^pathfinding] you know where you are, you have a directional idea of which bubble you want to be in ten years from now, and the work is finding a viable route through the network, moving from wherever you are to the adjacent bubble, then the next. finding that optimal next bubble is the genuinely hard part, and a host can only move so far from their current bubble before it becomes impossible to ramp up in time.
+
+
+inside each new bubble the ramp is: __study, imitate, interact__, in that order. the order is important. you can keep interacting with the hosts of a bubble for years and never become one of them, because you never spent the time studying and imitating them first. imitation is the tough part, because it feels like departing from who you are as an individual. the neighboring bubble will do things that look counterintuitive to you (why wear ties? why care about watches? why be interested in cars?) or outright nonsensical (why travel and waste money? why should I care about taylor swift's marriage?). but imitation is what gets you the invite. i believe individuals are very dynamic and capable of evolution, so it never bothered me that i was losing my "self". everything becomes a trade-off evaluated against the destination, the idea is to invest time and money in things that advance you toward the next bubble.
+
+
+and there is no point in feeling guilty about moving away from your roots, because what we are and where we come from can never be erased, it is part of us. the work and effort we put in is itself a form of respect toward those roots, the path we take honors them. i struggled with this a lot, even in college: should i be true to where i come from, or become what i can be? this reasoning is what keeps me sane. tamil has a phrase for the fear, *aattu thol porthiya puli*[^puli], a tiger draped in a sheep's skin. it's okay to wear the skin of the new bubble. the important thing is to always remember that you're not the sheep, you're something beyond.
+
+
+the hosts who complete this migration more than once are rare. these __migratory host__ is what a carrier looks like from the inside: every bubble they've lived in stays alive in them, so they sit permanently in the overlaps, and that makes them culture carriers with leverage far out of proportion to their numbers. they are the bridge a meme rides when it crosses a boundary, and both sides of the boundary need them more than either side admits. operating as one is mostly endurance: expect the shock and budget years for the ramp, not weeks. keep weak ties alive into every bubble you've left, because your leverage *is* the set of bubbles you can still translate between. and trust that the skill compounds, each migration is easier than the last because the thing being trained is migration itself. most people expect to die in the bubble they were born into. a migratory host can land in a new bubble and thrive, because adaptation is the one skill that transfers everywhere.
+
+
+but maybe, if you find a bubble you're comfortable in, it's okay to stop running and just be in it? i think that's a philosophical question that depends on the person. the only real mistake is believing the bubble you happened to be born into is the only one you're allowed to exist in.
+
+
 here's a strange consolation. the same speed that makes the system feel terrifying also makes it very forgiving. since memes travel so fast, they also die fast, the attention slot gets reallocated in days. last month's scandal cannot compete with this morning's. so does it matter if you go out into the world, try something, and get it publicly wrong? much less than you fear. the crowd's memory is short because its attention is scarce. You only lose if people forget about you. the flip side is that good work decays on the same schedule, which is why the operators never stop producing. but for the rest of us the asymmetry is freeing: the cost of a public mistake is temporary, and the cost of staying silent inside your bubble is permanent.
 
 
@@ -207,3 +231,9 @@ it has to be transformed into something more comprehensible.
 
 
 [^mcd]: https://www.youtube.com/watch?v=W6QFxgS8fSA
+
+
+[^pathfinding]: in computer science, [pathfinding](https://en.wikipedia.org/wiki/Pathfinding) is the problem of finding the optimal route between two points in a graph when you know the start and the goal but not the path. algorithms like [Dijkstra's](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) and [A*](https://en.wikipedia.org/wiki/A*_search_algorithm) solve it when the whole graph is visible. life is harder: the network of bubbles only reveals itself one hop at a time, so you're navigating with a heuristic, a direction, and a lot of backtracking.
+
+
+[^puli]: tamil, ஆட்டுத் தோல் போர்த்திய புலி, literally "a tiger draped in a sheep's skin". usually said as an accusation, hidden menace behind a harmless exterior. here it's the migrant's version: the imposter feeling of wearing a new bubble's skin, resolved by remembering which animal is underneath.
