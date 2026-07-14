@@ -1,7 +1,7 @@
 baseURL: https://suriya.cc
 enableGitInfo: true
 disablePathToLower: true
-languageCode: en-us
+languageCode: en
 summaryLength: 20
 title: Suriya's site
 disableAliases: true
@@ -16,6 +16,12 @@ taxonomies:
 module:
   imports:
   - path: hugomod
+  mounts:
+  - source: assets
+    target: assets
+  # expose static files to Hugo's image processing (resources.Get)
+  - source: static
+    target: assets
 
 staticDir:
   - static

@@ -32,6 +32,19 @@
   <meta name="keywords" content="{{ delimit . ", " }}">
   {{ end }}
 
+  {{/* Social preview image: crop to 1200x630 at build time so platforms don't crop unpredictably */}}
+  {{ $ogImagePath := .Params.image | default "/assets/images/header-image.jpeg" }}
+  {{ $ogImage := $ogImagePath | absURL }}
+  {{ $ogCropped := false }}
+  {{ with resources.Get (strings.TrimPrefix "/" $ogImagePath) }}
+  {{ if in (slice "png" "jpeg" "webp" "gif" "bmp" "tiff") .MediaType.SubType }}
+  {{ with .Fill "1200x630" }}
+  {{ $ogImage = .Permalink }}
+  {{ $ogCropped = true }}
+  {{ end }}
+  {{ end }}
+  {{ end }}
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
   <meta property="og:url" content="{{ .Permalink }}">
@@ -41,10 +54,10 @@
   <meta property="og:title" content="{{ .Title }}">
   {{ end }}
   <meta property="og:site_name" content="{{ .Site.Title }}">
-  {{ if .Params.image }}
-  <meta property="og:image" content="{{ .Params.image | absURL }}">
-  {{ else }}
-  <meta property="og:image" content="{{ "/assets/images/header-image.jpeg" | absURL }}">
+  <meta property="og:image" content="{{ $ogImage }}">
+  {{ if $ogCropped }}
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   {{ end }}
 
   <!-- Article-specific Open Graph tags -->
@@ -82,11 +95,7 @@
   {{ else }}
   <meta name="twitter:description" content="Suriya Ganesh's personal website featuring technical writing, essays, book notes, and life updates.">
   {{ end }}
-  {{ if .Params.image }}
-  <meta name="twitter:image" content="{{ .Params.image | absURL }}">
-  {{ else }}
-  <meta name="twitter:image" content="{{ "/assets/images/header-image.jpeg" | absURL }}">
-  {{ end }}
+  <meta name="twitter:image" content="{{ $ogImage }}">
 
   {{ if .Params.hasEncryptedContent }}
   <meta name="hasEncryptedContent" content="true">
@@ -191,7 +200,7 @@
       "@id": "{{ .Permalink }}"
     },
     {{ if .Params.image }}
-    "image": "{{ .Params.image | absURL }}",
+    "image": "{{ $ogImage }}",
     {{ else }}
     "image": "{{ "/assets/images/surya.png" | absURL }}",
     {{ end }}
@@ -200,7 +209,7 @@
     {{ end }}
     "articleSection": "{{ .Section }}",
     "wordCount": {{ .WordCount }},
-    "inLanguage": "en-US"
+    "inLanguage": "{{ .Site.LanguageCode }}"
   }
   </script>
   {{ end }}
