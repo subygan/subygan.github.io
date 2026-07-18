@@ -12,6 +12,8 @@ Inspiration comes from many places. I love jotting them down here.
 
 ### small app ideas
 
+- Video editor skill
+- linkedin post skill
 - virtual bookshelf where you can showcase your books.
   - I wonder if this can be self serve. like I can just take a video of a book, convert it into a gaussian cloud and create a virtual library.
   - Are Gaussian models there, where I can run them client side.

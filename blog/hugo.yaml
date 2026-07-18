@@ -62,6 +62,7 @@ markup:
       taskList: true
       typographer: true
     parser:
+      wrapStandAloneImageWithinParagraph: false
       attribute:
         block: false
         title: true

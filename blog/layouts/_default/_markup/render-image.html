@@ -1,10 +1,16 @@
 {{- $alt := .Text -}}
 {{- $src := .Destination -}}
 {{- $title := .Title -}}
+{{- $caption := $title | default $alt -}}
 
-<img src="{{ $src | safeURL }}"
-     alt="{{ $alt }}"
-     {{- with $title }} title="{{ . }}"{{ end }}
-     loading="lazy"
-     {{- with .Page.Params.imageWidth }} width="{{ . }}"{{ end }}
-     {{- with .Page.Params.imageHeight }} height="{{ . }}"{{ end }}>
+<figure>
+  <img src="{{ $src | safeURL }}"
+       alt="{{ $alt }}"
+       {{- with $title }} title="{{ . }}"{{ end }}
+       loading="lazy"
+       {{- with .Page.Params.imageWidth }} width="{{ . }}"{{ end }}
+       {{- with .Page.Params.imageHeight }} height="{{ . }}"{{ end }}>
+  {{- with $caption }}
+  <figcaption>{{ . }}</figcaption>
+  {{- end }}
+</figure>

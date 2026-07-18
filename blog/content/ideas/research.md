@@ -7,6 +7,8 @@ layout: base
 tags: ["tech", "machine-learning"]
 ---
 
+### Continual learning
+
 #### ai guardrail comparison
 - There are multipel LLM guardrails, evaluating them would be something
 

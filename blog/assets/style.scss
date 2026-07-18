@@ -547,6 +547,21 @@ html.dark-mode .navbar {
     margin: 2em 0;
   }
 
+  figure {
+    margin: 2em 0;
+
+    img {
+      margin: 0;
+    }
+
+    figcaption {
+      margin-top: 0.5em;
+      font-size: 0.875em;
+      color: var(--text-secondary);
+      text-align: center;
+    }
+  }
+
   // Tables
   table {
     width: 100%;
