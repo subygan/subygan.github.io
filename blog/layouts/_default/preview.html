@@ -1,0 +1,413 @@
+{{ define "main" }}
+
+<div class='suriya-blog-content'>
+
+  <div id='write' class=''>
+    <header>
+      <div class="page-header-icon undefined"><span class="icon">{{ .Params.emoji }}</span></div>
+      <h1 class="page-title">{{ .Title | lower }}</h1>
+      <p class="page-description">{{ .Description }}</p>
+    </header>
+
+    {{ .Content }}
+
+    <div class="sp-tool">
+      <form id="sp-form">
+        <input type="text" id="sp-url" placeholder="/essays/my-post/  or a full URL" required autofocus spellcheck="false">
+        <button type="submit" id="sp-go">Preview</button>
+      </form>
+
+      <div id="sp-status"></div>
+      <div id="sp-warnings"><ul id="sp-warnlist"></ul></div>
+      <div id="sp-grid"></div>
+
+      <details id="sp-raw-wrap" style="display:none">
+        <summary>Raw meta tags found</summary>
+        <table id="sp-raw-table"></table>
+      </details>
+    </div>
+
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+  </div>
+</div>
+
+<style>
+  /* Page chrome inherits the blog theme via its CSS variables */
+  .sp-tool { font-family: var(--font-ui); margin-top: 1.5rem; }
+  .sp-tool form { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+  .sp-tool input[type=text] {
+    flex: 1 1 280px; padding: 10px 14px; font-size: 15px; border: 1px solid var(--border-color);
+    border-radius: 8px; background: var(--bg-secondary); color: var(--text-primary);
+    font-family: var(--font-ui); outline: none;
+  }
+  .sp-tool input[type=text]:focus { border-color: var(--accent-color); }
+  .sp-tool button {
+    padding: 10px 22px; font-size: 14px; font-weight: 600; font-family: var(--font-ui);
+    border: 1px solid var(--accent-color); border-radius: 8px;
+    background: var(--accent-color); color: #fff; cursor: pointer;
+    transition: opacity var(--transition-fast);
+  }
+  .sp-tool button:hover { opacity: 0.85; }
+  .sp-tool button:disabled { opacity: 0.6; cursor: wait; }
+
+  #sp-status { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; min-height: 18px; }
+  #sp-status .err { color: #c0392b; font-weight: 600; }
+  html.dark-mode #sp-status .err { color: #e74c3c; }
+
+  #sp-warnings { display: none; background: #fff8e6; border: 1px solid #f0dfae; border-radius: 8px;
+    padding: 12px 16px; margin-bottom: 20px; font-size: 13.5px; color: #1f0909; }
+  html.dark-mode #sp-warnings { background: #2a2410; border-color: #5c4d1a; color: #e0e0e0; }
+  #sp-warnings ul { margin: 0; padding-left: 18px; }
+  #sp-warnings li { margin: 3px 0; }
+  #sp-warnings code { font-family: var(--font-mono); font-size: 12px; }
+
+  #sp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 20px; }
+  .sp-platform { background: var(--bg-secondary); border: 1px solid var(--border-color);
+    border-radius: 12px; padding: 16px; }
+  .sp-platform h3 { font-size: 13px; font-family: var(--font-ui); text-transform: uppercase;
+    letter-spacing: 0.06em; color: var(--text-secondary); margin: 0 0 12px;
+    display: flex; align-items: center; gap: 8px; }
+  .sp-platform h3 .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+  .sp-platform .note { font-size: 12px; color: var(--text-secondary); margin: 10px 0 0; line-height: 1.45; }
+
+  .sp-tool details { margin-top: 28px; font-family: var(--font-ui); }
+  .sp-tool summary { cursor: pointer; font-weight: 600; font-size: 14px; color: var(--text-primary); }
+  #sp-raw-table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 13px;
+    background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; }
+  #sp-raw-table td { padding: 7px 12px; border-top: 1px solid var(--border-color); vertical-align: top;
+    word-break: break-word; color: var(--text-primary); }
+  #sp-raw-table td:first-child { font-family: var(--font-mono); white-space: nowrap; color: var(--accent-color); }
+  #sp-raw-table tr:first-child td { border-top: none; }
+
+  /* Platform mockups keep fixed colors on purpose — they imitate each platform's
+     own rendering and must not follow the blog theme or dark mode */
+  .sp-tool .noimg { display: flex; align-items: center; justify-content: center; background: #eceef1;
+    color: #9aa1a9; font-size: 13px; aspect-ratio: 1.91 / 1; font-family: var(--font-ui); }
+  .sp-mock { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+
+  .x-card { border: 1px solid #cfd9de; border-radius: 16px; overflow: hidden; position: relative; background: #fff; }
+  .x-card img, .x-card .noimg { width: 100%; aspect-ratio: 1.91 / 1; object-fit: cover; display: block; }
+  .x-overlay { position: absolute; left: 12px; bottom: 12px; background: rgba(0,0,0,0.77); color: #fff;
+    font-size: 13px; padding: 2px 8px; border-radius: 4px; max-width: calc(100% - 24px);
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .x-domain { color: #536471; font-size: 13px; margin-top: 6px; }
+  .x-small { border: 1px solid #cfd9de; border-radius: 16px; overflow: hidden; display: flex; background: #fff; }
+  .x-small .thumb { width: 128px; height: 128px; flex: none; object-fit: cover; border-right: 1px solid #cfd9de; }
+  .x-small .thumb.noimg { display: flex; aspect-ratio: auto; }
+  .x-small .body { padding: 12px; display: flex; flex-direction: column; justify-content: center; min-width: 0; }
+  .x-small .dom { color: #536471; font-size: 15px; }
+  .x-small .t { font-size: 15px; color: #0f1419; margin: 2px 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .x-small .d { font-size: 15px; color: #536471; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  .li-card { border: 1px solid #e0e0e0; overflow: hidden; background: #fff; }
+  .li-card img, .li-card .noimg { width: 100%; aspect-ratio: 1.91 / 1; object-fit: cover; display: block; }
+  .li-body { background: #eef3f8; padding: 10px 14px; }
+  .li-title { font-size: 14px; font-weight: 600; color: rgba(0,0,0,0.9);
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .li-domain { font-size: 12px; color: rgba(0,0,0,0.6); margin-top: 4px; }
+
+  .fb-card { border: 1px solid #dddfe2; overflow: hidden; background: #fff; }
+  .fb-card img, .fb-card .noimg { width: 100%; aspect-ratio: 1.91 / 1; object-fit: cover; display: block; }
+  .fb-body { background: #f0f2f5; padding: 10px 12px; }
+  .fb-domain { font-size: 12px; color: #65676b; text-transform: uppercase; }
+  .fb-title { font-size: 16px; font-weight: 600; color: #050505; margin-top: 3px;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .fb-desc { font-size: 14px; color: #65676b; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  .ig-wrap { display: flex; justify-content: flex-end; }
+  .ig-bubble { background: #efefef; border-radius: 18px; overflow: hidden; max-width: 300px; width: 100%; }
+  .ig-bubble img, .ig-bubble .noimg { width: 100%; aspect-ratio: 1.91 / 1; object-fit: cover; display: block; }
+  .ig-body { padding: 10px 12px; }
+  .ig-title { font-size: 14px; font-weight: 600; color: #000;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .ig-domain { font-size: 12px; color: #737373; margin-top: 3px; }
+  .ig-link { font-size: 14px; color: #00376b; padding: 8px 12px 10px; word-break: break-all; }
+
+  .dc-outer { background: #313338; border-radius: 10px; padding: 16px; }
+  .dc-embed { background: #2b2d31; border-radius: 4px; border-left: 4px solid #1e1f22;
+    padding: 10px 14px 14px 12px; max-width: 432px; }
+  .dc-site { font-size: 12px; color: #b5bac1; }
+  .dc-title { font-size: 16px; font-weight: 600; color: #00a8fc; margin-top: 6px; }
+  .dc-desc { font-size: 14px; color: #dbdee1; margin-top: 6px; line-height: 1.35;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .dc-embed img { max-width: 100%; border-radius: 4px; margin-top: 14px; display: block; }
+
+  .sl-card { border-left: 4px solid #dddddd; padding: 2px 0 2px 12px; background: #fff; }
+  .sl-site { display: flex; align-items: center; gap: 6px; font-size: 15px; font-weight: 700; color: #1d1c1d; }
+  .sl-site img { width: 16px; height: 16px; border-radius: 2px; }
+  .sl-title { font-size: 15px; font-weight: 700; color: #1264a3; margin-top: 4px; }
+  .sl-desc { font-size: 15px; color: #1d1c1d; margin-top: 3px; line-height: 1.4;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .sl-card > img { max-width: 340px; width: 100%; border-radius: 12px; margin-top: 10px;
+    border: 1px solid #e3e5e8; display: block; }
+
+  .wa-outer { background: #efeae2; border-radius: 10px; padding: 16px; display: flex; justify-content: flex-end; }
+  .wa-bubble { background: #d9fdd3; border-radius: 8px; padding: 4px; max-width: 320px; width: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1); }
+  .wa-preview { background: #d1f4cc; border-radius: 6px; overflow: hidden; }
+  .wa-preview img, .wa-preview .noimg { width: 100%; aspect-ratio: 1.91 / 1; object-fit: cover; display: block; }
+  .wa-body { padding: 7px 9px; }
+  .wa-title { font-size: 13px; font-weight: 500; color: #111b21;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .wa-desc { font-size: 12px; color: #667781; margin-top: 2px;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .wa-url { font-size: 11px; color: #667781; margin-top: 3px; }
+  .wa-link { font-size: 13.5px; color: #027eb5; padding: 5px 6px 3px; word-break: break-all; text-decoration: underline; }
+</style>
+
+<script>
+(function() {
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c =>
+  ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+const PROXY = u => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u);
+
+function truncate(s, n) {
+  s = s || '';
+  return s.length > n ? s.slice(0, n - 1) + '…' : s;
+}
+
+function absolutize(url, base) {
+  if (!url) return null;
+  try { return new URL(url, base).href; } catch { return url; }
+}
+
+function isLocal(u) {
+  try { return /^(localhost|127\.|0\.0\.0\.0|\[::1\])/.test(new URL(u).host); } catch { return false; }
+}
+
+function extract(html, baseUrl) {
+  const doc = new DOMParser().parseFromString(html, 'text/html');
+  const tags = [...doc.querySelectorAll('meta')]
+    .map(el => ({
+      key: (el.getAttribute('property') || el.getAttribute('name') || '').toLowerCase(),
+      content: el.getAttribute('content'),
+    }))
+    .filter(t => t.key && t.content !== null);
+  // First occurrence wins, matching Open Graph spec
+  const first = k => tags.find(t => t.key === k)?.content;
+
+  const iconEl = doc.querySelector('link[rel="icon"], link[rel="shortcut icon"]')
+    || doc.querySelector('link[rel="apple-touch-icon"]');
+  const rawImage = first('og:image') || first('og:image:url') || first('og:image:secure_url')
+    || first('twitter:image') || first('twitter:image:src');
+
+  return {
+    tags,
+    meta: {
+      title: first('og:title') || first('twitter:title') || doc.querySelector('title')?.textContent.trim() || null,
+      description: first('og:description') || first('twitter:description') || first('description') || null,
+      image: absolutize(rawImage, baseUrl),
+      rawImage: rawImage || null,
+      imageAlt: first('og:image:alt') || first('twitter:image:alt') || null,
+      siteName: first('og:site_name') || null,
+      url: first('og:url') || baseUrl,
+      card: first('twitter:card') || null,
+      themeColor: first('theme-color') || null,
+      favicon: absolutize(iconEl?.getAttribute('href'), baseUrl),
+    },
+  };
+}
+
+async function fetchPage(target) {
+  // Same-origin (and cooperative cross-origin) first: direct fetch keeps redirects + final URL
+  try {
+    const r = await fetch(target, { headers: { Accept: 'text/html' } });
+    return { html: await r.text(), status: r.status, finalUrl: r.url, via: 'direct' };
+  } catch (e) {
+    if (isLocal(target)) {
+      throw new Error('Cannot reach that localhost URL from this page (cross-origin, and proxies cannot see your machine). '
+        + (location.hostname === 'localhost'
+          ? 'Only same-port URLs work here — for other local apps use the standalone social-preview tool.'
+          : 'Open this tool from your dev server (localhost:1313/preview/) to preview drafts, or use the standalone social-preview tool.'));
+    }
+    const r = await fetch(PROXY(target));
+    if (!r.ok) throw new Error(`Proxy fetch failed (HTTP ${r.status}).`);
+    return { html: await r.text(), status: r.status, finalUrl: target, via: 'proxy' };
+  }
+}
+
+function imgOr(src, alt, extraClass = '') {
+  return src
+    ? `<img src="${esc(src)}" alt="${esc(alt || '')}" class="${extraClass}"
+         onerror="this.outerHTML='<div class=\\'noimg ${extraClass}\\'>image failed to load</div>'">`
+    : `<div class="noimg ${extraClass}">no og:image</div>`;
+}
+
+function platformCard(name, color, inner, note) {
+  return `<div class="sp-platform">
+    <h3><span class="dot" style="background:${color}"></span>${esc(name)}</h3>
+    <div class="sp-mock">${inner}</div>
+    ${note ? `<p class="note">${note}</p>` : ''}
+  </div>`;
+}
+
+function render(data) {
+  const m = data.meta;
+  const domain = new URL(data.finalUrl).hostname;
+  const title = m.title || data.finalUrl;
+  const desc = m.description || '';
+  const site = m.siteName || domain;
+  const cards = [];
+
+  const largeCard = !m.card || m.card === 'summary_large_image';
+  if (largeCard) {
+    cards.push(platformCard('X / Twitter · large card', '#000', `
+      <div class="x-card">
+        ${imgOr(m.image, m.imageAlt)}
+        <div class="x-overlay">${esc(truncate(title, 70))}</div>
+      </div>
+      <div class="x-domain">From ${esc(domain)}</div>`,
+      m.card ? '' : 'No <code>twitter:card</code> tag — X falls back to Open Graph tags; shown as summary_large_image.'));
+  } else {
+    cards.push(platformCard('X / Twitter · summary card', '#000', `
+      <div class="x-small">
+        ${imgOr(m.image, m.imageAlt, 'thumb')}
+        <div class="body">
+          <div class="dom">${esc(domain)}</div>
+          <div class="t">${esc(title)}</div>
+          <div class="d">${esc(desc)}</div>
+        </div>
+      </div>`));
+  }
+
+  cards.push(platformCard('LinkedIn', '#0a66c2', `
+    <div class="li-card">
+      ${imgOr(m.image, m.imageAlt)}
+      <div class="li-body">
+        <div class="li-title">${esc(truncate(title, 120))}</div>
+        <div class="li-domain">${esc(domain)}</div>
+      </div>
+    </div>`,
+    'LinkedIn feed shows title + domain only (no description). It caches aggressively — use the Post Inspector to bust cache on the real site.'));
+
+  cards.push(platformCard('Facebook', '#1877f2', `
+    <div class="fb-card">
+      ${imgOr(m.image, m.imageAlt)}
+      <div class="fb-body">
+        <div class="fb-domain">${esc(domain)}</div>
+        <div class="fb-title">${esc(truncate(title, 100))}</div>
+        ${desc ? `<div class="fb-desc">${esc(desc)}</div>` : ''}
+      </div>
+    </div>`));
+
+  cards.push(platformCard('Instagram · DM', '#e1306c', `
+    <div class="ig-wrap"><div class="ig-bubble">
+      ${imgOr(m.image, m.imageAlt)}
+      <div class="ig-body">
+        <div class="ig-title">${esc(truncate(title, 80))}</div>
+        <div class="ig-domain">${esc(domain)}</div>
+      </div>
+      <div class="ig-link">${esc(data.finalUrl)}</div>
+    </div></div>`,
+    'Instagram only renders link previews in DMs. Links in feed captions and comments are plain text; Stories link stickers show just the domain.'));
+
+  cards.push(platformCard('Discord', '#5865f2', `
+    <div class="dc-outer"><div class="dc-embed"
+        style="border-left-color:${esc(m.themeColor || '#1e1f22')}">
+      <div class="dc-site">${esc(site)}</div>
+      <div class="dc-title">${esc(title)}</div>
+      ${desc ? `<div class="dc-desc">${esc(desc)}</div>` : ''}
+      ${m.image ? imgOr(m.image, m.imageAlt) : ''}
+    </div></div>`,
+    m.themeColor ? 'Left border color comes from your <code>theme-color</code> meta tag.' : ''));
+
+  cards.push(platformCard('Slack', '#4a154b', `
+    <div class="sl-card">
+      <div class="sl-site">${m.favicon ? `<img src="${esc(m.favicon)}" onerror="this.remove()">` : ''}${esc(site)}</div>
+      <div class="sl-title">${esc(title)}</div>
+      ${desc ? `<div class="sl-desc">${esc(desc)}</div>` : ''}
+      ${m.image ? imgOr(m.image, m.imageAlt) : ''}
+    </div>`));
+
+  cards.push(platformCard('WhatsApp', '#25d366', `
+    <div class="wa-outer"><div class="wa-bubble">
+      <div class="wa-preview">
+        ${imgOr(m.image, m.imageAlt)}
+        <div class="wa-body">
+          <div class="wa-title">${esc(title)}</div>
+          ${desc ? `<div class="wa-desc">${esc(desc)}</div>` : ''}
+          <div class="wa-url">${esc(domain)}</div>
+        </div>
+      </div>
+      <div class="wa-link">${esc(data.finalUrl)}</div>
+    </div></div>`));
+
+  $('sp-grid').innerHTML = cards.join('');
+
+  const interesting = data.tags.filter(t =>
+    /^(og:|twitter:|theme-color|description$)/.test(t.key));
+  $('sp-raw-table').innerHTML = interesting.length
+    ? interesting.map(t => `<tr><td>${esc(t.key)}</td><td>${esc(t.content)}</td></tr>`).join('')
+    : '<tr><td colspan="2">No Open Graph or Twitter tags found.</td></tr>';
+  $('sp-raw-wrap').style.display = 'block';
+}
+
+function computeWarnings(data) {
+  const m = data.meta;
+  const has = k => data.tags.some(t => t.key === k);
+  const w = [];
+
+  if (data.via === 'proxy') w.push('Fetched via the allorigins.win proxy (cross-origin URL) — redirects and bot-specific tags are not visible this way.');
+  if (!has('og:title')) w.push('No <code>og:title</code> — platforms fall back to the <code>&lt;title&gt;</code> tag' + (m.title ? '' : ', and there is no title tag either') + '.');
+  if (!m.description) w.push('No description (<code>og:description</code>) — most platforms show a bare card.');
+  if (!m.rawImage) w.push('No <code>og:image</code> — previews will render without an image, which drastically lowers click-through.');
+  if (m.rawImage && !/^https?:\/\//i.test(m.rawImage)) w.push(`<code>og:image</code> is a relative URL (<code>${esc(m.rawImage)}</code>). Real crawlers require an absolute URL — this tool resolved it for display, but fix it before shipping.`);
+  if (m.image && isLocal(m.image)) w.push('<code>og:image</code> points at localhost — fine for previewing a draft here, but real platforms cannot fetch it.');
+  if (!has('twitter:card')) w.push('No <code>twitter:card</code> — X defaults to Open Graph fallback. Add <code>&lt;meta name="twitter:card" content="summary_large_image"&gt;</code> for the big card.');
+  if (m.title && m.title.length > 70) w.push(`Title is ${m.title.length} chars — X and LinkedIn truncate around 70.`);
+  if (m.description && m.description.length > 200) w.push(`Description is ${m.description.length} chars — most platforms truncate around 200.`);
+  if (data.status >= 400) w.push(`The URL returned HTTP ${data.status} — crawlers will not index it.`);
+
+  if (m.image) {
+    const probe = new Image();
+    probe.onload = () => {
+      const extra = [];
+      if (probe.naturalWidth < 600) extra.push(`og:image is only ${probe.naturalWidth}×${probe.naturalHeight}px — recommended is 1200×630 (min 600 wide for large cards).`);
+      const ratio = probe.naturalWidth / probe.naturalHeight;
+      if (ratio < 1.7 || ratio > 2.1) extra.push(`og:image aspect ratio is ${ratio.toFixed(2)}:1 — most platforms crop to ~1.91:1 (1200×630).`);
+      if (extra.length) showWarnings([...w, ...extra]);
+    };
+    probe.src = m.image;
+  }
+  return w;
+}
+
+function showWarnings(list) {
+  $('sp-warnings').style.display = list.length ? 'block' : 'none';
+  $('sp-warnlist').innerHTML = list.map(x => `<li>${x}</li>`).join('');
+}
+
+$('sp-form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const btn = $('sp-go');
+  btn.disabled = true;
+  $('sp-status').textContent = 'Fetching…';
+  try {
+    // Allow relative paths like /essays/my-post/ — resolved against this site
+    const target = new URL($('sp-url').value.trim(), location.origin).href;
+    const page = await fetchPage(target);
+    const { tags, meta } = extract(page.html, page.finalUrl);
+    const data = { ...page, tags, meta };
+    const redirected = page.finalUrl !== target ? ` → redirected to ${esc(page.finalUrl)}` : '';
+    $('sp-status').innerHTML = `HTTP ${page.status}${redirected} · ${tags.filter(t => t.key.startsWith('og:')).length} OG tags · fetched ${page.via === 'direct' ? 'directly' : 'via proxy'}`;
+    render(data);
+    showWarnings(computeWarnings(data));
+  } catch (err) {
+    $('sp-status').innerHTML = `<span class="err">${esc(err.message)}</span>`;
+    $('sp-grid').innerHTML = '';
+    showWarnings([]);
+  } finally {
+    btn.disabled = false;
+  }
+});
+
+// Bookmarkable: /preview/?url=/essays/my-post/
+const preset = new URLSearchParams(location.search).get('url');
+if (preset) { $('sp-url').value = preset; $('sp-form').requestSubmit(); }
+})();
+</script>
+
+{{ end }}
