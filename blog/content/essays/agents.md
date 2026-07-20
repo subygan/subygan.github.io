@@ -92,6 +92,17 @@ while there are limitations to this implementation. this is a clear sign of thin
 [code](https://github.com/anthropics/claudes-c-compiler)
 
 
+## [cursor](https://cursor.com/)
+
+the cursor team had a fleet of agents rebuild SQLite straight from its 835-page manual. the result was a replica in rust that passed 100% of a held-out test suite.
+
+this fits the same shape as the others. SQLite is famously well-specified and has one of the most exhaustive test suites in all of software. so the agents had a byte accurate target to converge towards and no room to slop.
+
+the interesting wrinkle here was cost. it varied 15x depending on which model mix they used. which hints that orchestration is not just about correctness anymore, but about picking the right model for the right task to keep the whole thing economical.
+
+[tweet](https://x.com/cursor_ai/status/2079256614238814551)
+
+
 # interesting things in common:
 
 
