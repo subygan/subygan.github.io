@@ -103,6 +103,17 @@ the interesting wrinkle here was cost. it varied 15x depending on which model mi
 [tweet](https://x.com/cursor_ai/status/2079256614238814551)
 
 
+## [react](https://react.dev/)
+
+joseph savona from the react team ported the React Compiler from typescript to rust. a `+123,289 -306` line PR touching 461 files. merged.
+
+the architecture was heavily guided by humans but the majority of the code was written by ai. he set the architecture, the testing and verification strategy, and the incremental migration approach, then kept a close eye on code quality while the agents did the porting.
+
+it follows the same recipe as the others. it's a pass-by-pass port of the existing typescript compiler — same intermediate representation (HIR with a control-flow graph and SSA), same series of passes, same algorithms. and the existing fixture suite gave the agents a precise target: all fixtures pass. the main human-shaped work was in the data representation, using arena-like structures and indices to fit rust's borrowing system.
+
+[code](https://github.com/react/react/pull/36173)
+
+
 # interesting things in common:
 
 

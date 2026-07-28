@@ -33,10 +33,12 @@
   {{ end }}
 
   {{/* Social preview image: crop to 1200x630 at build time so platforms don't crop unpredictably */}}
-  {{ $ogImagePath := .Params.image | default "/assets/images/header-image.jpeg" }}
+  {{ $ogImagePath := .Params.imageSocial | default (.Params.image | default "/assets/images/header-image.jpeg") }}
   {{ $ogImage := $ogImagePath | absURL }}
   {{ $ogCropped := false }}
-  {{ with resources.Get (strings.TrimPrefix "/" $ogImagePath) }}
+  {{ $ogRes := .Resources.Get $ogImagePath }}
+  {{ $ogRes = $ogRes | default (resources.Get (strings.TrimPrefix "/" $ogImagePath)) }}
+  {{ with $ogRes }}
   {{ if in (slice "png" "jpeg" "webp" "gif" "bmp" "tiff") .MediaType.SubType }}
   {{ with .Fill "1200x630" }}
   {{ $ogImage = .Permalink }}

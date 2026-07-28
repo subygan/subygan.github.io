@@ -21,6 +21,14 @@
     </p>
 
     {{ end }}
+    {{ if and .Params.image (not .Params.hideImage) }}
+    {{ $heroSrc := .Params.image }}
+    {{ with .Resources.Get $heroSrc }}{{ $heroSrc = .RelPermalink }}{{ end }}
+    <figure class="article-hero{{ if .Params.imageFull }} article-hero--full{{ end }}">
+      <img src="{{ $heroSrc }}" alt="{{ .Params.imageAlt | default .Title }}" loading="lazy">
+      {{ with .Params.imageCaption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+    </figure>
+    {{ end }}
     <div class="blender" id="blender"></div>
 
     <!-- {{ with .GitInfo }}

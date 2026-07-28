@@ -48,6 +48,13 @@ Inspiration comes from many places. I love jotting them down here.
 
 ## problems i have
 
+
+- ### **Real-Time Agent-Human Collaborative VFS (Rust CRDT Gatekeeper)**
+ -  **Rust Gatekeeper Server:** An Axum+Tokio web server acts as the sole authority over the physical disk, bypassing standard OS file-locking by routing all multi-user connections through WebSocket rooms.
+  - **In-Memory CRDT Buffers:** Plain text files are loaded into RAM using Loro or Automerge, seamlessly merging simultaneous edits in real-time and enabling granular, actor-based time-travel (undoing specific AI mistakes).
+  - **Human VS Code VFS:** Humans use a custom VS Code extension that registers a Virtual File System, acting as a real-time "thin client" window into the server’s RAM without storing files locally.
+  - **Agent FUSE Daemon:** A local Rust FUSE daemon (or MCP server) mounts the workspace for AI agents, intercepting standard POSIX file writes, calculating fast text diffs, and pushing them as CRDT updates.
+  - **Async Disk Persistence:** A background Tokio task continuously monitors the active in-memory CRDTs, periodically converting them back into raw strings and safely flushing them to the physical drive as standard text files.
 - Foss app to send pictures to a widget in someone else's phone
 - LLM x privacy
 - Consumer AI products - character.ai,

@@ -2,6 +2,7 @@
 emoji: 🐣
 title: One hundred days of fatherhood
 image: /assets/images/ila/ila-woody.jpg
+hideImage: true
 description: How it has been and how I want it to be.
 date: 2026-07-12
 layout: base
