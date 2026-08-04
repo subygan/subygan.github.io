@@ -7,6 +7,8 @@ layout: base
 tags: ["essay", "psychology"]
 ---
 
+> **A note from older me:** I don't believe these strongly anymore. I was young and full of misdirected energy. I'm keeping this blog instead of rewriting history. I still believe the core issues and observations are true.
+
 I wonder.
 
 When’d it become so important for a person to be successful? When did it become more important to live, than to chase perfection? Why do you really need a “Purpose in life”? isn’t the purpose of life is to live and not opulence?

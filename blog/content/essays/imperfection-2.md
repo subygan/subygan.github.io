@@ -7,6 +7,8 @@ layout: base
 tags: ["essay", "psychology"]
 ---
 
+> **A note from older me:** I don't believe these strongly anymore. I was young and full of misdirected energy. I'm keeping this blog instead of rewriting history. I still believe the core issues and observations are true.
+
 As I reflect further on my [imperfection ideology](/essays/imperfection). It seems obvious that, the amorphous nature of the content is bound to be misinterpreted. It could be seen as an escape clause to be lazy and non-agile physically or otherwise. saying that they’re being “real” or that they’re being content with themselves and don’t give a  about what others think.
 
 

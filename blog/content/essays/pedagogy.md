@@ -7,6 +7,8 @@ layout: base
 tags: ["essay", "writing", "society"]
 ---
 
+> **A note from older me:** I don't believe these strongly anymore. I was young and full of misdirected energy. I'm keeping this blog instead of rewriting history. I still believe the core issues and observations are true.
+
 
 I have studied in 6 different schools in india, representing different classes of society. I have studied under the ‘I barely teach’ history teacher, to the ‘I don’t know English’ English teacher of out villages to the ‘I know it all’ chemistry teacher to the ‘I am a smart’ Math teacher from the cities. Not to mention, the ‘I never teach’ Electronics Professors to the ‘I don’t know log(10)’ Math professor. Even though I respect their age. To me, any person who teaches held less value than the ones who did something else.
 

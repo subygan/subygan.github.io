@@ -7,6 +7,8 @@ layout: base
 tags: ["essay", "writing", "personal"]
 ---
 
+> **A note from older me:** I don't believe these strongly anymore. I was young and full of misdirected energy. I'm keeping this blog instead of rewriting history. I still believe the core issues and observations are true.
+
 
 In 1985, British musicologist Clive Wearing woke to find that his hippocampus has been sieved out, owing to Herpes Encephalitis. From that day forward, he was in a state of perpetual immediacy. Unable to produce new memories, always present in the sublime present. The historical incarnation of Leonard in the movie Memento. Wearing’s wife recorded her unrequited love and her husband’s struggles in a book named, Forever Today.
 

@@ -7,6 +7,8 @@ layout: base
 tags: ["essay", "villages"]
 ---
 
+> **A note from older me:** I don't believe these strongly anymore. I was young and full of misdirected energy. I'm keeping this blog instead of rewriting history. I still believe the core issues and observations are true.
+
 I often notice that, whenever I first say to my friends that I am from a village, they tend to imagine a neat row of huts near a mountain with the faintly peeking out warm sun and birds and farmlands. If the conversation continues they’ll even mention that, life must be super peaceful there, devoid of the city noise and the pollution and whatnot. While that’s not too far off. It’s not the actual story either, and life is anything but peaceful.
 
 

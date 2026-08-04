@@ -7,6 +7,8 @@ layout: base
 tags: ["essay", "villages"]
 ---
 
+> **A note from older me:** I don't believe these strongly anymore. I was young and full of misdirected energy. I'm keeping this blog instead of rewriting history. I still believe the core issues and observations are true.
+
 Another huge misconception that I find is that people tend to imagine village people are these truly kind and helping people and that they live in harmony with their people. That it is full of naive people with clear, untainted minds.
 
 

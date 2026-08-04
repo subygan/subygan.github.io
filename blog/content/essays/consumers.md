@@ -7,6 +7,8 @@ layout: base
 tags: ["essay", "writing", "economics"]
 ---
 
+> **A note from older me:** I don't believe these strongly anymore. I was young and full of misdirected energy. I'm keeping this blog instead of rewriting history. I still believe the core issues and observations are true.
+
 
 Industrialisation has changed the world in many ways. It has increased employment created stacks upon stacks of factories. Created more wealth than ever and most importantly, it has created the most accomplished consumers in the history of humanity.
 

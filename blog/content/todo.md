@@ -8,7 +8,7 @@ layout: base
 These are the things that I am interested in learning.
 
 - [Nested Learning](https://research.google/blog/introducing-nested-learning-a-new-ml-paradigm-for-continual-learning/) — ~30–45 min
-- [Jeff Dean on performance](https://abseil.io/fast/hints.html) — ~2–3 h
+-[x] [Jeff Dean on performance](https://abseil.io/fast/hints.html) — ~2–3 h
 - [Non zero sum games](https://nonzerosum.games/) — ~10–15 h (whole site, ~40 short posts)
 # courses and competitions
 

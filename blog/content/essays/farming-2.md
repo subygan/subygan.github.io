@@ -7,6 +7,8 @@ layout: base
 tags: ["essay", "writing", "village"]
 ---
 
+> **A note from older me:** I don't believe these strongly anymore. I was young and full of misdirected energy. I'm keeping this blog instead of rewriting history. I still believe the core issues and observations are true.
+
 As I’ve explained in [this post](/essays/farming). Farming has high reverence among Indians. Farmers are portrayed as martyrs who give their lives to save their nation. When examined closer into this context. It reveals a deep cognitive decision by the nascent Indian Government of 1950s.
 
 The scenery in India when the British left us, wasn’t exactly all sunshine. India was a dying economy left to fend for itself. The [famine in India](https://en.wikipedia.org/wiki/Famine_in_India) Wikipedia page mentions list after list of famines that caused mass deaths, with these pictures

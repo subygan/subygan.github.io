@@ -7,6 +7,8 @@ layout: base
 tags: ["essay", "writing", "village"]
 ---
 
+> **A note from older me:** I don't believe these strongly anymore. I was young and full of misdirected energy. I'm keeping this blog instead of rewriting history. I still believe the core issues and observations are true.
+
 
 Ever since my childhood days, I was repeatedly and irrevocably taught that “Farming is the Backbone of India” and I’ve never questioned it. It seemed obvious, everybody needs food ergo nation needs farmers. But as is normal, the public perception of things are erroneous in a plethora of ways.
 

@@ -7,6 +7,8 @@ layout: base
 tags: ["essay", "psychology"]
 ---
 
+> **A note from older me:** I don't believe these strongly anymore. I was young and full of misdirected energy. I'm keeping this blog instead of rewriting history. I still believe the core issues and observations are true.
+
 
 Today marks a year of me staying away from social media of any sorts. It’s been great and I don’t intend on going back. A lot of people are appalled and amused at me being Anti-social media. I’m pretty confident that that from their perspective, I look like a Grinch. I don’t blame them though It’s a fair assumption for people to make. But, There are several layers of reasoning for it.
 
