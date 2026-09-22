@@ -44,6 +44,10 @@ author:
 copyright: This work is licensed under a Creative Commons Attribution-ShareAlike 4.0
   International License.
 
+# offline study kit under zerotohero/ — keep out of the build
+ignoreFiles:
+  - zerotohero/offline/
+
 enableRobotsTXT: true
 sitemap:
   changefreq: weekly

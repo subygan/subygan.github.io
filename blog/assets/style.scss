@@ -847,14 +847,6 @@ html.dark-mode .navbar {
   }
 }
 
-header:has(.hero-image) {
-  &::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-}
-
 .page-title {
   margin-top: 0.5rem !important;
   margin-bottom: 1rem !important;

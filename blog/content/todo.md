@@ -14,6 +14,7 @@ These are the things that I am interested in learning.
 
 ## ml (~85–145 h)
 - [Karpathy Zero to Hero](https://karpathy.ai/zero-to-hero.html) — ~40–60 h coding along (~16 h watch-only)
+- [illustrated transformers](https://jalammar.github.io/illustrated-transformer/)
 - [RL on wordle](https://charbull.github.io/wordle-lora-rl/) — ~1 h read; ~6–10 h to reproduce
 - [RL on 2048](https://colab.research.google.com/github/openai/gpt-oss/blob/main/examples/reinforcement-fine-tuning.ipynb) — ~3–5 h (mostly training runs)
 - [nanochat](https://github.com/karpathy/nanochat) — ~15–30 h (read code + run speedrun + tinker)
