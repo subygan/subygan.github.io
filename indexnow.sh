@@ -9,4 +9,4 @@ if [ $# -gt 0 ]; then urls=("$@"); else
 fi
 json=$(printf '%s\n' "${urls[@]}" | python3 -c 'import json,sys;print(json.dumps({"host":sys.argv[1],"key":sys.argv[2],"keyLocation":f"https://{sys.argv[1]}/{sys.argv[2]}.txt","urlList":[l.strip() for l in sys.stdin if l.strip()][:10000]}))' "$HOST" "$KEY")
 echo "Submitting ${#urls[@]} URLs"
-curl -sS -o /dev/null -w "IndexNow HTTP %{http_code}\n" -H 'Content-Type: application/json; charset=utf-8' -d "$json" https://api.indexnow.org/indexnow
+curl -sS -o /dev/null -w "IndexNow HTTP %{http_code}\n" -H 'Content-Type: application/json; charset=utf-8' -d "$json" https://www.bing.com/indexnow  # shared with all IndexNow engines
