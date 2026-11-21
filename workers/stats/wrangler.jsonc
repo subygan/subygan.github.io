@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "stats",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-20",
+  "vars": {
+    "DUOLINGO_USERNAME": "subygan",
+    "MONKEYTYPE_USERNAME": "subygan",
+    "ALLOWED_ORIGINS": "https://subygan.com,https://www.subygan.com,https://suriya.cc,https://www.suriya.cc,https://subygan.github.io,http://localhost:1313",
+    "TTL_SECONDS": "300"
+  },
+  "kv_namespaces": [{ "binding": "STATS" }]
+}

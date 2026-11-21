@@ -1,0 +1,139 @@
+{{ define "main" }}
+<div class="suriya-blog-content">
+  <div id="write">
+    <header>
+      <div class="page-header-icon undefined"><span class="icon">{{ .Params.emoji }}</span></div>
+      <h1 class="page-title">{{ .Title | lower }}</h1>
+      <p class="page-description">{{ .Description }}</p>
+    </header>
+
+    {{ .Content }}
+
+    <div class="dash" id="dash" data-src="{{ .Params.statsURL | default "https://stats.suriyaganesh097.workers.dev/all" }}">
+      <section class="dash-card" id="dash-duolingo">
+        <h2 class="dash-title">duolingo</h2>
+        <p class="dash-loading">loading…</p>
+      </section>
+      <section class="dash-card" id="dash-monkeytype">
+        <h2 class="dash-title">monkeytype</h2>
+        <p class="dash-loading">loading…</p>
+      </section>
+    </div>
+    <noscript><p class="dash-note">This page needs JavaScript to fetch live stats.</p></noscript>
+    <p class="dash-note" id="dash-updated"></p>
+
+    {{ partial "footer.html" . }}
+  </div>
+</div>
+
+<style>
+  .dash {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0 0.5rem;
+    font-family: var(--font-ui);
+  }
+  .dash-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1rem 1.1rem 1.1rem;
+    min-width: 0;
+  }
+  #write .dash-title {
+    font-family: var(--font-ui);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin: 0 0 0.75rem;
+    padding: 0;
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .dash-title a { color: var(--text-secondary); text-decoration: none; font-weight: 400; text-transform: none; letter-spacing: 0; }
+  .dash-title a:hover { color: var(--accent-color); }
+  .dash-hero { display: flex; align-items: baseline; gap: 0.4rem; margin-bottom: 0.9rem; }
+  .dash-hero .num {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--text-primary);
+    font-variant-numeric: tabular-nums;
+  }
+  .dash-hero .unit { color: var(--text-secondary); font-size: 0.95rem; }
+  .dash-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.6rem 1rem; margin: 0; }
+  .dash-stats div { min-width: 0; }
+  .dash-stats dt { font-size: 0.75rem; color: var(--text-secondary); margin: 0; }
+  .dash-stats dd { font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin: 0; font-variant-numeric: tabular-nums; }
+  .dash-stats dd small { font-weight: 400; color: var(--text-secondary); font-size: 0.75rem; }
+  .dash-loading, .dash-error { color: var(--text-secondary); font-size: 0.9rem; margin: 0; }
+  .dash-stale { color: var(--text-secondary); font-size: 0.75rem; margin: 0.75rem 0 0; }
+  .dash-note { color: var(--text-secondary); font-size: 0.8rem; font-family: var(--font-ui); }
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById("dash");
+  const fmt = (n) => (n == null ? "—" : Number(n).toLocaleString("en-US"));
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const hours = (s) => (s == null ? "—" : (s / 3600).toFixed(s < 36000 ? 1 : 0) + " h");
+  const ago = (t) => {
+    const m = Math.round((Date.now() - t) / 60000);
+    return m < 1 ? "just now" : m < 60 ? `${m} min ago` : `${Math.round(m / 60)} h ago`;
+  };
+  const stat = (label, value) => `<div><dt>${label}</dt><dd>${value}</dd></div>`;
+
+  function card(id, title, entry, body) {
+    const el = document.getElementById(id);
+    const d = entry && entry.data;
+    const link = d && d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener">@${esc(d.username)} ↗</a>` : "";
+    let html = `<h2 class="dash-title"><span>${title}</span>${link}</h2>`;
+    html += d ? body(d) : `<p class="dash-error">couldn't load right now.</p>`;
+    if (d && entry.stale) html += `<p class="dash-stale">showing data from ${ago(entry.fetchedAt)}</p>`;
+    el.innerHTML = html;
+  }
+
+  const duolingo = (d) => {
+    const course = (d.courses || []).slice().sort((a, b) => b.xp - a.xp)[0];
+    return `
+      <div class="dash-hero"><span class="num">${fmt(d.streak)}</span><span class="unit">day streak 🔥</span></div>
+      <dl class="dash-stats">
+        ${stat("total xp", fmt(d.totalXp))}
+        ${course ? stat("learning", `${esc(course.title)} <small>${fmt(course.xp)} xp</small>`) : ""}
+      </dl>`;
+  };
+
+  const monkeytype = (d) => {
+    const pb = d.personalBests || {};
+    const wpm = (m) => (pb[m] ? Math.round(pb[m].wpm) : "—");
+    return `
+      <div class="dash-hero"><span class="num">${wpm("60")}</span><span class="unit">wpm · 60s best</span></div>
+      <dl class="dash-stats">
+        ${stat("15s / 30s", `${wpm("15")} / ${wpm("30")}`)}
+        ${stat("120s", wpm("120"))}
+        ${stat("tests", fmt(d.completedTests))}
+        ${stat("time typing", hours(d.timeTypingSeconds))}
+        ${d.streak != null ? stat("streak", `${fmt(d.streak)} <small>best ${fmt(d.maxStreak)}</small>`) : ""}
+      </dl>`;
+  };
+
+  fetch(root.dataset.src)
+    .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then((all) => {
+      card("dash-duolingo", "duolingo", all.duolingo, duolingo);
+      card("dash-monkeytype", "monkeytype", all.monkeytype, monkeytype);
+      const times = Object.values(all).map((e) => e && e.fetchedAt).filter(Boolean);
+      if (times.length) document.getElementById("dash-updated").textContent = `updated ${ago(Math.min(...times))} · refreshes every 5 min`;
+    })
+    .catch(() => {
+      card("dash-duolingo", "duolingo", null);
+      card("dash-monkeytype", "monkeytype", null);
+    });
+})();
+</script>
+{{ end }}
