@@ -10,7 +10,7 @@
 
     <div class="tags-cloud">
       {{ range $key, $value := .Data.Terms.ByCount }}
-        {{ $tagURL := printf "/tags/%s" ($value.Page.Title | urlize) }}
+        {{ $tagURL := $value.Page.RelPermalink }}
         <a href="{{ $tagURL }}" class="tag-cloud-item">
           <span class="tag-name">#{{ $value.Page.Title | lower }}</span>
           <span class="tag-count">({{ len $value.Pages }})</span>
